@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'Questions_examples.dart'; // Importer les questions définies
 import 'models/QuestionModel.dart'; // Importer le modèle Question
 import 'dart:async'; // Nécessaire pour le Timer
@@ -16,7 +17,7 @@ class QuizScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Quiz: $category'),
-        backgroundColor: Colors.green[700], // Couleur de la barre d'application
+        backgroundColor: Colors.green[700],
       ),
       body: QuizPage(questions: questions),
     );
@@ -49,54 +50,49 @@ class _QuizPageState extends State<QuizPage> {
   int currentQuestionIndex = 0;
   int score = 0;
   int timer = 30; // Durée du timer en secondes
-  late Timer _timer; // Déclaration du Timer
+  late Timer _timer;
 
   @override
   void initState() {
     super.initState();
-    // Initialiser le timer
     _startTimer();
   }
 
-  // Fonction pour démarrer le timer
   void _startTimer() {
     _timer = Timer.periodic(Duration(seconds: 1), (timer) {
       if (this.timer == 0) {
-        _nextQuestion(); // Passer à la question suivante si le temps est écoulé
+        _nextQuestion();
       } else {
         setState(() {
-          this.timer--; // Décrémenter le timer chaque seconde
+          this.timer--;
         });
       }
     });
   }
 
-  // Fonction pour passer à la question suivante
   void _nextQuestion() {
     if (currentQuestionIndex < widget.questions.length - 1) {
       setState(() {
-        currentQuestionIndex++;  // Passer à la question suivante
-        timer = 30; // Réinitialiser le timer pour la nouvelle question
+        currentQuestionIndex++;
+        timer = 30;
       });
-      _timer.cancel(); // Annuler l'ancien timer
-      _startTimer();  // Redémarrer le timer
+      _timer.cancel();
+      _startTimer();
     } else {
-      // Fin du quiz
+      _timer.cancel();
       _showResult();
     }
   }
 
-  // Fonction pour vérifier la réponse
   void checkAnswer(bool isCorrect) {
     setState(() {
       if (isCorrect) {
         score++;
       }
-      _nextQuestion();  // Passer à la question suivante
+      _nextQuestion();
     });
   }
 
-  // Affichage du résultat à la fin du quiz
   void _showResult() {
     showDialog(
       context: context,
@@ -118,56 +114,70 @@ class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
     final question = widget.questions[currentQuestionIndex];
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Affichage de la question
-          Text(
-            question.question,
-            style: TextStyle(
-              fontSize: 22,
-              color: Colors.white,
-              fontFamily: 'Raleway',
+    return Scaffold(
+      backgroundColor: Colors.purple,
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Animation sablier
+            SizedBox(
+              height: 100,
+              child: Lottie.asset(
+                'assets/animations/hourglass.json',
+                repeat: true,
+                animate: true,
+              ),
             ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 30),
+            const SizedBox(height: 20),
 
-          // Affichage du timer
-          Text(
-            'Temps restant: $timer secondes',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-              fontFamily: 'Raleway',
+            // Timer texte
+            Text(
+              'Temps restant: $timer secondes',
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.white,
+                fontFamily: 'Raleway',
+              ),
             ),
-          ),
-          const SizedBox(height: 30),
+            const SizedBox(height: 30),
 
-          // Affichage des réponses sous forme de boutons
-          ...question.answers.entries.map((entry) {
-            return Padding(
-              padding: const EdgeInsets.symmetric(vertical: 5),
-              child: ElevatedButton(
-                onPressed: () => checkAnswer(entry.value),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.white, // Couleur de fond du bouton
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                ),
-                child: Text(
-                  entry.key,
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.green[700],
-                    fontFamily: 'Raleway',
+            // Question
+            Text(
+              question.question,
+              style: TextStyle(
+                fontSize: 22,
+                color: Colors.white,
+                fontFamily: 'Raleway',
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 30),
+
+            // Réponses
+            ...question.answers.entries.map((entry) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 5),
+                child: ElevatedButton(
+                  onPressed: () => checkAnswer(entry.value),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  ),
+                  child: Text(
+                    entry.key,
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.green[700],
+                      fontFamily: 'Raleway',
+                    ),
                   ),
                 ),
-              ),
-            );
-          }).toList(),
-        ],
+              );
+            }).toList(),
+          ],
+        ),
       ),
     );
   }

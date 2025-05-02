@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'Questions_examples.dart';
 import 'package:question_pour_toi/models/QuestionModel.dart';
+import 'package:lottie/lottie.dart';
 
 void main() {
   runApp(MyApp());
@@ -191,16 +192,24 @@ class QuizScreen extends StatelessWidget {
   }
 
   List<QuestionModel> getQuestionsForCategory(String category) {
+    List<QuestionModel> questions;
+
     switch (category) {
       case 'Sciences':
-        return scienceQuestions;
+        questions = List.from(scienceQuestions);
+        break;
       case 'Culture générale':
-        return cultureGeneralQuestions;
+        questions = List.from(cultureGeneralQuestions);
+        break;
       case 'Mathématiques':
-        return mathQuestions;
+        questions = List.from(mathQuestions);
+        break;
       default:
-        return [];
+        questions = [];
     }
+
+    questions.shuffle();
+    return questions.take(10).toList();
   }
 }
 
