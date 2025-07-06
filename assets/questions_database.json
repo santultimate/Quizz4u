@@ -1,0 +1,512 @@
+{
+  "mali_history": [
+    {
+      "question": "En quelle annee le Mali a-t-il obtenu son independance ?",
+      "answers": {
+        "1958": false,
+        "1960": true,
+        "1962": false,
+        "1965": false
+      },
+      "correctAnswer": "1960"
+    },
+    {
+      "question": "Quel etait le nom de l'empire medieval qui a domine l'Afrique de l'Ouest ?",
+      "answers": {
+        "Empire du Ghana": false,
+        "Empire du Mali": true,
+        "Empire Songhai": false,
+        "Empire du Kanem": false
+      },
+      "correctAnswer": "Empire du Mali"
+    },
+    {
+      "question": "Qui etait le plus celebre empereur de l'Empire du Mali ?",
+      "answers": {
+        "Sundiata Keita": false,
+        "Mansa Moussa": true,
+        "Sonni Ali": false,
+        "Askia Mohammed": false
+      },
+      "correctAnswer": "Mansa Moussa"
+    },
+    {
+      "question": "Quelle etait la capitale de l'Empire du Mali ?",
+      "answers": {
+        "Tombouctou": false,
+        "Gao": false,
+        "Niani": true,
+        "Djenne": false
+      },
+      "correctAnswer": "Niani"
+    },
+    {
+      "question": "En quelle annee Mansa Moussa a-t-il effectue son celebre pelerinage a La Mecque ?",
+      "answers": {
+        "1324": true,
+        "1300": false,
+        "1350": false,
+        "1400": false
+      },
+      "correctAnswer": "1324"
+    },
+    {
+      "question": "Quel fleuve traverse le Mali du nord au sud ?",
+      "answers": {
+        "Le Niger": true,
+        "Le Senegal": false,
+        "Le Congo": false,
+        "Le Nil": false
+      },
+      "correctAnswer": "Le Niger"
+    },
+    {
+      "question": "Quelle ville malienne est surnommee \"la perle du desert\" ?",
+      "answers": {
+        "Bamako": false,
+        "Tombouctou": true,
+        "Gao": false,
+        "Mopti": false
+      },
+      "correctAnswer": "Tombouctou"
+    },
+    {
+      "question": "Quel etait le premier president du Mali independant ?",
+      "answers": {
+        "Modibo Keita": true,
+        "Moussa Traore": false,
+        "Alpha Oumar Konare": false,
+        "Amadou Toumani Toure": false
+      },
+      "correctAnswer": "Modibo Keita"
+    },
+    {
+      "question": "En quelle annee la democratie a-t-elle ete retablie au Mali ?",
+      "answers": {
+        "1990": false,
+        "1991": false,
+        "1992": true,
+        "1993": false
+      },
+      "correctAnswer": "1992"
+    },
+    {
+      "question": "Quel est le nom de la grande mosquee de Djenne ?",
+      "answers": {
+        "Mosquee de Djenne": false,
+        "Grande Mosquee de Djenne": true,
+        "Mosquee Royale": false,
+        "Mosquee Centrale": false
+      },
+      "correctAnswer": "Grande Mosquee de Djenne"
+    }
+  ],
+  "general_culture": [
+    {
+      "question": "Quel est le plus long fleuve du monde ?",
+      "answers": {
+        "Le Nil": true,
+        "L'Amazone": false,
+        "Le Mississippi": false,
+        "Le Yangtse": false
+      },
+      "correctAnswer": "Le Nil"
+    },
+    {
+      "question": "Quel est le continent sur lequel se trouve l'Etat de Palestine ?",
+      "answers": {
+        "L'Asie": true,
+        "L'Afrique": false,
+        "L'Europe": false,
+        "L'Amerique": false
+      },
+      "correctAnswer": "L'Asie"
+    },
+    {
+      "question": "Quelle est la plus grande ville du continent europeen ?",
+      "answers": {
+        "Londres": true,
+        "Paris": false,
+        "Berlin": false,
+        "Madrid": false
+      },
+      "correctAnswer": "Londres"
+    },
+    {
+      "question": "Quelle est la ville de l'amour et de la beaute ?",
+      "answers": {
+        "Paris": true,
+        "Venise": false,
+        "Rome": false,
+        "Barcelone": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "Combien de pays arabes y a-t-il sur le continent africain ?",
+      "answers": {
+        "Neuf pays": true,
+        "Sept pays": false,
+        "Onze pays": false,
+        "Treize pays": false
+      },
+      "correctAnswer": "Neuf pays"
+    },
+    {
+      "question": "Quels sont les types de pierres precieuses les plus solides ?",
+      "answers": {
+        "Le diamant": true,
+        "Le rubis": false,
+        "L'emeraude": false,
+        "Le saphir": false
+      },
+      "correctAnswer": "Le diamant"
+    },
+    {
+      "question": "Sur quel continent se trouve le fleuve Amazone ?",
+      "answers": {
+        "L'Amerique du Sud": true,
+        "L'Afrique": false,
+        "L'Asie": false,
+        "L'Amerique du Nord": false
+      },
+      "correctAnswer": "L'Amerique du Sud"
+    },
+    {
+      "question": "Quel pays s'appelle le pays des lapins ?",
+      "answers": {
+        "L'Espagne": true,
+        "Le Portugal": false,
+        "L'Italie": false,
+        "La France": false
+      },
+      "correctAnswer": "L'Espagne"
+    },
+    {
+      "question": "Quelle est la plus haute montagne du continent africain ?",
+      "answers": {
+        "Le Mont Kilimandjaro": true,
+        "Le Mont Kenya": false,
+        "Le Mont Elgon": false,
+        "Le Mont Meru": false
+      },
+      "correctAnswer": "Le Mont Kilimandjaro"
+    },
+    {
+      "question": "Combien de muscles dans le corps humain ?",
+      "answers": {
+        "620 muscles": true,
+        "500 muscles": false,
+        "700 muscles": false,
+        "800 muscles": false
+      },
+      "correctAnswer": "620 muscles"
+    }
+  ],
+  "science": [
+    {
+      "question": "Quel est l'element chimique dont le symbole est O ?",
+      "answers": {
+        "Oxygene": true,
+        "Or": false,
+        "Osmium": false,
+        "Oganesson": false
+      },
+      "correctAnswer": "Oxygene"
+    },
+    {
+      "question": "Quelle planete est la plus proche du Soleil ?",
+      "answers": {
+        "Venus": false,
+        "Mercure": true,
+        "Mars": false,
+        "Terre": false
+      },
+      "correctAnswer": "Mercure"
+    },
+    {
+      "question": "Combien de pattes a une araignee ?",
+      "answers": {
+        "6": false,
+        "8": true,
+        "10": false,
+        "12": false
+      },
+      "correctAnswer": "8"
+    },
+    {
+      "question": "Que mesure un thermometre ?",
+      "answers": {
+        "La temperature": true,
+        "Le volume": false,
+        "Le poids": false,
+        "La pression": false
+      },
+      "correctAnswer": "La temperature"
+    },
+    {
+      "question": "Combien de dents possede un humain adulte ?",
+      "answers": {
+        "28": false,
+        "32": true,
+        "36": false,
+        "30": false
+      },
+      "correctAnswer": "32"
+    },
+    {
+      "question": "Quel est le metal le plus cher ?",
+      "answers": {
+        "Le radium": true,
+        "L'or": false,
+        "Le platine": false,
+        "L'argent": false
+      },
+      "correctAnswer": "Le radium"
+    },
+    {
+      "question": "Quel gaz est utilise pour eteindre le feu ?",
+      "answers": {
+        "Le gaz carbonique": true,
+        "L'oxygene": false,
+        "L'azote": false,
+        "L'helium": false
+      },
+      "correctAnswer": "Le gaz carbonique"
+    },
+    {
+      "question": "Quelle est la plus grande creature du monde ?",
+      "answers": {
+        "La baleine bleue": true,
+        "L'elephant": false,
+        "La girafe": false,
+        "Le rhinoceros": false
+      },
+      "correctAnswer": "La baleine bleue"
+    },
+    {
+      "question": "Quel est l'animal le plus intelligent au monde ?",
+      "answers": {
+        "Le poulpe": true,
+        "Le dauphin": false,
+        "Le chimpanze": false,
+        "L'elephant": false
+      },
+      "correctAnswer": "Le poulpe"
+    },
+    {
+      "question": "De quelle couleur est le sang d'une pieuvre ?",
+      "answers": {
+        "Bleu": true,
+        "Rouge": false,
+        "Vert": false,
+        "Jaune": false
+      },
+      "correctAnswer": "Bleu"
+    }
+  ],
+  "math": [
+    {
+      "question": "Combien font 2 + 2 ?",
+      "answers": {
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": false
+      },
+      "correctAnswer": "4"
+    },
+    {
+      "question": "Quel est le resultat de 5 x 5 ?",
+      "answers": {
+        "20": false,
+        "25": true,
+        "30": false,
+        "35": false
+      },
+      "correctAnswer": "25"
+    },
+    {
+      "question": "Combien d'heures dans une journee ?",
+      "answers": {
+        "12": false,
+        "24": true,
+        "48": false,
+        "36": false
+      },
+      "correctAnswer": "24"
+    },
+    {
+      "question": "Quel est le double de 10 ?",
+      "answers": {
+        "15": false,
+        "20": true,
+        "25": false,
+        "30": false
+      },
+      "correctAnswer": "20"
+    },
+    {
+      "question": "Combien de cotes a un carre ?",
+      "answers": {
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": false
+      },
+      "correctAnswer": "4"
+    },
+    {
+      "question": "Quel est le resultat de 15 - 7 ?",
+      "answers": {
+        "6": false,
+        "7": false,
+        "8": true,
+        "9": false
+      },
+      "correctAnswer": "8"
+    },
+    {
+      "question": "Combien de minutes dans une heure ?",
+      "answers": {
+        "30": false,
+        "45": false,
+        "60": true,
+        "90": false
+      },
+      "correctAnswer": "60"
+    },
+    {
+      "question": "Quel est le triple de 6 ?",
+      "answers": {
+        "12": false,
+        "18": true,
+        "24": false,
+        "30": false
+      },
+      "correctAnswer": "18"
+    },
+    {
+      "question": "Combien de jours dans une semaine ?",
+      "answers": {
+        "5": false,
+        "6": false,
+        "7": true,
+        "8": false
+      },
+      "correctAnswer": "7"
+    },
+    {
+      "question": "Quel est le resultat de 100 ÷ 4 ?",
+      "answers": {
+        "20": false,
+        "25": true,
+        "30": false,
+        "35": false
+      },
+      "correctAnswer": "25"
+    }
+  ],
+  "africa": [
+    {
+      "question": "Quel est le plus grand pays d'Afrique ?",
+      "answers": {
+        "Algerie": true,
+        "Congo": false,
+        "Soudan": false,
+        "Libye": false
+      },
+      "correctAnswer": "Algerie"
+    },
+    {
+      "question": "Quel fleuve traverse l'Egypte ?",
+      "answers": {
+        "Le Nil": true,
+        "Le Congo": false,
+        "Le Niger": false,
+        "Le Zambeze": false
+      },
+      "correctAnswer": "Le Nil"
+    },
+    {
+      "question": "Quelle est la capitale de l'Afrique du Sud ?",
+      "answers": {
+        "Le Cap": false,
+        "Pretoria": true,
+        "Johannesburg": false,
+        "Durban": false
+      },
+      "correctAnswer": "Pretoria"
+    },
+    {
+      "question": "Quel animal est le symbole de l'Afrique ?",
+      "answers": {
+        "Le lion": true,
+        "L'elephant": false,
+        "La girafe": false,
+        "Le rhinoceros": false
+      },
+      "correctAnswer": "Le lion"
+    },
+    {
+      "question": "Quel desert couvre une grande partie de l'Afrique du Nord ?",
+      "answers": {
+        "Le Sahara": true,
+        "Le Kalahari": false,
+        "Le Namib": false,
+        "Le Sahel": false
+      },
+      "correctAnswer": "Le Sahara"
+    },
+    {
+      "question": "Quel est le plus haut sommet d'Afrique ?",
+      "answers": {
+        "Le Kilimandjaro": true,
+        "Le Mont Kenya": false,
+        "Le Mont Elgon": false,
+        "Le Mont Meru": false
+      },
+      "correctAnswer": "Le Kilimandjaro"
+    },
+    {
+      "question": "Quel pays africain a la forme d'une botte ?",
+      "answers": {
+        "La Somalie": true,
+        "L'Ethiopie": false,
+        "Le Kenya": false,
+        "La Tanzanie": false
+      },
+      "correctAnswer": "La Somalie"
+    },
+    {
+      "question": "Quel est le plus grand lac d'Afrique ?",
+      "answers": {
+        "Le lac Victoria": true,
+        "Le lac Tanganyika": false,
+        "Le lac Malawi": false,
+        "Le lac Tchad": false
+      },
+      "correctAnswer": "Le lac Victoria"
+    },
+    {
+      "question": "Quel pays africain est surnomme 'le pays des mille collines' ?",
+      "answers": {
+        "Le Rwanda": true,
+        "Le Burundi": false,
+        "L'Ouganda": false,
+        "Le Kenya": false
+      },
+      "correctAnswer": "Le Rwanda"
+    },
+    {
+      "question": "Quel est le plus petit pays d'Afrique ?",
+      "answers": {
+        "Les Seychelles": true,
+        "Le Cap-Vert": false,
+        "Les Comores": false,
+        "Maurice": false
+      },
+      "correctAnswer": "Les Seychelles"
+    }
+  ]
+} 

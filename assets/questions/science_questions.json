@@ -1,0 +1,542 @@
+[
+  {
+    "question": "Quel est le symbole chimique de l'or ?",
+    "answers": {
+      "Au": true,
+      "Ag": false,
+      "Fe": false,
+      "Cu": false
+    },
+    "correctAnswer": "Au"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'argent ?",
+    "answers": {
+      "Ag": true,
+      "Au": false,
+      "Fe": false,
+      "Cu": false
+    },
+    "correctAnswer": "Ag"
+  },
+  {
+    "question": "Quel est le symbole chimique du fer ?",
+    "answers": {
+      "Fe": true,
+      "Au": false,
+      "Ag": false,
+      "Cu": false
+    },
+    "correctAnswer": "Fe"
+  },
+  {
+    "question": "Quel est le symbole chimique du cuivre ?",
+    "answers": {
+      "Cu": true,
+      "Au": false,
+      "Ag": false,
+      "Fe": false
+    },
+    "correctAnswer": "Cu"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'oxygene ?",
+    "answers": {
+      "O": true,
+      "N": false,
+      "C": false,
+      "H": false
+    },
+    "correctAnswer": "O"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'azote ?",
+    "answers": {
+      "N": true,
+      "O": false,
+      "C": false,
+      "H": false
+    },
+    "correctAnswer": "N"
+  },
+  {
+    "question": "Quel est le symbole chimique du carbone ?",
+    "answers": {
+      "C": true,
+      "O": false,
+      "N": false,
+      "H": false
+    },
+    "correctAnswer": "C"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'hydrogene ?",
+    "answers": {
+      "H": true,
+      "O": false,
+      "N": false,
+      "C": false
+    },
+    "correctAnswer": "H"
+  },
+  {
+    "question": "Quel est le symbole chimique du sodium ?",
+    "answers": {
+      "Na": true,
+      "K": false,
+      "Ca": false,
+      "Mg": false
+    },
+    "correctAnswer": "Na"
+  },
+  {
+    "question": "Quel est le symbole chimique du potassium ?",
+    "answers": {
+      "K": true,
+      "Na": false,
+      "Ca": false,
+      "Mg": false
+    },
+    "correctAnswer": "K"
+  },
+  {
+    "question": "Quel est le symbole chimique du calcium ?",
+    "answers": {
+      "Ca": true,
+      "Na": false,
+      "K": false,
+      "Mg": false
+    },
+    "correctAnswer": "Ca"
+  },
+  {
+    "question": "Quel est le symbole chimique du magnesium ?",
+    "answers": {
+      "Mg": true,
+      "Na": false,
+      "K": false,
+      "Ca": false
+    },
+    "correctAnswer": "Mg"
+  },
+  {
+    "question": "Quel est le symbole chimique du chlore ?",
+    "answers": {
+      "Cl": true,
+      "F": false,
+      "Br": false,
+      "I": false
+    },
+    "correctAnswer": "Cl"
+  },
+  {
+    "question": "Quel est le symbole chimique du fluor ?",
+    "answers": {
+      "F": true,
+      "Cl": false,
+      "Br": false,
+      "I": false
+    },
+    "correctAnswer": "F"
+  },
+  {
+    "question": "Quel est le symbole chimique du brome ?",
+    "answers": {
+      "Br": true,
+      "F": false,
+      "Cl": false,
+      "I": false
+    },
+    "correctAnswer": "Br"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'iode ?",
+    "answers": {
+      "I": true,
+      "F": false,
+      "Cl": false,
+      "Br": false
+    },
+    "correctAnswer": "I"
+  },
+  {
+    "question": "Quel est le symbole chimique du soufre ?",
+    "answers": {
+      "S": true,
+      "P": false,
+      "Si": false,
+      "Se": false
+    },
+    "correctAnswer": "S"
+  },
+  {
+    "question": "Quel est le symbole chimique du phosphore ?",
+    "answers": {
+      "P": true,
+      "S": false,
+      "Si": false,
+      "Se": false
+    },
+    "correctAnswer": "P"
+  },
+  {
+    "question": "Quel est le symbole chimique du silicium ?",
+    "answers": {
+      "Si": true,
+      "S": false,
+      "P": false,
+      "Se": false
+    },
+    "correctAnswer": "Si"
+  },
+  {
+    "question": "Quel est le symbole chimique du selenium ?",
+    "answers": {
+      "Se": true,
+      "S": false,
+      "P": false,
+      "Si": false
+    },
+    "correctAnswer": "Se"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'aluminium ?",
+    "answers": {
+      "Al": true,
+      "Ga": false,
+      "In": false,
+      "Tl": false
+    },
+    "correctAnswer": "Al"
+  },
+  {
+    "question": "Quel est le symbole chimique du gallium ?",
+    "answers": {
+      "Ga": true,
+      "Al": false,
+      "In": false,
+      "Tl": false
+    },
+    "correctAnswer": "Ga"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'indium ?",
+    "answers": {
+      "In": true,
+      "Al": false,
+      "Ga": false,
+      "Tl": false
+    },
+    "correctAnswer": "In"
+  },
+  {
+    "question": "Quel est le symbole chimique du thallium ?",
+    "answers": {
+      "Tl": true,
+      "Al": false,
+      "Ga": false,
+      "In": false
+    },
+    "correctAnswer": "Tl"
+  },
+  {
+    "question": "Quel est le symbole chimique du zinc ?",
+    "answers": {
+      "Zn": true,
+      "Cd": false,
+      "Hg": false,
+      "Pb": false
+    },
+    "correctAnswer": "Zn"
+  },
+  {
+    "question": "Quel est le symbole chimique du cadmium ?",
+    "answers": {
+      "Cd": true,
+      "Zn": false,
+      "Hg": false,
+      "Pb": false
+    },
+    "correctAnswer": "Cd"
+  },
+  {
+    "question": "Quel est le symbole chimique du mercure ?",
+    "answers": {
+      "Hg": true,
+      "Zn": false,
+      "Cd": false,
+      "Pb": false
+    },
+    "correctAnswer": "Hg"
+  },
+  {
+    "question": "Quel est le symbole chimique du plomb ?",
+    "answers": {
+      "Pb": true,
+      "Zn": false,
+      "Cd": false,
+      "Hg": false
+    },
+    "correctAnswer": "Pb"
+  },
+  {
+    "question": "Quel est le symbole chimique du nickel ?",
+    "answers": {
+      "Ni": true,
+      "Co": false,
+      "Pt": false,
+      "Pd": false
+    },
+    "correctAnswer": "Ni"
+  },
+  {
+    "question": "Quel est le symbole chimique du cobalt ?",
+    "answers": {
+      "Co": true,
+      "Ni": false,
+      "Pt": false,
+      "Pd": false
+    },
+    "correctAnswer": "Co"
+  },
+  {
+    "question": "Quel est le symbole chimique du platine ?",
+    "answers": {
+      "Pt": true,
+      "Ni": false,
+      "Co": false,
+      "Pd": false
+    },
+    "correctAnswer": "Pt"
+  },
+  {
+    "question": "Quel est le symbole chimique du palladium ?",
+    "answers": {
+      "Pd": true,
+      "Ni": false,
+      "Co": false,
+      "Pt": false
+    },
+    "correctAnswer": "Pd"
+  },
+  {
+    "question": "Quel est le symbole chimique du chrome ?",
+    "answers": {
+      "Cr": true,
+      "Mo": false,
+      "W": false,
+      "V": false
+    },
+    "correctAnswer": "Cr"
+  },
+  {
+    "question": "Quel est le symbole chimique du molybdene ?",
+    "answers": {
+      "Mo": true,
+      "Cr": false,
+      "W": false,
+      "V": false
+    },
+    "correctAnswer": "Mo"
+  },
+  {
+    "question": "Quel est le symbole chimique du tungstene ?",
+    "answers": {
+      "W": true,
+      "Cr": false,
+      "Mo": false,
+      "V": false
+    },
+    "correctAnswer": "W"
+  },
+  {
+    "question": "Quel est le symbole chimique du vanadium ?",
+    "answers": {
+      "V": true,
+      "Cr": false,
+      "Mo": false,
+      "W": false
+    },
+    "correctAnswer": "V"
+  },
+  {
+    "question": "Quel est le symbole chimique du manganese ?",
+    "answers": {
+      "Mn": true,
+      "Tc": false,
+      "Re": false,
+      "Fe": false
+    },
+    "correctAnswer": "Mn"
+  },
+  {
+    "question": "Quel est le symbole chimique du technetium ?",
+    "answers": {
+      "Tc": true,
+      "Mn": false,
+      "Re": false,
+      "Fe": false
+    },
+    "correctAnswer": "Tc"
+  },
+  {
+    "question": "Quel est le symbole chimique du rhenium ?",
+    "answers": {
+      "Re": true,
+      "Mn": false,
+      "Tc": false,
+      "Fe": false
+    },
+    "correctAnswer": "Re"
+  },
+  {
+    "question": "Quel est le symbole chimique du titane ?",
+    "answers": {
+      "Ti": true,
+      "Zr": false,
+      "Hf": false,
+      "V": false
+    },
+    "correctAnswer": "Ti"
+  },
+  {
+    "question": "Quel est le symbole chimique du zirconium ?",
+    "answers": {
+      "Zr": true,
+      "Ti": false,
+      "Hf": false,
+      "V": false
+    },
+    "correctAnswer": "Zr"
+  },
+  {
+    "question": "Quel est le symbole chimique du hafnium ?",
+    "answers": {
+      "Hf": true,
+      "Ti": false,
+      "Zr": false,
+      "V": false
+    },
+    "correctAnswer": "Hf"
+  },
+  {
+    "question": "Quel est le symbole chimique du scandium ?",
+    "answers": {
+      "Sc": true,
+      "Y": false,
+      "La": false,
+      "Ac": false
+    },
+    "correctAnswer": "Sc"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'yttrium ?",
+    "answers": {
+      "Y": true,
+      "Sc": false,
+      "La": false,
+      "Ac": false
+    },
+    "correctAnswer": "Y"
+  },
+  {
+    "question": "Quel est le symbole chimique du lanthane ?",
+    "answers": {
+      "La": true,
+      "Sc": false,
+      "Y": false,
+      "Ac": false
+    },
+    "correctAnswer": "La"
+  },
+  {
+    "question": "Quel est le symbole chimique de l'actinium ?",
+    "answers": {
+      "Ac": true,
+      "Sc": false,
+      "Y": false,
+      "La": false
+    },
+    "correctAnswer": "Ac"
+  },
+  {
+    "question": "Quel est le symbole chimique du lithium ?",
+    "answers": {
+      "Li": true,
+      "Na": false,
+      "K": false,
+      "Rb": false
+    },
+    "correctAnswer": "Li"
+  },
+  {
+    "question": "Quel est le symbole chimique du rubidium ?",
+    "answers": {
+      "Rb": true,
+      "Li": false,
+      "Na": false,
+      "K": false
+    },
+    "correctAnswer": "Rb"
+  },
+  {
+    "question": "Quel est le symbole chimique du cesium ?",
+    "answers": {
+      "Cs": true,
+      "Li": false,
+      "Na": false,
+      "K": false
+    },
+    "correctAnswer": "Cs"
+  },
+  {
+    "question": "Quel est le symbole chimique du francium ?",
+    "answers": {
+      "Fr": true,
+      "Li": false,
+      "Na": false,
+      "K": false
+    },
+    "correctAnswer": "Fr"
+  },
+  {
+    "question": "Quel est le symbole chimique du beryllium ?",
+    "answers": {
+      "Be": true,
+      "Mg": false,
+      "Ca": false,
+      "Sr": false
+    },
+    "correctAnswer": "Be"
+  },
+  {
+    "question": "Quel est le symbole chimique du strontium ?",
+    "answers": {
+      "Sr": true,
+      "Be": false,
+      "Mg": false,
+      "Ca": false
+    },
+    "correctAnswer": "Sr"
+  },
+  {
+    "question": "Quel est le symbole chimique du baryum ?",
+    "answers": {
+      "Ba": true,
+      "Be": false,
+      "Mg": false,
+      "Ca": false
+    },
+    "correctAnswer": "Ba"
+  },
+  {
+    "question": "Quel est le symbole chimique du radium ?",
+    "answers": {
+      "Ra": true,
+      "Be": false,
+      "Mg": false,
+      "Ca": false
+    },
+    "correctAnswer": "Ra"
+  }
+] 

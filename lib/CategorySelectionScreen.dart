@@ -1,53 +1,81 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'services/question_service.dart';
 import 'dart:math';
 
 class CategorySelectionScreen extends StatefulWidget {
   final Function(String) onCategorySelected;
 
-  const CategorySelectionScreen({required this.onCategorySelected, Key? key}) : super(key: key);
+  const CategorySelectionScreen({required this.onCategorySelected, Key? key})
+      : super(key: key);
 
   @override
-  State<CategorySelectionScreen> createState() => _CategorySelectionScreenState();
+  State<CategorySelectionScreen> createState() =>
+      _CategorySelectionScreenState();
 }
 
-class _CategorySelectionScreenState extends State<CategorySelectionScreen> with SingleTickerProviderStateMixin {
-  final List<Map<String, dynamic>> categories = [
-    {
-      "title": "Sciences",
-      "icon": LucideIcons.atom,
-      "description": "Explore les mystères de la nature et de l'univers.",
-      "difficulty": "Moyen",
-    },
-    {
-      "title": "Culture générale",
-      "icon": LucideIcons.globe,
-      "description": "Testez vos connaissances sur le monde qui vous entoure.",
-      "difficulty": "Facile",
-    },
-    {
-      "title": "Mathématiques",
-      "icon": LucideIcons.functionSquare,
-      "description": "Résous des énigmes et des calculs ludiques.",
-      "difficulty": "Difficile",
-    },
-    // Tu peux ajouter d'autres catégories ici...
-  ];
-
-  late AnimationController _controller;
-  late Animation<double> _fadeAnimation;
-  String searchQuery = '';
+class _CategorySelectionScreenState extends State<CategorySelectionScreen>
+    with SingleTickerProviderStateMixin {
+  List<Map<String, dynamic>> categories = [];
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
-    _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeIn,
-    ));
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 700),
+    );
+    _fadeAnimation = Tween<double>(
+      begin: 0,
+      end: 1,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeIn));
+    _initializeCategories();
     _controller.forward();
   }
+
+  Future<void> _initializeCategories() async {
+    await QuestionService.loadQuestions();
+
+    setState(() {
+      categories = [
+        {
+          "title": "Histoire du Mali",
+          "icon": Icons.history_edu,
+          "description": "Découvrez l'histoire riche et fascinante du Mali.",
+          "difficulty": "Moyen",
+        },
+        {
+          "title": "Culture générale",
+          "icon": Icons.public,
+          "description":
+              "Testez vos connaissances sur le monde qui vous entoure.",
+          "difficulty": "Facile",
+        },
+        {
+          "title": "Sciences",
+          "icon": Icons.science,
+          "description": "Explore les mystères de la nature et de l'univers.",
+          "difficulty": "Moyen",
+        },
+        {
+          "title": "Mathématiques",
+          "icon": Icons.functions,
+          "description": "Résous des énigmes et des calculs ludiques.",
+          "difficulty": "Difficile",
+        },
+        {
+          "title": "Afrique",
+          "icon": Icons.map,
+          "description":
+              "Découvrez la géographie et l'histoire du continent africain.",
+          "difficulty": "Facile",
+        },
+      ];
+    });
+  }
+
+  late AnimationController _controller;
+  late Animation<double> _fadeAnimation;
+  String searchQuery = '';
 
   @override
   void dispose() {
@@ -57,7 +85,13 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> with 
 
   void _launchRandomCategory() {
     final random = Random();
-    final filtered = categories.where((cat) => cat['title'].toLowerCase().contains(searchQuery.toLowerCase())).toList();
+    final filtered = categories
+        .where(
+          (cat) => cat['title'].toLowerCase().contains(
+                searchQuery.toLowerCase(),
+              ),
+        )
+        .toList();
     if (filtered.isNotEmpty) {
       final randomCategory = filtered[random.nextInt(filtered.length)];
       widget.onCategorySelected(randomCategory['title']);
@@ -67,7 +101,11 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> with 
   @override
   Widget build(BuildContext context) {
     final filteredCategories = categories
-        .where((cat) => cat['title'].toLowerCase().contains(searchQuery.toLowerCase()))
+        .where(
+          (cat) => cat['title'].toLowerCase().contains(
+                searchQuery.toLowerCase(),
+              ),
+        )
         .toList();
 
     return Scaffold(
@@ -83,7 +121,10 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> with 
           child: FadeTransition(
             opacity: _fadeAnimation,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20.0,
+                vertical: 30.0,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -124,13 +165,21 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> with 
                     icon: const Icon(Icons.shuffle, color: Colors.white),
                     label: const Text(
                       "Catégorie surprise",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orangeAccent,
                       foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 20,
+                        vertical: 12,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
                   ),
                   const SizedBox(height: 20),
@@ -145,7 +194,8 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen> with 
                           icon: category['icon'],
                           description: category['description'],
                           difficulty: category['difficulty'],
-                          onTap: () => widget.onCategorySelected(category['title']),
+                          onTap: () =>
+                              widget.onCategorySelected(category['title']),
                         );
                       },
                     ),

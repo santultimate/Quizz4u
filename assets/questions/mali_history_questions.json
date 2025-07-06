@@ -1,0 +1,452 @@
+[
+  {
+    "question": "En quelle annee le Mali a-t-il obtenu son independance ?",
+    "answers": {
+      "1958": false,
+      "1960": true,
+      "1962": false,
+      "1965": false
+    },
+    "correctAnswer": "1960"
+  },
+  {
+    "question": "Quel etait le nom de l'empire medieval qui a domine l'Afrique de l'Ouest ?",
+    "answers": {
+      "Empire du Ghana": false,
+      "Empire du Mali": true,
+      "Empire Songhai": false,
+      "Empire du Kanem": false
+    },
+    "correctAnswer": "Empire du Mali"
+  },
+  {
+    "question": "Qui etait le plus celebre empereur de l'Empire du Mali ?",
+    "answers": {
+      "Sundiata Keita": false,
+      "Mansa Moussa": true,
+      "Sonni Ali": false,
+      "Askia Mohammed": false
+    },
+    "correctAnswer": "Mansa Moussa"
+  },
+  {
+    "question": "Quelle etait la capitale de l'Empire du Mali ?",
+    "answers": {
+      "Tombouctou": false,
+      "Gao": false,
+      "Niani": true,
+      "Djenne": false
+    },
+    "correctAnswer": "Niani"
+  },
+  {
+    "question": "En quelle annee Mansa Moussa a-t-il effectue son celebre pelerinage a La Mecque ?",
+    "answers": {
+      "1324": true,
+      "1300": false,
+      "1350": false,
+      "1400": false
+    },
+    "correctAnswer": "1324"
+  },
+  {
+    "question": "Quel fleuve traverse le Mali du nord au sud ?",
+    "answers": {
+      "Le Niger": true,
+      "Le Senegal": false,
+      "Le Congo": false,
+      "Le Nil": false
+    },
+    "correctAnswer": "Le Niger"
+  },
+  {
+    "question": "Quelle ville malienne est surnommee \"la perle du desert\" ?",
+    "answers": {
+      "Bamako": false,
+      "Tombouctou": true,
+      "Gao": false,
+      "Mopti": false
+    },
+    "correctAnswer": "Tombouctou"
+  },
+  {
+    "question": "Quel etait le premier president du Mali independant ?",
+    "answers": {
+      "Modibo Keita": true,
+      "Moussa Traore": false,
+      "Alpha Oumar Konare": false,
+      "Amadou Toumani Toure": false
+    },
+    "correctAnswer": "Modibo Keita"
+  },
+  {
+    "question": "En quelle annee la democratie a-t-elle ete retablie au Mali ?",
+    "answers": {
+      "1990": false,
+      "1991": false,
+      "1992": true,
+      "1993": false
+    },
+    "correctAnswer": "1992"
+  },
+  {
+    "question": "Quel est le nom de la grande mosquee de Djenne ?",
+    "answers": {
+      "Mosquee de Djenne": false,
+      "Grande Mosquee de Djenne": true,
+      "Mosquee Royale": false,
+      "Mosquee Centrale": false
+    },
+    "correctAnswer": "Grande Mosquee de Djenne"
+  },
+  {
+    "question": "Quel etait le nom de l'empire qui a precede l'Empire du Mali ?",
+    "answers": {
+      "Empire du Ghana": true,
+      "Empire Songhai": false,
+      "Empire du Kanem": false,
+      "Empire du Bornou": false
+    },
+    "correctAnswer": "Empire du Ghana"
+  },
+  {
+    "question": "Quel etait le surnom de Mansa Moussa ?",
+    "answers": {
+      "Le Lion du Mali": false,
+      "Le Roi des Rois": true,
+      "Le Conquerant": false,
+      "Le Sage": false
+    },
+    "correctAnswer": "Le Roi des Rois"
+  },
+  {
+    "question": "Quelle etait la principale ressource economique de l'Empire du Mali ?",
+    "answers": {
+      "L'or": true,
+      "Le sel": false,
+      "Les esclaves": false,
+      "Le cuivre": false
+    },
+    "correctAnswer": "L'or"
+  },
+  {
+    "question": "Quel etait le nom de la premiere capitale du Mali independant ?",
+    "answers": {
+      "Bamako": true,
+      "Kayes": false,
+      "Segou": false,
+      "Mopti": false
+    },
+    "correctAnswer": "Bamako"
+  },
+  {
+    "question": "En quelle annee l'Empire du Mali a-t-il atteint son apogee ?",
+    "answers": {
+      "XIIIe siecle": false,
+      "XIVe siecle": true,
+      "XVe siecle": false,
+      "XVIe siecle": false
+    },
+    "correctAnswer": "XIVe siecle"
+  },
+  {
+    "question": "Quel etait le nom de la dynastie qui a fonde l'Empire du Mali ?",
+    "answers": {
+      "Dynastie Keita": true,
+      "Dynastie Traore": false,
+      "Dynastie Konare": false,
+      "Dynastie Toure": false
+    },
+    "correctAnswer": "Dynastie Keita"
+  },
+  {
+    "question": "Quelle ville etait le centre commercial le plus important de l'Empire du Mali ?",
+    "answers": {
+      "Tombouctou": true,
+      "Gao": false,
+      "Djenne": false,
+      "Niani": false
+    },
+    "correctAnswer": "Tombouctou"
+  },
+  {
+    "question": "Quel etait le nom de l'universite la plus celebre de Tombouctou ?",
+    "answers": {
+      "Universite Sankore": true,
+      "Universite Al-Azhar": false,
+      "Universite de Cordoue": false,
+      "Universite de Fez": false
+    },
+    "correctAnswer": "Universite Sankore"
+  },
+  {
+    "question": "Quel etait le nom du premier empereur de l'Empire du Mali ?",
+    "answers": {
+      "Sundiata Keita": true,
+      "Mansa Moussa": false,
+      "Sonni Ali": false,
+      "Askia Mohammed": false
+    },
+    "correctAnswer": "Sundiata Keita"
+  },
+  {
+    "question": "En quelle annee Sundiata Keita a-t-il fonde l'Empire du Mali ?",
+    "answers": {
+      "1235": true,
+      "1200": false,
+      "1250": false,
+      "1300": false
+    },
+    "correctAnswer": "1235"
+  },
+  {
+    "question": "Quel etait le nom de la bataille qui a permis a Sundiata de conquerir le pouvoir ?",
+    "answers": {
+      "Bataille de Kirina": true,
+      "Bataille de Tabou": false,
+      "Bataille de Koulikoro": false,
+      "Bataille de Segou": false
+    },
+    "correctAnswer": "Bataille de Kirina"
+  },
+  {
+    "question": "Quel etait le nom de l'empire qui a succede a l'Empire du Mali ?",
+    "answers": {
+      "Empire Songhai": true,
+      "Empire du Ghana": false,
+      "Empire du Kanem": false,
+      "Empire du Bornou": false
+    },
+    "correctAnswer": "Empire Songhai"
+  },
+  {
+    "question": "Quel etait le nom du premier president malien elu democratiquement ?",
+    "answers": {
+      "Alpha Oumar Konare": true,
+      "Modibo Keita": false,
+      "Moussa Traore": false,
+      "Amadou Toumani Toure": false
+    },
+    "correctAnswer": "Alpha Oumar Konare"
+  },
+  {
+    "question": "En quelle annee Alpha Oumar Konare a-t-il ete elu president ?",
+    "answers": {
+      "1992": true,
+      "1991": false,
+      "1993": false,
+      "1994": false
+    },
+    "correctAnswer": "1992"
+  },
+  {
+    "question": "Quel etait le nom de la constitution adoptee en 1992 au Mali ?",
+    "answers": {
+      "Constitution de la IIIe Republique": true,
+      "Constitution de la IIe Republique": false,
+      "Constitution de la IVe Republique": false,
+      "Constitution democratique": false
+    },
+    "correctAnswer": "Constitution de la IIIe Republique"
+  },
+  {
+    "question": "Quel etait le nom du premier ministre malien qui a dirige la transition democratique ?",
+    "answers": {
+      "Soumana Sacko": true,
+      "Modibo Keita": false,
+      "Alpha Oumar Konare": false,
+      "Amadou Toumani Toure": false
+    },
+    "correctAnswer": "Soumana Sacko"
+  },
+  {
+    "question": "Quel etait le nom de la region du Mali qui etait le berceau de l'Empire du Mali ?",
+    "answers": {
+      "Region de Kayes": true,
+      "Region de Tombouctou": false,
+      "Region de Gao": false,
+      "Region de Segou": false
+    },
+    "correctAnswer": "Region de Kayes"
+  },
+  {
+    "question": "Quel etait le nom de la ville qui etait la capitale religieuse de l'Empire du Mali ?",
+    "answers": {
+      "Djenne": true,
+      "Tombouctou": false,
+      "Gao": false,
+      "Niani": false
+    },
+    "correctAnswer": "Djenne"
+  },
+  {
+    "question": "Quel etait le nom de la mosquee la plus ancienne d'Afrique de l'Ouest ?",
+    "answers": {
+      "Grande Mosquee de Djenne": true,
+      "Mosquee de Tombouctou": false,
+      "Mosquee de Gao": false,
+      "Mosquee de Bamako": false
+    },
+    "correctAnswer": "Grande Mosquee de Djenne"
+  },
+  {
+    "question": "En quelle annee la Grande Mosquee de Djenne a-t-elle ete construite ?",
+    "answers": {
+      "XIIIe siecle": true,
+      "XIVe siecle": false,
+      "XVe siecle": false,
+      "XVIe siecle": false
+    },
+    "correctAnswer": "XIIIe siecle"
+  },
+  {
+    "question": "Quel etait le nom de la langue officielle de l'Empire du Mali ?",
+    "answers": {
+      "Le bambara": false,
+      "Le mandingue": true,
+      "Le songhai": false,
+      "Le peul": false
+    },
+    "correctAnswer": "Le mandingue"
+  },
+  {
+    "question": "Quel etait le nom de la monnaie utilisee dans l'Empire du Mali ?",
+    "answers": {
+      "Le cowrie": true,
+      "Le dinar": false,
+      "Le franc": false,
+      "Le dirham": false
+    },
+    "correctAnswer": "Le cowrie"
+  },
+  {
+    "question": "Quel etait le nom de la route commerciale qui traversait l'Empire du Mali ?",
+    "answers": {
+      "Route de l'or": false,
+      "Route du sel": false,
+      "Route transsaharienne": true,
+      "Route de la soie": false
+    },
+    "correctAnswer": "Route transsaharienne"
+  },
+  {
+    "question": "Quel etait le nom de la ville qui etait le centre d'apprentissage de l'Empire du Mali ?",
+    "answers": {
+      "Tombouctou": true,
+      "Djenne": false,
+      "Gao": false,
+      "Niani": false
+    },
+    "correctAnswer": "Tombouctou"
+  },
+  {
+    "question": "Quel etait le nom de la bibliotheque la plus celebre de Tombouctou ?",
+    "answers": {
+      "Bibliotheque Ahmed Baba": true,
+      "Bibliotheque Sankore": false,
+      "Bibliotheque Al-Azhar": false,
+      "Bibliotheque de Cordoue": false
+    },
+    "correctAnswer": "Bibliotheque Ahmed Baba"
+  },
+  {
+    "question": "Quel etait le nom de l'historien malien le plus celebre du XVIe siecle ?",
+    "answers": {
+      "Ahmed Baba": true,
+      "Ibn Khaldun": false,
+      "Al-Bakri": false,
+      "Ibn Battuta": false
+    },
+    "correctAnswer": "Ahmed Baba"
+  },
+  {
+    "question": "Quel etait le nom de la ville qui etait le centre militaire de l'Empire du Mali ?",
+    "answers": {
+      "Gao": true,
+      "Tombouctou": false,
+      "Djenne": false,
+      "Niani": false
+    },
+    "correctAnswer": "Gao"
+  },
+  {
+    "question": "Quel etait le nom de la dynastie qui a renverse l'Empire du Mali ?",
+    "answers": {
+      "Dynastie Sonni": true,
+      "Dynastie Askia": false,
+      "Dynastie Keita": false,
+      "Dynastie Traore": false
+    },
+    "correctAnswer": "Dynastie Sonni"
+  },
+  {
+    "question": "Quel etait le nom du premier empereur de la dynastie Sonni ?",
+    "answers": {
+      "Sonni Ali": true,
+      "Sonni Baru": false,
+      "Sonni Sulayman": false,
+      "Sonni Mohammed": false
+    },
+    "correctAnswer": "Sonni Ali"
+  },
+  {
+    "question": "En quelle annee Sonni Ali a-t-il conquis Tombouctou ?",
+    "answers": {
+      "1468": true,
+      "1460": false,
+      "1470": false,
+      "1475": false
+    },
+    "correctAnswer": "1468"
+  },
+  {
+    "question": "Quel etait le nom de la ville qui etait le centre administratif de l'Empire du Mali ?",
+    "answers": {
+      "Niani": true,
+      "Tombouctou": false,
+      "Gao": false,
+      "Djenne": false
+    },
+    "correctAnswer": "Niani"
+  },
+  {
+    "question": "Quel etait le nom de la region qui etait le grenier de l'Empire du Mali ?",
+    "answers": {
+      "Region de Segou": true,
+      "Region de Mopti": false,
+      "Region de Sikasso": false,
+      "Region de Koulikoro": false
+    },
+    "correctAnswer": "Region de Segou"
+  },
+  {
+    "question": "Quel etait le nom de la ville qui etait le centre culturel de l'Empire du Mali ?",
+    "answers": {
+      "Tombouctou": true,
+      "Djenne": false,
+      "Gao": false,
+      "Niani": false
+    },
+    "correctAnswer": "Tombouctou"
+  },
+  {
+    "question": "Quel etait le nom de l'ecrivain malien le plus celebre du XXe siecle ?",
+    "answers": {
+      "Amadou Hampate Ba": true,
+      "Modibo Keita": false,
+      "Alpha Oumar Konare": false,
+      "Amadou Toumani Toure": false
+    },
+    "correctAnswer": "Amadou Hampate Ba"
+  },
+  {
+    "question": "Quel etait le nom de l'oeuvre la plus celebre d'Amadou Hampate Ba ?",
+    "answers": {
+      "L'Etrange Destin de Wangrin": true,
+      "Les Gardiens du Temple": false,
+      "Memoires d'un Peul": false,
+      "Contes et Legendes": false
+    },
+    "correctAnswer": "L'Etrange Destin de Wangrin"
+  }
+] 

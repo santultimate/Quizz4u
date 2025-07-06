@@ -1,0 +1,522 @@
+[
+  {
+    "question": "Quel est le plus long fleuve du monde ?",
+    "answers": {
+      "Le Nil": true,
+      "L'Amazone": false,
+      "Le Mississippi": false,
+      "Le Yangtse": false
+    },
+    "correctAnswer": "Le Nil"
+  },
+  {
+    "question": "Quel est le continent sur lequel se trouve l'Etat de Palestine ?",
+    "answers": {
+      "L'Asie": true,
+      "L'Afrique": false,
+      "L'Europe": false,
+      "L'Amerique": false
+    },
+    "correctAnswer": "L'Asie"
+  },
+  {
+    "question": "Quelle est la plus grande ville du continent europeen ?",
+    "answers": {
+      "Londres": true,
+      "Paris": false,
+      "Berlin": false,
+      "Madrid": false
+    },
+    "correctAnswer": "Londres"
+  },
+  {
+    "question": "Quelle est la ville de l'amour et de la beaute ?",
+    "answers": {
+      "Paris": true,
+      "Venise": false,
+      "Rome": false,
+      "Barcelone": false
+    },
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "Combien de pays arabes y a-t-il sur le continent africain ?",
+    "answers": {
+      "Neuf pays": true,
+      "Sept pays": false,
+      "Onze pays": false,
+      "Treize pays": false
+    },
+    "correctAnswer": "Neuf pays"
+  },
+  {
+    "question": "Quels sont les types de pierres precieuses les plus solides ?",
+    "answers": {
+      "Le diamant": true,
+      "Le rubis": false,
+      "L'emeraude": false,
+      "Le saphir": false
+    },
+    "correctAnswer": "Le diamant"
+  },
+  {
+    "question": "Sur quel continent se trouve le fleuve Amazone ?",
+    "answers": {
+      "L'Amerique du Sud": true,
+      "L'Afrique": false,
+      "L'Asie": false,
+      "L'Amerique du Nord": false
+    },
+    "correctAnswer": "L'Amerique du Sud"
+  },
+  {
+    "question": "Quel pays s'appelle le pays des lapins ?",
+    "answers": {
+      "L'Espagne": true,
+      "Le Portugal": false,
+      "L'Italie": false,
+      "La France": false
+    },
+    "correctAnswer": "L'Espagne"
+  },
+  {
+    "question": "Quelle est la plus haute montagne du continent africain ?",
+    "answers": {
+      "Le Mont Kilimandjaro": true,
+      "Le Mont Kenya": false,
+      "Le Mont Elgon": false,
+      "Le Mont Meru": false
+    },
+    "correctAnswer": "Le Mont Kilimandjaro"
+  },
+  {
+    "question": "Combien de muscles dans le corps humain ?",
+    "answers": {
+      "620 muscles": true,
+      "500 muscles": false,
+      "700 muscles": false,
+      "800 muscles": false
+    },
+    "correctAnswer": "620 muscles"
+  },
+  {
+    "question": "Quelle est la capitale de la France ?",
+    "answers": {
+      "Paris": true,
+      "Lyon": false,
+      "Marseille": false,
+      "Toulouse": false
+    },
+    "correctAnswer": "Paris"
+  },
+  {
+    "question": "Quel pays a la forme d'une botte ?",
+    "answers": {
+      "L'Italie": true,
+      "L'Espagne": false,
+      "La Grece": false,
+      "Le Portugal": false
+    },
+    "correctAnswer": "L'Italie"
+  },
+  {
+    "question": "Quelle est la capitale de l'Allemagne ?",
+    "answers": {
+      "Berlin": true,
+      "Munich": false,
+      "Francfort": false,
+      "Hambourg": false
+    },
+    "correctAnswer": "Berlin"
+  },
+  {
+    "question": "Quel pays a une feuille d'erable sur son drapeau ?",
+    "answers": {
+      "Le Canada": true,
+      "Le Japon": false,
+      "Le Bresil": false,
+      "L'Australie": false
+    },
+    "correctAnswer": "Le Canada"
+  },
+  {
+    "question": "Qui a decouvert l'Amerique ?",
+    "answers": {
+      "Christophe Colomb": true,
+      "Marco Polo": false,
+      "Vasco de Gama": false,
+      "Amerigo Vespucci": false
+    },
+    "correctAnswer": "Christophe Colomb"
+  },
+  {
+    "question": "Quelle est la plus grande ville du monde ?",
+    "answers": {
+      "Tokyo": true,
+      "New York": false,
+      "Shanghai": false,
+      "Mexico": false
+    },
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "Quel est le plus grand ocean du monde ?",
+    "answers": {
+      "L'ocean Pacifique": true,
+      "L'ocean Atlantique": false,
+      "L'ocean Indien": false,
+      "L'ocean Arctique": false
+    },
+    "correctAnswer": "L'ocean Pacifique"
+  },
+  {
+    "question": "Quelle est la plus haute montagne du monde ?",
+    "answers": {
+      "L'Everest": true,
+      "Le K2": false,
+      "Le Kangchenjunga": false,
+      "Le Lhotse": false
+    },
+    "correctAnswer": "L'Everest"
+  },
+  {
+    "question": "Quel est le plus grand desert du monde ?",
+    "answers": {
+      "Le Sahara": true,
+      "Le desert de Gobi": false,
+      "Le desert d'Arabie": false,
+      "Le desert du Kalahari": false
+    },
+    "correctAnswer": "Le Sahara"
+  },
+  {
+    "question": "Quelle est la capitale du Japon ?",
+    "answers": {
+      "Tokyo": true,
+      "Osaka": false,
+      "Kyoto": false,
+      "Yokohama": false
+    },
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "question": "Quel est le plus grand pays du monde ?",
+    "answers": {
+      "La Russie": true,
+      "Le Canada": false,
+      "La Chine": false,
+      "Les Etats-Unis": false
+    },
+    "correctAnswer": "La Russie"
+  },
+  {
+    "question": "Quelle est la capitale de l'Australie ?",
+    "answers": {
+      "Canberra": true,
+      "Sydney": false,
+      "Melbourne": false,
+      "Brisbane": false
+    },
+    "correctAnswer": "Canberra"
+  },
+  {
+    "question": "Quel est le plus petit pays du monde ?",
+    "answers": {
+      "Le Vatican": true,
+      "Monaco": false,
+      "Saint-Marin": false,
+      "Liechtenstein": false
+    },
+    "correctAnswer": "Le Vatican"
+  },
+  {
+    "question": "Quelle est la capitale de la Chine ?",
+    "answers": {
+      "Pekin": true,
+      "Shanghai": false,
+      "Hong Kong": false,
+      "Canton": false
+    },
+    "correctAnswer": "Pekin"
+  },
+  {
+    "question": "Quel est le plus grand lac du monde ?",
+    "answers": {
+      "La mer Caspienne": true,
+      "Le lac Superieur": false,
+      "Le lac Victoria": false,
+      "Le lac Baikal": false
+    },
+    "correctAnswer": "La mer Caspienne"
+  },
+  {
+    "question": "Quelle est la capitale de l'Inde ?",
+    "answers": {
+      "New Delhi": true,
+      "Mumbai": false,
+      "Calcutta": false,
+      "Chennai": false
+    },
+    "correctAnswer": "New Delhi"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Amerique du Sud ?",
+    "answers": {
+      "Le Bresil": true,
+      "L'Argentine": false,
+      "Le Perou": false,
+      "La Colombie": false
+    },
+    "correctAnswer": "Le Bresil"
+  },
+  {
+    "question": "Quelle est la capitale du Bresil ?",
+    "answers": {
+      "Brasilia": true,
+      "Sao Paulo": false,
+      "Rio de Janeiro": false,
+      "Salvador": false
+    },
+    "correctAnswer": "Brasilia"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Afrique ?",
+    "answers": {
+      "L'Algerie": true,
+      "La Republique democratique du Congo": false,
+      "Le Soudan": false,
+      "La Libye": false
+    },
+    "correctAnswer": "L'Algerie"
+  },
+  {
+    "question": "Quelle est la capitale de l'Afrique du Sud ?",
+    "answers": {
+      "Pretoria": true,
+      "Le Cap": false,
+      "Johannesburg": false,
+      "Durban": false
+    },
+    "correctAnswer": "Pretoria"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Europe ?",
+    "answers": {
+      "L'Ukraine": true,
+      "La France": false,
+      "L'Espagne": false,
+      "L'Allemagne": false
+    },
+    "correctAnswer": "L'Ukraine"
+  },
+  {
+    "question": "Quelle est la capitale de l'Ukraine ?",
+    "answers": {
+      "Kiev": true,
+      "Kharkiv": false,
+      "Odessa": false,
+      "Dnipro": false
+    },
+    "correctAnswer": "Kiev"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Asie ?",
+    "answers": {
+      "La Chine": true,
+      "L'Inde": false,
+      "Le Kazakhstan": false,
+      "L'Arabie saoudite": false
+    },
+    "correctAnswer": "La Chine"
+  },
+  {
+    "question": "Quelle est la capitale de l'Egypte ?",
+    "answers": {
+      "Le Caire": true,
+      "Alexandrie": false,
+      "Gizeh": false,
+      "Louxor": false
+    },
+    "correctAnswer": "Le Caire"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Amerique du Nord ?",
+    "answers": {
+      "Le Canada": true,
+      "Les Etats-Unis": false,
+      "Le Mexique": false,
+      "Le Groenland": false
+    },
+    "correctAnswer": "Le Canada"
+  },
+  {
+    "question": "Quelle est la capitale du Canada ?",
+    "answers": {
+      "Ottawa": true,
+      "Toronto": false,
+      "Montreal": false,
+      "Vancouver": false
+    },
+    "correctAnswer": "Ottawa"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Oceanie ?",
+    "answers": {
+      "L'Australie": true,
+      "La Papouasie-Nouvelle-Guinee": false,
+      "La Nouvelle-Zelande": false,
+      "Les Fidji": false
+    },
+    "correctAnswer": "L'Australie"
+  },
+  {
+    "question": "Quelle est la capitale de la Nouvelle-Zelande ?",
+    "answers": {
+      "Wellington": true,
+      "Auckland": false,
+      "Christchurch": false,
+      "Hamilton": false
+    },
+    "correctAnswer": "Wellington"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Amerique centrale ?",
+    "answers": {
+      "Le Nicaragua": true,
+      "Le Honduras": false,
+      "Le Guatemala": false,
+      "Le Costa Rica": false
+    },
+    "correctAnswer": "Le Nicaragua"
+  },
+  {
+    "question": "Quelle est la capitale du Nicaragua ?",
+    "answers": {
+      "Managua": true,
+      "Leon": false,
+      "Granada": false,
+      "Masaya": false
+    },
+    "correctAnswer": "Managua"
+  },
+  {
+    "question": "Quel est le plus grand pays des Caraibes ?",
+    "answers": {
+      "Cuba": true,
+      "La Jamaique": false,
+      "Hispaniola": false,
+      "Porto Rico": false
+    },
+    "correctAnswer": "Cuba"
+  },
+  {
+    "question": "Quelle est la capitale de Cuba ?",
+    "answers": {
+      "La Havane": true,
+      "Santiago de Cuba": false,
+      "Camaguey": false,
+      "Holguin": false
+    },
+    "correctAnswer": "La Havane"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Amerique du Sud par population ?",
+    "answers": {
+      "Le Bresil": true,
+      "L'Argentine": false,
+      "La Colombie": false,
+      "Le Perou": false
+    },
+    "correctAnswer": "Le Bresil"
+  },
+  {
+    "question": "Quelle est la capitale de l'Argentine ?",
+    "answers": {
+      "Buenos Aires": true,
+      "Cordoba": false,
+      "Rosario": false,
+      "Mendoza": false
+    },
+    "correctAnswer": "Buenos Aires"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Afrique par population ?",
+    "answers": {
+      "Le Nigeria": true,
+      "L'Ethiopie": false,
+      "L'Egypte": false,
+      "La Republique democratique du Congo": false
+    },
+    "correctAnswer": "Le Nigeria"
+  },
+  {
+    "question": "Quelle est la capitale du Nigeria ?",
+    "answers": {
+      "Abuja": true,
+      "Lagos": false,
+      "Kano": false,
+      "Ibadan": false
+    },
+    "correctAnswer": "Abuja"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Asie par population ?",
+    "answers": {
+      "La Chine": true,
+      "L'Inde": false,
+      "L'Indonesie": false,
+      "Le Pakistan": false
+    },
+    "correctAnswer": "La Chine"
+  },
+  {
+    "question": "Quelle est la capitale de l'Indonesie ?",
+    "answers": {
+      "Jakarta": true,
+      "Surabaya": false,
+      "Bandung": false,
+      "Medan": false
+    },
+    "correctAnswer": "Jakarta"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Europe par population ?",
+    "answers": {
+      "La Russie": true,
+      "L'Allemagne": false,
+      "La France": false,
+      "Le Royaume-Uni": false
+    },
+    "correctAnswer": "La Russie"
+  },
+  {
+    "question": "Quelle est la capitale de la Russie ?",
+    "answers": {
+      "Moscou": true,
+      "Saint-Petersbourg": false,
+      "Novossibirsk": false,
+      "Ekaterinbourg": false
+    },
+    "correctAnswer": "Moscou"
+  },
+  {
+    "question": "Quel est le plus grand pays d'Amerique du Nord par population ?",
+    "answers": {
+      "Les Etats-Unis": true,
+      "Le Canada": false,
+      "Le Mexique": false,
+      "Le Groenland": false
+    },
+    "correctAnswer": "Les Etats-Unis"
+  },
+  {
+    "question": "Quelle est la capitale des Etats-Unis ?",
+    "answers": {
+      "Washington D.C.": true,
+      "New York": false,
+      "Los Angeles": false,
+      "Chicago": false
+    },
+    "correctAnswer": "Washington D.C."
+  }
+] 

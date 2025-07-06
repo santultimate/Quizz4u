@@ -1,0 +1,402 @@
+[
+  {
+    "question": "Quel est le resultat de 2 + 2 ?",
+    "answers": {
+      "3": false,
+      "4": true,
+      "5": false,
+      "6": false
+    },
+    "correctAnswer": "4"
+  },
+  {
+    "question": "Quel est le resultat de 5 x 6 ?",
+    "answers": {
+      "25": false,
+      "30": true,
+      "35": false,
+      "40": false
+    },
+    "correctAnswer": "30"
+  },
+  {
+    "question": "Quel est le resultat de 15 - 7 ?",
+    "answers": {
+      "6": false,
+      "7": false,
+      "8": true,
+      "9": false
+    },
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Quel est le resultat de 20 ÷ 4 ?",
+    "answers": {
+      "4": false,
+      "5": true,
+      "6": false,
+      "8": false
+    },
+    "correctAnswer": "5"
+  },
+  {
+    "question": "Quel est le carre de 5 ?",
+    "answers": {
+      "20": false,
+      "25": true,
+      "30": false,
+      "35": false
+    },
+    "correctAnswer": "25"
+  },
+  {
+    "question": "Quel est le carre de 8 ?",
+    "answers": {
+      "56": false,
+      "64": true,
+      "72": false,
+      "80": false
+    },
+    "correctAnswer": "64"
+  },
+  {
+    "question": "Quel est le carre de 12 ?",
+    "answers": {
+      "120": false,
+      "132": false,
+      "144": true,
+      "156": false
+    },
+    "correctAnswer": "144"
+  },
+  {
+    "question": "Quel est le carre de 15 ?",
+    "answers": {
+      "200": false,
+      "225": true,
+      "250": false,
+      "275": false
+    },
+    "correctAnswer": "225"
+  },
+  {
+    "question": "Quel est le carre de 20 ?",
+    "answers": {
+      "350": false,
+      "380": false,
+      "400": true,
+      "420": false
+    },
+    "correctAnswer": "400"
+  },
+  {
+    "question": "Quel est le carre de 25 ?",
+    "answers": {
+      "500": false,
+      "550": false,
+      "600": false,
+      "625": true
+    },
+    "correctAnswer": "625"
+  },
+  {
+    "question": "Quel est le cube de 3 ?",
+    "answers": {
+      "9": false,
+      "18": false,
+      "27": true,
+      "36": false
+    },
+    "correctAnswer": "27"
+  },
+  {
+    "question": "Quel est le cube de 4 ?",
+    "answers": {
+      "48": false,
+      "56": false,
+      "64": true,
+      "72": false
+    },
+    "correctAnswer": "64"
+  },
+  {
+    "question": "Quel est le cube de 5 ?",
+    "answers": {
+      "100": false,
+      "110": false,
+      "120": false,
+      "125": true
+    },
+    "correctAnswer": "125"
+  },
+  {
+    "question": "Quel est le cube de 6 ?",
+    "answers": {
+      "180": false,
+      "200": false,
+      "216": true,
+      "240": false
+    },
+    "correctAnswer": "216"
+  },
+  {
+    "question": "Quel est le cube de 7 ?",
+    "answers": {
+      "280": false,
+      "300": false,
+      "320": false,
+      "343": true
+    },
+    "correctAnswer": "343"
+  },
+  {
+    "question": "Quel est le cube de 8 ?",
+    "answers": {
+      "400": false,
+      "450": false,
+      "480": false,
+      "512": true
+    },
+    "correctAnswer": "512"
+  },
+  {
+    "question": "Quel est le cube de 9 ?",
+    "answers": {
+      "600": false,
+      "650": false,
+      "700": false,
+      "729": true
+    },
+    "correctAnswer": "729"
+  },
+  {
+    "question": "Quel est le cube de 10 ?",
+    "answers": {
+      "800": false,
+      "900": false,
+      "1000": true,
+      "1100": false
+    },
+    "correctAnswer": "1000"
+  },
+  {
+    "question": "Quel est le cube de 11 ?",
+    "answers": {
+      "1100": false,
+      "1200": false,
+      "1300": false,
+      "1331": true
+    },
+    "correctAnswer": "1331"
+  },
+  {
+    "question": "Quel est le cube de 12 ?",
+    "answers": {
+      "1400": false,
+      "1500": false,
+      "1600": false,
+      "1728": true
+    },
+    "correctAnswer": "1728"
+  },
+  {
+    "question": "Quel est le resultat de 3² + 4² ?",
+    "answers": {
+      "20": false,
+      "25": true,
+      "30": false,
+      "35": false
+    },
+    "correctAnswer": "25"
+  },
+  {
+    "question": "Quel est le resultat de 5² + 12² ?",
+    "answers": {
+      "150": false,
+      "160": false,
+      "169": true,
+      "180": false
+    },
+    "correctAnswer": "169"
+  },
+  {
+    "question": "Quel est le resultat de 6² + 8² ?",
+    "answers": {
+      "80": false,
+      "90": false,
+      "100": true,
+      "110": false
+    },
+    "correctAnswer": "100"
+  },
+  {
+    "question": "Quel est le resultat de 7² + 24² ?",
+    "answers": {
+      "550": false,
+      "575": false,
+      "600": false,
+      "625": true
+    },
+    "correctAnswer": "625"
+  },
+  {
+    "question": "Quel est le resultat de 9² + 12² ?",
+    "answers": {
+      "200": false,
+      "210": false,
+      "220": false,
+      "225": true
+    },
+    "correctAnswer": "225"
+  },
+  {
+    "question": "Quel est le resultat de 15² + 8² ?",
+    "answers": {
+      "250": false,
+      "260": false,
+      "270": false,
+      "289": true
+    },
+    "correctAnswer": "289"
+  },
+  {
+    "question": "Quel est le resultat de 20² + 21² ?",
+    "answers": {
+      "800": false,
+      "820": false,
+      "840": false,
+      "841": true
+    },
+    "correctAnswer": "841"
+  },
+  {
+    "question": "Quel est le resultat de 16² + 30² ?",
+    "answers": {
+      "1000": false,
+      "1100": false,
+      "1156": true,
+      "1200": false
+    },
+    "correctAnswer": "1156"
+  },
+  {
+    "question": "Quel est le resultat de 25² + 60² ?",
+    "answers": {
+      "4000": false,
+      "4100": false,
+      "4200": false,
+      "4225": true
+    },
+    "correctAnswer": "4225"
+  },
+  {
+    "question": "Quel est le resultat de 35² + 84² ?",
+    "answers": {
+      "8000": false,
+      "8200": false,
+      "8400": false,
+      "8281": true
+    },
+    "correctAnswer": "8281"
+  },
+  {
+    "question": "Quel est le resultat de 2³ + 3³ ?",
+    "answers": {
+      "25": false,
+      "30": false,
+      "35": true,
+      "40": false
+    },
+    "correctAnswer": "35"
+  },
+  {
+    "question": "Quel est le resultat de 3³ + 4³ ?",
+    "answers": {
+      "80": false,
+      "85": false,
+      "90": false,
+      "91": true
+    },
+    "correctAnswer": "91"
+  },
+  {
+    "question": "Quel est le resultat de 5³ + 6³ ?",
+    "answers": {
+      "300": false,
+      "320": false,
+      "340": false,
+      "341": true
+    },
+    "correctAnswer": "341"
+  },
+  {
+    "question": "Quel est le resultat de 7³ + 8³ ?",
+    "answers": {
+      "800": false,
+      "850": false,
+      "900": false,
+      "855": true
+    },
+    "correctAnswer": "855"
+  },
+  {
+    "question": "Quel est le resultat de 9³ + 10³ ?",
+    "answers": {
+      "1700": false,
+      "1750": false,
+      "1800": false,
+      "1729": true
+    },
+    "correctAnswer": "1729"
+  },
+  {
+    "question": "Quel est le resultat de 11³ + 12³ ?",
+    "answers": {
+      "3000": false,
+      "3100": false,
+      "3200": false,
+      "3059": true
+    },
+    "correctAnswer": "3059"
+  },
+  {
+    "question": "Quel est le resultat de 13³ + 14³ ?",
+    "answers": {
+      "5000": false,
+      "5100": false,
+      "5200": false,
+      "5103": true
+    },
+    "correctAnswer": "5103"
+  },
+  {
+    "question": "Quel est le resultat de 15³ + 16³ ?",
+    "answers": {
+      "7000": false,
+      "7200": false,
+      "7400": false,
+      "7441": true
+    },
+    "correctAnswer": "7441"
+  },
+  {
+    "question": "Quel est le resultat de 17³ + 18³ ?",
+    "answers": {
+      "10000": false,
+      "10200": false,
+      "10400": false,
+      "10403": true
+    },
+    "correctAnswer": "10403"
+  },
+  {
+    "question": "Quel est le resultat de 19³ + 20³ ?",
+    "answers": {
+      "14000": false,
+      "14200": false,
+      "14400": false,
+      "14499": true
+    },
+    "correctAnswer": "14499"
+  }
+] 
