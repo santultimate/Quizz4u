@@ -1,0 +1,651 @@
+{
+  "Histoire du Mali": {
+    "Empires et Royaumes": [
+      {
+        "question": "Quel était le nom du premier empereur de l'Empire du Mali ?",
+        "options": ["Sundiata Keita", "Mansa Musa", "Soundiata", "Kankan Moussa"],
+        "correctAnswer": "Sundiata Keita",
+        "explanation": "Sundiata Keita, aussi appelé Soundiata, fut le fondateur de l'Empire du Mali au 13ème siècle.",
+        "difficulty": "medium",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "En quelle année Mansa Musa effectua-t-il son célèbre pèlerinage à La Mecque ?",
+        "options": ["1324", "1312", "1337", "1340"],
+        "correctAnswer": "1324",
+        "explanation": "Mansa Musa effectua son pèlerinage en 1324, voyage qui fit sa renommée dans tout le monde musulman.",
+        "difficulty": "hard",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quelle était la capitale de l'Empire du Mali à son apogée ?",
+        "options": ["Tombouctou", "Gao", "Niani", "Djenné"],
+        "correctAnswer": "Niani",
+        "explanation": "Niani était la capitale de l'Empire du Mali, située dans l'actuelle Guinée.",
+        "difficulty": "medium",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quel était le surnom de Mansa Musa ?",
+        "options": ["Le Roi d'Or", "Le Lion du Mali", "Le Sultan Noir", "L'Empereur du Sahara"],
+        "correctAnswer": "Le Roi d'Or",
+        "explanation": "Mansa Musa était surnommé 'Le Roi d'Or' en raison de sa richesse légendaire.",
+        "difficulty": "easy",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quel empire succéda à l'Empire du Mali ?",
+        "options": ["Empire Songhaï", "Empire Ghana", "Empire Mossi", "Empire Kanem-Bornou"],
+        "correctAnswer": "Empire Songhaï",
+        "explanation": "L'Empire Songhaï succéda à l'Empire du Mali au 15ème siècle.",
+        "difficulty": "medium",
+        "subcategory": "Empires et Royaumes"
+      }
+    ],
+    "Villes Historiques": [
+      {
+        "question": "Quelle ville malienne était surnommée 'La Perle du Désert' ?",
+        "options": ["Tombouctou", "Gao", "Djenné", "Ségou"],
+        "correctAnswer": "Tombouctou",
+        "explanation": "Tombouctou était surnommée 'La Perle du Désert' en raison de sa richesse culturelle.",
+        "difficulty": "easy",
+        "subcategory": "Villes Historiques"
+      },
+      {
+        "question": "Quelle est la plus ancienne mosquée en terre d'Afrique subsaharienne ?",
+        "options": ["Mosquée de Djenné", "Mosquée de Tombouctou", "Mosquée de Gao", "Mosquée de Ségou"],
+        "correctAnswer": "Mosquée de Djenné",
+        "explanation": "La Grande Mosquée de Djenné, construite en 1907, est la plus grande construction en terre au monde.",
+        "difficulty": "medium",
+        "subcategory": "Villes Historiques"
+      },
+      {
+        "question": "Quelle ville était le centre du commerce du sel au Moyen Âge ?",
+        "options": ["Tombouctou", "Taoudenni", "Gao", "Djenné"],
+        "correctAnswer": "Taoudenni",
+        "explanation": "Taoudenni était un important centre d'extraction et de commerce du sel.",
+        "difficulty": "hard",
+        "subcategory": "Villes Historiques"
+      },
+      {
+        "question": "Quelle ville était surnommée 'La Venise du Mali' ?",
+        "options": ["Djenné", "Mopti", "Ségou", "Gao"],
+        "correctAnswer": "Mopti",
+        "explanation": "Mopti était surnommée 'La Venise du Mali' en raison de ses canaux et de sa situation sur le fleuve Niger.",
+        "difficulty": "medium",
+        "subcategory": "Villes Historiques"
+      },
+      {
+        "question": "Quelle était la capitale du royaume bambara de Ségou ?",
+        "options": ["Ségou", "Bamako", "Djenné", "Tombouctou"],
+        "correctAnswer": "Ségou",
+        "explanation": "Ségou était la capitale du royaume bambara qui domina la région au 18ème siècle.",
+        "difficulty": "easy",
+        "subcategory": "Villes Historiques"
+      }
+    ],
+    "Personnages Historiques": [
+      {
+        "question": "Quel était le nom de l'historien malien qui écrivit 'Tarikh al-Sudan' ?",
+        "options": ["Abd al-Rahman al-Sa'di", "Mahmud Kati", "Ibn Battuta", "Al-Bakri"],
+        "correctAnswer": "Abd al-Rahman al-Sa'di",
+        "explanation": "Abd al-Rahman al-Sa'di écrivit 'Tarikh al-Sudan' au 17ème siècle.",
+        "difficulty": "hard",
+        "subcategory": "Personnages Historiques"
+      },
+      {
+        "question": "Quel explorateur marocain visita Tombouctou en 1353 ?",
+        "options": ["Ibn Battuta", "Ibn Khaldun", "Al-Bakri", "Al-Idrisi"],
+        "correctAnswer": "Ibn Battuta",
+        "explanation": "Ibn Battuta visita Tombouctou en 1353 et en fit une description détaillée.",
+        "difficulty": "medium",
+        "subcategory": "Personnages Historiques"
+      },
+      {
+        "question": "Quel était le nom du roi bambara qui résista aux Français ?",
+        "options": ["Tieba Traoré", "Babemba Traoré", "Da Monzon", "N'Golo Diarra"],
+        "correctAnswer": "Babemba Traoré",
+        "explanation": "Babemba Traoré fut le dernier roi de Sikasso qui résista aux Français jusqu'en 1898.",
+        "difficulty": "medium",
+        "subcategory": "Personnages Historiques"
+      },
+      {
+        "question": "Quel était le nom du fondateur de l'Empire Songhaï ?",
+        "options": ["Sonni Ali", "Askia Mohammed", "Sonni Baru", "Askia Daoud"],
+        "correctAnswer": "Sonni Ali",
+        "explanation": "Sonni Ali fut le fondateur de l'Empire Songhaï au 15ème siècle.",
+        "difficulty": "medium",
+        "subcategory": "Personnages Historiques"
+      },
+      {
+        "question": "Quel était le nom de la reine guerrière du royaume de Ségou ?",
+        "options": ["Nana Benz", "Reine Pokou", "Reine Amina", "Reine Nzinga"],
+        "correctAnswer": "Nana Benz",
+        "explanation": "Nana Benz était une reine guerrière légendaire du royaume de Ségou.",
+        "difficulty": "hard",
+        "subcategory": "Personnages Historiques"
+      }
+    ]
+  },
+  "Afrique": {
+    "Géographie Africaine": [
+      {
+        "question": "Quel est le plus grand désert d'Afrique ?",
+        "options": ["Sahara", "Kalahari", "Namib", "Libyen"],
+        "correctAnswer": "Sahara",
+        "explanation": "Le Sahara est le plus grand désert d'Afrique et le troisième plus grand du monde.",
+        "difficulty": "easy",
+        "subcategory": "Géographie Africaine"
+      },
+      {
+        "question": "Quel est le plus haut sommet d'Afrique ?",
+        "options": ["Kilimandjaro", "Mont Kenya", "Ras Dashen", "Toubkal"],
+        "correctAnswer": "Kilimandjaro",
+        "explanation": "Le Kilimandjaro, en Tanzanie, culmine à 5 895 mètres d'altitude.",
+        "difficulty": "easy",
+        "subcategory": "Géographie Africaine"
+      },
+      {
+        "question": "Quel est le plus long fleuve d'Afrique ?",
+        "options": ["Nil", "Congo", "Niger", "Zambezi"],
+        "correctAnswer": "Nil",
+        "explanation": "Le Nil, avec ses 6 650 km, est le plus long fleuve d'Afrique et du monde.",
+        "difficulty": "easy",
+        "subcategory": "Géographie Africaine"
+      },
+      {
+        "question": "Quel est le plus grand lac d'Afrique ?",
+        "options": ["Victoria", "Tanganyika", "Malawi", "Chad"],
+        "correctAnswer": "Victoria",
+        "explanation": "Le lac Victoria est le plus grand lac d'Afrique avec une superficie de 68 800 km².",
+        "difficulty": "medium",
+        "subcategory": "Géographie Africaine"
+      },
+      {
+        "question": "Quel pays africain a la plus grande population ?",
+        "options": ["Nigeria", "Éthiopie", "Égypte", "République démocratique du Congo"],
+        "correctAnswer": "Nigeria",
+        "explanation": "Le Nigeria est le pays le plus peuplé d'Afrique avec plus de 200 millions d'habitants.",
+        "difficulty": "medium",
+        "subcategory": "Géographie Africaine"
+      }
+    ],
+    "Histoire Africaine": [
+      {
+        "question": "Quel était le nom de l'ancien royaume d'Afrique de l'Ouest ?",
+        "options": ["Ghana", "Mali", "Songhaï", "Kanem-Bornou"],
+        "correctAnswer": "Ghana",
+        "explanation": "Le royaume du Ghana fut l'un des premiers grands empires d'Afrique de l'Ouest.",
+        "difficulty": "medium",
+        "subcategory": "Histoire Africaine"
+      },
+      {
+        "question": "Quel explorateur portugais atteignit le cap de Bonne-Espérance en 1488 ?",
+        "options": ["Bartolomeu Dias", "Vasco de Gama", "Pedro Álvares Cabral", "Ferdinand Magellan"],
+        "correctAnswer": "Bartolomeu Dias",
+        "explanation": "Bartolomeu Dias fut le premier Européen à atteindre le cap de Bonne-Espérance.",
+        "difficulty": "hard",
+        "subcategory": "Histoire Africaine"
+      },
+      {
+        "question": "Quel était le nom de l'empire qui domina l'Afrique de l'Ouest au 16ème siècle ?",
+        "options": ["Songhaï", "Mali", "Ghana", "Kanem-Bornou"],
+        "correctAnswer": "Songhaï",
+        "explanation": "L'Empire Songhaï domina l'Afrique de l'Ouest au 16ème siècle.",
+        "difficulty": "medium",
+        "subcategory": "Histoire Africaine"
+      },
+      {
+        "question": "Quel roi éthiopien résista aux Italiens en 1896 ?",
+        "options": ["Ménélik II", "Haïlé Sélassié", "Téwodros II", "Yohannes IV"],
+        "correctAnswer": "Ménélik II",
+        "explanation": "Ménélik II remporta la bataille d'Adoua contre les Italiens en 1896.",
+        "difficulty": "hard",
+        "subcategory": "Histoire Africaine"
+      },
+      {
+        "question": "Quel était le nom de la reine guerrière du royaume de Dahomey ?",
+        "options": ["Reine Nzinga", "Reine Amina", "Reine Pokou", "Reine Ranavalona"],
+        "correctAnswer": "Reine Nzinga",
+        "explanation": "La reine Nzinga du royaume de Dahomey était une redoutable guerrière.",
+        "difficulty": "medium",
+        "subcategory": "Histoire Africaine"
+      }
+    ],
+    "Cultures Africaines": [
+      {
+        "question": "Quel instrument de musique est originaire d'Afrique de l'Ouest ?",
+        "options": ["Kora", "Balafon", "Djembé", "Tous les précédents"],
+        "correctAnswer": "Tous les précédents",
+        "explanation": "La kora, le balafon et le djembé sont tous originaires d'Afrique de l'Ouest.",
+        "difficulty": "medium",
+        "subcategory": "Cultures Africaines"
+      },
+      {
+        "question": "Quel masque traditionnel est originaire du Mali ?",
+        "options": ["Masque Dogon", "Masque Baoulé", "Masque Fang", "Masque Yoruba"],
+        "correctAnswer": "Masque Dogon",
+        "explanation": "Les masques Dogon sont célèbres pour leur complexité et leur symbolisme.",
+        "difficulty": "medium",
+        "subcategory": "Cultures Africaines"
+      },
+      {
+        "question": "Quel tissu traditionnel est originaire du Mali ?",
+        "options": ["Bogolan", "Kente", "Dashiki", "Boubou"],
+        "correctAnswer": "Bogolan",
+        "explanation": "Le bogolan est un tissu traditionnel malien teint avec de la boue.",
+        "difficulty": "easy",
+        "subcategory": "Cultures Africaines"
+      },
+      {
+        "question": "Quel festival traditionnel a lieu au Mali ?",
+        "options": ["Festival au Désert", "Festival de la Mer", "Festival des Masques", "Festival du Fleuve"],
+        "correctAnswer": "Festival au Désert",
+        "explanation": "Le Festival au Désert est un festival de musique traditionnelle malienne.",
+        "difficulty": "medium",
+        "subcategory": "Cultures Africaines"
+      },
+      {
+        "question": "Quel griot malien est célèbre internationalement ?",
+        "options": ["Toumani Diabaté", "Salif Keita", "Ali Farka Touré", "Tous les précédents"],
+        "correctAnswer": "Tous les précédents",
+        "explanation": "Tous ces artistes maliens sont des griots célèbres internationalement.",
+        "difficulty": "medium",
+        "subcategory": "Cultures Africaines"
+      }
+    ]
+  },
+  "Sciences": {
+    "Physique": [
+      {
+        "question": "Quelle est l'unité de mesure de la force ?",
+        "options": ["Newton", "Joule", "Watt", "Pascal"],
+        "correctAnswer": "Newton",
+        "explanation": "Le newton (N) est l'unité de mesure de la force dans le système international.",
+        "difficulty": "medium",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quel est le nom de la loi qui dit que 'Tout corps plongé dans un fluide reçoit une poussée verticale' ?",
+        "options": ["Principe d'Archimède", "Loi de Newton", "Principe de Pascal", "Loi de Bernoulli"],
+        "correctAnswer": "Principe d'Archimède",
+        "explanation": "Le principe d'Archimède explique la poussée exercée par un fluide sur un corps immergé.",
+        "difficulty": "medium",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quelle est la vitesse de la lumière dans le vide ?",
+        "options": ["300 000 km/s", "200 000 km/s", "400 000 km/s", "500 000 km/s"],
+        "correctAnswer": "300 000 km/s",
+        "explanation": "La vitesse de la lumière dans le vide est d'environ 300 000 kilomètres par seconde.",
+        "difficulty": "easy",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quel est le nom de l'effet qui fait qu'un objet chaud transfère sa chaleur à un objet froid ?",
+        "options": ["Conduction", "Convection", "Rayonnement", "Diffusion"],
+        "correctAnswer": "Conduction",
+        "explanation": "La conduction est le transfert de chaleur par contact direct entre deux objets.",
+        "difficulty": "medium",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quelle est l'unité de mesure de la pression ?",
+        "options": ["Pascal", "Newton", "Joule", "Watt"],
+        "correctAnswer": "Pascal",
+        "explanation": "Le pascal (Pa) est l'unité de mesure de la pression dans le système international.",
+        "difficulty": "medium",
+        "subcategory": "Physique"
+      }
+    ],
+    "Chimie": [
+      {
+        "question": "Quel est le symbole chimique de l'or ?",
+        "options": ["Au", "Ag", "Fe", "Cu"],
+        "correctAnswer": "Au",
+        "explanation": "Au vient du latin 'aurum' qui signifie or.",
+        "difficulty": "easy",
+        "subcategory": "Chimie"
+      },
+      {
+        "question": "Quel est le pH d'une solution neutre ?",
+        "options": ["7", "0", "14", "10"],
+        "correctAnswer": "7",
+        "explanation": "Une solution neutre a un pH de 7. En dessous c'est acide, au-dessus c'est basique.",
+        "difficulty": "medium",
+        "subcategory": "Chimie"
+      },
+      {
+        "question": "Quel est le nom de la réaction qui libère de l'énergie ?",
+        "options": ["Réaction exothermique", "Réaction endothermique", "Réaction catalytique", "Réaction d'oxydation"],
+        "correctAnswer": "Réaction exothermique",
+        "explanation": "Une réaction exothermique libère de l'énergie sous forme de chaleur.",
+        "difficulty": "hard",
+        "subcategory": "Chimie"
+      },
+      {
+        "question": "Quel est le nombre atomique de l'hydrogène ?",
+        "options": ["1", "2", "3", "4"],
+        "correctAnswer": "1",
+        "explanation": "L'hydrogène a le numéro atomique 1, c'est l'élément le plus simple.",
+        "difficulty": "easy",
+        "subcategory": "Chimie"
+      },
+      {
+        "question": "Quel est le nom de la formule H2O ?",
+        "options": ["Eau", "Peroxyde d'hydrogène", "Oxyde d'hydrogène", "Hydroxyde"],
+        "correctAnswer": "Eau",
+        "explanation": "H2O est la formule chimique de l'eau, composée de deux atomes d'hydrogène et un d'oxygène.",
+        "difficulty": "easy",
+        "subcategory": "Chimie"
+      }
+    ],
+    "Biologie": [
+      {
+        "question": "Quel est l'organe principal de la respiration ?",
+        "options": ["Poumons", "Cœur", "Foie", "Reins"],
+        "correctAnswer": "Poumons",
+        "explanation": "Les poumons sont les organes principaux de la respiration chez les mammifères.",
+        "difficulty": "easy",
+        "subcategory": "Biologie"
+      },
+      {
+        "question": "Quel est le nom de la cellule reproductrice mâle ?",
+        "options": ["Spermatozoïde", "Ovule", "Zygote", "Embryon"],
+        "correctAnswer": "Spermatozoïde",
+        "explanation": "Le spermatozoïde est la cellule reproductrice mâle qui féconde l'ovule.",
+        "difficulty": "medium",
+        "subcategory": "Biologie"
+      },
+      {
+        "question": "Quel est le nom de la molécule qui transporte l'information génétique ?",
+        "options": ["ADN", "ARN", "Protéine", "Enzyme"],
+        "correctAnswer": "ADN",
+        "explanation": "L'ADN (Acide DésoxyriboNucléique) transporte l'information génétique.",
+        "difficulty": "medium",
+        "subcategory": "Biologie"
+      },
+      {
+        "question": "Quel est le nom du processus de division cellulaire ?",
+        "options": ["Mitose", "Méiose", "Fécondation", "Mutation"],
+        "correctAnswer": "Mitose",
+        "explanation": "La mitose est le processus de division cellulaire qui produit deux cellules identiques.",
+        "difficulty": "hard",
+        "subcategory": "Biologie"
+      },
+      {
+        "question": "Quel est l'organe qui filtre le sang ?",
+        "options": ["Reins", "Foie", "Rate", "Pancréas"],
+        "correctAnswer": "Reins",
+        "explanation": "Les reins filtrent le sang et éliminent les déchets sous forme d'urine.",
+        "difficulty": "medium",
+        "subcategory": "Biologie"
+      }
+    ]
+  },
+  "Mathématiques": {
+    "Arithmétique": [
+      {
+        "question": "Quel est le résultat de 15 × 7 ?",
+        "options": ["105", "95", "115", "125"],
+        "correctAnswer": "105",
+        "explanation": "15 × 7 = 105",
+        "difficulty": "easy",
+        "subcategory": "Arithmétique"
+      },
+      {
+        "question": "Quel est le carré de 12 ?",
+        "options": ["144", "124", "164", "134"],
+        "correctAnswer": "144",
+        "explanation": "12² = 12 × 12 = 144",
+        "difficulty": "easy",
+        "subcategory": "Arithmétique"
+      },
+      {
+        "question": "Quel est le cube de 5 ?",
+        "options": ["125", "115", "135", "145"],
+        "correctAnswer": "125",
+        "explanation": "5³ = 5 × 5 × 5 = 125",
+        "difficulty": "medium",
+        "subcategory": "Arithmétique"
+      },
+      {
+        "question": "Quel est le résultat de 256 ÷ 8 ?",
+        "options": ["32", "28", "36", "24"],
+        "correctAnswer": "32",
+        "explanation": "256 ÷ 8 = 32",
+        "difficulty": "medium",
+        "subcategory": "Arithmétique"
+      },
+      {
+        "question": "Quel est le plus grand diviseur commun de 48 et 36 ?",
+        "options": ["12", "6", "18", "24"],
+        "correctAnswer": "12",
+        "explanation": "Le PGCD de 48 et 36 est 12.",
+        "difficulty": "hard",
+        "subcategory": "Arithmétique"
+      }
+    ],
+    "Géométrie": [
+      {
+        "question": "Quel est le périmètre d'un carré de côté 8 cm ?",
+        "options": ["32 cm", "24 cm", "40 cm", "16 cm"],
+        "correctAnswer": "32 cm",
+        "explanation": "Périmètre = 4 × côté = 4 × 8 = 32 cm",
+        "difficulty": "easy",
+        "subcategory": "Géométrie"
+      },
+      {
+        "question": "Quel est l'aire d'un rectangle de 6 cm × 9 cm ?",
+        "options": ["54 cm²", "45 cm²", "63 cm²", "36 cm²"],
+        "correctAnswer": "54 cm²",
+        "explanation": "Aire = longueur × largeur = 6 × 9 = 54 cm²",
+        "difficulty": "easy",
+        "subcategory": "Géométrie"
+      },
+      {
+        "question": "Quel est le volume d'un cube d'arête 5 cm ?",
+        "options": ["125 cm³", "115 cm³", "135 cm³", "145 cm³"],
+        "correctAnswer": "125 cm³",
+        "explanation": "Volume = arête³ = 5³ = 125 cm³",
+        "difficulty": "medium",
+        "subcategory": "Géométrie"
+      },
+      {
+        "question": "Quel est l'aire d'un cercle de rayon 7 cm ? (π ≈ 3,14)",
+        "options": ["153,86 cm²", "143,86 cm²", "163,86 cm²", "173,86 cm²"],
+        "correctAnswer": "153,86 cm²",
+        "explanation": "Aire = π × r² = 3,14 × 7² = 153,86 cm²",
+        "difficulty": "hard",
+        "subcategory": "Géométrie"
+      },
+      {
+        "question": "Combien de côtés a un hexagone ?",
+        "options": ["6", "5", "7", "8"],
+        "correctAnswer": "6",
+        "explanation": "Un hexagone a 6 côtés.",
+        "difficulty": "easy",
+        "subcategory": "Géométrie"
+      }
+    ],
+    "Algèbre": [
+      {
+        "question": "Quelle est la valeur de x dans l'équation 2x + 5 = 13 ?",
+        "options": ["4", "3", "5", "6"],
+        "correctAnswer": "4",
+        "explanation": "2x + 5 = 13 → 2x = 8 → x = 4",
+        "difficulty": "medium",
+        "subcategory": "Algèbre"
+      },
+      {
+        "question": "Quel est le résultat de (a + b)² ?",
+        "options": ["a² + 2ab + b²", "a² + b²", "a² + ab + b²", "2a + 2b"],
+        "correctAnswer": "a² + 2ab + b²",
+        "explanation": "(a + b)² = a² + 2ab + b² (identité remarquable)",
+        "difficulty": "hard",
+        "subcategory": "Algèbre"
+      },
+      {
+        "question": "Quelle est la valeur de y si 3y - 7 = 11 ?",
+        "options": ["6", "5", "7", "8"],
+        "correctAnswer": "6",
+        "explanation": "3y - 7 = 11 → 3y = 18 → y = 6",
+        "difficulty": "medium",
+        "subcategory": "Algèbre"
+      },
+      {
+        "question": "Quel est le facteur commun de 6x + 9 ?",
+        "options": ["3", "6", "9", "x"],
+        "correctAnswer": "3",
+        "explanation": "6x + 9 = 3(2x + 3), donc le facteur commun est 3.",
+        "difficulty": "hard",
+        "subcategory": "Algèbre"
+      },
+      {
+        "question": "Quelle est la solution de l'équation x² = 16 ?",
+        "options": ["4 et -4", "4", "-4", "8"],
+        "correctAnswer": "4 et -4",
+        "explanation": "x² = 16 → x = √16 = 4 ou x = -√16 = -4",
+        "difficulty": "medium",
+        "subcategory": "Algèbre"
+      }
+    ]
+  },
+  "Culture générale": {
+    "Littérature": [
+      {
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "options": ["Victor Hugo", "Alexandre Dumas", "Émile Zola", "Gustave Flaubert"],
+        "correctAnswer": "Victor Hugo",
+        "explanation": "Victor Hugo a écrit 'Les Misérables' en 1862.",
+        "difficulty": "easy",
+        "subcategory": "Littérature"
+      },
+      {
+        "question": "Quel est le nom du héros de 'Don Quichotte' ?",
+        "options": ["Alonso Quijano", "Sancho Panza", "Don Quichotte", "Dulcinée"],
+        "correctAnswer": "Alonso Quijano",
+        "explanation": "Alonso Quijano est le vrai nom de Don Quichotte.",
+        "difficulty": "hard",
+        "subcategory": "Littérature"
+      },
+      {
+        "question": "Qui a écrit 'Roméo et Juliette' ?",
+        "options": ["William Shakespeare", "Christopher Marlowe", "Ben Jonson", "John Webster"],
+        "correctAnswer": "William Shakespeare",
+        "explanation": "William Shakespeare a écrit 'Roméo et Juliette' vers 1595.",
+        "difficulty": "easy",
+        "subcategory": "Littérature"
+      },
+      {
+        "question": "Quel est le nom du héros de 'L'Odyssée' ?",
+        "options": ["Ulysse", "Achille", "Hector", "Agamemnon"],
+        "correctAnswer": "Ulysse",
+        "explanation": "Ulysse est le héros de 'L'Odyssée' d'Homère.",
+        "difficulty": "medium",
+        "subcategory": "Littérature"
+      },
+      {
+        "question": "Qui a écrit 'Le Petit Prince' ?",
+        "options": ["Antoine de Saint-Exupéry", "Jean de La Fontaine", "Charles Perrault", "Hans Christian Andersen"],
+        "correctAnswer": "Antoine de Saint-Exupéry",
+        "explanation": "Antoine de Saint-Exupéry a écrit 'Le Petit Prince' en 1943.",
+        "difficulty": "easy",
+        "subcategory": "Littérature"
+      }
+    ],
+    "Art": [
+      {
+        "question": "Qui a peint 'La Joconde' ?",
+        "options": ["Léonard de Vinci", "Michel-Ange", "Raphaël", "Botticelli"],
+        "correctAnswer": "Léonard de Vinci",
+        "explanation": "Léonard de Vinci a peint 'La Joconde' entre 1503 et 1519.",
+        "difficulty": "easy",
+        "subcategory": "Art"
+      },
+      {
+        "question": "Quel est le nom du sculpteur de 'David' ?",
+        "options": ["Michel-Ange", "Donatello", "Bernin", "Cellini"],
+        "correctAnswer": "Michel-Ange",
+        "explanation": "Michel-Ange a sculpté 'David' entre 1501 et 1504.",
+        "difficulty": "medium",
+        "subcategory": "Art"
+      },
+      {
+        "question": "Quel peintre a créé 'Les Tournesols' ?",
+        "options": ["Vincent van Gogh", "Claude Monet", "Paul Cézanne", "Pierre-Auguste Renoir"],
+        "correctAnswer": "Vincent van Gogh",
+        "explanation": "Vincent van Gogh a peint 'Les Tournesols' en 1888.",
+        "difficulty": "medium",
+        "subcategory": "Art"
+      },
+      {
+        "question": "Quel est le nom du mouvement artistique de Pablo Picasso ?",
+        "options": ["Cubisme", "Surréalisme", "Impressionnisme", "Expressionnisme"],
+        "correctAnswer": "Cubisme",
+        "explanation": "Pablo Picasso est l'un des fondateurs du mouvement cubiste.",
+        "difficulty": "medium",
+        "subcategory": "Art"
+      },
+      {
+        "question": "Quel architecte a conçu la Tour Eiffel ?",
+        "options": ["Gustave Eiffel", "Auguste Perret", "Le Corbusier", "Hector Guimard"],
+        "correctAnswer": "Gustave Eiffel",
+        "explanation": "Gustave Eiffel a conçu la Tour Eiffel pour l'Exposition universelle de 1889.",
+        "difficulty": "easy",
+        "subcategory": "Art"
+      }
+    ],
+    "Cinéma": [
+      {
+        "question": "Quel réalisateur a dirigé 'Titanic' ?",
+        "options": ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Quentin Tarantino"],
+        "correctAnswer": "James Cameron",
+        "explanation": "James Cameron a réalisé 'Titanic' en 1997.",
+        "difficulty": "easy",
+        "subcategory": "Cinéma"
+      },
+      {
+        "question": "Quel acteur a joué le rôle de James Bond dans 'Casino Royale' ?",
+        "options": ["Daniel Craig", "Pierce Brosnan", "Sean Connery", "Roger Moore"],
+        "correctAnswer": "Daniel Craig",
+        "explanation": "Daniel Craig a joué James Bond dans 'Casino Royale' en 2006.",
+        "difficulty": "medium",
+        "subcategory": "Cinéma"
+      },
+      {
+        "question": "Quel film a remporté l'Oscar du meilleur film en 2020 ?",
+        "options": ["Parasite", "1917", "Joker", "Once Upon a Time in Hollywood"],
+        "correctAnswer": "Parasite",
+        "explanation": "'Parasite' de Bong Joon-ho a remporté l'Oscar du meilleur film en 2020.",
+        "difficulty": "medium",
+        "subcategory": "Cinéma"
+      },
+      {
+        "question": "Quel réalisateur a créé 'Star Wars' ?",
+        "options": ["George Lucas", "Steven Spielberg", "Francis Ford Coppola", "Martin Scorsese"],
+        "correctAnswer": "George Lucas",
+        "explanation": "George Lucas a créé la saga 'Star Wars' en 1977.",
+        "difficulty": "easy",
+        "subcategory": "Cinéma"
+      },
+      {
+        "question": "Quel acteur a joué le rôle de Iron Man ?",
+        "options": ["Robert Downey Jr.", "Chris Evans", "Chris Hemsworth", "Mark Ruffalo"],
+        "correctAnswer": "Robert Downey Jr.",
+        "explanation": "Robert Downey Jr. a joué le rôle de Tony Stark/Iron Man dans l'univers Marvel.",
+        "difficulty": "easy",
+        "subcategory": "Cinéma"
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+

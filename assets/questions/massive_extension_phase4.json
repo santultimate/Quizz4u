@@ -1,0 +1,56 @@
+{
+  "Histoire du Mali": {
+    "Empires et Royaumes": [
+      {
+        "question": "Quel était le nom de la capitale de l'Empire Songhaï ?",
+        "options": ["Gao", "Tombouctou", "Djenné", "Ségou"],
+        "correctAnswer": "Gao",
+        "explanation": "Gao était la capitale de l'Empire Songhaï.",
+        "difficulty": "medium"
+      },
+      {
+        "question": "En quelle année l'Empire Songhaï a-t-il atteint son apogée ?",
+        "options": ["1493", "1500", "1520", "1550"],
+        "correctAnswer": "1493",
+        "explanation": "Askia Mohammed a pris le pouvoir en 1493.",
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "Sciences": {
+    "Physique Avancée": [
+      {
+        "question": "Quelle est la vitesse de la lumière dans le vide ?",
+        "options": ["299 792 458 m/s", "300 000 000 m/s", "250 000 000 m/s", "350 000 000 m/s"],
+        "correctAnswer": "299 792 458 m/s",
+        "explanation": "La vitesse de la lumière dans le vide est exactement 299 792 458 m/s.",
+        "difficulty": "hard"
+      },
+      {
+        "question": "Quel est le nom de la particule qui donne sa masse au boson de Higgs ?",
+        "options": ["Le boson de Higgs", "Le photon", "Le gluon", "Le neutrino"],
+        "correctAnswer": "Le boson de Higgs",
+        "explanation": "Le boson de Higgs donne sa masse aux autres particules.",
+        "difficulty": "hard"
+      }
+    ]
+  },
+  "Mathématiques": {
+    "Algèbre Avancée": [
+      {
+        "question": "Quel est le résultat de (a + b)² ?",
+        "options": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + ab + b²"],
+        "correctAnswer": "a² + 2ab + b²",
+        "explanation": "La formule du carré d'une somme est (a + b)² = a² + 2ab + b².",
+        "difficulty": "hard"
+      },
+      {
+        "question": "Quel est le nom de l'équation ax² + bx + c = 0 ?",
+        "options": ["Équation du premier degré", "Équation du second degré", "Équation du troisième degré", "Équation polynomiale"],
+        "correctAnswer": "Équation du second degré",
+        "explanation": "Une équation de la forme ax² + bx + c = 0 est une équation du second degré.",
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

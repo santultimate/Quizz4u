@@ -1,0 +1,208 @@
+{
+  "Histoire du Mali": {
+    "Personnalités Historiques": [
+      {
+        "question": "Quel était le surnom de Soundiata Keita ?",
+        "options": ["Le Lion du Mandé", "Le Lion du Mali", "Le Lion de l'Afrique", "Le Lion de Gao"],
+        "correctAnswer": "Le Lion du Mandé",
+        "explanation": "Soundiata Keita était surnommé 'Le Lion du Mandé' en référence à sa force et à la région du Mandé.",
+        "difficulty": "hard",
+        "subcategory": "Personnalités Historiques"
+      },
+      {
+        "question": "Quel était le nom de la mère de Mansa Moussa ?",
+        "options": ["Kanku", "Sogolon", "Fatoumata", "Aminata"],
+        "correctAnswer": "Kanku",
+        "explanation": "Kanku était la mère de Mansa Moussa, le plus célèbre empereur du Mali.",
+        "difficulty": "hard",
+        "subcategory": "Personnalités Historiques"
+      },
+      {
+        "question": "Quel était le nom du griot de Soundiata Keita ?",
+        "options": ["Balla Fasséké", "Djeli Mamoudou", "Sory Kandia", "Kouyaté"],
+        "correctAnswer": "Balla Fasséké",
+        "explanation": "Balla Fasséké était le griot de Soundiata Keita et a transmis l'histoire de l'Empire du Mali.",
+        "difficulty": "hard",
+        "subcategory": "Personnalités Historiques"
+      }
+    ],
+    "Événements Marquants": [
+      {
+        "question": "En quelle année a eu lieu la bataille de Kirina ?",
+        "options": ["1235", "1240", "1250", "1260"],
+        "correctAnswer": "1235",
+        "explanation": "La bataille de Kirina en 1235 a vu la victoire de Soundiata Keita sur Soumaoro Kanté.",
+        "difficulty": "hard",
+        "subcategory": "Événements Marquants"
+      },
+      {
+        "question": "Quel était le nom de l'ennemi de Soundiata Keita ?",
+        "options": ["Soumaoro Kanté", "Sumanguru Kanté", "Sundiata Kanté", "Soumaoro Keita"],
+        "correctAnswer": "Soumaoro Kanté",
+        "explanation": "Soumaoro Kanté était le roi du Sosso et l'ennemi principal de Soundiata Keita.",
+        "difficulty": "hard",
+        "subcategory": "Événements Marquants"
+      }
+    ]
+  },
+  "Sciences": {
+    "Découvertes Scientifiques": [
+      {
+        "question": "Qui a découvert la pénicilline ?",
+        "options": ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Joseph Lister"],
+        "correctAnswer": "Alexander Fleming",
+        "explanation": "Alexander Fleming a découvert la pénicilline en 1928, le premier antibiotique.",
+        "difficulty": "medium",
+        "subcategory": "Découvertes Scientifiques"
+      },
+      {
+        "question": "Qui a formulé la théorie de la relativité ?",
+        "options": ["Albert Einstein", "Isaac Newton", "Galilée", "Niels Bohr"],
+        "correctAnswer": "Albert Einstein",
+        "explanation": "Albert Einstein a formulé la théorie de la relativité en 1905 et 1915.",
+        "difficulty": "medium",
+        "subcategory": "Découvertes Scientifiques"
+      },
+      {
+        "question": "Qui a découvert la structure de l'ADN ?",
+        "options": ["Watson et Crick", "Mendel", "Darwin", "Pasteur"],
+        "correctAnswer": "Watson et Crick",
+        "explanation": "James Watson et Francis Crick ont découvert la structure en double hélice de l'ADN en 1953.",
+        "difficulty": "medium",
+        "subcategory": "Découvertes Scientifiques"
+      }
+    ],
+    "Inventions Modernes": [
+      {
+        "question": "En quelle année a été inventé l'ordinateur personnel ?",
+        "options": ["1975", "1980", "1985", "1990"],
+        "correctAnswer": "1975",
+        "explanation": "L'Altair 8800, considéré comme le premier ordinateur personnel, a été lancé en 1975.",
+        "difficulty": "hard",
+        "subcategory": "Inventions Modernes"
+      },
+      {
+        "question": "Qui a inventé le World Wide Web ?",
+        "options": ["Tim Berners-Lee", "Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+        "correctAnswer": "Tim Berners-Lee",
+        "explanation": "Tim Berners-Lee a inventé le World Wide Web en 1989 au CERN.",
+        "difficulty": "medium",
+        "subcategory": "Inventions Modernes"
+      }
+    ]
+  },
+  "Mathématiques": {
+    "Théorèmes Célèbres": [
+      {
+        "question": "Quel est le nom du théorème qui dit que dans un triangle rectangle, a² + b² = c² ?",
+        "options": ["Le théorème de Pythagore", "Le théorème de Thalès", "Le théorème de l'angle droit", "Le théorème des milieux"],
+        "correctAnswer": "Le théorème de Pythagore",
+        "explanation": "Le théorème de Pythagore établit que dans un triangle rectangle, le carré de l'hypoténuse égale la somme des carrés des deux autres côtés.",
+        "difficulty": "medium",
+        "subcategory": "Théorèmes Célèbres"
+      },
+      {
+        "question": "Quel est le nom du nombre π (pi) ?",
+        "options": ["Le nombre d'or", "Le nombre d'Euler", "Le nombre de Pythagore", "Le nombre d'Archimède"],
+        "correctAnswer": "Le nombre d'Archimède",
+        "explanation": "π est parfois appelé le nombre d'Archimède en référence aux travaux d'Archimède sur le cercle.",
+        "difficulty": "hard",
+        "subcategory": "Théorèmes Célèbres"
+      }
+    ],
+    "Nombres Spéciaux": [
+      {
+        "question": "Quel est le nom du nombre 1,618033988749... ?",
+        "options": ["Le nombre d'or", "Le nombre d'Euler", "Le nombre π", "Le nombre e"],
+        "correctAnswer": "Le nombre d'or",
+        "explanation": "Le nombre d'or (φ) est approximativement égal à 1,618 et apparaît dans de nombreuses proportions naturelles.",
+        "difficulty": "hard",
+        "subcategory": "Nombres Spéciaux"
+      },
+      {
+        "question": "Quel est le nom du nombre 2,718281828459... ?",
+        "options": ["Le nombre d'or", "Le nombre d'Euler", "Le nombre π", "Le nombre de Neper"],
+        "correctAnswer": "Le nombre d'Euler",
+        "explanation": "Le nombre d'Euler (e) est approximativement égal à 2,718 et est la base du logarithme naturel.",
+        "difficulty": "hard",
+        "subcategory": "Nombres Spéciaux"
+      }
+    ]
+  },
+  "Culture générale": {
+    "Cinéma Mondial": [
+      {
+        "question": "Quel film a remporté le plus d'Oscars de l'histoire ?",
+        "options": ["Titanic", "Ben-Hur", "La La Land", "Le Seigneur des Anneaux"],
+        "correctAnswer": "Ben-Hur",
+        "explanation": "Ben-Hur (1959) a remporté 11 Oscars, un record partagé avec Titanic et Le Seigneur des Anneaux.",
+        "difficulty": "medium",
+        "subcategory": "Cinéma Mondial"
+      },
+      {
+        "question": "Qui a réalisé 'Citizen Kane' ?",
+        "options": ["Orson Welles", "Alfred Hitchcock", "Charlie Chaplin", "Stanley Kubrick"],
+        "correctAnswer": "Orson Welles",
+        "explanation": "Orson Welles a réalisé 'Citizen Kane' en 1941, considéré comme un des plus grands films de l'histoire.",
+        "difficulty": "medium",
+        "subcategory": "Cinéma Mondial"
+      }
+    ],
+    "Technologie Moderne": [
+      {
+        "question": "Quel est le nom du premier smartphone ?",
+        "options": ["iPhone", "BlackBerry", "Simon", "Nokia Communicator"],
+        "correctAnswer": "Simon",
+        "explanation": "Le Simon Personal Communicator, lancé en 1994, est considéré comme le premier smartphone.",
+        "difficulty": "hard",
+        "subcategory": "Technologie Moderne"
+      },
+      {
+        "question": "Quel est le nom du premier navigateur web ?",
+        "options": ["Netscape", "Internet Explorer", "Mosaic", "WorldWideWeb"],
+        "correctAnswer": "WorldWideWeb",
+        "explanation": "WorldWideWeb, créé par Tim Berners-Lee en 1990, est le premier navigateur web.",
+        "difficulty": "hard",
+        "subcategory": "Technologie Moderne"
+      }
+    ]
+  },
+  "Afrique": {
+    "Économie Africaine": [
+      {
+        "question": "Quel est le pays le plus riche d'Afrique en PIB ?",
+        "options": ["Le Nigeria", "L'Afrique du Sud", "L'Égypte", "Le Maroc"],
+        "correctAnswer": "Le Nigeria",
+        "explanation": "Le Nigeria est le pays le plus riche d'Afrique en termes de PIB nominal.",
+        "difficulty": "medium",
+        "subcategory": "Économie Africaine"
+      },
+      {
+        "question": "Quel est le principal produit d'exportation de l'Afrique du Sud ?",
+        "options": ["L'or", "Les diamants", "Le platine", "Le charbon"],
+        "correctAnswer": "L'or",
+        "explanation": "L'or est le principal produit d'exportation de l'Afrique du Sud.",
+        "difficulty": "medium",
+        "subcategory": "Économie Africaine"
+      }
+    ],
+    "Sport Africain": [
+      {
+        "question": "Quel pays africain a organisé la première Coupe du monde de football en Afrique ?",
+        "options": ["L'Afrique du Sud", "Le Maroc", "L'Égypte", "Le Nigeria"],
+        "correctAnswer": "L'Afrique du Sud",
+        "explanation": "L'Afrique du Sud a organisé la Coupe du monde de football en 2010, la première en Afrique.",
+        "difficulty": "easy",
+        "subcategory": "Sport Africain"
+      },
+      {
+        "question": "Quel est le sport le plus populaire en Afrique ?",
+        "options": ["Le football", "Le cricket", "Le rugby", "Le basketball"],
+        "correctAnswer": "Le football",
+        "explanation": "Le football est de loin le sport le plus populaire en Afrique.",
+        "difficulty": "easy",
+        "subcategory": "Sport Africain"
+      }
+    ]
+  }
+}

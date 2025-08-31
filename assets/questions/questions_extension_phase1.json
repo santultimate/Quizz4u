@@ -1,0 +1,402 @@
+{
+  "Histoire du Mali": {
+    "Empires et Royaumes": [
+      {
+        "question": "Quel roi de l'Empire du Mali est célèbre pour son pèlerinage à La Mecque en 1324 ?",
+        "options": [
+          "Soundiata Keïta",
+          "Mansa Moussa",
+          "Askia Mohammed",
+          "Sundiata Keïta"
+        ],
+        "correctAnswer": "Mansa Moussa",
+        "explanation": "Mansa Moussa, roi de l'Empire du Mali de 1312 à 1337, est célèbre pour son pèlerinage à La Mecque en 1324. Son voyage avec une caravane de 60 000 personnes et des tonnes d'or a marqué l'histoire.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "En quelle année Soundiata Keïta a-t-il fondé l'Empire du Mali ?",
+        "options": [
+          "1235",
+          "1240",
+          "1250",
+          "1260"
+        ],
+        "correctAnswer": "1235",
+        "explanation": "Soundiata Keïta a fondé l'Empire du Mali en 1235 après sa victoire à la bataille de Kirina contre le roi du Sosso, Soumaoro Kanté.",
+        "difficulty": "hard",
+        "category": "Histoire du Mali",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quelle était la capitale de l'Empire du Mali à son apogée ?",
+        "options": [
+          "Bamako",
+          "Niani",
+          "Tombouctou",
+          "Gao"
+        ],
+        "correctAnswer": "Niani",
+        "explanation": "Niani était la capitale de l'Empire du Mali, située dans l'actuelle Guinée. C'est là que résidaient les empereurs maliens.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quel était le surnom de Mansa Moussa ?",
+        "options": [
+          "Le Roi d'Or",
+          "Le Lion du Mali",
+          "Le Conquérant",
+          "Le Sage"
+        ],
+        "correctAnswer": "Le Roi d'Or",
+        "explanation": "Mansa Moussa était surnommé 'Le Roi d'Or' en raison de l'immense richesse en or de son empire et de son célèbre pèlerinage.",
+        "difficulty": "easy",
+        "category": "Histoire du Mali",
+        "subcategory": "Empires et Royaumes"
+      },
+      {
+        "question": "Quel empire a succédé à l'Empire du Mali ?",
+        "options": [
+          "Empire Songhaï",
+          "Empire du Ghana",
+          "Empire du Kanem",
+          "Empire du Bornou"
+        ],
+        "correctAnswer": "Empire Songhaï",
+        "explanation": "L'Empire Songhaï a succédé à l'Empire du Mali au 15ème siècle, avec Gao comme capitale et Askia Mohammed comme souverain le plus célèbre.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Empires et Royaumes"
+      }
+    ],
+    "Période Coloniale": [
+      {
+        "question": "En quelle année le Mali est-il devenu indépendant de la France ?",
+        "options": [
+          "1958",
+          "1960",
+          "1962",
+          "1965"
+        ],
+        "correctAnswer": "1960",
+        "explanation": "Le Mali (alors Soudan français) a obtenu son indépendance de la France le 20 juin 1960, en même temps que la Fédération du Mali.",
+        "difficulty": "easy",
+        "category": "Histoire du Mali",
+        "subcategory": "Période Coloniale"
+      },
+      {
+        "question": "Qui était le premier président du Mali indépendant ?",
+        "options": [
+          "Modibo Keïta",
+          "Moussa Traoré",
+          "Alpha Oumar Konaré",
+          "Amadou Toumani Touré"
+        ],
+        "correctAnswer": "Modibo Keïta",
+        "explanation": "Modibo Keïta a été le premier président du Mali de 1960 à 1968, avant d'être renversé par un coup d'État militaire.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Période Coloniale"
+      },
+      {
+        "question": "Quel était le nom colonial du Mali sous la domination française ?",
+        "options": [
+          "Soudan français",
+          "Haute-Volta",
+          "Dahomey",
+          "Côte d'Ivoire"
+        ],
+        "correctAnswer": "Soudan français",
+        "explanation": "Le Mali était connu sous le nom de 'Soudan français' pendant la période coloniale française, de 1890 à 1960.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Période Coloniale"
+      }
+    ],
+    "Patrimoine Culturel": [
+      {
+        "question": "Quelle ville malienne est surnommée 'La Perle du Désert' ?",
+        "options": [
+          "Bamako",
+          "Tombouctou",
+          "Gao",
+          "Ségou"
+        ],
+        "correctAnswer": "Tombouctou",
+        "explanation": "Tombouctou est surnommée 'La Perle du Désert' en raison de son importance historique comme centre commercial et culturel.",
+        "difficulty": "easy",
+        "category": "Histoire du Mali",
+        "subcategory": "Patrimoine Culturel"
+      },
+      {
+        "question": "Quel instrument de musique traditionnel malien est fait de calebasse ?",
+        "options": [
+          "Kora",
+          "Balafon",
+          "N'goni",
+          "Djembé"
+        ],
+        "correctAnswer": "Kora",
+        "explanation": "La kora est un instrument à cordes traditionnel malien fait d'une calebasse recouverte de peau de vache et de 21 cordes.",
+        "difficulty": "medium",
+        "category": "Histoire du Mali",
+        "subcategory": "Patrimoine Culturel"
+      }
+    ]
+  },
+  "Sciences": {
+    "Physique": [
+      {
+        "question": "Quelle est l'unité de mesure de la force ?",
+        "options": [
+          "Watt",
+          "Newton",
+          "Joule",
+          "Pascal"
+        ],
+        "correctAnswer": "Newton",
+        "explanation": "Le newton (N) est l'unité de mesure de la force dans le système international. 1 N = 1 kg⋅m/s².",
+        "difficulty": "medium",
+        "category": "Sciences",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quel scientifique a découvert la loi de la gravitation universelle ?",
+        "options": [
+          "Albert Einstein",
+          "Isaac Newton",
+          "Galilée",
+          "Copernic"
+        ],
+        "correctAnswer": "Isaac Newton",
+        "explanation": "Isaac Newton a formulé la loi de la gravitation universelle en 1687 dans son ouvrage 'Principia Mathematica'.",
+        "difficulty": "easy",
+        "category": "Sciences",
+        "subcategory": "Physique"
+      },
+      {
+        "question": "Quelle est la vitesse de la lumière dans le vide ?",
+        "options": [
+          "300 000 km/s",
+          "200 000 km/s",
+          "400 000 km/s",
+          "500 000 km/s"
+        ],
+        "correctAnswer": "300 000 km/s",
+        "explanation": "La vitesse de la lumière dans le vide est d'environ 300 000 kilomètres par seconde (299 792 458 m/s exactement).",
+        "difficulty": "medium",
+        "category": "Sciences",
+        "subcategory": "Physique"
+      }
+    ],
+    "Chimie": [
+      {
+        "question": "Quel est le symbole chimique de l'or ?",
+        "options": [
+          "Ag",
+          "Au",
+          "Fe",
+          "Cu"
+        ],
+        "correctAnswer": "Au",
+        "explanation": "Au est le symbole chimique de l'or, dérivé du latin 'aurum'. C'est un métal précieux de couleur jaune.",
+        "difficulty": "easy",
+        "category": "Sciences",
+        "subcategory": "Chimie"
+      },
+      {
+        "question": "Quelle est la formule chimique de l'eau ?",
+        "options": [
+          "H2O",
+          "CO2",
+          "O2",
+          "N2"
+        ],
+        "correctAnswer": "H2O",
+        "explanation": "H2O est la formule chimique de l'eau, composée de deux atomes d'hydrogène et d'un atome d'oxygène.",
+        "difficulty": "easy",
+        "category": "Sciences",
+        "subcategory": "Chimie"
+      }
+    ],
+    "Biologie": [
+      {
+        "question": "Combien d'os y a-t-il dans le corps humain adulte ?",
+        "options": [
+          "156",
+          "206",
+          "256",
+          "306"
+        ],
+        "correctAnswer": "206",
+        "explanation": "Le corps humain adulte compte 206 os, qui forment le squelette et protègent les organes vitaux.",
+        "difficulty": "medium",
+        "category": "Sciences",
+        "subcategory": "Biologie"
+      },
+      {
+        "question": "Quel est l'organe le plus grand du corps humain ?",
+        "options": [
+          "Le cœur",
+          "Le cerveau",
+          "La peau",
+          "Le foie"
+        ],
+        "correctAnswer": "La peau",
+        "explanation": "La peau est l'organe le plus grand du corps humain, avec une surface d'environ 2 m² et un poids de 3-4 kg.",
+        "difficulty": "medium",
+        "category": "Sciences",
+        "subcategory": "Biologie"
+      }
+    ]
+  },
+  "Culture Générale": {
+    "Littérature Mondiale": [
+      {
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "options": [
+          "Victor Hugo",
+          "Alexandre Dumas",
+          "Émile Zola",
+          "Gustave Flaubert"
+        ],
+        "correctAnswer": "Victor Hugo",
+        "explanation": "Victor Hugo a écrit 'Les Misérables' en 1862, un roman majeur de la littérature française.",
+        "difficulty": "easy",
+        "category": "Culture Générale",
+        "subcategory": "Littérature Mondiale"
+      },
+      {
+        "question": "Quel écrivain malien a reçu le prix Goncourt en 2021 ?",
+        "options": [
+          "Amadou Hampâté Bâ",
+          "Mohamed Mbougar Sarr",
+          "Yambo Ouologuem",
+          "Massa Makan Diabaté"
+        ],
+        "correctAnswer": "Mohamed Mbougar Sarr",
+        "explanation": "Mohamed Mbougar Sarr a reçu le prix Goncourt 2021 pour son roman 'La plus secrète mémoire des hommes'.",
+        "difficulty": "hard",
+        "category": "Culture Générale",
+        "subcategory": "Littérature Mondiale"
+      }
+    ],
+    "Cinéma et Arts": [
+      {
+        "question": "Quel réalisateur a dirigé le film 'Titanic' ?",
+        "options": [
+          "Steven Spielberg",
+          "James Cameron",
+          "Christopher Nolan",
+          "Quentin Tarantino"
+        ],
+        "correctAnswer": "James Cameron",
+        "explanation": "James Cameron a réalisé 'Titanic' en 1997, film qui a remporté 11 Oscars et est devenu un succès mondial.",
+        "difficulty": "easy",
+        "category": "Culture Générale",
+        "subcategory": "Cinéma et Arts"
+      }
+    ],
+    "Musique": [
+      {
+        "question": "Quel instrument de musique est surnommé 'le roi des instruments' ?",
+        "options": [
+          "Le piano",
+          "L'orgue",
+          "Le violon",
+          "La guitare"
+        ],
+        "correctAnswer": "L'orgue",
+        "explanation": "L'orgue est surnommé 'le roi des instruments' en raison de sa puissance sonore et de sa complexité.",
+        "difficulty": "medium",
+        "category": "Culture Générale",
+        "subcategory": "Musique"
+      }
+    ]
+  },
+  "Mathématiques": {
+    "Arithmétique": [
+      {
+        "question": "Quel est le résultat de 15 × 7 ?",
+        "options": [
+          "95",
+          "105",
+          "115",
+          "125"
+        ],
+        "correctAnswer": "105",
+        "explanation": "15 × 7 = 105. C'est une multiplication de base en arithmétique.",
+        "difficulty": "easy",
+        "category": "Mathématiques",
+        "subcategory": "Arithmétique"
+      },
+      {
+        "question": "Quel est le pourcentage de 25 sur 100 ?",
+        "options": [
+          "15%",
+          "20%",
+          "25%",
+          "30%"
+        ],
+        "correctAnswer": "25%",
+        "explanation": "25 sur 100 représente 25%, car 25 ÷ 100 = 0,25 = 25%.",
+        "difficulty": "easy",
+        "category": "Mathématiques",
+        "subcategory": "Arithmétique"
+      }
+    ],
+    "Géométrie": [
+      {
+        "question": "Combien de côtés a un hexagone ?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctAnswer": "6",
+        "explanation": "Un hexagone a 6 côtés. Le préfixe 'hexa-' signifie 'six' en grec.",
+        "difficulty": "easy",
+        "category": "Mathématiques",
+        "subcategory": "Géométrie"
+      }
+    ]
+  },
+  "Afrique": {
+    "Histoire Africaine": [
+      {
+        "question": "Quel était le nom de l'ancien royaume du Zimbabwe ?",
+        "options": [
+          "Royaume de Monomotapa",
+          "Royaume du Congo",
+          "Royaume du Mali",
+          "Royaume du Ghana"
+        ],
+        "correctAnswer": "Royaume de Monomotapa",
+        "explanation": "Le Royaume de Monomotapa était un ancien royaume qui a existé dans l'actuel Zimbabwe du 11ème au 15ème siècle.",
+        "difficulty": "hard",
+        "category": "Afrique",
+        "subcategory": "Histoire Africaine"
+      }
+    ],
+    "Géographie Africaine": [
+      {
+        "question": "Quel est le plus grand désert d'Afrique ?",
+        "options": [
+          "Le Sahara",
+          "Le Kalahari",
+          "Le Namib",
+          "Le désert de Libye"
+        ],
+        "correctAnswer": "Le Sahara",
+        "explanation": "Le Sahara est le plus grand désert d'Afrique et du monde, couvrant environ 9 millions de km².",
+        "difficulty": "easy",
+        "category": "Afrique",
+        "subcategory": "Géographie Africaine"
+      }
+    ]
+  }
+} 

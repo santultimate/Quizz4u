@@ -1,102 +1,81 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+// import '../services/banking_service.dart';
+// import 'banking_info_screen.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
+
+  Future<void> _launchUrl(String url) async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'À propos',
-          style: TextStyle(fontFamily: 'Signatra', fontSize: 25),
-        ),
-        centerTitle: true,
-        elevation: 0,
+        title: const Text('À propos'),
+        backgroundColor: Colors.purple,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20),
-
-            // Logo/Image de l'app
-            Container(
-              width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                color: Colors.purple,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: const Icon(Icons.quiz, size: 60, color: Colors.white),
-            ),
-
-            const SizedBox(height: 20),
-
-            // Nom de l'app
-            const Text(
-              'Quizz4u',
-              style: TextStyle(
-                fontFamily: 'Signatra',
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.purple,
-              ),
-            ),
-
-            const SizedBox(height: 10),
-
-            // Version
-            const Text(
-              'Version 1.0.0',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-
-            const SizedBox(height: 30),
-
-            // Description
-            const Text(
-              'Une application de quiz éducative avec des questions variées sur différents sujets. Testez vos connaissances et améliorez-vous !',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, height: 1.5),
-            ),
-
-            const SizedBox(height: 40),
-
-            // Informations du développeur
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.purple.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(15),
-              ),
+            // En-tête
+            Center(
               child: Column(
                 children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.purple,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: const Icon(
+                      Icons.quiz,
+                      size: 50,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 15),
                   const Text(
-                    'Développé par',
+                    'Quizz4u',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 28,
                       fontWeight: FontWeight.bold,
                       color: Colors.purple,
                     ),
                   ),
-                  const SizedBox(height: 10),
                   const Text(
-                    'Yacouba Santara',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 5),
-                  const Text(
-                    'Développeur Flutter',
-                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                    'Version 2.0.5',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.grey,
+                    ),
                   ),
                 ],
               ),
             ),
 
             const SizedBox(height: 30),
+
+            // Informations de base
+            _buildInfoSection(
+              'Informations',
+              [
+                _buildInfoTile('Version', '2.0.5', Icons.info),
+                _buildInfoTile('Développeur', 'YACOUBA SANTARA', Icons.person),
+                _buildInfoTile('Contact', 'support@quizz4u.com', Icons.email),
+                _buildInfoTile('Site web', 'quizz4u.site', Icons.web),
+              ],
+            ),
+
+            const SizedBox(height: 20),
 
             // Section Don
             Container(
@@ -134,191 +113,218 @@ class AboutScreen extends StatelessWidget {
                         title: 'Orange Money',
                         icon: Icons.phone_android,
                         color: Colors.orange,
-                        onTap: () => _makeDonation(context, 'Orange Money'),
+                        onTap: () => _launchUrl('tel:+22376039192'),
                       ),
                       _PaymentButton(
-                        title: 'Moov Money',
-                        icon: Icons.phone_android,
+                        title: 'Site Web',
+                        icon: Icons.web,
                         color: Colors.blue,
-                        onTap: () => _makeDonation(context, 'Moov Money'),
+                        onTap: () => _launchUrl('https://quizz4u.site'),
                       ),
                     ],
-                  ),
-                  const SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      _PaymentButton(
-                        title: 'M-Pesa',
-                        icon: Icons.phone_android,
-                        color: Colors.green,
-                        onTap: () => _makeDonation(context, 'M-Pesa'),
-                      ),
-                      _PaymentButton(
-                        title: 'Wave',
-                        icon: Icons.phone_android,
-                        color: Colors.purple,
-                        onTap: () => _makeDonation(context, 'Wave'),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-
-            const SizedBox(height: 30),
-
-            // Contact
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.grey.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                children: [
-                  const Text(
-                    'Contact',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 15),
-                  _ContactItem(
-                    icon: Icons.email,
-                    text: 'yacoubasantara@yahoo.fr',
-                    onTap: () => _launchEmail(),
-                  ),
-                  const SizedBox(height: 10),
-                  _ContactItem(
-                    icon: Icons.phone,
-                    text: '+223 76 03 91 92',
-                    onTap: () => _launchPhone(),
                   ),
                 ],
               ),
             ),
 
             const SizedBox(height: 20),
+
+            // Liens utiles
+            _buildInfoSection(
+              'Liens utiles',
+              [
+                _buildActionTile(
+                  'Politique de confidentialité',
+                  'Lire notre politique',
+                  Icons.privacy_tip,
+                  () => _launchUrl('https://quizz4u.site'),
+                ),
+                _buildActionTile(
+                  'Conditions d\'utilisation',
+                  'Lire nos conditions',
+                  Icons.description,
+                  () => _showTermsDialog(context),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 20),
+
+            // Description
+            Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.grey.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'À propos de Quizz4u',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    'Quizz4u est une application de quiz interactive et éducative qui propose des questions variées dans différentes catégories. Testez vos connaissances, améliorez vos scores et débloquez des badges en progressant dans le jeu.',
+                    style: TextStyle(fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 
-  void _makeDonation(BuildContext context, String method) {
-    showDialog(
-      context: context,
-      builder:
-          (context) => AlertDialog(
-            title: Text('Don via $method'),
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
+  Widget _buildInfoSection(String title, List<Widget> children) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.purple,
+          ),
+        ),
+        const SizedBox(height: 15),
+        Container(
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+            border: Border.all(color: Colors.grey.withOpacity(0.3)),
+          ),
+          child: Column(
+            children: children,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfoTile(String title, String value, IconData icon) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.purple, size: 20),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Numéro: +223 76 03 91 92'),
-                const SizedBox(height: 10),
-                const Text('Montant suggéré: 500 FCFA'),
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey,
+                  ),
+                ),
+                Text(
+                  value,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
               ],
             ),
-            actions: [
-              TextButton(
-                onPressed: () => Navigator.pop(context),
-                child: const Text('Annuler'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text('Merci pour votre don via $method !'),
-                      backgroundColor: Colors.green,
-                    ),
-                  );
-                },
-                child: const Text('Confirmer'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActionTile(
+    String title,
+    String subtitle,
+    IconData icon,
+    VoidCallback onTap,
+  ) {
+    return ListTile(
+      leading: Icon(icon, color: Colors.purple),
+      title: Text(title),
+      subtitle: Text(subtitle),
+      trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+      onTap: onTap,
+    );
+  }
+
+  Widget _PaymentButton({
+    required String title,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+          decoration: BoxDecoration(
+            color: color.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: color.withOpacity(0.3)),
+          ),
+          child: Column(
+            children: [
+              Icon(icon, color: color, size: 30),
+              const SizedBox(height: 5),
+              Text(
+                title,
+                style: TextStyle(
+                  color: color,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                ),
+                textAlign: TextAlign.center,
               ),
             ],
           ),
-    );
-  }
-
-  void _launchEmail() async {
-    final Uri emailUri = Uri(
-      scheme: 'mailto',
-      path: 'yacoubasantara@yahoo.fr',
-      query: 'subject=Support Quizz4u',
-    );
-
-    if (await canLaunchUrl(emailUri)) {
-      await launchUrl(emailUri);
-    }
-  }
-
-  void _launchPhone() async {
-    final Uri phoneUri = Uri(scheme: 'tel', path: '+22376039192');
-
-    if (await canLaunchUrl(phoneUri)) {
-      await launchUrl(phoneUri);
-    }
-  }
-}
-
-class _PaymentButton extends StatelessWidget {
-  final String title;
-  final IconData icon;
-  final Color color;
-  final VoidCallback onTap;
-
-  const _PaymentButton({
-    required this.title,
-    required this.icon,
-    required this.color,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 5),
-        child: ElevatedButton.icon(
-          onPressed: onTap,
-          icon: Icon(icon, color: Colors.white),
-          label: Text(title, style: const TextStyle(color: Colors.white)),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: color,
-            padding: const EdgeInsets.symmetric(vertical: 12),
-          ),
         ),
       ),
     );
   }
-}
 
-class _ContactItem extends StatelessWidget {
-  final IconData icon;
-  final String text;
-  final VoidCallback onTap;
-
-  const _ContactItem({
-    required this.icon,
-    required this.text,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(8),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, color: Colors.purple, size: 20),
-            const SizedBox(width: 10),
-            Text(text, style: const TextStyle(fontSize: 14)),
-          ],
+  void _showTermsDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Conditions d\'utilisation'),
+        content: const SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Conditions d\'utilisation de Quizz4u',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 10),
+              Text(
+                '1. Utilisation de l\'application\n'
+                '2. Contenu et propriété intellectuelle\n'
+                '3. Limitation de responsabilité\n'
+                '4. Modifications des conditions\n'
+                '5. Contact et support\n\n'
+                'Pour plus d\'informations, visitez notre site web.',
+              ),
+            ],
+          ),
         ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Fermer'),
+          ),
+        ],
       ),
     );
   }

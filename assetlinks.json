@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.quizz4u.app",
+      "sha256_cert_fingerprints": [
+        "91:F6:DB:79:6A:E6:13:73:81:80:BA:E6:62:42:70:0F:5C:F9:22:48:10:DF:9D:65:84:78:27:59:38:6C:FC:62"
+      ]
+    }
+  }
+] 

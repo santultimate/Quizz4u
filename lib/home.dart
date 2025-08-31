@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'CategorySelectionScreen.dart'; // Assure-toi d'importer le bon fichier
+import 'category_selection_screen.dart'; // Assure-toi d'importer le bon fichier
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Quizz4U',
               style: TextStyle(
                 fontFamily: 'Signatra',

@@ -1,0 +1,230 @@
+{
+  "Arts et Culture": {
+    "Peinture et Sculpture": [
+      {
+        "question": "Quel peintre a créé 'La Joconde' ?",
+        "options": [
+          "Leonard de Vinci",
+          "Michel-Ange",
+          "Raphaël",
+          "Botticelli"
+        ],
+        "correctAnswer": "Leonard de Vinci",
+        "explanation": "Leonard de Vinci a peint 'La Joconde' entre 1503 et 1519. Ce tableau est l'une des œuvres les plus célèbres au monde.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Peinture et Sculpture"
+      },
+      {
+        "question": "Quel sculpteur a créé 'David' ?",
+        "options": [
+          "Leonard de Vinci",
+          "Michel-Ange",
+          "Donatello",
+          "Bernini"
+        ],
+        "correctAnswer": "Michel-Ange",
+        "explanation": "Michel-Ange a sculpté 'David' entre 1501 et 1504. Cette statue de marbre mesure 5,17 mètres de haut.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Peinture et Sculpture"
+      }
+    ],
+    "Musique Classique": [
+      {
+        "question": "Quel compositeur a écrit 'La 9ème Symphonie' ?",
+        "options": [
+          "Mozart",
+          "Beethoven",
+          "Bach",
+          "Haydn"
+        ],
+        "correctAnswer": "Beethoven",
+        "explanation": "Beethoven a composé sa 9ème Symphonie en 1824. Elle est célèbre pour son 'Ode à la Joie'.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Classique"
+      }
+    ],
+    "Cinéma": [
+      {
+        "question": "Quel réalisateur a dirigé 'Citizen Kane' ?",
+        "options": [
+          "Alfred Hitchcock",
+          "Orson Welles",
+          "Charlie Chaplin",
+          "John Ford"
+        ],
+        "correctAnswer": "Orson Welles",
+        "explanation": "Orson Welles a réalisé 'Citizen Kane' en 1941. Ce film est souvent considéré comme le plus grand film de tous les temps.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma"
+      }
+    ]
+  },
+  "Politique et Économie": {
+    "Institutions Internationales": [
+      {
+        "question": "Quel pays a le plus grand PIB au monde ?",
+        "options": [
+          "États-Unis",
+          "Chine",
+          "Japon",
+          "Allemagne"
+        ],
+        "correctAnswer": "États-Unis",
+        "explanation": "Les États-Unis ont le plus grand PIB nominal au monde, suivi de la Chine.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Institutions Internationales"
+      },
+      {
+        "question": "Quel est le siège de l'ONU ?",
+        "options": [
+          "Paris",
+          "New York",
+          "Genève",
+          "Vienne"
+        ],
+        "correctAnswer": "New York",
+        "explanation": "Le siège principal de l'Organisation des Nations Unies se trouve à New York, aux États-Unis.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Institutions Internationales"
+      }
+    ],
+    "Économie Africaine": [
+      {
+        "question": "Quel est le plus grand producteur de cacao au monde ?",
+        "options": [
+          "Ghana",
+          "Côte d'Ivoire",
+          "Nigeria",
+          "Cameroun"
+        ],
+        "correctAnswer": "Côte d'Ivoire",
+        "explanation": "La Côte d'Ivoire est le premier producteur mondial de cacao, avec environ 40% de la production mondiale.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Africaine"
+      }
+    ]
+  },
+  "Technologie et Innovation": {
+    "Informatique": [
+      {
+        "question": "Quel langage de programmation a été créé par Google ?",
+        "options": [
+          "Python",
+          "Java",
+          "Go",
+          "C++"
+        ],
+        "correctAnswer": "Go",
+        "explanation": "Go (ou Golang) a été créé par Google en 2009. Il est conçu pour être simple et efficace.",
+        "difficulty": "hard",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique"
+      },
+      {
+        "question": "Quel est le nom du premier ordinateur personnel d'Apple ?",
+        "options": [
+          "Macintosh",
+          "Apple I",
+          "Apple II",
+          "Lisa"
+        ],
+        "correctAnswer": "Apple I",
+        "explanation": "L'Apple I, créé en 1976, était le premier ordinateur personnel d'Apple, conçu par Steve Wozniak.",
+        "difficulty": "hard",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique"
+      }
+    ],
+    "Intelligence Artificielle": [
+      {
+        "question": "Quel est le nom de l'IA de Google ?",
+        "options": [
+          "Siri",
+          "Alexa",
+          "Bard",
+          "Cortana"
+        ],
+        "correctAnswer": "Bard",
+        "explanation": "Bard est l'assistant IA conversationnel développé par Google, lancé en 2023.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle"
+      }
+    ]
+  },
+  "Santé et Médecine": {
+    "Anatomie": [
+      {
+        "question": "Combien de litres de sang contient le corps humain ?",
+        "options": [
+          "3-4 litres",
+          "4-5 litres",
+          "5-6 litres",
+          "6-7 litres"
+        ],
+        "correctAnswer": "5-6 litres",
+        "explanation": "Le corps humain adulte contient environ 5-6 litres de sang, soit 7-8% du poids corporel.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Anatomie"
+      }
+    ],
+    "Maladies": [
+      {
+        "question": "Quel virus cause le SIDA ?",
+        "options": [
+          "VIH",
+          "VHC",
+          "VHB",
+          "VHA"
+        ],
+        "correctAnswer": "VIH",
+        "explanation": "Le VIH (Virus de l'Immunodéficience Humaine) est le virus qui cause le SIDA.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies"
+      }
+    ]
+  },
+  "Environnement et Écologie": {
+    "Changement Climatique": [
+      {
+        "question": "Quel gaz est principalement responsable de l'effet de serre ?",
+        "options": [
+          "Oxygène",
+          "Azote",
+          "Dioxyde de carbone",
+          "Hydrogène"
+        ],
+        "correctAnswer": "Dioxyde de carbone",
+        "explanation": "Le dioxyde de carbone (CO2) est le principal gaz à effet de serre responsable du réchauffement climatique.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique"
+      }
+    ],
+    "Biodiversité": [
+      {
+        "question": "Quel pourcentage d'espèces animales vivent dans les océans ?",
+        "options": [
+          "50%",
+          "70%",
+          "80%",
+          "90%"
+        ],
+        "correctAnswer": "80%",
+        "explanation": "Environ 80% des espèces animales vivent dans les océans, ce qui en fait le plus grand écosystème de la planète.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité"
+      }
+    ]
+  }
+} 

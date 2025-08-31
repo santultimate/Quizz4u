@@ -1,23 +1,72 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'services/question_service.dart';
 import 'services/settings_service.dart';
-import 'models/QuestionModel.dart';
+import 'services/ad_service.dart';
+import 'models/question_model.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'screens/about_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/premium_screen.dart';
+import 'screens/profile_screen.dart';
+import 'screens/leaderboard_screen.dart';
+import 'services/premium_service.dart';
+import 'services/purchase_service.dart';
+import 'services/audio_service.dart';
+import 'services/unified_audio_service.dart';
+import 'components/flame_animations.dart';
+import 'services/progress_service.dart';
+import 'services/leaderboard_service.dart';
+import 'services/badge_notification_service.dart';
+import 'services/badge_service.dart';
+// import 'services/audio_test_service.dart';
+import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
+
+  // Initialiser les services audio
+  await AudioService.instance.initialize();
+  await UnifiedAudioService.instance.initialize();
+
+  // Initialiser AdMob
+  await AdService.initialize();
+
+  // Initialiser les achats in-app
+  await PurchaseService.initialize();
 
   // Charger les questions au démarrage
   await QuestionService.loadQuestions();
 
-  runApp(MyApp());
+  // Initialiser le service de progression
+  await ProgressService.loadProgress();
+
+  // Initialiser Firebase d'abord
+  try {
+    await Firebase.initializeApp();
+    print('[main] ✅ Firebase initialisé');
+  } catch (e) {
+    print('[main] ⚠️ Erreur Firebase: $e');
+  }
+
+  // Initialiser le service de notifications
+  try {
+    await NotificationService.instance.initialize();
+  } catch (e) {
+    print('[main] ⚠️ Erreur notifications: $e');
+  }
+
+  // Test audio au démarrage (optionnel)
+  // AudioTestService.runFullAudioTest();
+
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -41,6 +90,7 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _themeMode = themeMode;
     });
+    print('[MyApp] 🎨 Thème chargé: $_themeMode');
   }
 
   @override
@@ -55,7 +105,10 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (context) => const HomeScreen(),
         '/about': (context) => const AboutScreen(),
-        '/settings': (context) => const SettingsScreen(),
+        '/settings': (context) => SettingsScreen(
+              onThemeChanged: _loadThemeMode,
+            ),
+        '/profile': (context) => const ProfileScreen(),
       },
     );
   }
@@ -73,16 +126,14 @@ class _MyAppState extends State<MyApp> {
         foregroundColor: Colors.white,
         elevation: 0,
       ),
-      cardTheme: CardTheme(
-        color: isDark ? Colors.grey[800] : Colors.white,
-        elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.purple,
-          foregroundColor: Colors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      textTheme: TextTheme(
+        headlineLarge: TextStyle(
+          color: isDark ? Colors.white : Colors.black,
+          fontFamily: 'Raleway',
+        ),
+        bodyLarge: TextStyle(
+          color: isDark ? Colors.white : Colors.black,
+          fontFamily: 'Raleway',
         ),
       ),
     );
@@ -90,11 +141,12 @@ class _MyAppState extends State<MyApp> {
 
   ThemeMode _getThemeMode() {
     switch (_themeMode) {
-      case 'light':
+      case 'clair':
         return ThemeMode.light;
-      case 'dark':
+      case 'sombre':
         return ThemeMode.dark;
-      case 'system':
+      case 'système':
+        return ThemeMode.system;
       default:
         return ThemeMode.system;
     }
@@ -102,8 +154,48 @@ class _MyAppState extends State<MyApp> {
 }
 
 // ========== ACCUEIL ==========
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  BannerAd? _bannerAd;
+  bool _isPremium = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadBannerAd();
+    _checkPremiumStatus();
+  }
+
+  void _checkPremiumStatus() async {
+    final isPremium = await PremiumService.isPremiumUser();
+    setState(() {
+      _isPremium = isPremium;
+    });
+  }
+
+  void _loadBannerAd() async {
+    try {
+      _bannerAd = await AdService.createBannerAd();
+      if (_bannerAd != null) {
+        await _bannerAd!.load();
+        setState(() {}); // Rafraîchir l'interface après le chargement
+      }
+    } catch (e) {
+      print('[HomeScreen] ❌ Erreur chargement bannière: $e');
+    }
+  }
+
+  @override
+  void dispose() {
+    _bannerAd?.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -113,6 +205,18 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.purple[700],
         elevation: 0,
         centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.emoji_events, color: Colors.amber),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const LeaderboardScreen(),
+              ),
+            );
+          },
+          tooltip: '🏆 Records',
+        ),
         title: const Text(
           "Bienvenue au Quiz",
           style: TextStyle(
@@ -122,21 +226,38 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         actions: [
+          if (!_isPremium)
+            IconButton(
+              icon: const Icon(Icons.star, color: Colors.amber),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const PremiumScreen()),
+                ).then((_) => _checkPremiumStatus());
+              },
+            ),
+          IconButton(
+            icon: const Icon(Icons.person, color: Colors.white),
+            onPressed: () {
+              Navigator.pushNamed(context, '/profile');
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.settings, color: Colors.white),
             onPressed: () {
               Navigator.pushNamed(context, '/settings');
             },
           ),
-          IconButton(
-            icon: const Icon(Icons.analytics, color: Colors.white),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => StatsScreen()),
-              );
-            },
-          ),
+          // IconButton(
+          //   icon: const Icon(Icons.analytics, color: Colors.white),
+          //   onPressed: () {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (context) => const StatsScreen()),
+          //     );
+          //   },
+          // ),
         ],
       ),
       body: Center(
@@ -187,6 +308,15 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 20),
+            // Bannière publicitaire AdMob
+            if (_bannerAd != null && _bannerAd!.responseInfo != null)
+              Container(
+                alignment: Alignment.center,
+                width: _bannerAd!.size.width.toDouble(),
+                height: _bannerAd!.size.height.toDouble(),
+                child: AdWidget(ad: _bannerAd!),
+              ),
           ],
         ),
       ),
@@ -209,7 +339,7 @@ class CategorySelectionScreen extends StatelessWidget {
         title: const Text(
           'Choisissez une catégorie',
           style: TextStyle(
-            fontFamily: 'Signatra',
+            fontFamily: 'Raleway',
             fontSize: 25,
             color: Colors.white,
           ),
@@ -311,8 +441,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<List<QuestionModel>> getQuestionsForCategory(String category) async {
     await QuestionService.loadQuestions();
-
-    return QuestionService.getRandomQuestionsForCategory(category, count: 10);
+    return QuestionService.getSmartQuestionsForCategory(category, count: 10);
   }
 
   @override
@@ -323,13 +452,13 @@ class _QuizScreenState extends State<QuizScreen> {
           title: Text('Quiz: ${widget.category}'),
           backgroundColor: Colors.purple[700],
         ),
-        body: Center(
+        body: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircularProgressIndicator(),
-              const SizedBox(height: 20),
-              const Text(
+              CircularProgressIndicator(),
+              SizedBox(height: 20),
+              Text(
                 'Chargement des questions...',
                 style: TextStyle(fontSize: 18, fontFamily: 'Raleway'),
               ),
@@ -371,6 +500,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   bool showCorrectAnswer = false;
   bool isSpeaking = false;
   bool autoSpeechEnabled = true;
+  bool backgroundMusicEnabled = true;
+  bool animationsEnabled = true;
+  int questionsSinceLastAd = 0;
+
+  // Variables pour les animations Flame
+  bool _showGoodAnimation = false;
+  bool _showLevelUpAnimation = false;
 
   late FlutterTts flutterTts;
   late AnimationController _timerAnimationController;
@@ -383,6 +519,14 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     flutterTts = FlutterTts();
     _initializeAnimations();
     _loadSettings();
+    _loadInterstitialAd();
+
+    // Lire la première question si TTS est activé
+    if (autoSpeechEnabled) {
+      _speakQuestion();
+    }
+
+    _startTimer(); // Démarrer le timer
   }
 
   void _initializeAnimations() {
@@ -405,520 +549,384 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   Future<void> _loadSettings() async {
-    final difficulty = await SettingsService.getDifficulty();
-    final ttsEnabled = await SettingsService.isTtsEnabled();
-
+    final prefs = await SharedPreferences.getInstance();
+    final timerDuration = prefs.getInt('timer_duration') ?? 15;
+    print(
+        '[QuizPage] 🔄 Chargement paramètres timer: $totalTime -> $timerDuration secondes');
     setState(() {
-      totalTime = SettingsService.getTimerDurationForDifficulty(difficulty);
-      autoSpeechEnabled = ttsEnabled;
+      autoSpeechEnabled = prefs.getBool('tts_enabled') ?? true;
+      backgroundMusicEnabled = prefs.getBool('background_music') ?? true;
+      animationsEnabled = prefs.getBool('animations_enabled') ?? true;
+      totalTime = timerDuration;
     });
+    print('[QuizPage] ✅ Timer configuré: $totalTime secondes');
+    print(
+        '[QuizPage] ✅ Animations: ${animationsEnabled ? 'activées' : 'désactivées'}');
 
-    if (ttsEnabled) {
-      _speakQuestion();
-    }
-
-    startTimer();
-  }
-
-  Future<void> speakQuestion(String text) async {
-    setState(() {
-      isSpeaking = true;
-    });
-
+    // Initialiser TTS
     await flutterTts.setLanguage('fr-FR');
     await flutterTts.setSpeechRate(0.5);
-    await flutterTts.speak(text);
+    await flutterTts.setVolume(1.0);
+    await flutterTts.setPitch(1.0);
 
+    // Démarrer la musique de fond si activée
+    if (backgroundMusicEnabled) {
+      Future.delayed(const Duration(milliseconds: 300), () {
+        if (mounted) {
+          AudioService.instance.playBackgroundMusic();
+        }
+      });
+    }
+  }
+
+  // Méthode pour charger les paramètres sans relire la question
+  Future<void> _loadSettingsWithoutTTS() async {
+    final prefs = await SharedPreferences.getInstance();
+    final timerDuration = prefs.getInt('timer_duration') ?? 15;
     setState(() {
-      isSpeaking = false;
+      autoSpeechEnabled = prefs.getBool('tts_enabled') ?? true;
+      backgroundMusicEnabled = prefs.getBool('background_music') ?? true;
+      animationsEnabled = prefs.getBool('animations_enabled') ?? true;
+      totalTime = timerDuration;
     });
   }
 
-  void _speakQuestion() {
-    if (widget.questions.isEmpty ||
-        currentQuestionIndex >= widget.questions.length) {
+  void _loadInterstitialAd() async {
+    await AdService.loadInterstitialAd();
+  }
+
+  // Méthode pour lire la question actuelle
+  void _speakQuestion() async {
+    if (!autoSpeechEnabled || currentQuestionIndex >= widget.questions.length)
       return;
-    }
-    final question = widget.questions[currentQuestionIndex];
-    speakQuestion(question.question);
+
+    final currentQuestion = widget.questions[currentQuestionIndex];
+    await flutterTts.speak(currentQuestion.question);
   }
 
-  void _toggleSpeech() async {
-    if (isSpeaking) {
-      await flutterTts.stop();
-      setState(() {
-        isSpeaking = false;
-      });
-    } else {
-      // Vérifier si la lecture automatique est activée
-      final ttsEnabled = await SettingsService.isTtsEnabled();
-      if (ttsEnabled) {
-        _speakQuestion();
-      } else {
-        // Si la lecture automatique est désactivée, l'activer temporairement
-        await SettingsService.setTtsEnabled(true);
-        _speakQuestion();
-      }
-    }
+  // Méthode pour arrêter la lecture
+  void _stopSpeaking() async {
+    await flutterTts.stop();
   }
 
-  void _toggleAutoSpeech() async {
-    final currentTtsEnabled = await SettingsService.isTtsEnabled();
-    await SettingsService.setTtsEnabled(!currentTtsEnabled);
-
+  // Méthode pour basculer l'activation du TTS (appui long)
+  void _toggleTTS() async {
+    final prefs = await SharedPreferences.getInstance();
     setState(() {
-      autoSpeechEnabled = !currentTtsEnabled;
+      autoSpeechEnabled = !autoSpeechEnabled;
     });
+    await prefs.setBool('tts_enabled', autoSpeechEnabled);
 
-    if (currentTtsEnabled) {
-      // Désactiver la lecture automatique
-      await flutterTts.stop();
-      setState(() {
-        isSpeaking = false;
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Lecture automatique désactivée'),
-          backgroundColor: Colors.orange,
-          duration: Duration(seconds: 2),
-        ),
-      );
-    } else {
-      // Activer la lecture automatique
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Lecture automatique activée'),
-          backgroundColor: Colors.green,
-          duration: Duration(seconds: 2),
-        ),
-      );
-    }
-  }
-
-  Future<void> _checkTtsAndSpeak() async {
-    final ttsEnabled = await SettingsService.isTtsEnabled();
-    if (ttsEnabled) {
+    if (autoSpeechEnabled) {
       _speakQuestion();
-    }
-  }
-
-  void startTimer() {
-    if (isPaused) return;
-
-    progress = 1.0;
-    _timer?.cancel();
-    int timeLeft = totalTime;
-
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (isPaused) return;
-
-      setState(() {
-        timeLeft--;
-        progress = timeLeft / totalTime;
-
-        // Animation du timer
-        if (timeLeft <= 5) {
-          _pulseAnimationController.repeat(reverse: true);
-        }
-
-        if (timeLeft <= 0) {
-          timer.cancel();
-          _showCorrectAnswerAndContinue();
-        }
-      });
-    });
-  }
-
-  void _showCorrectAnswerAndContinue() {
-    setState(() {
-      showCorrectAnswer = true;
-    });
-
-    Future.delayed(const Duration(seconds: 2), () {
-      goToNextQuestion();
-    });
-  }
-
-  void togglePause() {
-    setState(() {
-      isPaused = !isPaused;
-    });
-
-    if (isPaused) {
-      _timer?.cancel();
-      _pulseAnimationController.stop();
-      _showPauseDialog();
     } else {
-      startTimer();
+      _stopSpeaking();
     }
   }
 
-  void _showPauseDialog() {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        title: const Text(
-          'Quiz en pause',
-          style: TextStyle(fontFamily: 'Signatra', fontSize: 24),
-        ),
-        content: const Text(
-          'Le quiz est actuellement en pause. Appuyez sur "Reprendre" pour continuer.',
-          style: TextStyle(fontSize: 16),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              togglePause();
-            },
-            child: const Text('Reprendre'),
-          ),
-        ],
-      ),
-    );
+  void _startTimer() {
+    // Arrêter le timer précédent s'il existe
+    _timer?.cancel();
+
+    print('[QuizPage] 🕐 Démarrage timer: $totalTime secondes');
+
+    // Démarrer une animation fluide du timer
+    _timerAnimationController.duration = Duration(seconds: totalTime);
+    _timerAnimationController.reset();
+    _timerAnimationController.forward();
+
+    // Timer pour vérifier la fin
+    _timer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
+      if (mounted) {
+        setState(() {
+          progress = 1.0 - _timerAnimationController.value;
+
+          if (progress <= 0) {
+            _timer?.cancel();
+            _checkAnswer(null);
+          }
+        });
+      }
+    });
   }
 
-  void checkAnswer(String answer) {
-    if (selectedAnswer != null || showCorrectAnswer) return;
-    if (widget.questions.isEmpty ||
-        currentQuestionIndex >= widget.questions.length) {
-      return;
-    }
+  void _checkAnswer(String? answer) {
+    if (selectedAnswer != null) return;
 
     setState(() {
       selectedAnswer = answer;
-      if (answer == widget.questions[currentQuestionIndex].correctAnswer) {
-        score++;
+      showCorrectAnswer = true;
+    });
+
+    _timer?.cancel();
+
+    final currentQuestion = widget.questions[currentQuestionIndex];
+    final isCorrect = answer == currentQuestion.correctAnswer;
+
+    if (isCorrect) {
+      score++;
+      // Jouer le son et l'animation pour bonne réponse
+      UnifiedAudioService.instance.playGoodSound();
+      if (animationsEnabled) {
+        setState(() {
+          _showGoodAnimation = true;
+        });
+      }
+    } else {
+      // Jouer le son pour mauvaise réponse
+      UnifiedAudioService.instance.playBadSound();
+    }
+
+    // Enregistrer automatiquement la réponse pour les statistiques
+    ProgressService.addAnswer(isCorrect, 1, widget.category);
+
+    // Incrémenter le compteur de questions pour les publicités
+    questionsSinceLastAd++;
+
+    // Attendre que l'animation se termine avant de passer à la question suivante
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        setState(() {
+          _showGoodAnimation = false;
+          selectedAnswer = null;
+          showCorrectAnswer = false;
+          progress = 1.0;
+          currentQuestionIndex++;
+        });
+
+        if (currentQuestionIndex < widget.questions.length) {
+          // Recharger les paramètres avant la question suivante (sans relire la question)
+          _loadSettingsWithoutTTS();
+
+          // Afficher une publicité après chaque 3 questions
+          if (questionsSinceLastAd >= 3) {
+            // Arrêter la musique avant la publicité
+            if (backgroundMusicEnabled) {
+              UnifiedAudioService.instance.stopBackgroundMusic();
+            }
+
+            AdService.showInterstitialAd();
+            questionsSinceLastAd = 0;
+            _loadInterstitialAd(); // Recharger une nouvelle publicité
+
+            // Reprendre la musique après la publicité
+            Future.delayed(const Duration(seconds: 2), () {
+              if (backgroundMusicEnabled && mounted) {
+                UnifiedAudioService.instance.playBackgroundMusic();
+              }
+            });
+          }
+
+          _startTimer();
+          _speakQuestion(); // Lire la nouvelle question
+        } else {
+          _finishQuiz();
+        }
       }
     });
-
-    _timer?.cancel();
-    _pulseAnimationController.stop();
-
-    Future.delayed(const Duration(seconds: 2), () => goToNextQuestion());
   }
 
-  void goToNextQuestion() {
-    _timer?.cancel();
-    _pulseAnimationController.stop();
+  void _finishQuiz() async {
+    // Vérifier les nouveaux badges
+    final newBadges = BadgeService.checkAllBadges(
+        ProgressService.currentProgress, widget.category, 'mixed');
 
-    if (currentQuestionIndex < widget.questions.length - 1) {
+    // Afficher l'animation de niveau si bon score et animations activées
+    if (score >= (widget.questions.length * 0.8) && animationsEnabled) {
       setState(() {
-        currentQuestionIndex++;
-        selectedAnswer = null;
-        showCorrectAnswer = false;
+        _showLevelUpAnimation = true;
       });
 
-      _checkTtsAndSpeak();
-
-      startTimer();
-    } else {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ResultScreen(
-            score: score,
-            total: widget.questions.length,
-            category: widget.category,
-          ),
-        ),
-      );
-    }
-  }
-
-  @override
-  void dispose() {
-    _timer?.cancel();
-    _timerAnimationController.dispose();
-    _pulseAnimationController.dispose();
-    flutterTts.stop();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (widget.questions.isEmpty ||
-        currentQuestionIndex >= widget.questions.length) {
-      return Scaffold(
-        backgroundColor: Colors.purple,
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const CircularProgressIndicator(color: Colors.white),
-              const SizedBox(height: 20),
-              const Text(
-                'Chargement des questions...',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontFamily: 'Raleway',
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
+      Future.delayed(const Duration(seconds: 3), () {
+        if (mounted) {
+          setState(() {
+            _showLevelUpAnimation = false;
+          });
+        }
+      });
     }
 
-    if (widget.questions.isEmpty ||
-        currentQuestionIndex >= widget.questions.length) {
-      return Scaffold(
-        backgroundColor: Colors.purple,
-        body: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CircularProgressIndicator(color: Colors.white),
-              SizedBox(height: 20),
-              Text(
-                'Chargement des questions...',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontFamily: 'Raleway',
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
+    // Afficher les notifications de badges après l'animation de niveau
+    if (newBadges.isNotEmpty) {
+      Future.delayed(const Duration(seconds: 4), () {
+        if (mounted) {
+          BadgeNotificationService.showMultipleBadgeNotifications(
+            context,
+            newBadges,
+          );
+        }
+      });
     }
 
-    final question = widget.questions[currentQuestionIndex];
+    // Sauvegarder le score (commenté car ProgressService.saveScore n'existe pas)
+    // await ProgressService.saveScore(widget.category, score, widget.questions.length);
 
-    return Scaffold(
-      backgroundColor: Colors.purple,
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: [
-            // Timer animé
-            Container(
-              height: 8,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(4),
-                color: Colors.white24,
-              ),
-              child: AnimatedBuilder(
-                animation: _pulseAnimation,
-                builder: (context, child) {
-                  Color timerColor = Colors.white;
-                  if (progress <= 0.3) {
-                    timerColor = Colors.red;
-                  } else if (progress <= 0.6) {
-                    timerColor = Colors.orange;
-                  }
-
-                  return Container(
-                    width: MediaQuery.of(context).size.width * progress * 0.9,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
-                      color: timerColor,
-                    ),
-                  );
-                },
-              ),
-            ),
-            const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Score: $score',
-                  style: const TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                    fontFamily: 'Raleway',
-                  ),
-                ),
-                Text(
-                  'Question ${currentQuestionIndex + 1}/${widget.questions.length}',
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
-                    fontFamily: 'Raleway',
-                  ),
-                ),
-                IconButton(
-                  icon: Icon(
-                    isPaused ? Icons.play_arrow : Icons.pause,
-                    color: Colors.white,
-                  ),
-                  onPressed: togglePause,
-                ),
-              ],
-            ),
-            const SizedBox(height: 30),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Text(
-                    question.question,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      color: Colors.white,
-                      fontFamily: 'Raleway',
-                    ),
-                  ),
-                ),
-                Column(
-                  children: [
-                    GestureDetector(
-                      onTap: _toggleSpeech,
-                      onLongPress: _toggleAutoSpeech,
-                      child: Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: autoSpeechEnabled
-                              ? Colors.green.withOpacity(0.3)
-                              : Colors.orange.withOpacity(0.3),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Icon(
-                          isSpeaking ? Icons.volume_off : Icons.volume_up,
-                          color: Colors.white,
-                          size: 28,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      autoSpeechEnabled ? 'Auto ON' : 'Auto OFF',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 10,
-                        fontFamily: 'Raleway',
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            const SizedBox(height: 30),
-            ...question.answers.entries.map((entry) {
-              final isSelected = selectedAnswer == entry.key;
-              final isCorrect = entry.key == question.correctAnswer;
-              Color backgroundColor = Colors.white;
-              Color textColor = Colors.purple;
-
-              if (selectedAnswer != null || showCorrectAnswer) {
-                if (isCorrect) {
-                  backgroundColor = Colors.green;
-                  textColor = Colors.white;
-                } else if (isSelected && !isCorrect) {
-                  backgroundColor = Colors.red;
-                  textColor = Colors.white;
-                }
-              }
-
-              return Container(
-                width: double.infinity,
-                margin: const EdgeInsets.symmetric(vertical: 6),
-                child: TextButton(
-                  onPressed: () => checkAnswer(entry.key),
-                  style: TextButton.styleFrom(
-                    backgroundColor: backgroundColor,
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 12,
-                      horizontal: 16,
-                    ),
-                  ),
-                  child: Text(
-                    entry.key,
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: textColor,
-                      fontFamily: 'Raleway',
-                    ),
-                  ),
-                ),
-              );
-            }),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-// ========== ÉCRAN DE RÉSULTAT ==========
-class ResultScreen extends StatefulWidget {
-  final int score;
-  final int total;
-  final String category;
-
-  const ResultScreen({
-    super.key,
-    required this.score,
-    required this.total,
-    required this.category,
-  });
-
-  @override
-  State<ResultScreen> createState() => _ResultScreenState();
-}
-
-class _ResultScreenState extends State<ResultScreen>
-    with TickerProviderStateMixin {
-  late AnimationController _animationController;
-  late Animation<double> _scaleAnimation;
-  late Animation<double> _fadeAnimation;
-
-  bool _isTop3 = false;
-  int _rank = 0;
-  String _playerName = '';
-
-  @override
-  void initState() {
-    super.initState();
-    _animationController = AnimationController(
-      duration: const Duration(milliseconds: 1500),
-      vsync: this,
-    );
-
-    _scaleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.elasticOut),
-    );
-
-    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.easeIn),
-    );
-
-    _checkLeaderboard();
-    _animationController.forward();
-  }
-
-  Future<void> _checkLeaderboard() async {
-    final isTop3 = await LeaderboardManager.isTop3(widget.score);
-    final rank = await LeaderboardManager.getRank(widget.score);
-
-    setState(() {
-      _isTop3 = isTop3;
-      _rank = rank;
+    // Afficher les résultats après un délai
+    Future.delayed(const Duration(seconds: 4), () {
+      if (mounted) {
+        _showResults();
+      }
     });
-
-    if (isTop3) {
-      _showNameInputDialog();
-    }
   }
 
-  void _showNameInputDialog() {
+  void _showResults() async {
+    final accuracy = score / widget.questions.length;
+    final percentage = (accuracy * 100).toInt();
+
+    // SAUVEGARDER LE SCORE AVANT TOUT
+    print('[QuizPage] 🎯 Sauvegarde du score final...');
+    try {
+      // Calculer les statistiques finales
+      int totalQuestionsAnswered = widget.questions.length;
+      double accuracyRate = (score / totalQuestionsAnswered) * 100;
+
+      // Enregistrer le score total dans la progression
+      int totalXP = score; // 1 point = 1 XP
+      await ProgressService.addExperience(totalXP,
+          reason: 'Score Quiz ${widget.category}');
+      print('[QuizPage] 🎯 XP total ajouté: +$totalXP XP');
+
+      // Ajouter un bonus pour la précision
+      if (accuracyRate >= 80) {
+        int bonusXP =
+            (accuracyRate - 80).round() * 2; // Bonus pour haute précision
+        await ProgressService.addExperience(bonusXP, reason: 'Bonus Précision');
+        print('[QuizPage] 🎁 Bonus précision: +$bonusXP XP');
+      }
+
+      // Ajouter un bonus pour le score élevé
+      if (score >= totalQuestionsAnswered * 8) {
+        // 80% du score max
+        int bonusXP = 10;
+        await ProgressService.addExperience(bonusXP,
+            reason: 'Bonus Score Élevé');
+        print('[QuizPage] 🎁 Bonus score élevé: +$bonusXP XP');
+      }
+
+      // Calculer les bonnes réponses basées sur le score réel
+      int correctAnswers = 0;
+      int wrongAnswers = 0;
+
+      // Le score est directement le nombre de bonnes réponses
+      // (pas multiplié par 10 comme dans l'ancienne logique)
+      correctAnswers = score;
+      wrongAnswers = totalQuestionsAnswered - correctAnswers;
+
+      // S'assurer que les valeurs sont cohérentes
+      if (correctAnswers > totalQuestionsAnswered) {
+        correctAnswers = totalQuestionsAnswered;
+        wrongAnswers = 0;
+      }
+      if (wrongAnswers < 0) {
+        wrongAnswers = 0;
+      }
+
+      // Bonus de performance par catégorie
+      double categoryPerformance =
+          (correctAnswers / totalQuestionsAnswered) * 100;
+
+      // Bonus pour excellente performance (90%+)
+      if (categoryPerformance >= 90) {
+        int performanceBonus = 15;
+        await ProgressService.addExperience(performanceBonus,
+            reason: 'Bonus Performance ${widget.category}');
+        print(
+            '[QuizPage] 🏆 Bonus performance catégorie: +$performanceBonus XP');
+      }
+      // Bonus pour bonne performance (80-89%)
+      else if (categoryPerformance >= 80) {
+        int performanceBonus = 10;
+        await ProgressService.addExperience(performanceBonus,
+            reason: 'Bonus Performance ${widget.category}');
+        print(
+            '[QuizPage] 🏆 Bonus performance catégorie: +$performanceBonus XP');
+      }
+      // Bonus pour performance correcte (70-79%)
+      else if (categoryPerformance >= 70) {
+        int performanceBonus = 5;
+        await ProgressService.addExperience(performanceBonus,
+            reason: 'Bonus Performance ${widget.category}');
+        print(
+            '[QuizPage] 🏆 Bonus performance catégorie: +$performanceBonus XP');
+      }
+
+      // Les statistiques sont déjà enregistrées automatiquement lors de chaque réponse
+      print(
+          '[QuizPage] 📊 Statistiques automatiquement enregistrées pendant le quiz');
+
+      print(
+          '[QuizPage] 📊 Statistiques complètes: $correctAnswers bonnes, $wrongAnswers mauvaises sur $totalQuestionsAnswered');
+
+      // Forcer la mise à jour des statistiques
+      await ProgressService.loadProgress();
+
+      print(
+          '[QuizPage] ✅ Score final sauvegardé: $score points, Précision: ${accuracyRate.toStringAsFixed(1)}%');
+
+      // Afficher un message de confirmation
+      if (context.mounted) {
+        int totalBonus =
+            (accuracyRate >= 80 ? (accuracyRate - 80).round() * 2 : 0) +
+                (score >= totalQuestionsAnswered * 8 ? 10 : 0) +
+                (categoryPerformance >= 90
+                    ? 15
+                    : categoryPerformance >= 80
+                        ? 10
+                        : categoryPerformance >= 70
+                            ? 5
+                            : 0);
+
+        String performanceMessage = '';
+        if (categoryPerformance >= 90) {
+          performanceMessage = '🏆 Performance excellente !';
+        } else if (categoryPerformance >= 80) {
+          performanceMessage = '🏆 Performance très bonne !';
+        } else if (categoryPerformance >= 70) {
+          performanceMessage = '🏆 Performance correcte !';
+        }
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('🎯 Score sauvegardé ! +$totalXP XP + $totalBonus bonus'),
+                if (performanceMessage.isNotEmpty)
+                  Text(performanceMessage,
+                      style: const TextStyle(fontSize: 12)),
+              ],
+            ),
+            backgroundColor: Colors.green,
+            duration: const Duration(seconds: 4),
+          ),
+        );
+      }
+    } catch (e) {
+      print('[QuizPage] ❌ Erreur sauvegarde score: $e');
+    }
+
+    // LANCEMENT DE LA PUB À LA FIN DU QUIZ
+    print('[QuizPage] 📺 Lancement publicité à la fin du quiz');
+    await AudioService.instance.stopBackgroundMusic();
+    await AdService.showInterstitialAd();
+    await Future.delayed(const Duration(seconds: 1));
+    await AudioService.instance.playBackgroundMusic();
+
     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
           backgroundColor: Colors.purple[100],
-          title: const Text(
-            '🎉 Félicitations ! 🎉',
-            style: TextStyle(
-              fontFamily: 'Signatra',
+          title: Text(
+            score >= (widget.questions.length * 0.8)
+                ? '🎉 Excellent !'
+                : 'Bien joué !',
+            style: const TextStyle(
               fontSize: 24,
               color: Colors.purple,
+              fontFamily: 'Raleway',
             ),
             textAlign: TextAlign.center,
           ),
@@ -926,44 +934,88 @@ class _ResultScreenState extends State<ResultScreen>
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Tu es dans le TOP 3 !\nRang: #$_rank',
+                'Score: $score/${widget.questions.length}',
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Raleway',
+                  color: Colors.purple,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                '$percentage%',
                 style: const TextStyle(
                   fontSize: 18,
                   fontFamily: 'Raleway',
                   color: Colors.purple,
                 ),
-                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
-              TextField(
-                autofocus: true,
-                decoration: const InputDecoration(
-                  labelText: 'Ton pseudo',
-                  border: OutlineInputBorder(),
-                  labelStyle: TextStyle(color: Colors.purple),
-                ),
-                style: const TextStyle(color: Colors.purple),
-                onChanged: (value) {
-                  _playerName = value;
-                },
+
+              // Boutons d'action
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => LeaderboardScreen(
+                              currentScore: score,
+                              totalQuestions: widget.questions.length,
+                              category: widget.category,
+                              accuracy: accuracy,
+                            ),
+                          ),
+                        );
+                      },
+                      icon: const Icon(Icons.emoji_events),
+                      label: const Text('Records'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.amber,
+                        foregroundColor: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        LeaderboardService.shareScore(
+                          playerName: 'Joueur',
+                          score: score,
+                          totalQuestions: widget.questions.length,
+                          category: widget.category,
+                          accuracy: accuracy,
+                        );
+                      },
+                      icon: const Icon(Icons.share),
+                      label: const Text('Partager'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
+                        foregroundColor: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
           actions: [
             TextButton(
               onPressed: () {
-                if (_playerName.trim().isNotEmpty) {
-                  Navigator.of(context).pop();
-                  _saveScore();
-                }
+                Navigator.of(context).pop();
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const HomeScreen(),
+                  ),
+                );
               },
               child: const Text(
-                'Valider',
-                style: TextStyle(
-                  color: Colors.purple,
-                  fontSize: 16,
-                  fontFamily: 'Raleway',
-                ),
+                'Retour au menu',
+                style: TextStyle(color: Colors.purple),
               ),
             ),
           ],
@@ -972,719 +1024,298 @@ class _ResultScreenState extends State<ResultScreen>
     );
   }
 
-  Future<void> _saveScore() async {
-    final scoreEntry = ScoreEntry(
-      playerName: _playerName,
-      score: widget.score,
-      category: widget.category,
-      date: DateTime.now(),
-      totalQuestions: widget.total,
-    );
-
-    await LeaderboardManager.addScore(scoreEntry);
-
-    // Mettre à jour les statistiques
-    final prefs = await SharedPreferences.getInstance();
-    final currentTotal = prefs.getInt('totalScore') ?? 0;
-    final currentGames = prefs.getInt('gamesPlayed') ?? 0;
-    final currentCategoryScore = prefs.getInt('score_${widget.category}') ?? 0;
-
-    await prefs.setInt('totalScore', currentTotal + widget.score);
-    await prefs.setInt('gamesPlayed', currentGames + 1);
-    await prefs.setInt(
-      'score_${widget.category}',
-      currentCategoryScore + widget.score,
-    );
-  }
-
-  void _shareScore() {
-    final message = '''
-🎯 Quizz4u - Nouveau Record ! 🎯
-
-Score: ${widget.score}/${widget.total} (${((widget.score / widget.total) * 100).toStringAsFixed(0)}%)
-Catégorie: ${widget.category}
-Rang: #$_rank
-
-Peux-tu faire mieux ? 😏
-    ''';
-
-    Share.share(message, subject: 'Mon score Quizz4u');
-  }
-
   @override
   void dispose() {
-    _animationController.dispose();
+    _timer?.cancel();
+    _timerAnimationController.dispose();
+    _pulseAnimationController.dispose();
+    flutterTts.stop();
+
+    // Arrêter la musique de fond
+    AudioService.instance.stopBackgroundMusic();
+
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.purple,
-      body: Center(
-        child: FadeTransition(
-          opacity: _fadeAnimation,
-          child: ScaleTransition(
-            scale: _scaleAnimation,
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  // Animation de victoire
-                  if (widget.score == widget.total)
-                    Lottie.asset(
-                      'assets/animations/congrats.json',
-                      height: 150,
-                      repeat: true,
-                    ),
-
-                  const SizedBox(height: 20),
-
-                  // Score principal
-                  Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(
-                        color: _isTop3 ? Colors.amber : Colors.white,
-                        width: _isTop3 ? 3 : 1,
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        Text(
-                          _isTop3 ? '🏆 NOUVEAU RECORD ! 🏆' : 'Quiz terminé !',
-                          style: TextStyle(
-                            fontSize: _isTop3 ? 24 : 28,
-                            fontFamily: 'Signatra',
-                            color: _isTop3 ? Colors.amber : Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                        const SizedBox(height: 15),
-                        Text(
-                          'Score : ${widget.score} / ${widget.total}',
-                          style: const TextStyle(
-                            fontSize: 32,
-                            fontFamily: 'Signatra',
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          '${((widget.score / widget.total) * 100).toStringAsFixed(0)}%',
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontFamily: 'Raleway',
-                            color: Colors.white70,
-                          ),
-                        ),
-                        if (_isTop3) ...[
-                          const SizedBox(height: 10),
-                          Text(
-                            'Rang: #$_rank',
-                            style: const TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Raleway',
-                              color: Colors.amber,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(height: 30),
-
-                  // Boutons d'action
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton.icon(
-                        onPressed: _shareScore,
-                        icon: const Icon(Icons.share),
-                        label: const Text('Partager'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 12,
-                          ),
-                        ),
-                      ),
-                      ElevatedButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => LeaderboardScreen(),
-                            ),
-                          );
-                        },
-                        icon: const Icon(Icons.leaderboard),
-                        label: const Text('Classement'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 12,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  const SizedBox(height: 20),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => HomeScreen(),
-                            ),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: Colors.purple,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 12,
-                          ),
-                        ),
-                        child: const Text(
-                          'Menu principal',
-                          style: TextStyle(
-                            fontFamily: 'Raleway',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: Colors.purple,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 12,
-                          ),
-                        ),
-                        child: const Text(
-                          'Rejouer',
-                          style: TextStyle(
-                            fontFamily: 'Raleway',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
+    if (currentQuestionIndex >= widget.questions.length) {
+      return Scaffold(
+        backgroundColor: Colors.purple,
+        body: Stack(
+          children: [
+            const Center(
+              child: Text(
+                'Quiz terminé !',
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.white,
+                  fontFamily: 'Raleway',
+                ),
               ),
             ),
-          ),
+            if (_showLevelUpAnimation)
+              LevelUpConfetti(
+                onComplete: () {
+                  setState(() {
+                    _showLevelUpAnimation = false;
+                  });
+                },
+              ),
+          ],
         ),
-      ),
-    );
-  }
-}
+      );
+    }
 
-// ========== ÉCRAN DE STATISTIQUES ==========
-class StatsScreen extends StatefulWidget {
-  const StatsScreen({super.key});
+    final currentQuestion = widget.questions[currentQuestionIndex];
 
-  @override
-  State<StatsScreen> createState() => _StatsScreenState();
-}
-
-class _StatsScreenState extends State<StatsScreen> {
-  int totalScore = 0;
-  int gamesPlayed = 0;
-  double averageScore = 0.0;
-  Map<String, int> categoryScores = {};
-
-  @override
-  void initState() {
-    super.initState();
-    _loadStats();
-  }
-
-  Future<void> _loadStats() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      totalScore = prefs.getInt('totalScore') ?? 0;
-      gamesPlayed = prefs.getInt('gamesPlayed') ?? 0;
-      averageScore = gamesPlayed > 0 ? totalScore / gamesPlayed : 0.0;
-      categoryScores = {
-        'Sciences': prefs.getInt('score_Sciences') ?? 0,
-        'Culture générale': prefs.getInt('score_Culture générale') ?? 0,
-        'Mathématiques': prefs.getInt('score_Mathématiques') ?? 0,
-        'Histoire du Mali': prefs.getInt('score_Histoire du Mali') ?? 0,
-        'Afrique': prefs.getInt('score_Afrique') ?? 0,
-        'Questions Captivantes':
-            prefs.getInt('score_Questions Captivantes') ?? 0,
-      };
-    });
-  }
-
-  Future<void> _resetStats() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.clear();
-    _loadStats();
-  }
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.purple,
-      appBar: AppBar(
-        backgroundColor: Colors.purple[700],
-        title: const Text(
-          'Statistiques',
-          style: TextStyle(
-            fontFamily: 'Signatra',
-            fontSize: 25,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-        elevation: 0,
-      ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(15),
-              ),
+            // Barre de progression et chronomètre
+            Column(
+              children: [
+                // Barre de progression
+                Container(
+                  height: 8,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.white24,
+                  ),
+                  child: FractionallySizedBox(
+                    alignment: Alignment.centerLeft,
+                    widthFactor:
+                        (currentQuestionIndex + 1) / widget.questions.length,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        gradient: const LinearGradient(
+                          colors: [Colors.green, Colors.greenAccent],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                // Chronomètre animé
+                Container(
+                  height: 8,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.white24,
+                  ),
+                  child: AnimatedBuilder(
+                    animation: _pulseAnimation,
+                    builder: (context, child) {
+                      Color timerColor = Colors.white;
+                      if (progress <= 0.3) {
+                        timerColor = Colors.red;
+                      } else if (progress <= 0.6) {
+                        timerColor = Colors.orange;
+                      }
+
+                      return Container(
+                        width: (MediaQuery.of(context).size.width *
+                                progress *
+                                0.9)
+                            .clamp(
+                                0.0, MediaQuery.of(context).size.width * 0.9),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(4),
+                          color: timerColor,
+                        ),
+                      );
+                    },
+                  ),
+                ),
+                const SizedBox(height: 10),
+                // Informations du quiz
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Score: $score',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        fontFamily: 'Raleway',
+                      ),
+                    ),
+                    Text(
+                      'Question ${currentQuestionIndex + 1}/${widget.questions.length}',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontFamily: 'Raleway',
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+
+            // Question avec bouton TTS
+            Expanded(
+              flex: 2,
               child: Column(
                 children: [
-                  _buildStatRow('Parties jouées', gamesPlayed.toString()),
-                  const SizedBox(height: 10),
-                  _buildStatRow('Score total', totalScore.toString()),
-                  const SizedBox(height: 10),
-                  _buildStatRow('Moyenne', averageScore.toStringAsFixed(1)),
+                  // Bouton TTS
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: _speakQuestion, // Appui simple pour relire
+                        onLongPress:
+                            _toggleTTS, // Appui long pour activer/désactiver
+                        child: Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: autoSpeechEnabled
+                                ? Colors.green.withOpacity(0.3)
+                                : Colors.red.withOpacity(0.3),
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(
+                              color:
+                                  autoSpeechEnabled ? Colors.green : Colors.red,
+                              width: 2,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                autoSpeechEnabled
+                                    ? Icons.volume_up
+                                    : Icons.volume_off,
+                                color: Colors.white,
+                                size: 24,
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                autoSpeechEnabled ? 'TTS ON' : 'TTS OFF',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                  fontFamily: 'Raleway',
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 15),
+
+                  // Question
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        currentQuestion.question,
+                        style: const TextStyle(
+                          fontSize: 24,
+                          color: Colors.white,
+                          fontFamily: 'Raleway',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
-            const SizedBox(height: 30),
-            const Text(
-              'Scores par catégorie',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontFamily: 'Signatra',
-              ),
-            ),
-            const SizedBox(height: 20),
+
+            // Zone des réponses avec plus d'espace
             Expanded(
-              child: ListView(
-                children: categoryScores.entries.map((entry) {
-                  return Container(
-                    margin: const EdgeInsets.only(bottom: 10),
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          entry.key,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Raleway',
+              flex: 3,
+              child: Stack(
+                children: [
+                  // Réponses (toujours présentes)
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 10),
+                      ...currentQuestion.answers.keys.map((option) {
+                        final isSelected = selectedAnswer == option;
+                        final isCorrect =
+                            option == currentQuestion.correctAnswer;
+                        final showCorrect = showCorrectAnswer && isCorrect;
+
+                        Color buttonColor = Colors.white24;
+                        Color textColor = Colors.white;
+
+                        if (isSelected && isCorrect) {
+                          buttonColor = Colors.green;
+                          textColor = Colors.white;
+                        } else if (isSelected && !isCorrect) {
+                          buttonColor = Colors.red;
+                          textColor = Colors.white;
+                        } else if (showCorrect) {
+                          buttonColor = Colors.green;
+                          textColor = Colors.white;
+                        }
+
+                        return Container(
+                          width: double.infinity,
+                          margin: const EdgeInsets.symmetric(vertical: 6),
+                          child: TextButton(
+                            onPressed: selectedAnswer == null
+                                ? () => _checkAnswer(option)
+                                : null,
+                            style: TextButton.styleFrom(
+                              backgroundColor: buttonColor,
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 12,
+                                horizontal: 16,
+                              ),
+                            ),
+                            child: Text(
+                              option,
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: textColor,
+                                fontFamily: 'Raleway',
+                              ),
+                            ),
                           ),
-                        ),
-                        Text(
-                          entry.value.toString(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontFamily: 'Raleway',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }).toList(),
-              ),
-            ),
-            const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LeaderboardScreen(),
+                        );
+                      }).toList(),
+                    ],
+                  ),
+
+                  // Animations superposées
+                  if (_showGoodAnimation && animationsEnabled)
+                    Positioned.fill(
+                      child: GoodAnswerParticles(
+                        onComplete: () {
+                          setState(() {
+                            _showGoodAnimation = false;
+                          });
+                        },
                       ),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber[600],
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 12,
                     ),
-                  ),
-                  child: const Text(
-                    '🏆 Classement',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Raleway',
+
+                  if (_showLevelUpAnimation && animationsEnabled)
+                    Positioned.fill(
+                      child: LevelUpConfetti(
+                        onComplete: () {
+                          setState(() {
+                            _showLevelUpAnimation = false;
+                          });
+                        },
+                      ),
                     ),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: _resetStats,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red[400],
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 12,
-                    ),
-                  ),
-                  child: const Text(
-                    'Réinitialiser',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Raleway',
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildStatRow(String label, String value) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          label,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 16,
-            fontFamily: 'Raleway',
-          ),
-        ),
-        Text(
-          value,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontFamily: 'Raleway',
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-// ========== MODÈLE POUR LES SCORES ==========
-class ScoreEntry {
-  final String playerName;
-  final int score;
-  final String category;
-  final DateTime date;
-  final int totalQuestions;
-
-  ScoreEntry({
-    required this.playerName,
-    required this.score,
-    required this.category,
-    required this.date,
-    required this.totalQuestions,
-  });
-
-  Map<String, dynamic> toJson() {
-    return {
-      'playerName': playerName,
-      'score': score,
-      'category': category,
-      'date': date.toIso8601String(),
-      'totalQuestions': totalQuestions,
-    };
-  }
-
-  factory ScoreEntry.fromJson(Map<String, dynamic> json) {
-    return ScoreEntry(
-      playerName: json['playerName'],
-      score: json['score'],
-      category: json['category'],
-      date: DateTime.parse(json['date']),
-      totalQuestions: json['totalQuestions'],
-    );
-  }
-}
-
-// ========== GESTIONNAIRE DU LEADERBOARD ==========
-class LeaderboardManager {
-  static const String _leaderboardKey = 'leaderboard_scores';
-
-  static Future<List<ScoreEntry>> getLeaderboard() async {
-    final prefs = await SharedPreferences.getInstance();
-    final String? leaderboardJson = prefs.getString(_leaderboardKey);
-
-    if (leaderboardJson == null) return [];
-
-    final List<dynamic> jsonList = jsonDecode(leaderboardJson);
-    return jsonList.map((json) => ScoreEntry.fromJson(json)).toList();
-  }
-
-  static Future<void> addScore(ScoreEntry score) async {
-    final prefs = await SharedPreferences.getInstance();
-    List<ScoreEntry> leaderboard = await getLeaderboard();
-
-    leaderboard.add(score);
-    leaderboard.sort((a, b) => b.score.compareTo(a.score));
-
-    // Garder seulement les 50 meilleurs scores
-    if (leaderboard.length > 50) {
-      leaderboard = leaderboard.take(50).toList();
-    }
-
-    final String leaderboardJson = jsonEncode(
-      leaderboard.map((score) => score.toJson()).toList(),
-    );
-
-    await prefs.setString(_leaderboardKey, leaderboardJson);
-  }
-
-  static Future<bool> isTop3(int score) async {
-    final leaderboard = await getLeaderboard();
-    if (leaderboard.length < 3) return true;
-    return score > leaderboard[2].score;
-  }
-
-  static Future<int> getRank(int score) async {
-    final leaderboard = await getLeaderboard();
-    for (int i = 0; i < leaderboard.length; i++) {
-      if (score >= leaderboard[i].score) {
-        return i + 1;
-      }
-    }
-    return leaderboard.length + 1;
-  }
-}
-
-// ========== ÉCRAN DU LEADERBOARD ==========
-class LeaderboardScreen extends StatefulWidget {
-  const LeaderboardScreen({super.key});
-
-  @override
-  State<LeaderboardScreen> createState() => _LeaderboardScreenState();
-}
-
-class _LeaderboardScreenState extends State<LeaderboardScreen> {
-  List<ScoreEntry> leaderboard = [];
-  bool isLoading = true;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadLeaderboard();
-  }
-
-  Future<void> _loadLeaderboard() async {
-    setState(() {
-      isLoading = true;
-    });
-
-    final scores = await LeaderboardManager.getLeaderboard();
-    setState(() {
-      leaderboard = scores;
-      isLoading = false;
-    });
-  }
-
-  String _getRankIcon(int rank) {
-    switch (rank) {
-      case 1:
-        return '🥇';
-      case 2:
-        return '🥈';
-      case 3:
-        return '🥉';
-      default:
-        return '#$rank';
-    }
-  }
-
-  Color _getRankColor(int rank) {
-    switch (rank) {
-      case 1:
-        return Colors.amber;
-      case 2:
-        return Colors.grey[300]!;
-      case 3:
-        return Colors.orange[300]!;
-      default:
-        return Colors.white;
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.purple,
-      appBar: AppBar(
-        backgroundColor: Colors.purple[700],
-        title: const Text(
-          '🏆 Classement',
-          style: TextStyle(
-            fontFamily: 'Signatra',
-            fontSize: 25,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh, color: Colors.white),
-            onPressed: _loadLeaderboard,
-          ),
-        ],
-      ),
-      body: isLoading
-          ? const Center(
-              child: CircularProgressIndicator(color: Colors.white),
-            )
-          : leaderboard.isEmpty
-              ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(
-                        Icons.emoji_events,
-                        size: 100,
-                        color: Colors.white54,
-                      ),
-                      const SizedBox(height: 20),
-                      const Text(
-                        'Aucun score encore !',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontFamily: 'Signatra',
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      const Text(
-                        'Joue pour être le premier !',
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 16,
-                          fontFamily: 'Raleway',
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              : ListView.builder(
-                  padding: const EdgeInsets.all(16),
-                  itemCount: leaderboard.length,
-                  itemBuilder: (context, index) {
-                    final score = leaderboard[index];
-                    final rank = index + 1;
-                    final percentage =
-                        ((score.score / score.totalQuestions) * 100)
-                            .toStringAsFixed(0);
-
-                    return Container(
-                      margin: const EdgeInsets.only(bottom: 12),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(15),
-                        border: Border.all(
-                          color: _getRankColor(rank),
-                          width: rank <= 3 ? 2 : 1,
-                        ),
-                      ),
-                      child: ListTile(
-                        leading: Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            color: _getRankColor(rank),
-                            borderRadius: BorderRadius.circular(25),
-                          ),
-                          child: Center(
-                            child: Text(
-                              _getRankIcon(rank),
-                              style: const TextStyle(fontSize: 20),
-                            ),
-                          ),
-                        ),
-                        title: Text(
-                          score.playerName,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontFamily: 'Raleway',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Text(
-                          '${score.category} • ${score.date.day}/${score.date.month}/${score.date.year}',
-                          style: const TextStyle(
-                            color: Colors.white70,
-                            fontSize: 14,
-                            fontFamily: 'Raleway',
-                          ),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Text(
-                              '${score.score}/${score.totalQuestions}',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontFamily: 'Raleway',
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              '$percentage%',
-                              style: const TextStyle(
-                                color: Colors.white70,
-                                fontSize: 14,
-                                fontFamily: 'Raleway',
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                ),
     );
   }
 }
