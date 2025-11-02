@@ -6,19 +6,19 @@
 
 **Short description** (80 caractères max):
 ```
-Quiz éducatif multilingue avec 1000+ questions en 6 langues. Apprenez en vous amusant!
+Quiz éducatif multilingue avec 200+ questions en 6 langues. Apprenez en vous amusant!
 ```
 
 **Full description** (4000 caractères max):
 ```
 🎓 Quizz4U - Apprenez en Vous Amusant!
 
-Quizz4U est une application de quiz éducatif conçue pour tester et enrichir vos connaissances dans dix grandes catégories : Histoire du Mali, Culture générale, Sciences, Mathématiques, Afrique, Football, Musique, Arts & Culture, Politique & Économie, et Technologie. Avec plus de 1000 questions soigneusement sélectionnées, chaque partie vous propose un lot aléatoire de 10 questions pour une expérience toujours renouvelée.
+Quizz4U est une application de quiz éducatif conçue pour tester et enrichir vos connaissances dans dix grandes catégories : Histoire du Mali, Culture générale, Sciences, Mathématiques, Afrique, Football, Musique, Arts & Culture, Politique & Économie, et Technologie. Avec plus de 200 questions soigneusement sélectionnées, chaque partie vous propose un lot aléatoire de 10 questions pour une expérience toujours renouvelée.
 
 🌟 CARACTÉRISTIQUES PRINCIPALES
 
 📚 CONTENU RICHE
-• Plus de 1000 questions uniques et variées
+• Plus de 200 questions uniques et variées
 • 10 catégories thématiques pour tous les goûts
 • Mélange intelligent pour éviter la répétition
 • Questions enrichies avec explications détaillées
@@ -84,19 +84,19 @@ Téléchargez maintenant et commencez votre voyage d'apprentissage!
 
 **Short description**:
 ```
-Multilingual educational quiz with 1000+ questions in 6 languages. Learn while having fun!
+Multilingual educational quiz with 200+ questions in 6 languages. Learn while having fun!
 ```
 
 **Full description**:
 ```
 🎓 Quizz4U - Learn While Having Fun!
 
-Quizz4U is an educational quiz app designed to test and enrich your knowledge in ten major categories: Mali History, General Culture, Science, Mathematics, Africa, Football, Music, Arts & Culture, Politics & Economy, and Technology. With over 1000 carefully selected questions, each game offers you a random set of 10 questions for an always-renewed experience.
+Quizz4U is an educational quiz app designed to test and enrich your knowledge in ten major categories: Mali History, General Culture, Science, Mathematics, Africa, Football, Music, Arts & Culture, Politics & Economy, and Technology. With over 200 carefully selected questions, each game offers you a random set of 10 questions for an always-renewed experience.
 
 🌟 MAIN FEATURES
 
 📚 RICH CONTENT
-• Over 1000 unique and varied questions
+• Over 200 unique and varied questions
 • 10 thematic categories for all tastes
 • Smart shuffling to avoid repetition
 • Enriched questions with detailed explanations
