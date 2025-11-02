@@ -1,0 +1,108 @@
+{
+  "राजनीति और अर्थशास्त्र": {
+    "Leaders Africains Contemporains": [
+      {
+        "question": "कौन है l'actuel Secrétaire सामान्य des Nations Unies (depuis 2017) ?",
+        "options": [
+          "António Guterres",
+          "Ban Ki-moon",
+          "Kofi Annan",
+          "Boutros Boutros-Ghali"
+        ],
+        "correctAnswer": "António Guterres",
+        "explanation": "António Guterres, प्राचीन Premier ministre portugais, है SG का l'ONU depuis 2017.",
+        "difficulty": "मध्यम",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Leaders Africains Contemporains"
+      },
+      {
+        "question": "Quel राष्ट्रपति दक्षिण-africain a mis अंत à l'apartheid ?",
+        "options": [
+          "Nelson Mandela",
+          "Frederik का Klerk",
+          "Thabo Mbeki",
+          "Desmond Tutu"
+        ],
+        "correctAnswer": "Nelson Mandela",
+        "explanation": "Nelson Mandela है devenu  पहला राष्ट्रपति noir d'Afrique का दक्षिण en 1994, après 27 ans का prison.",
+        "difficulty": "आसान",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Leaders Africains Contemporains"
+      }
+    ],
+    "Économie Numérique Africaine": [
+      {
+        "question": "Quelle startup nigériane है devenue एक licorne en 2020 ?",
+        "options": [
+          "Flutterwave",
+          "Jumia",
+          "Paystack",
+          "Andela"
+        ],
+        "correctAnswer": "Flutterwave",
+        "explanation": "Flutterwave, plateforme का paiements, a atteint एक valorisation का +1 milliard USD en 2020.",
+        "difficulty": "कठिन",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Économie Numérique Africaine"
+      },
+      {
+        "question": "क्या है  अधिक grand marché e-commerce africain ?",
+        "options": [
+          "Jumia",
+          "Takealot",
+          "Konga",
+          "Kilimall"
+        ],
+        "correctAnswer": "Jumia",
+        "explanation": "Jumia, surnommée 'l'Amazon africain', opère में अधिक का 11 देश africains.",
+        "difficulty": "मध्यम",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Économie Numérique Africaine"
+      }
+    ],
+    "Organisations Africaines": [
+      {
+        "question": "कब a été créée l'Union Africaine (UA) ?",
+        "options": [
+          "2002",
+          "1963",
+          "1990",
+          "2010"
+        ],
+        "correctAnswer": "2002",
+        "explanation": "L'UA a été créée en 2002 के लिए remplacer l'Organisation का इकाई Africaine (OUA, 1963).",
+        "difficulty": "मध्यम",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Organisations Africaines"
+      },
+      {
+        "question": "कहाँ se trouve  अगरège का l'Union Africaine ?",
+        "options": [
+          "Addis-Abeba (Éthiopie)",
+          "Abuja (Nigeria)",
+          " Caire (Égypte)",
+          "Nairobi (Kenya)"
+        ],
+        "correctAnswer": "Addis-Abeba (Éthiopie)",
+        "explanation": " अगरège का l'UA है situé à Addis-Abeba, en Éthiopie.",
+        "difficulty": "आसान",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Organisations Africaines"
+      },
+      {
+        "question": "Que signifie CEDEAO ?",
+        "options": [
+          "Communauté Économique Des États का l'Afrique का l'पश्चिम",
+          "केंद्र d'Études और का Développement का l'Afrique का l'पश्चिम",
+          "Conseil Économique का Développement Africain का l'पश्चिम",
+          "Commission Économique के लिए  Développement का l'Afrique का l'पश्चिम"
+        ],
+        "correctAnswer": "Communauté Économique Des États का l'Afrique का l'पश्चिम",
+        "explanation": " CEDEAO (ECOWAS en anglais) regroupe 15 देश d'Afrique का l'पश्चिम.",
+        "difficulty": "मध्यम",
+        "category": "राजनीति और अर्थशास्त्र",
+        "subcategory": "Organisations Africaines"
+      }
+    ]
+  }
+}

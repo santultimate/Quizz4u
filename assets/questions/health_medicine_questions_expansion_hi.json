@@ -1,0 +1,108 @@
+{
+  "स्वास्थ्य और चिकित्सा": {
+    "Maladies Tropicales": [
+      {
+        "question": "Quel moustique transmet  paludisme (malaria) ?",
+        "options": [
+          "Anophè",
+          "Aedes",
+          "Culex",
+          "Tigre"
+        ],
+        "correctAnswer": "Anophè",
+        "explanation": " moustique anophè femelle transmet  parasite Plasmodium responsable का paludisme.",
+        "difficulty": "मध्यम",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quelle बीमारी है causée par  वायरस Ebola ?",
+        "options": [
+          "Fièvre hémorragique",
+          "Paludisme",
+          "Tuberculose",
+          "Choléra"
+        ],
+        "correctAnswer": "Fièvre hémorragique",
+        "explanation": " वायरस Ebola कारण एक fièvre hémorragique grave के साथ एक taux का mortalité élevé.",
+        "difficulty": "आसान",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quel देश africain a été déclaré exempt का polio en 2020 ?",
+        "options": [
+          "Nigeria",
+          "Kenya",
+          "Afrique का दक्षिण",
+          "Égypte"
+        ],
+        "correctAnswer": "Nigeria",
+        "explanation": " Nigeria a été déclaré exempt का polio sauvage en août 2020, marquant एक बड़ी victoire.",
+        "difficulty": "कठिन",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Maladies Tropicales"
+      }
+    ],
+    "Médecine Traditionnelle Africaine": [
+      {
+        "question": "Quel arbre africain है utilisé के लिए traiter  fièvre और  douleurs ?",
+        "options": [
+          "Quinquina",
+          "Baobab",
+          "Moringa",
+          "Karité"
+        ],
+        "correctAnswer": "Quinquina",
+        "explanation": "L'écorce का quinquina contient का  quinine, utilisée contre  paludisme.",
+        "difficulty": "मध्यम",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      },
+      {
+        "question": "Quel fruit का baobab है riche en vitamine C ?",
+        "options": [
+          " pain का singe",
+          " datte",
+          " mangue",
+          " papaye"
+        ],
+        "correctAnswer": " pain का singe",
+        "explanation": " fruit का baobab (pain का singe) contient 6 बार अधिक का vitamine C qu'एक orange.",
+        "difficulty": "मध्यम",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      }
+    ],
+    "Nutrition और Santé": [
+      {
+        "question": "Quelle céréale africaine है naturellement बिना gluten ?",
+        "options": [
+          " fonio",
+          " blé",
+          "L'orge",
+          " seigle"
+        ],
+        "correctAnswer": " fonio",
+        "explanation": " fonio है एक céréale ancestrale africaine, nutritive और बिना gluten.",
+        "difficulty": "मध्यम",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Nutrition और Santé"
+      },
+      {
+        "question": "कितने का लीटर d'पानी doit-on boire par दिन en moyenne ?",
+        "options": [
+          "1,5 à 2 लीटर",
+          "3 à 4 लीटर",
+          "0,5 à 1 लीटर",
+          "5 लीटर"
+        ],
+        "correctAnswer": "1,5 à 2 लीटर",
+        "explanation": "Il है recommandé का boire environ 1,5 à 2 लीटर d'पानी par दिन के लिए rester hydraté.",
+        "difficulty": "आसान",
+        "category": "स्वास्थ्य और चिकित्सा",
+        "subcategory": "Nutrition और Santé"
+      }
+    ]
+  }
+}

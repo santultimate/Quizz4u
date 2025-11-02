@@ -1,0 +1,474 @@
+{
+  "Culture générale": [
+    {
+      "question": "地球上最大的海洋是什么？",
+      "answers": {
+        "太平洋": true,
+        "大西洋": false,
+        "印度洋": false,
+        "北冰洋": false
+      },
+      "explanation": "太平洋覆盖了地球表面30%以上的面积。",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "蒙娜丽莎是谁画的？",
+      "answers": {
+        "达芬奇": true,
+        "米开朗基罗": false,
+        "拉斐尔": false,
+        "波提切利": false
+      },
+      "explanation": "达芬奇所画的《蒙娜丽莎》现于卢浮宫展出。",
+      "difficulty": "easy",
+      "subcategory": "Art"
+    },
+    {
+      "question": "黄金的化学符号是什么？",
+      "answers": {
+        "Au": true,
+        "Ag": false,
+        "Fe": false,
+        "Cu": false
+      },
+      "explanation": "Au 来自拉丁语“aurum”，意思是金子。",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "埃菲尔铁塔位于哪个国家？",
+      "answers": {
+        "法国": true,
+        "意大利": false,
+        "西班牙": false,
+        "德国": false
+      },
+      "explanation": "艾菲尔铁塔位于法国巴黎。",
+      "difficulty": "easy",
+      "subcategory": "Monuments"
+    },
+    {
+      "question": "最大的大陆是什么？",
+      "answers": {
+        "亚洲": true,
+        "非洲": false,
+        "北美": false,
+        "欧洲": false
+      },
+      "explanation": "亚洲约占地球表面积的30%。",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "《悲惨世界》是谁写的？",
+      "answers": {
+        "维克多·雨果": true,
+        "大仲马": false,
+        "埃米尔·佐拉": false,
+        "居斯塔夫·福楼拜": false
+      },
+      "explanation": "维克多·雨果于 1862 年出版了《悲惨世界》。",
+      "difficulty": "medium",
+      "subcategory": "Littérature"
+    },
+    {
+      "question": "世界上最大的沙漠是什么？",
+      "answers": {
+        "南极洲": true,
+        "撒哈拉沙漠": false,
+        "阿拉伯沙漠": false,
+        "戈壁滩": false
+      },
+      "explanation": "从技术上讲，南极洲是世界上最大的沙漠。",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "世界上最大的哺乳动物是什么？",
+      "answers": {
+        "蓝鲸": true,
+        "非洲象": false,
+        "犀牛": false,
+        "河马": false
+      },
+      "explanation": "蓝鲸身长可达30米，体重可达200​​吨。",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "世界上面积最大的国家是哪个国家？",
+      "answers": {
+        "俄罗斯": true,
+        "加拿大": false,
+        "中国": false,
+        "美国": false
+      },
+      "explanation": "俄罗斯面积超过1700万平方公里。",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "人体最大的器官是什么？",
+      "answers": {
+        "皮肤": true,
+        "肝脏": false,
+        "大脑": false,
+        "心脏": false
+      },
+      "explanation": "皮肤约占体重的16%。",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "巴勒斯坦国位于哪个洲？",
+      "answers": {
+        "亚洲": true,
+        "非洲": false,
+        "欧洲": false,
+        "美国": false
+      },
+      "correctAnswer": "L'Asie"
+    },
+    {
+      "question": "欧洲大陆最大的城市是哪座城市？",
+      "answers": {
+        "伦敦": true,
+        "巴黎": false,
+        "柏林": false,
+        "马德里": false
+      },
+      "correctAnswer": "Londres"
+    },
+    {
+      "question": "什么是爱与美之城？",
+      "answers": {
+        "巴黎": true,
+        "威尼斯": false,
+        "罗马": false,
+        "巴塞罗那": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "非洲大陆有多少个阿拉伯国家？",
+      "answers": {
+        "九个国家": true,
+        "七个国家": false,
+        "十一个国家": false,
+        "十三个国家": false
+      },
+      "correctAnswer": "Neuf pays"
+    },
+    {
+      "question": "最强的宝石类型是什么？",
+      "answers": {
+        "钻石": true,
+        "红宝石": false,
+        "祖母绿": false,
+        "蓝宝石": false
+      },
+      "correctAnswer": "Le diamant"
+    },
+    {
+      "question": "亚马逊河位于哪个洲？",
+      "answers": {
+        "南美洲": true,
+        "非洲": false,
+        "亚洲": false,
+        "北美": false
+      },
+      "correctAnswer": "L'Amerique du Sud"
+    },
+    {
+      "question": "哪个国家被称为兔子之国？",
+      "answers": {
+        "西班牙": true,
+        "葡萄牙": false,
+        "意大利": false,
+        "法国": false
+      },
+      "correctAnswer": "L'Espagne"
+    },
+    {
+      "question": "非洲大陆最高的山峰是哪座山？",
+      "answers": {
+        "乞力马扎罗山": true,
+        "肯尼亚山": false,
+        "埃尔贡山": false,
+        "须弥山": false
+      },
+      "correctAnswer": "Le Mont Kilimandjaro"
+    },
+    {
+      "question": "人体有多少块肌肉？",
+      "answers": {
+        "620块肌肉": true,
+        "500块肌肉": false,
+        "700块肌肉": false,
+        "800块肌肉": false
+      },
+      "correctAnswer": "620 muscles"
+    },
+    {
+      "question": "法国的首都是哪里？",
+      "answers": {
+        "巴黎": true,
+        "里昂": false,
+        "马赛": false,
+        "图卢兹": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "哪个国家的形状像靴子？",
+      "answers": {
+        "意大利": true,
+        "西班牙": false,
+        "希腊": false,
+        "葡萄牙": false
+      },
+      "correctAnswer": "L'Italie"
+    },
+    {
+      "question": "德国的首都是哪里？",
+      "answers": {
+        "柏林": true,
+        "慕尼黑": false,
+        "法兰克福": false,
+        "汉堡": false
+      },
+      "correctAnswer": "Berlin"
+    },
+    {
+      "question": "哪个国家的国旗上有枫叶？",
+      "answers": {
+        "加拿大": true,
+        "日本": false,
+        "巴西": false,
+        "澳大利亚": false
+      },
+      "correctAnswer": "Le Canada"
+    },
+    {
+      "question": "谁发现了美洲？",
+      "answers": {
+        "克里斯托弗·哥伦布": true,
+        "马可波罗": false,
+        "瓦斯科达伽马": false,
+        "亚美利哥·韦斯普奇": false
+      },
+      "correctAnswer": "Christophe Colomb"
+    },
+    {
+      "question": "世界上最大的城市是哪个？",
+      "answers": {
+        "东京": true,
+        "纽约": false,
+        "上海": false,
+        "墨西哥": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "日本的首都是哪里？",
+      "answers": {
+        "东京": true,
+        "大阪": false,
+        "京都": false,
+        "横滨": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "澳大利亚的首都是哪里？",
+      "answers": {
+        "堪培拉": true,
+        "悉尼": false,
+        "墨尔本": false,
+        "布里斯班": false
+      },
+      "correctAnswer": "Canberra"
+    },
+    {
+      "question": "中国的首都是哪里？",
+      "answers": {
+        "北京": true,
+        "上海": false,
+        "香港": false,
+        "广州": false
+      },
+      "correctAnswer": "Pekin"
+    },
+    {
+      "question": "印度的首都是哪里？",
+      "answers": {
+        "新德里": true,
+        "孟买": false,
+        "加尔各答": false,
+        "钦奈": false
+      },
+      "correctAnswer": "New Delhi"
+    },
+    {
+      "question": "巴西的首都是哪里？",
+      "answers": {
+        "巴西利亚": true,
+        "圣保罗": false,
+        "里约热内卢": false,
+        "萨尔瓦多": false
+      },
+      "correctAnswer": "Brasilia"
+    },
+    {
+      "question": "南非的首都是哪里？",
+      "answers": {
+        "比勒陀利亚": true,
+        "开普敦": false,
+        "约翰内斯堡": false,
+        "德班": false
+      },
+      "correctAnswer": "Pretoria"
+    },
+    {
+      "question": "欧洲最大的国家是哪个国家？",
+      "answers": {
+        "乌克兰": true,
+        "法国": false,
+        "西班牙": false,
+        "德国": false
+      },
+      "correctAnswer": "L'Ukraine"
+    },
+    {
+      "question": "乌克兰的首都是哪里？",
+      "answers": {
+        "基辅": true,
+        "哈尔科夫": false,
+        "敖德萨": false,
+        "第聂伯河": false
+      },
+      "correctAnswer": "Kiev"
+    },
+    {
+      "question": "埃及的首都是哪里？",
+      "answers": {
+        "开罗": true,
+        "亚历山大港": false,
+        "吉萨": false,
+        "卢克索": false
+      },
+      "correctAnswer": "Le Caire"
+    },
+    {
+      "question": "加拿大的首都是哪里？",
+      "answers": {
+        "渥太华": true,
+        "多伦多": false,
+        "蒙特利尔": false,
+        "温哥华": false
+      },
+      "correctAnswer": "Ottawa"
+    },
+    {
+      "question": "大洋洲最大的国家是哪个国家？",
+      "answers": {
+        "澳大利亚": true,
+        "巴布亚新几内亚": false,
+        "新西兰": false,
+        "斐济": false
+      },
+      "correctAnswer": "L'Australie"
+    },
+    {
+      "question": "新西兰的首都是哪里？",
+      "answers": {
+        "惠灵顿": true,
+        "奥克兰": false,
+        "基督城": false,
+        "汉密尔顿": false
+      },
+      "correctAnswer": "Wellington"
+    },
+    {
+      "question": "尼加拉瓜的首都是哪里？",
+      "answers": {
+        "马那瓜": true,
+        "狮子座": false,
+        "格拉纳达": false,
+        "马萨亚": false
+      },
+      "correctAnswer": "Managua"
+    },
+    {
+      "question": "加勒比地区最大的国家是哪个国家？",
+      "answers": {
+        "古巴": true,
+        "牙买加": false,
+        "伊斯帕尼奥拉岛": false,
+        "波多黎各": false
+      },
+      "correctAnswer": "Cuba"
+    },
+    {
+      "question": "古巴的首都是哪里？",
+      "answers": {
+        "哈瓦那": true,
+        "古巴圣地亚哥": false,
+        "卡马圭": false,
+        "奥尔金": false
+      },
+      "correctAnswer": "La Havane"
+    },
+    {
+      "question": "阿根廷的首都是哪里？",
+      "answers": {
+        "布宜诺斯艾利斯": true,
+        "科尔多瓦": false,
+        "罗萨里奥": false,
+        "门多萨": false
+      },
+      "correctAnswer": "Buenos Aires"
+    },
+    {
+      "question": "尼日利亚的首都是哪里？",
+      "answers": {
+        "阿布贾": true,
+        "拉各斯": false,
+        "卡诺": false,
+        "伊巴丹": false
+      },
+      "correctAnswer": "Abuja"
+    },
+    {
+      "question": "印度尼西亚的首都是哪里？",
+      "answers": {
+        "雅加达": true,
+        "泗水": false,
+        "万隆": false,
+        "棉兰": false
+      },
+      "correctAnswer": "Jakarta"
+    },
+    {
+      "question": "俄罗斯的首都是哪里？",
+      "answers": {
+        "莫斯科": true,
+        "圣彼得堡": false,
+        "新西伯利亚": false,
+        "叶卡捷琳堡": false
+      },
+      "correctAnswer": "Moscou"
+    },
+    {
+      "question": "美国的首都是哪里？",
+      "answers": {
+        "华盛顿特区": true,
+        "纽约": false,
+        "洛杉矶": false,
+        "芝加哥": false
+      },
+      "correctAnswer": "Washington D.C."
+    }
+  ]
+}

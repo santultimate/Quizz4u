@@ -1,0 +1,131 @@
+{
+  "category": "phase3_advanced_questions",
+  "questions": [
+    {
+      "question": "En quelle année a eu lieu la bataille de Waterloo ?",
+      "options": [
+        "1814",
+        "1815",
+        "1816",
+        "1817"
+      ],
+      "correctAnswer": "1815",
+      "explanation": "La bataille de Waterloo a eu lieu le 18 juin 1815. Elle marque la défaite finale de Napoléon Bonaparte.",
+      "difficulty": "hard",
+      "category": "Questions Expert",
+      "subcategory": "Histoire Avancée"
+    },
+    {
+      "question": "Quel traité a mis fin à la Première Guerre mondiale ?",
+      "options": [
+        "Traité de Versailles",
+        "Traité de Trianon",
+        "Traité de Saint-Germain",
+        "Traité de Sèvres"
+      ],
+      "correctAnswer": "Traité de Versailles",
+      "explanation": "Le Traité de Versailles, signé le 28 juin 1919, a officiellement mis fin à la Première Guerre mondiale.",
+      "difficulty": "hard",
+      "category": "Questions Expert",
+      "subcategory": "Histoire Avancée"
+    },
+    {
+      "question": "Quel est le nombre d'Avogadro ?",
+      "options": [
+        "6.02 × 10²³",
+        "6.02 × 10²²",
+        "6.02 × 10²⁴",
+        "6.02 × 10²¹"
+      ],
+      "correctAnswer": "6.02 × 10²³",
+      "explanation": "Le nombre d'Avogadro est 6.02 × 10²³, représentant le nombre d'entités dans une mole.",
+      "difficulty": "hard",
+      "category": "Questions Expert",
+      "subcategory": "Sciences Avancées"
+    },
+    {
+      "question": "Quelle est la valeur de π (pi) ?",
+      "options": [
+        "3.14159",
+        "3.1416",
+        "3.14159265359",
+        "3.141592653589793"
+      ],
+      "correctAnswer": "3.141592653589793",
+      "explanation": "π (pi) est une constante mathématique dont la valeur approximative est 3.141592653589793...",
+      "difficulty": "hard",
+      "category": "Questions Expert",
+      "subcategory": "Mathématiques Avancées"
+    },
+    {
+      "question": "Quelle est la distance entre la Terre et le Soleil ?",
+      "options": [
+        "149.6 millions de km",
+        "150 millions de km",
+        "148 millions de km",
+        "151 millions de km"
+      ],
+      "correctAnswer": "149.6 millions de km",
+      "explanation": "La distance moyenne entre la Terre et le Soleil est d'environ 149.6 millions de kilomètres.",
+      "difficulty": "hard",
+      "category": "Questions Spécialisées",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "Quel est l'âge estimé de la Terre ?",
+      "options": [
+        "4.5 milliards d'années",
+        "4.6 milliards d'années",
+        "4.4 milliards d'années",
+        "4.7 milliards d'années"
+      ],
+      "correctAnswer": "4.5 milliards d'années",
+      "explanation": "L'âge estimé de la Terre est d'environ 4.5 milliards d'années.",
+      "difficulty": "hard",
+      "category": "Questions Spécialisées",
+      "subcategory": "Géologie"
+    },
+    {
+      "question": "Quelle est la température au centre de la Terre ?",
+      "options": [
+        "Environ 5000°C",
+        "Environ 6000°C",
+        "Environ 7000°C",
+        "Environ 8000°C"
+      ],
+      "correctAnswer": "Environ 6000°C",
+      "explanation": "La température au centre de la Terre est d'environ 6000°C, comparable à celle de la surface du Soleil.",
+      "difficulty": "hard",
+      "category": "Questions Spécialisées",
+      "subcategory": "Géologie"
+    },
+    {
+      "question": "Quel est le diamètre de la Lune ?",
+      "options": [
+        "3474 km",
+        "3476 km",
+        "3478 km",
+        "3480 km"
+      ],
+      "correctAnswer": "3474 km",
+      "explanation": "Le diamètre de la Lune est d'environ 3474 kilomètres, soit environ un quart de celui de la Terre.",
+      "difficulty": "hard",
+      "category": "Questions Spécialisées",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "Quelle est la formule de la force en physique ?",
+      "options": [
+        "F = m × a",
+        "F = m / a",
+        "F = m + a",
+        "F = m - a"
+      ],
+      "correctAnswer": "F = m × a",
+      "explanation": "La deuxième loi de Newton stipule que la force est égale à la masse multipliée par l'accélération (F = m × a).",
+      "difficulty": "hard",
+      "category": "Questions Spécialisées",
+      "subcategory": "Physique"
+    }
+  ]
+}

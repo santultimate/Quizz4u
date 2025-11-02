@@ -1,0 +1,89 @@
+{
+  "category": "massive_extension_phase4",
+  "questions": [
+    {
+      "question": "Quel était le nom de la capitale de l'Empire Songhaï ?",
+      "options": [
+        "Gao",
+        "Tombouctou",
+        "Djenné",
+        "Ségou"
+      ],
+      "correctAnswer": "Gao",
+      "explanation": "Gao était la capitale de l'Empire Songhaï.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "En quelle année l'Empire Songhaï a-t-il atteint son apogée ?",
+      "options": [
+        "1493",
+        "1500",
+        "1520",
+        "1550"
+      ],
+      "correctAnswer": "1493",
+      "explanation": "Askia Mohammed a pris le pouvoir en 1493.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Quel est le nom de la particule qui donne sa masse au boson de Higgs ?",
+      "options": [
+        "Le boson de Higgs",
+        "Le photon",
+        "Le gluon",
+        "Le neutrino"
+      ],
+      "correctAnswer": "Le boson de Higgs",
+      "explanation": "Le boson de Higgs donne sa masse aux autres particules.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Quel est le nom de l'équation ax² + bx + c = 0 ?",
+      "options": [
+        "Équation du premier degré",
+        "Équation du second degré",
+        "Équation du troisième degré",
+        "Équation polynomiale"
+      ],
+      "correctAnswer": "Équation du second degré",
+      "explanation": "Une équation de la forme ax² + bx + c = 0 est une équation du second degré.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Quelle est la valeur de la racine carrée de 144 ?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "correctAnswer": "12",
+      "explanation": "La racine carrée de 144 est 12, car 12 × 12 = 144.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Combien font 7 au cube (7³) ?",
+      "options": [
+        "343",
+        "349",
+        "343",
+        "350"
+      ],
+      "correctAnswer": "343",
+      "explanation": "7³ = 7 × 7 × 7 = 343.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Combien d'os possède un adulte humain ?",
+      "options": [
+        "196",
+        "206",
+        "216",
+        "226"
+      ],
+      "correctAnswer": "206",
+      "explanation": "Un adulte humain possède 206 os, contre 270 à la naissance.",
+      "difficulty": "medium"
+    }
+  ]
+}

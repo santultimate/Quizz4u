@@ -4,6 +4,8 @@ import 'dart:math' show min;
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/question_model.dart';
+import 'question_translation_service.dart';
+import 'auto_question_translator.dart';
 
 class QuestionService {
   static final Map<String, List<QuestionModel>> _allQuestions = {};
@@ -15,11 +17,7 @@ class QuestionService {
 
   // Configuration pour la variété des questions
   static const int _maxRecentlyUsed =
-      20; // Questions récemment utilisées à éviter
-  static const int _cooldownDays =
-      3; // Jours avant de pouvoir rejouer une question
-  static const int _preferredVarietyThreshold =
-      50; // Seuil pour forcer la variété
+      15; // Questions récemment utilisées à éviter (réduit de 20 à 15)
 
   // Charger toutes les questions depuis les fichiers JSON séparés
   static Future<void> loadQuestions() async {
@@ -30,11 +28,13 @@ class QuestionService {
 
       // Définir les catégories et leurs fichiers correspondants
       Map<String, String> categoryFiles = {
-        'Histoire du Mali': 'assets/questions/mali_history_questions.json',
-        'Culture générale': 'assets/questions/general_culture_questions.json',
-        'Sciences': 'assets/questions/science_questions.json',
+        'Histoire du Mali': 'assets/questions/enriched_history_questions.json',
+        'Culture générale': 'assets/questions/enriched_culture_questions.json',
+        'Sciences': 'assets/questions/enriched_science_questions.json',
         'Mathématiques': 'assets/questions/math_questions.json',
         'Afrique': 'assets/questions/africa_questions.json',
+        'Football': 'assets/questions/football_questions.json',
+        'Musique': 'assets/questions/music_questions.json',
       };
 
       // ÉTAPE 1: Charger les catégories de base (format simple)
@@ -43,9 +43,23 @@ class QuestionService {
           final String jsonString = await rootBundle.loadString(
             categoryFiles[category]!,
           );
-          final List<dynamic> questionsList = json.decode(jsonString);
+          final dynamic jsonData = json.decode(jsonString);
 
           List<QuestionModel> questions = [];
+          List<dynamic> questionsList;
+
+          // Gérer les deux formats possibles
+          if (jsonData is List) {
+            // Format direct (ancien format)
+            questionsList = jsonData;
+          } else if (jsonData is Map && jsonData.containsKey(category)) {
+            // Format avec clé de catégorie (nouveau format)
+            questionsList = jsonData[category];
+          } else {
+            print(
+                '[QuestionService] ⚠️ Format JSON non reconnu pour $category');
+            continue;
+          }
 
           for (var questionData in questionsList) {
             Map<String, bool> answers = {};
@@ -53,11 +67,22 @@ class QuestionService {
               answers[key] = value;
             });
 
+            // Trouver la bonne réponse
+            String correctAnswer = '';
+            answers.forEach((key, value) {
+              if (value == true) {
+                correctAnswer = key;
+              }
+            });
+
             questions.add(
               QuestionModel(
                 question: questionData['question'],
                 answers: answers,
-                correctAnswer: questionData['correctAnswer'],
+                correctAnswer: correctAnswer,
+                explanation: questionData['explanation'] ?? '',
+                difficulty: questionData['difficulty'] ?? 'medium',
+                subcategory: questionData['subcategory'] ?? '',
               ),
             );
           }
@@ -71,7 +96,12 @@ class QuestionService {
           print(
               '[QuestionService] ✅ Catégorie $category chargée: ${questions.length} questions');
         } catch (e) {
-          print('Erreur lors du chargement de la catégorie $category: $e');
+          print(
+              '[QuestionService] ❌ Erreur lors du chargement de la catégorie $category: $e');
+          // Créer une liste vide pour éviter les erreurs
+          _allQuestions[category] = [];
+          _recentlyUsedQuestions[category] = [];
+          _lastPlayedDates[category] = DateTime.now();
         }
       }
 
@@ -110,7 +140,7 @@ class QuestionService {
                     QuestionModel(
                       question: questionData['question'],
                       answers: answers,
-                      correctAnswer: questionData['correctAnswer'],
+                      correctAnswer: questionData['correctAnswer'] ?? '',
                       explanation: questionData['explanation'],
                       difficulty: questionData['difficulty'],
                       subcategory: questionData['subcategory'],
@@ -138,7 +168,7 @@ class QuestionService {
                   QuestionModel(
                     question: questionData['question'],
                     answers: answers,
-                    correctAnswer: questionData['correctAnswer'],
+                    correctAnswer: questionData['correctAnswer'] ?? '',
                     explanation: questionData['explanation'],
                     difficulty: questionData['difficulty'],
                   ),
@@ -188,7 +218,7 @@ class QuestionService {
                 QuestionModel(
                   question: questionData['question'],
                   answers: answers,
-                  correctAnswer: questionData['correctAnswer'],
+                  correctAnswer: questionData['correctAnswer'] ?? '',
                   explanation: questionData['explanation'],
                   difficulty: questionData['difficulty'],
                   subcategory: questionData['subcategory'],
@@ -241,7 +271,7 @@ class QuestionService {
                 QuestionModel(
                   question: questionData['question'],
                   answers: answers,
-                  correctAnswer: questionData['correctAnswer'],
+                  correctAnswer: questionData['correctAnswer'] ?? '',
                   explanation: questionData['explanation'],
                   difficulty: questionData['difficulty'],
                   subcategory: questionData['subcategory'],
@@ -289,7 +319,7 @@ class QuestionService {
                   QuestionModel(
                     question: questionData['question'],
                     answers: answers,
-                    correctAnswer: questionData['correctAnswer'],
+                    correctAnswer: questionData['correctAnswer'] ?? '',
                     explanation: questionData['explanation'],
                     difficulty: questionData['difficulty'],
                     subcategory: questionData['subcategory'],
@@ -334,7 +364,7 @@ class QuestionService {
                   QuestionModel(
                     question: questionData['question'],
                     answers: answers,
-                    correctAnswer: questionData['correctAnswer'],
+                    correctAnswer: questionData['correctAnswer'] ?? '',
                     explanation: questionData['explanation'],
                     difficulty: questionData['difficulty'],
                     subcategory: questionData['subcategory'],
@@ -379,7 +409,7 @@ class QuestionService {
                   QuestionModel(
                     question: questionData['question'],
                     answers: answers,
-                    correctAnswer: questionData['correctAnswer'],
+                    correctAnswer: questionData['correctAnswer'] ?? '',
                     explanation: questionData['explanation'],
                     difficulty: questionData['difficulty'],
                     subcategory: questionData['subcategory'],
@@ -396,6 +426,70 @@ class QuestionService {
       } catch (e) {
         print(
             '[QuestionService] ⚠️ Erreur lors du chargement des questions Phase 7: $e');
+      }
+
+      // ÉTAPE 8: Charger les nouvelles questions d'expansion (Oct 2025)
+      // Fichiers: technology, environment, arts_culture, politics_economy, health_medicine
+      final expansionFiles = [
+        'technology_questions_expansion.json',
+        'environment_questions_expansion.json',
+        'arts_culture_questions_expansion.json',
+        'politics_economy_questions_expansion.json',
+        'health_medicine_questions_expansion.json',
+      ];
+
+      for (String expansionFile in expansionFiles) {
+        try {
+          final String expansionJsonString = await rootBundle.loadString(
+            'assets/questions/$expansionFile',
+          );
+          final Map<String, dynamic> expansionData =
+              json.decode(expansionJsonString);
+
+          for (String category in expansionData.keys) {
+            // Créer la catégorie si elle n'existe pas encore
+            if (!_allQuestions.containsKey(category)) {
+              _allQuestions[category] = [];
+              _recentlyUsedQuestions[category] = [];
+              _lastPlayedDates[category] = DateTime.now();
+            }
+
+            List<QuestionModel> existingQuestions = _allQuestions[category]!;
+            int initialCount = existingQuestions.length;
+
+            // Charger les questions de chaque sous-catégorie
+            for (String subcategory in expansionData[category].keys) {
+              List<dynamic> subcategoryQuestions =
+                  expansionData[category][subcategory];
+
+              for (var questionData in subcategoryQuestions) {
+                Map<String, bool> answers = {};
+                for (int i = 0; i < questionData['options'].length; i++) {
+                  String option = questionData['options'][i];
+                  answers[option] = option == questionData['correctAnswer'];
+                }
+
+                existingQuestions.add(
+                  QuestionModel(
+                    question: questionData['question'],
+                    answers: answers,
+                    correctAnswer: questionData['correctAnswer'] ?? '',
+                    explanation: questionData['explanation'],
+                    difficulty: questionData['difficulty'],
+                    subcategory: questionData['subcategory'],
+                  ),
+                );
+              }
+            }
+
+            int addedCount = existingQuestions.length - initialCount;
+            print(
+                '[QuestionService] 🆕 ${expansionFile.replaceAll("_questions_expansion.json", "")}: +$addedCount questions → $category (total: ${existingQuestions.length})');
+          }
+        } catch (e) {
+          print(
+              '[QuestionService] ⚠️ Erreur lors du chargement de $expansionFile: $e');
+        }
       }
 
       _isLoaded = true;
@@ -451,8 +545,8 @@ class QuestionService {
       availableQuestions = allCategoryQuestions;
     }
 
-    // MÉLANGE AMÉLIORÉ : Utiliser plusieurs techniques de mélange
-    Random random = Random();
+    // MÉLANGE AMÉLIORÉ : Utiliser plusieurs techniques de mélange avec une graine temporelle
+    Random random = Random(DateTime.now().millisecondsSinceEpoch);
 
     // 1. Premier mélange basique
     availableQuestions.shuffle(random);
@@ -473,8 +567,15 @@ class QuestionService {
     selectedQuestions = _removeDuplicates(selectedQuestions);
 
     // Si on a perdu des questions à cause des doublons, en prendre d'autres
+    // PROTECTION CONTRE BOUCLE INFINIE : Limiter les itérations
+    int maxAttempts = count * 2; // Maximum 2x le nombre de questions demandées
+    int attempts = 0;
+
     while (selectedQuestions.length < count &&
-        availableQuestions.length > selectedQuestions.length) {
+        availableQuestions.length > selectedQuestions.length &&
+        attempts < maxAttempts) {
+      attempts++;
+
       List<QuestionModel> remainingQuestions = availableQuestions
           .where((q) => !selectedQuestions.contains(q))
           .toList();
@@ -485,6 +586,11 @@ class QuestionService {
       } else {
         break;
       }
+    }
+
+    if (attempts >= maxAttempts) {
+      print(
+          '[QuestionService] ⚠️ Limite d\'itérations atteinte ($maxAttempts), arrêt de la recherche de doublons');
     }
 
     // Mélanger les réponses pour chaque question
@@ -502,7 +608,7 @@ class QuestionService {
     // Debug: Afficher les premières questions sélectionnées
     String debugQuestions = selectedQuestions
         .take(3)
-        .map((q) => q.question.substring(0, min(30, q.question.length)) + '...')
+        .map((q) => '${q.question.substring(0, min(30, q.question.length))}...')
         .join(', ');
 
     print(
@@ -510,19 +616,12 @@ class QuestionService {
     print('[QuestionService] 🔍 Debug - Premières questions: $debugQuestions');
     print('[QuestionService] ✅ Mélange terminé avec succès');
 
-    return selectedQuestions;
-  }
+    // TRADUCTION AUTOMATIQUE : Traduire les questions dans la langue actuelle
+    final translatedQuestions =
+        AutoQuestionTranslator.translateQuestions(selectedQuestions);
+    print('[QuestionService] 🌍 Questions traduites dans la langue actuelle');
 
-  // Vérifier si une question est disponible (pas récemment utilisée)
-  static bool _isQuestionAvailable(String category, QuestionModel question) {
-    List<String> recentQuestions = _recentlyUsedQuestions[category] ?? [];
-
-    // Vérifier si la question a été récemment utilisée
-    if (recentQuestions.contains(question.question)) {
-      return false;
-    }
-
-    return true;
+    return translatedQuestions;
   }
 
   // Filtrer les questions récemment utilisées
@@ -530,10 +629,41 @@ class QuestionService {
       List<QuestionModel> allQuestions, String category) {
     List<String> recentQuestions = _recentlyUsedQuestions[category] ?? [];
 
+    // Si trop de questions sont bloquées, réinitialiser automatiquement
+    if (recentQuestions.length > _maxRecentlyUsed) {
+      print(
+          '[QuestionService] 🔄 Auto-nettoyage: ${recentQuestions.length} questions en cache, réinitialisation...');
+      recentQuestions.clear();
+      _recentlyUsedQuestions[category] = [];
+      _saveQuestionHistory();
+    }
+
     // Filtrer les questions qui ne sont pas dans l'historique récent
     List<QuestionModel> availableQuestions = allQuestions.where((question) {
       return !recentQuestions.contains(question.question);
     }).toList();
+
+    // Si moins de 50% des questions sont disponibles, nettoyer partiellement l'historique
+    double availabilityRatio = availableQuestions.length / allQuestions.length;
+    if (availabilityRatio < 0.5) {
+      print(
+          '[QuestionService] ⚠️ Seulement ${(availabilityRatio * 100).toStringAsFixed(1)}% des questions disponibles');
+      print('[QuestionService] 🧹 Nettoyage partiel de l\'historique...');
+
+      // Garder seulement les 5 dernières questions jouées
+      if (recentQuestions.length > 5) {
+        final keepCount = 5;
+        _recentlyUsedQuestions[category] =
+            recentQuestions.sublist(recentQuestions.length - keepCount);
+        print('[QuestionService] ✅ Historique réduit à $keepCount questions');
+        _saveQuestionHistory();
+
+        // Re-filtrer avec le nouvel historique
+        availableQuestions = allQuestions.where((question) {
+          return !_recentlyUsedQuestions[category]!.contains(question.question);
+        }).toList();
+      }
+    }
 
     return availableQuestions;
   }
@@ -547,19 +677,20 @@ class QuestionService {
       // Ajouter la question à l'historique récent
       recentQuestions.add(question.question);
 
-      // Limiter la taille de l'historique
+      // Limiter la taille de l'historique (plus restrictif maintenant)
       if (recentQuestions.length > _maxRecentlyUsed) {
+        // Retirer les plus anciennes questions
         recentQuestions.removeAt(0);
       }
 
       _recentlyUsedQuestions[category] = recentQuestions;
       _lastPlayedDates[category] = DateTime.now();
 
-      print(
-          '[QuestionService] 📝 Question marquée comme utilisée: ${question.question.substring(0, min(30, question.question.length))}...');
-    } else {
-      print(
-          '[QuestionService] ⚠️ Question déjà dans l\'historique: ${question.question.substring(0, min(30, question.question.length))}...');
+      // Log moins verbeux
+      if (recentQuestions.length % 5 == 0) {
+        print(
+            '[QuestionService] 📝 Historique $category: ${recentQuestions.length} questions');
+      }
     }
   }
 
@@ -604,22 +735,118 @@ class QuestionService {
     int count = 10,
   }) {
     if (!_isLoaded || !_allQuestions.containsKey(category)) {
+      print(
+          '[QuestionService] ⚠️ Questions non chargées ou catégorie inexistante: $category');
       return [];
     }
 
     List<QuestionModel> allQuestions = List.from(_allQuestions[category]!);
 
-    // Mélanger complètement et sélectionner
-    allQuestions.shuffle(Random());
+    if (allQuestions.isEmpty) {
+      print('[QuestionService] ⚠️ Aucune question disponible pour $category');
+      return [];
+    }
+
+    // 🎲 AMÉLIORATION : Utiliser plusieurs graines pour un mélange vraiment aléatoire
+    final now = DateTime.now();
+    final timeSeed = now.millisecondsSinceEpoch;
+    final microSeed = now.microsecondsSinceEpoch;
+    final combinedSeed = timeSeed + microSeed + now.second * 1000;
+
+    final random = Random(combinedSeed);
+
+    // 🔀 Mélanger plusieurs fois pour maximiser l'aléatoire
+    // 1er mélange : ordre général
+    allQuestions.shuffle(random);
+
+    // 2ème mélange : avec une nouvelle graine
+    final random2 = Random(combinedSeed + allQuestions.length);
+    allQuestions.shuffle(random2);
+
+    // 3ème mélange : basé sur les indices
+    final random3 = Random(combinedSeed * 2);
+    allQuestions.shuffle(random3);
+
+    // Sélectionner les questions
     List<QuestionModel> selectedQuestions = allQuestions.take(count).toList();
+
+    // Vérifier qu'on a assez de questions
+    if (selectedQuestions.length < count && allQuestions.length >= count) {
+      selectedQuestions = allQuestions.sublist(0, count);
+    }
+
+    // Mélanger les réponses de chaque question avec une graine différente
+    for (int i = 0; i < selectedQuestions.length; i++) {
+      final questionRandom = Random(combinedSeed + i);
+      _shuffleAnswers(selectedQuestions[i], questionRandom);
+    }
+
+    // Un dernier mélange de l'ordre des questions
+    selectedQuestions.shuffle(Random(combinedSeed * 3));
+
+    print(
+        '[QuestionService] 🎲 $category: ${selectedQuestions.length} questions aléatoires générées');
+    print('   📊 Banque disponible: ${allQuestions.length} questions');
+    print('   🌱 Graine: $combinedSeed');
+
+    // TRADUCTION AUTOMATIQUE : Traduire les questions dans la langue actuelle
+    final translatedQuestions =
+        AutoQuestionTranslator.translateQuestions(selectedQuestions);
+    print('   🌍 Questions traduites dans la langue actuelle');
+
+    return translatedQuestions;
+  }
+
+  // FONCTION AMÉLIORÉE : Mélange intelligent avec rotation temporelle
+  static List<QuestionModel> getIntelligentQuestionsForCategory(
+    String category, {
+    int count = 10,
+  }) {
+    if (!_isLoaded || !_allQuestions.containsKey(category)) {
+      print('[QuestionService] ⚠️ Questions non chargées pour $category');
+      return [];
+    }
+
+    if (_allQuestions[category]!.isEmpty) {
+      print('[QuestionService] ⚠️ Aucune question disponible pour $category');
+      return [];
+    }
+
+    List<QuestionModel> allQuestions = List.from(_allQuestions[category]!);
+
+    // Combiner rotation temporelle et mélange aléatoire
+    final now = DateTime.now();
+    final timeSeed = now.millisecondsSinceEpoch;
+    final daySeed = now.day;
+
+    // Créer un générateur avec graine combinée (temps + jour)
+    final random = Random(timeSeed + daySeed);
+
+    // Mélanger avec rotation basée sur l'heure
+    final hourOffset = now.hour * 1000; // Offset basé sur l'heure
+    final startIndex = (timeSeed + hourOffset) % allQuestions.length;
+
+    // Prendre un échantillon à partir de l'index calculé
+    List<QuestionModel> rotatedQuestions = [];
+    for (int i = 0; i < allQuestions.length; i++) {
+      int index = (startIndex + i) % allQuestions.length;
+      rotatedQuestions.add(allQuestions[index]);
+    }
+
+    // Mélanger l'échantillon
+    rotatedQuestions.shuffle(random);
+
+    // Prendre le nombre demandé
+    List<QuestionModel> selectedQuestions =
+        rotatedQuestions.take(count).toList();
 
     // Mélanger les réponses
     for (var question in selectedQuestions) {
-      _shuffleAnswers(question);
+      _shuffleAnswers(question, random);
     }
 
     print(
-        '[QuestionService] 🎲 $category: ${selectedQuestions.length} questions aléatoires (${allQuestions.length} total)');
+        '[QuestionService] 🧠 $category: ${selectedQuestions.length} questions intelligentes (${allQuestions.length} total) - rotation: ${now.hour}h, graine: ${timeSeed + daySeed}');
 
     return selectedQuestions;
   }
@@ -690,8 +917,8 @@ class QuestionService {
   }
 
   // Méthode pour mélanger les réponses d'une question
-  static void _shuffleAnswers(QuestionModel question) {
-    Random random = Random();
+  static void _shuffleAnswers(QuestionModel question, [Random? random]) {
+    random ??= Random();
 
     // Créer une liste des réponses avec leurs valeurs booléennes
     List<MapEntry<String, bool>> answersList =
@@ -845,6 +1072,28 @@ class QuestionService {
   // Vérifier si les questions sont chargées
   static bool get isLoaded => _isLoaded;
 
+  // Vérifier et recharger les questions si nécessaire
+  static Future<void> ensureQuestionsLoaded() async {
+    if (!_isLoaded) {
+      await loadQuestions();
+    }
+
+    // Vérifier que toutes les catégories ont des questions
+    List<String> emptyCategories = [];
+    for (String category in _allQuestions.keys) {
+      if (_allQuestions[category]!.isEmpty) {
+        emptyCategories.add(category);
+      }
+    }
+
+    if (emptyCategories.isNotEmpty) {
+      print(
+          '[QuestionService] ⚠️ Catégories vides détectées: $emptyCategories');
+      print('[QuestionService] 🔄 Tentative de rechargement...');
+      await loadQuestions();
+    }
+  }
+
   // Obtenir le nombre total de questions par catégorie
   static int getQuestionCountForCategory(String category) {
     if (!_isLoaded || !_allQuestions.containsKey(category)) {
@@ -994,5 +1243,52 @@ class QuestionService {
     } else {
       print('[QuestionService] ✅ Variété parfaite: Aucune répétition détectée');
     }
+  }
+
+  // Traduire une question selon la langue actuelle
+  static QuestionModel translateQuestion(QuestionModel question) {
+    try {
+      // Traduire la question
+      final translatedQuestion = QuestionTranslationService.translateQuestion({
+        'question': question.question,
+        'answers': question.answers,
+        'explanation': question.explanation,
+        'difficulty': question.difficulty,
+        'subcategory': question.subcategory,
+      });
+
+      return QuestionModel(
+        question: translatedQuestion['question'] ?? question.question,
+        answers: translatedQuestion['answers'] ?? question.answers,
+        correctAnswer:
+            question.correctAnswer, // La réponse correcte reste la même
+        explanation: translatedQuestion['explanation'] ?? question.explanation,
+        difficulty: question.difficulty,
+        subcategory: question.subcategory,
+      );
+    } catch (e) {
+      print('[QuestionService] ❌ Erreur traduction question: $e');
+      return question; // Retourner la question originale en cas d'erreur
+    }
+  }
+
+  // Obtenir les questions traduites pour une catégorie
+  static List<QuestionModel> getTranslatedQuestionsForCategory(
+    String category, {
+    int count = 10,
+  }) {
+    final questions =
+        getIntelligentQuestionsForCategory(category, count: count);
+    return questions.map((question) => translateQuestion(question)).toList();
+  }
+
+  // Obtenir le nom traduit d'une catégorie
+  static String getTranslatedCategoryName(String category) {
+    return QuestionTranslationService.translateCategory(category);
+  }
+
+  // Obtenir la difficulté traduite
+  static String getTranslatedDifficulty(String difficulty) {
+    return QuestionTranslationService.translateDifficulty(difficulty);
   }
 }

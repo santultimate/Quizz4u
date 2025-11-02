@@ -1,9 +1,33 @@
 import 'package:flutter/material.dart';
-import '../services/purchase_service.dart';
-// import '../services/premium_service.dart';
+import '../services/premium_features_service.dart';
+import '../services/premium_service.dart';
 
-class PremiumScreen extends StatelessWidget {
-  const PremiumScreen({Key? key}) : super(key: key);
+class PremiumScreen extends StatefulWidget {
+  const PremiumScreen({super.key});
+
+  @override
+  State<PremiumScreen> createState() => _PremiumScreenState();
+}
+
+class _PremiumScreenState extends State<PremiumScreen> {
+  bool _isPremium = false;
+  List<String> _benefits = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPremiumStatus();
+  }
+
+  Future<void> _loadPremiumStatus() async {
+    final isPremium = await PremiumService.isPremiumUser();
+    final benefits = await PremiumFeaturesService.getPremiumBenefits();
+
+    setState(() {
+      _isPremium = isPremium;
+      _benefits = benefits;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,212 +46,178 @@ class PremiumScreen extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
-              Icons.star,
-              size: 100,
-              color: Colors.amber,
-            ),
-            const SizedBox(height: 30),
-            const Text(
-              'Quizz4u Premium',
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.white,
-                fontFamily: 'Signatra',
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Profitez de Quizz4u sans publicités !',
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.white70,
-                fontFamily: 'Raleway',
-              ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 40),
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(15),
-                border: Border.all(color: Colors.amber, width: 2),
-              ),
-              child: Column(
-                children: [
-                  const Text(
-                    'Avantages Premium :',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.amber,
-                      fontFamily: 'Raleway',
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 15),
-                  _buildFeature('✓ Aucune publicité', Icons.block),
-                  _buildFeature('✓ Expérience fluide', Icons.speed),
-                  _buildFeature('✓ Support du développement', Icons.favorite),
-                  _buildFeature('✓ Mise à jour gratuite', Icons.update),
-                ],
-              ),
-            ),
-            const SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: () async {
-                // Vérifier si le service est prêt
-                if (!PurchaseService.isReady()) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text(
-                          'Service d\'achat non disponible. Vérifiez votre connexion.'),
-                      backgroundColor: Colors.orange,
-                    ),
-                  );
-                  return;
-                }
+      body: _isPremium ? _buildPremiumUserView() : _buildUpgradeView(),
+    );
+  }
 
-                // Afficher un indicateur de chargement
-                showDialog(
-                  context: context,
-                  barrierDismissible: false,
-                  builder: (context) => const Center(
-                    child: CircularProgressIndicator(color: Colors.amber),
-                  ),
-                );
-
-                try {
-                  // Effectuer l'achat
-                  final success = await PurchaseService.purchasePremium();
-
-                  if (context.mounted) {
-                    Navigator.pop(context); // Fermer le loader
-
-                    if (success) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content:
-                              Text('Achat en cours... Vérification en cours.'),
-                          backgroundColor: Colors.blue,
-                        ),
-                      );
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text(
-                              'Erreur lors de l\'achat. Vérifiez que les produits sont configurés.'),
-                          backgroundColor: Colors.red,
-                        ),
-                      );
-                    }
-                  }
-                } catch (e) {
-                  if (context.mounted) {
-                    Navigator.pop(context); // Fermer le loader
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('Erreur: $e'),
-                        backgroundColor: Colors.red,
-                      ),
-                    );
-                  }
-                }
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber,
-                foregroundColor: Colors.purple,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
+  Widget _buildUpgradeView() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        children: [
+          // En-tête premium
+          Container(
+            padding: const EdgeInsets.all(30),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Colors.amber, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
-              child: FutureBuilder<String>(
-                future: Future.value(PurchaseService.getFormattedPrice()),
-                builder: (context, snapshot) {
-                  return Text(
-                    'Acheter Premium - ${snapshot.data ?? '2.99€'}',
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Raleway',
-                      fontWeight: FontWeight.bold,
-                    ),
-                  );
-                },
-              ),
-            ),
-            const SizedBox(height: 20),
-            Column(
-              children: [
-                TextButton(
-                  onPressed: () async {
-                    showDialog(
-                      context: context,
-                      barrierDismissible: false,
-                      builder: (context) => const Center(
-                        child: CircularProgressIndicator(color: Colors.amber),
-                      ),
-                    );
-
-                    await PurchaseService.restorePurchases();
-
-                    if (context.mounted) {
-                      Navigator.pop(context); // Fermer le loader
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Achats restaurés !'),
-                          backgroundColor: Colors.green,
-                        ),
-                      );
-                    }
-                  },
-                  child: const Text(
-                    'Restaurer achats',
-                    style: TextStyle(
-                      color: Colors.amber,
-                      fontSize: 16,
-                      fontFamily: 'Raleway',
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 10),
-                TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: const Text(
-                    'Continuer avec les pubs',
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 16,
-                      fontFamily: 'Raleway',
-                    ),
-                  ),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.amber.withValues(alpha: 0.3),
+                  blurRadius: 20,
+                  offset: const Offset(0, 10),
                 ),
               ],
             ),
-            const SizedBox(height: 30),
-            Container(
-              padding: const EdgeInsets.all(15),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: const Text(
-                'Les publicités nous aident à maintenir l\'application gratuite et à ajouter de nouvelles fonctionnalités. Merci de votre compréhension !',
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 14,
-                  fontFamily: 'Raleway',
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.star,
+                  size: 80,
+                  color: Colors.white,
                 ),
-                textAlign: TextAlign.center,
+                const SizedBox(height: 20),
+                const Text(
+                  'Quizz4u Premium',
+                  style: TextStyle(
+                    fontSize: 28,
+                    color: Colors.white,
+                    fontFamily: 'Signatra',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Débloquez tout le potentiel de votre apprentissage',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontFamily: 'Raleway',
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 30),
+
+          // Avantages premium
+          _buildBenefitsSection(),
+
+          const SizedBox(height: 30),
+
+          // Bouton d'achat
+          _buildPurchaseButton(),
+
+          const SizedBox(height: 20),
+
+          // Garantie
+          _buildGuarantee(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBenefitsSection() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            '🎯 Avantages Premium',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 15),
+          ..._benefits.take(5).map((benefit) => Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.check_circle,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        benefit,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                          fontFamily: 'Raleway',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )),
+          const SizedBox(height: 10),
+          Text(
+            'Et ${_benefits.length - 5} autres avantages...',
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.white.withValues(alpha: 0.7),
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPurchaseButton() {
+    return SizedBox(
+      width: double.infinity,
+      height: 60,
+      child: ElevatedButton(
+        onPressed: () async {
+          // Simuler l'achat premium pour les tests
+          await PremiumFeaturesService.simulatePremiumActivation();
+          _loadPremiumStatus();
+
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text(
+                  '🎉 Premium activé ! Profitez de toutes les fonctionnalités'),
+              backgroundColor: Colors.green,
+            ),
+          );
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.amber,
+          foregroundColor: Colors.black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          elevation: 8,
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.star, size: 24),
+            SizedBox(width: 10),
+            Text(
+              'Débloquer Premium - 2,99€',
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
@@ -236,21 +226,151 @@ class PremiumScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildFeature(String text, IconData icon) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
+  Widget _buildGuarantee() {
+    return Container(
+      padding: const EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        color: Colors.green.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.green.withValues(alpha: 0.3)),
+      ),
       child: Row(
         children: [
-          Icon(icon, color: Colors.amber, size: 20),
+          const Icon(
+            Icons.security,
+            color: Colors.green,
+            size: 24,
+          ),
           const SizedBox(width: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontFamily: 'Raleway',
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Garantie 100% Satisfait',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.green,
+                    fontFamily: 'Raleway',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  'Remboursement sous 7 jours',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white.withValues(alpha: 0.8),
+                    fontFamily: 'Raleway',
+                  ),
+                ),
+              ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPremiumUserView() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        children: [
+          // Badge premium
+          Container(
+            padding: const EdgeInsets.all(30),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [Colors.amber, Colors.orange],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.verified_user,
+                  size: 80,
+                  color: Colors.white,
+                ),
+                const SizedBox(height: 20),
+                const Text(
+                  'Utilisateur Premium',
+                  style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.white,
+                    fontFamily: 'Signatra',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Vous profitez de toutes les fonctionnalités !',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontFamily: 'Raleway',
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 30),
+
+          // Toutes les fonctionnalités
+          _buildAllFeaturesSection(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAllFeaturesSection() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            '✨ Toutes vos fonctionnalités',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 15),
+          ..._benefits.map((benefit) => Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.check_circle,
+                      color: Colors.green,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        benefit,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                          fontFamily: 'Raleway',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )),
         ],
       ),
     );

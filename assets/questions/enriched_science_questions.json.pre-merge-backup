@@ -1,0 +1,124 @@
+{
+  "Sciences": [
+    {
+      "question": "Quelle est la vitesse de la lumière dans le vide ?",
+      "answers": {
+        "299 792 458 m/s": true,
+        "300 000 000 m/s": false,
+        "299 000 000 m/s": false,
+        "301 000 000 m/s": false
+      },
+      "explanation": "La vitesse de la lumière dans le vide est exactement 299 792 458 m/s.",
+      "difficulty": "hard",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "Quel est le processus par lequel les plantes produisent leur nourriture ?",
+      "answers": {
+        "La photosynthèse": true,
+        "La respiration": false,
+        "La fermentation": false,
+        "La digestion": false
+      },
+      "explanation": "La photosynthèse utilise la lumière du soleil pour convertir le CO2 et l'eau en glucose.",
+      "difficulty": "easy",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "Quel est le plus petit élément chimique ?",
+      "answers": {
+        "L'hydrogène": true,
+        "L'hélium": false,
+        "Le lithium": false,
+        "Le carbone": false
+      },
+      "explanation": "L'hydrogène a le numéro atomique 1 et est le plus petit atome.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "answers": {
+        "H2O": true,
+        "H2O2": false,
+        "CO2": false,
+        "NaCl": false
+      },
+      "explanation": "L'eau est composée de deux atomes d'hydrogène et d'un atome d'oxygène.",
+      "difficulty": "easy",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "answers": {
+        "La peau": true,
+        "Le foie": false,
+        "Le cerveau": false,
+        "Le cœur": false
+      },
+      "explanation": "La peau représente environ 16% du poids corporel total.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "Quelle est la planète la plus proche du Soleil ?",
+      "answers": {
+        "Mercure": true,
+        "Vénus": false,
+        "Terre": false,
+        "Mars": false
+      },
+      "explanation": "Mercure est la planète la plus proche du Soleil dans notre système solaire.",
+      "difficulty": "easy",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "Quel est le gaz le plus abondant dans l'atmosphère terrestre ?",
+      "answers": {
+        "L'azote": true,
+        "L'oxygène": false,
+        "Le dioxyde de carbone": false,
+        "L'argon": false
+      },
+      "explanation": "L'azote représente environ 78% de l'atmosphère terrestre.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "Quelle est la température d'ébullition de l'eau à la pression atmosphérique normale ?",
+      "answers": {
+        "100°C": true,
+        "90°C": false,
+        "110°C": false,
+        "80°C": false
+      },
+      "explanation": "L'eau bout à 100°C (212°F) au niveau de la mer.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "Quel est le nombre d'os dans le corps humain adulte ?",
+      "answers": {
+        "206": true,
+        "200": false,
+        "210": false,
+        "220": false
+      },
+      "explanation": "Le corps humain adulte possède 206 os.",
+      "difficulty": "hard",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "Quelle est la force qui attire les objets vers le centre de la Terre ?",
+      "answers": {
+        "La gravité": true,
+        "Le magnétisme": false,
+        "L'électricité": false,
+        "La friction": false
+      },
+      "explanation": "La gravité est la force qui attire tous les objets vers le centre de la Terre.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    }
+  ]
+}

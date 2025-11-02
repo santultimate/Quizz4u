@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../services/question_service.dart';
+import '../services/translation_service.dart';
 
 class VarietySettingsScreen extends StatefulWidget {
   const VarietySettingsScreen({super.key});
@@ -52,7 +53,7 @@ class _VarietySettingsScreenState extends State<VarietySettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Variété des Questions'),
+        title: Text(TranslationService.translate('variety_of_questions')),
         backgroundColor: Colors.purple[700],
         foregroundColor: Colors.white,
       ),
@@ -285,7 +286,7 @@ class _VarietySettingsScreenState extends State<VarietySettingsScreen> {
                   ],
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),
@@ -338,13 +339,13 @@ class _VarietySettingsScreenState extends State<VarietySettingsScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Réinitialiser l\'historique'),
-        content: const Text(
-            'Cela permettra de revoir toutes les questions, y compris celles récemment utilisées. Continuer ?'),
+        title: Text(TranslationService.translate('reset_history')),
+        content:
+            Text(TranslationService.translate('reset_history_confirmation')),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Annuler'),
+            child: Text(TranslationService.translate('cancel')),
           ),
           ElevatedButton(
             onPressed: () {
@@ -355,7 +356,7 @@ class _VarietySettingsScreenState extends State<VarietySettingsScreen> {
               backgroundColor: Colors.red,
               foregroundColor: Colors.white,
             ),
-            child: const Text('Réinitialiser'),
+            child: Text(TranslationService.translate('reset')),
           ),
         ],
       ),

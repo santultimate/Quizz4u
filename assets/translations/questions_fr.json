@@ -1,0 +1,44 @@
+{
+  "categories": {
+    "Histoire du Mali": "Histoire du Mali",
+    "Culture générale": "Culture générale",
+    "Sciences": "Sciences",
+    "Mathématiques": "Mathématiques",
+    "Afrique": "Afrique",
+    "Football": "Football",
+    "Musique": "Musique",
+    "Arts et Culture": "Arts et Culture",
+    "Politique et Économie": "Politique et Économie",
+    "Technologie et Innovation": "Technologie et Innovation",
+    "Santé et Médecine": "Santé et Médecine",
+    "Environnement et Écologie": "Environnement et Écologie",
+    "Questions Expert": "Questions Expert",
+    "Questions Spécialisées": "Questions Spécialisées"
+  },
+  "difficulties": {
+    "Facile": "Facile",
+    "Moyen": "Moyen",
+    "Difficile": "Difficile"
+  },
+  "questions": {
+    "sample_question_1": {
+      "question": "Quelle est la capitale du Mali ?",
+      "answers": {
+        "Bamako": true,
+        "Ségou": false,
+        "Tombouctou": false,
+        "Gao": false
+      },
+      "explanation": "Bamako est la capitale et la plus grande ville du Mali."
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

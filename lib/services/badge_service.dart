@@ -6,8 +6,8 @@ class BadgeService {
       {
     'Culture générale': {
       'perfect_10': {
-        'name': 'Génie Culturel',
-        'description': 'Score parfait de 10/10 en Culture générale',
+        'name_key': 'badge_culture_perfect_10_title',
+        'description_key': 'badge_culture_perfect_10_desc',
         'icon': '🎭',
         'requirement': '10 correct answers in a row',
         'type': 'perfect_score',
@@ -15,8 +15,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'perfect_20': {
-        'name': 'Maître Culturel',
-        'description': 'Score parfait de 20/20 en Culture générale',
+        'name_key': 'badge_culture_perfect_20_title',
+        'description_key': 'badge_culture_perfect_20_desc',
         'icon': '🏛️',
         'requirement': '20 correct answers in a row',
         'type': 'perfect_score',
@@ -24,8 +24,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'expert_90': {
-        'name': 'Expert Culturel',
-        'description': '90% de réussite en Culture générale',
+        'name_key': 'badge_culture_expert_90_title',
+        'description_key': 'badge_culture_expert_90_desc',
         'icon': '📚',
         'requirement': '90% accuracy rate',
         'type': 'accuracy',
@@ -35,8 +35,8 @@ class BadgeService {
     },
     'Sciences': {
       'perfect_10': {
-        'name': 'Scientifique Brillant',
-        'description': 'Score parfait de 10/10 en Sciences',
+        'name_key': 'badge_science_perfect_10_title',
+        'description_key': 'badge_science_perfect_10_desc',
         'icon': '🔬',
         'requirement': '10 correct answers in a row',
         'type': 'perfect_score',
@@ -44,8 +44,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'perfect_20': {
-        'name': 'Maître Scientifique',
-        'description': 'Score parfait de 20/20 en Sciences',
+        'name_key': 'badge_science_perfect_20_title',
+        'description_key': 'badge_science_perfect_20_desc',
         'icon': '⚗️',
         'requirement': '20 correct answers in a row',
         'type': 'perfect_score',
@@ -53,8 +53,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'expert_90': {
-        'name': 'Expert Scientifique',
-        'description': '90% de réussite en Sciences',
+        'name_key': 'badge_science_expert_90_title',
+        'description_key': 'badge_science_expert_90_desc',
         'icon': '🧪',
         'requirement': '90% accuracy rate',
         'type': 'accuracy',
@@ -64,8 +64,8 @@ class BadgeService {
     },
     'Mathématiques': {
       'perfect_10': {
-        'name': 'Mathématicien Prodigieux',
-        'description': 'Score parfait de 10/10 en Mathématiques',
+        'name_key': 'badge_math_perfect_10_title',
+        'description_key': 'badge_math_perfect_10_desc',
         'icon': '🧮',
         'requirement': '10 correct answers in a row',
         'type': 'perfect_score',
@@ -73,8 +73,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'perfect_20': {
-        'name': 'Maître Mathématicien',
-        'description': 'Score parfait de 20/20 en Mathématiques',
+        'name_key': 'badge_math_perfect_20_title',
+        'description_key': 'badge_math_perfect_20_desc',
         'icon': '📐',
         'requirement': '20 correct answers in a row',
         'type': 'perfect_score',
@@ -82,8 +82,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'expert_90': {
-        'name': 'Expert Mathématique',
-        'description': '90% de réussite en Mathématiques',
+        'name_key': 'badge_math_expert_90_title',
+        'description_key': 'badge_math_expert_90_desc',
         'icon': '🔢',
         'requirement': '90% accuracy rate',
         'type': 'accuracy',
@@ -93,8 +93,8 @@ class BadgeService {
     },
     'Histoire du Mali': {
       'perfect_10': {
-        'name': 'Historien Malien',
-        'description': 'Score parfait de 10/10 en Histoire du Mali',
+        'name_key': 'badge_history_mali_perfect_10_title',
+        'description_key': 'badge_history_mali_perfect_10_desc',
         'icon': '🏺',
         'requirement': '10 correct answers in a row',
         'type': 'perfect_score',
@@ -102,8 +102,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'perfect_20': {
-        'name': 'Maître Historien Malien',
-        'description': 'Score parfait de 20/20 en Histoire du Mali',
+        'name_key': 'badge_history_mali_perfect_20_title',
+        'description_key': 'badge_history_mali_perfect_20_desc',
         'icon': '👑',
         'requirement': '20 correct answers in a row',
         'type': 'perfect_score',
@@ -111,8 +111,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'expert_90': {
-        'name': 'Expert Historien Malien',
-        'description': '90% de réussite en Histoire du Mali',
+        'name_key': 'badge_history_mali_expert_90_title',
+        'description_key': 'badge_history_mali_expert_90_desc',
         'icon': '📜',
         'requirement': '90% accuracy rate',
         'type': 'accuracy',
@@ -122,8 +122,8 @@ class BadgeService {
     },
     'Afrique': {
       'perfect_10': {
-        'name': 'Connaisseur Africain',
-        'description': 'Score parfait de 10/10 en Afrique',
+        'name_key': 'badge_africa_perfect_10_title',
+        'description_key': 'badge_africa_perfect_10_desc',
         'icon': '🌍',
         'requirement': '10 correct answers in a row',
         'type': 'perfect_score',
@@ -131,8 +131,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'perfect_20': {
-        'name': 'Maître Africain',
-        'description': 'Score parfait de 20/20 en Afrique',
+        'name_key': 'badge_africa_perfect_20_title',
+        'description_key': 'badge_africa_perfect_20_desc',
         'icon': '🦁',
         'requirement': '20 correct answers in a row',
         'type': 'perfect_score',
@@ -140,8 +140,8 @@ class BadgeService {
         'difficulty': 'any'
       },
       'expert_90': {
-        'name': 'Expert Africain',
-        'description': '90% de réussite en Afrique',
+        'name_key': 'badge_africa_expert_90_title',
+        'description_key': 'badge_africa_expert_90_desc',
         'icon': '🐘',
         'requirement': '90% accuracy rate',
         'type': 'accuracy',
@@ -154,32 +154,32 @@ class BadgeService {
   // Badges par niveau de difficulté
   static const Map<String, Map<String, dynamic>> _difficultyBadges = {
     'easy_master': {
-      'name': 'Maître Facile',
-      'description': '100 questions correctes en difficulté facile',
+      'name_key': 'badge_easy_master_title',
+      'description_key': 'badge_easy_master_desc',
       'icon': '😊',
       'requirement': '100 correct answers in easy mode',
       'type': 'difficulty_master',
       'difficulty': 'easy'
     },
     'medium_master': {
-      'name': 'Maître Intermédiaire',
-      'description': '100 questions correctes en difficulté moyenne',
+      'name_key': 'badge_medium_master_title',
+      'description_key': 'badge_medium_master_desc',
       'icon': '😐',
       'requirement': '100 correct answers in medium mode',
       'type': 'difficulty_master',
       'difficulty': 'medium'
     },
     'hard_master': {
-      'name': 'Maître Difficile',
-      'description': '100 questions correctes en difficulté difficile',
+      'name_key': 'badge_hard_master_title',
+      'description_key': 'badge_hard_master_desc',
       'icon': '😰',
       'requirement': '100 correct answers in hard mode',
       'type': 'difficulty_master',
       'difficulty': 'hard'
     },
     'mixed_master': {
-      'name': 'Maître Polyvalent',
-      'description': '100 questions correctes en mode mixte',
+      'name_key': 'badge_mixed_master_title',
+      'description_key': 'badge_mixed_master_desc',
       'icon': '🎯',
       'requirement': '100 correct answers in mixed mode',
       'type': 'difficulty_master',
@@ -190,29 +190,29 @@ class BadgeService {
   // Badges spéciaux de progression
   static const Map<String, Map<String, dynamic>> _specialBadges = {
     'speed_demon': {
-      'name': 'Démon de Vitesse',
-      'description': '10 questions correctes en moins de 2 minutes',
+      'name_key': 'badge_speed_demon',
+      'description_key': 'badge_speed_demon_desc',
       'icon': '⚡',
       'requirement': '10 correct answers in under 2 minutes',
       'type': 'speed'
     },
     'streak_master': {
-      'name': 'Maître de Série',
-      'description': 'Série de 15 bonnes réponses consécutives',
+      'name_key': 'badge_streak_master',
+      'description_key': 'badge_streak_master_desc',
       'icon': '🔥',
       'requirement': '15 correct answers in a row',
       'type': 'streak'
     },
     'variety_expert': {
-      'name': 'Expert de la Variété',
-      'description': 'Joué dans toutes les catégories',
+      'name_key': 'badge_variety_expert',
+      'description_key': 'badge_variety_expert_desc',
       'icon': '🎨',
       'requirement': 'Played in all categories',
       'type': 'variety'
     },
     'daily_player': {
-      'name': 'Joueur Quotidien',
-      'description': 'Joué 7 jours consécutifs',
+      'name_key': 'badge_daily_player',
+      'description_key': 'badge_daily_player_desc',
       'icon': '📅',
       'requirement': 'Played 7 consecutive days',
       'type': 'daily'

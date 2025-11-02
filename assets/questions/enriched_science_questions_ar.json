@@ -1,0 +1,344 @@
+{
+  "Sciences": [
+    {
+      "question": "ما هي سرعة الضوء في الفراغ؟",
+      "answers": {
+        "299,792,458 م/ث": true,
+        "300.000.000 م/ث": false,
+        "299,000,000 م/ث": false,
+        "301,000,000 م/ث": false
+      },
+      "explanation": "تبلغ سرعة الضوء في الفراغ بالضبط 299,792,458 م/ث.",
+      "difficulty": "hard",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "ما هي العملية التي تنتج بها النباتات غذائها؟",
+      "answers": {
+        "التمثيل الضوئي": true,
+        "التنفس": false,
+        "التخمير": false,
+        "الهضم": false
+      },
+      "explanation": "تستخدم عملية التمثيل الضوئي ضوء الشمس لتحويل ثاني أكسيد الكربون والماء إلى جلوكوز.",
+      "difficulty": "easy",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "ما هو أصغر عنصر كيميائي؟",
+      "answers": {
+        "هيدروجين": true,
+        "هيليوم": false,
+        "الليثيوم": false,
+        "الكربون": false
+      },
+      "explanation": "الهيدروجين له العدد الذري 1 وهو أصغر ذرة.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "ما هي الصيغة الكيميائية للماء؟",
+      "answers": {
+        "ماء": true,
+        "H2O2": false,
+        "ثاني أكسيد الكربون": false,
+        "كلوريد الصوديوم": false
+      },
+      "explanation": "يتكون الماء من ذرتين هيدروجين وذرة أكسجين واحدة.",
+      "difficulty": "easy",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "ما هو أكبر عضو في جسم الإنسان؟",
+      "answers": {
+        "الجلد": true,
+        "الكبد": false,
+        "الدماغ": false,
+        "القلب": false
+      },
+      "explanation": "يشكل الجلد حوالي 16% من إجمالي وزن الجسم.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "ما هو الكوكب الأقرب إلى الشمس؟",
+      "answers": {
+        "الزئبق": true,
+        "فينوس": false,
+        "أرض": false,
+        "يمشي": false
+      },
+      "explanation": "عطارد هو الكوكب الأقرب إلى الشمس في نظامنا الشمسي.",
+      "difficulty": "easy",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "ما هو الغاز الأكثر وفرة في الغلاف الجوي للأرض؟",
+      "answers": {
+        "نتروجين": true,
+        "الأكسجين": false,
+        "ثاني أكسيد الكربون": false,
+        "الأرجون": false
+      },
+      "explanation": "يشكل النيتروجين حوالي 78% من الغلاف الجوي للأرض.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "ما هي درجة غليان الماء عند الضغط الجوي الطبيعي؟",
+      "answers": {
+        "100 درجة مئوية": true,
+        "90 درجة مئوية": false,
+        "110 درجة مئوية": false,
+        "80 درجة مئوية": false
+      },
+      "explanation": "يغلي الماء عند 100 درجة مئوية (212 درجة فهرنهايت) عند مستوى سطح البحر.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "كم عدد العظام الموجودة في جسم الإنسان البالغ؟",
+      "answers": {
+        "206": true,
+        "200": false,
+        "210": false,
+        "220": false
+      },
+      "explanation": "يحتوي جسم الإنسان البالغ على 206 عظمة.",
+      "difficulty": "hard",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "ما هي القوة التي تجذب الأجسام نحو مركز الأرض؟",
+      "answers": {
+        "جاذبية": true,
+        "المغناطيسية": false,
+        "كهرباء": false,
+        "احتكاك": false
+      },
+      "explanation": "الجاذبية هي القوة التي تسحب جميع الأجسام نحو مركز الأرض.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للبوتاسيوم؟",
+      "answers": {
+        "ك": true,
+        "لا يوجد": false,
+        "الذي - التي": false,
+        "ملغ": false
+      },
+      "correctAnswer": "K"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للمغنيسيوم؟",
+      "answers": {
+        "ملغ": true,
+        "لا يوجد": false,
+        "ك": false,
+        "الذي - التي": false
+      },
+      "correctAnswer": "Mg"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للسيليكون؟",
+      "answers": {
+        "لو": true,
+        "س": false,
+        "ص": false,
+        "حد ذاته": false
+      },
+      "correctAnswer": "Si"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للسيلينيوم؟",
+      "answers": {
+        "حد ذاته": true,
+        "س": false,
+        "ص": false,
+        "لو": false
+      },
+      "correctAnswer": "Se"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للثاليوم؟",
+      "answers": {
+        "ليرة تركية": true,
+        "آل": false,
+        "جا": false,
+        "في": false
+      },
+      "correctAnswer": "Tl"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للكادميوم؟",
+      "answers": {
+        "قرص مضغوط": true,
+        "الزنك": false,
+        "زئبق": false,
+        "الرصاص": false
+      },
+      "correctAnswer": "Cd"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للبلاديوم؟",
+      "answers": {
+        "PD": true,
+        "لا": false,
+        "شركة": false,
+        "نقطة": false
+      },
+      "correctAnswer": "Pd"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للموليبدينوم؟",
+      "answers": {
+        "ميغابايت": true,
+        "كر": false,
+        "دبليو": false,
+        "V": false
+      },
+      "correctAnswer": "Mo"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للتنغستن؟",
+      "answers": {
+        "دبليو": true,
+        "كر": false,
+        "ميغابايت": false,
+        "V": false
+      },
+      "correctAnswer": "W"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للفاناديوم؟",
+      "answers": {
+        "V": true,
+        "كر": false,
+        "ميغابايت": false,
+        "دبليو": false
+      },
+      "correctAnswer": "V"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للمنغنيز؟",
+      "answers": {
+        "من": true,
+        "ح": false,
+        "د": false,
+        "الحديد": false
+      },
+      "correctAnswer": "Mn"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للتكنيشيوم؟",
+      "answers": {
+        "ح": true,
+        "من": false,
+        "د": false,
+        "الحديد": false
+      },
+      "correctAnswer": "Tc"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للتيتانيوم؟",
+      "answers": {
+        "تي": true,
+        "زر": false,
+        "التردد العالي": false,
+        "V": false
+      },
+      "correctAnswer": "Ti"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للزركونيوم؟",
+      "answers": {
+        "زر": true,
+        "تي": false,
+        "التردد العالي": false,
+        "V": false
+      },
+      "correctAnswer": "Zr"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للهافنيوم؟",
+      "answers": {
+        "التردد العالي": true,
+        "تي": false,
+        "زر": false,
+        "V": false
+      },
+      "correctAnswer": "Hf"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للسكانديوم؟",
+      "answers": {
+        "الشوري": true,
+        "ي": false,
+        "هناك": false,
+        "مكيف الهواء": false
+      },
+      "correctAnswer": "Sc"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي لللانثانم؟",
+      "answers": {
+        "هناك": true,
+        "الشوري": false,
+        "ي": false,
+        "مكيف الهواء": false
+      },
+      "correctAnswer": "La"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للروبيديوم؟",
+      "answers": {
+        "روبية": true,
+        "لي": false,
+        "لا يوجد": false,
+        "ك": false
+      },
+      "correctAnswer": "Rb"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للسيزيوم؟",
+      "answers": {
+        "خدمات العملاء": true,
+        "لي": false,
+        "لا يوجد": false,
+        "ك": false
+      },
+      "correctAnswer": "Cs"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للفرانسيوم؟",
+      "answers": {
+        "الأب": true,
+        "لي": false,
+        "لا يوجد": false,
+        "ك": false
+      },
+      "correctAnswer": "Fr"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للبريليوم؟",
+      "answers": {
+        "يكون": true,
+        "ملغ": false,
+        "الذي - التي": false,
+        "الأب": false
+      },
+      "correctAnswer": "Be"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للسترونتيوم؟",
+      "answers": {
+        "الأب": true,
+        "يكون": false,
+        "ملغ": false,
+        "الذي - التي": false
+      },
+      "correctAnswer": "Sr"
+    }
+  ]
+}

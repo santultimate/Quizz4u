@@ -1,0 +1,434 @@
+{
+  "Afrique": [
+    {
+      "question": "非洲最大的国家是哪个国家？",
+      "answers": {
+        "阿尔及利亚": true,
+        "刚果民主共和国": false,
+        "苏丹": false,
+        "利比亚": false
+      },
+      "correctAnswer": "L'Algerie"
+    },
+    {
+      "question": "非洲人口最多的国家是哪个国家？",
+      "answers": {
+        "尼日利亚": true,
+        "埃塞俄比亚": false,
+        "埃及": false,
+        "刚果民主共和国": false
+      },
+      "correctAnswer": "Le Nigeria"
+    },
+    {
+      "question": "非洲最长的河流是什么？",
+      "answers": {
+        "尼罗河": true,
+        "刚果": false,
+        "尼日尔": false,
+        "赞比西河": false
+      },
+      "correctAnswer": "Le Nil"
+    },
+    {
+      "question": "非洲最大的湖是什么？",
+      "answers": {
+        "维多利亚湖": true,
+        "坦噶尼喀湖": false,
+        "马拉维湖": false,
+        "乍得湖": false
+      },
+      "correctAnswer": "Le lac Victoria"
+    },
+    {
+      "question": "非洲最大的沙漠是什么？",
+      "answers": {
+        "撒哈拉沙漠": true,
+        "喀拉哈里沙漠": false,
+        "纳米布沙漠": false,
+        "利比亚沙漠": false
+      },
+      "correctAnswer": "Le Sahara"
+    },
+    {
+      "question": "非洲最高的山是什么？",
+      "answers": {
+        "乞力马扎罗山": true,
+        "肯尼亚山": false,
+        "埃尔贡山": false,
+        "须弥山": false
+      },
+      "correctAnswer": "Le Mont Kilimandjaro"
+    },
+    {
+      "question": "非洲最小的国家是哪个国家？",
+      "answers": {
+        "塞舌尔": true,
+        "圣多美和普林西比": false,
+        "科摩罗": false,
+        "佛得角": false
+      },
+      "correctAnswer": "Les Seychelles"
+    },
+    {
+      "question": "非洲最大的岛国是哪个国家？",
+      "answers": {
+        "马达加斯加": true,
+        "塞舌尔": false,
+        "科摩罗": false,
+        "佛得角": false
+      },
+      "correctAnswer": "Madagascar"
+    },
+    {
+      "question": "西非最大的国家是哪个国家？",
+      "answers": {
+        "尼日尔": true,
+        "马里": false,
+        "布基纳法索": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Niger"
+    },
+    {
+      "question": "中部非洲最大的国家是哪个国家？",
+      "answers": {
+        "刚果民主共和国": true,
+        "乍得": false,
+        "中非共和国": false,
+        "喀麦隆": false
+      },
+      "correctAnswer": "La Republique democratique du Congo"
+    },
+    {
+      "question": "东非最大的国家是哪个国家？",
+      "answers": {
+        "苏丹": true,
+        "埃塞俄比亚": false,
+        "坦桑尼亚": false,
+        "肯尼亚": false
+      },
+      "correctAnswer": "Le Soudan"
+    },
+    {
+      "question": "南部非洲最大的国家是哪个国家？",
+      "answers": {
+        "南非": true,
+        "纳米比亚": false,
+        "博茨瓦纳": false,
+        "津巴布韦": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非最大的国家是哪个国家？",
+      "answers": {
+        "阿尔及利亚": true,
+        "利比亚": false,
+        "埃及": false,
+        "摩洛哥": false
+      },
+      "correctAnswer": "L'Algerie"
+    },
+    {
+      "question": "西非人口最多的国家是哪个国家？",
+      "answers": {
+        "尼日利亚": true,
+        "加纳": false,
+        "科特迪瓦": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Nigeria"
+    },
+    {
+      "question": "中部非洲人口最多的国家是哪个国家？",
+      "answers": {
+        "刚果民主共和国": true,
+        "喀麦隆": false,
+        "乍得": false,
+        "中非共和国": false
+      },
+      "correctAnswer": "La Republique democratique du Congo"
+    },
+    {
+      "question": "东非人口最多的国家是哪个国家？",
+      "answers": {
+        "埃塞俄比亚": true,
+        "坦桑尼亚": false,
+        "肯尼亚": false,
+        "乌干达": false
+      },
+      "correctAnswer": "L'Ethiopie"
+    },
+    {
+      "question": "南部非洲人口最多的国家是哪个国家？",
+      "answers": {
+        "南非": true,
+        "津巴布韦": false,
+        "莫桑比克": false,
+        "赞比亚": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非人口最多的国家是哪个国家？",
+      "answers": {
+        "埃及": true,
+        "阿尔及利亚": false,
+        "摩洛哥": false,
+        "突尼斯": false
+      },
+      "correctAnswer": "L'Egypte"
+    },
+    {
+      "question": "西非面积最大的国家是哪个国家？",
+      "answers": {
+        "尼日尔": true,
+        "马里": false,
+        "布基纳法索": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Niger"
+    },
+    {
+      "question": "中部非洲面积最大的国家是哪个国家？",
+      "answers": {
+        "刚果民主共和国": true,
+        "乍得": false,
+        "中非共和国": false,
+        "喀麦隆": false
+      },
+      "correctAnswer": "La Republique democratique du Congo"
+    },
+    {
+      "question": "东非面积最大的国家是哪个国家？",
+      "answers": {
+        "苏丹": true,
+        "埃塞俄比亚": false,
+        "坦桑尼亚": false,
+        "肯尼亚": false
+      },
+      "correctAnswer": "Le Soudan"
+    },
+    {
+      "question": "南部非洲面积最大的国家是哪个国家？",
+      "answers": {
+        "南非": true,
+        "纳米比亚": false,
+        "博茨瓦纳": false,
+        "津巴布韦": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非面积最大的国家是哪个国家？",
+      "answers": {
+        "阿尔及利亚": true,
+        "利比亚": false,
+        "埃及": false,
+        "摩洛哥": false
+      },
+      "correctAnswer": "L'Algerie"
+    },
+    {
+      "question": "西非最小的国家是哪个国家？",
+      "answers": {
+        "冈比亚": true,
+        "多哥": false,
+        "贝宁": false,
+        "几内亚比绍": false
+      },
+      "correctAnswer": "La Gambie"
+    },
+    {
+      "question": "中部非洲最小的国家是哪个国家？",
+      "answers": {
+        "圣多美和普林西比": true,
+        "赤道几内亚": false,
+        "加蓬": false,
+        "中非共和国": false
+      },
+      "correctAnswer": "Sao Tome-et-Principe"
+    },
+    {
+      "question": "东非最小的国家是哪个国家？",
+      "answers": {
+        "科摩罗": true,
+        "吉布提": false,
+        "布隆迪": false,
+        "卢旺达": false
+      },
+      "correctAnswer": "Les Comores"
+    },
+    {
+      "question": "南部非洲最小的国家是哪个国家？",
+      "answers": {
+        "史瓦帝尼": true,
+        "莱索托": false,
+        "博茨瓦纳": false,
+        "纳米比亚": false
+      },
+      "correctAnswer": "L'Eswatini"
+    },
+    {
+      "question": "北非最小的国家是哪个国家？",
+      "answers": {
+        "突尼斯": true,
+        "摩洛哥": false,
+        "阿尔及利亚": false,
+        "利比亚": false
+      },
+      "correctAnswer": "La Tunisie"
+    },
+    {
+      "question": "西非国内生产总值最大的国家是哪个国家？",
+      "answers": {
+        "尼日利亚": true,
+        "加纳": false,
+        "科特迪瓦": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Nigeria"
+    },
+    {
+      "question": "按 GDP 计算，中非最大的国家是哪个？",
+      "answers": {
+        "刚果民主共和国": true,
+        "喀麦隆": false,
+        "加蓬": false,
+        "中非共和国": false
+      },
+      "correctAnswer": "La Republique democratique du Congo"
+    },
+    {
+      "question": "东非 GDP 最大的国家是哪个国家？",
+      "answers": {
+        "埃塞俄比亚": true,
+        "肯尼亚": false,
+        "坦桑尼亚": false,
+        "乌干达": false
+      },
+      "correctAnswer": "L'Ethiopie"
+    },
+    {
+      "question": "按 GDP 计算，南部非洲最大的国家是哪个？",
+      "answers": {
+        "南非": true,
+        "津巴布韦": false,
+        "莫桑比克": false,
+        "赞比亚": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非国内生产总值最大的国家是哪个国家？",
+      "answers": {
+        "埃及": true,
+        "阿尔及利亚": false,
+        "摩洛哥": false,
+        "突尼斯": false
+      },
+      "correctAnswer": "L'Egypte"
+    },
+    {
+      "question": "西非人口密度最大的国家是哪个国家？",
+      "answers": {
+        "尼日利亚": true,
+        "加纳": false,
+        "科特迪瓦": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Nigeria"
+    },
+    {
+      "question": "中部非洲人口密度最大的国家是哪个国家？",
+      "answers": {
+        "刚果民主共和国": true,
+        "喀麦隆": false,
+        "加蓬": false,
+        "中非共和国": false
+      },
+      "correctAnswer": "La Republique democratique du Congo"
+    },
+    {
+      "question": "东非人口密度最大的国家是哪个国家？",
+      "answers": {
+        "埃塞俄比亚": true,
+        "肯尼亚": false,
+        "坦桑尼亚": false,
+        "乌干达": false
+      },
+      "correctAnswer": "L'Ethiopie"
+    },
+    {
+      "question": "南部非洲人口密度最大的国家是哪个国家？",
+      "answers": {
+        "南非": true,
+        "津巴布韦": false,
+        "莫桑比克": false,
+        "赞比亚": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非人口密度最大的国家是哪个国家？",
+      "answers": {
+        "埃及": true,
+        "阿尔及利亚": false,
+        "摩洛哥": false,
+        "突尼斯": false
+      },
+      "correctAnswer": "L'Egypte"
+    },
+    {
+      "question": "西非预期寿命最长的国家是哪个国家？",
+      "answers": {
+        "佛得角": true,
+        "加纳": false,
+        "科特迪瓦": false,
+        "塞内加尔": false
+      },
+      "correctAnswer": "Le Cap-Vert"
+    },
+    {
+      "question": "中非预期寿命最长的国家是哪个？",
+      "answers": {
+        "加蓬": true,
+        "喀麦隆": false,
+        "刚果民主共和国": false,
+        "中非共和国": false
+      },
+      "correctAnswer": "Le Gabon"
+    },
+    {
+      "question": "东非预期寿命最长的国家是哪个国家？",
+      "answers": {
+        "塞舌尔": true,
+        "埃塞俄比亚": false,
+        "肯尼亚": false,
+        "坦桑尼亚": false
+      },
+      "correctAnswer": "Les Seychelles"
+    },
+    {
+      "question": "南部非洲预期寿命最长的国家是哪个国家？",
+      "answers": {
+        "南非": true,
+        "津巴布韦": false,
+        "莫桑比克": false,
+        "赞比亚": false
+      },
+      "correctAnswer": "L'Afrique du Sud"
+    },
+    {
+      "question": "北非预期寿命最长的国家是哪个国家？",
+      "answers": {
+        "突尼斯": true,
+        "阿尔及利亚": false,
+        "摩洛哥": false,
+        "埃及": false
+      },
+      "correctAnswer": "La Tunisie"
+    }
+  ]
+}

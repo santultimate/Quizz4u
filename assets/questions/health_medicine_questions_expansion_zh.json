@@ -1,0 +1,108 @@
+{
+  "Santé et Médecine": {
+    "Maladies Tropicales": [
+      {
+        "question": "Quel moustique transmet le paludisme (malaria) ?",
+        "options": [
+          "Anophèle",
+          "Aedes",
+          "Culex",
+          "Tigre"
+        ],
+        "correctAnswer": "Anophèle",
+        "explanation": "Le moustique anophèle femelle transmet le parasite Plasmodium responsable du paludisme.",
+        "difficulty": "medium",
+        "category": "健康与医学",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quelle maladie est causée par le virus Ebola ?",
+        "options": [
+          "Fièvre hémorragique",
+          "Paludisme",
+          "Tuberculose",
+          "Choléra"
+        ],
+        "correctAnswer": "Fièvre hémorragique",
+        "explanation": "Le virus Ebola cause une fièvre hémorragique grave avec un taux de mortalité élevé.",
+        "difficulty": "easy",
+        "category": "健康与医学",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quel pays africain a été déclaré exempt de polio en 2020 ?",
+        "options": [
+          "Nigeria",
+          "Kenya",
+          "Afrique du Sud",
+          "Égypte"
+        ],
+        "correctAnswer": "Nigeria",
+        "explanation": "Le Nigeria a été déclaré exempt de polio sauvage en août 2020, marquant une grande victoire.",
+        "difficulty": "hard",
+        "category": "健康与医学",
+        "subcategory": "Maladies Tropicales"
+      }
+    ],
+    "Médecine Traditionnelle Africaine": [
+      {
+        "question": "Quel arbre africain est utilisé pour traiter la fièvre et les douleurs ?",
+        "options": [
+          "Quinquina",
+          "Baobab",
+          "Moringa",
+          "Karité"
+        ],
+        "correctAnswer": "Quinquina",
+        "explanation": "L'écorce du quinquina contient de la quinine, utilisée contre le paludisme.",
+        "difficulty": "medium",
+        "category": "健康与医学",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      },
+      {
+        "question": "Quel fruit du baobab est riche en vitamine C ?",
+        "options": [
+          "Le pain de singe",
+          "La datte",
+          "La mangue",
+          "La papaye"
+        ],
+        "correctAnswer": "Le pain de singe",
+        "explanation": "Le fruit du baobab (pain de singe) contient 6 fois plus de vitamine C qu'une orange.",
+        "difficulty": "medium",
+        "category": "健康与医学",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      }
+    ],
+    "Nutrition et Santé": [
+      {
+        "question": "Quelle céréale africaine est naturellement sans gluten ?",
+        "options": [
+          "Le fonio",
+          "Le blé",
+          "L'orge",
+          "Le seigle"
+        ],
+        "correctAnswer": "Le fonio",
+        "explanation": "Le fonio est une céréale ancestrale africaine, nutritive et sans gluten.",
+        "difficulty": "medium",
+        "category": "健康与医学",
+        "subcategory": "Nutrition et Santé"
+      },
+      {
+        "question": "Combien de litres d'eau doit-on boire par jour en moyenne ?",
+        "options": [
+          "1,5 à 2 litres",
+          "3 à 4 litres",
+          "0,5 à 1 litre",
+          "5 litres"
+        ],
+        "correctAnswer": "1,5 à 2 litres",
+        "explanation": "Il est recommandé de boire environ 1,5 à 2 litres d'eau par jour pour rester hydraté.",
+        "difficulty": "easy",
+        "category": "健康与医学",
+        "subcategory": "Nutrition et Santé"
+      }
+    ]
+  }
+}

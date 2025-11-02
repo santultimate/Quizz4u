@@ -1,0 +1,344 @@
+{
+  "Sciences": [
+    {
+      "question": "¿Cuál es la velocidad de la luz en el vacío?",
+      "answers": {
+        "299.792.458m/s": true,
+        "300.000.000m/s": false,
+        "299.000.000m/s": false,
+        "301.000.000m/s": false
+      },
+      "explanation": "La velocidad de la luz en el vacío es exactamente 299.792.458 m/s.",
+      "difficulty": "hard",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "¿Cuál es el proceso mediante el cual las plantas producen su alimento?",
+      "answers": {
+        "Fotosíntesis": true,
+        "Respiración": false,
+        "Fermentación": false,
+        "Digestión": false
+      },
+      "explanation": "La fotosíntesis utiliza la luz solar para convertir el CO2 y el agua en glucosa.",
+      "difficulty": "easy",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "¿Cuál es el elemento químico más pequeño?",
+      "answers": {
+        "Hidrógeno": true,
+        "Helio": false,
+        "Litio": false,
+        "Carbón": false
+      },
+      "explanation": "El hidrógeno tiene número atómico 1 y es el átomo más pequeño.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "¿Cuál es la fórmula química del agua?",
+      "answers": {
+        "H2O": true,
+        "H2O2": false,
+        "CO2": false,
+        "NaCl": false
+      },
+      "explanation": "El agua está formada por dos átomos de hidrógeno y un átomo de oxígeno.",
+      "difficulty": "easy",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+      "answers": {
+        "la piel": true,
+        "el hígado": false,
+        "el cerebro": false,
+        "el corazon": false
+      },
+      "explanation": "La piel constituye aproximadamente el 16% del peso corporal total.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "¿Cuál es el planeta más cercano al Sol?",
+      "answers": {
+        "Mercurio": true,
+        "Venus": false,
+        "Tierra": false,
+        "Marzo": false
+      },
+      "explanation": "Mercurio es el planeta más cercano al Sol en nuestro sistema solar.",
+      "difficulty": "easy",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+      "answers": {
+        "Nitrógeno": true,
+        "Oxígeno": false,
+        "Dióxido de carbono": false,
+        "Argón": false
+      },
+      "explanation": "El nitrógeno constituye aproximadamente el 78% de la atmósfera terrestre.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "¿Cuál es el punto de ebullición del agua a presión atmosférica normal?",
+      "answers": {
+        "100°C": true,
+        "90°C": false,
+        "110°C": false,
+        "80°C": false
+      },
+      "explanation": "El agua hierve a 100°C (212°F) al nivel del mar.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "¿Cuántos huesos hay en el cuerpo humano adulto?",
+      "answers": {
+        "206": true,
+        "200": false,
+        "210": false,
+        "220": false
+      },
+      "explanation": "El cuerpo humano adulto tiene 206 huesos.",
+      "difficulty": "hard",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "¿Cuál es la fuerza que atrae los objetos hacia el centro de la Tierra?",
+      "answers": {
+        "Gravedad": true,
+        "Magnetismo": false,
+        "Electricidad": false,
+        "Fricción": false
+      },
+      "explanation": "La gravedad es la fuerza que atrae todos los objetos hacia el centro de la Tierra.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del potasio?",
+      "answers": {
+        "k": true,
+        "N / A": false,
+        "Eso": false,
+        "magnesio": false
+      },
+      "correctAnswer": "K"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del magnesio?",
+      "answers": {
+        "magnesio": true,
+        "N / A": false,
+        "k": false,
+        "Eso": false
+      },
+      "correctAnswer": "Mg"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del silicio?",
+      "answers": {
+        "Si": true,
+        "S": false,
+        "PAG": false,
+        "sí": false
+      },
+      "correctAnswer": "Si"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del selenio?",
+      "answers": {
+        "sí": true,
+        "S": false,
+        "PAG": false,
+        "Si": false
+      },
+      "correctAnswer": "Se"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del talio?",
+      "answers": {
+        "tl": true,
+        "Alabama": false,
+        "Georgia": false,
+        "En": false
+      },
+      "correctAnswer": "Tl"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del cadmio?",
+      "answers": {
+        "CD": true,
+        "zinc": false,
+        "Hg": false,
+        "Pb": false
+      },
+      "correctAnswer": "Cd"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del paladio?",
+      "answers": {
+        "PD": true,
+        "Ni": false,
+        "Co": false,
+        "punto": false
+      },
+      "correctAnswer": "Pd"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del molibdeno?",
+      "answers": {
+        "MEGABYTE": true,
+        "cr": false,
+        "W.": false,
+        "V": false
+      },
+      "correctAnswer": "Mo"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del tungsteno?",
+      "answers": {
+        "W.": true,
+        "cr": false,
+        "MEGABYTE": false,
+        "V": false
+      },
+      "correctAnswer": "W"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del vanadio?",
+      "answers": {
+        "V": true,
+        "cr": false,
+        "MEGABYTE": false,
+        "W.": false
+      },
+      "correctAnswer": "V"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del manganeso?",
+      "answers": {
+        "Minnesota": true,
+        "tc": false,
+        "D": false,
+        "fe": false
+      },
+      "correctAnswer": "Mn"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del tecnecio?",
+      "answers": {
+        "tc": true,
+        "Minnesota": false,
+        "D": false,
+        "fe": false
+      },
+      "correctAnswer": "Tc"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del titanio?",
+      "answers": {
+        "Ti": true,
+        "zr": false,
+        "hf": false,
+        "V": false
+      },
+      "correctAnswer": "Ti"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del circonio?",
+      "answers": {
+        "zr": true,
+        "Ti": false,
+        "hf": false,
+        "V": false
+      },
+      "correctAnswer": "Zr"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del hafnio?",
+      "answers": {
+        "hf": true,
+        "Ti": false,
+        "zr": false,
+        "V": false
+      },
+      "correctAnswer": "Hf"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del escandio?",
+      "answers": {
+        "Carolina del Sur": true,
+        "Y": false,
+        "Allá": false,
+        "C.A": false
+      },
+      "correctAnswer": "Sc"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del lantano?",
+      "answers": {
+        "Allá": true,
+        "Carolina del Sur": false,
+        "Y": false,
+        "C.A": false
+      },
+      "correctAnswer": "La"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del rubidio?",
+      "answers": {
+        "Rb": true,
+        "li": false,
+        "N / A": false,
+        "k": false
+      },
+      "correctAnswer": "Rb"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del cesio?",
+      "answers": {
+        "cs": true,
+        "li": false,
+        "N / A": false,
+        "k": false
+      },
+      "correctAnswer": "Cs"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del francio?",
+      "answers": {
+        "fr.": true,
+        "li": false,
+        "N / A": false,
+        "k": false
+      },
+      "correctAnswer": "Fr"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del berilio?",
+      "answers": {
+        "Ser": true,
+        "magnesio": false,
+        "Eso": false,
+        "Sr.": false
+      },
+      "correctAnswer": "Be"
+    },
+    {
+      "question": "¿Cuál es el símbolo químico del estroncio?",
+      "answers": {
+        "Sr.": true,
+        "Ser": false,
+        "magnesio": false,
+        "Eso": false
+      },
+      "correctAnswer": "Sr"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "Sciences": [
+    {
+      "question": "What is the speed of light in a vacuum?",
+      "answers": {
+        "299,792,458 m/s": true,
+        "300,000,000 m/s": false,
+        "299,000,000 m/s": false,
+        "301,000,000 m/s": false
+      },
+      "explanation": "The speed of light in a vacuum is exactly 299,792,458 m/s.",
+      "difficulty": "hard",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "What is the process by which plants produce their food?",
+      "answers": {
+        "Photosynthesis": true,
+        "Breathing": false,
+        "Fermentation": false,
+        "Digestion": false
+      },
+      "explanation": "Photosynthesis uses sunlight to convert CO2 and water into glucose.",
+      "difficulty": "easy",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "What is the smallest chemical element?",
+      "answers": {
+        "Hydrogen": true,
+        "Helium": false,
+        "Lithium": false,
+        "Carbon": false
+      },
+      "explanation": "Hydrogen has atomic number 1 and is the smallest atom.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "What is the chemical formula of water?",
+      "answers": {
+        "H2O": true,
+        "H2O2": false,
+        "CO2": false,
+        "NaCl": false
+      },
+      "explanation": "Water is made up of two hydrogen atoms and one oxygen atom.",
+      "difficulty": "easy",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "answers": {
+        "The skin": true,
+        "The liver": false,
+        "The brain": false,
+        "The heart": false
+      },
+      "explanation": "The skin makes up about 16% of the total body weight.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "What is the closest planet to the Sun?",
+      "answers": {
+        "Mercury": true,
+        "Venus": false,
+        "Earth": false,
+        "March": false
+      },
+      "explanation": "Mercury is the closest planet to the Sun in our solar system.",
+      "difficulty": "easy",
+      "subcategory": "Astronomie"
+    },
+    {
+      "question": "What is the most abundant gas in Earth's atmosphere?",
+      "answers": {
+        "Nitrogen": true,
+        "Oxygen": false,
+        "Carbon dioxide": false,
+        "Argon": false
+      },
+      "explanation": "Nitrogen makes up about 78% of the Earth's atmosphere.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "What is the boiling point of water at normal atmospheric pressure?",
+      "answers": {
+        "100°C": true,
+        "90°C": false,
+        "110°C": false,
+        "80°C": false
+      },
+      "explanation": "Water boils at 100°C (212°F) at sea level.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "How many bones are in the adult human body?",
+      "answers": {
+        "206": true,
+        "200": false,
+        "210": false,
+        "220": false
+      },
+      "explanation": "The adult human body has 206 bones.",
+      "difficulty": "hard",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "What is the force that pulls objects toward the center of the Earth?",
+      "answers": {
+        "Gravity": true,
+        "Magnetism": false,
+        "Electricity": false,
+        "Friction": false
+      },
+      "explanation": "Gravity is the force that pulls all objects toward the center of the Earth.",
+      "difficulty": "easy",
+      "subcategory": "Physique"
+    },
+    {
+      "question": "What is the chemical symbol for potassium?",
+      "answers": {
+        "K": true,
+        "N / A": false,
+        "That": false,
+        "Mg": false
+      },
+      "correctAnswer": "K"
+    },
+    {
+      "question": "What is the chemical symbol for magnesium?",
+      "answers": {
+        "Mg": true,
+        "N / A": false,
+        "K": false,
+        "That": false
+      },
+      "correctAnswer": "Mg"
+    },
+    {
+      "question": "What is the chemical symbol for silicon?",
+      "answers": {
+        "If": true,
+        "S": false,
+        "P": false,
+        "Se": false
+      },
+      "correctAnswer": "Si"
+    },
+    {
+      "question": "What is the chemical symbol for selenium?",
+      "answers": {
+        "Se": true,
+        "S": false,
+        "P": false,
+        "If": false
+      },
+      "correctAnswer": "Se"
+    },
+    {
+      "question": "What is the chemical symbol for thallium?",
+      "answers": {
+        "Tl": true,
+        "Al": false,
+        "Ga": false,
+        "In": false
+      },
+      "correctAnswer": "Tl"
+    },
+    {
+      "question": "What is the chemical symbol for cadmium?",
+      "answers": {
+        "CD": true,
+        "Zn": false,
+        "Hg": false,
+        "Pb": false
+      },
+      "correctAnswer": "Cd"
+    },
+    {
+      "question": "What is the chemical symbol for palladium?",
+      "answers": {
+        "Pd": true,
+        "Neither": false,
+        "Co": false,
+        "Pt": false
+      },
+      "correctAnswer": "Pd"
+    },
+    {
+      "question": "What is the chemical symbol for molybdenum?",
+      "answers": {
+        "MB": true,
+        "Cr": false,
+        "W": false,
+        "V": false
+      },
+      "correctAnswer": "Mo"
+    },
+    {
+      "question": "What is the chemical symbol for tungsten?",
+      "answers": {
+        "W": true,
+        "Cr": false,
+        "MB": false,
+        "V": false
+      },
+      "correctAnswer": "W"
+    },
+    {
+      "question": "What is the chemical symbol for vanadium?",
+      "answers": {
+        "V": true,
+        "Cr": false,
+        "MB": false,
+        "W": false
+      },
+      "correctAnswer": "V"
+    },
+    {
+      "question": "What is the chemical symbol for manganese?",
+      "answers": {
+        "Mn": true,
+        "Tc": false,
+        "D": false,
+        "Fe": false
+      },
+      "correctAnswer": "Mn"
+    },
+    {
+      "question": "What is the chemical symbol for technetium?",
+      "answers": {
+        "Tc": true,
+        "Mn": false,
+        "D": false,
+        "Fe": false
+      },
+      "correctAnswer": "Tc"
+    },
+    {
+      "question": "What is the chemical symbol for titanium?",
+      "answers": {
+        "Ti": true,
+        "Zr": false,
+        "Hf": false,
+        "V": false
+      },
+      "correctAnswer": "Ti"
+    },
+    {
+      "question": "What is the chemical symbol for zirconium?",
+      "answers": {
+        "Zr": true,
+        "Ti": false,
+        "Hf": false,
+        "V": false
+      },
+      "correctAnswer": "Zr"
+    },
+    {
+      "question": "What is the chemical symbol for hafnium?",
+      "answers": {
+        "Hf": true,
+        "Ti": false,
+        "Zr": false,
+        "V": false
+      },
+      "correctAnswer": "Hf"
+    },
+    {
+      "question": "What is the chemical symbol for scandium?",
+      "answers": {
+        "Sc": true,
+        "Y": false,
+        "There": false,
+        "Ac": false
+      },
+      "correctAnswer": "Sc"
+    },
+    {
+      "question": "What is the chemical symbol for lanthanum?",
+      "answers": {
+        "There": true,
+        "Sc": false,
+        "Y": false,
+        "Ac": false
+      },
+      "correctAnswer": "La"
+    },
+    {
+      "question": "What is the chemical symbol for rubidium?",
+      "answers": {
+        "Rb": true,
+        "Li": false,
+        "N / A": false,
+        "K": false
+      },
+      "correctAnswer": "Rb"
+    },
+    {
+      "question": "What is the chemical symbol for cesium?",
+      "answers": {
+        "Cs": true,
+        "Li": false,
+        "N / A": false,
+        "K": false
+      },
+      "correctAnswer": "Cs"
+    },
+    {
+      "question": "What is the chemical symbol for francium?",
+      "answers": {
+        "Fr": true,
+        "Li": false,
+        "N / A": false,
+        "K": false
+      },
+      "correctAnswer": "Fr"
+    },
+    {
+      "question": "What is the chemical symbol for beryllium?",
+      "answers": {
+        "Be": true,
+        "Mg": false,
+        "That": false,
+        "Sr": false
+      },
+      "correctAnswer": "Be"
+    },
+    {
+      "question": "What is the chemical symbol for strontium?",
+      "answers": {
+        "Sr": true,
+        "Be": false,
+        "Mg": false,
+        "That": false
+      },
+      "correctAnswer": "Sr"
+    }
+  ]
+}

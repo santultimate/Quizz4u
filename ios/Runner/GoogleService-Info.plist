@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCQrCXrxKN4oDTtp6ngwibIyiywsxhUJcg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>431660199679</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.quizz4u.quizz4u</string>
+	<key>PROJECT_ID</key>
+	<string>quizz4u-103f2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quizz4u-103f2.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:431660199679:ios:262caf90529d649469e6ca</string>
+</dict>
+</plist>

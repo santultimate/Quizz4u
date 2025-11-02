@@ -1,0 +1,474 @@
+{
+  "Culture générale": [
+    {
+      "question": "ما هو أكبر محيط على هذا الكوكب؟",
+      "answers": {
+        "المحيط الهادئ": true,
+        "المحيط الأطلسي": false,
+        "المحيط الهندي": false,
+        "المحيط المتجمد الشمالي": false
+      },
+      "explanation": "يغطي المحيط الهادئ أكثر من 30% من سطح الأرض.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "من رسم الموناليزا؟",
+      "answers": {
+        "ليوناردو دافنشي": true,
+        "مايكل أنجلو": false,
+        "رافائيل": false,
+        "بوتيتشيلي": false
+      },
+      "explanation": "ولوحة الموناليزا التي رسمها ليوناردو دافنشي معروضة في متحف اللوفر.",
+      "difficulty": "easy",
+      "subcategory": "Art"
+    },
+    {
+      "question": "ما هو الرمز الكيميائي للذهب؟",
+      "answers": {
+        "في": true,
+        "حج": false,
+        "الحديد": false,
+        "النحاس": false
+      },
+      "explanation": "يأتي Au من الكلمة اللاتينية \"aurum\" والتي تعني الذهب.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "في أي دولة يقع برج إيفل؟",
+      "answers": {
+        "فرنسا": true,
+        "إيطاليا": false,
+        "إسبانيا": false,
+        "ألمانيا": false
+      },
+      "explanation": "يقع برج إيفل في باريس، فرنسا.",
+      "difficulty": "easy",
+      "subcategory": "Monuments"
+    },
+    {
+      "question": "ما هي أكبر قارة؟",
+      "answers": {
+        "آسيا": true,
+        "أفريقيا": false,
+        "أمريكا الشمالية": false,
+        "أوروبا": false
+      },
+      "explanation": "تمثل آسيا حوالي 30% من مساحة سطح الأرض.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "من كتب \"البؤساء\"؟",
+      "answers": {
+        "فيكتور هوجو": true,
+        "الكسندر دوماس": false,
+        "إميل زولا": false,
+        "غوستاف فلوبير": false
+      },
+      "explanation": "نشر فيكتور هوغو رواية \"البؤساء\" عام 1862.",
+      "difficulty": "medium",
+      "subcategory": "Littérature"
+    },
+    {
+      "question": "ما هي أكبر صحراء في العالم؟",
+      "answers": {
+        "القارة القطبية الجنوبية": true,
+        "الصحراء": false,
+        "الصحراء العربية": false,
+        "صحراء جوبي": false
+      },
+      "explanation": "القارة القطبية الجنوبية هي من الناحية الفنية أكبر صحراء في العالم.",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "ما هو أكبر حيوان ثديي في العالم؟",
+      "answers": {
+        "الحوت الأزرق": true,
+        "الفيل الأفريقي": false,
+        "وحيد القرن": false,
+        "فرس النهر": false
+      },
+      "explanation": "يمكن أن يصل طول الحوت الأزرق إلى 30 مترًا، ويزن 200 طن.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "ما هي أكبر دولة في العالم؟",
+      "answers": {
+        "روسيا": true,
+        "كندا": false,
+        "الصين": false,
+        "الولايات المتحدة": false
+      },
+      "explanation": "تبلغ مساحة روسيا أكثر من 17 مليون كيلومتر مربع.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "ما هو أكبر عضو في جسم الإنسان؟",
+      "answers": {
+        "الجلد": true,
+        "الكبد": false,
+        "الدماغ": false,
+        "القلب": false
+      },
+      "explanation": "يشكل الجلد حوالي 16% من إجمالي وزن الجسم.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "في أي قارة تقع دولة فلسطين؟",
+      "answers": {
+        "آسيا": true,
+        "أفريقيا": false,
+        "أوروبا": false,
+        "أمريكا": false
+      },
+      "correctAnswer": "L'Asie"
+    },
+    {
+      "question": "ما هي أكبر مدينة في القارة الأوروبية؟",
+      "answers": {
+        "لندن": true,
+        "باريس": false,
+        "برلين": false,
+        "مدريد": false
+      },
+      "correctAnswer": "Londres"
+    },
+    {
+      "question": "ما هي مدينة الحب والجمال؟",
+      "answers": {
+        "باريس": true,
+        "البندقية": false,
+        "روما": false,
+        "برشلونة": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "كم عدد الدول العربية الموجودة في القارة الأفريقية؟",
+      "answers": {
+        "تسع دول": true,
+        "سبع دول": false,
+        "إحدى عشرة دولة": false,
+        "ثلاثة عشر دولة": false
+      },
+      "correctAnswer": "Neuf pays"
+    },
+    {
+      "question": "ما هي أقوى أنواع الأحجار الكريمة؟",
+      "answers": {
+        "الماس": true,
+        "الياقوتة": false,
+        "الزمرد": false,
+        "الياقوت": false
+      },
+      "correctAnswer": "Le diamant"
+    },
+    {
+      "question": "في أي قارة يقع نهر الأمازون؟",
+      "answers": {
+        "أمريكا الجنوبية": true,
+        "أفريقيا": false,
+        "آسيا": false,
+        "أمريكا الشمالية": false
+      },
+      "correctAnswer": "L'Amerique du Sud"
+    },
+    {
+      "question": "ما هي الدولة التي تسمى أرض الأرانب؟",
+      "answers": {
+        "إسبانيا": true,
+        "البرتغال": false,
+        "إيطاليا": false,
+        "فرنسا": false
+      },
+      "correctAnswer": "L'Espagne"
+    },
+    {
+      "question": "ما هو أعلى جبل في القارة الأفريقية؟",
+      "answers": {
+        "جبل كليمنجارو": true,
+        "جبل كينيا": false,
+        "جبل إلغون": false,
+        "جبل ميرو": false
+      },
+      "correctAnswer": "Le Mont Kilimandjaro"
+    },
+    {
+      "question": "كم عدد العضلات في جسم الإنسان؟",
+      "answers": {
+        "620 عضلة": true,
+        "500 عضلة": false,
+        "700 عضلة": false,
+        "800 عضلة": false
+      },
+      "correctAnswer": "620 muscles"
+    },
+    {
+      "question": "ما هي عاصمة فرنسا؟",
+      "answers": {
+        "باريس": true,
+        "ليون": false,
+        "مرسيليا": false,
+        "تولوز": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "ما هي الدولة التي على شكل حذاء؟",
+      "answers": {
+        "إيطاليا": true,
+        "إسبانيا": false,
+        "اليونان": false,
+        "البرتغال": false
+      },
+      "correctAnswer": "L'Italie"
+    },
+    {
+      "question": "ما هي عاصمة ألمانيا؟",
+      "answers": {
+        "برلين": true,
+        "ميونيخ": false,
+        "فرانكفورت": false,
+        "هامبورغ": false
+      },
+      "correctAnswer": "Berlin"
+    },
+    {
+      "question": "ما هي الدولة التي توجد ورقة القيقب على علمها؟",
+      "answers": {
+        "كندا": true,
+        "اليابان": false,
+        "البرازيل": false,
+        "أستراليا": false
+      },
+      "correctAnswer": "Le Canada"
+    },
+    {
+      "question": "من اكتشف أمريكا؟",
+      "answers": {
+        "كريستوفر كولومبوس": true,
+        "ماركو بولو": false,
+        "فاسكو دا جاما": false,
+        "أمريجو فسبوتشي": false
+      },
+      "correctAnswer": "Christophe Colomb"
+    },
+    {
+      "question": "ما هي أكبر مدينة في العالم؟",
+      "answers": {
+        "طوكيو": true,
+        "نيويورك": false,
+        "شنغهاي": false,
+        "المكسيك": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "ما هي عاصمة اليابان؟",
+      "answers": {
+        "طوكيو": true,
+        "أوساكا": false,
+        "كيوتو": false,
+        "يوكوهاما": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "ما هي عاصمة أستراليا؟",
+      "answers": {
+        "كانبيرا": true,
+        "سيدني": false,
+        "ملبورن": false,
+        "بريسبان": false
+      },
+      "correctAnswer": "Canberra"
+    },
+    {
+      "question": "ما هي عاصمة الصين؟",
+      "answers": {
+        "بكين": true,
+        "شنغهاي": false,
+        "هونج كونج": false,
+        "كانتون": false
+      },
+      "correctAnswer": "Pekin"
+    },
+    {
+      "question": "ما هي عاصمة الهند؟",
+      "answers": {
+        "نيودلهي": true,
+        "مومباي": false,
+        "كولكاتا": false,
+        "تشيناي": false
+      },
+      "correctAnswer": "New Delhi"
+    },
+    {
+      "question": "ما هي عاصمة البرازيل؟",
+      "answers": {
+        "برازيليا": true,
+        "ساو باولو": false,
+        "ريو دي جانيرو": false,
+        "السلفادور": false
+      },
+      "correctAnswer": "Brasilia"
+    },
+    {
+      "question": "ما هي عاصمة جنوب أفريقيا؟",
+      "answers": {
+        "بريتوريا": true,
+        "كيب تاون": false,
+        "جوهانسبرغ": false,
+        "ديربان": false
+      },
+      "correctAnswer": "Pretoria"
+    },
+    {
+      "question": "ما هي أكبر دولة في أوروبا؟",
+      "answers": {
+        "أوكرانيا": true,
+        "فرنسا": false,
+        "إسبانيا": false,
+        "ألمانيا": false
+      },
+      "correctAnswer": "L'Ukraine"
+    },
+    {
+      "question": "ما هي عاصمة أوكرانيا؟",
+      "answers": {
+        "كييف": true,
+        "خاركوف": false,
+        "أوديسا": false,
+        "دنيبرو": false
+      },
+      "correctAnswer": "Kiev"
+    },
+    {
+      "question": "ما هي عاصمة مصر؟",
+      "answers": {
+        "القاهرة": true,
+        "الإسكندرية": false,
+        "الجيزة": false,
+        "الأقصر": false
+      },
+      "correctAnswer": "Le Caire"
+    },
+    {
+      "question": "ما هي عاصمة كندا؟",
+      "answers": {
+        "أوتاوا": true,
+        "تورنتو": false,
+        "مونتريال": false,
+        "فانكوفر": false
+      },
+      "correctAnswer": "Ottawa"
+    },
+    {
+      "question": "ما هي أكبر دولة في أوقيانوسيا؟",
+      "answers": {
+        "أستراليا": true,
+        "بابوا غينيا الجديدة": false,
+        "نيوزيلندا": false,
+        "فيجي": false
+      },
+      "correctAnswer": "L'Australie"
+    },
+    {
+      "question": "ما هي عاصمة نيوزيلندا؟",
+      "answers": {
+        "ويلينغتون": true,
+        "أوكلاند": false,
+        "كرايستشيرش": false,
+        "هاميلتون": false
+      },
+      "correctAnswer": "Wellington"
+    },
+    {
+      "question": "ما هي عاصمة نيكاراغوا؟",
+      "answers": {
+        "ماناغوا": true,
+        "ليو": false,
+        "غرناطة": false,
+        "ماسايا": false
+      },
+      "correctAnswer": "Managua"
+    },
+    {
+      "question": "ما هي أكبر دولة في منطقة البحر الكاريبي؟",
+      "answers": {
+        "كوبا": true,
+        "جامايكا": false,
+        "هيسبانيولا": false,
+        "بورتوريكو": false
+      },
+      "correctAnswer": "Cuba"
+    },
+    {
+      "question": "ما هي عاصمة كوبا؟",
+      "answers": {
+        "هافانا": true,
+        "سانتياغو دي كوبا": false,
+        "كاماغوي": false,
+        "هولغوين": false
+      },
+      "correctAnswer": "La Havane"
+    },
+    {
+      "question": "ما هي عاصمة الأرجنتين؟",
+      "answers": {
+        "بوينس آيرس": true,
+        "قرطبة": false,
+        "روزاريو": false,
+        "ميندوزا": false
+      },
+      "correctAnswer": "Buenos Aires"
+    },
+    {
+      "question": "ما هي عاصمة نيجيريا؟",
+      "answers": {
+        "أبوجا": true,
+        "لاغوس": false,
+        "كانو": false,
+        "إبادان": false
+      },
+      "correctAnswer": "Abuja"
+    },
+    {
+      "question": "ما هي عاصمة اندونيسيا؟",
+      "answers": {
+        "جاكرتا": true,
+        "سورابايا": false,
+        "باندونج": false,
+        "ميدان": false
+      },
+      "correctAnswer": "Jakarta"
+    },
+    {
+      "question": "ما هي عاصمة روسيا؟",
+      "answers": {
+        "موسكو": true,
+        "سانت بطرسبرغ": false,
+        "نوفوسيبيرسك": false,
+        "يكاترينبرج": false
+      },
+      "correctAnswer": "Moscou"
+    },
+    {
+      "question": "ما هي عاصمة الولايات المتحدة؟",
+      "answers": {
+        "واشنطن العاصمة": true,
+        "نيويورك": false,
+        "لوس أنجلوس": false,
+        "شيكاغو": false
+      },
+      "correctAnswer": "Washington D.C."
+    }
+  ]
+}

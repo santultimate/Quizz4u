@@ -1,0 +1,44 @@
+{
+  "categories": {
+    "Histoire du Mali": "تاريخ مالي",
+    "Culture générale": "الثقافة العامة",
+    "Sciences": "العلوم",
+    "Mathématiques": "الرياضيات",
+    "Afrique": "أفريقيا",
+    "Football": "كرة القدم",
+    "Musique": "الموسيقى",
+    "Arts et Culture": "الفنون والثقافة",
+    "Politique et Économie": "السياسة والاقتصاد",
+    "Technologie et Innovation": "التكنولوجيا والابتكار",
+    "Santé et Médecine": "الصحة والطب",
+    "Environnement et Écologie": "البيئة والإيكولوجيا",
+    "Questions Expert": "أسئلة الخبراء",
+    "Questions Spécialisées": "أسئلة متخصصة"
+  },
+  "difficulties": {
+    "Facile": "سهل",
+    "Moyen": "متوسط",
+    "Difficile": "صعب"
+  },
+  "questions": {
+    "sample_question_1": {
+      "question": "ما هي عاصمة مالي؟",
+      "answers": {
+        "باماكو": true,
+        "سيغو": false,
+        "تمبكتو": false,
+        "غاو": false
+      },
+      "explanation": "باماكو هي عاصمة مالي وأكبر مدنها."
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

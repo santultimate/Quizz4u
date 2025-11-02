@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import '../services/question_service.dart';
 import '../services/ad_service.dart';
+import '../services/premium_service.dart';
+import '../services/translation_service.dart';
 import '../models/question_model.dart';
 
 class LearningModeScreen extends StatefulWidget {
   final String category;
 
-  const LearningModeScreen({Key? key, required this.category})
-      : super(key: key);
+  const LearningModeScreen({super.key, required this.category});
 
   @override
   State<LearningModeScreen> createState() => _LearningModeScreenState();
@@ -25,10 +26,15 @@ class _LearningModeScreenState extends State<LearningModeScreen> {
     super.initState();
     _loadQuestions();
 
-    // Afficher une publicité interstitielle au début du mode apprentissage
+    // Afficher une publicité interstitielle au début du mode apprentissage (seulement si pas premium)
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       try {
-        await AdService.showCategoryChangeInterstitial();
+        final isPremium = await PremiumService.isPremiumUser();
+        if (!isPremium) {
+          await AdService.showCategoryChangeInterstitial();
+        } else {
+          print('[LearningMode] 🚫 Utilisateur premium - aucune publicité');
+        }
       } catch (e) {
         print('[LearningMode] ❌ Erreur publicité: $e');
       }
@@ -77,7 +83,8 @@ class _LearningModeScreenState extends State<LearningModeScreen> {
     if (questions.isEmpty) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Mode Apprentissage - ${widget.category}'),
+          title: Text(TranslationService.translateWithParams(
+              'learning_mode_title', {'category': widget.category})),
           backgroundColor: Colors.blue[700],
           foregroundColor: Colors.white,
         ),
@@ -91,7 +98,8 @@ class _LearningModeScreenState extends State<LearningModeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mode Apprentissage - ${widget.category}'),
+        title: Text(TranslationService.translateWithParams(
+            'learning_mode_title', {'category': widget.category})),
         backgroundColor: Colors.blue[700],
         foregroundColor: Colors.white,
         actions: [
@@ -268,7 +276,7 @@ class _LearningModeScreenState extends State<LearningModeScreen> {
                   onPressed:
                       currentQuestionIndex > 0 ? _previousQuestion : null,
                   icon: const Icon(Icons.arrow_back),
-                  label: const Text('Précédent'),
+                  label: Text(TranslationService.translate('previous')),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey[600],
                     foregroundColor: Colors.white,

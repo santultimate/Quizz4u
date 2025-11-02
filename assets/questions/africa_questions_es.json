@@ -1,0 +1,434 @@
+{
+  "África": [
+    {
+      "question": "¿Cuál es el país más grande de África?",
+      "answers": {
+        "Argelia": true,
+        "La República Democrática del Congo": false,
+        "Sudán": false,
+        "Libia": false
+      },
+      "correctAnswer": "Argelia"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África por población?",
+      "answers": {
+        "Nigeria": true,
+        "Etiopía": false,
+        "Egipto": false,
+        "La República Democrática del Congo": false
+      },
+      "correctAnswer": "Nigeria"
+    },
+    {
+      "question": "¿Cuál es el río más largo de África?",
+      "answers": {
+        "El Nilo": true,
+        "Congo": false,
+        "Níger": false,
+        "El Zambeze": false
+      },
+      "correctAnswer": "El Nilo"
+    },
+    {
+      "question": "¿Cuál es el lago más grande de África?",
+      "answers": {
+        "Lago Victoria": true,
+        "Lago Tanganica": false,
+        "Lago Malaui": false,
+        "Lago Chad": false
+      },
+      "correctAnswer": "Lago Victoria"
+    },
+    {
+      "question": "¿Cuál es el desierto más grande de África?",
+      "answers": {
+        "El Sáhara": true,
+        "El desierto de Kalahari": false,
+        "El desierto de Namib": false,
+        "El desierto de Libia": false
+      },
+      "correctAnswer": "El Sáhara"
+    },
+    {
+      "question": "¿Cuál es la montaña más alta de África?",
+      "answers": {
+        "Monte Kilimanjaro": true,
+        "Monte Kenia": false,
+        "Monte Elgón": false,
+        "Monte Merú": false
+      },
+      "correctAnswer": "Monte Kilimanjaro"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño de África?",
+      "answers": {
+        "Seychelles": true,
+        "Santo Tomé y Príncipe": false,
+        "Comoras": false,
+        "Cabo Verde": false
+      },
+      "correctAnswer": "Seychelles"
+    },
+    {
+      "question": "¿Cuál es el país insular más grande de África?",
+      "answers": {
+        "Madagascar": true,
+        "Seychelles": false,
+        "Comoras": false,
+        "Cabo Verde": false
+      },
+      "correctAnswer": "Madagascar"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental?",
+      "answers": {
+        "Níger": true,
+        "Malí": false,
+        "Burkina Faso": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Níger"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central?",
+      "answers": {
+        "La República Democrática del Congo": true,
+        "Chad": false,
+        "La República Centroafricana": false,
+        "Camerún": false
+      },
+      "correctAnswer": "La República Democrática del Congo"
+    },
+    {
+      "question": "¿Cuál es el país más grande del este de África?",
+      "answers": {
+        "Sudán": true,
+        "Etiopía": false,
+        "Tanzania": false,
+        "Kenia": false
+      },
+      "correctAnswer": "Sudán"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África?",
+      "answers": {
+        "Sudáfrica": true,
+        "Namibia": false,
+        "Botsuana": false,
+        "Zimbabue": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África?",
+      "answers": {
+        "Argelia": true,
+        "Libia": false,
+        "Egipto": false,
+        "Marruecos": false
+      },
+      "correctAnswer": "Argelia"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental por población?",
+      "answers": {
+        "Nigeria": true,
+        "Ghana": false,
+        "Costa de Marfil": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Nigeria"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central por población?",
+      "answers": {
+        "La República Democrática del Congo": true,
+        "Camerún": false,
+        "Chad": false,
+        "La República Centroafricana": false
+      },
+      "correctAnswer": "La República Democrática del Congo"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Oriental por población?",
+      "answers": {
+        "Etiopía": true,
+        "Tanzania": false,
+        "Kenia": false,
+        "Uganda": false
+      },
+      "correctAnswer": "Etiopía"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África por población?",
+      "answers": {
+        "Sudáfrica": true,
+        "Zimbabue": false,
+        "Mozambique": false,
+        "Zambia": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África por población?",
+      "answers": {
+        "Egipto": true,
+        "Argelia": false,
+        "Marruecos": false,
+        "Túnez": false
+      },
+      "correctAnswer": "Egipto"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental por superficie?",
+      "answers": {
+        "Níger": true,
+        "Malí": false,
+        "Burkina Faso": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Níger"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central por superficie?",
+      "answers": {
+        "La República Democrática del Congo": true,
+        "Chad": false,
+        "La República Centroafricana": false,
+        "Camerún": false
+      },
+      "correctAnswer": "La República Democrática del Congo"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Oriental por área?",
+      "answers": {
+        "Sudán": true,
+        "Etiopía": false,
+        "Tanzania": false,
+        "Kenia": false
+      },
+      "correctAnswer": "Sudán"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África por superficie?",
+      "answers": {
+        "Sudáfrica": true,
+        "Namibia": false,
+        "Botsuana": false,
+        "Zimbabue": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África por superficie?",
+      "answers": {
+        "Argelia": true,
+        "Libia": false,
+        "Egipto": false,
+        "Marruecos": false
+      },
+      "correctAnswer": "Argelia"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño de África occidental?",
+      "answers": {
+        "Gambia": true,
+        "Ir": false,
+        "Benín": false,
+        "Guinea-Bisáu": false
+      },
+      "correctAnswer": "Gambia"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño de África Central?",
+      "answers": {
+        "Santo Tomé y Príncipe": true,
+        "Guinea Ecuatorial": false,
+        "Gabón": false,
+        "La República Centroafricana": false
+      },
+      "correctAnswer": "Santo Tomé y Príncipe"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño del este de África?",
+      "answers": {
+        "Comoras": true,
+        "Yibuti": false,
+        "Burundi": false,
+        "Ruanda": false
+      },
+      "correctAnswer": "Comoras"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño del sur de África?",
+      "answers": {
+        "Esuatini": true,
+        "Lesoto": false,
+        "Botsuana": false,
+        "Namibia": false
+      },
+      "correctAnswer": "Esuatini"
+    },
+    {
+      "question": "¿Cuál es el país más pequeño del norte de África?",
+      "answers": {
+        "Túnez": true,
+        "Marruecos": false,
+        "Argelia": false,
+        "Libia": false
+      },
+      "correctAnswer": "Túnez"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental por PIB?",
+      "answers": {
+        "Nigeria": true,
+        "Ghana": false,
+        "Costa de Marfil": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Nigeria"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central por PIB?",
+      "answers": {
+        "La República Democrática del Congo": true,
+        "Camerún": false,
+        "Gabón": false,
+        "La República Centroafricana": false
+      },
+      "correctAnswer": "La República Democrática del Congo"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Oriental por PIB?",
+      "answers": {
+        "Etiopía": true,
+        "Kenia": false,
+        "Tanzania": false,
+        "Uganda": false
+      },
+      "correctAnswer": "Etiopía"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África por PIB?",
+      "answers": {
+        "Sudáfrica": true,
+        "Zimbabue": false,
+        "Mozambique": false,
+        "Zambia": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África por PIB?",
+      "answers": {
+        "Egipto": true,
+        "Argelia": false,
+        "Marruecos": false,
+        "Túnez": false
+      },
+      "correctAnswer": "Egipto"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental por densidad de población?",
+      "answers": {
+        "Nigeria": true,
+        "Ghana": false,
+        "Costa de Marfil": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Nigeria"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central por densidad de población?",
+      "answers": {
+        "La República Democrática del Congo": true,
+        "Camerún": false,
+        "Gabón": false,
+        "La República Centroafricana": false
+      },
+      "correctAnswer": "La República Democrática del Congo"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Oriental por densidad de población?",
+      "answers": {
+        "Etiopía": true,
+        "Kenia": false,
+        "Tanzania": false,
+        "Uganda": false
+      },
+      "correctAnswer": "Etiopía"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África por densidad de población?",
+      "answers": {
+        "Sudáfrica": true,
+        "Zimbabue": false,
+        "Mozambique": false,
+        "Zambia": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África por densidad de población?",
+      "answers": {
+        "Egipto": true,
+        "Argelia": false,
+        "Marruecos": false,
+        "Túnez": false
+      },
+      "correctAnswer": "Egipto"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África occidental por esperanza de vida?",
+      "answers": {
+        "Cabo Verde": true,
+        "Ghana": false,
+        "Costa de Marfil": false,
+        "Senegal": false
+      },
+      "correctAnswer": "Cabo Verde"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Central por esperanza de vida?",
+      "answers": {
+        "Gabón": true,
+        "Camerún": false,
+        "La República Democrática del Congo": false,
+        "La República Centroafricana": false
+      },
+      "correctAnswer": "Gabón"
+    },
+    {
+      "question": "¿Cuál es el país más grande de África Oriental por esperanza de vida?",
+      "answers": {
+        "Seychelles": true,
+        "Etiopía": false,
+        "Kenia": false,
+        "Tanzania": false
+      },
+      "correctAnswer": "Seychelles"
+    },
+    {
+      "question": "¿Cuál es el país más grande del sur de África por esperanza de vida?",
+      "answers": {
+        "Sudáfrica": true,
+        "Zimbabue": false,
+        "Mozambique": false,
+        "Zambia": false
+      },
+      "correctAnswer": "Sudáfrica"
+    },
+    {
+      "question": "¿Cuál es el país más grande del norte de África por esperanza de vida?",
+      "answers": {
+        "Túnez": true,
+        "Argelia": false,
+        "Marruecos": false,
+        "Egipto": false
+      },
+      "correctAnswer": "Túnez"
+    }
+  ]
+}

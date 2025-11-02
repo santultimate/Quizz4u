@@ -1,0 +1,546 @@
+{
+  "Musique": [
+    {
+      "question": "马里最具代表性的传统乐器是什么？",
+      "answers": {
+        "科拉人": true,
+        "巴拉丰": false,
+        "非洲鼓": false,
+        "恩戈尼人": false
+      }
+    },
+    {
+      "question": "谁被认为是马里“蓝调之王”？",
+      "answers": {
+        "阿里·法尔卡·杜尔": true,
+        "萨利夫·凯塔": false,
+        "奥穆·桑加雷": false,
+        "阿马杜和玛丽雅姆": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于刚果民主共和国？",
+      "answers": {
+        "刚果伦巴": true,
+        "高尚的生活": false,
+        "非洲节拍": false,
+        "轿跑车装饰": false
+      }
+    },
+    {
+      "question": "谁让非洲节奏风靡全球？",
+      "answers": {
+        "费拉·库蒂（尼日利亚）": true,
+        "马努·迪班戈（喀麦隆）": false,
+        "尤苏·恩杜尔（塞内加尔）": false,
+        "安杰利克·基乔（贝宁）": false
+      }
+    },
+    {
+      "question": "摩洛哥 Gnawa 音乐传统上使用什么乐器？",
+      "answers": {
+        "甘布里人": true,
+        "沉香木": false,
+        "卡农": false,
+        "尼": false
+      }
+    },
+    {
+      "question": "谁被称为“非洲天后”？",
+      "answers": {
+        "米里亚姆·马克巴（南非）": true,
+        "安杰利克·基乔（贝宁）": false,
+        "Cesária Évora（佛得角）": false,
+        "奥穆·桑加雷（马里）": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于 20 世纪 60 年代的牙买加？",
+      "answers": {
+        "雷鬼音乐": true,
+        "斯卡": false,
+        "洛克斯泰迪酒店": false,
+        "配音": false
+      }
+    },
+    {
+      "question": "被誉为“金嗓子”的马里歌手是谁？",
+      "answers": {
+        "萨利夫·凯塔": true,
+        "阿里·法尔卡·杜尔": false,
+        "图马尼·迪亚巴特": false,
+        "罗基亚·特拉奥雷": false
+      }
+    },
+    {
+      "question": "哪种打击乐器起源于西非？",
+      "answers": {
+        "非洲鼓": true,
+        "手鼓": false,
+        "康加舞曲": false,
+        "电池": false
+      }
+    },
+    {
+      "question": "《兰巴达》是谁创作的？",
+      "answers": {
+        "Kaoma（法国-巴西集团）": true,
+        "卡洛斯桑塔纳": false,
+        "吉普赛国王": false,
+        "瑞奇·马丁": false
+      }
+    },
+    {
+      "question": "马里国家交响乐团的名称是什么？",
+      "answers": {
+        "马里国家管弦乐团“A”": true,
+        "马里交响乐团": false,
+        "马里共和国管弦乐团": false,
+        "马里国家交响乐团": false
+      }
+    },
+    {
+      "question": "谁被认为是爵士乐之父？",
+      "answers": {
+        "路易斯·阿姆斯特朗": true,
+        "艾灵顿公爵": false,
+        "查理帕克": false,
+        "迈尔斯·戴维斯": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于新奥尔良？",
+      "answers": {
+        "爵士乐": true,
+        "布鲁斯": false,
+        "福音": false,
+        "节奏和布鲁斯": false
+      }
+    },
+    {
+      "question": "谁让曼丁哥音乐在全世界流行起来？",
+      "answers": {
+        "图马尼·迪亚巴特": true,
+        "阿里·法尔卡·杜尔": false,
+        "萨利夫·凯塔": false,
+        "罗基亚·特拉奥雷": false
+      }
+    },
+    {
+      "question": "哪种传统乐器使用葫芦作为共鸣器？",
+      "answers": {
+        "巴拉丰": true,
+        "科拉人": false,
+        "恩戈尼人": false,
+        "非洲鼓": false
+      }
+    },
+    {
+      "question": "谁被称为“布鲁斯歌剧院”？",
+      "answers": {
+        "阿里·法尔卡·杜尔": true,
+        "萨利夫·凯塔": false,
+        "图马尼·迪亚巴特": false,
+        "布巴卡尔·特拉奥雷": false
+      }
+    },
+    {
+      "question": "什么音乐流派最初来自佛得角？",
+      "answers": {
+        "早上": true,
+        "福纳纳": false,
+        "巴图克": false,
+        "科拉德拉": false
+      }
+    },
+    {
+      "question": "谁为2010年世界杯创作了“Waka Waka（This Time for Africa）”？",
+      "answers": {
+        "夏奇拉": true,
+        "詹妮弗·洛佩兹": false,
+        "碧昂斯": false,
+        "蕾哈娜": false
+      }
+    },
+    {
+      "question": "格纳瓦音乐的传统乐器是什么？",
+      "answers": {
+        "Guembri（三弦鲁特琴）": true,
+        "沉香木": false,
+        "科拉人": false,
+        "恩戈尼人": false
+      }
+    },
+    {
+      "question": "谁被认为是塞内加尔姆巴拉克斯的国王？",
+      "answers": {
+        "尤苏·恩杜尔": true,
+        "巴巴玛尔": false,
+        "伊斯梅尔·洛": false,
+        "猴面包树乐团": false
+      }
+    },
+    {
+      "question": "巴西诞生了什么音乐流派？",
+      "answers": {
+        "博萨诺瓦": true,
+        "桑巴舞": false,
+        "福罗": false,
+        "兰巴达": false
+      }
+    },
+    {
+      "question": "谁在马里普及了瓦苏鲁音乐？",
+      "answers": {
+        "奥穆·桑加雷": true,
+        "萨利夫·凯塔": false,
+        "阿里·法尔卡·杜尔": false,
+        "罗基亚·特拉奥雷": false
+      }
+    },
+    {
+      "question": "哪种马里传统乐器有 21 根弦？",
+      "answers": {
+        "科拉人": true,
+        "恩戈尼人": false,
+        "巴拉丰": false,
+        "甘布里人": false
+      }
+    },
+    {
+      "question": "谁被称为“非洲流行音乐女王”？",
+      "answers": {
+        "安吉丽克·基乔": true,
+        "米里亚姆·马克巴": false,
+        "塞萨利亚·埃武拉": false,
+        "奥穆·桑加雷": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于古巴？",
+      "answers": {
+        "萨尔萨舞": true,
+        "恰恰": false,
+        "曼波": false,
+        "声音": false
+      }
+    },
+    {
+      "question": "《非洲》是谁创作的？",
+      "answers": {
+        "萨利夫·凯塔": true,
+        "阿里·法尔卡·杜尔": false,
+        "图马尼·迪亚巴特": false,
+        "奥穆·桑加雷": false
+      }
+    },
+    {
+      "question": "什么传统乐器使用拉伸动物皮？",
+      "answers": {
+        "非洲鼓": true,
+        "巴拉丰": false,
+        "科拉人": false,
+        "恩戈尼人": false
+      }
+    },
+    {
+      "question": "谁被认为是加纳上层生活之父？",
+      "answers": {
+        "门萨": true,
+        "阿玛基·德德": false,
+        "科乔·安特维": false,
+        "萨科迪": false
+      }
+    },
+    {
+      "question": "多米尼加共和国诞生了什么音乐流派？",
+      "answers": {
+        "巴恰塔": true,
+        "梅伦格": false,
+        "萨尔萨舞": false,
+        "雷鬼音乐": false
+      }
+    },
+    {
+      "question": "谁普及了图阿雷格音乐（沙漠蓝调）？",
+      "answers": {
+        "蒂纳里文": true,
+        "邦比诺": false,
+        "塔米克雷斯特": false,
+        "特拉卡夫特": false
+      }
+    }
+  ],
+  "音乐": [
+    {
+      "question": "马里最具代表性的传统乐器是什么？",
+      "answers": {
+        "非洲鼓": false,
+        "恩戈尼人": false,
+        "科拉人": true,
+        "巴拉丰": false
+      }
+    },
+    {
+      "question": "谁被认为是马里“蓝调之王”？",
+      "answers": {
+        "奥穆·桑加雷": false,
+        "阿马杜和玛丽雅姆": false,
+        "阿里·法尔卡·杜尔": true,
+        "萨利夫·凯塔": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于刚果民主共和国？",
+      "answers": {
+        "非洲节拍": false,
+        "轿跑车装饰": false,
+        "刚果伦巴": true,
+        "高尚的生活": false
+      }
+    },
+    {
+      "question": "谁让非洲节奏风靡全球？",
+      "answers": {
+        "尤苏·恩杜尔（塞内加尔）": false,
+        "安杰利克·基乔（贝宁）": false,
+        "费拉·库蒂（尼日利亚）": true,
+        "马努·迪班戈（喀麦隆）": false
+      }
+    },
+    {
+      "question": "摩洛哥 Gnawa 音乐传统上使用什么乐器？",
+      "answers": {
+        "卡农": false,
+        "尼": false,
+        "甘布里人": true,
+        "沉香木": false
+      }
+    },
+    {
+      "question": "谁被称为“非洲天后”？",
+      "answers": {
+        "Cesária Évora（佛得角）": false,
+        "奥穆·桑加雷（马里）": false,
+        "米里亚姆·马克巴（南非）": true,
+        "安杰利克·基乔（贝宁）": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于 20 世纪 60 年代的牙买加？",
+      "answers": {
+        "洛克斯泰迪酒店": false,
+        "配音": false,
+        "雷鬼音乐": true,
+        "斯卡": false
+      }
+    },
+    {
+      "question": "被誉为“金嗓子”的马里歌手是谁？",
+      "answers": {
+        "图马尼·迪亚巴特": false,
+        "罗基亚·特拉奥雷": false,
+        "萨利夫·凯塔": true,
+        "阿里·法尔卡·杜尔": false
+      }
+    },
+    {
+      "question": "哪种打击乐器起源于西非？",
+      "answers": {
+        "康加舞曲": false,
+        "电池": false,
+        "非洲鼓": true,
+        "手鼓": false
+      }
+    },
+    {
+      "question": "《兰巴达》是谁创作的？",
+      "answers": {
+        "吉普赛国王": false,
+        "瑞奇·马丁": false,
+        "Kaoma（法国-巴西集团）": true,
+        "卡洛斯桑塔纳": false
+      }
+    },
+    {
+      "question": "马里国家交响乐团的名称是什么？",
+      "answers": {
+        "马里共和国管弦乐团": false,
+        "马里国家交响乐团": false,
+        "马里国家管弦乐团“A”": true,
+        "马里交响乐团": false
+      }
+    },
+    {
+      "question": "谁被认为是爵士乐之父？",
+      "answers": {
+        "查理帕克": false,
+        "迈尔斯·戴维斯": false,
+        "路易斯·阿姆斯特朗": true,
+        "艾灵顿公爵": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于新奥尔良？",
+      "answers": {
+        "福音": false,
+        "节奏和布鲁斯": false,
+        "爵士乐": true,
+        "布鲁斯": false
+      }
+    },
+    {
+      "question": "谁让曼丁哥音乐在全世界流行起来？",
+      "answers": {
+        "萨利夫·凯塔": false,
+        "罗基亚·特拉奥雷": false,
+        "图马尼·迪亚巴特": true,
+        "阿里·法尔卡·杜尔": false
+      }
+    },
+    {
+      "question": "哪种传统乐器使用葫芦作为共鸣器？",
+      "answers": {
+        "恩戈尼人": false,
+        "非洲鼓": false,
+        "巴拉丰": true,
+        "科拉人": false
+      }
+    },
+    {
+      "question": "谁被称为“布鲁斯歌剧院”？",
+      "answers": {
+        "图马尼·迪亚巴特": false,
+        "布巴卡尔·特拉奥雷": false,
+        "阿里·法尔卡·杜尔": true,
+        "萨利夫·凯塔": false
+      }
+    },
+    {
+      "question": "什么音乐流派最初来自佛得角？",
+      "answers": {
+        "巴图克": false,
+        "科拉德拉": false,
+        "早上": true,
+        "福纳纳": false
+      }
+    },
+    {
+      "question": "谁为2010年世界杯创作了“Waka Waka（This Time for Africa）”？",
+      "answers": {
+        "碧昂斯": false,
+        "蕾哈娜": false,
+        "夏奇拉": true,
+        "詹妮弗·洛佩兹": false
+      }
+    },
+    {
+      "question": "格纳瓦音乐的传统乐器是什么？",
+      "answers": {
+        "科拉人": false,
+        "恩戈尼人": false,
+        "Guembri（三弦鲁特琴）": true,
+        "沉香木": false
+      }
+    },
+    {
+      "question": "谁被认为是塞内加尔姆巴拉克斯的国王？",
+      "answers": {
+        "伊斯梅尔·洛": false,
+        "猴面包树乐团": false,
+        "尤苏·恩杜尔": true,
+        "巴巴玛尔": false
+      }
+    },
+    {
+      "question": "巴西诞生了什么音乐流派？",
+      "answers": {
+        "福罗": false,
+        "兰巴达": false,
+        "博萨诺瓦": true,
+        "桑巴舞": false
+      }
+    },
+    {
+      "question": "谁在马里普及了瓦苏鲁音乐？",
+      "answers": {
+        "阿里·法尔卡·杜尔": false,
+        "罗基亚·特拉奥雷": false,
+        "奥穆·桑加雷": true,
+        "萨利夫·凯塔": false
+      }
+    },
+    {
+      "question": "哪种马里传统乐器有 21 根弦？",
+      "answers": {
+        "巴拉丰": false,
+        "甘布里人": false,
+        "科拉人": true,
+        "恩戈尼人": false
+      }
+    },
+    {
+      "question": "谁被称为“非洲流行音乐女王”？",
+      "answers": {
+        "塞萨利亚·埃武拉": false,
+        "奥穆·桑加雷": false,
+        "安吉丽克·基乔": true,
+        "米里亚姆·马克巴": false
+      }
+    },
+    {
+      "question": "什么音乐流派起源于古巴？",
+      "answers": {
+        "曼波": false,
+        "声音": false,
+        "萨尔萨舞": true,
+        "恰恰": false
+      }
+    },
+    {
+      "question": "《非洲》是谁创作的？",
+      "answers": {
+        "图马尼·迪亚巴特": false,
+        "奥穆·桑加雷": false,
+        "萨利夫·凯塔": true,
+        "阿里·法尔卡·杜尔": false
+      }
+    },
+    {
+      "question": "什么传统乐器使用拉伸动物皮？",
+      "answers": {
+        "科拉人": false,
+        "恩戈尼人": false,
+        "非洲鼓": true,
+        "巴拉丰": false
+      }
+    },
+    {
+      "question": "谁被认为是加纳上层生活之父？",
+      "answers": {
+        "科乔·安特维": false,
+        "萨科迪": false,
+        "门萨": true,
+        "阿玛基·德德": false
+      }
+    },
+    {
+      "question": "多米尼加共和国诞生了什么音乐流派？",
+      "answers": {
+        "萨尔萨舞": false,
+        "雷鬼音乐": false,
+        "巴恰塔": true,
+        "梅伦格": false
+      }
+    },
+    {
+      "question": "谁普及了图阿雷格音乐（沙漠蓝调）？",
+      "answers": {
+        "塔米克雷斯特": false,
+        "特拉卡夫特": false,
+        "蒂纳里文": true,
+        "邦比诺": false
+      }
+    }
+  ]
+}

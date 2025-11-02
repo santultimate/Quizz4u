@@ -1,0 +1,94 @@
+{
+  "Artes y Cultura": {
+    "Littérature Africaine": [
+      {
+        "question": "Quel écrivain nigérian a remporté el Prix Nobel de Littérature en 1986 ?",
+        "options": [
+          "Wole Soyinka",
+          "Chinua Achebe",
+          "Ben Okri",
+          "Chimamanda Ngozi Adichie"
+        ],
+        "correctAnswer": "Wole Soyinka",
+        "explanation": "Wole Soyinka es el premier Africain à avoir reçu el Prix Nobel de Littérature.",
+        "difficulty": "Medio",
+        "category": "Artes y Cultura",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "Qui a écrit 'L'Aventure ambiguë' ?",
+        "options": [
+          "Cheikh Hamidou Kane",
+          "Léopold Sédar Senghor",
+          "Birago Diop",
+          "Amadou Hampâté Bâ"
+        ],
+        "correctAnswer": "Cheikh Hamidou Kane",
+        "explanation": "'L'Aventure ambiguë' (1961) es un roman de Cheikh Hamidou Kane sobre l'identité africaine.",
+        "difficulty": "Medio",
+        "category": "Artes y Cultura",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "Quelle écrivaine malienne es connue para 'una si longue lettre' ?",
+        "options": [
+          "Mariama Bâ",
+          "Aminata Sow Fall",
+          "Nafissatou Diallo",
+          "Ken Bugul"
+        ],
+        "correctAnswer": "Mariama Bâ",
+        "explanation": "Mariama Bâ (Sénégalaise) a écrit ce roman épistolaire sobre la condition féminine en Afrique.",
+        "difficulty": "Medio",
+        "category": "Artes y Cultura",
+        "subcategory": "Littérature Africaine"
+      }
+    ],
+    "Cinéma Africain": [
+      {
+        "question": "Cuál es el nombre del más grand festival de cinéma africain ?",
+        "options": [
+          "FESPACO",
+          "Festival de Cannes",
+          "Festival de Carthage",
+          "Festival de Durban"
+        ],
+        "correctAnswer": "FESPACO",
+        "explanation": "el FESPACO (Festival Panafricain del Cinéma de Ouagadougou) se tient todos los deux ans au Burkina Faso.",
+        "difficulty": "Fácil",
+        "category": "Artes y Cultura",
+        "subcategory": "Cinéma Africain"
+      },
+      {
+        "question": "Quel réalisateur sénégalais es considéré como el père del cinéma africain ?",
+        "options": [
+          "Ousmane Sembène",
+          "Djibril Diop Mambéty",
+          "Idrissa Ouedraogo",
+          "Souleymane Cissé"
+        ],
+        "correctAnswer": "Ousmane Sembène",
+        "explanation": "Ousmane Sembène (1923-2007) es considéré como el père del cinéma africain.",
+        "difficulty": "Medio",
+        "category": "Artes y Cultura",
+        "subcategory": "Cinéma Africain"
+      }
+    ],
+    "Art Contemporain": [
+      {
+        "question": "Quel artiste malien es famoso para ses photographies ?",
+        "options": [
+          "Malick Sidibé",
+          "Seydou Keïta",
+          "Omar Victor Diop",
+          "Hassan Hajjaj"
+        ],
+        "correctAnswer": "Malick Sidibé",
+        "explanation": "Malick Sidibé a immortalisé la jeunesse malienne des années 60-70 à Bamako.",
+        "difficulty": "Medio",
+        "category": "Artes y Cultura",
+        "subcategory": "Art Contemporain"
+      }
+    ]
+  }
+}

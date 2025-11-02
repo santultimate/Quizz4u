@@ -1,0 +1,474 @@
+{
+  "Culture générale": [
+    {
+      "question": "What is the largest ocean on the planet?",
+      "answers": {
+        "The Pacific Ocean": true,
+        "The Atlantic Ocean": false,
+        "The Indian Ocean": false,
+        "The Arctic Ocean": false
+      },
+      "explanation": "The Pacific Ocean covers more than 30% of the earth's surface.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "answers": {
+        "Leonardo da Vinci": true,
+        "Michelangelo": false,
+        "Raphael": false,
+        "Botticelli": false
+      },
+      "explanation": "The Mona Lisa, painted by Leonardo da Vinci, is on display at the Louvre.",
+      "difficulty": "easy",
+      "subcategory": "Art"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "answers": {
+        "At": true,
+        "Ag": false,
+        "Fe": false,
+        "Cu": false
+      },
+      "explanation": "Au comes from the Latin 'aurum' which means gold.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "In which country is the Eiffel Tower located?",
+      "answers": {
+        "France": true,
+        "Italy": false,
+        "Spain": false,
+        "Germany": false
+      },
+      "explanation": "The Eiffel Tower is located in Paris, France.",
+      "difficulty": "easy",
+      "subcategory": "Monuments"
+    },
+    {
+      "question": "What is the largest continent?",
+      "answers": {
+        "Asia": true,
+        "Africa": false,
+        "North America": false,
+        "Europe": false
+      },
+      "explanation": "Asia represents approximately 30% of the earth's surface area.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Who wrote 'Les Miserables'?",
+      "answers": {
+        "Victor Hugo": true,
+        "Alexandre Dumas": false,
+        "Emile Zola": false,
+        "Gustave Flaubert": false
+      },
+      "explanation": "Victor Hugo published 'Les Miserables' in 1862.",
+      "difficulty": "medium",
+      "subcategory": "Littérature"
+    },
+    {
+      "question": "What is the largest desert in the world?",
+      "answers": {
+        "Antarctica": true,
+        "The Sahara": false,
+        "The Arabian Desert": false,
+        "The Gobi Desert": false
+      },
+      "explanation": "Antarctica is technically the largest desert in the world.",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "What is the largest mammal in the world?",
+      "answers": {
+        "The blue whale": true,
+        "The African elephant": false,
+        "The rhino": false,
+        "The hippopotamus": false
+      },
+      "explanation": "The blue whale can reach 30 meters in length and weigh 200 tonnes.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "What is the largest country in the world?",
+      "answers": {
+        "Russia": true,
+        "Canada": false,
+        "China": false,
+        "United States": false
+      },
+      "explanation": "Russia covers more than 17 million km².",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "answers": {
+        "The skin": true,
+        "The liver": false,
+        "The brain": false,
+        "The heart": false
+      },
+      "explanation": "The skin makes up about 16% of the total body weight.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "What continent is the State of Palestine on?",
+      "answers": {
+        "Asia": true,
+        "Africa": false,
+        "Europe": false,
+        "America": false
+      },
+      "correctAnswer": "L'Asie"
+    },
+    {
+      "question": "What is the largest city on the European continent?",
+      "answers": {
+        "London": true,
+        "Paris": false,
+        "Berlin": false,
+        "Madrid": false
+      },
+      "correctAnswer": "Londres"
+    },
+    {
+      "question": "What is the city of love and beauty?",
+      "answers": {
+        "Paris": true,
+        "Venice": false,
+        "Rome": false,
+        "Barcelona": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "How many Arab countries are there on the African continent?",
+      "answers": {
+        "Nine countries": true,
+        "Seven countries": false,
+        "Eleven countries": false,
+        "Thirteen countries": false
+      },
+      "correctAnswer": "Neuf pays"
+    },
+    {
+      "question": "What are the strongest types of gemstones?",
+      "answers": {
+        "The diamond": true,
+        "The ruby": false,
+        "The emerald": false,
+        "The sapphire": false
+      },
+      "correctAnswer": "Le diamant"
+    },
+    {
+      "question": "On which continent is the Amazon River located?",
+      "answers": {
+        "South America": true,
+        "Africa": false,
+        "Asia": false,
+        "North America": false
+      },
+      "correctAnswer": "L'Amerique du Sud"
+    },
+    {
+      "question": "Which country is called the land of rabbits?",
+      "answers": {
+        "Spain": true,
+        "Portugal": false,
+        "Italy": false,
+        "France": false
+      },
+      "correctAnswer": "L'Espagne"
+    },
+    {
+      "question": "What is the highest mountain on the African continent?",
+      "answers": {
+        "Mount Kilimanjaro": true,
+        "Mount Kenya": false,
+        "Mount Elgon": false,
+        "Mount Meru": false
+      },
+      "correctAnswer": "Le Mont Kilimandjaro"
+    },
+    {
+      "question": "How many muscles in the human body?",
+      "answers": {
+        "620 muscles": true,
+        "500 muscles": false,
+        "700 muscles": false,
+        "800 muscles": false
+      },
+      "correctAnswer": "620 muscles"
+    },
+    {
+      "question": "What is the capital of France?",
+      "answers": {
+        "Paris": true,
+        "Lyon": false,
+        "Marseille": false,
+        "Toulouse": false
+      },
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "Which country is shaped like a boot?",
+      "answers": {
+        "Italy": true,
+        "Spain": false,
+        "Greece": false,
+        "Portugal": false
+      },
+      "correctAnswer": "L'Italie"
+    },
+    {
+      "question": "What is the capital of Germany?",
+      "answers": {
+        "Berlin": true,
+        "Munich": false,
+        "Frankfurt": false,
+        "Hamburg": false
+      },
+      "correctAnswer": "Berlin"
+    },
+    {
+      "question": "Which country has a maple leaf on its flag?",
+      "answers": {
+        "Canada": true,
+        "Japan": false,
+        "Brazil": false,
+        "Australia": false
+      },
+      "correctAnswer": "Le Canada"
+    },
+    {
+      "question": "Who discovered America?",
+      "answers": {
+        "Christopher Columbus": true,
+        "Marco Polo": false,
+        "Vasco da Gama": false,
+        "Amerigo Vespucci": false
+      },
+      "correctAnswer": "Christophe Colomb"
+    },
+    {
+      "question": "What is the largest city in the world?",
+      "answers": {
+        "Tokyo": true,
+        "new York": false,
+        "Shanghai": false,
+        "Mexico": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "answers": {
+        "Tokyo": true,
+        "Osaka": false,
+        "Kyoto": false,
+        "Yokohama": false
+      },
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "answers": {
+        "Canberra": true,
+        "Sydney": false,
+        "Melbourne": false,
+        "Brisbane": false
+      },
+      "correctAnswer": "Canberra"
+    },
+    {
+      "question": "What is the capital of China?",
+      "answers": {
+        "Beijing": true,
+        "Shanghai": false,
+        "Hong Kong": false,
+        "Canton": false
+      },
+      "correctAnswer": "Pekin"
+    },
+    {
+      "question": "What is the capital of India?",
+      "answers": {
+        "New Delhi": true,
+        "Mumbai": false,
+        "Kolkata": false,
+        "Chennai": false
+      },
+      "correctAnswer": "New Delhi"
+    },
+    {
+      "question": "What is the capital of Brazil?",
+      "answers": {
+        "Brasília": true,
+        "Sao Paulo": false,
+        "Rio de Janeiro": false,
+        "El Salvador": false
+      },
+      "correctAnswer": "Brasilia"
+    },
+    {
+      "question": "What is the capital of South Africa?",
+      "answers": {
+        "Pretoria": true,
+        "Cape Town": false,
+        "Johannesburg": false,
+        "Durban": false
+      },
+      "correctAnswer": "Pretoria"
+    },
+    {
+      "question": "What is the largest country in Europe?",
+      "answers": {
+        "Ukraine": true,
+        "France": false,
+        "Spain": false,
+        "Germany": false
+      },
+      "correctAnswer": "L'Ukraine"
+    },
+    {
+      "question": "What is the capital of Ukraine?",
+      "answers": {
+        "Kyiv": true,
+        "Kharkov": false,
+        "Odessa": false,
+        "Dnipro": false
+      },
+      "correctAnswer": "Kiev"
+    },
+    {
+      "question": "What is the capital of Egypt?",
+      "answers": {
+        "Cairo": true,
+        "Alexandria": false,
+        "Giza": false,
+        "Luxor": false
+      },
+      "correctAnswer": "Le Caire"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "answers": {
+        "Ottawa": true,
+        "Toronto": false,
+        "Montreal": false,
+        "Vancouver": false
+      },
+      "correctAnswer": "Ottawa"
+    },
+    {
+      "question": "What is the largest country in Oceania?",
+      "answers": {
+        "Australia": true,
+        "Papua New Guinea": false,
+        "New Zealand": false,
+        "Fiji": false
+      },
+      "correctAnswer": "L'Australie"
+    },
+    {
+      "question": "What is the capital of New Zealand?",
+      "answers": {
+        "Wellington": true,
+        "Auckland": false,
+        "Christchurch": false,
+        "Hamilton": false
+      },
+      "correctAnswer": "Wellington"
+    },
+    {
+      "question": "What is the capital of Nicaragua?",
+      "answers": {
+        "Managua": true,
+        "Leo": false,
+        "Granada": false,
+        "Masaya": false
+      },
+      "correctAnswer": "Managua"
+    },
+    {
+      "question": "What is the largest country in the Caribbean?",
+      "answers": {
+        "Cuba": true,
+        "Jamaica": false,
+        "Hispaniola": false,
+        "Puerto Rico": false
+      },
+      "correctAnswer": "Cuba"
+    },
+    {
+      "question": "What is the capital of Cuba?",
+      "answers": {
+        "Havana": true,
+        "Santiago de Cuba": false,
+        "Camaguey": false,
+        "Holguin": false
+      },
+      "correctAnswer": "La Havane"
+    },
+    {
+      "question": "What is the capital of Argentina?",
+      "answers": {
+        "Buenos Aires": true,
+        "Cordoba": false,
+        "Rosario": false,
+        "Mendoza": false
+      },
+      "correctAnswer": "Buenos Aires"
+    },
+    {
+      "question": "What is the capital of Nigeria?",
+      "answers": {
+        "Abuja": true,
+        "Lagos": false,
+        "Kano": false,
+        "Ibadan": false
+      },
+      "correctAnswer": "Abuja"
+    },
+    {
+      "question": "What is the capital of Indonesia?",
+      "answers": {
+        "Jakarta": true,
+        "Surabaya": false,
+        "Bandung": false,
+        "Medan": false
+      },
+      "correctAnswer": "Jakarta"
+    },
+    {
+      "question": "What is the capital of Russia?",
+      "answers": {
+        "Moscow": true,
+        "St. Petersburg": false,
+        "Novosibirsk": false,
+        "Yekaterinburg": false
+      },
+      "correctAnswer": "Moscou"
+    },
+    {
+      "question": "What is the capital of the United States?",
+      "answers": {
+        "Washington D.C.": true,
+        "new York": false,
+        "Los Angeles": false,
+        "Chicago": false
+      },
+      "correctAnswer": "Washington D.C."
+    }
+  ]
+}

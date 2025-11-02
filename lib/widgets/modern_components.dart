@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import '../theme/app_theme.dart';
+import '../theme/app_colors.dart';
 
 class ModernComponents {
   // Animated Gradient Button
@@ -24,11 +24,15 @@ class ModernComponents {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               )
-            : AppTheme.primaryGradient,
+            : const LinearGradient(
+                colors: AppColors.primaryGradient,
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: (color ?? AppTheme.primaryColor).withOpacity(0.3),
+            color: (color ?? AppColors.primary).withOpacity(0.3),
             blurRadius: 12,
             offset: const Offset(0, 6),
           ),
@@ -124,7 +128,7 @@ class ModernComponents {
               const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: AppTheme.primaryColor,
+                color: AppColors.primary,
               ),
           speed: const Duration(milliseconds: 100),
         ),
@@ -158,7 +162,11 @@ class ModernComponents {
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                 )
-              : AppTheme.primaryGradient,
+              : const LinearGradient(
+                  colors: AppColors.primaryGradient,
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
           borderRadius: BorderRadius.circular(height / 2),
         ),
       ),
@@ -185,7 +193,11 @@ class ModernComponents {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 gradient: isUnlocked
-                    ? AppTheme.primaryGradient
+                    ? const LinearGradient(
+                        colors: AppColors.primaryGradient,
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      )
                     : LinearGradient(
                         colors: [Colors.grey.shade300, Colors.grey.shade400],
                       ),
@@ -193,7 +205,7 @@ class ModernComponents {
                 boxShadow: [
                   BoxShadow(
                     color: isUnlocked
-                        ? AppTheme.primaryColor.withOpacity(0.3)
+                        ? AppColors.primary.withOpacity(0.3)
                         : Colors.grey.withOpacity(0.2),
                     blurRadius: 8,
                     offset: const Offset(0, 4),
@@ -272,13 +284,17 @@ class ModernComponents {
                     ? LinearGradient(
                         colors: [Colors.grey.shade300, Colors.grey.shade400],
                       )
-                    : AppTheme.primaryGradient,
+                    : const LinearGradient(
+                        colors: AppColors.primaryGradient,
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
                     color: isLocked
                         ? Colors.grey.withOpacity(0.2)
-                        : AppTheme.primaryColor.withOpacity(0.3),
+                        : AppColors.primary.withOpacity(0.3),
                     blurRadius: 12,
                     offset: const Offset(0, 6),
                   ),
@@ -375,15 +391,19 @@ class ModernComponents {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        gradient: percentage >= 0.8
-            ? AppTheme.successGradient
-            : percentage >= 0.6
-                ? AppTheme.primaryGradient
-                : AppTheme.errorGradient,
+        gradient: LinearGradient(
+          colors: percentage >= 0.8
+              ? AppColors.successGradient
+              : percentage >= 0.6
+                  ? AppColors.primaryGradient
+                  : AppColors.errorGradient,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: AppTheme.primaryColor.withOpacity(0.3),
+            color: AppColors.primary.withOpacity(0.3),
             blurRadius: 16,
             offset: const Offset(0, 8),
           ),

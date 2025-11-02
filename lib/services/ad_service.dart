@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'unified_audio_service.dart';
+import 'unified_audio_service_optimized.dart'; // ⚡ OPTIMISÉ
 import '../config/admob_config.dart';
+import 'smart_ad_strategy.dart';
 
 class AdService {
   // IDs AdMob pour Quizz4U - PRODUCTION
@@ -164,10 +165,10 @@ class AdService {
     print('[AdService] 📺 Tentative d\'affichage publicité interstitielle');
 
     // Indiquer qu'une publicité commence
-    UnifiedAudioService.instance.setAdPlaying(true);
+    UnifiedAudioServiceOptimized.instance.setAdPlaying(true);
 
     // Arrêter la musique de fond avant la publicité
-    await UnifiedAudioService.instance.stopBackgroundMusic();
+    await UnifiedAudioServiceOptimized.instance.stopBackgroundMusic();
 
     if (_interstitialAd != null) {
       try {
@@ -188,10 +189,10 @@ class AdService {
     await Future.delayed(const Duration(milliseconds: 500));
 
     // Indiquer que la publicité est terminée
-    UnifiedAudioService.instance.setAdPlaying(false);
+    UnifiedAudioServiceOptimized.instance.setAdPlaying(false);
 
     // Reprendre la musique de fond après la publicité
-    await UnifiedAudioService.instance.playBackgroundMusic();
+    await UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
     print('[AdService] 🎵 Reprise de la musique après publicité');
   }
 
@@ -323,22 +324,22 @@ class AdService {
 
   // Publicité interstitielle stratégique - après 3 questions
   static Future<void> showStrategicInterstitial() async {
-    await showInterstitialAd();
+    await SmartAdStrategy.showSmartAd();
   }
 
   // Publicité interstitielle - fin de quiz
   static Future<void> showEndGameInterstitial() async {
-    await showInterstitialAd();
+    await SmartAdStrategy.showSmartAd(context: AdContext.quizComplete);
   }
 
   // Publicité interstitielle - changement de catégorie
   static Future<void> showCategoryChangeInterstitial() async {
-    await showInterstitialAd();
+    await SmartAdStrategy.showSmartAd(context: AdContext.categoryComplete);
   }
 
   // Publicité interstitielle - après 5 bonnes réponses consécutives
   static Future<void> showStreakInterstitial() async {
-    await showInterstitialAd();
+    await SmartAdStrategy.showSmartAd(context: AdContext.streakMilestone);
   }
 
   // Forcer le rechargement de toutes les publicités

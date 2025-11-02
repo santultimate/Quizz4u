@@ -140,15 +140,16 @@ class LeaderboardService {
     required double accuracy,
   }) async {
     try {
-      final percentage = (score / totalQuestions * 100).toStringAsFixed(1);
+      final correctAnswers = (accuracy * totalQuestions).round();
       final date = DateTime.now().toString().split(' ')[0];
 
       final shareText = '''
 🏆 Nouveau Record Quizz4U ! 🏆
 
 👤 Joueur: $playerName
-📊 Score: $score/$totalQuestions ($percentage%)
 🎯 Catégorie: $category
+📊 Score: $score points
+✅ Questions: $correctAnswers/$totalQuestions correctes
 📈 Précision: ${(accuracy * 100).toStringAsFixed(1)}%
 📅 Date: $date
 

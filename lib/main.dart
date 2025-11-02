@@ -1,71 +1,38 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'services/question_service.dart';
+import 'services/question_service_optimized.dart'; // ⚡ OPTIMISÉ
 import 'services/settings_service.dart';
 import 'services/ad_service.dart';
 import 'models/question_model.dart';
-import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:share_plus/share_plus.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'screens/about_screen.dart';
 import 'screens/settings_screen.dart';
-import 'screens/premium_screen.dart';
+import 'screens/enhanced_premium_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/leaderboard_screen.dart';
+import 'screens/daily_challenge_screen.dart';
 import 'services/premium_service.dart';
-import 'services/purchase_service.dart';
-import 'services/audio_service.dart';
-import 'services/unified_audio_service.dart';
+import 'services/translation_service.dart';
+import 'services/localization_service.dart';
+import 'services/unified_audio_service_optimized.dart'; // ⚡ OPTIMISÉ
+import 'services/question_translation_service.dart';
 import 'components/flame_animations.dart';
 import 'services/progress_service.dart';
 import 'services/leaderboard_service.dart';
 import 'services/badge_notification_service.dart';
 import 'services/badge_service.dart';
-// import 'services/audio_test_service.dart';
-import 'services/notification_service.dart';
+import 'theme/app_theme.dart';
+import 'home.dart' as home_screen;
+import 'screens/loading_screen.dart';
+import 'widgets/ad_banner_widget.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
+  print('[main] 🚀 Démarrage de Quiz4U...');
 
-  // Initialiser les services audio
-  await AudioService.instance.initialize();
-  await UnifiedAudioService.instance.initialize();
-
-  // Initialiser AdMob
-  await AdService.initialize();
-
-  // Initialiser les achats in-app
-  await PurchaseService.initialize();
-
-  // Charger les questions au démarrage
-  await QuestionService.loadQuestions();
-
-  // Initialiser le service de progression
-  await ProgressService.loadProgress();
-
-  // Initialiser Firebase d'abord
-  try {
-    await Firebase.initializeApp();
-    print('[main] ✅ Firebase initialisé');
-  } catch (e) {
-    print('[main] ⚠️ Erreur Firebase: $e');
-  }
-
-  // Initialiser le service de notifications
-  try {
-    await NotificationService.instance.initialize();
-  } catch (e) {
-    print('[main] ⚠️ Erreur notifications: $e');
-  }
-
-  // Test audio au démarrage (optionnel)
-  // AudioTestService.runFullAudioTest();
-
+  // Lancer l'application avec l'écran de chargement
+  // Toutes les initialisations se feront dans LoadingScreen
   runApp(const MyApp());
 }
 
@@ -77,25 +44,74 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _themeMode = 'system';
+  String _themeMode = 'système';
+  StreamSubscription<String>? _languageSubscription;
+  String _currentLanguage = 'fr'; // Langue actuelle pour forcer le rebuild
 
   @override
   void initState() {
     super.initState();
     _loadThemeMode();
+    _loadCurrentLanguage();
+    _setupLanguageListener();
+  }
+
+  @override
+  void dispose() {
+    _languageSubscription?.cancel();
+    super.dispose();
+  }
+
+  Future<void> _loadCurrentLanguage() async {
+    final language = await LocalizationService.getCurrentLanguage();
+    setState(() {
+      _currentLanguage = language;
+    });
+  }
+
+  void _setupLanguageListener() {
+    // Écouter les changements de langue
+    _languageSubscription =
+        LocalizationService.languageChangeStream.listen((language) async {
+      print('[MyApp] 🌍 Changement de langue détecté: $language');
+
+      // 🌍 Recharger les questions traduites
+      try {
+        await QuestionServiceOptimized.reloadQuestionsForLanguage(language);
+        print('[MyApp] ✅ Questions rechargées pour langue: $language');
+      } catch (e) {
+        print('[MyApp] ⚠️ Erreur rechargement questions: $e');
+      }
+
+      // Forcer le rebuild COMPLET de toute l'application avec une nouvelle clé
+      if (mounted) {
+        setState(() {
+          _currentLanguage = language;
+        });
+        print('[MyApp] ✅ Interface complète rechargée avec langue: $language');
+      }
+    });
   }
 
   Future<void> _loadThemeMode() async {
     final themeMode = await SettingsService.getThemeMode();
+
+    // Validation du thème - s'assurer qu'il correspond aux options disponibles
+    final validThemeModes = ['clair', 'sombre', 'système'];
+    final validatedThemeMode =
+        validThemeModes.contains(themeMode) ? themeMode : 'système';
+
     setState(() {
-      _themeMode = themeMode;
+      _themeMode = validatedThemeMode;
     });
-    print('[MyApp] 🎨 Thème chargé: $_themeMode');
+    print('[MyApp] 🎨 Thème chargé: $_themeMode (validé: $validatedThemeMode)');
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      key: ValueKey(
+          _currentLanguage), // Clé qui change avec la langue pour forcer le rebuild
       title: 'Quizz4u',
       theme: _buildTheme(Brightness.light),
       darkTheme: _buildTheme(Brightness.dark),
@@ -103,40 +119,30 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomeScreen(),
-        '/about': (context) => const AboutScreen(),
+        '/': (context) => const LoadingScreen(),
+        '/home': (context) =>
+            home_screen.HomeScreen(key: ValueKey(_currentLanguage)),
+        '/about': (context) => AboutScreen(key: ValueKey(_currentLanguage)),
         '/settings': (context) => SettingsScreen(
+              key: ValueKey(_currentLanguage),
               onThemeChanged: _loadThemeMode,
             ),
-        '/profile': (context) => const ProfileScreen(),
+        '/premium': (context) =>
+            EnhancedPremiumScreen(key: ValueKey(_currentLanguage)),
+        '/daily_challenge': (context) =>
+            DailyChallengeScreen(key: ValueKey(_currentLanguage)),
+        '/statistics': (context) =>
+            LeaderboardScreen(key: ValueKey(_currentLanguage)),
+        '/profile': (context) => ProfileScreen(key: ValueKey(_currentLanguage)),
       },
     );
   }
 
   ThemeData _buildTheme(Brightness brightness) {
-    final isDark = brightness == Brightness.dark;
-
-    return ThemeData(
-      brightness: brightness,
-      primarySwatch: Colors.purple,
-      primaryColor: Colors.purple,
-      scaffoldBackgroundColor: isDark ? Colors.grey[900] : Colors.grey[50],
-      appBarTheme: AppBarTheme(
-        backgroundColor: isDark ? Colors.grey[800] : Colors.purple[700],
-        foregroundColor: Colors.white,
-        elevation: 0,
-      ),
-      textTheme: TextTheme(
-        headlineLarge: TextStyle(
-          color: isDark ? Colors.white : Colors.black,
-          fontFamily: 'Raleway',
-        ),
-        bodyLarge: TextStyle(
-          color: isDark ? Colors.white : Colors.black,
-          fontFamily: 'Raleway',
-        ),
-      ),
-    );
+    // Utiliser les thèmes prédéfinis de AppTheme
+    return brightness == Brightness.dark
+        ? AppTheme.darkTheme
+        : AppTheme.lightTheme;
   }
 
   ThemeMode _getThemeMode() {
@@ -154,262 +160,8 @@ class _MyAppState extends State<MyApp> {
 }
 
 // ========== ACCUEIL ==========
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  BannerAd? _bannerAd;
-  bool _isPremium = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadBannerAd();
-    _checkPremiumStatus();
-  }
-
-  void _checkPremiumStatus() async {
-    final isPremium = await PremiumService.isPremiumUser();
-    setState(() {
-      _isPremium = isPremium;
-    });
-  }
-
-  void _loadBannerAd() async {
-    try {
-      _bannerAd = await AdService.createBannerAd();
-      if (_bannerAd != null) {
-        await _bannerAd!.load();
-        setState(() {}); // Rafraîchir l'interface après le chargement
-      }
-    } catch (e) {
-      print('[HomeScreen] ❌ Erreur chargement bannière: $e');
-    }
-  }
-
-  @override
-  void dispose() {
-    _bannerAd?.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.purple,
-      appBar: AppBar(
-        backgroundColor: Colors.purple[700],
-        elevation: 0,
-        centerTitle: true,
-        leading: IconButton(
-          icon: const Icon(Icons.emoji_events, color: Colors.amber),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const LeaderboardScreen(),
-              ),
-            );
-          },
-          tooltip: '🏆 Records',
-        ),
-        title: const Text(
-          "Bienvenue au Quiz",
-          style: TextStyle(
-            fontFamily: 'Signatra',
-            fontSize: 25,
-            color: Colors.white,
-          ),
-        ),
-        actions: [
-          if (!_isPremium)
-            IconButton(
-              icon: const Icon(Icons.star, color: Colors.amber),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const PremiumScreen()),
-                ).then((_) => _checkPremiumStatus());
-              },
-            ),
-          IconButton(
-            icon: const Icon(Icons.person, color: Colors.white),
-            onPressed: () {
-              Navigator.pushNamed(context, '/profile');
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.settings, color: Colors.white),
-            onPressed: () {
-              Navigator.pushNamed(context, '/settings');
-            },
-          ),
-          // IconButton(
-          //   icon: const Icon(Icons.analytics, color: Colors.white),
-          //   onPressed: () {
-          //     Navigator.push(
-          //       context,
-          //       MaterialPageRoute(builder: (context) => const StatsScreen()),
-          //     );
-          //   },
-          // ),
-        ],
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Quizz4u',
-              style: TextStyle(
-                fontFamily: 'Signatra',
-                fontSize: 60,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => CategorySelectionScreen(
-                      onCategorySelected: (category) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>
-                                QuizScreen(category: category),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                );
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15,
-                ),
-              ),
-              child: const Text(
-                "Start",
-                style: TextStyle(
-                  fontFamily: 'Raleway',
-                  fontSize: 20,
-                  color: Colors.purple,
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-            // Bannière publicitaire AdMob
-            if (_bannerAd != null && _bannerAd!.responseInfo != null)
-              Container(
-                alignment: Alignment.center,
-                width: _bannerAd!.size.width.toDouble(),
-                height: _bannerAd!.size.height.toDouble(),
-                child: AdWidget(ad: _bannerAd!),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-// ========== SÉLECTION DE CATÉGORIE ==========
-class CategorySelectionScreen extends StatelessWidget {
-  final Function(String) onCategorySelected;
-
-  const CategorySelectionScreen({super.key, required this.onCategorySelected});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.purple,
-      appBar: AppBar(
-        backgroundColor: Colors.purple[700],
-        title: const Text(
-          'Choisissez une catégorie',
-          style: TextStyle(
-            fontFamily: 'Raleway',
-            fontSize: 25,
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-        elevation: 0,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40.0),
-        child: Column(
-          children: [
-            CategoryButton(
-              title: 'Sciences',
-              onTap: () => onCategorySelected('Sciences'),
-            ),
-            const SizedBox(height: 20),
-            CategoryButton(
-              title: 'Culture générale',
-              onTap: () => onCategorySelected('Culture générale'),
-            ),
-            const SizedBox(height: 20),
-            CategoryButton(
-              title: 'Mathématiques',
-              onTap: () => onCategorySelected('Mathématiques'),
-            ),
-            const SizedBox(height: 20),
-            CategoryButton(
-              title: 'Histoire du Mali',
-              onTap: () => onCategorySelected('Histoire du Mali'),
-            ),
-            const SizedBox(height: 20),
-            CategoryButton(
-              title: 'Afrique',
-              onTap: () => onCategorySelected('Afrique'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class CategoryButton extends StatelessWidget {
-  final String title;
-  final VoidCallback onTap;
-
-  const CategoryButton({super.key, required this.title, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      child: TextButton(
-        onPressed: onTap,
-        style: TextButton.styleFrom(
-          backgroundColor: Colors.white,
-          padding: const EdgeInsets.symmetric(vertical: 15),
-        ),
-        child: Text(
-          title,
-          style: const TextStyle(
-            fontSize: 20,
-            color: Colors.purple,
-            fontFamily: 'Raleway',
-          ),
-        ),
-      ),
-    );
-  }
-}
+// Note: Le HomeScreen principal est maintenant dans lib/home.dart
+// Cette version a été migrée vers un design moderne avec animations
 
 // ========== ÉCRAN QUIZ ==========
 class QuizScreen extends StatefulWidget {
@@ -440,27 +192,36 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Future<List<QuestionModel>> getQuestionsForCategory(String category) async {
-    await QuestionService.loadQuestions();
-    return QuestionService.getSmartQuestionsForCategory(category, count: 10);
+    // ⚡ Les questions sont déjà chargées dans LoadingScreen
+    if (!QuestionServiceOptimized.isLoaded) {
+      await QuestionServiceOptimized.loadEssentialQuestions();
+    }
+    return QuestionServiceOptimized.getSmartQuestionsForCategory(category,
+        count: 10);
   }
 
   @override
   Widget build(BuildContext context) {
+    // Traduire la catégorie avant de l'afficher
+    final translatedCategory =
+        QuestionTranslationService.translateCategory(widget.category);
+
     if (isLoading || questions.isEmpty) {
       return Scaffold(
         appBar: AppBar(
-          title: Text('Quiz: ${widget.category}'),
+          title: Text(TranslationService.translateWithParams(
+              'quiz_category_title', {'category': translatedCategory})),
           backgroundColor: Colors.purple[700],
         ),
-        body: const Center(
+        body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircularProgressIndicator(),
-              SizedBox(height: 20),
+              const CircularProgressIndicator(),
+              const SizedBox(height: 20),
               Text(
-                'Chargement des questions...',
-                style: TextStyle(fontSize: 18, fontFamily: 'Raleway'),
+                TranslationService.translate('loading_questions'),
+                style: const TextStyle(fontSize: 18, fontFamily: 'Raleway'),
               ),
             ],
           ),
@@ -470,7 +231,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz: ${widget.category}'),
+        title: Text(TranslationService.translateWithParams(
+            'quiz_category_title', {'category': translatedCategory})),
         backgroundColor: Colors.purple[700],
       ),
       body: QuizPage(questions: questions, category: widget.category),
@@ -573,7 +335,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     if (backgroundMusicEnabled) {
       Future.delayed(const Duration(milliseconds: 300), () {
         if (mounted) {
-          AudioService.instance.playBackgroundMusic();
+          UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
         }
       });
     }
@@ -597,8 +359,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
   // Méthode pour lire la question actuelle
   void _speakQuestion() async {
-    if (!autoSpeechEnabled || currentQuestionIndex >= widget.questions.length)
+    if (!autoSpeechEnabled || currentQuestionIndex >= widget.questions.length) {
       return;
+    }
 
     final currentQuestion = widget.questions[currentQuestionIndex];
     await flutterTts.speak(currentQuestion.question);
@@ -606,20 +369,20 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
   // Méthode pour arrêter la lecture
   void _stopSpeaking() async {
-    await flutterTts.stop();
+      await flutterTts.stop();
   }
 
   // Méthode pour basculer l'activation du TTS (appui long)
   void _toggleTTS() async {
     final prefs = await SharedPreferences.getInstance();
-    setState(() {
+      setState(() {
       autoSpeechEnabled = !autoSpeechEnabled;
     });
     await prefs.setBool('tts_enabled', autoSpeechEnabled);
 
     if (autoSpeechEnabled) {
-      _speakQuestion();
-    } else {
+        _speakQuestion();
+      } else {
       _stopSpeaking();
     }
   }
@@ -638,7 +401,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     // Timer pour vérifier la fin
     _timer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
       if (mounted) {
-        setState(() {
+      setState(() {
           progress = 1.0 - _timerAnimationController.value;
 
           if (progress <= 0) {
@@ -666,7 +429,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     if (isCorrect) {
       score++;
       // Jouer le son et l'animation pour bonne réponse
-      UnifiedAudioService.instance.playGoodSound();
+      UnifiedAudioServiceOptimized.instance.playGoodSound();
       if (animationsEnabled) {
         setState(() {
           _showGoodAnimation = true;
@@ -674,7 +437,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       }
     } else {
       // Jouer le son pour mauvaise réponse
-      UnifiedAudioService.instance.playBadSound();
+      UnifiedAudioServiceOptimized.instance.playBadSound();
     }
 
     // Enregistrer automatiquement la réponse pour les statistiques
@@ -686,7 +449,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     // Attendre que l'animation se termine avant de passer à la question suivante
     Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
-        setState(() {
+      setState(() {
           _showGoodAnimation = false;
           selectedAnswer = null;
           showCorrectAnswer = false;
@@ -702,24 +465,32 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           if (questionsSinceLastAd >= 3) {
             // Arrêter la musique avant la publicité
             if (backgroundMusicEnabled) {
-              UnifiedAudioService.instance.stopBackgroundMusic();
+              UnifiedAudioServiceOptimized.instance.stopBackgroundMusic();
             }
 
-            AdService.showInterstitialAd();
-            questionsSinceLastAd = 0;
-            _loadInterstitialAd(); // Recharger une nouvelle publicité
+            // Vérifier le statut premium de manière asynchrone
+            PremiumService.isPremiumUser().then((isPremium) {
+              if (!isPremium) {
+                AdService.showInterstitialAd();
+                questionsSinceLastAd = 0;
+                _loadInterstitialAd(); // Recharger une nouvelle publicité
+              } else {
+                print(
+                    '[QuizScreen] 🚫 Utilisateur premium - aucune publicité stratégique');
+              }
+            });
 
             // Reprendre la musique après la publicité
-            Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
               if (backgroundMusicEnabled && mounted) {
-                UnifiedAudioService.instance.playBackgroundMusic();
+                UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
               }
             });
           }
 
           _startTimer();
           _speakQuestion(); // Lire la nouvelle question
-        } else {
+    } else {
           _finishQuiz();
         }
       }
@@ -733,13 +504,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
     // Afficher l'animation de niveau si bon score et animations activées
     if (score >= (widget.questions.length * 0.8) && animationsEnabled) {
-      setState(() {
+    setState(() {
         _showLevelUpAnimation = true;
       });
 
       Future.delayed(const Duration(seconds: 3), () {
         if (mounted) {
-          setState(() {
+      setState(() {
             _showLevelUpAnimation = false;
           });
         }
@@ -751,7 +522,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       Future.delayed(const Duration(seconds: 4), () {
         if (mounted) {
           BadgeNotificationService.showMultipleBadgeNotifications(
-            context,
+        context,
             newBadges,
           );
         }
@@ -885,13 +656,17 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           performanceMessage = '🏆 Performance correcte !';
         }
 
+        // ✅ Vérifier que le widget est toujours monté avant d'utiliser context
+        if (!mounted) return;
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('🎯 Score sauvegardé ! +$totalXP XP + $totalBonus bonus'),
+                Text(
+                    '🎯 ${TranslationService.translate('score_saved')} +$totalXP XP + $totalBonus ${TranslationService.translate('bonus')}'),
                 if (performanceMessage.isNotEmpty)
                   Text(performanceMessage,
                       style: const TextStyle(fontSize: 12)),
@@ -906,12 +681,20 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       print('[QuizPage] ❌ Erreur sauvegarde score: $e');
     }
 
-    // LANCEMENT DE LA PUB À LA FIN DU QUIZ
-    print('[QuizPage] 📺 Lancement publicité à la fin du quiz');
-    await AudioService.instance.stopBackgroundMusic();
-    await AdService.showInterstitialAd();
-    await Future.delayed(const Duration(seconds: 1));
-    await AudioService.instance.playBackgroundMusic();
+    // LANCEMENT DE LA PUB À LA FIN DU QUIZ (seulement si pas premium)
+    print('[QuizPage] 📺 Vérification publicité fin de quiz');
+    await UnifiedAudioServiceOptimized.instance.stopBackgroundMusic();
+    final isPremium = await PremiumService.isPremiumUser();
+    if (!isPremium) {
+      await AdService.showInterstitialAd();
+      await Future.delayed(const Duration(seconds: 1));
+    } else {
+      print('[QuizPage] 🚫 Utilisateur premium - aucune publicité fin de quiz');
+    }
+    await UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
+
+    // ✅ Vérifier que le widget est toujours monté avant d'utiliser context
+    if (!mounted) return;
 
     showDialog(
       context: context,
@@ -921,8 +704,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           backgroundColor: Colors.purple[100],
           title: Text(
             score >= (widget.questions.length * 0.8)
-                ? '🎉 Excellent !'
-                : 'Bien joué !',
+                ? '🎉 ${TranslationService.translate('excellent')}'
+                : TranslationService.translate('well_played'),
             style: const TextStyle(
               fontSize: 24,
               color: Colors.purple,
@@ -941,47 +724,56 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                   color: Colors.purple,
                 ),
               ),
-              const SizedBox(height: 10),
-              Text(
+                          const SizedBox(height: 10),
+                          Text(
                 '$percentage%',
-                style: const TextStyle(
+                            style: const TextStyle(
                   fontSize: 18,
-                  fontFamily: 'Raleway',
+                              fontFamily: 'Raleway',
                   color: Colors.purple,
                 ),
               ),
               const SizedBox(height: 20),
 
-              // Boutons d'action
-              Row(
-                children: [
+              // 💰 Bannière publicitaire sur l'écran de résultats
+              const AdBannerWidget(
+                placement: 'quiz_results_main',
+                height: 50,
+                margin: EdgeInsets.symmetric(vertical: 8),
+              ),
+
+              const SizedBox(height: 10),
+
+                  // Boutons d'action
+                  Row(
+                    children: [
                   Expanded(
                     child: ElevatedButton.icon(
-                      onPressed: () {
+                        onPressed: () {
                         Navigator.of(context).pop();
                         Navigator.of(context).push(
-                          MaterialPageRoute(
+                            MaterialPageRoute(
                             builder: (context) => LeaderboardScreen(
                               currentScore: score,
                               totalQuestions: widget.questions.length,
                               category: widget.category,
                               accuracy: accuracy,
                             ),
-                          ),
-                        );
-                      },
+                            ),
+                          );
+                        },
                       icon: const Icon(Icons.emoji_events),
-                      label: const Text('Records'),
-                      style: ElevatedButton.styleFrom(
+                      label: Text(TranslationService.translate('records')),
+                        style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.amber,
                         foregroundColor: Colors.white,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: ElevatedButton.icon(
-                      onPressed: () {
+                        onPressed: () {
                         Navigator.of(context).pop();
                         LeaderboardService.shareScore(
                           playerName: 'Joueur',
@@ -992,30 +784,30 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                         );
                       },
                       icon: const Icon(Icons.share),
-                      label: const Text('Partager'),
-                      style: ElevatedButton.styleFrom(
+                      label: Text(TranslationService.translate('share')),
+                        style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                         foregroundColor: Colors.white,
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ],
               ),
-            ],
-          ),
           actions: [
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => const HomeScreen(),
+                    builder: (context) => const home_screen.HomeScreen(),
                   ),
                 );
               },
-              child: const Text(
-                'Retour au menu',
-                style: TextStyle(color: Colors.purple),
+              child: Text(
+                TranslationService.translate('back_to_menu'),
+                style: const TextStyle(color: Colors.purple),
               ),
             ),
           ],
@@ -1032,7 +824,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     flutterTts.stop();
 
     // Arrêter la musique de fond
-    AudioService.instance.stopBackgroundMusic();
+    UnifiedAudioServiceOptimized.instance.stopBackgroundMusic();
 
     super.dispose();
   }
@@ -1040,16 +832,16 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     if (currentQuestionIndex >= widget.questions.length) {
-      return Scaffold(
-        backgroundColor: Colors.purple,
+    return Scaffold(
+      backgroundColor: Colors.purple,
         body: Stack(
           children: [
-            const Center(
+            Center(
               child: Text(
-                'Quiz terminé !',
-                style: TextStyle(
+                TranslationService.translate('quiz_finished'),
+                style: const TextStyle(
                   fontSize: 32,
-                  color: Colors.white,
+            color: Colors.white,
                   fontFamily: 'Raleway',
                 ),
               ),
@@ -1079,9 +871,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
             Column(
               children: [
                 // Barre de progression
-                Container(
+            Container(
                   height: 8,
-                  decoration: BoxDecoration(
+              decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
                     color: Colors.white24,
                   ),
@@ -1117,13 +909,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                         timerColor = Colors.orange;
                       }
 
-                      return Container(
+                  return Container(
                         width: (MediaQuery.of(context).size.width *
                                 progress *
                                 0.9)
                             .clamp(
                                 0.0, MediaQuery.of(context).size.width * 0.9),
-                        decoration: BoxDecoration(
+                    decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           color: timerColor,
                         ),
@@ -1134,26 +926,26 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                 const SizedBox(height: 10),
                 // Informations du quiz
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Score: $score',
-                      style: const TextStyle(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                      '${TranslationService.translate('score')}: $score',
+                          style: const TextStyle(
                         fontSize: 18,
-                        color: Colors.white,
-                        fontFamily: 'Raleway',
-                      ),
-                    ),
-                    Text(
-                      'Question ${currentQuestionIndex + 1}/${widget.questions.length}',
-                      style: const TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'Raleway',
+                          ),
+                        ),
+                        Text(
+                      '${TranslationService.translate('question')} ${currentQuestionIndex + 1}/${widget.questions.length}',
+                          style: const TextStyle(
                         fontSize: 16,
-                        color: Colors.white,
-                        fontFamily: 'Raleway',
-                      ),
+                            color: Colors.white,
+                            fontFamily: 'Raleway',
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
               ],
             ),
             const SizedBox(height: 20),
@@ -1166,7 +958,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                   // Bouton TTS
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
+              children: [
                       GestureDetector(
                         onTap: _speakQuestion, // Appui simple pour relire
                         onLongPress:
@@ -1175,8 +967,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
                             color: autoSpeechEnabled
-                                ? Colors.green.withOpacity(0.3)
-                                : Colors.red.withOpacity(0.3),
+                                ? Colors.green.withValues(alpha: 0.3)
+                                : Colors.red.withValues(alpha: 0.3),
                             borderRadius: BorderRadius.circular(25),
                             border: Border.all(
                               color:
@@ -1191,21 +983,25 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                                 autoSpeechEnabled
                                     ? Icons.volume_up
                                     : Icons.volume_off,
-                                color: Colors.white,
+                      color: Colors.white,
                                 size: 24,
                               ),
                               const SizedBox(width: 8),
                               Text(
-                                autoSpeechEnabled ? 'TTS ON' : 'TTS OFF',
+                                autoSpeechEnabled
+                                    ? TranslationService.translate(
+                                        'tts_enabled')
+                                    : TranslationService.translate(
+                                        'tts_disabled'),
                                 style: const TextStyle(
-                                  color: Colors.white,
+                      color: Colors.white,
                                   fontSize: 12,
-                                  fontFamily: 'Raleway',
+                      fontFamily: 'Raleway',
                                   fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
+                  ),
+                ),
+              ],
+            ),
                         ),
                       ),
                     ],
@@ -1217,16 +1013,16 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                     child: Center(
                       child: Text(
                         currentQuestion.question,
-                        style: const TextStyle(
+          style: const TextStyle(
                           fontSize: 24,
-                          color: Colors.white,
-                          fontFamily: 'Raleway',
-                        ),
+            color: Colors.white,
+            fontFamily: 'Raleway',
+          ),
                         textAlign: TextAlign.center,
                       ),
-                    ),
-                  ),
-                ],
+          ),
+        ),
+      ],
               ),
             ),
 
@@ -1276,15 +1072,15 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                             ),
                             child: Text(
                               option,
-                              style: TextStyle(
+                        style: TextStyle(
                                 fontSize: 18,
                                 color: textColor,
-                                fontFamily: 'Raleway',
-                              ),
-                            ),
+                          fontFamily: 'Raleway',
+                        ),
+                      ),
                           ),
                         );
-                      }).toList(),
+                      }),
                     ],
                   ),
 
@@ -1293,9 +1089,11 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                     Positioned.fill(
                       child: GoodAnswerParticles(
                         onComplete: () {
-                          setState(() {
-                            _showGoodAnimation = false;
-                          });
+                          if (mounted) {
+                            setState(() {
+                              _showGoodAnimation = false;
+                            });
+                          }
                         },
                       ),
                     ),
@@ -1304,18 +1102,20 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                     Positioned.fill(
                       child: LevelUpConfetti(
                         onComplete: () {
-                          setState(() {
-                            _showLevelUpAnimation = false;
-                          });
+                          if (mounted) {
+                            setState(() {
+                              _showLevelUpAnimation = false;
+                            });
+                          }
                         },
                       ),
                     ),
                 ],
-              ),
-            ),
-          ],
-        ),
-      ),
+                              ),
+                            ),
+                          ],
+                        ),
+                ),
     );
   }
 }

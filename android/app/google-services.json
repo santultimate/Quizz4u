@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "431660199679",
+    "project_id": "quizz4u-103f2",
+    "storage_bucket": "quizz4u-103f2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431660199679:android:061ab84c20330f4a69e6ca",
+        "android_client_info": {
+          "package_name": "com.quizz4u.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKPyfPY6xpOWeB3IN4cV_moXpTgqJ96U0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,8 @@
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'cached_preferences_service.dart'; // ⚡ OPTIMISÉ
 import '../models/user_progress.dart';
 import 'badge_service.dart';
+import 'translation_service.dart';
 
 class ProgressService {
   static const String _progressKey = 'user_progress';
@@ -13,13 +14,15 @@ class ProgressService {
     return _currentProgress!;
   }
 
-  // Charger la progression depuis le stockage
+  // ⚡ OPTIMISÉ: Charger la progression depuis le stockage (avec cache)
   static Future<void> loadProgress() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
-      final progressJson = prefs.getString(_progressKey);
+      final progressJson = await CachedPreferencesService.getString(
+        _progressKey,
+        defaultValue: '',
+      );
 
-      if (progressJson != null) {
+      if (progressJson.isNotEmpty) {
         final progressMap = json.decode(progressJson) as Map<String, dynamic>;
         _currentProgress = UserProgress.fromMap(progressMap);
         print(
@@ -34,13 +37,12 @@ class ProgressService {
     }
   }
 
-  // Sauvegarder la progression
+  // ⚡ OPTIMISÉ: Sauvegarder la progression (avec cache)
   static Future<void> saveProgress() async {
     try {
       if (_currentProgress != null) {
-        final prefs = await SharedPreferences.getInstance();
         final progressJson = json.encode(_currentProgress!.toMap());
-        await prefs.setString(_progressKey, progressJson);
+        await CachedPreferencesService.setString(_progressKey, progressJson);
         print('[ProgressService] ✅ Progression sauvegardée');
       }
     } catch (e) {
@@ -148,11 +150,13 @@ class ProgressService {
       return {};
     }
 
-    // Récupérer le nom du joueur depuis SharedPreferences
+    // ⚡ OPTIMISÉ: Récupérer le nom du joueur depuis le cache
     String playerName = 'Joueur';
     try {
-      final prefs = await SharedPreferences.getInstance();
-      playerName = prefs.getString('player_name') ?? 'Joueur';
+      playerName = await CachedPreferencesService.getString(
+        'player_name',
+        defaultValue: 'Joueur',
+      );
     } catch (e) {
       print('[ProgressService] ❌ Erreur lors de la récupération du nom: $e');
     }
@@ -187,13 +191,13 @@ class ProgressService {
 
   // Obtenir le titre du niveau
   static String getLevelTitle(int level) {
-    if (level < 5) return 'Débutant';
-    if (level < 10) return 'Intermédiaire';
-    if (level < 15) return 'Avancé';
-    if (level < 20) return 'Expert';
-    if (level < 25) return 'Maître';
-    if (level < 30) return 'Légende';
-    return 'Mythique';
+    if (level < 5) return TranslationService.translate('level_beginner');
+    if (level < 10) return TranslationService.translate('level_intermediate');
+    if (level < 15) return TranslationService.translate('level_advanced');
+    if (level < 20) return TranslationService.translate('level_expert');
+    if (level < 25) return TranslationService.translate('level_master');
+    if (level < 30) return TranslationService.translate('level_legend');
+    return TranslationService.translate('level_mythic');
   }
 
   // Obtenir la description du badge
@@ -247,6 +251,10 @@ class ProgressService {
     // Vérifier d'abord les nouveaux badges spécialisés
     Map<String, dynamic>? badgeInfo = BadgeService.getBadgeInfo(badge);
     if (badgeInfo != null) {
+      // Utiliser name_key si disponible, sinon name (pour compatibilité)
+      if (badgeInfo.containsKey('name_key')) {
+        return TranslationService.translate(badgeInfo['name_key']);
+      }
       return badgeInfo['name'] ?? 'Badge Spécialisé';
     }
 

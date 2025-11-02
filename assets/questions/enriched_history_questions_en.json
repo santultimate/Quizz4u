@@ -1,0 +1,544 @@
+{
+  "Histoire du Mali": [
+    {
+      "question": "What was the name of the empire that dominated West Africa from the 13th to the 16th century?",
+      "answers": {
+        "The Mali Empire": true,
+        "The Empire of Ghana": false,
+        "The Songhai Empire": false,
+        "The Empire of Kanem": false
+      },
+      "explanation": "The Mali Empire, founded by Sundiata Keïta, was one of the greatest empires in African history.",
+      "difficulty": "medium",
+      "subcategory": "Empires"
+    },
+    {
+      "question": "Who was the most famous ruler of the Mali Empire?",
+      "answers": {
+        "Mansa Moussa": true,
+        "Soundiata Keïta": false,
+        "Askia Mohammed": false,
+        "Sundiata Keïta": false
+      },
+      "explanation": "Mansa Moussa (1312-1337) is considered the richest man in history.",
+      "difficulty": "easy",
+      "subcategory": "Souverains"
+    },
+    {
+      "question": "Which city was the capital of the Mali Empire?",
+      "answers": {
+        "Niani": true,
+        "Timbuktu": false,
+        "Djenne": false,
+        "Gao": false
+      },
+      "explanation": "Niani was the political capital of the Mali Empire.",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "What was the main export product of the Mali Empire?",
+      "answers": {
+        "Gold": true,
+        "Ivory": false,
+        "The slaves": false,
+        "Salt": false
+      },
+      "explanation": "Mali's gold was so abundant that it influenced the world economy of the time.",
+      "difficulty": "medium",
+      "subcategory": "Économie"
+    },
+    {
+      "question": "Which university was the most prestigious in the Mali Empire?",
+      "answers": {
+        "The University of Sankoré": true,
+        "Al-Azhar University": false,
+        "The University of Cordoba": false,
+        "The University of Zaytouna": false
+      },
+      "explanation": "The University of Sankoré in Timbuktu was a renowned center of learning.",
+      "difficulty": "hard",
+      "subcategory": "Éducation"
+    },
+    {
+      "question": "Which Arab explorer visited the Mali Empire in the 14th century?",
+      "answers": {
+        "Ibn Battuta": true,
+        "Al-Idrisi": false,
+        "Al-Mas'udi": false,
+        "Al-Bakri": false
+      },
+      "explanation": "Ibn Battuta left detailed accounts of his trip to Mali.",
+      "difficulty": "medium",
+      "subcategory": "Explorateurs"
+    },
+    {
+      "question": "What was the main religion of the Mali Empire?",
+      "answers": {
+        "Islam": true,
+        "Animism": false,
+        "Christianity": false,
+        "Judaism": false
+      },
+      "explanation": "Islam spread in the Mali Empire from the 11th century.",
+      "difficulty": "easy",
+      "subcategory": "Religion"
+    },
+    {
+      "question": "What was the name of the system of government of the Mali Empire?",
+      "answers": {
+        "The monarchy": true,
+        "The republic": false,
+        "Democracy": false,
+        "The oligarchy": false
+      },
+      "explanation": "The Mali Empire was a monarchy ruled by a Mansa (king).",
+      "difficulty": "medium",
+      "subcategory": "Politique"
+    },
+    {
+      "question": "What was Timbuktu's main source of wealth?",
+      "answers": {
+        "Trans-Saharan trade": true,
+        "Farming": false,
+        "Livestock": false,
+        "Crafts": false
+      },
+      "explanation": "Timbuktu was a major trading crossroads between North Africa and sub-Saharan Africa.",
+      "difficulty": "medium",
+      "subcategory": "Commerce"
+    },
+    {
+      "question": "What was the name of the dynasty that founded the Mali Empire?",
+      "answers": {
+        "The Keïta": true,
+        "The Tourés": false,
+        "The Diarras": false,
+        "The Coulibalys": false
+      },
+      "explanation": "The Keïta dynasty founded and ruled the Mali Empire for several centuries.",
+      "difficulty": "hard",
+      "subcategory": "Dynasties"
+    },
+    {
+      "question": "In what year did Mali obtain its independence?",
+      "answers": {
+        "1958": false,
+        "1960": true,
+        "1962": false,
+        "1965": false
+      },
+      "correctAnswer": "1960"
+    },
+    {
+      "question": "What was the name of the medieval empire that dominated West Africa?",
+      "answers": {
+        "Empire of Ghana": false,
+        "Mali Empire": true,
+        "Songhai Empire": false,
+        "Empire of Kanem": false
+      },
+      "correctAnswer": "Empire du Mali"
+    },
+    {
+      "question": "Who was the most famous emperor of the Mali Empire?",
+      "answers": {
+        "Sundiata Keita": false,
+        "Mansa Moussa": true,
+        "Sonni Ali": false,
+        "Askia Mohammed": false
+      },
+      "correctAnswer": "Mansa Moussa"
+    },
+    {
+      "question": "In what year did Mansa Moussa make his famous pilgrimage to Mecca?",
+      "answers": {
+        "1324": true,
+        "1300": false,
+        "1350": false,
+        "1400": false
+      },
+      "correctAnswer": "1324"
+    },
+    {
+      "question": "Which river crosses Mali from north to south?",
+      "answers": {
+        "Niger": true,
+        "Senegal": false,
+        "Congo": false,
+        "The Nile": false
+      },
+      "correctAnswer": "Le Niger"
+    },
+    {
+      "question": "Which Malian city is nicknamed \"the pearl of the desert\"?",
+      "answers": {
+        "Bamako": false,
+        "Timbuktu": true,
+        "Gao": false,
+        "Mopti": false
+      },
+      "correctAnswer": "Tombouctou"
+    },
+    {
+      "question": "Who was the first president of independent Mali?",
+      "answers": {
+        "Modibo Keita": true,
+        "Moussa Traore": false,
+        "Alpha Oumar Konare": false,
+        "Amadou Toumani Toure": false
+      },
+      "correctAnswer": "Modibo Keita"
+    },
+    {
+      "question": "In what year was democracy reestablished in Mali?",
+      "answers": {
+        "1990": false,
+        "1991": false,
+        "1992": true,
+        "1993": false
+      },
+      "correctAnswer": "1992"
+    },
+    {
+      "question": "What is the name of the great mosque of Djenne?",
+      "answers": {
+        "Djenne Mosque": false,
+        "Great Mosque of Djenne": true,
+        "Royal Mosque": false,
+        "Central Mosque": false
+      },
+      "correctAnswer": "Grande Mosquee de Djenne"
+    },
+    {
+      "question": "What was the name of the empire that preceded the Mali Empire?",
+      "answers": {
+        "Empire of Ghana": true,
+        "Songhai Empire": false,
+        "Empire of Kanem": false,
+        "Bornu Empire": false
+      },
+      "correctAnswer": "Empire du Ghana"
+    },
+    {
+      "question": "What was Mansa Moussa's nickname?",
+      "answers": {
+        "The Lion of Mali": false,
+        "The King of Kings": true,
+        "The Conqueror": false,
+        "The Wise": false
+      },
+      "correctAnswer": "Le Roi des Rois"
+    },
+    {
+      "question": "What was the main economic resource of the Mali Empire?",
+      "answers": {
+        "Gold": true,
+        "Salt": false,
+        "The slaves": false,
+        "Copper": false
+      },
+      "correctAnswer": "L'or"
+    },
+    {
+      "question": "What was the name of the first capital of independent Mali?",
+      "answers": {
+        "Bamako": true,
+        "Kayes": false,
+        "Segou": false,
+        "Mopti": false
+      },
+      "correctAnswer": "Bamako"
+    },
+    {
+      "question": "In what year did the Mali Empire reach its peak?",
+      "answers": {
+        "13th century": false,
+        "14th century": true,
+        "15th century": false,
+        "16th century": false
+      },
+      "correctAnswer": "XIVe siecle"
+    },
+    {
+      "question": "Which city was the most important commercial center of the Mali Empire?",
+      "answers": {
+        "Timbuktu": true,
+        "Gao": false,
+        "Djenne": false,
+        "Niani": false
+      },
+      "correctAnswer": "Tombouctou"
+    },
+    {
+      "question": "What was the name of the most famous university in Timbuktu?",
+      "answers": {
+        "Sankore University": true,
+        "Al-Azhar University": false,
+        "University of Cordoba": false,
+        "University of Fez": false
+      },
+      "correctAnswer": "Universite Sankore"
+    },
+    {
+      "question": "What was the name of the first emperor of the Mali Empire?",
+      "answers": {
+        "Sundiata Keita": true,
+        "Mansa Moussa": false,
+        "Sonni Ali": false,
+        "Askia Mohammed": false
+      },
+      "correctAnswer": "Sundiata Keita"
+    },
+    {
+      "question": "In what year did Sundiata Keita found the Mali Empire?",
+      "answers": {
+        "1235": true,
+        "1200": false,
+        "1250": false,
+        "1300": false
+      },
+      "correctAnswer": "1235"
+    },
+    {
+      "question": "What was the name of the battle that allowed Sundiata to conquer power?",
+      "answers": {
+        "Battle of Kirina": true,
+        "Battle of Taboo": false,
+        "Battle of Koulikoro": false,
+        "Battle of Segou": false
+      },
+      "correctAnswer": "Bataille de Kirina"
+    },
+    {
+      "question": "What was the name of the empire that succeeded the Mali Empire?",
+      "answers": {
+        "Songhai Empire": true,
+        "Empire of Ghana": false,
+        "Empire of Kanem": false,
+        "Bornu Empire": false
+      },
+      "correctAnswer": "Empire Songhai"
+    },
+    {
+      "question": "What was the name of the first democratically elected Malian president?",
+      "answers": {
+        "Alpha Oumar Konare": true,
+        "Modibo Keita": false,
+        "Moussa Traore": false,
+        "Amadou Toumani Toure": false
+      },
+      "correctAnswer": "Alpha Oumar Konare"
+    },
+    {
+      "question": "In what year was Alpha Oumar Konare elected president?",
+      "answers": {
+        "1992": true,
+        "1991": false,
+        "1993": false,
+        "1994": false
+      },
+      "correctAnswer": "1992"
+    },
+    {
+      "question": "What was the name of the constitution adopted in 1992 in Mali?",
+      "answers": {
+        "Constitution of the Third Republic": true,
+        "Constitution of the Second Republic": false,
+        "Constitution of the Fourth Republic": false,
+        "Democratic Constitution": false
+      },
+      "correctAnswer": "Constitution de la IIIe Republique"
+    },
+    {
+      "question": "What was the name of the Malian prime minister who led the democratic transition?",
+      "answers": {
+        "Soumana Sacko": true,
+        "Modibo Keita": false,
+        "Alpha Oumar Konare": false,
+        "Amadou Toumani Toure": false
+      },
+      "correctAnswer": "Soumana Sacko"
+    },
+    {
+      "question": "What was the name of the region of Mali which was the cradle of the Mali Empire?",
+      "answers": {
+        "Kayes region": true,
+        "Region of Timbuktu": false,
+        "Gao region": false,
+        "Segou region": false
+      },
+      "correctAnswer": "Region de Kayes"
+    },
+    {
+      "question": "What was the name of the city which was the religious capital of the Mali Empire?",
+      "answers": {
+        "Djenne": true,
+        "Timbuktu": false,
+        "Gao": false,
+        "Niani": false
+      },
+      "correctAnswer": "Djenne"
+    },
+    {
+      "question": "What was the name of the oldest mosque in West Africa?",
+      "answers": {
+        "Great Mosque of Djenne": true,
+        "Timbuktu Mosque": false,
+        "Gao Mosque": false,
+        "Bamako Mosque": false
+      },
+      "correctAnswer": "Grande Mosquee de Djenne"
+    },
+    {
+      "question": "In what year was the Great Mosque of Djenne built?",
+      "answers": {
+        "13th century": true,
+        "14th century": false,
+        "15th century": false,
+        "16th century": false
+      },
+      "correctAnswer": "XIIIe siecle"
+    },
+    {
+      "question": "What was the name of the official language of the Mali Empire?",
+      "answers": {
+        "The Bambara": false,
+        "The Mandingo": true,
+        "The songhai": false,
+        "The Fulani": false
+      },
+      "correctAnswer": "Le mandingue"
+    },
+    {
+      "question": "What was the name of the currency used in the Mali Empire?",
+      "answers": {
+        "The cowrie": true,
+        "The dinar": false,
+        "The franc": false,
+        "The dirham": false
+      },
+      "correctAnswer": "Le cowrie"
+    },
+    {
+      "question": "What was the name of the trade route that crossed the Mali Empire?",
+      "answers": {
+        "Gold Road": false,
+        "Salt Road": false,
+        "Trans-Saharan route": true,
+        "Silk Road": false
+      },
+      "correctAnswer": "Route transsaharienne"
+    },
+    {
+      "question": "What was the name of the city that was the center of learning for the Mali Empire?",
+      "answers": {
+        "Timbuktu": true,
+        "Djenne": false,
+        "Gao": false,
+        "Niani": false
+      },
+      "correctAnswer": "Tombouctou"
+    },
+    {
+      "question": "What was the name of the most famous library in Timbuktu?",
+      "answers": {
+        "Ahmed Baba Library": true,
+        "Sankore Library": false,
+        "Al-Azhar Library": false,
+        "Córdoba Library": false
+      },
+      "correctAnswer": "Bibliotheque Ahmed Baba"
+    },
+    {
+      "question": "What was the name of the most famous Malian historian of the 16th century?",
+      "answers": {
+        "Ahmed Baba": true,
+        "Ibn Khaldun": false,
+        "Al-Bakri": false,
+        "Ibn Battuta": false
+      },
+      "correctAnswer": "Ahmed Baba"
+    },
+    {
+      "question": "What was the name of the city which was the military center of the Mali Empire?",
+      "answers": {
+        "Gao": true,
+        "Timbuktu": false,
+        "Djenne": false,
+        "Niani": false
+      },
+      "correctAnswer": "Gao"
+    },
+    {
+      "question": "What was the name of the first emperor of the Sonni dynasty?",
+      "answers": {
+        "Sonni Ali": true,
+        "Sonni Baru": false,
+        "Sonni Sulayman": false,
+        "Sonni Mohammed": false
+      },
+      "correctAnswer": "Sonni Ali"
+    },
+    {
+      "question": "In what year did Sonni Ali conquer Timbuktu?",
+      "answers": {
+        "1468": true,
+        "1460": false,
+        "1470": false,
+        "1475": false
+      },
+      "correctAnswer": "1468"
+    },
+    {
+      "question": "What was the name of the city which was the administrative center of the Mali Empire?",
+      "answers": {
+        "Niani": true,
+        "Timbuktu": false,
+        "Gao": false,
+        "Djenne": false
+      },
+      "correctAnswer": "Niani"
+    },
+    {
+      "question": "What was the name of the region which was the breadbasket of the Mali Empire?",
+      "answers": {
+        "Segou region": true,
+        "Mopti region": false,
+        "Sikasso region": false,
+        "Koulikoro region": false
+      },
+      "correctAnswer": "Region de Segou"
+    },
+    {
+      "question": "What was the name of the city which was the cultural center of the Mali Empire?",
+      "answers": {
+        "Timbuktu": true,
+        "Djenne": false,
+        "Gao": false,
+        "Niani": false
+      },
+      "correctAnswer": "Tombouctou"
+    },
+    {
+      "question": "What was the name of the most famous Malian writer of the 20th century?",
+      "answers": {
+        "Amadou Hampate Ba": true,
+        "Modibo Keita": false,
+        "Alpha Oumar Konare": false,
+        "Amadou Toumani Toure": false
+      },
+      "correctAnswer": "Amadou Hampate Ba"
+    },
+    {
+      "question": "What was the name of Amadou Hampate Ba's most famous work?",
+      "answers": {
+        "The Strange Fate of Wangrin": true,
+        "The Guardians of the Temple": false,
+        "Memories of a Fulani": false,
+        "Tales and Legends": false
+      },
+      "correctAnswer": "L'Etrange Destin de Wangrin"
+    }
+  ]
+}

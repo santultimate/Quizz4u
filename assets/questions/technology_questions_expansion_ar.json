@@ -1,0 +1,252 @@
+{
+  "التكنولوجيا والابتكار": {
+    "Informatique و Programmation": [
+      {
+        "question": "Quel langage من programmation هو principalement utilisé ل développer des applications Android ?",
+        "options": [
+          "Java",
+          "Python",
+          "Ruby",
+          "PHP"
+        ],
+        "correctAnswer": "Java",
+        "explanation": "Java هو ال langage رئيسي ل ال تنمية Android, جيد أن Kotlin soit من أكثر en أكثر utilisé.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Informatique و Programmation"
+      },
+      {
+        "question": "Qui a créé ال World Wide Web (WWW) ?",
+        "options": [
+          "Tim Berners-Lee",
+          "Bill Gates",
+          "Steve Jobs",
+          "Larry Page"
+        ],
+        "correctAnswer": "Tim Berners-Lee",
+        "explanation": "Tim Berners-Lee a inventé ال World Wide Web إلى ال CERN en 1989.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Informatique و Programmation"
+      },
+      {
+        "question": "ما هو ال langage من programmation ال أكثر شعبي en 2025 ?",
+        "options": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C++"
+        ],
+        "correctAnswer": "Python",
+        "explanation": "Python هو ال langage ال أكثر شعبي grâهذا à له utilisation en IA, data science و développement web.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Informatique و Programmation"
+      },
+      {
+        "question": "ماذا أن HTML ?",
+        "options": [
+          "HyperText Markup Language",
+          "High Tech Modern Language",
+          "Home Tool Markup Language",
+          "Hyperlinks and Text Markup Language"
+        ],
+        "correctAnswer": "HyperText Markup Language",
+        "explanation": "HTML هو ال langage من balisage standard ل يخلق des pages web.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Informatique و Programmation"
+      },
+      {
+        "question": "Quel système d'exploitation mobile a été développé بواسطة Google ?",
+        "options": [
+          "Android",
+          "iOS",
+          "Windows Phone",
+          "BlackBerry OS"
+        ],
+        "correctAnswer": "Android",
+        "explanation": "Android هو ال système d'exploitation mobile open-source développé بواسطة Google.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Informatique و Programmation"
+      }
+    ],
+    "Intelligence Artificielle": [
+      {
+        "question": "ما هو ال اسم من l'IA conversationnelle développée بواسطة OpenAI ?",
+        "options": [
+          "ChatGPT",
+          "Bard",
+          "Alexa",
+          "Siri"
+        ],
+        "correctAnswer": "ChatGPT",
+        "explanation": "ChatGPT هو l'assistant IA conversationnel développé بواسطة OpenAI, lancé en novembre 2022.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Intelligence Artificielle"
+      },
+      {
+        "question": "ماذا أن ال Machine Learning ?",
+        "options": [
+          "Apprentissage automatique des machines",
+          "Réparation من machines",
+          "Construction من machines",
+          "Programmation من machines"
+        ],
+        "correctAnswer": "Apprentissage automatique des machines",
+        "explanation": "Le Machine Learning يسمح إلى ال ordinateurs d'apprendre à partir من معطىes بدون être explicitement programmés.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Intelligence Artificielle"
+      },
+      {
+        "question": "Quel test mesure ال capacité من machine à exhiber  comportement intelligent ?",
+        "options": [
+          "Test من Turing",
+          "Test IQ",
+          "Test algorithmique",
+          "Test من معطىes"
+        ],
+        "correctAnswer": "Test من Turing",
+        "explanation": "Le Test من Turing, proposé بواسطة Alan Turing en 1950, évalue l'intelligence من machine.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Intelligence Artificielle"
+      }
+    ],
+    "Innovations Tech Africaines": [
+      {
+        "question": "Quel بلد africain a créé M-Pesa, ال système من paiement mobile ?",
+        "options": [
+          "Kenya",
+          "Nigeria",
+          "Afrique من ال Sud",
+          "Ghana"
+        ],
+        "correctAnswer": "Kenya",
+        "explanation": "M-Pesa a été lancé إلى ال Kenya en 2007 و a révolutionné ال services financiers mobiles en Afrique.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Innovations Tech Africaines"
+      },
+      {
+        "question": "Quelle مدينة هو surnommée 'Silicon Savannah' ?",
+        "options": [
+          "Nairobi",
+          "Lagos",
+          "Cape Town",
+          "Accra"
+        ],
+        "correctAnswer": "Nairobi",
+        "explanation": "Nairobi, إلى ال Kenya, هو surnommée 'Silicon Savannah' en raison من له écosystème tech florissant.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Innovations Tech Africaines"
+      },
+      {
+        "question": "Quel بلد africain a ال أكثر كبير عدد من licornes tech (startups valorisées à +1 مليار USD) ?",
+        "options": [
+          "Nigeria",
+          "Afrique من ال Sud",
+          "Kenya",
+          "Égypte"
+        ],
+        "correctAnswer": "Nigeria",
+        "explanation": "Le Nigeria possèمن عدة licornes tech مثل Flutterwave, Interswitch, و OPay.",
+        "difficulty": "صعب",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Innovations Tech Africaines"
+      },
+      {
+        "question": "ماذا أن Zipline, l'innovation tech مستخدمe إلى ال Rwanda ?",
+        "options": [
+          "Livraison من médicaments بواسطة drones",
+          "Application من transport",
+          "Plateforme e-commerce",
+          "Réseau social"
+        ],
+        "correctAnswer": "Livraison من médicaments بواسطة drones",
+        "explanation": "Zipline يستخدم des drones ل livrer من ال sang و des médicaments في ال zones reculées من ال Rwanda.",
+        "difficulty": "صعب",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Innovations Tech Africaines"
+      }
+    ],
+    "Cybersécurité": [
+      {
+        "question": "ماذا أن pare-feu (firewall) ?",
+        "options": [
+          "Un système من sécurité réseau",
+          "Un anti-فيروس",
+          "Un logiciel من sauvegarde",
+          "Un système d'exploitation"
+        ],
+        "correctAnswer": "Un système من sécurité réseau",
+        "explanation": "Un pare-feu protège  réseau en contrôlant ال trafic entrant و sortant وفقا ل des règles من sécurité.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Cybersécurité"
+      },
+      {
+        "question": "ماذا أن ال phishing ?",
+        "options": [
+          "Une technique d'hameçonnage ل voler des informations",
+          "Un jeu vidéo",
+          "Un réseau social",
+          "Un type من فيروس informatique"
+        ],
+        "correctAnswer": "Une technique d'hameçonnage ل voler des informations",
+        "explanation": "Le phishing هو  technique frauduleuse الذي vise à obtenir des informations confidentielles.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Cybersécurité"
+      }
+    ],
+    "Histoire من ال Tech": [
+      {
+        "question": "في أي عام a été مؤسسe Apple ?",
+        "options": [
+          "1976",
+          "1980",
+          "1984",
+          "1990"
+        ],
+        "correctAnswer": "1976",
+        "explanation": "Apple a été مؤسسe ال 1er avril 1976 بواسطة Steve Jobs, Steve Wozniak و Ronald Wayne.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Histoire من ال Tech"
+      },
+      {
+        "question": "من هو considéré مثل ال père من l'informatique ?",
+        "options": [
+          "Alan Turing",
+          "Bill Gates",
+          "Steve Jobs",
+          "Mark Zuckerberg"
+        ],
+        "correctAnswer": "Alan Turing",
+        "explanation": "Alan Turing هو considéré مثل ال père من l'informatique théorique و من l'intelligence artificielle.",
+        "difficulty": "متوسط",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Histoire من ال Tech"
+      },
+      {
+        "question": "Quel fut ال الأول réseau social à atteindre 1 مليار d'utilisateurs ?",
+        "options": [
+          "Facebook",
+          "Twitter",
+          "MySpace",
+          "LinkedIn"
+        ],
+        "correctAnswer": "Facebook",
+        "explanation": "Facebook a atteint 1 مليار d'utilisateurs actifs mensuels en octobre 2012.",
+        "difficulty": "سهل",
+        "category": "التكنولوجيا والابتكار",
+        "subcategory": "Histoire من ال Tech"
+      }
+    ]
+  }
+}

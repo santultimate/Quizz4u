@@ -1,0 +1,94 @@
+{
+  "Arts et Culture": {
+    "Littérature Africaine": [
+      {
+        "question": "哪位尼日利亚作家获得 1986 年诺贝尔文学奖？",
+        "options": [
+          "沃莱·索因卡",
+          "奇努阿·阿切贝",
+          "本·奥克里",
+          "奇马曼达·恩戈齐·阿迪奇"
+        ],
+        "correctAnswer": "Wole Soyinka",
+        "explanation": "沃莱·索因卡是第一位获得诺贝尔文学奖的非洲人。",
+        "difficulty": "medium",
+        "category": "艺术与文化",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "《暧昧的冒险》是谁写的？",
+        "options": [
+          "谢赫·哈米杜·凯恩",
+          "利奥波德·塞达尔·桑戈尔",
+          "比拉戈·迪奥普",
+          "阿马杜·汉帕特·巴"
+        ],
+        "correctAnswer": "Cheikh Hamidou Kane",
+        "explanation": "《暧昧的冒险》（1961）是谢赫·哈米杜·凯恩（Cheikh Hamidou Kane）关于非洲身份的小说。",
+        "difficulty": "medium",
+        "category": "艺术与文化",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "哪位马里作家因《这么长的信》而闻名？",
+        "options": [
+          "马里亚玛·巴",
+          "阿米纳塔母猪秋天",
+          "纳菲萨图·迪亚洛",
+          "肯·巴古尔"
+        ],
+        "correctAnswer": "Mariama Bâ",
+        "explanation": "马里亚玛·巴（塞内加尔人）写了这本关于非洲妇女状况的书信体小说。",
+        "difficulty": "medium",
+        "category": "艺术与文化",
+        "subcategory": "Littérature Africaine"
+      }
+    ],
+    "Cinéma Africain": [
+      {
+        "question": "非洲最大的电影节叫什么名字？",
+        "options": [
+          "菲斯帕科",
+          "戛纳电影节",
+          "迦太基节",
+          "德班节"
+        ],
+        "correctAnswer": "FESPACO",
+        "explanation": "FESPACO（瓦加杜古泛非电影节）每两年在布基纳法索举办一次。",
+        "difficulty": "easy",
+        "category": "艺术与文化",
+        "subcategory": "Cinéma Africain"
+      },
+      {
+        "question": "哪位塞内加尔导演被认为是非洲电影之父？",
+        "options": [
+          "奥斯曼·森贝内",
+          "吉布里尔·迪奥普·曼贝蒂",
+          "伊德里萨·韦德拉奥戈",
+          "苏莱曼·西塞"
+        ],
+        "correctAnswer": "Ousmane Sembène",
+        "explanation": "Ousmane Sembène（1923-2007）被认为是非洲电影之父。",
+        "difficulty": "medium",
+        "category": "艺术与文化",
+        "subcategory": "Cinéma Africain"
+      }
+    ],
+    "Art Contemporain": [
+      {
+        "question": "哪位马里艺术家因其摄影而闻名？",
+        "options": [
+          "马利克·西迪贝",
+          "赛杜·凯塔",
+          "奥马尔·维克多·迪奥普",
+          "哈桑·哈贾吉"
+        ],
+        "correctAnswer": "Malick Sidibé",
+        "explanation": "马利克·西迪贝 (Malick Sidibé) 让 60 年代和 70 年代的马里青年在巴马科永垂不朽。",
+        "difficulty": "medium",
+        "category": "艺术与文化",
+        "subcategory": "Art Contemporain"
+      }
+    ]
+  }
+}

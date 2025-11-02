@@ -1,0 +1,124 @@
+{
+  "Culture générale": [
+    {
+      "question": "Quel est le plus grand océan de la planète ?",
+      "answers": {
+        "L'océan Pacifique": true,
+        "L'océan Atlantique": false,
+        "L'océan Indien": false,
+        "L'océan Arctique": false
+      },
+      "explanation": "L'océan Pacifique couvre plus de 30% de la surface terrestre.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Qui a peint la Joconde ?",
+      "answers": {
+        "Léonard de Vinci": true,
+        "Michel-Ange": false,
+        "Raphaël": false,
+        "Botticelli": false
+      },
+      "explanation": "La Joconde, peinte par Léonard de Vinci, est exposée au Louvre.",
+      "difficulty": "easy",
+      "subcategory": "Art"
+    },
+    {
+      "question": "Quel est le symbole chimique de l'or ?",
+      "answers": {
+        "Au": true,
+        "Ag": false,
+        "Fe": false,
+        "Cu": false
+      },
+      "explanation": "Au vient du latin 'aurum' qui signifie or.",
+      "difficulty": "medium",
+      "subcategory": "Chimie"
+    },
+    {
+      "question": "Dans quel pays se trouve la Tour Eiffel ?",
+      "answers": {
+        "France": true,
+        "Italie": false,
+        "Espagne": false,
+        "Allemagne": false
+      },
+      "explanation": "La Tour Eiffel est située à Paris, en France.",
+      "difficulty": "easy",
+      "subcategory": "Monuments"
+    },
+    {
+      "question": "Quel est le plus grand continent ?",
+      "answers": {
+        "L'Asie": true,
+        "L'Afrique": false,
+        "L'Amérique du Nord": false,
+        "L'Europe": false
+      },
+      "explanation": "L'Asie représente environ 30% de la superficie terrestre.",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Qui a écrit 'Les Misérables' ?",
+      "answers": {
+        "Victor Hugo": true,
+        "Alexandre Dumas": false,
+        "Émile Zola": false,
+        "Gustave Flaubert": false
+      },
+      "explanation": "Victor Hugo a publié 'Les Misérables' en 1862.",
+      "difficulty": "medium",
+      "subcategory": "Littérature"
+    },
+    {
+      "question": "Quel est le plus grand désert du monde ?",
+      "answers": {
+        "L'Antarctique": true,
+        "Le Sahara": false,
+        "Le désert d'Arabie": false,
+        "Le désert de Gobi": false
+      },
+      "explanation": "L'Antarctique est techniquement le plus grand désert du monde.",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Quel est le plus grand mammifère du monde ?",
+      "answers": {
+        "La baleine bleue": true,
+        "L'éléphant d'Afrique": false,
+        "Le rhinocéros": false,
+        "L'hippopotame": false
+      },
+      "explanation": "La baleine bleue peut atteindre 30 mètres de long et peser 200 tonnes.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    },
+    {
+      "question": "Quel est le plus grand pays du monde ?",
+      "answers": {
+        "La Russie": true,
+        "Le Canada": false,
+        "La Chine": false,
+        "Les États-Unis": false
+      },
+      "explanation": "La Russie couvre plus de 17 millions de km².",
+      "difficulty": "easy",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Quel est le plus grand organe du corps humain ?",
+      "answers": {
+        "La peau": true,
+        "Le foie": false,
+        "Le cerveau": false,
+        "Le cœur": false
+      },
+      "explanation": "La peau représente environ 16% du poids corporel total.",
+      "difficulty": "medium",
+      "subcategory": "Biologie"
+    }
+  ]
+}

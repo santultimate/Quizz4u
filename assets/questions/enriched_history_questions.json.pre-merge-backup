@@ -1,0 +1,124 @@
+{
+  "Histoire du Mali": [
+    {
+      "question": "Quel était le nom de l'empire qui a dominé l'Afrique de l'Ouest du XIIIe au XVIe siècle ?",
+      "answers": {
+        "L'Empire du Mali": true,
+        "L'Empire du Ghana": false,
+        "L'Empire Songhaï": false,
+        "L'Empire du Kanem": false
+      },
+      "explanation": "L'Empire du Mali, fondé par Soundiata Keïta, était l'un des plus grands empires de l'histoire africaine.",
+      "difficulty": "medium",
+      "subcategory": "Empires"
+    },
+    {
+      "question": "Qui était le souverain le plus célèbre de l'Empire du Mali ?",
+      "answers": {
+        "Mansa Moussa": true,
+        "Soundiata Keïta": false,
+        "Askia Mohammed": false,
+        "Sundiata Keïta": false
+      },
+      "explanation": "Mansa Moussa (1312-1337) est considéré comme l'homme le plus riche de l'histoire.",
+      "difficulty": "easy",
+      "subcategory": "Souverains"
+    },
+    {
+      "question": "Quelle ville était la capitale de l'Empire du Mali ?",
+      "answers": {
+        "Niani": true,
+        "Tombouctou": false,
+        "Djenné": false,
+        "Gao": false
+      },
+      "explanation": "Niani était la capitale politique de l'Empire du Mali.",
+      "difficulty": "hard",
+      "subcategory": "Géographie"
+    },
+    {
+      "question": "Quel était le principal produit d'exportation de l'Empire du Mali ?",
+      "answers": {
+        "L'or": true,
+        "L'ivoire": false,
+        "Les esclaves": false,
+        "Le sel": false
+      },
+      "explanation": "L'or du Mali était si abondant qu'il a influencé l'économie mondiale de l'époque.",
+      "difficulty": "medium",
+      "subcategory": "Économie"
+    },
+    {
+      "question": "Quelle université était la plus prestigieuse de l'Empire du Mali ?",
+      "answers": {
+        "L'Université de Sankoré": true,
+        "L'Université d'Al-Azhar": false,
+        "L'Université de Cordoue": false,
+        "L'Université de Zaytouna": false
+      },
+      "explanation": "L'Université de Sankoré à Tombouctou était un centre d'apprentissage renommé.",
+      "difficulty": "hard",
+      "subcategory": "Éducation"
+    },
+    {
+      "question": "Quel explorateur arabe a visité l'Empire du Mali au XIVe siècle ?",
+      "answers": {
+        "Ibn Battuta": true,
+        "Al-Idrisi": false,
+        "Al-Mas'udi": false,
+        "Al-Bakri": false
+      },
+      "explanation": "Ibn Battuta a laissé des récits détaillés de son voyage au Mali.",
+      "difficulty": "medium",
+      "subcategory": "Explorateurs"
+    },
+    {
+      "question": "Quelle était la religion principale de l'Empire du Mali ?",
+      "answers": {
+        "L'islam": true,
+        "L'animisme": false,
+        "Le christianisme": false,
+        "Le judaïsme": false
+      },
+      "explanation": "L'islam s'est répandu dans l'Empire du Mali à partir du XIe siècle.",
+      "difficulty": "easy",
+      "subcategory": "Religion"
+    },
+    {
+      "question": "Quel était le nom du système de gouvernement de l'Empire du Mali ?",
+      "answers": {
+        "La monarchie": true,
+        "La république": false,
+        "La démocratie": false,
+        "L'oligarchie": false
+      },
+      "explanation": "L'Empire du Mali était une monarchie dirigée par un Mansa (roi).",
+      "difficulty": "medium",
+      "subcategory": "Politique"
+    },
+    {
+      "question": "Quelle était la principale source de richesse de Tombouctou ?",
+      "answers": {
+        "Le commerce transsaharien": true,
+        "L'agriculture": false,
+        "L'élevage": false,
+        "L'artisanat": false
+      },
+      "explanation": "Tombouctou était un carrefour commercial majeur entre l'Afrique du Nord et l'Afrique subsaharienne.",
+      "difficulty": "medium",
+      "subcategory": "Commerce"
+    },
+    {
+      "question": "Quel était le nom de la dynastie qui a fondé l'Empire du Mali ?",
+      "answers": {
+        "Les Keïta": true,
+        "Les Touré": false,
+        "Les Diarra": false,
+        "Les Coulibaly": false
+      },
+      "explanation": "La dynastie Keïta a fondé et dirigé l'Empire du Mali pendant plusieurs siècles.",
+      "difficulty": "hard",
+      "subcategory": "Dynasties"
+    }
+  ]
+}

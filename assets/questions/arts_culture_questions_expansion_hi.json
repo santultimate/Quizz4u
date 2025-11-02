@@ -1,0 +1,94 @@
+{
+  "कला और संस्कृति": {
+    "Littérature Africaine": [
+      {
+        "question": "Quel écrivain nigérian a remporté  Prix Nobel का Littérature en 1986 ?",
+        "options": [
+          "Wole Soyinka",
+          "Chinua Achebe",
+          "Ben Okri",
+          "Chimamanda Ngozi Adichie"
+        ],
+        "correctAnswer": "Wole Soyinka",
+        "explanation": "Wole Soyinka है  premier Africain à avoir reçu  Prix Nobel का Littérature.",
+        "difficulty": "मध्यम",
+        "category": "कला और संस्कृति",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "Qui a écrit 'L'Aventure ambiguë' ?",
+        "options": [
+          "Cheikh Hamidou Kane",
+          "Léopold Sédar Senghor",
+          "Birago Diop",
+          "Amadou Hampâté Bâ"
+        ],
+        "correctAnswer": "Cheikh Hamidou Kane",
+        "explanation": "'L'Aventure ambiguë' (1961) है एक roman का Cheikh Hamidou Kane पर l'identité africaine.",
+        "difficulty": "मध्यम",
+        "category": "कला और संस्कृति",
+        "subcategory": "Littérature Africaine"
+      },
+      {
+        "question": "Quelle écrivaine malienne है connue के लिए 'एक अगर longue lettre' ?",
+        "options": [
+          "Mariama Bâ",
+          "Aminata Sow Fall",
+          "Nafissatou Diallo",
+          "Ken Bugul"
+        ],
+        "correctAnswer": "Mariama Bâ",
+        "explanation": "Mariama Bâ (Sénégalaise) a écrit ce roman épistolaire पर  condition féminine en Afrique.",
+        "difficulty": "मध्यम",
+        "category": "कला और संस्कृति",
+        "subcategory": "Littérature Africaine"
+      }
+    ],
+    "Cinéma Africain": [
+      {
+        "question": "क्या है  नाम का अधिक grand festival का cinéma africain ?",
+        "options": [
+          "FESPACO",
+          "Festival का Cannes",
+          "Festival का Carthage",
+          "Festival का Durban"
+        ],
+        "correctAnswer": "FESPACO",
+        "explanation": " FESPACO (Festival Panafricain का Cinéma का Ouagadougou) se tient सभी  deux ans au Burkina Faso.",
+        "difficulty": "आसान",
+        "category": "कला और संस्कृति",
+        "subcategory": "Cinéma Africain"
+      },
+      {
+        "question": "Quel réalisateur sénégalais है considéré जैसे  père का cinéma africain ?",
+        "options": [
+          "Ousmane Sembène",
+          "Djibril Diop Mambéty",
+          "Idrissa Ouedraogo",
+          "Souleymane Cissé"
+        ],
+        "correctAnswer": "Ousmane Sembène",
+        "explanation": "Ousmane Sembène (1923-2007) है considéré जैसे  père का cinéma africain.",
+        "difficulty": "मध्यम",
+        "category": "कला और संस्कृति",
+        "subcategory": "Cinéma Africain"
+      }
+    ],
+    "Art Contemporain": [
+      {
+        "question": "Quel artiste malien है प्रसिद्ध के लिए ses photographies ?",
+        "options": [
+          "Malick Sidibé",
+          "Seydou Keïta",
+          "Omar Victor Diop",
+          "Hassan Hajjaj"
+        ],
+        "correctAnswer": "Malick Sidibé",
+        "explanation": "Malick Sidibé a immortalisé  jeunesse malienne des वर्ष 60-70 à Bamako.",
+        "difficulty": "मध्यम",
+        "category": "कला और संस्कृति",
+        "subcategory": "Art Contemporain"
+      }
+    ]
+  }
+}

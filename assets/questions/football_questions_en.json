@@ -1,0 +1,274 @@
+{
+  "Football": [
+    {
+      "question": "What is the nickname of the Mali national team?",
+      "answers": {
+        "The Eagles": true,
+        "The Lions": false,
+        "Elephants": false,
+        "The Falcons": false
+      }
+    },
+    {
+      "question": "Who won the 2022 World Cup in Qatar?",
+      "answers": {
+        "Argentina": true,
+        "France": false,
+        "Brazil": false,
+        "Germany": false
+      }
+    },
+    {
+      "question": "How many players make up a football team on the field?",
+      "answers": {
+        "11": true,
+        "10": false,
+        "9": false,
+        "12": false
+      }
+    },
+    {
+      "question": "Which country has won the most World Cups?",
+      "answers": {
+        "Brazil": true,
+        "Germany": false,
+        "Italy": false,
+        "Argentina": false
+      }
+    },
+    {
+      "question": "What is the largest stadium in the world by capacity?",
+      "answers": {
+        "The May 1st Rungrado (Pyongyang)": true,
+        "Camp Nou (Barcelona)": false,
+        "Azteca Stadium (Mexico City)": false,
+        "The Stade de France (Paris)": false
+      }
+    },
+    {
+      "question": "Who is the top scorer in World Cup history?",
+      "answers": {
+        "Miroslav Klose (16 goals)": true,
+        "Ronaldo (15 goals)": false,
+        "Pele (12 goals)": false,
+        "Just Fontaine (13 goals)": false
+      }
+    },
+    {
+      "question": "Which Malian player played for FC Barcelona?",
+      "answers": {
+        "Seydou Keita": true,
+        "Frédéric Kanouté": false,
+        "Mahamadou Diarra": false,
+        "Modibo Maïga": false
+      }
+    },
+    {
+      "question": "In what year did Mali participate in its first World Cup?",
+      "answers": {
+        "Mali has never participated in a World Cup": true,
+        "1998": false,
+        "2002": false,
+        "2010": false
+      }
+    },
+    {
+      "question": "Who is the most successful football club in the Champions League?",
+      "answers": {
+        "Real Madrid": true,
+        "FC Barcelona": false,
+        "Bayern Munich": false,
+        "Liverpool": false
+      }
+    },
+    {
+      "question": "Who invented football?",
+      "answers": {
+        "England (1863)": true,
+        "Brazil": false,
+        "France": false,
+        "Italy": false
+      }
+    },
+    {
+      "question": "How long does a football match last?",
+      "answers": {
+        "90 minutes (2 x 45 mins)": true,
+        "80 minutes": false,
+        "100 minutes": false,
+        "120 minutes": false
+      }
+    },
+    {
+      "question": "Which player is nicknamed 'La Pulga' (The Flea)?",
+      "answers": {
+        "Lionel Messi": true,
+        "Cristiano Ronaldo": false,
+        "Neymar": false,
+        "Kylian Mbappé": false
+      }
+    },
+    {
+      "question": "Which African country has won the most African Cups of Nations?",
+      "answers": {
+        "Egypt (7 titles)": true,
+        "Cameroon (5 titles)": false,
+        "Ghana (4 titles)": false,
+        "Nigeria (3 titles)": false
+      }
+    },
+    {
+      "question": "Who is the top scorer in CAN history?",
+      "answers": {
+        "Samuel Eto'o (18 goals)": true,
+        "Laurent Pokou (14 goals)": false,
+        "Hossam Hassan (14 goals)": false,
+        "Didier Drogba (11 goals)": false
+      }
+    },
+    {
+      "question": "What is the oldest football club in the world?",
+      "answers": {
+        "Sheffield FC (England, 1857)": true,
+        "Notts County (England, 1862)": false,
+        "Stoke City (England, 1863)": false,
+        "Wrexham (Wales, 1864)": false
+      }
+    },
+    {
+      "question": "Who scored the fastest goal in World Cup history?",
+      "answers": {
+        "Hakan Şükür (11 seconds, Türkiye 2002)": true,
+        "Bryan Robson (27 seconds, England 1982)": false,
+        "Bernard Lacombe (37 seconds, France 1978)": false,
+        "Clint Dempsey (29 seconds, USA 2014)": false
+      }
+    },
+    {
+      "question": "Which Malian player was elected African Ballon d'Or?",
+      "answers": {
+        "Frédéric Kanouté (2007)": true,
+        "Seydou Keita": false,
+        "Mahamadou Diarra": false,
+        "Modibo Maïga": false
+      }
+    },
+    {
+      "question": "What is the nickname of the Senegal national team?",
+      "answers": {
+        "The Lions of Teranga": true,
+        "The Eagles": false,
+        "The Falcons": false,
+        "The Panthers": false
+      }
+    },
+    {
+      "question": "In what year was the first World Cup held?",
+      "answers": {
+        "1930 in Uruguay": true,
+        "1928 in France": false,
+        "1934 in Italy": false,
+        "1938 in France": false
+      }
+    },
+    {
+      "question": "Which player holds the record for the most goals in a season?",
+      "answers": {
+        "Lionel Messi (73 goals, 2011-2012)": true,
+        "Cristiano Ronaldo (61 goals)": false,
+        "Pele (66 goals)": false,
+        "Gerd Müller (67 goals)": false
+      }
+    },
+    {
+      "question": "What is the largest stadium in Africa?",
+      "answers": {
+        "The Friendship Stadium (Dakar, Senegal)": true,
+        "The Stade du 26 Mars (Bamako, Mali)": false,
+        "Stade Félix Houphouët-Boigny (Abidjan, Ivory Coast)": false,
+        "The 5th of July Stadium (Algiers, Algeria)": false
+      }
+    },
+    {
+      "question": "Who is the most capped player in football history?",
+      "answers": {
+        "Ahmed Hassan (Egypt, 184 caps)": true,
+        "Cristiano Ronaldo (Portugal, 183 caps)": false,
+        "Bader Al-Mutawa (Kuwait, 196 caps)": false,
+        "Soh Chin Ann (Malaysia, 195 caps)": false
+      }
+    },
+    {
+      "question": "Which country hosted the 2018 World Cup?",
+      "answers": {
+        "Russia": true,
+        "Qatar": false,
+        "Brazil": false,
+        "South Africa": false
+      }
+    },
+    {
+      "question": "What is the nickname of the Moroccan national team?",
+      "answers": {
+        "The Lions of the Atlas": true,
+        "The Fennecs": false,
+        "The Eagles": false,
+        "The Panthers": false
+      }
+    },
+    {
+      "question": "Who won the 2023 Ballon d'Or?",
+      "answers": {
+        "Lionel Messi": true,
+        "Kylian Mbappé": false,
+        "Erling Haaland": false,
+        "Kevin De Bruyne": false
+      }
+    },
+    {
+      "question": "Which Malian player played in the Premier League?",
+      "answers": {
+        "Mahamadou Diarra (Fulham)": true,
+        "Seydou Keita": false,
+        "Frédéric Kanouté": false,
+        "Modibo Maïga": false
+      }
+    },
+    {
+      "question": "What is the world record for typing speed?",
+      "answers": {
+        "Ronny Heberson (211 km/h)": true,
+        "Cristiano Ronaldo (131 km/h)": false,
+        "Roberto Carlos (169 km/h)": false,
+        "David Beckham (156 km/h)": false
+      }
+    },
+    {
+      "question": "Who invented tiki taka?",
+      "answers": {
+        "Johan Cruyff and FC Barcelona": true,
+        "Pep Guardiola": false,
+        "Xavi Hernández": false,
+        "Luis Enrique": false
+      }
+    },
+    {
+      "question": "What is the largest stadium in Mali?",
+      "answers": {
+        "The Stade du 26 Mars (50,000 seats)": true,
+        "The Modibo Keïta Omnisports Stadium": false,
+        "The Mamadou Konaté Stadium": false,
+        "The Friendship Stadium": false
+      }
+    },
+    {
+      "question": "Who won CAN 2023?",
+      "answers": {
+        "Ivory Coast": true,
+        "Senegal": false,
+        "Morocco": false,
+        "Egypt": false
+      }
+    }
+  ]
+}

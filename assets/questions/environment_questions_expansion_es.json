@@ -1,0 +1,208 @@
+{
+  "Medio Ambiente y Ecología": {
+    "Changement Climatique": [
+      {
+        "question": "Cuál es l'objectif principal delAccord de Paris (2015) ?",
+        "options": [
+          "Limiter el réchauffement à 1,5°C",
+          "Éliminer todos los combustibles fossiles",
+          "Planter 1 milliard d'arbres",
+          "Interdire los plastiques"
+        ],
+        "correctAnswer": "Limiter el réchauffement à 1,5°C",
+        "explanation": "L'Accord de Paris vise à maintenir l'augmentation de la temperatura mondiale en dessous de 2°C, idéalement à 1,5°C.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Changement Climatique"
+      },
+      {
+        "question": "Quel gaz à effet de serre es el más abondant en l'atmosphère ?",
+        "options": [
+          "Dioxyde de carbone (CO2)",
+          "Méthane (CH4)",
+          "Protoxyde d'azote (N2O)",
+          "Ozone (O3)"
+        ],
+        "correctAnswer": "Dioxyde de carbone (CO2)",
+        "explanation": "el CO2 représente environ 76% des émissions de gaz à effet de serre d'origine humaine.",
+        "difficulty": "Fácil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Changement Climatique"
+      },
+      {
+        "question": "Quelle activité humaine contribue el más au changement climatique ?",
+        "options": [
+          "Combustion de combustibles fossiles",
+          "Agriculture",
+          "Déforestation",
+          "Transport aérien"
+        ],
+        "correctAnswer": "Combustion de combustibles fossiles",
+        "explanation": "la combustion de charbon, pétrole y gaz naturel es responsable de 73% des émissions mondiales de GES.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Changement Climatique"
+      },
+      {
+        "question": "Quel continente es el más affecté par la désertification ?",
+        "options": [
+          "Afrique",
+          "Asie",
+          "Amérique del sur",
+          "Australie"
+        ],
+        "correctAnswer": "Afrique",
+        "explanation": "L'Afrique es particulièrement vulnérable à la désertification, notamment en la región del Sahel.",
+        "difficulty": "Fácil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Changement Climatique"
+      }
+    ],
+    "Biodiversité Africaine": [
+      {
+        "question": "Cuál es el más grand parc national d'Afrique ?",
+        "options": [
+          "Parc National de Namib-Naukluft (Namibie)",
+          "Parc Kruger (Afrique del sur)",
+          "Parc Serengeti (Tanzanie)",
+          "Parc Etosha (Namibie)"
+        ],
+        "correctAnswer": "Parc National de Namib-Naukluft (Namibie)",
+        "explanation": "el Parc de Namib-Naukluft couvre 49 768 km², ce qui en fait el más grand parc d'Afrique.",
+        "difficulty": "Difícil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Biodiversité Africaine"
+      },
+      {
+        "question": "Cuántos d'espèces d'éléphants existe-t-il en Afrique ?",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "explanation": "Il existe deux espèces d'éléphants africains : l'éléphant de savane y l'éléphant de forêt.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Biodiversité Africaine"
+      },
+      {
+        "question": "Quel animal africain peut vivre más longtemps sin eau ?",
+        "options": [
+          "la girafe",
+          "el chameau",
+          "L'oryx",
+          "el dromadaire"
+        ],
+        "correctAnswer": "L'oryx",
+        "explanation": "L'oryx peut survivre varios mes sin boire, en tirant l'eau de sa nourriture.",
+        "difficulty": "Difícil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Biodiversité Africaine"
+      },
+      {
+        "question": "Cuál es l'oiseau national del Kenya ?",
+        "options": [
+          "el coq de roche",
+          "L'aigle martial",
+          "el calao terrestre",
+          "el flamant rose"
+        ],
+        "correctAnswer": "el coq de roche",
+        "explanation": "el coq de roche (lilac-breasted roller) es l'oiseau national del Kenya, conocido para ses couleurs vives.",
+        "difficulty": "Difícil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Biodiversité Africaine"
+      }
+    ],
+    "Énergies Renouvelables": [
+      {
+        "question": "Quel país africain produit el más d'énergie solaire ?",
+        "options": [
+          "Maroc",
+          "Afrique del sur",
+          "Égypte",
+          "Algérie"
+        ],
+        "correctAnswer": "Maroc",
+        "explanation": "el Maroc abrite el complejo solaire de Noor Ouarzazate, l'una des más grandes centrales solaires au mundo.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Énergies Renouvelables"
+      },
+      {
+        "question": "Qu'es-ce que l'énergie géothermique ?",
+        "options": [
+          "Énergie provenant de la calor de la tierra",
+          "Énergie del vent",
+          "Énergie del sol",
+          "Énergie des vagues"
+        ],
+        "correctAnswer": "Énergie provenant de la calor de la tierra",
+        "explanation": "L'énergie géothermique utilise la calor stockée sous la surface terrestre.",
+        "difficulty": "Fácil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Énergies Renouvelables"
+      },
+      {
+        "question": "Quel país africain a el más grand potentiel hydroélectrique ?",
+        "options": [
+          "République Démocratique del Congo",
+          "Éthiopie",
+          "Égypte",
+          "Nigeria"
+        ],
+        "correctAnswer": "République Démocratique del Congo",
+        "explanation": "la RDC possède el más grand potentiel hydroélectrique d'Afrique grâce au río Congo.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Énergies Renouvelables"
+      }
+    ],
+    "Pollution y Déchets": [
+      {
+        "question": "Cuántos de tiempo met un sac plastique à se décomposer en la nature ?",
+        "options": [
+          "100-400 ans",
+          "10-50 ans",
+          "500-1000 ans",
+          "1-10 ans"
+        ],
+        "correctAnswer": "100-400 ans",
+        "explanation": "un sac plastique met entre 100 y 400 ans à se décomposer complètement en la nature.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Pollution y Déchets"
+      },
+      {
+        "question": "Quel país africain a été el premier à interdire los sacs plastiques ?",
+        "options": [
+          "Rwanda",
+          "Kenya",
+          "Afrique del sur",
+          "Maroc"
+        ],
+        "correctAnswer": "Rwanda",
+        "explanation": "el Rwanda a interdit los sacs plastiques en 2008, devenant un leader africain en ce domaine.",
+        "difficulty": "Medio",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Pollution y Déchets"
+      },
+      {
+        "question": "Qu'es-ce que el 'continente de plastique' en l'océano Pacifique ?",
+        "options": [
+          "una zone de concentration de déchets plastiques",
+          "una îel artificielle",
+          "un nouveau continente découvert",
+          "una plateforme pétrolière"
+        ],
+        "correctAnswer": "una zone de concentration de déchets plastiques",
+        "explanation": "el 'Great Pacific Garbage Patch' es una zone de varios millions de km² de déchets plastiques flottants.",
+        "difficulty": "Fácil",
+        "category": "Medio Ambiente y Ecología",
+        "subcategory": "Pollution y Déchets"
+      }
+    ]
+  }
+}

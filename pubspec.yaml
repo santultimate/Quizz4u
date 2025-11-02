@@ -29,6 +29,7 @@ dependencies:
   flutter_svg: ^2.0.9
   cached_network_image: ^3.3.0
   flame: ^1.30.1
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -45,7 +46,98 @@ flutter_icons:
 
 flutter:
   uses-material-design: true
-  
+  assets:
+    - assets/translations/fr.json
+    - assets/translations/en.json
+    - assets/translations/ar.json
+    - assets/translations/zh.json
+    - assets/translations/hi.json
+    - assets/translations/es.json
+    - assets/translations/questions_fr.json
+    - assets/translations/questions_en.json
+    - assets/translations/questions_ar.json
+    - assets/sounds/good.mp3
+    - assets/sounds/bad.mp3
+    - assets/sounds/background.mp3
+    - assets/animations/
+    # Fichiers de base (dupliqués supprimés - contenus dans enriched_*)
+    - assets/questions/math_questions.json
+    - assets/questions/africa_questions.json
+    - assets/questions/football_questions.json
+    - assets/questions/music_questions.json
+    - assets/questions/enriched_history_questions.json
+    - assets/questions/enriched_culture_questions.json
+    - assets/questions/enriched_science_questions.json
+    # Fichiers dev/test archivés dans _archive_dev_test/ (non inclus en production)
+    - assets/questions/phase2_new_categories.json
+    - assets/questions/premium_questions_phase6.json
+    - assets/questions/technology_questions_expansion.json
+    - assets/questions/environment_questions_expansion.json
+    - assets/questions/arts_culture_questions_expansion.json
+    - assets/questions/politics_economy_questions_expansion.json
+    - assets/questions/health_medicine_questions_expansion.json
+    # Versions traduites des questions expansion (backup/référence)
+    - assets/questions/technology_questions_expansion_ar.json
+    - assets/questions/technology_questions_expansion_en.json
+    - assets/questions/technology_questions_expansion_zh.json
+    - assets/questions/technology_questions_expansion_hi.json
+    - assets/questions/technology_questions_expansion_es.json
+    - assets/questions/environment_questions_expansion_ar.json
+    - assets/questions/environment_questions_expansion_en.json
+    - assets/questions/environment_questions_expansion_zh.json
+    - assets/questions/environment_questions_expansion_hi.json
+    - assets/questions/environment_questions_expansion_es.json
+    - assets/questions/arts_culture_questions_expansion_ar.json
+    - assets/questions/arts_culture_questions_expansion_en.json
+    - assets/questions/arts_culture_questions_expansion_zh.json
+    - assets/questions/arts_culture_questions_expansion_hi.json
+    - assets/questions/arts_culture_questions_expansion_es.json
+    - assets/questions/politics_economy_questions_expansion_ar.json
+    - assets/questions/politics_economy_questions_expansion_en.json
+    - assets/questions/politics_economy_questions_expansion_zh.json
+    - assets/questions/politics_economy_questions_expansion_hi.json
+    - assets/questions/politics_economy_questions_expansion_es.json
+    - assets/questions/health_medicine_questions_expansion_ar.json
+    - assets/questions/health_medicine_questions_expansion_en.json
+    - assets/questions/health_medicine_questions_expansion_zh.json
+    - assets/questions/health_medicine_questions_expansion_hi.json
+    - assets/questions/health_medicine_questions_expansion_es.json
+    # 🆕 Traductions des 7 catégories restantes (27 Oct 2025)
+    - assets/questions/enriched_history_questions_ar.json
+    - assets/questions/enriched_history_questions_en.json
+    - assets/questions/enriched_history_questions_es.json
+    - assets/questions/enriched_history_questions_hi.json
+    - assets/questions/enriched_history_questions_zh.json
+    - assets/questions/enriched_culture_questions_ar.json
+    - assets/questions/enriched_culture_questions_en.json
+    - assets/questions/enriched_culture_questions_es.json
+    - assets/questions/enriched_culture_questions_hi.json
+    - assets/questions/enriched_culture_questions_zh.json
+    - assets/questions/enriched_science_questions_ar.json
+    - assets/questions/enriched_science_questions_en.json
+    - assets/questions/enriched_science_questions_es.json
+    - assets/questions/enriched_science_questions_hi.json
+    - assets/questions/enriched_science_questions_zh.json
+    - assets/questions/math_questions_ar.json
+    - assets/questions/math_questions_en.json
+    - assets/questions/math_questions_es.json
+    - assets/questions/math_questions_hi.json
+    - assets/questions/math_questions_zh.json
+    - assets/questions/africa_questions_ar.json
+    - assets/questions/africa_questions_en.json
+    - assets/questions/africa_questions_es.json
+    - assets/questions/africa_questions_hi.json
+    - assets/questions/africa_questions_zh.json
+    - assets/questions/football_questions_ar.json
+    - assets/questions/football_questions_en.json
+    - assets/questions/football_questions_es.json
+    - assets/questions/football_questions_hi.json
+    - assets/questions/football_questions_zh.json
+    - assets/questions/music_questions_ar.json
+    - assets/questions/music_questions_en.json
+    - assets/questions/music_questions_es.json
+    - assets/questions/music_questions_hi.json
+    - assets/questions/music_questions_zh.json
   fonts:
     - family: Raleway
       fonts:
@@ -66,19 +158,3 @@ flutter:
         - asset: fonts/robotomono-regular.ttf
         - asset: fonts/robotomono-bold.ttf
           weight: 700
-
-  assets:
-    - assets/sounds/good.mp3
-    - assets/sounds/bad.mp3
-    - assets/sounds/background.mp3
-    - assets/animations/
-    - assets/questions/mali_history_questions.json
-    - assets/questions/general_culture_questions.json
-    - assets/questions/science_questions.json
-    - assets/questions/math_questions.json
-    - assets/questions/africa_questions.json
-    - assets/questions/questions_extension_phase1.json
-    - assets/questions/phase2_new_categories.json
-    - assets/questions/phase3_advanced_questions.json
-    - assets/questions/massive_extension_phase4.json
-    - assets/questions/premium_questions_phase6.json

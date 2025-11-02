@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/badge_service.dart';
+import '../services/translation_service.dart';
 // import '../services/badge_notification_service.dart';
 import '../models/user_progress.dart';
 
@@ -25,6 +26,13 @@ class _BadgesScreenState extends State<BadgesScreen> {
     _loadBadges();
   }
 
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Recharger l'interface quand la langue change
+    setState(() {});
+  }
+
   void _loadBadges() {
     allBadges = BadgeService.getAllAvailableBadges(widget.userProgress);
     setState(() {});
@@ -46,7 +54,7 @@ class _BadgesScreenState extends State<BadgesScreen> {
     return Scaffold(
       backgroundColor: Colors.purple,
       appBar: AppBar(
-        title: const Text('🏆 Badges'),
+        title: Text('🏆 ${TranslationService.translate('badges')}'),
         backgroundColor: Colors.purple[700],
         actions: [
           // Bouton pour filtrer
@@ -61,8 +69,8 @@ class _BadgesScreenState extends State<BadgesScreen> {
               });
             },
             tooltip: showUnlockedOnly
-                ? 'Voir tous les badges'
-                : 'Voir uniquement les débloqués',
+                ? TranslationService.translate('show_all_badges')
+                : TranslationService.translate('show_unlocked_only'),
           ),
         ],
       ),
@@ -82,7 +90,7 @@ class _BadgesScreenState extends State<BadgesScreen> {
             child: Column(
               children: [
                 Text(
-                  'Progression des Badges',
+                  TranslationService.translate('badge_progress'),
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -149,8 +157,10 @@ class _BadgesScreenState extends State<BadgesScreen> {
                         const SizedBox(height: 8),
                         Text(
                           showUnlockedOnly
-                              ? 'Jouez pour débloquer vos premiers badges !'
-                              : 'Les badges apparaîtront ici',
+                              ? TranslationService.translate(
+                                  'play_to_unlock_badges')
+                              : TranslationService.translate(
+                                  'badges_will_appear_here'),
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.white.withOpacity(0.5),
@@ -267,7 +277,9 @@ class _BadgesScreenState extends State<BadgesScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        badge['name'] ?? 'Badge Mystérieux',
+                        badge.containsKey('name_key')
+                            ? TranslationService.translate(badge['name_key'])
+                            : (badge['name'] ?? 'Badge Mystérieux'),
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -276,7 +288,11 @@ class _BadgesScreenState extends State<BadgesScreen> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        badge['description'] ?? 'Badge obtenu !',
+                        badge.containsKey('description_key')
+                            ? TranslationService.translate(
+                                badge['description_key'])
+                            : (badge['description'] ??
+                                TranslationService.translate('badge_obtained')),
                         style: TextStyle(
                           fontSize: 14,
                           color: isUnlocked
@@ -384,7 +400,10 @@ class _BadgesScreenState extends State<BadgesScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              badge['description'] ?? 'Badge obtenu !',
+              badge.containsKey('description_key')
+                  ? TranslationService.translate(badge['description_key'])
+                  : (badge['description'] ??
+                      TranslationService.translate('badge_obtained')),
               style: const TextStyle(
                 fontSize: 16,
                 color: Colors.purple,

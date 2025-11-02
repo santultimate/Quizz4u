@@ -1,0 +1,108 @@
+{
+  "Salud y Medicina": {
+    "Maladies Tropicales": [
+      {
+        "question": "Quel moustique transmet el paludisme (malaria) ?",
+        "options": [
+          "Anophèel",
+          "Aedes",
+          "Culex",
+          "Tigre"
+        ],
+        "correctAnswer": "Anophèel",
+        "explanation": "el moustique anophèel femelle transmet el parasite Plasmodium responsable del paludisme.",
+        "difficulty": "Medio",
+        "category": "Salud y Medicina",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quelle enfermedad es causée par el virus Ebola ?",
+        "options": [
+          "Fièvre hémorragique",
+          "Paludisme",
+          "Tuberculose",
+          "Choléra"
+        ],
+        "correctAnswer": "Fièvre hémorragique",
+        "explanation": "el virus Ebola causa una fièvre hémorragique grave con un taux de mortalité élevé.",
+        "difficulty": "Fácil",
+        "category": "Salud y Medicina",
+        "subcategory": "Maladies Tropicales"
+      },
+      {
+        "question": "Quel país africain a été déclaré exempt de polio en 2020 ?",
+        "options": [
+          "Nigeria",
+          "Kenya",
+          "Afrique del sur",
+          "Égypte"
+        ],
+        "correctAnswer": "Nigeria",
+        "explanation": "el Nigeria a été déclaré exempt de polio sauvage en août 2020, marquant una grande victoire.",
+        "difficulty": "Difícil",
+        "category": "Salud y Medicina",
+        "subcategory": "Maladies Tropicales"
+      }
+    ],
+    "Médecine Traditionnelle Africaine": [
+      {
+        "question": "Quel arbre africain es utilisé para traiter la fièvre y los douleurs ?",
+        "options": [
+          "Quinquina",
+          "Baobab",
+          "Moringa",
+          "Karité"
+        ],
+        "correctAnswer": "Quinquina",
+        "explanation": "L'écorce del quinquina contient de la quinine, utilisée contre el paludisme.",
+        "difficulty": "Medio",
+        "category": "Salud y Medicina",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      },
+      {
+        "question": "Quel fruit del baobab es riche en vitamine C ?",
+        "options": [
+          "el pain de singe",
+          "la datte",
+          "la mangue",
+          "la papaye"
+        ],
+        "correctAnswer": "el pain de singe",
+        "explanation": "el fruit del baobab (pain de singe) contient 6 vez más de vitamine C qu'una orange.",
+        "difficulty": "Medio",
+        "category": "Salud y Medicina",
+        "subcategory": "Médecine Traditionnelle Africaine"
+      }
+    ],
+    "Nutrition y Santé": [
+      {
+        "question": "Quelle céréale africaine es naturellement sin gluten ?",
+        "options": [
+          "el fonio",
+          "el blé",
+          "L'orge",
+          "el seigle"
+        ],
+        "correctAnswer": "el fonio",
+        "explanation": "el fonio es una céréale ancestrale africaine, nutritive y sin gluten.",
+        "difficulty": "Medio",
+        "category": "Salud y Medicina",
+        "subcategory": "Nutrition y Santé"
+      },
+      {
+        "question": "Cuántos de litres d'agua doit-on boire par día en moyenne ?",
+        "options": [
+          "1,5 à 2 litres",
+          "3 à 4 litres",
+          "0,5 à 1 litre",
+          "5 litres"
+        ],
+        "correctAnswer": "1,5 à 2 litres",
+        "explanation": "Il es recommandé de boire environ 1,5 à 2 litres d'agua par día para rester hydraté.",
+        "difficulty": "Fácil",
+        "category": "Salud y Medicina",
+        "subcategory": "Nutrition y Santé"
+      }
+    ]
+  }
+}

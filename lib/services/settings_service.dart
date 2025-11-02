@@ -15,7 +15,17 @@ class SettingsService {
   // Thème
   static Future<String> getThemeMode() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_themeModeKey) ?? 'système';
+    final themeMode = prefs.getString(_themeModeKey) ?? 'système';
+
+    // Validation - s'assurer que le thème est valide
+    final validModes = ['clair', 'sombre', 'système'];
+    if (!validModes.contains(themeMode)) {
+      // Si le thème stocké n'est pas valide, le réinitialiser
+      await prefs.setString(_themeModeKey, 'système');
+      return 'système';
+    }
+
+    return themeMode;
   }
 
   static Future<void> setThemeMode(String mode) async {

@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:quizz4u/firebase_options.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -25,7 +26,9 @@ class NotificationService {
 
       // Vérifier si Firebase est disponible
       try {
-        await Firebase.initializeApp();
+        await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform,
+        );
         print('[NotificationService] ✅ Firebase initialisé');
       } catch (e) {
         print('[NotificationService] ⚠️ Firebase non disponible: $e');
@@ -121,7 +124,7 @@ class NotificationService {
       print('[NotificationService] ✅ Handlers FCM configurés');
     } catch (e) {
       print('[NotificationService] ⚠️ Erreur configuration FCM: $e');
-      throw e; // Relancer l'erreur pour la gestion dans initialize()
+      rethrow; // Relancer l'erreur pour la gestion dans initialize()
     }
   }
 
@@ -145,7 +148,7 @@ class NotificationService {
       });
     } catch (e) {
       print('[NotificationService] ⚠️ Erreur token FCM: $e');
-      throw e; // Relancer l'erreur pour la gestion dans initialize()
+      rethrow; // Relancer l'erreur pour la gestion dans initialize()
     }
   }
 
@@ -277,7 +280,9 @@ class NotificationService {
 // Handler pour les notifications en arrière-plan
 @pragma('vm:entry-point')
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   print(
       '[NotificationService] 📨 Background message: ${message.notification?.title}');
 }

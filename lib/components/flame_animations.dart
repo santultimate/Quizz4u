@@ -8,7 +8,7 @@ import 'package:flame/particles.dart';
 class GoodAnswerParticles extends StatelessWidget {
   final VoidCallback? onComplete;
 
-  const GoodAnswerParticles({Key? key, this.onComplete}) : super(key: key);
+  const GoodAnswerParticles({super.key, this.onComplete});
 
   @override
   Widget build(BuildContext context) {
@@ -134,7 +134,7 @@ class GoodAnswerGame extends FlameGame with TapDetector {
         acceleration: Vector2(0, 350),
         child: CircleParticle(
           radius: 4 + (i % 3), // Plus grandes
-          paint: Paint()..color = Colors.amber.withOpacity(0.8),
+          paint: Paint()..color = Colors.amber.withValues(alpha: 0.8),
         ),
       ),
     );
@@ -167,9 +167,12 @@ class GoodAnswerGame extends FlameGame with TapDetector {
     add(ParticleSystemComponent(particle: starParticle));
     add(ParticleSystemComponent(particle: rainbowParticle));
 
-    // Appeler le callback après l'animation
+    // Appeler le callback après l'animation (avec vérification de sécurité)
     Future.delayed(const Duration(seconds: 2), () {
-      onComplete?.call();
+      // Vérifier que le composant existe toujours avant d'appeler le callback
+      if (isMounted) {
+        onComplete?.call();
+      }
     });
   }
 }
@@ -178,7 +181,7 @@ class GoodAnswerGame extends FlameGame with TapDetector {
 class BadAnswerParticles extends StatelessWidget {
   final VoidCallback? onComplete;
 
-  const BadAnswerParticles({Key? key, this.onComplete}) : super(key: key);
+  const BadAnswerParticles({super.key, this.onComplete});
 
   @override
   Widget build(BuildContext context) {
@@ -228,7 +231,7 @@ class BadAnswerGame extends FlameGame with TapDetector {
 class LevelUpConfetti extends StatelessWidget {
   final VoidCallback? onComplete;
 
-  const LevelUpConfetti({Key? key, this.onComplete}) : super(key: key);
+  const LevelUpConfetti({super.key, this.onComplete});
 
   @override
   Widget build(BuildContext context) {
@@ -294,11 +297,11 @@ class PulseAnimation extends StatefulWidget {
   final double scale;
 
   const PulseAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 300),
     this.scale = 1.1,
-  }) : super(key: key);
+  });
 
   @override
   State<PulseAnimation> createState() => _PulseAnimationState();
@@ -361,11 +364,11 @@ class SlideAnimation extends StatefulWidget {
   final Offset offset;
 
   const SlideAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 500),
     this.offset = const Offset(0, 50),
-  }) : super(key: key);
+  });
 
   @override
   State<SlideAnimation> createState() => _SlideAnimationState();
@@ -417,11 +420,11 @@ class RotateAnimation extends StatefulWidget {
   final double angle;
 
   const RotateAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 1000),
     this.angle = 360,
-  }) : super(key: key);
+  });
 
   @override
   State<RotateAnimation> createState() => _RotateAnimationState();

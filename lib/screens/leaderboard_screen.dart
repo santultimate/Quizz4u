@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/leaderboard_service.dart';
+import '../services/translation_service.dart';
+import '../services/question_translation_service.dart';
 
 class LeaderboardScreen extends StatefulWidget {
   final int? currentScore;
@@ -79,8 +81,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
       await _loadRecords();
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Record sauvegardé avec succès !'),
+        SnackBar(
+          content: Text(TranslationService.translate('record_saved_success')),
           backgroundColor: Colors.green,
         ),
       );
@@ -120,13 +122,13 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     return Scaffold(
       backgroundColor: Colors.purple,
       appBar: AppBar(
-        title: const Text('🏆 Records'),
+        title: Text('🏆 ${TranslationService.translate('records')}'),
         backgroundColor: Colors.purple[700],
         actions: [
           IconButton(
             icon: const Icon(Icons.share),
             onPressed: _shareTop3,
-            tooltip: 'Partager Top 3',
+            tooltip: TranslationService.translate('share_top_3'),
           ),
         ],
       ),
@@ -146,9 +148,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                 ),
                 child: Column(
                   children: [
-                    const Text(
-                      '🎯 Votre Score',
-                      style: TextStyle(
+                    Text(
+                      '🎯 ${TranslationService.translate('your_score')}',
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -156,15 +158,26 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '${widget.currentScore}/${widget.totalQuestions}',
+                      '${widget.currentScore} pts',
                       style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                         color: Colors.yellow,
                       ),
                     ),
+                    if (widget.accuracy != null &&
+                        widget.totalQuestions != null)
+                      Text(
+                        '${(widget.accuracy! * widget.totalQuestions!).round()}/${widget.totalQuestions} (${(widget.accuracy! * 100).toStringAsFixed(1)}%)',
+                        style: const TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    const SizedBox(height: 4),
                     Text(
-                      'Catégorie: ${widget.category}',
+                      '${TranslationService.translate('category')}: ${widget.category != null ? QuestionTranslationService.translateCategory(widget.category!) : ""}',
                       style: const TextStyle(
                         fontSize: 16,
                         color: Colors.white70,
@@ -178,7 +191,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                         controller: _nameController,
                         style: const TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                          hintText: 'Entrez votre nom',
+                          hintText:
+                              TranslationService.translate('enter_your_name'),
                           hintStyle: const TextStyle(color: Colors.white70),
                           filled: true,
                           fillColor: Colors.white.withOpacity(0.1),
@@ -203,9 +217,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 12),
                               ),
-                              child: const Text(
-                                'Sauvegarder',
-                                style: TextStyle(fontSize: 16),
+                              child: Text(
+                                TranslationService.translate('save'),
+                                style: const TextStyle(fontSize: 16),
                               ),
                             ),
                           ),
@@ -218,9 +232,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 12),
                               ),
-                              child: const Text(
-                                'Partager',
-                                style: TextStyle(fontSize: 16),
+                              child: Text(
+                                TranslationService.translate('share'),
+                                style: const TextStyle(fontSize: 16),
                               ),
                             ),
                           ),
@@ -228,7 +242,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       ),
                     ] else ...[
                       Text(
-                        'Sauvegardé par: $playerName',
+                        '${TranslationService.translate('saved_by')}: $playerName',
                         style: const TextStyle(
                           fontSize: 16,
                           color: Colors.green,
@@ -245,9 +259,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                             vertical: 12,
                           ),
                         ),
-                        child: const Text(
-                          'Partager mon score',
-                          style: TextStyle(fontSize: 16),
+                        child: Text(
+                          TranslationService.translate('share_my_score'),
+                          style: const TextStyle(fontSize: 16),
                         ),
                       ),
                     ],
@@ -258,9 +272,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             ],
 
             // Titre des records
-            const Text(
-              '🏆 Meilleurs Records',
-              style: TextStyle(
+            Text(
+              '🏆 ${TranslationService.translate('best_records')}',
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
@@ -275,11 +289,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                       child: CircularProgressIndicator(color: Colors.white),
                     )
                   : records.isEmpty
-                      ? const Center(
+                      ? Center(
                           child: Text(
-                            'Aucun record encore !\nSoyez le premier !',
+                            TranslationService.translate('no_records_yet'),
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 18,
                               color: Colors.white70,
                             ),
@@ -289,9 +303,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                           itemCount: records.length,
                           itemBuilder: (context, index) {
                             final record = records[index];
-                            final percentage =
-                                (record.score / record.totalQuestions * 100)
-                                    .toStringAsFixed(1);
+                            // ✅ Calcul correct : accuracy est déjà le pourcentage de bonnes réponses
+                            final accuracyPercentage =
+                                (record.accuracy * 100).toStringAsFixed(1);
+                            final correctAnswers =
+                                (record.accuracy * record.totalQuestions)
+                                    .round();
                             final date = record.date.toString().split(' ')[0];
 
                             return Container(
@@ -344,7 +361,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                         ),
                                         const SizedBox(height: 4),
                                         Text(
-                                          '${record.score}/${record.totalQuestions} ($percentage%)',
+                                          '${record.score} pts • $correctAnswers/${record.totalQuestions} ($accuracyPercentage%)',
                                           style: const TextStyle(
                                             fontSize: 16,
                                             color: Colors.yellow,
@@ -352,7 +369,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                                           ),
                                         ),
                                         Text(
-                                          '${record.category} • ${date}',
+                                          '${record.category} • $date',
                                           style: const TextStyle(
                                             fontSize: 14,
                                             color: Colors.white70,
@@ -409,12 +426,3 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     super.dispose();
   }
 }
-
-
-
-
-
-
-
-
-

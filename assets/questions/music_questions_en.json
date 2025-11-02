@@ -1,0 +1,274 @@
+{
+  "Music": [
+    {
+      "question": "What is the most emblematic traditional instrument of Mali?",
+      "answers": {
+        "The kora": true,
+        "The balafon": false,
+        "The djembe": false,
+        "The ngoni": false
+      }
+    },
+    {
+      "question": "Who is considered the Malian 'King of Blues'?",
+      "answers": {
+        "Ali Farka Toure": true,
+        "Salif Keita": false,
+        "Oumou Sangaré": false,
+        "Amadou & Mariam": false
+      }
+    },
+    {
+      "question": "What musical genre originated in the Democratic Republic of Congo?",
+      "answers": {
+        "Congolese rumba": true,
+        "The high life": false,
+        "Afrobeat": false,
+        "The coupé-décalé": false
+      }
+    },
+    {
+      "question": "Who popularized Afrobeat around the world?",
+      "answers": {
+        "Fela Kuti (Nigeria)": true,
+        "Manu Dibango (Cameroon)": false,
+        "Youssou N'Dour (Senegal)": false,
+        "Angélique Kidjo (Benin)": false
+      }
+    },
+    {
+      "question": "What instrument is traditionally used in Moroccan Gnawa music?",
+      "answers": {
+        "The guembri": true,
+        "The oud": false,
+        "The qanun": false,
+        "The ney": false
+      }
+    },
+    {
+      "question": "Who is nicknamed 'Africa's Diva'?",
+      "answers": {
+        "Miriam Makeba (South Africa)": true,
+        "Angélique Kidjo (Benin)": false,
+        "Cesária Évora (Cape Verde)": false,
+        "Oumou Sangaré (Mali)": false
+      }
+    },
+    {
+      "question": "What musical genre originated in Jamaica in the 1960s?",
+      "answers": {
+        "Reggae": true,
+        "Ska": false,
+        "The Rocksteady": false,
+        "The dub": false
+      }
+    },
+    {
+      "question": "Who is the Malian singer nicknamed 'The Golden Voice'?",
+      "answers": {
+        "Salif Keita": true,
+        "Ali Farka Toure": false,
+        "Toumani Diabaté": false,
+        "Rokia Traore": false
+      }
+    },
+    {
+      "question": "Which percussion instrument originated in West Africa?",
+      "answers": {
+        "The djembe": true,
+        "The bongos": false,
+        "The congas": false,
+        "The battery": false
+      }
+    },
+    {
+      "question": "Who composed 'Lambada'?",
+      "answers": {
+        "Kaoma (Franco-Brazilian group)": true,
+        "Carlos Santana": false,
+        "Gipsy Kings": false,
+        "Ricky Martin": false
+      }
+    },
+    {
+      "question": "What is the name of the national orchestra of Mali?",
+      "answers": {
+        "The National Orchestra 'A' of Mali": true,
+        "The Mali Symphony Orchestra": false,
+        "The Orchestra of the Republic of Mali": false,
+        "The Malian National Orchestra": false
+      }
+    },
+    {
+      "question": "Who is considered the father of jazz?",
+      "answers": {
+        "Louis Armstrong": true,
+        "Duke Ellington": false,
+        "Charlie Parker": false,
+        "Miles Davis": false
+      }
+    },
+    {
+      "question": "What musical genre originated in New Orleans?",
+      "answers": {
+        "Jazz": true,
+        "The blues": false,
+        "Gospel": false,
+        "Rhythm and blues": false
+      }
+    },
+    {
+      "question": "Who popularized Mandinka music around the world?",
+      "answers": {
+        "Toumani Diabaté": true,
+        "Ali Farka Toure": false,
+        "Salif Keita": false,
+        "Rokia Traore": false
+      }
+    },
+    {
+      "question": "Which traditional instrument uses calabashes as resonators?",
+      "answers": {
+        "The balafon": true,
+        "The kora": false,
+        "The ngoni": false,
+        "The djembe": false
+      }
+    },
+    {
+      "question": "Who is nicknamed 'The Griot of the Blues'?",
+      "answers": {
+        "Ali Farka Toure": true,
+        "Salif Keita": false,
+        "Toumani Diabaté": false,
+        "Boubacar Traore": false
+      }
+    },
+    {
+      "question": "What musical genre is originally from Cape Verde?",
+      "answers": {
+        "The morning": true,
+        "The funaná": false,
+        "The batuque": false,
+        "The coladeira": false
+      }
+    },
+    {
+      "question": "Who composed 'Waka Waka (This Time for Africa)' for the 2010 World Cup?",
+      "answers": {
+        "Shakira": true,
+        "Jennifer Lopez": false,
+        "Beyoncé": false,
+        "Rihanna": false
+      }
+    },
+    {
+      "question": "What is the traditional instrument of Gnawa music?",
+      "answers": {
+        "The guembri (3-string lute)": true,
+        "The oud": false,
+        "The kora": false,
+        "The ngoni": false
+      }
+    },
+    {
+      "question": "Who is considered the king of Senegalese mbalax?",
+      "answers": {
+        "Youssou N'Dour": true,
+        "Baaba Maal": false,
+        "Ismaël Lô": false,
+        "Orchestra Baobab": false
+      }
+    },
+    {
+      "question": "What musical genre was born in Brazil?",
+      "answers": {
+        "bossa nova": true,
+        "Samba": false,
+        "The forró": false,
+        "The lambada": false
+      }
+    },
+    {
+      "question": "Who popularized wassoulou music in Mali?",
+      "answers": {
+        "Oumou Sangaré": true,
+        "Salif Keita": false,
+        "Ali Farka Toure": false,
+        "Rokia Traore": false
+      }
+    },
+    {
+      "question": "Which traditional Malian instrument has 21 strings?",
+      "answers": {
+        "The kora": true,
+        "The ngoni": false,
+        "The balafon": false,
+        "The guembri": false
+      }
+    },
+    {
+      "question": "Who is nicknamed 'The Queen of Afro-pop'?",
+      "answers": {
+        "Angelique Kidjo": true,
+        "Miriam Makeba": false,
+        "Cesária Évora": false,
+        "Oumou Sangaré": false
+      }
+    },
+    {
+      "question": "What musical genre originated in Cuba?",
+      "answers": {
+        "Salsa": true,
+        "The cha-cha-cha": false,
+        "The mambo": false,
+        "The sound": false
+      }
+    },
+    {
+      "question": "Who composed 'Afrika'?",
+      "answers": {
+        "Salif Keita": true,
+        "Ali Farka Toure": false,
+        "Toumani Diabaté": false,
+        "Oumou Sangaré": false
+      }
+    },
+    {
+      "question": "What traditional instrument uses stretched animal skins?",
+      "answers": {
+        "The djembe": true,
+        "The balafon": false,
+        "The kora": false,
+        "The ngoni": false
+      }
+    },
+    {
+      "question": "Who is considered the father of Ghanaian highlife?",
+      "answers": {
+        "Mensah": true,
+        "Amakye Dede": false,
+        "Kojo Antwi": false,
+        "Sarkodie": false
+      }
+    },
+    {
+      "question": "What musical genre was born in the Dominican Republic?",
+      "answers": {
+        "Bachata": true,
+        "Merengue": false,
+        "Salsa": false,
+        "Reggaeton": false
+      }
+    },
+    {
+      "question": "Who popularized Tuareg music (desert blues)?",
+      "answers": {
+        "Tinariwen": true,
+        "Bombino": false,
+        "Tamikrest": false,
+        "Terakaft": false
+      }
+    }
+  ]
+}
