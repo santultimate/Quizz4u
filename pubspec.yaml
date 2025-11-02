@@ -1,7 +1,7 @@
 name: quizz4u
 description: Quiz éducatif avec 5 catégories - Histoire du Mali, Culture générale, Sciences, Mathématiques et Afrique. Plus de 200 questions avec TTS, timer animé et classement local.
 
-version: 2.0.5+9
+version: 2.0.5+10
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
