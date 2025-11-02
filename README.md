@@ -3,10 +3,13 @@
 [![Version](https://img.shields.io/badge/version-2.0.5-blue.svg)](https://github.com/santultimate/Quizz4u)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B.svg?logo=flutter)](https://flutter.dev)
 [![License](https://img.shields.io/badge/license-Educational-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-Production-ready-brightgreen.svg)](https://github.com/santultimate/Quizz4u)
 
 ## 📱 Description
 
-**Quizz4u** est une application de quiz éducatif moderne, interactive et multilingue, conçue pour apprendre tout en s'amusant. Avec plus de **300 questions** réparties dans **10 catégories** et disponibles en **6 langues**, cette application offre une expérience d'apprentissage unique et engageante.
+**Quizz4u** est une application de quiz éducatif moderne, interactive et multilingue, conçue pour apprendre tout en s'amusant. Avec plus de **1,000 questions** réparties dans **10 catégories** et disponibles en **6 langues**, cette application offre une expérience d'apprentissage unique et engageante.
+
+> 🚀 **Prêt pour soumission Google Play Store**
 
 ### 🌍 Langues Supportées
 - 🇫🇷 **Français** (langue principale - 319 questions)
@@ -73,7 +76,7 @@
 * **Service audio unifié** : optimisé pour éviter les conflits
 * **Contrôles individuels** : volume principal, musique, effets
 
-> ⚠️ **Note**: Text-to-Speech temporairement désactivé suite à des crashs détectés - sera réactivé dans une prochaine version
+> ✅ **Text-to-Speech** : Lecture automatique des questions dans toutes les langues supportées
 
 ### 🏆 Système de Progression Avancé
 
@@ -218,10 +221,39 @@ LeaderboardScreen (Résultats)
 * **Statistiques globales**
 * **Historique** de jeu
 
-#### 🎁 Premium (En développement)
-* **Avantages** : Pas de pub, bonus XP, badges exclusifs
-* **Prix** : À définir
-* **Paiement sécurisé** : In-App Purchase
+#### 💎 Premium
+* **Avantages** : Pas de pub, bonus XP, badges exclusifs, thèmes personnalisés
+* **Options** : Abonnement mensuel/annuel ou achat à vie
+* **Paiement sécurisé** : Google Play Billing / App Store
+
+---
+
+## 🎉 Dernières Mises à Jour (v2.0.5+10)
+
+### ✨ Nouvelles Fonctionnalités
+- 🌍 **Support multilingue complet** : Interface traduite en 6 langues (FR, EN, AR, ZH, HI, ES)
+- 💎 **Page Premium entièrement traduite** : 10 avantages premium traduits dans toutes les langues
+- 🎨 **UI optimisée** : Fixes d'overflow et adaptation automatique aux textes traduits
+- 🔐 **Sécurité renforcée** : Configuration sécurisée des clés de signature
+
+### 🐛 Corrections
+- ✅ Correction des traductions d'écran de chargement
+- ✅ Correction des traductions du timer (temps restant)
+- ✅ Correction des traductions de l'écran d'accueil (stats)
+- ✅ Retrait des imports inutilisés
+- ✅ Nettoyage massif du code (70+ fichiers de développement supprimés)
+
+### 🚀 Préparation Production
+- ✅ Version incrémentée à 2.0.5+10
+- ✅ Configuration Google Play prête
+- ✅ AdMob en mode production
+- ✅ Firebase intégré
+- ✅ Code optimisé et obfusqué
+
+### 📊 Statistiques Code
+- **237 fichiers modifiés** dans le dernier commit
+- **69,613 lignes ajoutées**, **8,827 supprimées**
+- **Code propre et maintenable**
 
 ---
 
@@ -313,11 +345,13 @@ applicationId: com.quizz4u
 
 ### 📲 Pour les Utilisateurs
 
-**Google Play Store** (Bientôt disponible)
+**Google Play Store** (Soumission prochaine) 🚀
 ```
 1. Recherchez "Quizz4u" sur le Play Store
 2. Téléchargez et installez l'application
 3. Ouvrez et commencez à jouer !
+
+Version prête pour soumission Google Play Console
 ```
 
 **App Store** (En développement)
@@ -604,13 +638,12 @@ Merci à tous les testeurs et utilisateurs qui ont contribué à améliorer cett
 
 ## 📚 Documentation Technique
 
-### 📖 Fichiers d'Audit et Rapports
+### 📖 Guides de Déploiement
 
-* `AUDIT_COMPLET_JEU.md` - Analyse complète du jeu et recommandations
-* `RAPPORT_FUSION_FINALE.md` - Détails de la fusion des questions
-* `RAPPORT_TRADUCTION_INTEGRALE_27_OCT.md` - État des traductions
-* `OPTIMISATIONS_PROFESSIONNELLES_25_OCT_2025.md` - Optimisations appliquées
+* `CHECKLIST_DEPLOIEMENT_STORES.md` - Checklist complète de préparation aux stores
 * `GUIDE_BUILD_OPTIMISE.md` - Guide de build pour production
+* `GUIDE_DEPLOIEMENT_PLAY_STORE.md` - Guide spécifique Google Play
+* `GUIDE_PAIEMENTS_PREMIUM.md` - Configuration des achats in-app
 
 ### 🔍 Analyses Disponibles
 
@@ -635,15 +668,15 @@ _Screenshots à venir dans une prochaine mise à jour_
 ┌────────────────────────────────────────┐
 │  QUIZZ4U - MÉTRIQUES GLOBALES          │
 ├────────────────────────────────────────┤
-│  Version:          2.0.5               │
+│  Version:          2.0.5+10            │
 │  Langues:          6                   │
 │  Questions:        1,128 (total)       │
 │  Catégories:       10                  │
 │  Services:         15+                 │
 │  Écrans:           12                  │
-│  Taille AAB:       53.9 MB             │
+│  Taille AAB:       ~50 MB (optimisé)   │
 │  Lignes de code:   ~15,000             │
-│  Commits:          300+                │
+│  Statut:           Production-ready    │
 └────────────────────────────────────────┘
 ```
 
