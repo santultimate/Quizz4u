@@ -12,6 +12,7 @@
 /// - 🇨🇳 中文 (Chinois Mandarin)
 /// - 🇮🇳 हिन्दी (Hindi)
 /// - 🇪🇸 Español (Espagnol)
+library;
 
 class MathExtensionsTranslations {
   static const Map<String, Map<String, dynamic>> translations = {
@@ -369,6 +370,7 @@ class MathExtensionsTranslations {
     },
   };
 }
+
 
 
 

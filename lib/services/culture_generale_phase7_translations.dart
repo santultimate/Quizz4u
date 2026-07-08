@@ -2,6 +2,7 @@
 /// Traductions manuelles professionnelles
 /// Focus: Capitales mondiales avancées, pays par population
 /// Date: 17 octobre 2025
+library;
 
 class CultureGeneralePhase7Translations {
   static const Map<String, Map<String, dynamic>> translations = {

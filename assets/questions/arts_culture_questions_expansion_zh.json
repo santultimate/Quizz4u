@@ -9,11 +9,12 @@
           "本·奥克里",
           "奇马曼达·恩戈齐·阿迪奇"
         ],
-        "correctAnswer": "Wole Soyinka",
+        "correctAnswer": "沃莱·索因卡",
         "explanation": "沃莱·索因卡是第一位获得诺贝尔文学奖的非洲人。",
         "difficulty": "medium",
-        "category": "艺术与文化",
-        "subcategory": "Littérature Africaine"
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0000"
       },
       {
         "question": "《暧昧的冒险》是谁写的？",
@@ -23,11 +24,12 @@
           "比拉戈·迪奥普",
           "阿马杜·汉帕特·巴"
         ],
-        "correctAnswer": "Cheikh Hamidou Kane",
+        "correctAnswer": "谢赫·哈米杜·凯恩",
         "explanation": "《暧昧的冒险》（1961）是谢赫·哈米杜·凯恩（Cheikh Hamidou Kane）关于非洲身份的小说。",
         "difficulty": "medium",
-        "category": "艺术与文化",
-        "subcategory": "Littérature Africaine"
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0001"
       },
       {
         "question": "哪位马里作家因《这么长的信》而闻名？",
@@ -37,11 +39,12 @@
           "纳菲萨图·迪亚洛",
           "肯·巴古尔"
         ],
-        "correctAnswer": "Mariama Bâ",
+        "correctAnswer": "马里亚玛·巴",
         "explanation": "马里亚玛·巴（塞内加尔人）写了这本关于非洲妇女状况的书信体小说。",
         "difficulty": "medium",
-        "category": "艺术与文化",
-        "subcategory": "Littérature Africaine"
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0002"
       }
     ],
     "Cinéma Africain": [
@@ -53,11 +56,12 @@
           "迦太基节",
           "德班节"
         ],
-        "correctAnswer": "FESPACO",
+        "correctAnswer": "菲斯帕科",
         "explanation": "FESPACO（瓦加杜古泛非电影节）每两年在布基纳法索举办一次。",
         "difficulty": "easy",
-        "category": "艺术与文化",
-        "subcategory": "Cinéma Africain"
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0003"
       },
       {
         "question": "哪位塞内加尔导演被认为是非洲电影之父？",
@@ -67,11 +71,12 @@
           "伊德里萨·韦德拉奥戈",
           "苏莱曼·西塞"
         ],
-        "correctAnswer": "Ousmane Sembène",
+        "correctAnswer": "奥斯曼·森贝内",
         "explanation": "Ousmane Sembène（1923-2007）被认为是非洲电影之父。",
         "difficulty": "medium",
-        "category": "艺术与文化",
-        "subcategory": "Cinéma Africain"
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0004"
       }
     ],
     "Art Contemporain": [
@@ -83,11 +88,12 @@
           "奥马尔·维克多·迪奥普",
           "哈桑·哈贾吉"
         ],
-        "correctAnswer": "Malick Sidibé",
+        "correctAnswer": "马利克·西迪贝",
         "explanation": "马利克·西迪贝 (Malick Sidibé) 让 60 年代和 70 年代的马里青年在巴马科永垂不朽。",
         "difficulty": "medium",
-        "category": "艺术与文化",
-        "subcategory": "Art Contemporain"
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0005"
       }
     ]
   }

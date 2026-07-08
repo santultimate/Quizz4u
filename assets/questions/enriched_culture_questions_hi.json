@@ -10,7 +10,9 @@
       },
       "explanation": "प्रशांत महासागर पृथ्वी की सतह का 30% से अधिक भाग कवर करता है।",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0000",
+      "correctAnswer": "प्रशांत महासागर"
     },
     {
       "question": "मोना लिसा को किसने चित्रित किया?",
@@ -22,7 +24,9 @@
       },
       "explanation": "लियोनार्डो दा विंची द्वारा चित्रित मोना लिसा, लौवर में प्रदर्शन पर है।",
       "difficulty": "easy",
-      "subcategory": "Art"
+      "subcategory": "Art",
+      "id": "culture_0001",
+      "correctAnswer": "लियोनार्डो दा विंची"
     },
     {
       "question": "सोने का रासायनिक चिन्ह क्या है?",
@@ -34,7 +38,9 @@
       },
       "explanation": "औ लैटिन 'ऑरम' से आया है जिसका अर्थ सोना है।",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "culture_0002",
+      "correctAnswer": "पर"
     },
     {
       "question": "एफिल टॉवर किस देश में स्थित है?",
@@ -46,7 +52,9 @@
       },
       "explanation": "एफिल टॉवर पेरिस, फ्रांस में स्थित है।",
       "difficulty": "easy",
-      "subcategory": "Monuments"
+      "subcategory": "Monuments",
+      "id": "culture_0003",
+      "correctAnswer": "फ्रांस"
     },
     {
       "question": "सबसे बड़ा महाद्वीप कौन सा है?",
@@ -58,7 +66,9 @@
       },
       "explanation": "एशिया पृथ्वी के सतह क्षेत्र का लगभग 30% प्रतिनिधित्व करता है।",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0004",
+      "correctAnswer": "एशिया"
     },
     {
       "question": "'लेस मिजरेबल्स' किसने लिखा?",
@@ -70,7 +80,9 @@
       },
       "explanation": "विक्टर ह्यूगो ने 1862 में 'लेस मिजरेबल्स' प्रकाशित किया।",
       "difficulty": "medium",
-      "subcategory": "Littérature"
+      "subcategory": "Littérature",
+      "id": "culture_0005",
+      "correctAnswer": "विक्टर ह्यूगो"
     },
     {
       "question": "विश्व का सबसे बड़ा रेगिस्तान कौन सा है?",
@@ -82,7 +94,9 @@
       },
       "explanation": "अंटार्कटिका तकनीकी रूप से दुनिया का सबसे बड़ा रेगिस्तान है।",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0006",
+      "correctAnswer": "अंटार्कटिका"
     },
     {
       "question": "विश्व का सबसे बड़ा स्तनपायी कौन सा है?",
@@ -94,7 +108,9 @@
       },
       "explanation": "ब्लू व्हेल की लंबाई 30 मीटर और वजन 200 टन हो सकता है।",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "culture_0007",
+      "correctAnswer": "नीली विशालकाय मछली"
     },
     {
       "question": "विश्व का सबसे बड़ा देश कौन सा है?",
@@ -106,7 +122,9 @@
       },
       "explanation": "रूस का क्षेत्रफल 17 मिलियन वर्ग किमी से अधिक है।",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0008",
+      "correctAnswer": "रूस"
     },
     {
       "question": "मानव शरीर में सबसे बड़ा अंग कौन सा है?",
@@ -118,7 +136,9 @@
       },
       "explanation": "त्वचा शरीर के कुल वजन का लगभग 16% बनाती है।",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "culture_0009",
+      "correctAnswer": "त्वचा"
     },
     {
       "question": "फ़िलिस्तीन राज्य किस महाद्वीप पर है?",
@@ -128,7 +148,8 @@
         "यूरोप": false,
         "अमेरिका": false
       },
-      "correctAnswer": "L'Asie"
+      "correctAnswer": "एशिया",
+      "id": "culture_0010"
     },
     {
       "question": "यूरोपीय महाद्वीप का सबसे बड़ा शहर कौन सा है?",
@@ -138,7 +159,8 @@
         "बर्लिन": false,
         "मैड्रिड": false
       },
-      "correctAnswer": "Londres"
+      "correctAnswer": "लंदन",
+      "id": "culture_0011"
     },
     {
       "question": "प्रेम और सौंदर्य का शहर कौन सा है?",
@@ -148,7 +170,8 @@
         "रोम": false,
         "बार्सिलोना": false
       },
-      "correctAnswer": "Paris"
+      "correctAnswer": "पेरिस",
+      "id": "culture_0012"
     },
     {
       "question": "अफ़्रीकी महाद्वीप पर कितने अरब देश हैं?",
@@ -158,7 +181,8 @@
         "ग्यारह देश": false,
         "तेरह देश": false
       },
-      "correctAnswer": "Neuf pays"
+      "correctAnswer": "नौ देश",
+      "id": "culture_0013"
     },
     {
       "question": "रत्नों के सबसे मजबूत प्रकार कौन से हैं?",
@@ -168,7 +192,8 @@
         "पन्ना": false,
         "नीलमणि": false
       },
-      "correctAnswer": "Le diamant"
+      "correctAnswer": "हीरा",
+      "id": "culture_0014"
     },
     {
       "question": "अमेज़न नदी किस महाद्वीप पर स्थित है?",
@@ -178,7 +203,8 @@
         "एशिया": false,
         "उत्तरी अमेरिका": false
       },
-      "correctAnswer": "L'Amerique du Sud"
+      "correctAnswer": "दक्षिण अमेरिका",
+      "id": "culture_0015"
     },
     {
       "question": "किस देश को खरगोशों की भूमि कहा जाता है?",
@@ -188,7 +214,8 @@
         "इटली": false,
         "फ्रांस": false
       },
-      "correctAnswer": "L'Espagne"
+      "correctAnswer": "स्पेन",
+      "id": "culture_0016"
     },
     {
       "question": "अफ़्रीकी महाद्वीप का सबसे ऊँचा पर्वत कौन सा है?",
@@ -198,7 +225,8 @@
         "माउंट एलगॉन": false,
         "मेरु पर्वत": false
       },
-      "correctAnswer": "Le Mont Kilimandjaro"
+      "correctAnswer": "माउंट किलिमंजारो",
+      "id": "culture_0017"
     },
     {
       "question": "मानव शरीर में कितनी मांसपेशियाँ होती हैं?",
@@ -208,7 +236,8 @@
         "700 मांसपेशियाँ": false,
         "800 मांसपेशियाँ": false
       },
-      "correctAnswer": "620 muscles"
+      "correctAnswer": "620 मांसपेशियाँ",
+      "id": "culture_0018"
     },
     {
       "question": "फ़्रांस की राजधानी कौनसी है?",
@@ -218,7 +247,8 @@
         "मारसैल": false,
         "टूलूस": false
       },
-      "correctAnswer": "Paris"
+      "correctAnswer": "पेरिस",
+      "id": "culture_0019"
     },
     {
       "question": "किस देश का आकार बूट जैसा है?",
@@ -228,7 +258,8 @@
         "ग्रीस": false,
         "पुर्तगाल": false
       },
-      "correctAnswer": "L'Italie"
+      "correctAnswer": "इटली",
+      "id": "culture_0020"
     },
     {
       "question": "जर्मनी की राजधानी क्या है?",
@@ -238,7 +269,8 @@
         "फ्रैंकफर्ट": false,
         "हैम्बर्ग": false
       },
-      "correctAnswer": "Berlin"
+      "correctAnswer": "बर्लिन",
+      "id": "culture_0021"
     },
     {
       "question": "किस देश के झंडे पर मेपल का पत्ता है?",
@@ -248,7 +280,8 @@
         "ब्राज़िल": false,
         "ऑस्ट्रेलिया": false
       },
-      "correctAnswer": "Le Canada"
+      "correctAnswer": "कनाडा",
+      "id": "culture_0022"
     },
     {
       "question": "अमेरिका को किसने खोजा?",
@@ -258,7 +291,8 @@
         "वास्को डिगामा": false,
         "अमेरिगो वेस्पूची": false
       },
-      "correctAnswer": "Christophe Colomb"
+      "correctAnswer": "क्रिस्टोफऱ कोलोम्बस",
+      "id": "culture_0023"
     },
     {
       "question": "विश्व का सबसे बड़ा शहर कौन सा है?",
@@ -268,7 +302,8 @@
         "शंघाई": false,
         "मेक्सिको": false
       },
-      "correctAnswer": "Tokyo"
+      "correctAnswer": "टोक्यो",
+      "id": "culture_0024"
     },
     {
       "question": "जापान की राजधानी क्या है?",
@@ -278,7 +313,8 @@
         "क्योटो": false,
         "योकोहामा": false
       },
-      "correctAnswer": "Tokyo"
+      "correctAnswer": "टोक्यो",
+      "id": "culture_0025"
     },
     {
       "question": "ऑस्ट्रेलिया की राजधानी क्या है?",
@@ -288,7 +324,8 @@
         "मेलबोर्न": false,
         "ब्रिस्बेन": false
       },
-      "correctAnswer": "Canberra"
+      "correctAnswer": "कैनबरा",
+      "id": "culture_0026"
     },
     {
       "question": "चीन की राजधानी क्या है?",
@@ -298,7 +335,8 @@
         "हांगकांग": false,
         "केंटन": false
       },
-      "correctAnswer": "Pekin"
+      "correctAnswer": "बीजिंग",
+      "id": "culture_0027"
     },
     {
       "question": "भारत की राजधानी क्या है?",
@@ -308,7 +346,8 @@
         "कोलकाता": false,
         "चेन्नई": false
       },
-      "correctAnswer": "New Delhi"
+      "correctAnswer": "नई दिल्ली",
+      "id": "culture_0028"
     },
     {
       "question": "ब्राज़ील की राजधानी क्या है?",
@@ -318,7 +357,8 @@
         "रियो डी जनेरियो": false,
         "अल साल्वाडोर": false
       },
-      "correctAnswer": "Brasilia"
+      "correctAnswer": "ब्रासीलिया",
+      "id": "culture_0029"
     },
     {
       "question": "दक्षिण अफ़्रीका की राजधानी क्या है?",
@@ -328,7 +368,8 @@
         "जोहानसबर्ग": false,
         "डरबन": false
       },
-      "correctAnswer": "Pretoria"
+      "correctAnswer": "प्रिटोरिया",
+      "id": "culture_0030"
     },
     {
       "question": "यूरोप का सबसे बड़ा देश कौन सा है?",
@@ -338,7 +379,8 @@
         "स्पेन": false,
         "जर्मनी": false
       },
-      "correctAnswer": "L'Ukraine"
+      "correctAnswer": "यूक्रेन",
+      "id": "culture_0031"
     },
     {
       "question": "यूक्रेन की राजधानी क्या है?",
@@ -348,7 +390,8 @@
         "ओडेसा": false,
         "Dnipro": false
       },
-      "correctAnswer": "Kiev"
+      "correctAnswer": "कीव",
+      "id": "culture_0032"
     },
     {
       "question": "मिस्र की राजधानी क्या है?",
@@ -358,7 +401,8 @@
         "गीज़ा": false,
         "लक्सर": false
       },
-      "correctAnswer": "Le Caire"
+      "correctAnswer": "काहिरा",
+      "id": "culture_0033"
     },
     {
       "question": "कनाडा की राजधानी क्या है?",
@@ -368,7 +412,8 @@
         "मॉन्ट्रियल": false,
         "वैंकूवर": false
       },
-      "correctAnswer": "Ottawa"
+      "correctAnswer": "ओटावा",
+      "id": "culture_0034"
     },
     {
       "question": "ओशिनिया का सबसे बड़ा देश कौन सा है?",
@@ -378,7 +423,8 @@
         "न्यूज़ीलैंड": false,
         "फ़िजी": false
       },
-      "correctAnswer": "L'Australie"
+      "correctAnswer": "ऑस्ट्रेलिया",
+      "id": "culture_0035"
     },
     {
       "question": "न्यूजीलैंड की राजधानी क्या है?",
@@ -388,7 +434,8 @@
         "क्राइस्टचर्च": false,
         "हैमिल्टन": false
       },
-      "correctAnswer": "Wellington"
+      "correctAnswer": "वेलिंग्टन",
+      "id": "culture_0036"
     },
     {
       "question": "निकारागुआ की राजधानी क्या है?",
@@ -398,7 +445,8 @@
         "ग्रेनेडा": false,
         "मोसाया": false
       },
-      "correctAnswer": "Managua"
+      "correctAnswer": "मानागुआ",
+      "id": "culture_0037"
     },
     {
       "question": "कैरेबियन में सबसे बड़ा देश कौन सा है?",
@@ -408,7 +456,8 @@
         "Hispaniola": false,
         "प्यूर्टो रिको": false
       },
-      "correctAnswer": "Cuba"
+      "correctAnswer": "क्यूबा",
+      "id": "culture_0038"
     },
     {
       "question": "क्यूबा की राजधानी क्या है?",
@@ -418,7 +467,8 @@
         "कामागुए": false,
         "होल्गुइन": false
       },
-      "correctAnswer": "La Havane"
+      "correctAnswer": "हवाना",
+      "id": "culture_0039"
     },
     {
       "question": "अर्जेंटीना की राजधानी क्या है?",
@@ -428,7 +478,8 @@
         "रोसारियो": false,
         "मेंडोज़ा": false
       },
-      "correctAnswer": "Buenos Aires"
+      "correctAnswer": "ब्यूनस आयर्स",
+      "id": "culture_0040"
     },
     {
       "question": "नाइजीरिया की राजधानी क्या है?",
@@ -438,7 +489,8 @@
         "कानो": false,
         "इबादन": false
       },
-      "correctAnswer": "Abuja"
+      "correctAnswer": "अबुजा",
+      "id": "culture_0041"
     },
     {
       "question": "इंडोनेशिया की राजधानी क्या है?",
@@ -448,7 +500,8 @@
         "बांडुंग": false,
         "मेडन": false
       },
-      "correctAnswer": "Jakarta"
+      "correctAnswer": "जकार्ता",
+      "id": "culture_0042"
     },
     {
       "question": "रूस की राजधानी क्या है?",
@@ -458,7 +511,8 @@
         "नोवोसिबिर्स्क": false,
         "येकातेरिनबर्ग": false
       },
-      "correctAnswer": "Moscou"
+      "correctAnswer": "मास्को",
+      "id": "culture_0043"
     },
     {
       "question": "संयुक्त राज्य अमेरिका की राजधानी क्या है?",
@@ -468,7 +522,8 @@
         "लॉस एंजिल्स": false,
         "शिकागो": false
       },
-      "correctAnswer": "Washington D.C."
+      "correctAnswer": "वाशिंगटन डीसी।",
+      "id": "culture_0044"
     }
   ]
 }

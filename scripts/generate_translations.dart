@@ -1,5 +1,6 @@
 /// Script pour générer automatiquement les traductions de toutes les questions
 /// Usage: dart run scripts/generate_translations.dart
+library;
 import 'dart:io';
 import 'dart:convert';
 
@@ -207,6 +208,7 @@ String _simpleTranslate(String text, String targetLang) {
 String _escapeString(String str) {
   return '\'${str.replaceAll('\\', '\\\\').replaceAll('\'', '\\\'')}\'';
 }
+
 
 
 

@@ -10,7 +10,9 @@
       },
       "explanation": "सुंदियाता कीटा द्वारा स्थापित माली साम्राज्य, अफ्रीकी इतिहास के सबसे महान साम्राज्यों में से एक था।",
       "difficulty": "medium",
-      "subcategory": "Empires"
+      "subcategory": "Empires",
+      "id": "history_0000",
+      "correctAnswer": "माली साम्राज्य"
     },
     {
       "question": "माली साम्राज्य का सबसे प्रसिद्ध शासक कौन था?",
@@ -22,7 +24,9 @@
       },
       "explanation": "मनसा मौसा (1312-1337) को इतिहास का सबसे अमीर आदमी माना जाता है।",
       "difficulty": "easy",
-      "subcategory": "Souverains"
+      "subcategory": "Souverains",
+      "id": "history_0001",
+      "correctAnswer": "मनसा मौसा"
     },
     {
       "question": "माली साम्राज्य की राजधानी कौन सा शहर था?",
@@ -34,7 +38,9 @@
       },
       "explanation": "निआनी माली साम्राज्य की राजनीतिक राजधानी थी।",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "history_0002",
+      "correctAnswer": "निआनी"
     },
     {
       "question": "माली साम्राज्य का मुख्य निर्यात उत्पाद क्या था?",
@@ -46,7 +52,9 @@
       },
       "explanation": "माली का सोना इतना प्रचुर था कि इसने उस समय की विश्व अर्थव्यवस्था को प्रभावित किया।",
       "difficulty": "medium",
-      "subcategory": "Économie"
+      "subcategory": "Économie",
+      "id": "history_0003",
+      "correctAnswer": "सोना"
     },
     {
       "question": "माली साम्राज्य में कौन सा विश्वविद्यालय सबसे प्रतिष्ठित था?",
@@ -58,7 +66,9 @@
       },
       "explanation": "टिम्बकटू में सांकोरे विश्वविद्यालय शिक्षा का एक प्रसिद्ध केंद्र था।",
       "difficulty": "hard",
-      "subcategory": "Éducation"
+      "subcategory": "Éducation",
+      "id": "history_0004",
+      "correctAnswer": "सांकोरे विश्वविद्यालय"
     },
     {
       "question": "14वीं शताब्दी में किस अरब खोजकर्ता ने माली साम्राज्य का दौरा किया था?",
@@ -70,7 +80,9 @@
       },
       "explanation": "इब्न बतूता ने माली की अपनी यात्रा का विस्तृत विवरण छोड़ा।",
       "difficulty": "medium",
-      "subcategory": "Explorateurs"
+      "subcategory": "Explorateurs",
+      "id": "history_0005",
+      "correctAnswer": "इब्न बतूता"
     },
     {
       "question": "माली साम्राज्य का मुख्य धर्म कौन सा था?",
@@ -82,7 +94,9 @@
       },
       "explanation": "11वीं शताब्दी से माली साम्राज्य में इस्लाम का प्रसार हुआ।",
       "difficulty": "easy",
-      "subcategory": "Religion"
+      "subcategory": "Religion",
+      "id": "history_0006",
+      "correctAnswer": "इसलाम"
     },
     {
       "question": "माली साम्राज्य की शासन प्रणाली का क्या नाम था?",
@@ -94,7 +108,9 @@
       },
       "explanation": "माली साम्राज्य एक मनसा (राजा) द्वारा शासित राजशाही थी।",
       "difficulty": "medium",
-      "subcategory": "Politique"
+      "subcategory": "Politique",
+      "id": "history_0007",
+      "correctAnswer": "एकाधिपत्य"
     },
     {
       "question": "टिम्बकटू की संपत्ति का मुख्य स्रोत क्या था?",
@@ -106,7 +122,9 @@
       },
       "explanation": "टिम्बकटू उत्तरी अफ़्रीका और उप-सहारा अफ़्रीका के बीच एक प्रमुख व्यापारिक चौराहा था।",
       "difficulty": "medium",
-      "subcategory": "Commerce"
+      "subcategory": "Commerce",
+      "id": "history_0008",
+      "correctAnswer": "ट्रांस-सहारन व्यापार"
     },
     {
       "question": "उस राजवंश का क्या नाम था जिसने माली साम्राज्य की स्थापना की थी?",
@@ -118,7 +136,9 @@
       },
       "explanation": "कीता राजवंश ने माली साम्राज्य की स्थापना की और कई शताब्दियों तक शासन किया।",
       "difficulty": "hard",
-      "subcategory": "Dynasties"
+      "subcategory": "Dynasties",
+      "id": "history_0009",
+      "correctAnswer": "कीता"
     },
     {
       "question": "माली को किस वर्ष स्वतंत्रता प्राप्त हुई?",
@@ -128,7 +148,8 @@
         "1962": false,
         "1965": false
       },
-      "correctAnswer": "1960"
+      "correctAnswer": "1960",
+      "id": "history_0010"
     },
     {
       "question": "पश्चिमी अफ़्रीका पर प्रभुत्व रखने वाले मध्यकालीन साम्राज्य का क्या नाम था?",
@@ -138,7 +159,8 @@
         "सोंगहाई साम्राज्य": false,
         "कनीम का साम्राज्य": false
       },
-      "correctAnswer": "Empire du Mali"
+      "correctAnswer": "माली साम्राज्य",
+      "id": "history_0011"
     },
     {
       "question": "माली साम्राज्य का सबसे प्रसिद्ध सम्राट कौन था?",
@@ -148,7 +170,8 @@
         "सोनी अली": false,
         "अस्किया मोहम्मद": false
       },
-      "correctAnswer": "Mansa Moussa"
+      "correctAnswer": "मनसा मौसा",
+      "id": "history_0012"
     },
     {
       "question": "मनसा मूसा ने मक्का की प्रसिद्ध तीर्थयात्रा किस वर्ष की थी?",
@@ -158,7 +181,8 @@
         "1350": false,
         "1400": false
       },
-      "correctAnswer": "1324"
+      "correctAnswer": "1324",
+      "id": "history_0013"
     },
     {
       "question": "कौन सी नदी माली को उत्तर से दक्षिण तक पार करती है?",
@@ -168,7 +192,8 @@
         "कांगो": false,
         "नील नदी": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "नाइजर",
+      "id": "history_0014"
     },
     {
       "question": "मालियान के किस शहर को \"रेगिस्तान का मोती\" उपनाम दिया गया है?",
@@ -178,7 +203,8 @@
         "गाओ": false,
         "मोप्ति": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "टिम्बकटू",
+      "id": "history_0015"
     },
     {
       "question": "स्वतंत्र माली के प्रथम राष्ट्रपति कौन थे?",
@@ -188,7 +214,8 @@
         "अल्फ़ा उमर कोनारे": false,
         "अमादौ तौमानी तूरे": false
       },
-      "correctAnswer": "Modibo Keita"
+      "correctAnswer": "मोदिबो कीता",
+      "id": "history_0016"
     },
     {
       "question": "माली में लोकतंत्र किस वर्ष पुनः स्थापित हुआ?",
@@ -198,7 +225,8 @@
         "1992": true,
         "1993": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0017"
     },
     {
       "question": "जेने की महान मस्जिद का क्या नाम है?",
@@ -208,7 +236,8 @@
         "शाही मस्जिद": false,
         "केंद्रीय मस्जिद": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "जेने की महान मस्जिद",
+      "id": "history_0018"
     },
     {
       "question": "माली साम्राज्य से पहले के साम्राज्य का क्या नाम था?",
@@ -218,7 +247,8 @@
         "कनीम का साम्राज्य": false,
         "बोर्नु साम्राज्य": false
       },
-      "correctAnswer": "Empire du Ghana"
+      "correctAnswer": "घाना का साम्राज्य",
+      "id": "history_0019"
     },
     {
       "question": "मनसा मौसा का उपनाम क्या था?",
@@ -228,7 +258,8 @@
         "विजेता": false,
         "समझदार": false
       },
-      "correctAnswer": "Le Roi des Rois"
+      "correctAnswer": "राजाओं का राजा",
+      "id": "history_0020"
     },
     {
       "question": "माली साम्राज्य का मुख्य आर्थिक संसाधन क्या था?",
@@ -238,7 +269,8 @@
         "गुलाम": false,
         "ताँबा": false
       },
-      "correctAnswer": "L'or"
+      "correctAnswer": "सोना",
+      "id": "history_0021"
     },
     {
       "question": "स्वतंत्र माली की पहली राजधानी का क्या नाम था?",
@@ -248,7 +280,8 @@
         "सेगौ": false,
         "मोप्ति": false
       },
-      "correctAnswer": "Bamako"
+      "correctAnswer": "बमाको",
+      "id": "history_0022"
     },
     {
       "question": "माली साम्राज्य किस वर्ष अपने चरम पर पहुंचा?",
@@ -258,7 +291,8 @@
         "15वीं सदी": false,
         "16वीं सदी": false
       },
-      "correctAnswer": "XIVe siecle"
+      "correctAnswer": "14 वीं शताब्दी",
+      "id": "history_0023"
     },
     {
       "question": "कौन सा शहर माली साम्राज्य का सबसे महत्वपूर्ण वाणिज्यिक केंद्र था?",
@@ -268,7 +302,8 @@
         "Djenné": false,
         "निआनी": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "टिम्बकटू",
+      "id": "history_0024"
     },
     {
       "question": "टिम्बकटू में सबसे प्रसिद्ध विश्वविद्यालय का क्या नाम था?",
@@ -278,7 +313,8 @@
         "कॉर्डोबा विश्वविद्यालय": false,
         "फ़ेज़ विश्वविद्यालय": false
       },
-      "correctAnswer": "Universite Sankore"
+      "correctAnswer": "सांकोर विश्वविद्यालय",
+      "id": "history_0025"
     },
     {
       "question": "माली साम्राज्य के प्रथम सम्राट का क्या नाम था?",
@@ -288,7 +324,8 @@
         "सोनी अली": false,
         "अस्किया मोहम्मद": false
       },
-      "correctAnswer": "Sundiata Keita"
+      "correctAnswer": "सुंदियाता कीता",
+      "id": "history_0026"
     },
     {
       "question": "सुंदियाता कीता ने माली साम्राज्य की स्थापना किस वर्ष की थी?",
@@ -298,7 +335,8 @@
         "1250": false,
         "1300": false
       },
-      "correctAnswer": "1235"
+      "correctAnswer": "1235",
+      "id": "history_0027"
     },
     {
       "question": "उस युद्ध का क्या नाम था जिसने सुंदियाता को सत्ता पर कब्ज़ा करने की अनुमति दी?",
@@ -308,7 +346,8 @@
         "कौलिकोरो की लड़ाई": false,
         "सेगौ की लड़ाई": false
       },
-      "correctAnswer": "Bataille de Kirina"
+      "correctAnswer": "किरिना की लड़ाई",
+      "id": "history_0028"
     },
     {
       "question": "माली साम्राज्य के उत्तराधिकारी साम्राज्य का क्या नाम था?",
@@ -318,7 +357,8 @@
         "कनीम का साम्राज्य": false,
         "बोर्नु साम्राज्य": false
       },
-      "correctAnswer": "Empire Songhai"
+      "correctAnswer": "सोंगहाई साम्राज्य",
+      "id": "history_0029"
     },
     {
       "question": "लोकतांत्रिक ढंग से चुने गए पहले मालियन राष्ट्रपति का क्या नाम था?",
@@ -328,7 +368,8 @@
         "मौसा ट्रोरे": false,
         "अमादौ तौमानी तूरे": false
       },
-      "correctAnswer": "Alpha Oumar Konare"
+      "correctAnswer": "अल्फ़ा उमर कोनारे",
+      "id": "history_0030"
     },
     {
       "question": "अल्फ़ा उमर कोनारे किस वर्ष राष्ट्रपति चुने गए थे?",
@@ -338,7 +379,8 @@
         "1993": false,
         "1994": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0031"
     },
     {
       "question": "1992 में माली में अपनाए गए संविधान का क्या नाम था?",
@@ -348,7 +390,8 @@
         "चौथे गणतंत्र का संविधान": false,
         "लोकतांत्रिक संविधान": false
       },
-      "correctAnswer": "Constitution de la IIIe Republique"
+      "correctAnswer": "तीसरे गणतंत्र का संविधान",
+      "id": "history_0032"
     },
     {
       "question": "लोकतांत्रिक परिवर्तन का नेतृत्व करने वाले मालियान प्रधान मंत्री का क्या नाम था?",
@@ -358,7 +401,8 @@
         "अल्फ़ा उमर कोनारे": false,
         "अमादौ तौमानी तूरे": false
       },
-      "correctAnswer": "Soumana Sacko"
+      "correctAnswer": "सौमाना सैको",
+      "id": "history_0033"
     },
     {
       "question": "माली के उस क्षेत्र का क्या नाम था जो माली साम्राज्य का उद्गम स्थल था?",
@@ -368,7 +412,8 @@
         "गाओ क्षेत्र": false,
         "सेगौ क्षेत्र": false
       },
-      "correctAnswer": "Region de Kayes"
+      "correctAnswer": "कायेस क्षेत्र",
+      "id": "history_0034"
     },
     {
       "question": "उस शहर का क्या नाम था जो माली साम्राज्य की धार्मिक राजधानी थी?",
@@ -378,7 +423,8 @@
         "गाओ": false,
         "निआनी": false
       },
-      "correctAnswer": "Djenne"
+      "correctAnswer": "Djenné",
+      "id": "history_0035"
     },
     {
       "question": "पश्चिम अफ़्रीका की सबसे पुरानी मस्जिद का क्या नाम था?",
@@ -388,7 +434,8 @@
         "गाओ मस्जिद": false,
         "बमाको मस्जिद": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "जेने की महान मस्जिद",
+      "id": "history_0036"
     },
     {
       "question": "जेने की महान मस्जिद किस वर्ष बनाई गई थी?",
@@ -398,7 +445,8 @@
         "15वीं सदी": false,
         "16वीं सदी": false
       },
-      "correctAnswer": "XIIIe siecle"
+      "correctAnswer": "13वीं सदी",
+      "id": "history_0037"
     },
     {
       "question": "माली साम्राज्य की आधिकारिक भाषा का क्या नाम था?",
@@ -408,7 +456,8 @@
         "सोंगहाई": false,
         "फुलानी": false
       },
-      "correctAnswer": "Le mandingue"
+      "correctAnswer": "द मैंडिंगो",
+      "id": "history_0038"
     },
     {
       "question": "माली साम्राज्य में प्रयुक्त मुद्रा का क्या नाम था?",
@@ -418,7 +467,8 @@
         "फ़्रैंक": false,
         "दिरहम": false
       },
-      "correctAnswer": "Le cowrie"
+      "correctAnswer": "कौड़ी",
+      "id": "history_0039"
     },
     {
       "question": "माली साम्राज्य को पार करने वाले व्यापार मार्ग का क्या नाम था?",
@@ -428,7 +478,8 @@
         "ट्रांस-सहारन मार्ग": true,
         "सिल्क रोड": false
       },
-      "correctAnswer": "Route transsaharienne"
+      "correctAnswer": "ट्रांस-सहारन मार्ग",
+      "id": "history_0040"
     },
     {
       "question": "उस शहर का क्या नाम था जो माली साम्राज्य के लिए शिक्षा का केंद्र था?",
@@ -438,7 +489,8 @@
         "गाओ": false,
         "निआनी": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "टिम्बकटू",
+      "id": "history_0041"
     },
     {
       "question": "टिम्बकटू में सबसे प्रसिद्ध पुस्तकालय का क्या नाम था?",
@@ -448,7 +500,8 @@
         "अल-अजहर पुस्तकालय": false,
         "कॉर्डोबा लाइब्रेरी": false
       },
-      "correctAnswer": "Bibliotheque Ahmed Baba"
+      "correctAnswer": "अहमद बाबा लाइब्रेरी",
+      "id": "history_0042"
     },
     {
       "question": "16वीं शताब्दी के सबसे प्रसिद्ध मालियन इतिहासकार का क्या नाम था?",
@@ -458,7 +511,8 @@
         "अल बाकरी": false,
         "इब्न बतूता": false
       },
-      "correctAnswer": "Ahmed Baba"
+      "correctAnswer": "अहमद बाबा",
+      "id": "history_0043"
     },
     {
       "question": "उस शहर का क्या नाम था जो माली साम्राज्य का सैन्य केंद्र था?",
@@ -468,7 +522,8 @@
         "Djenné": false,
         "निआनी": false
       },
-      "correctAnswer": "Gao"
+      "correctAnswer": "गाओ",
+      "id": "history_0044"
     },
     {
       "question": "सोनी वंश के प्रथम सम्राट का क्या नाम था?",
@@ -478,7 +533,8 @@
         "सोनी सुलेमान": false,
         "सोनी मोहम्मद": false
       },
-      "correctAnswer": "Sonni Ali"
+      "correctAnswer": "सोनी अली",
+      "id": "history_0045"
     },
     {
       "question": "सोनी अली ने किस वर्ष टिम्बकटू पर विजय प्राप्त की?",
@@ -488,7 +544,8 @@
         "1470": false,
         "1475": false
       },
-      "correctAnswer": "1468"
+      "correctAnswer": "1468",
+      "id": "history_0046"
     },
     {
       "question": "उस शहर का क्या नाम था जो माली साम्राज्य का प्रशासनिक केंद्र था?",
@@ -498,7 +555,8 @@
         "गाओ": false,
         "Djenné": false
       },
-      "correctAnswer": "Niani"
+      "correctAnswer": "निआनी",
+      "id": "history_0047"
     },
     {
       "question": "उस क्षेत्र का क्या नाम था जो माली साम्राज्य का गढ़ था?",
@@ -508,7 +566,8 @@
         "सिकासो क्षेत्र": false,
         "कौलिकोरो क्षेत्र": false
       },
-      "correctAnswer": "Region de Segou"
+      "correctAnswer": "सेगौ क्षेत्र",
+      "id": "history_0048"
     },
     {
       "question": "उस शहर का क्या नाम था जो माली साम्राज्य का सांस्कृतिक केंद्र था?",
@@ -518,7 +577,8 @@
         "गाओ": false,
         "निआनी": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "टिम्बकटू",
+      "id": "history_0049"
     },
     {
       "question": "20वीं सदी के सबसे प्रसिद्ध मालियन लेखक का क्या नाम था?",
@@ -528,7 +588,8 @@
         "अल्फ़ा उमर कोनारे": false,
         "अमादौ तौमानी तूरे": false
       },
-      "correctAnswer": "Amadou Hampate Ba"
+      "correctAnswer": "अमादौ हंपते बा",
+      "id": "history_0050"
     },
     {
       "question": "अमादौ हम्पते बा की सबसे प्रसिद्ध कृति का क्या नाम था?",
@@ -538,7 +599,8 @@
         "फुलानी की यादें": false,
         "किस्से और किंवदंतियां": false
       },
-      "correctAnswer": "L'Etrange Destin de Wangrin"
+      "correctAnswer": "वांग्रिन का अजीब भाग्य",
+      "id": "history_0051"
     }
   ]
 }

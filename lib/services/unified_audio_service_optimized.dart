@@ -1,5 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'cached_preferences_service.dart';
+import 'settings_service.dart';
 
 /// ⚡ Service Audio Optimisé - Fix ANR audioplayers
 ///
@@ -24,7 +25,7 @@ class UnifiedAudioServiceOptimized {
   bool _soundEnabled = true;
   bool _backgroundMusicEnabled = true;
   double _masterVolume = 1.0;
-  double _backgroundVolume = 0.2; // ✅ Réduit de 0.3 à 0.2 (standard jeux)
+  double _backgroundVolume = SettingsService.defaultBackgroundVolume;
   double _effectVolume = 0.7;
   bool _isAdPlaying = false;
   bool _wasPlayingBeforeAd = false; // ✅ Pour mémoriser l'état avant publicité
@@ -85,7 +86,7 @@ class UnifiedAudioServiceOptimized {
       );
       _backgroundVolume = await CachedPreferencesService.getDouble(
         'background_volume',
-        defaultValue: 0.3,
+        defaultValue: SettingsService.defaultBackgroundVolume,
       );
       _effectVolume = await CachedPreferencesService.getDouble(
         'effect_volume',
@@ -341,8 +342,13 @@ class UnifiedAudioServiceOptimized {
       // ✅ Relancer UNIQUEMENT si la musique jouait avant ET si toujours activée
       _isAdPlaying = false;
       if (_wasPlayingBeforeAd && _backgroundMusicEnabled) {
-        print('[AudioServiceOpt] 📺 Pub terminée - Relance musique');
-        playBackgroundMusic();
+        print('[AudioServiceOpt] 📺 Pub terminée - Relance musique dans 500ms');
+        // ✅ Ajouter un délai pour éviter les conflits audio
+        Future.delayed(const Duration(milliseconds: 500), () {
+          if (_backgroundMusicEnabled && !_isAdPlaying) {
+            playBackgroundMusic();
+          }
+        });
       } else {
         print('[AudioServiceOpt] 📺 Pub terminée - Musique reste éteinte');
       }

@@ -13,7 +13,8 @@
         "explanation": "L'Accord de Paris vise à maintenir l'augmentation de la température mondiale en dessous de 2°C, idéalement à 1,5°C.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Changement Climatique"
+        "subcategory": "Changement Climatique",
+        "id": "environment_0000"
       },
       {
         "question": "Quel gaz à effet de serre est le plus abondant dans l'atmosphère ?",
@@ -27,7 +28,8 @@
         "explanation": "Le CO2 représente environ 76% des émissions de gaz à effet de serre d'origine humaine.",
         "difficulty": "easy",
         "category": "Environnement et Écologie",
-        "subcategory": "Changement Climatique"
+        "subcategory": "Changement Climatique",
+        "id": "environment_0001"
       },
       {
         "question": "Quelle activité humaine contribue le plus au changement climatique ?",
@@ -41,7 +43,8 @@
         "explanation": "La combustion de charbon, pétrole et gaz naturel est responsable de 73% des émissions mondiales de GES.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Changement Climatique"
+        "subcategory": "Changement Climatique",
+        "id": "environment_0002"
       },
       {
         "question": "Quel continent est le plus affecté par la désertification ?",
@@ -55,7 +58,8 @@
         "explanation": "L'Afrique est particulièrement vulnérable à la désertification, notamment dans la région du Sahel.",
         "difficulty": "easy",
         "category": "Environnement et Écologie",
-        "subcategory": "Changement Climatique"
+        "subcategory": "Changement Climatique",
+        "id": "environment_0003"
       }
     ],
     "Biodiversité Africaine": [
@@ -71,7 +75,8 @@
         "explanation": "Le Parc de Namib-Naukluft couvre 49 768 km², ce qui en fait le plus grand parc d'Afrique.",
         "difficulty": "hard",
         "category": "Environnement et Écologie",
-        "subcategory": "Biodiversité Africaine"
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0004"
       },
       {
         "question": "Combien d'espèces d'éléphants existe-t-il en Afrique ?",
@@ -85,7 +90,8 @@
         "explanation": "Il existe deux espèces d'éléphants africains : l'éléphant de savane et l'éléphant de forêt.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Biodiversité Africaine"
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0005"
       },
       {
         "question": "Quel animal africain peut vivre plus longtemps sans eau ?",
@@ -99,7 +105,8 @@
         "explanation": "L'oryx peut survivre plusieurs mois sans boire, en tirant l'eau de sa nourriture.",
         "difficulty": "hard",
         "category": "Environnement et Écologie",
-        "subcategory": "Biodiversité Africaine"
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0006"
       },
       {
         "question": "Quel est l'oiseau national du Kenya ?",
@@ -113,7 +120,8 @@
         "explanation": "Le coq de roche (lilac-breasted roller) est l'oiseau national du Kenya, connu pour ses couleurs vives.",
         "difficulty": "hard",
         "category": "Environnement et Écologie",
-        "subcategory": "Biodiversité Africaine"
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0007"
       }
     ],
     "Énergies Renouvelables": [
@@ -129,7 +137,8 @@
         "explanation": "Le Maroc abrite le complexe solaire de Noor Ouarzazate, l'une des plus grandes centrales solaires au monde.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Énergies Renouvelables"
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0008"
       },
       {
         "question": "Qu'est-ce que l'énergie géothermique ?",
@@ -143,7 +152,8 @@
         "explanation": "L'énergie géothermique utilise la chaleur stockée sous la surface terrestre.",
         "difficulty": "easy",
         "category": "Environnement et Écologie",
-        "subcategory": "Énergies Renouvelables"
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0009"
       },
       {
         "question": "Quel pays africain a le plus grand potentiel hydroélectrique ?",
@@ -157,7 +167,8 @@
         "explanation": "La RDC possède le plus grand potentiel hydroélectrique d'Afrique grâce au fleuve Congo.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Énergies Renouvelables"
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0010"
       }
     ],
     "Pollution et Déchets": [
@@ -173,7 +184,8 @@
         "explanation": "Un sac plastique met entre 100 et 400 ans à se décomposer complètement dans la nature.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Pollution et Déchets"
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0011"
       },
       {
         "question": "Quel pays africain a été le premier à interdire les sacs plastiques ?",
@@ -187,7 +199,8 @@
         "explanation": "Le Rwanda a interdit les sacs plastiques en 2008, devenant un leader africain dans ce domaine.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Pollution et Déchets"
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0012"
       },
       {
         "question": "Qu'est-ce que le 'continent de plastique' dans l'océan Pacifique ?",
@@ -201,7 +214,8 @@
         "explanation": "Le 'Great Pacific Garbage Patch' est une zone de plusieurs millions de km² de déchets plastiques flottants.",
         "difficulty": "easy",
         "category": "Environnement et Écologie",
-        "subcategory": "Pollution et Déchets"
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0013"
       }
     ]
   }

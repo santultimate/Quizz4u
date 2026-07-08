@@ -2,106 +2,113 @@
   "Santé et Médecine": {
     "Maladies Tropicales": [
       {
-        "question": "Quel moustique transmet le paludisme (malaria) ?",
+        "question": "哪种蚊子传播疟疾？",
         "options": [
-          "Anophèle",
-          "Aedes",
-          "Culex",
-          "Tigre"
+          "按蚊",
+          "伊蚊",
+          "库蚊",
+          "老虎"
         ],
-        "correctAnswer": "Anophèle",
-        "explanation": "Le moustique anophèle femelle transmet le parasite Plasmodium responsable du paludisme.",
+        "correctAnswer": "按蚊",
+        "explanation": "雌性按蚊传播导致疟疾的疟原虫寄生虫。",
         "difficulty": "medium",
-        "category": "健康与医学",
-        "subcategory": "Maladies Tropicales"
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
-        "question": "Quelle maladie est causée par le virus Ebola ?",
+        "question": "埃博拉病毒引起什么疾病？",
         "options": [
-          "Fièvre hémorragique",
-          "Paludisme",
-          "Tuberculose",
-          "Choléra"
+          "出血热",
+          "疟疾",
+          "结核",
+          "霍乱"
         ],
-        "correctAnswer": "Fièvre hémorragique",
-        "explanation": "Le virus Ebola cause une fièvre hémorragique grave avec un taux de mortalité élevé.",
+        "correctAnswer": "出血热",
+        "explanation": "埃博拉病毒会引起严重的出血热，死亡率很高。",
         "difficulty": "easy",
-        "category": "健康与医学",
-        "subcategory": "Maladies Tropicales"
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
-        "question": "Quel pays africain a été déclaré exempt de polio en 2020 ?",
+        "question": "哪个非洲国家在 2020 年宣布消灭脊髓灰质炎？",
         "options": [
-          "Nigeria",
-          "Kenya",
-          "Afrique du Sud",
-          "Égypte"
+          "尼日利亚",
+          "肯尼亚",
+          "南非",
+          "埃及"
         ],
-        "correctAnswer": "Nigeria",
-        "explanation": "Le Nigeria a été déclaré exempt de polio sauvage en août 2020, marquant une grande victoire.",
+        "correctAnswer": "尼日利亚",
+        "explanation": "尼日利亚于 2020 年 8 月宣布消除野生脊髓灰质炎，这是一项重大胜利。",
         "difficulty": "hard",
-        "category": "健康与医学",
-        "subcategory": "Maladies Tropicales"
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
       {
-        "question": "Quel arbre africain est utilisé pour traiter la fièvre et les douleurs ?",
+        "question": "哪种非洲树用于治疗发烧和疼痛？",
         "options": [
-          "Quinquina",
-          "Baobab",
-          "Moringa",
-          "Karité"
+          "金鸡纳",
+          "猴面包树",
+          "辣木",
+          "乳木果"
         ],
-        "correctAnswer": "Quinquina",
-        "explanation": "L'écorce du quinquina contient de la quinine, utilisée contre le paludisme.",
+        "correctAnswer": "金鸡纳",
+        "explanation": "金鸡纳树的树皮含有奎宁，可用于对抗疟疾。",
         "difficulty": "medium",
-        "category": "健康与医学",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
-        "question": "Quel fruit du baobab est riche en vitamine C ?",
+        "question": "哪种猴面包树果实富含维生素C？",
         "options": [
-          "Le pain de singe",
-          "La datte",
-          "La mangue",
-          "La papaye"
+          "猴面包",
+          "日期",
+          "芒果",
+          "木瓜"
         ],
-        "correctAnswer": "Le pain de singe",
-        "explanation": "Le fruit du baobab (pain de singe) contient 6 fois plus de vitamine C qu'une orange.",
+        "correctAnswer": "猴面包",
+        "explanation": "猴面包树果（猴面包）含有的维生素 C 是橙子的 6 倍。",
         "difficulty": "medium",
-        "category": "健康与医学",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
     "Nutrition et Santé": [
       {
-        "question": "Quelle céréale africaine est naturellement sans gluten ?",
+        "question": "哪种非洲谷物天然不含麸质？",
         "options": [
-          "Le fonio",
-          "Le blé",
-          "L'orge",
-          "Le seigle"
+          "福尼奥",
+          "小麦",
+          "大麦",
+          "黑麦"
         ],
-        "correctAnswer": "Le fonio",
-        "explanation": "Le fonio est une céréale ancestrale africaine, nutritive et sans gluten.",
+        "correctAnswer": "福尼奥",
+        "explanation": "福尼奥 (Fonio) 是一种祖传的非洲谷物，营养丰富且不含麸质。",
         "difficulty": "medium",
-        "category": "健康与医学",
-        "subcategory": "Nutrition et Santé"
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
-        "question": "Combien de litres d'eau doit-on boire par jour en moyenne ?",
+        "question": "我们平均每天应该喝多少升水？",
         "options": [
-          "1,5 à 2 litres",
-          "3 à 4 litres",
-          "0,5 à 1 litre",
-          "5 litres"
+          "1.5至2升",
+          "3至4升",
+          "0.5至1升",
+          "5升"
         ],
-        "correctAnswer": "1,5 à 2 litres",
-        "explanation": "Il est recommandé de boire environ 1,5 à 2 litres d'eau par jour pour rester hydraté.",
+        "correctAnswer": "1.5至2升",
+        "explanation": "建议每天喝 1.5 至 2 升左右的水以保持水分。",
         "difficulty": "easy",
-        "category": "健康与医学",
-        "subcategory": "Nutrition et Santé"
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

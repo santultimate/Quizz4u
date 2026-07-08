@@ -9,6 +9,7 @@
 /// - 🇨🇳 中文 (Chinois Mandarin)
 /// - 🇮🇳 हिन्दी (Hindi)
 /// - 🇪🇸 Español (Espagnol)
+library;
 
 class SciencePhase11Translations {
   static const Map<String, Map<String, dynamic>> translations = {
@@ -853,6 +854,7 @@ class SciencePhase11Translations {
     },
   };
 }
+
 
 
 

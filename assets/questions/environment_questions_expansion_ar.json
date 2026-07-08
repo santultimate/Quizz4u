@@ -1,80 +1,85 @@
 {
-  "البيئة والإيكولوجيا": {
+  "Environnement et Écologie": {
     "Changement Climatique": [
       {
-        "question": "ما هو l'objectif رئيسي من l'Accord من Paris (2015) ?",
+        "question": "ما هو الهدف الرئيسي لاتفاق باريس (2015)؟",
         "options": [
-          "Limiter ال réchauffement à 1,5°C",
-          "Éliminer جميع ال combustibles fossiles",
-          "Planter 1 مليار d'arbres",
-          "Interdire ال plastiques"
+          "الحد من ارتفاع درجة الحرارة إلى 1.5 درجة مئوية",
+          "القضاء على جميع أنواع الوقود الأحفوري",
+          "زراعة 1 مليار شجرة",
+          "حظر البلاستيك"
         ],
-        "correctAnswer": "Limiter ال réchauffement à 1,5°C",
-        "explanation": "L'Accord من Paris vise à maintenir l'augmentation من ال درجة الحرارة mondiale en dessous من 2°C, idéalement à 1,5°C.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "الحد من ارتفاع درجة الحرارة إلى 1.5 درجة مئوية",
+        "explanation": "ويهدف اتفاق باريس إلى إبقاء ارتفاع درجة الحرارة العالمية أقل من درجتين مئويتين، ومن الناحية المثالية 1.5 درجة مئوية.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0000"
       },
       {
-        "question": "Quel gaz à effet من serre هو ال أكثر abondant في l'atmosphère ?",
+        "question": "ما هو غاز الدفيئة الأكثر وفرة في الغلاف الجوي؟",
         "options": [
-          "Dioxyde من carbone (CO2)",
-          "Méthane (CH4)",
-          "Protoxyde d'azote (N2O)",
-          "Ozone (O3)"
+          "ثاني أكسيد الكربون (CO2)",
+          "الميثان (CH4)",
+          "أكسيد النيتروز (N2O)",
+          "الأوزون (O3)"
         ],
-        "correctAnswer": "Dioxyde من carbone (CO2)",
-        "explanation": "Le CO2 يمثل environ 76% des émissions من gaz à effet من serre من الذهبigine humaine.",
-        "difficulty": "سهل",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "ثاني أكسيد الكربون (CO2)",
+        "explanation": "يمثل ثاني أكسيد الكربون حوالي 76% من انبعاثات الغازات الدفيئة التي يسببها الإنسان.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0001"
       },
       {
-        "question": "Quelle activité humaine contribue ال أكثر إلى ال changement climatique ?",
+        "question": "ما هو النشاط البشري الذي يساهم أكثر في تغير المناخ؟",
         "options": [
-          "Combustion من combustibles fossiles",
-          "Agriculture",
-          "Déforestation",
-          "Transport aérien"
+          "احتراق الوقود الأحفوري",
+          "زراعة",
+          "إزالة الغابات",
+          "النقل الجوي"
         ],
-        "correctAnswer": "Combustion من combustibles fossiles",
-        "explanation": "La combustion من charbon, pétrole و gaz naturel هو responsable من 73% des émissions mondiales من GES.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "احتراق الوقود الأحفوري",
+        "explanation": "يعد احتراق الفحم والنفط والغاز الطبيعي مسؤولاً عن 73% من انبعاثات الغازات الدفيئة على مستوى العالم.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0002"
       },
       {
-        "question": "Quel قارة هو ال أكثر affecté بواسطة ال désertification ?",
+        "question": "ما هي القارة الأكثر تضررا من التصحر؟",
         "options": [
-          "Afrique",
-          "Asie",
-          "Amérique من ال Sud",
-          "Australie"
+          "أفريقيا",
+          "آسيا",
+          "أمريكا الجنوبية",
+          "أستراليا"
         ],
-        "correctAnswer": "Afrique",
-        "explanation": "أفريقيا هو particulièrement vulnérable à ال désertification, notamment في ال منطقة من ال Sahel.",
-        "difficulty": "سهل",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "أفريقيا",
+        "explanation": "أفريقيا معرضة بشكل خاص للتصحر، وخاصة في منطقة الساحل.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0003"
       }
     ],
     "Biodiversité Africaine": [
       {
-        "question": "ما هو ال أكثر كبير parc national من أفريقيا ?",
+        "question": "ما هي أكبر حديقة وطنية في أفريقيا؟",
         "options": [
-          "Parc National من Namib-Naukluft (Namibie)",
-          "Parc Kruger (Afrique من ال Sud)",
-          "Parc Serengeti (Tanzanie)",
-          "Parc Etosha (Namibie)"
+          "حديقة ناميب نوكلوفت الوطنية (ناميبيا)",
+          "كروجر بارك (جنوب أفريقيا)",
+          "حديقة سيرينجيتي (تنزانيا)",
+          "إيتوشا بارك (ناميبيا)"
         ],
-        "correctAnswer": "Parc National من Namib-Naukluft (Namibie)",
-        "explanation": "Le Parc من Namib-Naukluft couvre 49 768 km², هذا الذي en فعل ال أكثر كبير parc من أفريقيا.",
-        "difficulty": "صعب",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "حديقة ناميب نوكلوفت الوطنية (ناميبيا)",
+        "explanation": "تبلغ مساحة حديقة ناميب نوكلوفت 49.768 كيلومتر مربع، مما يجعلها أكبر حديقة في أفريقيا.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0004"
       },
       {
-        "question": "كم d'espèهؤلاء d'éléphants existe-t-هو en Afrique ?",
+        "question": "كم عدد أنواع الفيلة الموجودة في أفريقيا؟",
         "options": [
           "2",
           "1",
@@ -82,126 +87,135 @@
           "4"
         ],
         "correctAnswer": "2",
-        "explanation": "Il existe اثنان espèهؤلاء d'éléphants africains : l'éléphant من savane و l'éléphant من forêt.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Biodiversité Africaine"
+        "explanation": "هناك نوعان من الفيلة الأفريقية: فيل السافانا وفيل الغابة.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0005"
       },
       {
-        "question": "Quel animal africain يمكن vivre أكثر longtemps بدون eau ?",
+        "question": "ما هو الحيوان الأفريقي الذي يمكنه العيش لفترة أطول بدون ماء؟",
         "options": [
-          "La girafe",
-          "Le chameau",
-          "الذهبyx",
-          "Le dromadaire"
+          "الزرافة",
+          "الجمل",
+          "المها",
+          "الجمل"
         ],
-        "correctAnswer": "الذهبyx",
-        "explanation": "الذهبyx يمكن survivre عدة شهر بدون boire, en tirant الماء من لها nourriture.",
-        "difficulty": "صعب",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "المها",
+        "explanation": "يستطيع المها البقاء على قيد الحياة لعدة أشهر دون أن يشرب، ويحصل على الماء من طعامه.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0006"
       },
       {
-        "question": "ما هو l'oiseau national من ال Kenya ?",
+        "question": "ما هو الطائر الوطني لكينيا؟",
         "options": [
-          "Le coq من roche",
-          "L'aigle martial",
-          "Le calao terrestre",
-          "Le flamant rose"
+          "الديك الصخرة",
+          "النسر العسكري",
+          "البوقير الأرض",
+          "الفلامنغو الوردي"
         ],
-        "correctAnswer": "Le coq من roche",
-        "explanation": "Le coq من roche (lilac-breasted roller) هو l'oiseau national من ال Kenya, معروف ل لهم couleurs vives.",
-        "difficulty": "صعب",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "الديك الصخرة",
+        "explanation": "يعتبر الطائر ذو الصدر الليلكي هو الطائر الوطني في كينيا، والمعروف بألوانه الزاهية.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0007"
       }
     ],
     "Énergies Renouvelables": [
       {
-        "question": "Quel بلد africain ينتج ال أكثر d'énergie solaire ?",
+        "question": "ما هي الدولة الأفريقية التي تنتج أكبر قدر من الطاقة الشمسية؟",
         "options": [
-          "Maroc",
-          "Afrique من ال Sud",
-          "Égypte",
-          "Algérie"
+          "المغرب",
+          "جنوب أفريقيا",
+          "مصر",
+          "الجزائر"
         ],
-        "correctAnswer": "Maroc",
-        "explanation": "Le Maroc abrite ال معقد solaire من Noor Ouarzazate, l' des أكثر grandes centrales solaires إلى ال عالم.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "المغرب",
+        "explanation": "ويوجد في المغرب مجمع نور ورزازات للطاقة الشمسية، وهو أحد أكبر محطات الطاقة الشمسية في العالم.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0008"
       },
       {
-        "question": "ماذا أن الطاقة géothermique ?",
+        "question": "ما هي الطاقة الحرارية الأرضية؟",
         "options": [
-          "Énergie provenant من ال حرارة من ال Terre",
-          "Énergie من ال vent",
-          "Énergie من ال شمس",
-          "Énergie des vagues"
+          "الطاقة من حرارة الأرض",
+          "طاقة الرياح",
+          "الطاقة من الشمس",
+          "طاقة الأمواج"
         ],
-        "correctAnswer": "Énergie provenant من ال حرارة من ال Terre",
-        "explanation": "الطاقة géothermique يستخدم ال حرارة stockée sous ال سطح terrestre.",
-        "difficulty": "سهل",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "الطاقة من حرارة الأرض",
+        "explanation": "تستخدم الطاقة الحرارية الأرضية الحرارة المخزنة تحت سطح الأرض.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0009"
       },
       {
-        "question": "Quel بلد africain a ال أكثر كبير potentiel hydroélectrique ?",
+        "question": "ما هي الدولة الأفريقية التي لديها أكبر إمكانات الطاقة الكهرومائية؟",
         "options": [
-          "République Démocratique من ال Congo",
-          "Éthiopie",
-          "Égypte",
-          "Nigeria"
+          "جمهورية الكونغو الديمقراطية",
+          "أثيوبيا",
+          "مصر",
+          "نيجيريا"
         ],
-        "correctAnswer": "République Démocratique من ال Congo",
-        "explanation": "La RDC possèمن ال أكثر كبير potentiel hydroélectrique من أفريقيا grâهذا إلى ال نهر Congo.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "جمهورية الكونغو الديمقراطية",
+        "explanation": "تتمتع جمهورية الكونغو الديمقراطية بأكبر إمكانات الطاقة الكهرومائية في أفريقيا بفضل نهر الكونغو.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0010"
       }
     ],
-    "Pollution و Déchets": [
+    "Pollution et Déchets": [
       {
-        "question": "كم عدد وقت يضع  sac plastique à se déيتكون في ال nature ?",
+        "question": "كم من الوقت يستغرق الكيس البلاستيكي ليتحلل في الطبيعة؟",
         "options": [
-          "100-400 ans",
-          "10-50 ans",
-          "500-1000 ans",
-          "1-10 ans"
+          "100-400 سنة",
+          "10-50 سنة",
+          "500-1000 سنة",
+          "1-10 سنوات"
         ],
-        "correctAnswer": "100-400 ans",
-        "explanation": "Un sac plastique يضع بين 100 و 400 ans à se déيتكون complètement في ال nature.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Pollution و Déchets"
+        "correctAnswer": "100-400 سنة",
+        "explanation": "يستغرق الكيس البلاستيكي ما بين 100 إلى 400 عام ليتحلل تمامًا في الطبيعة.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0011"
       },
       {
-        "question": "Quel بلد africain a été ال الأول à interdire ال sacs plastiques ?",
+        "question": "ما هي الدولة الإفريقية التي كانت أول من حظر الأكياس البلاستيكية؟",
         "options": [
-          "Rwanda",
-          "Kenya",
-          "Afrique من ال Sud",
-          "Maroc"
+          "رواندا",
+          "كينيا",
+          "جنوب أفريقيا",
+          "المغرب"
         ],
-        "correctAnswer": "Rwanda",
-        "explanation": "Le Rwanda a interdit ال sacs plastiques en 2008, devenant  leader africain في هذا domaine.",
-        "difficulty": "متوسط",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Pollution و Déchets"
+        "correctAnswer": "رواندا",
+        "explanation": "حظرت رواندا الأكياس البلاستيكية في عام 2008، لتصبح رائدة إفريقية في هذا المجال.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0012"
       },
       {
-        "question": "ماذا أن ال 'قارة من plastiأن' في المحيط Pacifique ?",
+        "question": "ما هي \"القارة البلاستيكية\" في المحيط الهادئ؟",
         "options": [
-          "Une zone من concentration من déchets plastiques",
-          "Une îال artificielle",
-          "Un جديد قارة مكتشف",
-          "Une plateforme pétrolière"
+          "منطقة تركيز النفايات البلاستيكية",
+          "جزيرة اصطناعية",
+          "اكتشاف قارة جديدة",
+          "منصة نفطية"
         ],
-        "correctAnswer": "Une zone من concentration من déchets plastiques",
-        "explanation": "Le 'Great Pacific Garbage Patch' هو  zone من عدة millions من km² من déchets plastiques flottants.",
-        "difficulty": "سهل",
-        "category": "البيئة والإيكولوجيا",
-        "subcategory": "Pollution و Déchets"
+        "correctAnswer": "منطقة تركيز النفايات البلاستيكية",
+        "explanation": "\"رقعة القمامة الكبرى في المحيط الهادئ\" هي مساحة تبلغ عدة ملايين من الكيلومترات المربعة من النفايات البلاستيكية العائمة.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0013"
       }
     ]
   }

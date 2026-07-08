@@ -10,7 +10,8 @@
       },
       "explanation": "La vitesse de la lumière dans le vide est exactement 299 792 458 m/s.",
       "difficulty": "hard",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0000"
     },
     {
       "question": "Quel est le processus par lequel les plantes produisent leur nourriture ?",
@@ -22,7 +23,8 @@
       },
       "explanation": "La photosynthèse utilise la lumière du soleil pour convertir le CO2 et l'eau en glucose.",
       "difficulty": "easy",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0001"
     },
     {
       "question": "Quel est le plus petit élément chimique ?",
@@ -34,7 +36,8 @@
       },
       "explanation": "L'hydrogène a le numéro atomique 1 et est le plus petit atome.",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0002"
     },
     {
       "question": "Quelle est la formule chimique de l'eau ?",
@@ -46,7 +49,8 @@
       },
       "explanation": "L'eau est composée de deux atomes d'hydrogène et d'un atome d'oxygène.",
       "difficulty": "easy",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0003"
     },
     {
       "question": "Quel est le plus grand organe du corps humain ?",
@@ -58,7 +62,8 @@
       },
       "explanation": "La peau représente environ 16% du poids corporel total.",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0004"
     },
     {
       "question": "Quelle est la planète la plus proche du Soleil ?",
@@ -70,7 +75,8 @@
       },
       "explanation": "Mercure est la planète la plus proche du Soleil dans notre système solaire.",
       "difficulty": "easy",
-      "subcategory": "Astronomie"
+      "subcategory": "Astronomie",
+      "id": "science_0005"
     },
     {
       "question": "Quel est le gaz le plus abondant dans l'atmosphère terrestre ?",
@@ -82,7 +88,8 @@
       },
       "explanation": "L'azote représente environ 78% de l'atmosphère terrestre.",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0006"
     },
     {
       "question": "Quelle est la température d'ébullition de l'eau à la pression atmosphérique normale ?",
@@ -94,7 +101,8 @@
       },
       "explanation": "L'eau bout à 100°C (212°F) au niveau de la mer.",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0007"
     },
     {
       "question": "Quel est le nombre d'os dans le corps humain adulte ?",
@@ -106,7 +114,8 @@
       },
       "explanation": "Le corps humain adulte possède 206 os.",
       "difficulty": "hard",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0008"
     },
     {
       "question": "Quelle est la force qui attire les objets vers le centre de la Terre ?",
@@ -118,7 +127,8 @@
       },
       "explanation": "La gravité est la force qui attire tous les objets vers le centre de la Terre.",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0009"
     },
     {
       "question": "Quel est le symbole chimique du potassium ?",
@@ -128,7 +138,8 @@
         "Ca": false,
         "Mg": false
       },
-      "correctAnswer": "K"
+      "correctAnswer": "K",
+      "id": "science_0010"
     },
     {
       "question": "Quel est le symbole chimique du magnesium ?",
@@ -138,7 +149,8 @@
         "K": false,
         "Ca": false
       },
-      "correctAnswer": "Mg"
+      "correctAnswer": "Mg",
+      "id": "science_0011"
     },
     {
       "question": "Quel est le symbole chimique du silicium ?",
@@ -148,7 +160,8 @@
         "P": false,
         "Se": false
       },
-      "correctAnswer": "Si"
+      "correctAnswer": "Si",
+      "id": "science_0012"
     },
     {
       "question": "Quel est le symbole chimique du selenium ?",
@@ -158,7 +171,8 @@
         "P": false,
         "Si": false
       },
-      "correctAnswer": "Se"
+      "correctAnswer": "Se",
+      "id": "science_0013"
     },
     {
       "question": "Quel est le symbole chimique du thallium ?",
@@ -168,7 +182,8 @@
         "Ga": false,
         "In": false
       },
-      "correctAnswer": "Tl"
+      "correctAnswer": "Tl",
+      "id": "science_0014"
     },
     {
       "question": "Quel est le symbole chimique du cadmium ?",
@@ -178,7 +193,8 @@
         "Hg": false,
         "Pb": false
       },
-      "correctAnswer": "Cd"
+      "correctAnswer": "Cd",
+      "id": "science_0015"
     },
     {
       "question": "Quel est le symbole chimique du palladium ?",
@@ -188,7 +204,8 @@
         "Co": false,
         "Pt": false
       },
-      "correctAnswer": "Pd"
+      "correctAnswer": "Pd",
+      "id": "science_0016"
     },
     {
       "question": "Quel est le symbole chimique du molybdene ?",
@@ -198,7 +215,8 @@
         "W": false,
         "V": false
       },
-      "correctAnswer": "Mo"
+      "correctAnswer": "Mo",
+      "id": "science_0017"
     },
     {
       "question": "Quel est le symbole chimique du tungstene ?",
@@ -208,7 +226,8 @@
         "Mo": false,
         "V": false
       },
-      "correctAnswer": "W"
+      "correctAnswer": "W",
+      "id": "science_0018"
     },
     {
       "question": "Quel est le symbole chimique du vanadium ?",
@@ -218,7 +237,8 @@
         "Mo": false,
         "W": false
       },
-      "correctAnswer": "V"
+      "correctAnswer": "V",
+      "id": "science_0019"
     },
     {
       "question": "Quel est le symbole chimique du manganese ?",
@@ -228,7 +248,8 @@
         "Re": false,
         "Fe": false
       },
-      "correctAnswer": "Mn"
+      "correctAnswer": "Mn",
+      "id": "science_0020"
     },
     {
       "question": "Quel est le symbole chimique du technetium ?",
@@ -238,7 +259,8 @@
         "Re": false,
         "Fe": false
       },
-      "correctAnswer": "Tc"
+      "correctAnswer": "Tc",
+      "id": "science_0021"
     },
     {
       "question": "Quel est le symbole chimique du titane ?",
@@ -248,7 +270,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Ti"
+      "correctAnswer": "Ti",
+      "id": "science_0022"
     },
     {
       "question": "Quel est le symbole chimique du zirconium ?",
@@ -258,7 +281,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Zr"
+      "correctAnswer": "Zr",
+      "id": "science_0023"
     },
     {
       "question": "Quel est le symbole chimique du hafnium ?",
@@ -268,7 +292,8 @@
         "Zr": false,
         "V": false
       },
-      "correctAnswer": "Hf"
+      "correctAnswer": "Hf",
+      "id": "science_0024"
     },
     {
       "question": "Quel est le symbole chimique du scandium ?",
@@ -278,7 +303,8 @@
         "La": false,
         "Ac": false
       },
-      "correctAnswer": "Sc"
+      "correctAnswer": "Sc",
+      "id": "science_0025"
     },
     {
       "question": "Quel est le symbole chimique du lanthane ?",
@@ -288,7 +314,8 @@
         "Y": false,
         "Ac": false
       },
-      "correctAnswer": "La"
+      "correctAnswer": "La",
+      "id": "science_0026"
     },
     {
       "question": "Quel est le symbole chimique du rubidium ?",
@@ -298,7 +325,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Rb"
+      "correctAnswer": "Rb",
+      "id": "science_0027"
     },
     {
       "question": "Quel est le symbole chimique du cesium ?",
@@ -308,7 +336,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Cs"
+      "correctAnswer": "Cs",
+      "id": "science_0028"
     },
     {
       "question": "Quel est le symbole chimique du francium ?",
@@ -318,7 +347,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Fr"
+      "correctAnswer": "Fr",
+      "id": "science_0029"
     },
     {
       "question": "Quel est le symbole chimique du beryllium ?",
@@ -328,7 +358,8 @@
         "Ca": false,
         "Sr": false
       },
-      "correctAnswer": "Be"
+      "correctAnswer": "Be",
+      "id": "science_0030"
     },
     {
       "question": "Quel est le symbole chimique du strontium ?",
@@ -338,8 +369,8 @@
         "Mg": false,
         "Ca": false
       },
-      "correctAnswer": "Sr"
+      "correctAnswer": "Sr",
+      "id": "science_0031"
     }
   ]
 }
-

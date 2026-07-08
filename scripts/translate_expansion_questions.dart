@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
-import '../lib/services/bulk_auto_translator.dart';
+import 'package:quizz4u/services/bulk_auto_translator.dart';
 
 /// Script pour traduire automatiquement les nouvelles questions d'expansion
 /// Utilise le BulkAutoTranslator enrichi pour traduire en AR, EN, ZH, HI, ES

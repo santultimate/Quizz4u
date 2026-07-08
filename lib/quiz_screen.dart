@@ -125,8 +125,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   int currentQuestionIndex = 0;
   int score = 0;
   int correctAnswers = 0; // Ajouter le compteur de bonnes réponses
-  int timer = 30; // Valeur par défaut, sera chargée depuis les paramètres
-  int _timerDuration = 30; // Durée du timer configurée dans les paramètres
+  int timer = SettingsService.defaultTimerDuration;
+  int _timerDuration = SettingsService.defaultTimerDuration;
   int totalQuestions = 10;
   bool isPaused = false;
   bool isGameOver = false;
@@ -137,7 +137,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   bool _ttsEnabled = false;
 
   // 🎲 Stocker les réponses mélangées pour chaque question
-  Map<int, List<MapEntry<String, bool>>> _shuffledAnswers = {};
+  final Map<int, List<MapEntry<String, bool>>> _shuffledAnswers = {};
 
   late Timer _timer;
   late Timer _audioSettingsTimer;
@@ -235,9 +235,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     }
   }
 
+  bool _isTimerComfortable() => timer > (_timerDuration * 2) ~/ 3;
+
+  bool _isTimerWarning() => timer > _timerDuration ~/ 3;
+
   void _initializeAnimations() {
     _timerController = AnimationController(
-      duration: const Duration(seconds: 30),
+      duration: Duration(seconds: SettingsService.defaultTimerDuration),
       vsync: this,
     );
 
@@ -456,7 +460,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           if (mounted) {
             setState(() {
               this.timer--;
-              _timerController.value = 1.0 - (this.timer / 30.0);
+              _timerController.value = 1.0 -
+                  (this.timer / _timerDuration.toDouble());
             });
           }
 
@@ -702,8 +707,10 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
     // ⏩ PASSAGE IMMÉDIAT À LA QUESTION SUIVANTE (ne pas attendre la pub)
     print(
-        '[QuizScreen] ⏱️ Attente 1 seconde avant passage à la question suivante...');
-    await Future.delayed(const Duration(milliseconds: 1000));
+        '[QuizScreen] ⏱️ Attente 500ms avant passage à la question suivante...');
+    await Future.delayed(const Duration(
+        milliseconds:
+            500)); // ✅ Réduit de 1000ms à 500ms pour feedback plus rapide
 
     print('[QuizScreen] 🚀 Appel de _nextQuestion()...');
     if (mounted) {
@@ -1310,12 +1317,15 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   Future<void> _loadTimerDuration() async {
     try {
       _timerDuration = await SettingsService.getTimerDuration();
-      timer = _timerDuration; // Initialiser le timer avec la durée configurée
+      timer = _timerDuration;
+      _timerController.duration = Duration(seconds: _timerDuration);
       print('[QuizScreen] ⏱️ Durée du timer chargée: $_timerDuration secondes');
     } catch (e) {
       print('[QuizScreen] ❌ Erreur chargement durée timer: $e');
-      _timerDuration = 30; // Valeur par défaut en cas d'erreur
-      timer = 30;
+      _timerDuration = SettingsService.defaultTimerDuration;
+      timer = SettingsService.defaultTimerDuration;
+      _timerController.duration =
+          Duration(seconds: SettingsService.defaultTimerDuration);
     }
   }
 
@@ -1339,8 +1349,10 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     }
 
     if (_backgroundMusicEnabled) {
-      await UnifiedAudioServiceOptimized.instance.setBackgroundVolume(0.2);
-      print('[QuizScreen] 🎵 Volume de la musique réglé à 0.2');
+      await UnifiedAudioServiceOptimized.instance.setBackgroundVolume(
+          SettingsService.defaultBackgroundVolume);
+      print(
+          '[QuizScreen] 🎵 Volume de la musique réglé à ${SettingsService.defaultBackgroundVolume}');
     }
   }
 
@@ -1752,9 +1764,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: timer > 20
+                      colors: _isTimerComfortable()
                           ? [Colors.purple.shade400, Colors.purple.shade600]
-                          : timer > 10
+                          : _isTimerWarning()
                               ? [Colors.orange.shade400, Colors.orange.shade600]
                               : [Colors.red.shade400, Colors.red.shade600],
                       begin: Alignment.centerLeft,
@@ -1763,9 +1775,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                     borderRadius: BorderRadius.circular(25),
                     boxShadow: [
                       BoxShadow(
-                        color: (timer > 20
+                        color: (_isTimerComfortable()
                                 ? Colors.purple
-                                : timer > 10
+                                : _isTimerWarning()
                                     ? Colors.orange
                                     : Colors.red)
                             .withValues(alpha: 0.3),

@@ -13,7 +13,8 @@
         "explanation": "Wole Soyinka est le premier Africain à avoir reçu le Prix Nobel de Littérature.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Littérature Africaine"
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0000"
       },
       {
         "question": "Qui a écrit 'L'Aventure ambiguë' ?",
@@ -27,7 +28,8 @@
         "explanation": "'L'Aventure ambiguë' (1961) est un roman de Cheikh Hamidou Kane sur l'identité africaine.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Littérature Africaine"
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0001"
       },
       {
         "question": "Quelle écrivaine malienne est connue pour 'Une si longue lettre' ?",
@@ -41,7 +43,8 @@
         "explanation": "Mariama Bâ (Sénégalaise) a écrit ce roman épistolaire sur la condition féminine en Afrique.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Littérature Africaine"
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0002"
       }
     ],
     "Cinéma Africain": [
@@ -57,7 +60,8 @@
         "explanation": "Le FESPACO (Festival Panafricain du Cinéma de Ouagadougou) se tient tous les deux ans au Burkina Faso.",
         "difficulty": "easy",
         "category": "Arts et Culture",
-        "subcategory": "Cinéma Africain"
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0003"
       },
       {
         "question": "Quel réalisateur sénégalais est considéré comme le père du cinéma africain ?",
@@ -71,7 +75,8 @@
         "explanation": "Ousmane Sembène (1923-2007) est considéré comme le père du cinéma africain.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Cinéma Africain"
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0004"
       }
     ],
     "Art Contemporain": [
@@ -87,7 +92,8 @@
         "explanation": "Malick Sidibé a immortalisé la jeunesse malienne des années 60-70 à Bamako.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Art Contemporain"
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0005"
       }
     ]
   }

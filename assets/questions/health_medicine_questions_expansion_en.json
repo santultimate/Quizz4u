@@ -1,107 +1,114 @@
 {
-  "Health and Medicine": {
+  "Santé et Médecine": {
     "Maladies Tropicales": [
       {
-        "question": "What moustique transmet the paludisme (malaria) ?",
+        "question": "Which mosquito transmits malaria?",
         "options": [
-          "Anophèthe",
+          "Anopheles",
           "Aedes",
           "Culex",
-          "Tigre"
+          "Tiger"
         ],
-        "correctAnswer": "Anophèthe",
-        "explanation": "the moustique anophèthe femelle transmet the parasite Plasmodium responsable of the paludisme.",
-        "difficulty": "Medium",
-        "category": "Health and Medicine",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "Anopheles",
+        "explanation": "The female Anopheles mosquito transmits the Plasmodium parasite responsible for malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
-        "question": "What disease is causée par the virus Ebola ?",
+        "question": "What disease is caused by the Ebola virus?",
         "options": [
-          "Fièvre hémorragique",
-          "Paludisme",
-          "Tuberculose",
-          "Choléra"
+          "Hemorrhagic fever",
+          "Malaria",
+          "Tuberculosis",
+          "Cholera"
         ],
-        "correctAnswer": "Fièvre hémorragique",
-        "explanation": "the virus Ebola cause a fièvre hémorragique grave with a taux of mortalité élevé.",
-        "difficulty": "Easy",
-        "category": "Health and Medicine",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "Hemorrhagic fever",
+        "explanation": "The Ebola virus causes severe hemorrhagic fever with a high mortality rate.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
-        "question": "What country africain a été déclaré exempt of polio en 2020 ?",
+        "question": "Which African country was declared polio free in 2020?",
         "options": [
           "Nigeria",
           "Kenya",
-          "Afrique of the south",
-          "Égypte"
+          "South Africa",
+          "Egypt"
         ],
         "correctAnswer": "Nigeria",
-        "explanation": "the Nigeria a été déclaré exempt of polio sauvage en août 2020, marquant a large victoire.",
-        "difficulty": "Hard",
-        "category": "Health and Medicine",
-        "subcategory": "Maladies Tropicales"
+        "explanation": "Nigeria was declared wild polio free in August 2020, marking a major victory.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
       {
-        "question": "What arbre africain is utilisé for traiter the fièvre and the douleurs ?",
+        "question": "Which African tree is used to treat fever and pain?",
         "options": [
-          "Quinquina",
+          "Cinchona",
           "Baobab",
           "Moringa",
-          "Karité"
+          "Shea"
         ],
-        "correctAnswer": "Quinquina",
-        "explanation": "L'écorce of the quinquina contient of the quinine, utilisée contre the paludisme.",
-        "difficulty": "Medium",
-        "category": "Health and Medicine",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "Cinchona",
+        "explanation": "The bark of the cinchona tree contains quinine, used against malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
-        "question": "What fruit of the baobab is riche en vitamine C ?",
+        "question": "Which baobab fruit is rich in vitamin C?",
         "options": [
-          "the pain of singe",
-          "the datte",
-          "the mangue",
-          "the papaye"
+          "Monkey bread",
+          "The date",
+          "Mango",
+          "Papaya"
         ],
-        "correctAnswer": "the pain of singe",
-        "explanation": "the fruit of the baobab (pain of singe) contient 6 time more of vitamine C qu'a orange.",
-        "difficulty": "Medium",
-        "category": "Health and Medicine",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "Monkey bread",
+        "explanation": "Baobab fruit (monkey bread) contains 6 times more vitamin C than an orange.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
-    "Nutrition and Santé": [
+    "Nutrition et Santé": [
       {
-        "question": "What céréale africaine is naturellement without gluten ?",
+        "question": "Which African cereal is naturally gluten-free?",
         "options": [
-          "the fonio",
-          "the blé",
-          "L'orge",
-          "the seigle"
+          "Fonio",
+          "Wheat",
+          "Barley",
+          "Rye"
         ],
-        "correctAnswer": "the fonio",
-        "explanation": "the fonio is a céréale ancestrale africaine, nutritive and without gluten.",
-        "difficulty": "Medium",
-        "category": "Health and Medicine",
-        "subcategory": "Nutrition and Santé"
+        "correctAnswer": "Fonio",
+        "explanation": "Fonio is an ancestral African cereal, nutritious and gluten-free.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
-        "question": "How many of liters d'water must-on boire par day en moyenne ?",
+        "question": "How many liters of water should we drink per day on average?",
         "options": [
-          "1,5 à 2 liters",
-          "3 à 4 liters",
-          "0,5 à 1 liter",
+          "1.5 to 2 liters",
+          "3 to 4 liters",
+          "0.5 to 1 liter",
           "5 liters"
         ],
-        "correctAnswer": "1,5 à 2 liters",
-        "explanation": "Il is recommandé of boire environ 1,5 à 2 liters d'water par day for rester hydraté.",
-        "difficulty": "Easy",
-        "category": "Health and Medicine",
-        "subcategory": "Nutrition and Santé"
+        "correctAnswer": "1.5 to 2 liters",
+        "explanation": "It is recommended to drink around 1.5 to 2 liters of water per day to stay hydrated.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

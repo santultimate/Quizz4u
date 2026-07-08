@@ -13,7 +13,8 @@
         "explanation": "Le moustique anophèle femelle transmet le parasite Plasmodium responsable du paludisme.",
         "difficulty": "medium",
         "category": "Santé et Médecine",
-        "subcategory": "Maladies Tropicales"
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
         "question": "Quelle maladie est causée par le virus Ebola ?",
@@ -27,7 +28,8 @@
         "explanation": "Le virus Ebola cause une fièvre hémorragique grave avec un taux de mortalité élevé.",
         "difficulty": "easy",
         "category": "Santé et Médecine",
-        "subcategory": "Maladies Tropicales"
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
         "question": "Quel pays africain a été déclaré exempt de polio en 2020 ?",
@@ -41,7 +43,8 @@
         "explanation": "Le Nigeria a été déclaré exempt de polio sauvage en août 2020, marquant une grande victoire.",
         "difficulty": "hard",
         "category": "Santé et Médecine",
-        "subcategory": "Maladies Tropicales"
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
@@ -57,7 +60,8 @@
         "explanation": "L'écorce du quinquina contient de la quinine, utilisée contre le paludisme.",
         "difficulty": "medium",
         "category": "Santé et Médecine",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
         "question": "Quel fruit du baobab est riche en vitamine C ?",
@@ -71,7 +75,8 @@
         "explanation": "Le fruit du baobab (pain de singe) contient 6 fois plus de vitamine C qu'une orange.",
         "difficulty": "medium",
         "category": "Santé et Médecine",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
     "Nutrition et Santé": [
@@ -87,7 +92,8 @@
         "explanation": "Le fonio est une céréale ancestrale africaine, nutritive et sans gluten.",
         "difficulty": "medium",
         "category": "Santé et Médecine",
-        "subcategory": "Nutrition et Santé"
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
         "question": "Combien de litres d'eau doit-on boire par jour en moyenne ?",
@@ -101,7 +107,8 @@
         "explanation": "Il est recommandé de boire environ 1,5 à 2 litres d'eau par jour pour rester hydraté.",
         "difficulty": "easy",
         "category": "Santé et Médecine",
-        "subcategory": "Nutrition et Santé"
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

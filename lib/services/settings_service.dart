@@ -1,6 +1,18 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsService {
+  /// Durée par défaut du timer (secondes) — 25s pour réduire les timeouts sans ralentir le jeu
+  static const int defaultTimerDuration = 25;
+
+  /// Bonus de temps sur la 1re question (lecture de l'énoncé)
+  static const int firstQuestionTimerBonus = 5;
+
+  /// Délai avant démarrage du timer (animation question)
+  static const int timerStartDelayMs = 600;
+
+  /// Volume musique de fond par défaut
+  static const double defaultBackgroundVolume = 0.35;
+
   static const String _themeModeKey = 'theme_mode';
   static const String _soundEnabledKey = 'sound_enabled';
   static const String _ttsEnabledKey = 'tts_enabled';
@@ -58,7 +70,7 @@ class SettingsService {
   // Timer
   static Future<int> getTimerDuration() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getInt(_timerDurationKey) ?? 15;
+    return prefs.getInt(_timerDurationKey) ?? defaultTimerDuration;
   }
 
   static Future<void> setTimerDuration(int duration) async {

@@ -1,8 +1,8 @@
 {
-  "Arts and Culture": {
+  "Arts et Culture": {
     "Littérature Africaine": [
       {
-        "question": "What écrivain nigérian a remporté the Prix Nobel of Littérature en 1986 ?",
+        "question": "Which Nigerian writer won the Nobel Prize for Literature in 1986?",
         "options": [
           "Wole Soyinka",
           "Chinua Achebe",
@@ -10,27 +10,29 @@
           "Chimamanda Ngozi Adichie"
         ],
         "correctAnswer": "Wole Soyinka",
-        "explanation": "Wole Soyinka is the premier Africain à avoir reçu the Prix Nobel of Littérature.",
-        "difficulty": "Medium",
-        "category": "Arts and Culture",
-        "subcategory": "Littérature Africaine"
+        "explanation": "Wole Soyinka is the first African to receive the Nobel Prize for Literature.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0000"
       },
       {
-        "question": "Qui a écrit 'L'Aventure ambiguë' ?",
+        "question": "Who wrote 'The Ambiguous Adventure'?",
         "options": [
-          "Cheikh Hamidou Kane",
+          "Sheikh Hamidou Kane",
           "Léopold Sédar Senghor",
           "Birago Diop",
           "Amadou Hampâté Bâ"
         ],
-        "correctAnswer": "Cheikh Hamidou Kane",
-        "explanation": "'L'Aventure ambiguë' (1961) is a roman of Cheikh Hamidou Kane on l'identité africaine.",
-        "difficulty": "Medium",
-        "category": "Arts and Culture",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "Sheikh Hamidou Kane",
+        "explanation": "'The Ambiguous Adventure' (1961) is a novel by Cheikh Hamidou Kane about African identity.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0001"
       },
       {
-        "question": "What écrivaine malienne is connue for 'a if longue lettre' ?",
+        "question": "Which Malian writer is known for 'Such a Long Letter'?",
         "options": [
           "Mariama Bâ",
           "Aminata Sow Fall",
@@ -38,29 +40,31 @@
           "Ken Bugul"
         ],
         "correctAnswer": "Mariama Bâ",
-        "explanation": "Mariama Bâ (Sénégalaise) a écrit ce roman épistolaire on the condition féminine en Afrique.",
-        "difficulty": "Medium",
-        "category": "Arts and Culture",
-        "subcategory": "Littérature Africaine"
+        "explanation": "Mariama Bâ (Senegalese) wrote this epistolary novel about the condition of women in Africa.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0002"
       }
     ],
     "Cinéma Africain": [
       {
-        "question": "What is the name of the more grand festival of cinéma africain ?",
+        "question": "What is the name of the largest African film festival?",
         "options": [
           "FESPACO",
-          "Festival of Cannes",
-          "Festival of Carthage",
-          "Festival of Durban"
+          "Cannes Film Festival",
+          "Carthage Festival",
+          "Durban Festival"
         ],
         "correctAnswer": "FESPACO",
-        "explanation": "the FESPACO (Festival Panafricain of the Cinéma of Ouagadougou) se tient all the deux ans au Burkina Faso.",
-        "difficulty": "Easy",
-        "category": "Arts and Culture",
-        "subcategory": "Cinéma Africain"
+        "explanation": "The FESPACO (Ouagadougou Pan-African Cinema Festival) is held every two years in Burkina Faso.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0003"
       },
       {
-        "question": "What réalisateur sénégalais is considéré like the père of the cinéma africain ?",
+        "question": "Which Senegalese director is considered the father of African cinema?",
         "options": [
           "Ousmane Sembène",
           "Djibril Diop Mambéty",
@@ -68,15 +72,16 @@
           "Souleymane Cissé"
         ],
         "correctAnswer": "Ousmane Sembène",
-        "explanation": "Ousmane Sembène (1923-2007) is considéré like the père of the cinéma africain.",
-        "difficulty": "Medium",
-        "category": "Arts and Culture",
-        "subcategory": "Cinéma Africain"
+        "explanation": "Ousmane Sembène (1923-2007) is considered the father of African cinema.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0004"
       }
     ],
     "Art Contemporain": [
       {
-        "question": "What artiste malien is famous for ses photographies ?",
+        "question": "Which Malian artist is famous for his photographs?",
         "options": [
           "Malick Sidibé",
           "Seydou Keïta",
@@ -84,10 +89,11 @@
           "Hassan Hajjaj"
         ],
         "correctAnswer": "Malick Sidibé",
-        "explanation": "Malick Sidibé a immortalisé the jeunesse malienne des years 60-70 à Bamako.",
-        "difficulty": "Medium",
-        "category": "Arts and Culture",
-        "subcategory": "Art Contemporain"
+        "explanation": "Malick Sidibé immortalized the Malian youth of the 60s and 70s in Bamako.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0005"
       }
     ]
   }

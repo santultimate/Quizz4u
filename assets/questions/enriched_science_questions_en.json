@@ -10,7 +10,9 @@
       },
       "explanation": "The speed of light in a vacuum is exactly 299,792,458 m/s.",
       "difficulty": "hard",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0000",
+      "correctAnswer": "299,792,458 m/s"
     },
     {
       "question": "What is the process by which plants produce their food?",
@@ -22,7 +24,9 @@
       },
       "explanation": "Photosynthesis uses sunlight to convert CO2 and water into glucose.",
       "difficulty": "easy",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0001",
+      "correctAnswer": "Photosynthesis"
     },
     {
       "question": "What is the smallest chemical element?",
@@ -34,7 +38,9 @@
       },
       "explanation": "Hydrogen has atomic number 1 and is the smallest atom.",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0002",
+      "correctAnswer": "Hydrogen"
     },
     {
       "question": "What is the chemical formula of water?",
@@ -46,7 +52,9 @@
       },
       "explanation": "Water is made up of two hydrogen atoms and one oxygen atom.",
       "difficulty": "easy",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0003",
+      "correctAnswer": "H2O"
     },
     {
       "question": "What is the largest organ in the human body?",
@@ -58,7 +66,9 @@
       },
       "explanation": "The skin makes up about 16% of the total body weight.",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0004",
+      "correctAnswer": "The skin"
     },
     {
       "question": "What is the closest planet to the Sun?",
@@ -70,7 +80,9 @@
       },
       "explanation": "Mercury is the closest planet to the Sun in our solar system.",
       "difficulty": "easy",
-      "subcategory": "Astronomie"
+      "subcategory": "Astronomie",
+      "id": "science_0005",
+      "correctAnswer": "Mercury"
     },
     {
       "question": "What is the most abundant gas in Earth's atmosphere?",
@@ -82,7 +94,9 @@
       },
       "explanation": "Nitrogen makes up about 78% of the Earth's atmosphere.",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0006",
+      "correctAnswer": "Nitrogen"
     },
     {
       "question": "What is the boiling point of water at normal atmospheric pressure?",
@@ -94,7 +108,9 @@
       },
       "explanation": "Water boils at 100°C (212°F) at sea level.",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0007",
+      "correctAnswer": "100°C"
     },
     {
       "question": "How many bones are in the adult human body?",
@@ -106,7 +122,9 @@
       },
       "explanation": "The adult human body has 206 bones.",
       "difficulty": "hard",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0008",
+      "correctAnswer": "206"
     },
     {
       "question": "What is the force that pulls objects toward the center of the Earth?",
@@ -118,7 +136,9 @@
       },
       "explanation": "Gravity is the force that pulls all objects toward the center of the Earth.",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0009",
+      "correctAnswer": "Gravity"
     },
     {
       "question": "What is the chemical symbol for potassium?",
@@ -128,7 +148,8 @@
         "That": false,
         "Mg": false
       },
-      "correctAnswer": "K"
+      "correctAnswer": "K",
+      "id": "science_0010"
     },
     {
       "question": "What is the chemical symbol for magnesium?",
@@ -138,7 +159,8 @@
         "K": false,
         "That": false
       },
-      "correctAnswer": "Mg"
+      "correctAnswer": "Mg",
+      "id": "science_0011"
     },
     {
       "question": "What is the chemical symbol for silicon?",
@@ -148,7 +170,8 @@
         "P": false,
         "Se": false
       },
-      "correctAnswer": "Si"
+      "correctAnswer": "If",
+      "id": "science_0012"
     },
     {
       "question": "What is the chemical symbol for selenium?",
@@ -158,7 +181,8 @@
         "P": false,
         "If": false
       },
-      "correctAnswer": "Se"
+      "correctAnswer": "Se",
+      "id": "science_0013"
     },
     {
       "question": "What is the chemical symbol for thallium?",
@@ -168,7 +192,8 @@
         "Ga": false,
         "In": false
       },
-      "correctAnswer": "Tl"
+      "correctAnswer": "Tl",
+      "id": "science_0014"
     },
     {
       "question": "What is the chemical symbol for cadmium?",
@@ -178,7 +203,8 @@
         "Hg": false,
         "Pb": false
       },
-      "correctAnswer": "Cd"
+      "correctAnswer": "CD",
+      "id": "science_0015"
     },
     {
       "question": "What is the chemical symbol for palladium?",
@@ -188,7 +214,8 @@
         "Co": false,
         "Pt": false
       },
-      "correctAnswer": "Pd"
+      "correctAnswer": "Pd",
+      "id": "science_0016"
     },
     {
       "question": "What is the chemical symbol for molybdenum?",
@@ -198,7 +225,8 @@
         "W": false,
         "V": false
       },
-      "correctAnswer": "Mo"
+      "correctAnswer": "MB",
+      "id": "science_0017"
     },
     {
       "question": "What is the chemical symbol for tungsten?",
@@ -208,7 +236,8 @@
         "MB": false,
         "V": false
       },
-      "correctAnswer": "W"
+      "correctAnswer": "W",
+      "id": "science_0018"
     },
     {
       "question": "What is the chemical symbol for vanadium?",
@@ -218,7 +247,8 @@
         "MB": false,
         "W": false
       },
-      "correctAnswer": "V"
+      "correctAnswer": "V",
+      "id": "science_0019"
     },
     {
       "question": "What is the chemical symbol for manganese?",
@@ -228,7 +258,8 @@
         "D": false,
         "Fe": false
       },
-      "correctAnswer": "Mn"
+      "correctAnswer": "Mn",
+      "id": "science_0020"
     },
     {
       "question": "What is the chemical symbol for technetium?",
@@ -238,7 +269,8 @@
         "D": false,
         "Fe": false
       },
-      "correctAnswer": "Tc"
+      "correctAnswer": "Tc",
+      "id": "science_0021"
     },
     {
       "question": "What is the chemical symbol for titanium?",
@@ -248,7 +280,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Ti"
+      "correctAnswer": "Ti",
+      "id": "science_0022"
     },
     {
       "question": "What is the chemical symbol for zirconium?",
@@ -258,7 +291,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Zr"
+      "correctAnswer": "Zr",
+      "id": "science_0023"
     },
     {
       "question": "What is the chemical symbol for hafnium?",
@@ -268,7 +302,8 @@
         "Zr": false,
         "V": false
       },
-      "correctAnswer": "Hf"
+      "correctAnswer": "Hf",
+      "id": "science_0024"
     },
     {
       "question": "What is the chemical symbol for scandium?",
@@ -278,7 +313,8 @@
         "There": false,
         "Ac": false
       },
-      "correctAnswer": "Sc"
+      "correctAnswer": "Sc",
+      "id": "science_0025"
     },
     {
       "question": "What is the chemical symbol for lanthanum?",
@@ -288,7 +324,8 @@
         "Y": false,
         "Ac": false
       },
-      "correctAnswer": "La"
+      "correctAnswer": "There",
+      "id": "science_0026"
     },
     {
       "question": "What is the chemical symbol for rubidium?",
@@ -298,7 +335,8 @@
         "N / A": false,
         "K": false
       },
-      "correctAnswer": "Rb"
+      "correctAnswer": "Rb",
+      "id": "science_0027"
     },
     {
       "question": "What is the chemical symbol for cesium?",
@@ -308,7 +346,8 @@
         "N / A": false,
         "K": false
       },
-      "correctAnswer": "Cs"
+      "correctAnswer": "Cs",
+      "id": "science_0028"
     },
     {
       "question": "What is the chemical symbol for francium?",
@@ -318,7 +357,8 @@
         "N / A": false,
         "K": false
       },
-      "correctAnswer": "Fr"
+      "correctAnswer": "Fr",
+      "id": "science_0029"
     },
     {
       "question": "What is the chemical symbol for beryllium?",
@@ -328,7 +368,8 @@
         "That": false,
         "Sr": false
       },
-      "correctAnswer": "Be"
+      "correctAnswer": "Be",
+      "id": "science_0030"
     },
     {
       "question": "What is the chemical symbol for strontium?",
@@ -338,7 +379,8 @@
         "Mg": false,
         "That": false
       },
-      "correctAnswer": "Sr"
+      "correctAnswer": "Sr",
+      "id": "science_0031"
     }
   ]
 }

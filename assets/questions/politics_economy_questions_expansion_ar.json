@@ -1,68 +1,72 @@
 {
-  "السياسة والاقتصاد": {
+  "Politique et Économie": {
     "Leaders Africains Contemporains": [
       {
-        "question": "من هو l'حالي Secrétaire Général des Nations Unies (منذ 2017) ?",
+        "question": "من هو الأمين العام الحالي للأمم المتحدة (منذ 2017)؟",
         "options": [
-          "António Guterres",
-          "Ban Ki-moon",
-          "Kofi Annan",
-          "Boutros Boutros-Ghali"
+          "أنطونيو جوتيريش",
+          "بان كي مون",
+          "كوفي عنان",
+          "بطرس بطرس غالي"
         ],
-        "correctAnswer": "António Guterres",
-        "explanation": "António Guterres, ancien Premier ministre portugais, هو SG من l'ONU منذ 2017.",
-        "difficulty": "متوسط",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "أنطونيو جوتيريش",
+        "explanation": "أنطونيو غوتيريش، رئيس الوزراء البرتغالي السابق، يشغل منصب الأمين العام للأمم المتحدة منذ عام 2017.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
-        "question": "Quel رئيس جنوب-africain a موضوع نهاية à l'apartheid ?",
+        "question": "من هو رئيس جنوب أفريقيا الذي أنهى الفصل العنصري؟",
         "options": [
-          "Nelson Mandela",
-          "Frederik من Klerk",
-          "Thabo Mbeki",
-          "Desmond Tutu"
+          "نيلسون مانديلا",
+          "فريدريك دي كليرك",
+          "ثابو مبيكي",
+          "ديزموند توتو"
         ],
-        "correctAnswer": "Nelson Mandela",
-        "explanation": "Nelson Mandela هو أصبح ال الأول رئيس noir من أفريقيا من ال Sud en 1994, بعد 27 ans من سجن.",
-        "difficulty": "سهل",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "نيلسون مانديلا",
+        "explanation": "وأصبح نيلسون مانديلا أول رئيس أسود لجنوب أفريقيا في عام 1994، بعد 27 عاما في السجن.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
       {
-        "question": "Quelle startup nigériane هو أصبحت  licorne en 2020 ?",
+        "question": "ما هي الشركة النيجيرية الناشئة التي أصبحت يونيكورن في عام 2020؟",
         "options": [
-          "Flutterwave",
-          "Jumia",
-          "Paystack",
-          "Andela"
+          "موجة الرفرفة",
+          "جوميا",
+          "الراتب",
+          "أنديلا"
         ],
-        "correctAnswer": "Flutterwave",
-        "explanation": "Flutterwave, plateforme من paiements, a atteint  valorisation من +1 مليار USD en 2020.",
-        "difficulty": "صعب",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Économie Numérique Africaine"
+        "correctAnswer": "موجة الرفرفة",
+        "explanation": "وصلت قيمة Flutterwave، وهي منصة للمدفوعات، إلى +1 مليار دولار أمريكي في عام 2020.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
-        "question": "ما هو ال أكثر كبير marché e-commerce africain ?",
+        "question": "ما هو أكبر سوق للتجارة الإلكترونية في أفريقيا؟",
         "options": [
-          "Jumia",
-          "Takealot",
-          "Konga",
-          "Kilimall"
+          "جوميا",
+          "تاكيالوت",
+          "كونغا",
+          "كليمال"
         ],
-        "correctAnswer": "Jumia",
-        "explanation": "Jumia, surnommée 'l'Amazon africain', opère في أكثر من 11 بلد africains.",
-        "difficulty": "متوسط",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Économie Numérique Africaine"
+        "correctAnswer": "جوميا",
+        "explanation": "تعمل جوميا، الملقبة بـ \"الأمازون الأفريقي\"، في أكثر من 11 دولة أفريقية.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
       {
-        "question": "متى a été مخلوقe l'Union Africaine (UA) ?",
+        "question": "متى تم إنشاء الاتحاد الأفريقي؟",
         "options": [
           "2002",
           "1963",
@@ -70,38 +74,41 @@
           "2010"
         ],
         "correctAnswer": "2002",
-        "explanation": "L'UA a été مخلوقe en 2002 ل remplacer الذهبganisation من الوحدة Africaine (OUA, 1963).",
-        "difficulty": "متوسط",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Organisations Africaines"
+        "explanation": "تم إنشاء الاتحاد الأفريقي في عام 2002 ليحل محل منظمة الوحدة الأفريقية (منظمة الوحدة الأفريقية، 1963).",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
-        "question": "أين يقع ال إذاège من l'Union Africaine ?",
+        "question": "أين يقع مقر الاتحاد الأفريقي؟",
         "options": [
-          "Addis-Abeba (Éthiopie)",
-          "Abuja (Nigeria)",
-          "Le Caire (Égypte)",
-          "Nairobi (Kenya)"
+          "أديس أبابا (إثيوبيا)",
+          "أبوجا (نيجيريا)",
+          "القاهرة (مصر)",
+          "نيروبي (كينيا)"
         ],
-        "correctAnswer": "Addis-Abeba (Éthiopie)",
-        "explanation": "Le إذاège من l'UA هو situé à Addis-Abeba, en Éthiopie.",
-        "difficulty": "سهل",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "أديس أبابا (إثيوبيا)",
+        "explanation": "ويقع المقر الرئيسي للاتحاد الأفريقي في أديس أبابا، إثيوبيا.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
-        "question": "ماذا يعني CEDEAO ?",
+        "question": "ماذا تعني الجماعة الاقتصادية لدول غرب أفريقيا؟",
         "options": [
-          "Communauté Économique Des États من أفريقيا من l'Ouest",
-          "Centre d'Études و من Développement من أفريقيا من l'Ouest",
-          "Conseil Économique من Développement Africain من l'Ouest",
-          "Commission Économique ل ال Développement من أفريقيا من l'Ouest"
+          "الجماعة الاقتصادية لدول غرب أفريقيا",
+          "مركز دراسات وتنمية غرب أفريقيا",
+          "المجلس الاقتصادي للتنمية لغرب أفريقيا",
+          "اللجنة الاقتصادية لتنمية غرب أفريقيا"
         ],
-        "correctAnswer": "Communauté Économique Des États من أفريقيا من l'Ouest",
-        "explanation": "La CEDEAO (ECOWAS en anglais) regroupe 15 بلد من أفريقيا من l'Ouest.",
-        "difficulty": "متوسط",
-        "category": "السياسة والاقتصاد",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "الجماعة الاقتصادية لدول غرب أفريقيا",
+        "explanation": "تجمع ECOWAS (ECOWAS باللغة الإنجليزية) بين 15 دولة من غرب إفريقيا.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

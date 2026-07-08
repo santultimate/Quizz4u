@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'services/question_service_optimized.dart'; // ⚡ OPTIMISÉ
-import 'services/ad_service.dart';
-import 'services/premium_service.dart';
 import 'services/question_translation_service.dart';
 import 'services/translation_service.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'theme/app_colors.dart';
 import 'theme/app_text_styles.dart';
 import 'theme/app_spacing.dart';
+import 'widgets/ad_banner_widget.dart';
 
 class CategorySelectionScreen extends StatefulWidget {
   final Function(String) onCategorySelected;
@@ -23,7 +21,6 @@ class CategorySelectionScreen extends StatefulWidget {
 class _CategorySelectionScreenState extends State<CategorySelectionScreen>
     with TickerProviderStateMixin {
   List<Map<String, dynamic>> categories = [];
-  BannerAd? _bannerAd;
   late AnimationController _fadeController;
   String searchQuery = '';
 
@@ -35,13 +32,11 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen>
       duration: const Duration(milliseconds: 800),
     );
     _initializeCategories();
-    _loadBannerAd();
   }
 
   @override
   void dispose() {
     _fadeController.dispose();
-    _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -190,18 +185,6 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen>
     _fadeController.forward();
   }
 
-  void _loadBannerAd() async {
-    final isPremium = await PremiumService.isPremiumUser();
-    if (!isPremium) {
-      _bannerAd = await AdService.createBannerAd();
-      if (_bannerAd != null) {
-        setState(() {
-          _bannerAd!.load();
-        });
-      }
-    }
-  }
-
   void _selectCategory(String category) {
     HapticFeedback.mediumImpact();
     widget.onCategorySelected(category);
@@ -273,12 +256,11 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen>
                   },
                 ),
               ),
-              if (_bannerAd != null)
-                Container(
-                  height: 50,
-                  margin: EdgeInsets.all(AppSpacing.md),
-                  child: AdWidget(ad: _bannerAd!),
-                ),
+              const AdBannerWidget(
+                placement: 'category_selection',
+                height: 50,
+                margin: EdgeInsets.all(AppSpacing.md),
+              ),
             ],
           ),
         ),

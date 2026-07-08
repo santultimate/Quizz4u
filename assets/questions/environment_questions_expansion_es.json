@@ -1,80 +1,85 @@
 {
-  "Medio Ambiente y Ecología": {
+  "Environnement et Écologie": {
     "Changement Climatique": [
       {
-        "question": "Cuál es l'objectif principal delAccord de Paris (2015) ?",
+        "question": "¿Cuál es el principal objetivo del Acuerdo de París (2015)?",
         "options": [
-          "Limiter el réchauffement à 1,5°C",
-          "Éliminer todos los combustibles fossiles",
-          "Planter 1 milliard d'arbres",
-          "Interdire los plastiques"
+          "Limitar el calentamiento a 1,5°C",
+          "Eliminar todos los combustibles fósiles",
+          "Plantar mil millones de árboles",
+          "Prohibir los plásticos"
         ],
-        "correctAnswer": "Limiter el réchauffement à 1,5°C",
-        "explanation": "L'Accord de Paris vise à maintenir l'augmentation de la temperatura mondiale en dessous de 2°C, idéalement à 1,5°C.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "Limitar el calentamiento a 1,5°C",
+        "explanation": "El Acuerdo de París tiene como objetivo mantener el aumento de la temperatura global por debajo de 2°C, idealmente 1,5°C.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0000"
       },
       {
-        "question": "Quel gaz à effet de serre es el más abondant en l'atmosphère ?",
+        "question": "¿Qué gas de efecto invernadero es más abundante en la atmósfera?",
         "options": [
-          "Dioxyde de carbone (CO2)",
-          "Méthane (CH4)",
-          "Protoxyde d'azote (N2O)",
-          "Ozone (O3)"
+          "Dióxido de carbono (CO2)",
+          "Metano (CH4)",
+          "Óxido nitroso (N2O)",
+          "Ozono (O3)"
         ],
-        "correctAnswer": "Dioxyde de carbone (CO2)",
-        "explanation": "el CO2 représente environ 76% des émissions de gaz à effet de serre d'origine humaine.",
-        "difficulty": "Fácil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "Dióxido de carbono (CO2)",
+        "explanation": "El CO2 representa alrededor del 76% de las emisiones de gases de efecto invernadero provocadas por el hombre.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0001"
       },
       {
-        "question": "Quelle activité humaine contribue el más au changement climatique ?",
+        "question": "¿Qué actividad humana contribuye más al cambio climático?",
         "options": [
-          "Combustion de combustibles fossiles",
-          "Agriculture",
-          "Déforestation",
-          "Transport aérien"
+          "Quema de combustibles fósiles",
+          "Agricultura",
+          "Deforestación",
+          "Transporte aéreo"
         ],
-        "correctAnswer": "Combustion de combustibles fossiles",
-        "explanation": "la combustion de charbon, pétrole y gaz naturel es responsable de 73% des émissions mondiales de GES.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "Quema de combustibles fósiles",
+        "explanation": "La combustión de carbón, petróleo y gas natural es responsable del 73% de las emisiones globales de GEI.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0002"
       },
       {
-        "question": "Quel continente es el más affecté par la désertification ?",
+        "question": "¿Qué continente es el más afectado por la desertificación?",
         "options": [
-          "Afrique",
-          "Asie",
-          "Amérique del sur",
-          "Australie"
+          "África",
+          "Asia",
+          "Sudamerica",
+          "Australia"
         ],
-        "correctAnswer": "Afrique",
-        "explanation": "L'Afrique es particulièrement vulnérable à la désertification, notamment en la región del Sahel.",
-        "difficulty": "Fácil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "África",
+        "explanation": "África es particularmente vulnerable a la desertificación, particularmente en la región del Sahel.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0003"
       }
     ],
     "Biodiversité Africaine": [
       {
-        "question": "Cuál es el más grand parc national d'Afrique ?",
+        "question": "¿Cuál es el parque nacional más grande de África?",
         "options": [
-          "Parc National de Namib-Naukluft (Namibie)",
-          "Parc Kruger (Afrique del sur)",
-          "Parc Serengeti (Tanzanie)",
-          "Parc Etosha (Namibie)"
+          "Parque Nacional Namib-Naukluft (Namibia)",
+          "Parque Kruger (Sudáfrica)",
+          "Parque Serengeti (Tanzania)",
+          "Parque Etosha (Namibia)"
         ],
-        "correctAnswer": "Parc National de Namib-Naukluft (Namibie)",
-        "explanation": "el Parc de Namib-Naukluft couvre 49 768 km², ce qui en fait el más grand parc d'Afrique.",
-        "difficulty": "Difícil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "Parque Nacional Namib-Naukluft (Namibia)",
+        "explanation": "El parque Namib-Naukluft cubre 49.768 km², lo que lo convierte en el parque más grande de África.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0004"
       },
       {
-        "question": "Cuántos d'espèces d'éléphants existe-t-il en Afrique ?",
+        "question": "¿Cuántas especies de elefantes hay en África?",
         "options": [
           "2",
           "1",
@@ -82,126 +87,135 @@
           "4"
         ],
         "correctAnswer": "2",
-        "explanation": "Il existe deux espèces d'éléphants africains : l'éléphant de savane y l'éléphant de forêt.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Biodiversité Africaine"
+        "explanation": "Hay dos especies de elefantes africanos: el elefante de sabana y el elefante de bosque.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0005"
       },
       {
-        "question": "Quel animal africain peut vivre más longtemps sin eau ?",
+        "question": "¿Qué animal africano puede vivir más tiempo sin agua?",
         "options": [
-          "la girafe",
-          "el chameau",
-          "L'oryx",
-          "el dromadaire"
+          "la jirafa",
+          "el camello",
+          "el orix",
+          "el camello"
         ],
-        "correctAnswer": "L'oryx",
-        "explanation": "L'oryx peut survivre varios mes sin boire, en tirant l'eau de sa nourriture.",
-        "difficulty": "Difícil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "el orix",
+        "explanation": "El oryx puede sobrevivir varios meses sin beber, obteniendo agua de su comida.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0006"
       },
       {
-        "question": "Cuál es l'oiseau national del Kenya ?",
+        "question": "¿Cuál es el ave nacional de Kenia?",
         "options": [
-          "el coq de roche",
-          "L'aigle martial",
-          "el calao terrestre",
-          "el flamant rose"
+          "El gallo de la roca",
+          "El águila marcial",
+          "El cálao terrestre",
+          "el flamenco rosa"
         ],
-        "correctAnswer": "el coq de roche",
-        "explanation": "el coq de roche (lilac-breasted roller) es l'oiseau national del Kenya, conocido para ses couleurs vives.",
-        "difficulty": "Difícil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "El gallo de la roca",
+        "explanation": "La carraca de pecho lila es el ave nacional de Kenia, conocida por sus colores brillantes.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0007"
       }
     ],
     "Énergies Renouvelables": [
       {
-        "question": "Quel país africain produit el más d'énergie solaire ?",
+        "question": "¿Qué país africano produce más energía solar?",
         "options": [
-          "Maroc",
-          "Afrique del sur",
-          "Égypte",
-          "Algérie"
+          "Marruecos",
+          "Sudáfrica",
+          "Egipto",
+          "Argelia"
         ],
-        "correctAnswer": "Maroc",
-        "explanation": "el Maroc abrite el complejo solaire de Noor Ouarzazate, l'una des más grandes centrales solaires au mundo.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "Marruecos",
+        "explanation": "Marruecos alberga el complejo solar Noor Ouarzazate, una de las plantas de energía solar más grandes del mundo.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0008"
       },
       {
-        "question": "Qu'es-ce que l'énergie géothermique ?",
+        "question": "¿Qué es la energía geotérmica?",
         "options": [
-          "Énergie provenant de la calor de la tierra",
-          "Énergie del vent",
-          "Énergie del sol",
-          "Énergie des vagues"
+          "Energía del calor de la Tierra.",
+          "Energía eólica",
+          "Energía del sol",
+          "Energía de las olas"
         ],
-        "correctAnswer": "Énergie provenant de la calor de la tierra",
-        "explanation": "L'énergie géothermique utilise la calor stockée sous la surface terrestre.",
-        "difficulty": "Fácil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "Energía del calor de la Tierra.",
+        "explanation": "La energía geotérmica utiliza el calor almacenado debajo de la superficie terrestre.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0009"
       },
       {
-        "question": "Quel país africain a el más grand potentiel hydroélectrique ?",
+        "question": "¿Qué país africano tiene el mayor potencial hidroeléctrico?",
         "options": [
-          "République Démocratique del Congo",
-          "Éthiopie",
-          "Égypte",
+          "República Democrática del Congo",
+          "Etiopía",
+          "Egipto",
           "Nigeria"
         ],
-        "correctAnswer": "République Démocratique del Congo",
-        "explanation": "la RDC possède el más grand potentiel hydroélectrique d'Afrique grâce au río Congo.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "República Democrática del Congo",
+        "explanation": "La República Democrática del Congo tiene el mayor potencial hidroeléctrico de África gracias al río Congo.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0010"
       }
     ],
-    "Pollution y Déchets": [
+    "Pollution et Déchets": [
       {
-        "question": "Cuántos de tiempo met un sac plastique à se décomposer en la nature ?",
+        "question": "¿Cuánto tiempo tarda una bolsa de plástico en descomponerse en la naturaleza?",
         "options": [
-          "100-400 ans",
-          "10-50 ans",
-          "500-1000 ans",
-          "1-10 ans"
+          "100-400 años",
+          "10-50 años",
+          "500-1000 años",
+          "1-10 años"
         ],
-        "correctAnswer": "100-400 ans",
-        "explanation": "un sac plastique met entre 100 y 400 ans à se décomposer complètement en la nature.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Pollution y Déchets"
+        "correctAnswer": "100-400 años",
+        "explanation": "Una bolsa de plástico tarda entre 100 y 400 años en descomponerse completamente en la naturaleza.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0011"
       },
       {
-        "question": "Quel país africain a été el premier à interdire los sacs plastiques ?",
+        "question": "¿Qué país africano fue el primero en prohibir las bolsas de plástico?",
         "options": [
-          "Rwanda",
-          "Kenya",
-          "Afrique del sur",
-          "Maroc"
+          "Ruanda",
+          "Kenia",
+          "Sudáfrica",
+          "Marruecos"
         ],
-        "correctAnswer": "Rwanda",
-        "explanation": "el Rwanda a interdit los sacs plastiques en 2008, devenant un leader africain en ce domaine.",
-        "difficulty": "Medio",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Pollution y Déchets"
+        "correctAnswer": "Ruanda",
+        "explanation": "Ruanda prohibió las bolsas de plástico en 2008, convirtiéndose en un líder africano en este ámbito.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0012"
       },
       {
-        "question": "Qu'es-ce que el 'continente de plastique' en l'océano Pacifique ?",
+        "question": "¿Qué es el 'continente plástico' en el Océano Pacífico?",
         "options": [
-          "una zone de concentration de déchets plastiques",
-          "una îel artificielle",
-          "un nouveau continente découvert",
-          "una plateforme pétrolière"
+          "Una zona de concentración de residuos plásticos",
+          "Una isla artificial",
+          "Un nuevo continente descubierto",
+          "Una plataforma petrolera"
         ],
-        "correctAnswer": "una zone de concentration de déchets plastiques",
-        "explanation": "el 'Great Pacific Garbage Patch' es una zone de varios millions de km² de déchets plastiques flottants.",
-        "difficulty": "Fácil",
-        "category": "Medio Ambiente y Ecología",
-        "subcategory": "Pollution y Déchets"
+        "correctAnswer": "Una zona de concentración de residuos plásticos",
+        "explanation": "La 'Gran Mancha de Basura del Pacífico' es un área de varios millones de kilómetros cuadrados de desechos plásticos flotantes.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0013"
       }
     ]
   }

@@ -412,8 +412,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         ),
                         _buildActionTile(
                           title: TranslationService.translate('about'),
-                          subtitle: TranslationService.translate('version') +
-                              ' 1.0.0',
+                          subtitle: '${TranslationService.translate('version')} 1.0.0',
                           icon: Icons.info_rounded,
                           onTap: _showAboutDialog,
                           isDark: isDark,

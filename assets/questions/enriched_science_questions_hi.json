@@ -10,7 +10,9 @@
       },
       "explanation": "निर्वात में प्रकाश की गति ठीक 299,792,458 m/s है।",
       "difficulty": "hard",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0000",
+      "correctAnswer": "299,792,458 मी/से"
     },
     {
       "question": "वह कौन सी प्रक्रिया है जिसके द्वारा पौधे अपना भोजन बनाते हैं?",
@@ -22,7 +24,9 @@
       },
       "explanation": "प्रकाश संश्लेषण CO2 और पानी को ग्लूकोज में परिवर्तित करने के लिए सूर्य के प्रकाश का उपयोग करता है।",
       "difficulty": "easy",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0001",
+      "correctAnswer": "प्रकाश संश्लेषण"
     },
     {
       "question": "सबसे छोटा रासायनिक तत्व कौन सा है?",
@@ -34,7 +38,9 @@
       },
       "explanation": "हाइड्रोजन का परमाणु क्रमांक 1 है और यह सबसे छोटा परमाणु है।",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0002",
+      "correctAnswer": "हाइड्रोजन"
     },
     {
       "question": "जल का रासायनिक सूत्र क्या है?",
@@ -46,7 +52,9 @@
       },
       "explanation": "पानी दो हाइड्रोजन परमाणुओं और एक ऑक्सीजन परमाणु से बना है।",
       "difficulty": "easy",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0003",
+      "correctAnswer": "H2O"
     },
     {
       "question": "मानव शरीर में सबसे बड़ा अंग कौन सा है?",
@@ -58,7 +66,9 @@
       },
       "explanation": "त्वचा शरीर के कुल वजन का लगभग 16% बनाती है।",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0004",
+      "correctAnswer": "त्वचा"
     },
     {
       "question": "सूर्य के सबसे निकट का ग्रह कौन सा है?",
@@ -70,7 +80,9 @@
       },
       "explanation": "बुध हमारे सौर मंडल में सूर्य के सबसे निकट का ग्रह है।",
       "difficulty": "easy",
-      "subcategory": "Astronomie"
+      "subcategory": "Astronomie",
+      "id": "science_0005",
+      "correctAnswer": "बुध"
     },
     {
       "question": "पृथ्वी के वायुमंडल में सबसे प्रचुर गैस कौन सी है?",
@@ -82,7 +94,9 @@
       },
       "explanation": "नाइट्रोजन पृथ्वी के वायुमंडल का लगभग 78% हिस्सा बनाती है।",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0006",
+      "correctAnswer": "नाइट्रोजन"
     },
     {
       "question": "सामान्य वायुमंडलीय दबाव पर पानी का क्वथनांक कितना होता है?",
@@ -94,7 +108,9 @@
       },
       "explanation": "समुद्र तल पर पानी 100°C (212°F) पर उबलता है।",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0007",
+      "correctAnswer": "100°C"
     },
     {
       "question": "वयस्क मानव शरीर में कितनी हड्डियाँ होती हैं?",
@@ -106,7 +122,9 @@
       },
       "explanation": "वयस्क मानव शरीर में 206 हड्डियाँ होती हैं।",
       "difficulty": "hard",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0008",
+      "correctAnswer": "206"
     },
     {
       "question": "वह कौन सा बल है जो वस्तुओं को पृथ्वी के केंद्र की ओर खींचता है?",
@@ -118,7 +136,9 @@
       },
       "explanation": "गुरुत्वाकर्षण वह बल है जो सभी वस्तुओं को पृथ्वी के केंद्र की ओर खींचता है।",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0009",
+      "correctAnswer": "गुरुत्वाकर्षण"
     },
     {
       "question": "पोटैशियम का रासायनिक चिन्ह क्या है?",
@@ -128,7 +148,8 @@
         "वह": false,
         "मिलीग्राम": false
       },
-      "correctAnswer": "K"
+      "correctAnswer": "के",
+      "id": "science_0010"
     },
     {
       "question": "मैग्नीशियम का रासायनिक चिन्ह क्या है?",
@@ -138,7 +159,8 @@
         "के": false,
         "वह": false
       },
-      "correctAnswer": "Mg"
+      "correctAnswer": "मिलीग्राम",
+      "id": "science_0011"
     },
     {
       "question": "सिलिकॉन का रासायनिक चिन्ह क्या है?",
@@ -148,7 +170,8 @@
         "पी": false,
         "से": false
       },
-      "correctAnswer": "Si"
+      "correctAnswer": "अगर",
+      "id": "science_0012"
     },
     {
       "question": "सेलेनियम का रासायनिक प्रतीक क्या है?",
@@ -158,7 +181,8 @@
         "पी": false,
         "अगर": false
       },
-      "correctAnswer": "Se"
+      "correctAnswer": "से",
+      "id": "science_0013"
     },
     {
       "question": "थैलियम का रासायनिक चिन्ह क्या है?",
@@ -168,7 +192,8 @@
         "गा": false,
         "में": false
       },
-      "correctAnswer": "Tl"
+      "correctAnswer": "टी एल",
+      "id": "science_0014"
     },
     {
       "question": "कैडमियम का रासायनिक चिन्ह क्या है?",
@@ -178,7 +203,8 @@
         "एचजी": false,
         "पंजाब": false
       },
-      "correctAnswer": "Cd"
+      "correctAnswer": "सीडी",
+      "id": "science_0015"
     },
     {
       "question": "पैलेडियम का रासायनिक चिन्ह क्या है?",
@@ -188,7 +214,8 @@
         "सह": false,
         "पं": false
       },
-      "correctAnswer": "Pd"
+      "correctAnswer": "पी.डी.",
+      "id": "science_0016"
     },
     {
       "question": "मोलिब्डेनम का रासायनिक प्रतीक क्या है?",
@@ -198,7 +225,8 @@
         "डब्ल्यू": false,
         "वी": false
       },
-      "correctAnswer": "Mo"
+      "correctAnswer": "एमबी",
+      "id": "science_0017"
     },
     {
       "question": "टंगस्टन का रासायनिक चिन्ह क्या है?",
@@ -208,7 +236,8 @@
         "एमबी": false,
         "वी": false
       },
-      "correctAnswer": "W"
+      "correctAnswer": "डब्ल्यू",
+      "id": "science_0018"
     },
     {
       "question": "वैनेडियम का रासायनिक चिन्ह क्या है?",
@@ -218,7 +247,8 @@
         "एमबी": false,
         "डब्ल्यू": false
       },
-      "correctAnswer": "V"
+      "correctAnswer": "वी",
+      "id": "science_0019"
     },
     {
       "question": "मैंगनीज का रासायनिक चिन्ह क्या है?",
@@ -228,7 +258,8 @@
         "डी": false,
         "फ़े": false
       },
-      "correctAnswer": "Mn"
+      "correctAnswer": "एम.एन.",
+      "id": "science_0020"
     },
     {
       "question": "टेक्नीटियम का रासायनिक चिन्ह क्या है?",
@@ -238,7 +269,8 @@
         "डी": false,
         "फ़े": false
       },
-      "correctAnswer": "Tc"
+      "correctAnswer": "टीसी",
+      "id": "science_0021"
     },
     {
       "question": "टाइटेनियम का रासायनिक चिन्ह क्या है?",
@@ -248,7 +280,8 @@
         "एच.एफ": false,
         "वी": false
       },
-      "correctAnswer": "Ti"
+      "correctAnswer": "ती",
+      "id": "science_0022"
     },
     {
       "question": "जिरकोनियम का रासायनिक प्रतीक क्या है?",
@@ -258,7 +291,8 @@
         "एच.एफ": false,
         "वी": false
       },
-      "correctAnswer": "Zr"
+      "correctAnswer": "Zr",
+      "id": "science_0023"
     },
     {
       "question": "हेफ़नियम का रासायनिक प्रतीक क्या है?",
@@ -268,7 +302,8 @@
         "Zr": false,
         "वी": false
       },
-      "correctAnswer": "Hf"
+      "correctAnswer": "एच.एफ",
+      "id": "science_0024"
     },
     {
       "question": "स्कैंडियम का रासायनिक चिन्ह क्या है?",
@@ -278,7 +313,8 @@
         "वहाँ": false,
         "ए.सी": false
       },
-      "correctAnswer": "Sc"
+      "correctAnswer": "अनुसूचित जाति",
+      "id": "science_0025"
     },
     {
       "question": "लैन्थेनम का रासायनिक चिन्ह क्या है?",
@@ -288,7 +324,8 @@
         "वाई": false,
         "ए.सी": false
       },
-      "correctAnswer": "La"
+      "correctAnswer": "वहाँ",
+      "id": "science_0026"
     },
     {
       "question": "रुबिडियम का रासायनिक प्रतीक क्या है?",
@@ -298,7 +335,8 @@
         "एन/ए": false,
         "के": false
       },
-      "correctAnswer": "Rb"
+      "correctAnswer": "आरबी",
+      "id": "science_0027"
     },
     {
       "question": "सीज़ियम का रासायनिक प्रतीक क्या है?",
@@ -308,7 +346,8 @@
         "एन/ए": false,
         "के": false
       },
-      "correctAnswer": "Cs"
+      "correctAnswer": "सी",
+      "id": "science_0028"
     },
     {
       "question": "फ्रांसियम का रासायनिक प्रतीक क्या है?",
@@ -318,7 +357,8 @@
         "एन/ए": false,
         "के": false
       },
-      "correctAnswer": "Fr"
+      "correctAnswer": "फादर",
+      "id": "science_0029"
     },
     {
       "question": "बेरिलियम का रासायनिक चिन्ह क्या है?",
@@ -328,7 +368,8 @@
         "वह": false,
         "एसआर": false
       },
-      "correctAnswer": "Be"
+      "correctAnswer": "होना",
+      "id": "science_0030"
     },
     {
       "question": "स्ट्रोंटियम का रासायनिक प्रतीक क्या है?",
@@ -338,7 +379,8 @@
         "मिलीग्राम": false,
         "वह": false
       },
-      "correctAnswer": "Sr"
+      "correctAnswer": "एसआर",
+      "id": "science_0031"
     }
   ]
 }

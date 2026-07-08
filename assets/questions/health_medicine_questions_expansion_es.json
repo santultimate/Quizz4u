@@ -1,107 +1,114 @@
 {
-  "Salud y Medicina": {
+  "Santé et Médecine": {
     "Maladies Tropicales": [
       {
-        "question": "Quel moustique transmet el paludisme (malaria) ?",
+        "question": "¿Qué mosquito transmite la malaria?",
         "options": [
-          "Anophèel",
+          "Anofeles",
           "Aedes",
           "Culex",
           "Tigre"
         ],
-        "correctAnswer": "Anophèel",
-        "explanation": "el moustique anophèel femelle transmet el parasite Plasmodium responsable del paludisme.",
-        "difficulty": "Medio",
-        "category": "Salud y Medicina",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "Anofeles",
+        "explanation": "La hembra del mosquito Anopheles transmite el parásito Plasmodium responsable de la malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
-        "question": "Quelle enfermedad es causée par el virus Ebola ?",
+        "question": "¿Qué enfermedad es causada por el virus del Ébola?",
         "options": [
-          "Fièvre hémorragique",
-          "Paludisme",
-          "Tuberculose",
-          "Choléra"
+          "Fiebre hemorrágica",
+          "Malaria",
+          "Tuberculosis",
+          "Cólera"
         ],
-        "correctAnswer": "Fièvre hémorragique",
-        "explanation": "el virus Ebola causa una fièvre hémorragique grave con un taux de mortalité élevé.",
-        "difficulty": "Fácil",
-        "category": "Salud y Medicina",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "Fiebre hemorrágica",
+        "explanation": "El virus del Ébola causa fiebre hemorrágica grave con una alta tasa de mortalidad.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
-        "question": "Quel país africain a été déclaré exempt de polio en 2020 ?",
+        "question": "¿Qué país africano fue declarado libre de polio en 2020?",
         "options": [
           "Nigeria",
-          "Kenya",
-          "Afrique del sur",
-          "Égypte"
+          "Kenia",
+          "Sudáfrica",
+          "Egipto"
         ],
         "correctAnswer": "Nigeria",
-        "explanation": "el Nigeria a été déclaré exempt de polio sauvage en août 2020, marquant una grande victoire.",
-        "difficulty": "Difícil",
-        "category": "Salud y Medicina",
-        "subcategory": "Maladies Tropicales"
+        "explanation": "Nigeria fue declarada libre de polio salvaje en agosto de 2020, lo que supuso una gran victoria.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
       {
-        "question": "Quel arbre africain es utilisé para traiter la fièvre y los douleurs ?",
+        "question": "¿Qué árbol africano se utiliza para tratar la fiebre y el dolor?",
         "options": [
-          "Quinquina",
+          "Cinchona",
           "Baobab",
           "Moringa",
-          "Karité"
+          "karité"
         ],
-        "correctAnswer": "Quinquina",
-        "explanation": "L'écorce del quinquina contient de la quinine, utilisée contre el paludisme.",
-        "difficulty": "Medio",
-        "category": "Salud y Medicina",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "Cinchona",
+        "explanation": "La corteza del árbol de quina contiene quinina, utilizada contra la malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
-        "question": "Quel fruit del baobab es riche en vitamine C ?",
+        "question": "¿Qué fruta del baobab es rica en vitamina C?",
         "options": [
-          "el pain de singe",
-          "la datte",
-          "la mangue",
-          "la papaye"
+          "pan de mono",
+          "la fecha",
+          "mango",
+          "Papaya"
         ],
-        "correctAnswer": "el pain de singe",
-        "explanation": "el fruit del baobab (pain de singe) contient 6 vez más de vitamine C qu'una orange.",
-        "difficulty": "Medio",
-        "category": "Salud y Medicina",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "pan de mono",
+        "explanation": "La fruta baobab (pan de mono) contiene 6 veces más vitamina C que una naranja.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
-    "Nutrition y Santé": [
+    "Nutrition et Santé": [
       {
-        "question": "Quelle céréale africaine es naturellement sin gluten ?",
+        "question": "¿Qué cereal africano es naturalmente libre de gluten?",
         "options": [
-          "el fonio",
-          "el blé",
-          "L'orge",
-          "el seigle"
+          "Fonio",
+          "Trigo",
+          "Cebada",
+          "Centeno"
         ],
-        "correctAnswer": "el fonio",
-        "explanation": "el fonio es una céréale ancestrale africaine, nutritive y sin gluten.",
-        "difficulty": "Medio",
-        "category": "Salud y Medicina",
-        "subcategory": "Nutrition y Santé"
+        "correctAnswer": "Fonio",
+        "explanation": "El fonio es un cereal ancestral africano, nutritivo y sin gluten.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
-        "question": "Cuántos de litres d'agua doit-on boire par día en moyenne ?",
+        "question": "¿Cuántos litros de agua debemos beber al día en promedio?",
         "options": [
-          "1,5 à 2 litres",
-          "3 à 4 litres",
-          "0,5 à 1 litre",
-          "5 litres"
+          "1,5 a 2 litros",
+          "3 a 4 litros",
+          "0,5 a 1 litro",
+          "5 litros"
         ],
-        "correctAnswer": "1,5 à 2 litres",
-        "explanation": "Il es recommandé de boire environ 1,5 à 2 litres d'agua par día para rester hydraté.",
-        "difficulty": "Fácil",
-        "category": "Salud y Medicina",
-        "subcategory": "Nutrition y Santé"
+        "correctAnswer": "1,5 a 2 litros",
+        "explanation": "Se recomienda beber entre 1,5 y 2 litros de agua al día para mantenerse hidratado.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

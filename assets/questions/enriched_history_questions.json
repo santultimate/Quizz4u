@@ -10,7 +10,8 @@
       },
       "explanation": "L'Empire du Mali, fondé par Soundiata Keïta, était l'un des plus grands empires de l'histoire africaine.",
       "difficulty": "medium",
-      "subcategory": "Empires"
+      "subcategory": "Empires",
+      "id": "history_0000"
     },
     {
       "question": "Qui était le souverain le plus célèbre de l'Empire du Mali ?",
@@ -22,7 +23,8 @@
       },
       "explanation": "Mansa Moussa (1312-1337) est considéré comme l'homme le plus riche de l'histoire.",
       "difficulty": "easy",
-      "subcategory": "Souverains"
+      "subcategory": "Souverains",
+      "id": "history_0001"
     },
     {
       "question": "Quelle ville était la capitale de l'Empire du Mali ?",
@@ -34,7 +36,8 @@
       },
       "explanation": "Niani était la capitale politique de l'Empire du Mali.",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "history_0002"
     },
     {
       "question": "Quel était le principal produit d'exportation de l'Empire du Mali ?",
@@ -46,7 +49,8 @@
       },
       "explanation": "L'or du Mali était si abondant qu'il a influencé l'économie mondiale de l'époque.",
       "difficulty": "medium",
-      "subcategory": "Économie"
+      "subcategory": "Économie",
+      "id": "history_0003"
     },
     {
       "question": "Quelle université était la plus prestigieuse de l'Empire du Mali ?",
@@ -58,7 +62,8 @@
       },
       "explanation": "L'Université de Sankoré à Tombouctou était un centre d'apprentissage renommé.",
       "difficulty": "hard",
-      "subcategory": "Éducation"
+      "subcategory": "Éducation",
+      "id": "history_0004"
     },
     {
       "question": "Quel explorateur arabe a visité l'Empire du Mali au XIVe siècle ?",
@@ -70,7 +75,8 @@
       },
       "explanation": "Ibn Battuta a laissé des récits détaillés de son voyage au Mali.",
       "difficulty": "medium",
-      "subcategory": "Explorateurs"
+      "subcategory": "Explorateurs",
+      "id": "history_0005"
     },
     {
       "question": "Quelle était la religion principale de l'Empire du Mali ?",
@@ -82,7 +88,8 @@
       },
       "explanation": "L'islam s'est répandu dans l'Empire du Mali à partir du XIe siècle.",
       "difficulty": "easy",
-      "subcategory": "Religion"
+      "subcategory": "Religion",
+      "id": "history_0006"
     },
     {
       "question": "Quel était le nom du système de gouvernement de l'Empire du Mali ?",
@@ -94,7 +101,8 @@
       },
       "explanation": "L'Empire du Mali était une monarchie dirigée par un Mansa (roi).",
       "difficulty": "medium",
-      "subcategory": "Politique"
+      "subcategory": "Politique",
+      "id": "history_0007"
     },
     {
       "question": "Quelle était la principale source de richesse de Tombouctou ?",
@@ -106,7 +114,8 @@
       },
       "explanation": "Tombouctou était un carrefour commercial majeur entre l'Afrique du Nord et l'Afrique subsaharienne.",
       "difficulty": "medium",
-      "subcategory": "Commerce"
+      "subcategory": "Commerce",
+      "id": "history_0008"
     },
     {
       "question": "Quel était le nom de la dynastie qui a fondé l'Empire du Mali ?",
@@ -118,7 +127,8 @@
       },
       "explanation": "La dynastie Keïta a fondé et dirigé l'Empire du Mali pendant plusieurs siècles.",
       "difficulty": "hard",
-      "subcategory": "Dynasties"
+      "subcategory": "Dynasties",
+      "id": "history_0009"
     },
     {
       "question": "En quelle annee le Mali a-t-il obtenu son independance ?",
@@ -128,7 +138,8 @@
         "1962": false,
         "1965": false
       },
-      "correctAnswer": "1960"
+      "correctAnswer": "1960",
+      "id": "history_0010"
     },
     {
       "question": "Quel etait le nom de l'empire medieval qui a domine l'Afrique de l'Ouest ?",
@@ -138,7 +149,8 @@
         "Empire Songhai": false,
         "Empire du Kanem": false
       },
-      "correctAnswer": "Empire du Mali"
+      "correctAnswer": "Empire du Mali",
+      "id": "history_0011"
     },
     {
       "question": "Qui etait le plus celebre empereur de l'Empire du Mali ?",
@@ -148,7 +160,8 @@
         "Sonni Ali": false,
         "Askia Mohammed": false
       },
-      "correctAnswer": "Mansa Moussa"
+      "correctAnswer": "Mansa Moussa",
+      "id": "history_0012"
     },
     {
       "question": "En quelle annee Mansa Moussa a-t-il effectue son celebre pelerinage a La Mecque ?",
@@ -158,7 +171,8 @@
         "1350": false,
         "1400": false
       },
-      "correctAnswer": "1324"
+      "correctAnswer": "1324",
+      "id": "history_0013"
     },
     {
       "question": "Quel fleuve traverse le Mali du nord au sud ?",
@@ -168,7 +182,8 @@
         "Le Congo": false,
         "Le Nil": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "Le Niger",
+      "id": "history_0014"
     },
     {
       "question": "Quelle ville malienne est surnommee \"la perle du desert\" ?",
@@ -178,7 +193,8 @@
         "Gao": false,
         "Mopti": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombouctou",
+      "id": "history_0015"
     },
     {
       "question": "Quel etait le premier president du Mali independant ?",
@@ -188,7 +204,8 @@
         "Alpha Oumar Konare": false,
         "Amadou Toumani Toure": false
       },
-      "correctAnswer": "Modibo Keita"
+      "correctAnswer": "Modibo Keita",
+      "id": "history_0016"
     },
     {
       "question": "En quelle annee la democratie a-t-elle ete retablie au Mali ?",
@@ -198,7 +215,8 @@
         "1992": true,
         "1993": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0017"
     },
     {
       "question": "Quel est le nom de la grande mosquee de Djenne ?",
@@ -208,7 +226,8 @@
         "Mosquee Royale": false,
         "Mosquee Centrale": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "Grande Mosquee de Djenne",
+      "id": "history_0018"
     },
     {
       "question": "Quel etait le nom de l'empire qui a precede l'Empire du Mali ?",
@@ -218,7 +237,8 @@
         "Empire du Kanem": false,
         "Empire du Bornou": false
       },
-      "correctAnswer": "Empire du Ghana"
+      "correctAnswer": "Empire du Ghana",
+      "id": "history_0019"
     },
     {
       "question": "Quel etait le surnom de Mansa Moussa ?",
@@ -228,7 +248,8 @@
         "Le Conquerant": false,
         "Le Sage": false
       },
-      "correctAnswer": "Le Roi des Rois"
+      "correctAnswer": "Le Roi des Rois",
+      "id": "history_0020"
     },
     {
       "question": "Quelle etait la principale ressource economique de l'Empire du Mali ?",
@@ -238,7 +259,8 @@
         "Les esclaves": false,
         "Le cuivre": false
       },
-      "correctAnswer": "L'or"
+      "correctAnswer": "L'or",
+      "id": "history_0021"
     },
     {
       "question": "Quel etait le nom de la premiere capitale du Mali independant ?",
@@ -248,7 +270,8 @@
         "Segou": false,
         "Mopti": false
       },
-      "correctAnswer": "Bamako"
+      "correctAnswer": "Bamako",
+      "id": "history_0022"
     },
     {
       "question": "En quelle annee l'Empire du Mali a-t-il atteint son apogee ?",
@@ -258,7 +281,8 @@
         "XVe siecle": false,
         "XVIe siecle": false
       },
-      "correctAnswer": "XIVe siecle"
+      "correctAnswer": "XIVe siecle",
+      "id": "history_0023"
     },
     {
       "question": "Quelle ville etait le centre commercial le plus important de l'Empire du Mali ?",
@@ -268,7 +292,8 @@
         "Djenne": false,
         "Niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombouctou",
+      "id": "history_0024"
     },
     {
       "question": "Quel etait le nom de l'universite la plus celebre de Tombouctou ?",
@@ -278,7 +303,8 @@
         "Universite de Cordoue": false,
         "Universite de Fez": false
       },
-      "correctAnswer": "Universite Sankore"
+      "correctAnswer": "Universite Sankore",
+      "id": "history_0025"
     },
     {
       "question": "Quel etait le nom du premier empereur de l'Empire du Mali ?",
@@ -288,7 +314,8 @@
         "Sonni Ali": false,
         "Askia Mohammed": false
       },
-      "correctAnswer": "Sundiata Keita"
+      "correctAnswer": "Sundiata Keita",
+      "id": "history_0026"
     },
     {
       "question": "En quelle annee Sundiata Keita a-t-il fonde l'Empire du Mali ?",
@@ -298,7 +325,8 @@
         "1250": false,
         "1300": false
       },
-      "correctAnswer": "1235"
+      "correctAnswer": "1235",
+      "id": "history_0027"
     },
     {
       "question": "Quel etait le nom de la bataille qui a permis a Sundiata de conquerir le pouvoir ?",
@@ -308,7 +336,8 @@
         "Bataille de Koulikoro": false,
         "Bataille de Segou": false
       },
-      "correctAnswer": "Bataille de Kirina"
+      "correctAnswer": "Bataille de Kirina",
+      "id": "history_0028"
     },
     {
       "question": "Quel etait le nom de l'empire qui a succede a l'Empire du Mali ?",
@@ -318,7 +347,8 @@
         "Empire du Kanem": false,
         "Empire du Bornou": false
       },
-      "correctAnswer": "Empire Songhai"
+      "correctAnswer": "Empire Songhai",
+      "id": "history_0029"
     },
     {
       "question": "Quel etait le nom du premier president malien elu democratiquement ?",
@@ -328,7 +358,8 @@
         "Moussa Traore": false,
         "Amadou Toumani Toure": false
       },
-      "correctAnswer": "Alpha Oumar Konare"
+      "correctAnswer": "Alpha Oumar Konare",
+      "id": "history_0030"
     },
     {
       "question": "En quelle annee Alpha Oumar Konare a-t-il ete elu president ?",
@@ -338,7 +369,8 @@
         "1993": false,
         "1994": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0031"
     },
     {
       "question": "Quel etait le nom de la constitution adoptee en 1992 au Mali ?",
@@ -348,7 +380,8 @@
         "Constitution de la IVe Republique": false,
         "Constitution democratique": false
       },
-      "correctAnswer": "Constitution de la IIIe Republique"
+      "correctAnswer": "Constitution de la IIIe Republique",
+      "id": "history_0032"
     },
     {
       "question": "Quel etait le nom du premier ministre malien qui a dirige la transition democratique ?",
@@ -358,7 +391,8 @@
         "Alpha Oumar Konare": false,
         "Amadou Toumani Toure": false
       },
-      "correctAnswer": "Soumana Sacko"
+      "correctAnswer": "Soumana Sacko",
+      "id": "history_0033"
     },
     {
       "question": "Quel etait le nom de la region du Mali qui etait le berceau de l'Empire du Mali ?",
@@ -368,7 +402,8 @@
         "Region de Gao": false,
         "Region de Segou": false
       },
-      "correctAnswer": "Region de Kayes"
+      "correctAnswer": "Region de Kayes",
+      "id": "history_0034"
     },
     {
       "question": "Quel etait le nom de la ville qui etait la capitale religieuse de l'Empire du Mali ?",
@@ -378,7 +413,8 @@
         "Gao": false,
         "Niani": false
       },
-      "correctAnswer": "Djenne"
+      "correctAnswer": "Djenne",
+      "id": "history_0035"
     },
     {
       "question": "Quel etait le nom de la mosquee la plus ancienne d'Afrique de l'Ouest ?",
@@ -388,7 +424,8 @@
         "Mosquee de Gao": false,
         "Mosquee de Bamako": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "Grande Mosquee de Djenne",
+      "id": "history_0036"
     },
     {
       "question": "En quelle annee la Grande Mosquee de Djenne a-t-elle ete construite ?",
@@ -398,7 +435,8 @@
         "XVe siecle": false,
         "XVIe siecle": false
       },
-      "correctAnswer": "XIIIe siecle"
+      "correctAnswer": "XIIIe siecle",
+      "id": "history_0037"
     },
     {
       "question": "Quel etait le nom de la langue officielle de l'Empire du Mali ?",
@@ -408,7 +446,8 @@
         "Le songhai": false,
         "Le peul": false
       },
-      "correctAnswer": "Le mandingue"
+      "correctAnswer": "Le mandingue",
+      "id": "history_0038"
     },
     {
       "question": "Quel etait le nom de la monnaie utilisee dans l'Empire du Mali ?",
@@ -418,7 +457,8 @@
         "Le franc": false,
         "Le dirham": false
       },
-      "correctAnswer": "Le cowrie"
+      "correctAnswer": "Le cowrie",
+      "id": "history_0039"
     },
     {
       "question": "Quel etait le nom de la route commerciale qui traversait l'Empire du Mali ?",
@@ -428,7 +468,8 @@
         "Route transsaharienne": true,
         "Route de la soie": false
       },
-      "correctAnswer": "Route transsaharienne"
+      "correctAnswer": "Route transsaharienne",
+      "id": "history_0040"
     },
     {
       "question": "Quel etait le nom de la ville qui etait le centre d'apprentissage de l'Empire du Mali ?",
@@ -438,7 +479,8 @@
         "Gao": false,
         "Niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombouctou",
+      "id": "history_0041"
     },
     {
       "question": "Quel etait le nom de la bibliotheque la plus celebre de Tombouctou ?",
@@ -448,7 +490,8 @@
         "Bibliotheque Al-Azhar": false,
         "Bibliotheque de Cordoue": false
       },
-      "correctAnswer": "Bibliotheque Ahmed Baba"
+      "correctAnswer": "Bibliotheque Ahmed Baba",
+      "id": "history_0042"
     },
     {
       "question": "Quel etait le nom de l'historien malien le plus celebre du XVIe siecle ?",
@@ -458,7 +501,8 @@
         "Al-Bakri": false,
         "Ibn Battuta": false
       },
-      "correctAnswer": "Ahmed Baba"
+      "correctAnswer": "Ahmed Baba",
+      "id": "history_0043"
     },
     {
       "question": "Quel etait le nom de la ville qui etait le centre militaire de l'Empire du Mali ?",
@@ -468,7 +512,8 @@
         "Djenne": false,
         "Niani": false
       },
-      "correctAnswer": "Gao"
+      "correctAnswer": "Gao",
+      "id": "history_0044"
     },
     {
       "question": "Quel etait le nom du premier empereur de la dynastie Sonni ?",
@@ -478,7 +523,8 @@
         "Sonni Sulayman": false,
         "Sonni Mohammed": false
       },
-      "correctAnswer": "Sonni Ali"
+      "correctAnswer": "Sonni Ali",
+      "id": "history_0045"
     },
     {
       "question": "En quelle annee Sonni Ali a-t-il conquis Tombouctou ?",
@@ -488,7 +534,8 @@
         "1470": false,
         "1475": false
       },
-      "correctAnswer": "1468"
+      "correctAnswer": "1468",
+      "id": "history_0046"
     },
     {
       "question": "Quel etait le nom de la ville qui etait le centre administratif de l'Empire du Mali ?",
@@ -498,7 +545,8 @@
         "Gao": false,
         "Djenne": false
       },
-      "correctAnswer": "Niani"
+      "correctAnswer": "Niani",
+      "id": "history_0047"
     },
     {
       "question": "Quel etait le nom de la region qui etait le grenier de l'Empire du Mali ?",
@@ -508,7 +556,8 @@
         "Region de Sikasso": false,
         "Region de Koulikoro": false
       },
-      "correctAnswer": "Region de Segou"
+      "correctAnswer": "Region de Segou",
+      "id": "history_0048"
     },
     {
       "question": "Quel etait le nom de la ville qui etait le centre culturel de l'Empire du Mali ?",
@@ -518,7 +567,8 @@
         "Gao": false,
         "Niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombouctou",
+      "id": "history_0049"
     },
     {
       "question": "Quel etait le nom de l'ecrivain malien le plus celebre du XXe siecle ?",
@@ -528,7 +578,8 @@
         "Alpha Oumar Konare": false,
         "Amadou Toumani Toure": false
       },
-      "correctAnswer": "Amadou Hampate Ba"
+      "correctAnswer": "Amadou Hampate Ba",
+      "id": "history_0050"
     },
     {
       "question": "Quel etait le nom de l'oeuvre la plus celebre d'Amadou Hampate Ba ?",
@@ -538,8 +589,8 @@
         "Memoires d'un Peul": false,
         "Contes et Legendes": false
       },
-      "correctAnswer": "L'Etrange Destin de Wangrin"
+      "correctAnswer": "L'Etrange Destin de Wangrin",
+      "id": "history_0051"
     }
   ]
 }
-

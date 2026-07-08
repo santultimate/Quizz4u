@@ -13,7 +13,8 @@
         "explanation": "António Guterres, ancien Premier ministre portugais, est SG de l'ONU depuis 2017.",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Leaders Contemporains"
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
         "question": "Quel président sud-africain a mis fin à l'apartheid ?",
@@ -27,7 +28,8 @@
         "explanation": "Nelson Mandela est devenu le premier président noir d'Afrique du Sud en 1994, après 27 ans de prison.",
         "difficulty": "easy",
         "category": "Politique et Économie",
-        "subcategory": "Leaders Africains Contemporains"
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
@@ -43,7 +45,8 @@
         "explanation": "Flutterwave, plateforme de paiements, a atteint une valorisation de +1 milliard USD en 2020.",
         "difficulty": "hard",
         "category": "Politique et Économie",
-        "subcategory": "Économie Numérique Africaine"
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
         "question": "Quel est le plus grand marché e-commerce africain ?",
@@ -57,7 +60,8 @@
         "explanation": "Jumia, surnommée 'l'Amazon africain', opère dans plus de 11 pays africains.",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Économie Numérique Africaine"
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
@@ -73,7 +77,8 @@
         "explanation": "L'UA a été créée en 2002 pour remplacer l'Organisation de l'Unité Africaine (OUA, 1963).",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Organisations Africaines"
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
         "question": "Où se trouve le siège de l'Union Africaine ?",
@@ -87,7 +92,8 @@
         "explanation": "Le siège de l'UA est situé à Addis-Abeba, en Éthiopie.",
         "difficulty": "easy",
         "category": "Politique et Économie",
-        "subcategory": "Organisations Africaines"
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
         "question": "Que signifie CEDEAO ?",
@@ -101,7 +107,8 @@
         "explanation": "La CEDEAO (ECOWAS en anglais) regroupe 15 pays d'Afrique de l'Ouest.",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Organisations Africaines"
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

@@ -2,6 +2,7 @@
 /// Traductions manuelles professionnelles
 /// Focus: Questions finales pour compléter à 100%
 /// Date: 17 octobre 2025
+library;
 
 class CultureGeneralePhase9FinalTranslations {
   static const Map<String, Map<String, dynamic>> translations = {
@@ -153,6 +154,7 @@ class CultureGeneralePhase9FinalTranslations {
     },
   };
 }
+
 
 
 

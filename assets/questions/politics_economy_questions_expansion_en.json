@@ -1,38 +1,40 @@
 {
-  "Politics and Economics": {
+  "Politique et Économie": {
     "Leaders Africains Contemporains": [
       {
-        "question": "Who is l'actuel Secrétaire general des Nations Unies (depuis 2017) ?",
+        "question": "Who is the current Secretary General of the United Nations (since 2017)?",
         "options": [
-          "António Guterres",
+          "Antonio Guterres",
           "Ban Ki-moon",
           "Kofi Annan",
           "Boutros Boutros-Ghali"
         ],
-        "correctAnswer": "António Guterres",
-        "explanation": "António Guterres, ancient Premier ministre portugais, is SG of l'ONU depuis 2017.",
-        "difficulty": "Medium",
-        "category": "Politics and Economics",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "Antonio Guterres",
+        "explanation": "António Guterres, former Portuguese Prime Minister, has been UN Secretary-General since 2017.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
-        "question": "What president south-africain a mis end à l'apartheid ?",
+        "question": "Which South African president ended apartheid?",
         "options": [
           "Nelson Mandela",
-          "Frederik of Klerk",
+          "Frederik de Klerk",
           "Thabo Mbeki",
           "Desmond Tutu"
         ],
         "correctAnswer": "Nelson Mandela",
-        "explanation": "Nelson Mandela is became the first president noir d'Afrique of the south en 1994, après 27 ans of prison.",
-        "difficulty": "Easy",
-        "category": "Politics and Economics",
-        "subcategory": "Leaders Africains Contemporains"
+        "explanation": "Nelson Mandela became South Africa's first black president in 1994, after 27 years in prison.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
       {
-        "question": "What startup nigériane is devenue a licorne en 2020 ?",
+        "question": "Which Nigerian startup became a unicorn in 2020?",
         "options": [
           "Flutterwave",
           "Jumia",
@@ -40,13 +42,14 @@
           "Andela"
         ],
         "correctAnswer": "Flutterwave",
-        "explanation": "Flutterwave, plateforme of paiements, a atteint a valorisation of +1 milliard USD en 2020.",
-        "difficulty": "Hard",
-        "category": "Politics and Economics",
-        "subcategory": "Économie Numérique Africaine"
+        "explanation": "Flutterwave, a payments platform, reached a valuation of +1 billion USD in 2020.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
-        "question": "What is the more grand marché e-commerce africain ?",
+        "question": "What is the largest African e-commerce market?",
         "options": [
           "Jumia",
           "Takealot",
@@ -54,15 +57,16 @@
           "Kilimall"
         ],
         "correctAnswer": "Jumia",
-        "explanation": "Jumia, surnommée 'l'Amazon africain', opère in more of 11 country africains.",
-        "difficulty": "Medium",
-        "category": "Politics and Economics",
-        "subcategory": "Économie Numérique Africaine"
+        "explanation": "Jumia, nicknamed 'the African Amazon', operates in more than 11 African countries.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
       {
-        "question": "When a été créée l'Union Africaine (UA) ?",
+        "question": "When was the African Union (AU) created?",
         "options": [
           "2002",
           "1963",
@@ -70,38 +74,41 @@
           "2010"
         ],
         "correctAnswer": "2002",
-        "explanation": "L'UA a été créée en 2002 for remplacer l'Organisation of the unit Africaine (OUA, 1963).",
-        "difficulty": "Medium",
-        "category": "Politics and Economics",
-        "subcategory": "Organisations Africaines"
+        "explanation": "The AU was created in 2002 to replace the Organization of African Unity (OAU, 1963).",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
-        "question": "Where se find the ifège of l'Union Africaine ?",
+        "question": "Where is the headquarters of the African Union located?",
         "options": [
-          "Addis-Abeba (Éthiopie)",
+          "Addis Ababa (Ethiopia)",
           "Abuja (Nigeria)",
-          "the Caire (Égypte)",
+          "Cairo (Egypt)",
           "Nairobi (Kenya)"
         ],
-        "correctAnswer": "Addis-Abeba (Éthiopie)",
-        "explanation": "the ifège of l'UA is situé à Addis-Abeba, en Éthiopie.",
-        "difficulty": "Easy",
-        "category": "Politics and Economics",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "Addis Ababa (Ethiopia)",
+        "explanation": "The AU headquarters is located in Addis Ababa, Ethiopia.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
-        "question": "Que signifie CEDEAO ?",
+        "question": "What does ECOWAS mean?",
         "options": [
-          "Communauté Économique Des États of l'Afrique of l'west",
-          "center d'Études and of Développement of l'Afrique of l'west",
-          "Conseil Économique of Développement Africain of l'west",
-          "Commission Économique for the Développement of l'Afrique of l'west"
+          "Economic Community of West African States",
+          "West African Studies and Development Center",
+          "West African Development Economic Council",
+          "Economic Commission for the Development of West Africa"
         ],
-        "correctAnswer": "Communauté Économique Des États of l'Afrique of l'west",
-        "explanation": "the CEDEAO (ECOWAS en anglais) regroupe 15 country d'Afrique of l'west.",
-        "difficulty": "Medium",
-        "category": "Politics and Economics",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "Economic Community of West African States",
+        "explanation": "ECOWAS (ECOWAS in English) brings together 15 West African countries.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

@@ -441,8 +441,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         ),
                         _buildActionTile(
                           title: TranslationService.translate('about'),
-                          subtitle: TranslationService.translate('version') +
-                              ' 1.0.0',
+                          subtitle: '${TranslationService.translate('version')} 1.0.0',
                           icon: Icons.info_rounded,
                           onTap: _showAboutDialog,
                           isDark: isDark,
@@ -893,7 +892,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 ),
                 SizedBox(height: AppSpacing.md),
                 Text(
-                  TranslationService.translate('orange_money') + ':',
+                  '${TranslationService.translate('orange_money')}:',
                   style: AppTextStyles.body.copyWith(
                     fontWeight: FontWeight.bold,
                     color: isDark

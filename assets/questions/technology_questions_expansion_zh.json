@@ -2,7 +2,7 @@
   "Technologie et Innovation": {
     "Informatique et Programmation": [
       {
-        "question": "Quel langage de programmation est principalement utilisé pour développer des applications Android ?",
+        "question": "Android应用程序开发主要使用哪种编程语言？",
         "options": [
           "Java",
           "Python",
@@ -10,27 +10,29 @@
           "PHP"
         ],
         "correctAnswer": "Java",
-        "explanation": "Java est le langage principal pour le développement Android, bien que Kotlin soit de plus en plus utilisé.",
+        "explanation": "Java 是 Android 开发的主要语言，尽管 Kotlin 的使用越来越多。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Informatique et Programmation"
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0000"
       },
       {
-        "question": "Qui a créé le World Wide Web (WWW) ?",
+        "question": "谁创建了万维网（WWW）？",
         "options": [
-          "Tim Berners-Lee",
-          "Bill Gates",
-          "Steve Jobs",
-          "Larry Page"
+          "蒂姆·伯纳斯·李",
+          "比尔·盖茨",
+          "史蒂夫·乔布斯",
+          "拉里·佩奇"
         ],
-        "correctAnswer": "Tim Berners-Lee",
-        "explanation": "Tim Berners-Lee a inventé le World Wide Web au CERN en 1989.",
+        "correctAnswer": "蒂姆·伯纳斯·李",
+        "explanation": "1989 年，蒂姆·伯纳斯·李 (Tim Berners-Lee) 在欧洲核子研究组织 (CERN) 发明了万维网。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Informatique et Programmation"
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0001"
       },
       {
-        "question": "Quel est le langage de programmation le plus populaire en 2025 ?",
+        "question": "2025 年最流行的编程语言是什么？",
         "options": [
           "Python",
           "JavaScript",
@@ -38,214 +40,229 @@
           "C++"
         ],
         "correctAnswer": "Python",
-        "explanation": "Python est le langage le plus populaire grâce à son utilisation en IA, data science et développement web.",
+        "explanation": "Python 因其在人工智能、数据科学和 Web 开发中的应用而成为最受欢迎的语言。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Informatique et Programmation"
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0002"
       },
       {
-        "question": "Qu'est-ce que HTML ?",
+        "question": "什么是 HTML？",
         "options": [
-          "HyperText Markup Language",
-          "High Tech Modern Language",
-          "Home Tool Markup Language",
-          "Hyperlinks and Text Markup Language"
+          "超文本标记语言",
+          "高科技现代语言",
+          "主页工具标记语言",
+          "超链接和文本标记语言"
         ],
-        "correctAnswer": "HyperText Markup Language",
-        "explanation": "HTML est le langage de balisage standard pour créer des pages web.",
+        "correctAnswer": "超文本标记语言",
+        "explanation": "HTML 是用于创建网页的标准标记语言。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Informatique et Programmation"
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0003"
       },
       {
-        "question": "Quel système d'exploitation mobile a été développé par Google ?",
+        "question": "谷歌开发的手机操作系统是什么？",
         "options": [
-          "Android",
-          "iOS",
-          "Windows Phone",
-          "BlackBerry OS"
+          "安卓",
+          "iOS系统",
+          "Windows 手机",
+          "黑莓操作系统"
         ],
-        "correctAnswer": "Android",
-        "explanation": "Android est le système d'exploitation mobile open-source développé par Google.",
+        "correctAnswer": "安卓",
+        "explanation": "Android是谷歌开发的开源移动操作系统。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Informatique et Programmation"
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0004"
       }
     ],
     "Intelligence Artificielle": [
       {
-        "question": "Quel est le nom de l'IA conversationnelle développée par OpenAI ?",
+        "question": "OpenAI 开发的对话式人工智能的名称是什么？",
         "options": [
-          "ChatGPT",
-          "Bard",
-          "Alexa",
-          "Siri"
+          "聊天GPT",
+          "诗人",
+          "亚历克斯",
+          "西里"
         ],
-        "correctAnswer": "ChatGPT",
-        "explanation": "ChatGPT est l'assistant IA conversationnel développé par OpenAI, lancé en novembre 2022.",
+        "correctAnswer": "聊天GPT",
+        "explanation": "ChatGPT 是 OpenAI 开发的对话式 AI 助手，于 2022 年 11 月推出。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Intelligence Artificielle"
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0005"
       },
       {
-        "question": "Qu'est-ce que le Machine Learning ?",
+        "question": "什么是机器学习？",
         "options": [
-          "Apprentissage automatique des machines",
-          "Réparation de machines",
-          "Construction de machines",
-          "Programmation de machines"
+          "机器学习",
+          "机器维修",
+          "机械制造",
+          "机器编程"
         ],
-        "correctAnswer": "Apprentissage automatique des machines",
-        "explanation": "Le Machine Learning permet aux ordinateurs d'apprendre à partir de données sans être explicitement programmés.",
+        "correctAnswer": "机器学习",
+        "explanation": "机器学习允许计算机从数据中学习，而无需明确编程。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Intelligence Artificielle"
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0006"
       },
       {
-        "question": "Quel test mesure la capacité d'une machine à exhiber un comportement intelligent ?",
+        "question": "什么测试衡量机器表现出智能行为的能力？",
         "options": [
-          "Test de Turing",
-          "Test IQ",
-          "Test algorithmique",
-          "Test de données"
+          "图灵测试",
+          "智商测试",
+          "算法测试",
+          "数据测试"
         ],
-        "correctAnswer": "Test de Turing",
-        "explanation": "Le Test de Turing, proposé par Alan Turing en 1950, évalue l'intelligence d'une machine.",
+        "correctAnswer": "图灵测试",
+        "explanation": "图灵测试由艾伦·图灵于1950年提出，用于评估机器的智能程度。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Intelligence Artificielle"
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0007"
       }
     ],
     "Innovations Tech Africaines": [
       {
-        "question": "Quel pays africain a créé M-Pesa, le système de paiement mobile ?",
+        "question": "哪个非洲国家创建了移动支付系统 M-Pesa？",
         "options": [
-          "Kenya",
-          "Nigeria",
-          "Afrique du Sud",
-          "Ghana"
+          "肯尼亚",
+          "尼日利亚",
+          "南非",
+          "加纳"
         ],
-        "correctAnswer": "Kenya",
-        "explanation": "M-Pesa a été lancé au Kenya en 2007 et a révolutionné les services financiers mobiles en Afrique.",
+        "correctAnswer": "肯尼亚",
+        "explanation": "M-Pesa 于 2007 年在肯尼亚推出，彻底改变了非洲的移动金融服务。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Innovations Tech Africaines"
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0008"
       },
       {
-        "question": "Quelle ville est surnommée 'Silicon Savannah' ?",
+        "question": "哪个城市被称为“硅谷大草原”？",
         "options": [
-          "Nairobi",
-          "Lagos",
-          "Cape Town",
-          "Accra"
+          "内罗毕",
+          "拉各斯",
+          "开普敦",
+          "阿克拉"
         ],
-        "correctAnswer": "Nairobi",
-        "explanation": "Nairobi, au Kenya, est surnommée 'Silicon Savannah' en raison de son écosystème tech florissant.",
+        "correctAnswer": "内罗毕",
+        "explanation": "肯尼亚内罗毕因其蓬勃发展的科技生态系统而被昵称为“硅谷大草原”。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Innovations Tech Africaines"
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0009"
       },
       {
-        "question": "Quel pays africain a le plus grand nombre de licornes tech (startups valorisées à +1 milliard USD) ?",
+        "question": "哪个非洲国家拥有最多的科技独角兽（估值超过 10 亿美元的初创企业）？",
         "options": [
-          "Nigeria",
-          "Afrique du Sud",
-          "Kenya",
-          "Égypte"
+          "尼日利亚",
+          "南非",
+          "肯尼亚",
+          "埃及"
         ],
-        "correctAnswer": "Nigeria",
-        "explanation": "Le Nigeria possède plusieurs licornes tech comme Flutterwave, Interswitch, et OPay.",
+        "correctAnswer": "尼日利亚",
+        "explanation": "尼日利亚拥有 Flutterwave、Interswitch 和 OPay 等多家科技独角兽公司。",
         "difficulty": "hard",
-        "category": "科技与创新",
-        "subcategory": "Innovations Tech Africaines"
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0010"
       },
       {
-        "question": "Qu'est-ce que Zipline, l'innovation tech utilisée au Rwanda ?",
+        "question": "卢旺达使用的技术创新 Zipline 是什么？",
         "options": [
-          "Livraison de médicaments par drones",
-          "Application de transport",
-          "Plateforme e-commerce",
-          "Réseau social"
+          "无人机运送药品",
+          "交通应用",
+          "电商平台",
+          "社交网络"
         ],
-        "correctAnswer": "Livraison de médicaments par drones",
-        "explanation": "Zipline utilise des drones pour livrer du sang et des médicaments dans les zones reculées du Rwanda.",
+        "correctAnswer": "无人机运送药品",
+        "explanation": "Zipline 使用无人机向卢旺达偏远地区运送血液和药品。",
         "difficulty": "hard",
-        "category": "科技与创新",
-        "subcategory": "Innovations Tech Africaines"
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0011"
       }
     ],
     "Cybersécurité": [
       {
-        "question": "Qu'est-ce qu'un pare-feu (firewall) ?",
+        "question": "什么是防火墙？",
         "options": [
-          "Un système de sécurité réseau",
-          "Un anti-virus",
-          "Un logiciel de sauvegarde",
-          "Un système d'exploitation"
+          "一个网络安全系统",
+          "一种抗病毒药物",
+          "备份软件",
+          "一个操作系统"
         ],
-        "correctAnswer": "Un système de sécurité réseau",
-        "explanation": "Un pare-feu protège un réseau en contrôlant le trafic entrant et sortant selon des règles de sécurité.",
+        "correctAnswer": "一个网络安全系统",
+        "explanation": "防火墙通过根据安全规则控制传入和传出流量来保护网络。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Cybersécurité"
+        "category": "Technologie et Innovation",
+        "subcategory": "Cybersécurité",
+        "id": "technology_0012"
       },
       {
-        "question": "Qu'est-ce que le phishing ?",
+        "question": "什么是网络钓鱼？",
         "options": [
-          "Une technique d'hameçonnage pour voler des informations",
-          "Un jeu vidéo",
-          "Un réseau social",
-          "Un type de virus informatique"
+          "窃取信息的网络钓鱼技术",
+          "一款视频游戏",
+          "社交网络",
+          "计算机病毒的一种"
         ],
-        "correctAnswer": "Une technique d'hameçonnage pour voler des informations",
-        "explanation": "Le phishing est une technique frauduleuse qui vise à obtenir des informations confidentielles.",
+        "correctAnswer": "窃取信息的网络钓鱼技术",
+        "explanation": "网络钓鱼是一种旨在获取机密信息的欺诈技术。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Cybersécurité"
+        "category": "Technologie et Innovation",
+        "subcategory": "Cybersécurité",
+        "id": "technology_0013"
       }
     ],
     "Histoire de la Tech": [
       {
-        "question": "En quelle année a été fondée Apple ?",
+        "question": "苹果公司成立于哪一年？",
         "options": [
-          "1976",
-          "1980",
-          "1984",
-          "1990"
+          "1976年",
+          "1980年",
+          "1984年",
+          "1990年"
         ],
-        "correctAnswer": "1976",
-        "explanation": "Apple a été fondée le 1er avril 1976 par Steve Jobs, Steve Wozniak et Ronald Wayne.",
+        "correctAnswer": "1976年",
+        "explanation": "苹果公司于 1976 年 4 月 1 日由史蒂夫·乔布斯、史蒂夫·沃兹尼亚克和罗纳德·韦恩创立。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Histoire de la Tech"
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0014"
       },
       {
-        "question": "Qui est considéré comme le père de l'informatique ?",
+        "question": "谁被认为是计算机之父？",
         "options": [
-          "Alan Turing",
-          "Bill Gates",
-          "Steve Jobs",
-          "Mark Zuckerberg"
+          "艾伦·图灵",
+          "比尔·盖茨",
+          "史蒂夫·乔布斯",
+          "马克·扎克伯格"
         ],
-        "correctAnswer": "Alan Turing",
-        "explanation": "Alan Turing est considéré comme le père de l'informatique théorique et de l'intelligence artificielle.",
+        "correctAnswer": "艾伦·图灵",
+        "explanation": "艾伦·图灵被认为是理论计算机科学和人工智能之父。",
         "difficulty": "medium",
-        "category": "科技与创新",
-        "subcategory": "Histoire de la Tech"
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0015"
       },
       {
-        "question": "Quel fut le premier réseau social à atteindre 1 milliard d'utilisateurs ?",
+        "question": "第一个拥有 10 亿用户的社交网络是什么？",
         "options": [
           "Facebook",
-          "Twitter",
-          "MySpace",
-          "LinkedIn"
+          "叽叽喳喳",
+          "我的空间",
+          "领英"
         ],
         "correctAnswer": "Facebook",
-        "explanation": "Facebook a atteint 1 milliard d'utilisateurs actifs mensuels en octobre 2012.",
+        "explanation": "Facebook 的月活跃用户数于 2012 年 10 月达到 10 亿。",
         "difficulty": "easy",
-        "category": "科技与创新",
-        "subcategory": "Histoire de la Tech"
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0016"
       }
     ]
   }

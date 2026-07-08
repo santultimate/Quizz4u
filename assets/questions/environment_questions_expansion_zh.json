@@ -2,79 +2,84 @@
   "Environnement et Écologie": {
     "Changement Climatique": [
       {
-        "question": "Quel est l'objectif principal de l'Accord de Paris (2015) ?",
+        "question": "《巴黎协定》（2015 年）的主要目标是什么？",
         "options": [
-          "Limiter le réchauffement à 1,5°C",
-          "Éliminer tous les combustibles fossiles",
-          "Planter 1 milliard d'arbres",
-          "Interdire les plastiques"
+          "将升温限制在 1.5°C",
+          "消除所有化石燃料",
+          "种植 10 亿棵树",
+          "禁止塑料制品"
         ],
-        "correctAnswer": "Limiter le réchauffement à 1,5°C",
-        "explanation": "L'Accord de Paris vise à maintenir l'augmentation de la température mondiale en dessous de 2°C, idéalement à 1,5°C.",
+        "correctAnswer": "将升温限制在 1.5°C",
+        "explanation": "《巴黎协定》的目标是将全球气温上升控制在 2°C 以下，最好是 1.5°C。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Changement Climatique"
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0000"
       },
       {
-        "question": "Quel gaz à effet de serre est le plus abondant dans l'atmosphère ?",
+        "question": "大气中哪种温室气体含量最多？",
         "options": [
-          "Dioxyde de carbone (CO2)",
-          "Méthane (CH4)",
-          "Protoxyde d'azote (N2O)",
-          "Ozone (O3)"
+          "二氧化碳（CO2）",
+          "甲烷 (CH4)",
+          "一氧化二氮 (N2O)",
+          "臭氧（O3）"
         ],
-        "correctAnswer": "Dioxyde de carbone (CO2)",
-        "explanation": "Le CO2 représente environ 76% des émissions de gaz à effet de serre d'origine humaine.",
+        "correctAnswer": "二氧化碳（CO2）",
+        "explanation": "二氧化碳约占人为温室气体排放量的 76%。",
         "difficulty": "easy",
-        "category": "环境与生态",
-        "subcategory": "Changement Climatique"
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0001"
       },
       {
-        "question": "Quelle activité humaine contribue le plus au changement climatique ?",
+        "question": "哪种人类活动对气候变化影响最大？",
         "options": [
-          "Combustion de combustibles fossiles",
-          "Agriculture",
-          "Déforestation",
-          "Transport aérien"
+          "化石燃料燃烧",
+          "农业",
+          "森林砍伐",
+          "空运"
         ],
-        "correctAnswer": "Combustion de combustibles fossiles",
-        "explanation": "La combustion de charbon, pétrole et gaz naturel est responsable de 73% des émissions mondiales de GES.",
+        "correctAnswer": "化石燃料燃烧",
+        "explanation": "煤炭、石油和天然气的燃烧占全球温室气体排放量的 73%。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Changement Climatique"
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0002"
       },
       {
-        "question": "Quel continent est le plus affecté par la désertification ?",
+        "question": "哪个大陆受荒漠化影响最严重？",
         "options": [
-          "Afrique",
-          "Asie",
-          "Amérique du Sud",
-          "Australie"
+          "非洲",
+          "亚洲",
+          "南美洲",
+          "澳大利亚"
         ],
-        "correctAnswer": "Afrique",
-        "explanation": "L'Afrique est particulièrement vulnérable à la désertification, notamment dans la région du Sahel.",
+        "correctAnswer": "非洲",
+        "explanation": "非洲特别容易遭受荒漠化，特别是在萨赫勒地区。",
         "difficulty": "easy",
-        "category": "环境与生态",
-        "subcategory": "Changement Climatique"
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0003"
       }
     ],
     "Biodiversité Africaine": [
       {
-        "question": "Quel est le plus grand parc national d'Afrique ?",
+        "question": "非洲最大的国家公园是哪个？",
         "options": [
-          "Parc National de Namib-Naukluft (Namibie)",
-          "Parc Kruger (Afrique du Sud)",
-          "Parc Serengeti (Tanzanie)",
-          "Parc Etosha (Namibie)"
+          "纳米布-诺克路福国家公园（纳米比亚）",
+          "克鲁格公园（南非）",
+          "塞伦盖蒂公园（坦桑尼亚）",
+          "埃托沙公园（纳米比亚）"
         ],
-        "correctAnswer": "Parc National de Namib-Naukluft (Namibie)",
-        "explanation": "Le Parc de Namib-Naukluft couvre 49 768 km², ce qui en fait le plus grand parc d'Afrique.",
+        "correctAnswer": "纳米布-诺克路福国家公园（纳米比亚）",
+        "explanation": "纳米布-诺克路福公园占地 49,768 平方公里，是非洲最大的公园。",
         "difficulty": "hard",
-        "category": "环境与生态",
-        "subcategory": "Biodiversité Africaine"
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0004"
       },
       {
-        "question": "Combien d'espèces d'éléphants existe-t-il en Afrique ?",
+        "question": "非洲有多少种大象？",
         "options": [
           "2",
           "1",
@@ -82,126 +87,135 @@
           "4"
         ],
         "correctAnswer": "2",
-        "explanation": "Il existe deux espèces d'éléphants africains : l'éléphant de savane et l'éléphant de forêt.",
+        "explanation": "非洲象有两种：草原象和森林象。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Biodiversité Africaine"
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0005"
       },
       {
-        "question": "Quel animal africain peut vivre plus longtemps sans eau ?",
+        "question": "哪种非洲动物没有水可以活得更久？",
         "options": [
-          "La girafe",
-          "Le chameau",
-          "L'oryx",
-          "Le dromadaire"
+          "长颈鹿",
+          "骆驼",
+          "羚羊",
+          "骆驼"
         ],
-        "correctAnswer": "L'oryx",
-        "explanation": "L'oryx peut survivre plusieurs mois sans boire, en tirant l'eau de sa nourriture.",
+        "correctAnswer": "羚羊",
+        "explanation": "羚羊可以在不喝水的情况下生存几个月，从食物中获取水分。",
         "difficulty": "hard",
-        "category": "环境与生态",
-        "subcategory": "Biodiversité Africaine"
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0006"
       },
       {
-        "question": "Quel est l'oiseau national du Kenya ?",
+        "question": "肯尼亚的国鸟是什么？",
         "options": [
-          "Le coq de roche",
-          "L'aigle martial",
-          "Le calao terrestre",
-          "Le flamant rose"
+          "岩石的公鸡",
+          "武鹰",
+          "地犀鸟",
+          "粉红色的火烈鸟"
         ],
-        "correctAnswer": "Le coq de roche",
-        "explanation": "Le coq de roche (lilac-breasted roller) est l'oiseau national du Kenya, connu pour ses couleurs vives.",
+        "correctAnswer": "岩石的公鸡",
+        "explanation": "紫胸鸻是肯尼亚的国鸟，以其鲜艳的色彩而闻名。",
         "difficulty": "hard",
-        "category": "环境与生态",
-        "subcategory": "Biodiversité Africaine"
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0007"
       }
     ],
     "Énergies Renouvelables": [
       {
-        "question": "Quel pays africain produit le plus d'énergie solaire ?",
+        "question": "哪个非洲国家生产的太阳能最多？",
         "options": [
-          "Maroc",
-          "Afrique du Sud",
-          "Égypte",
-          "Algérie"
+          "摩洛哥",
+          "南非",
+          "埃及",
+          "阿尔及利亚"
         ],
-        "correctAnswer": "Maroc",
-        "explanation": "Le Maroc abrite le complexe solaire de Noor Ouarzazate, l'une des plus grandes centrales solaires au monde.",
+        "correctAnswer": "摩洛哥",
+        "explanation": "摩洛哥是努尔瓦尔扎扎特太阳能综合体的所在地，该综合体是世界上最大的太阳能发电厂之一。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Énergies Renouvelables"
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0008"
       },
       {
-        "question": "Qu'est-ce que l'énergie géothermique ?",
+        "question": "什么是地热能？",
         "options": [
-          "Énergie provenant de la chaleur de la Terre",
-          "Énergie du vent",
-          "Énergie du soleil",
-          "Énergie des vagues"
+          "来自地球热量的能量",
+          "风能",
+          "来自太阳的能量",
+          "波浪能"
         ],
-        "correctAnswer": "Énergie provenant de la chaleur de la Terre",
-        "explanation": "L'énergie géothermique utilise la chaleur stockée sous la surface terrestre.",
+        "correctAnswer": "来自地球热量的能量",
+        "explanation": "地热能利用储存在地表以下的热量。",
         "difficulty": "easy",
-        "category": "环境与生态",
-        "subcategory": "Énergies Renouvelables"
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0009"
       },
       {
-        "question": "Quel pays africain a le plus grand potentiel hydroélectrique ?",
+        "question": "哪个非洲国家的水力发电潜力最大？",
         "options": [
-          "République Démocratique du Congo",
-          "Éthiopie",
-          "Égypte",
-          "Nigeria"
+          "刚果民主共和国",
+          "埃塞俄比亚",
+          "埃及",
+          "尼日利亚"
         ],
-        "correctAnswer": "République Démocratique du Congo",
-        "explanation": "La RDC possède le plus grand potentiel hydroélectrique d'Afrique grâce au fleuve Congo.",
+        "correctAnswer": "刚果民主共和国",
+        "explanation": "得益于刚果河，刚果民主共和国拥有非洲最大的水力发电潜力。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Énergies Renouvelables"
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0010"
       }
     ],
     "Pollution et Déchets": [
       {
-        "question": "Combien de temps met un sac plastique à se décomposer dans la nature ?",
+        "question": "塑料袋在自然界中需要多长时间才能分解？",
         "options": [
-          "100-400 ans",
-          "10-50 ans",
-          "500-1000 ans",
-          "1-10 ans"
+          "100-400年",
+          "10-50年",
+          "500-1000年",
+          "1-10年"
         ],
-        "correctAnswer": "100-400 ans",
-        "explanation": "Un sac plastique met entre 100 et 400 ans à se décomposer complètement dans la nature.",
+        "correctAnswer": "100-400年",
+        "explanation": "一个塑料袋在自然界中需要 100 到 400 年才能完全分解。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Pollution et Déchets"
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0011"
       },
       {
-        "question": "Quel pays africain a été le premier à interdire les sacs plastiques ?",
+        "question": "哪个非洲国家最先禁用塑料袋？",
         "options": [
-          "Rwanda",
-          "Kenya",
-          "Afrique du Sud",
-          "Maroc"
+          "卢旺达",
+          "肯尼亚",
+          "南非",
+          "摩洛哥"
         ],
-        "correctAnswer": "Rwanda",
-        "explanation": "Le Rwanda a interdit les sacs plastiques en 2008, devenant un leader africain dans ce domaine.",
+        "correctAnswer": "卢旺达",
+        "explanation": "卢旺达于2008年禁止使用塑料袋，成为非洲该领域的领先者。",
         "difficulty": "medium",
-        "category": "环境与生态",
-        "subcategory": "Pollution et Déchets"
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0012"
       },
       {
-        "question": "Qu'est-ce que le 'continent de plastique' dans l'océan Pacifique ?",
+        "question": "太平洋上的“塑料大陆”是什么？",
         "options": [
-          "Une zone de concentration de déchets plastiques",
-          "Une île artificielle",
-          "Un nouveau continent découvert",
-          "Une plateforme pétrolière"
+          "塑料垃圾集中地区",
+          "一座人工岛",
+          "发现了新大陆",
+          "一个石油平台"
         ],
-        "correctAnswer": "Une zone de concentration de déchets plastiques",
-        "explanation": "Le 'Great Pacific Garbage Patch' est une zone de plusieurs millions de km² de déchets plastiques flottants.",
+        "correctAnswer": "塑料垃圾集中地区",
+        "explanation": "“太平洋大垃圾带”是一片面积达数百万平方公里的漂浮塑料垃圾。",
         "difficulty": "easy",
-        "category": "环境与生态",
-        "subcategory": "Pollution et Déchets"
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0013"
       }
     ]
   }

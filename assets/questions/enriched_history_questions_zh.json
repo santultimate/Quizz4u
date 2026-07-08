@@ -10,7 +10,9 @@
       },
       "explanation": "马里帝国由桑迪亚塔·凯塔建立，是非洲历史上最伟大的帝国之一。",
       "difficulty": "medium",
-      "subcategory": "Empires"
+      "subcategory": "Empires",
+      "id": "history_0000",
+      "correctAnswer": "马里帝国"
     },
     {
       "question": "谁是马里帝国最著名的统治者？",
@@ -22,7 +24,9 @@
       },
       "explanation": "曼萨·穆萨（Mansa Moussa，1312-1337）被认为是历史上最富有的人。",
       "difficulty": "easy",
-      "subcategory": "Souverains"
+      "subcategory": "Souverains",
+      "id": "history_0001",
+      "correctAnswer": "曼萨·穆萨"
     },
     {
       "question": "哪个城市是马里帝国的首都？",
@@ -34,7 +38,9 @@
       },
       "explanation": "尼亚尼是马里帝国的政治首都。",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "history_0002",
+      "correctAnswer": "尼亚尼"
     },
     {
       "question": "马里帝国的主要出口产品是什么？",
@@ -46,7 +52,9 @@
       },
       "explanation": "马里的黄金非常丰富，影响了当时的世界经济。",
       "difficulty": "medium",
-      "subcategory": "Économie"
+      "subcategory": "Économie",
+      "id": "history_0003",
+      "correctAnswer": "金子"
     },
     {
       "question": "哪所大学是马里帝国最负盛名的大学？",
@@ -58,7 +66,9 @@
       },
       "explanation": "廷巴克图的桑科雷大学是著名的学习中心。",
       "difficulty": "hard",
-      "subcategory": "Éducation"
+      "subcategory": "Éducation",
+      "id": "history_0004",
+      "correctAnswer": "桑科雷大学"
     },
     {
       "question": "哪位阿拉伯探险家在 14 世纪访问过马里帝国？",
@@ -70,7 +80,9 @@
       },
       "explanation": "伊本·白图泰留下了他马里之行的详细记录。",
       "difficulty": "medium",
-      "subcategory": "Explorateurs"
+      "subcategory": "Explorateurs",
+      "id": "history_0005",
+      "correctAnswer": "伊本·白图泰"
     },
     {
       "question": "马里帝国的主要宗教是什么？",
@@ -82,7 +94,9 @@
       },
       "explanation": "伊斯兰教从11世纪开始在马里帝国传播。",
       "difficulty": "easy",
-      "subcategory": "Religion"
+      "subcategory": "Religion",
+      "id": "history_0006",
+      "correctAnswer": "伊斯兰教"
     },
     {
       "question": "马里帝国的政府系统的名称是什么？",
@@ -94,7 +108,9 @@
       },
       "explanation": "马里帝国是一个由曼萨（国王）统治的君主制国家。",
       "difficulty": "medium",
-      "subcategory": "Politique"
+      "subcategory": "Politique",
+      "id": "history_0007",
+      "correctAnswer": "君主制"
     },
     {
       "question": "廷巴克图的主要财富来源是什么？",
@@ -106,7 +122,9 @@
       },
       "explanation": "廷巴克图是北非和撒哈拉以南非洲之间的主要贸易十字路口。",
       "difficulty": "medium",
-      "subcategory": "Commerce"
+      "subcategory": "Commerce",
+      "id": "history_0008",
+      "correctAnswer": "跨撒哈拉贸易"
     },
     {
       "question": "建立马里帝国的王朝叫什么名字？",
@@ -118,7 +136,9 @@
       },
       "explanation": "凯塔王朝建立并统治了马里帝国几个世纪。",
       "difficulty": "hard",
-      "subcategory": "Dynasties"
+      "subcategory": "Dynasties",
+      "id": "history_0009",
+      "correctAnswer": "凯塔"
     },
     {
       "question": "马里是哪一年获得独立的？",
@@ -128,7 +148,8 @@
         "1962": false,
         "1965": false
       },
-      "correctAnswer": "1960"
+      "correctAnswer": "1960",
+      "id": "history_0010"
     },
     {
       "question": "统治西非的中世纪帝国叫什么名字？",
@@ -138,7 +159,8 @@
         "桑海帝国": false,
         "卡内姆帝国": false
       },
-      "correctAnswer": "Empire du Mali"
+      "correctAnswer": "马里帝国",
+      "id": "history_0011"
     },
     {
       "question": "马里帝国最著名的皇帝是谁？",
@@ -148,7 +170,8 @@
         "索尼·阿里": false,
         "阿斯基亚·穆罕默德": false
       },
-      "correctAnswer": "Mansa Moussa"
+      "correctAnswer": "曼萨·穆萨",
+      "id": "history_0012"
     },
     {
       "question": "曼萨·穆萨于哪一年进行了著名的麦加朝圣？",
@@ -158,7 +181,8 @@
         "1350": false,
         "1400": false
       },
-      "correctAnswer": "1324"
+      "correctAnswer": "1324",
+      "id": "history_0013"
     },
     {
       "question": "哪条河从北向南穿过马里？",
@@ -168,7 +192,8 @@
         "刚果": false,
         "尼罗河": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "尼日尔",
+      "id": "history_0014"
     },
     {
       "question": "马里哪个城市被称为“沙漠明珠”？",
@@ -178,7 +203,8 @@
         "高": false,
         "莫普提": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "廷巴克图",
+      "id": "history_0015"
     },
     {
       "question": "谁是独立马里的第一任总统？",
@@ -188,7 +214,8 @@
         "阿尔法·奥马尔·科纳雷": false,
         "阿马杜·图马尼·杜尔": false
       },
-      "correctAnswer": "Modibo Keita"
+      "correctAnswer": "莫迪博·凯塔",
+      "id": "history_0016"
     },
     {
       "question": "马里于哪一年重建民主？",
@@ -198,7 +225,8 @@
         "1992": true,
         "1993": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0017"
     },
     {
       "question": "杰内大清真寺的名字是什么？",
@@ -208,7 +236,8 @@
         "皇家清真寺": false,
         "中央清真寺": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "杰内大清真寺",
+      "id": "history_0018"
     },
     {
       "question": "马里帝国之前的帝国名称是什么？",
@@ -218,7 +247,8 @@
         "卡内姆帝国": false,
         "博尔努帝国": false
       },
-      "correctAnswer": "Empire du Ghana"
+      "correctAnswer": "加纳帝国",
+      "id": "history_0019"
     },
     {
       "question": "曼萨·穆萨的昵称是什么？",
@@ -228,7 +258,8 @@
         "征服者": false,
         "智者": false
       },
-      "correctAnswer": "Le Roi des Rois"
+      "correctAnswer": "万王之王",
+      "id": "history_0020"
     },
     {
       "question": "马里帝国的主要经济资源是什么？",
@@ -238,7 +269,8 @@
         "奴隶们": false,
         "铜": false
       },
-      "correctAnswer": "L'or"
+      "correctAnswer": "金子",
+      "id": "history_0021"
     },
     {
       "question": "独立的马里的第一个首都叫什么名字？",
@@ -248,7 +280,8 @@
         "塞古": false,
         "莫普提": false
       },
-      "correctAnswer": "Bamako"
+      "correctAnswer": "巴马科",
+      "id": "history_0022"
     },
     {
       "question": "马里帝国在哪一年达到鼎盛？",
@@ -258,7 +291,8 @@
         "15世纪": false,
         "16世纪": false
       },
-      "correctAnswer": "XIVe siecle"
+      "correctAnswer": "14世纪",
+      "id": "history_0023"
     },
     {
       "question": "哪座城市是马里帝国最重要的商业中心？",
@@ -268,7 +302,8 @@
         "杰内": false,
         "尼亚尼": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "廷巴克图",
+      "id": "history_0024"
     },
     {
       "question": "廷巴克图最著名的大学叫什么名字？",
@@ -278,7 +313,8 @@
         "科尔多瓦大学": false,
         "非斯大学": false
       },
-      "correctAnswer": "Universite Sankore"
+      "correctAnswer": "桑科雷大学",
+      "id": "history_0025"
     },
     {
       "question": "马里帝国的第一位皇帝叫什么名字？",
@@ -288,7 +324,8 @@
         "索尼·阿里": false,
         "阿斯基亚·穆罕默德": false
       },
-      "correctAnswer": "Sundiata Keita"
+      "correctAnswer": "松迪亚塔·凯塔",
+      "id": "history_0026"
     },
     {
       "question": "松迪亚塔·凯塔于哪一年建立马里帝国？",
@@ -298,7 +335,8 @@
         "1250": false,
         "1300": false
       },
-      "correctAnswer": "1235"
+      "correctAnswer": "1235",
+      "id": "history_0027"
     },
     {
       "question": "让桑迪亚塔夺取政权的那场战役的名称是什么？",
@@ -308,7 +346,8 @@
         "库利科罗战役": false,
         "塞古之战": false
       },
-      "correctAnswer": "Bataille de Kirina"
+      "correctAnswer": "基里纳之战",
+      "id": "history_0028"
     },
     {
       "question": "继承马里帝国的帝国叫什么名字？",
@@ -318,7 +357,8 @@
         "卡内姆帝国": false,
         "博尔努帝国": false
       },
-      "correctAnswer": "Empire Songhai"
+      "correctAnswer": "桑海帝国",
+      "id": "history_0029"
     },
     {
       "question": "马里第一位民选总统叫什么名字？",
@@ -328,7 +368,8 @@
         "穆萨·特拉奥雷": false,
         "阿马杜·图马尼·杜尔": false
       },
-      "correctAnswer": "Alpha Oumar Konare"
+      "correctAnswer": "阿尔法·奥马尔·科纳雷",
+      "id": "history_0030"
     },
     {
       "question": "阿尔法·奥马尔·科纳雷于哪一年当选总统？",
@@ -338,7 +379,8 @@
         "1993": false,
         "1994": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0031"
     },
     {
       "question": "马里 1992 年通过的宪法的名称是什么？",
@@ -348,7 +390,8 @@
         "第四共和国宪法": false,
         "民主宪法": false
       },
-      "correctAnswer": "Constitution de la IIIe Republique"
+      "correctAnswer": "第三共和国宪法",
+      "id": "history_0032"
     },
     {
       "question": "领导民主过渡的马里总理叫什么名字？",
@@ -358,7 +401,8 @@
         "阿尔法·奥马尔·科纳雷": false,
         "阿马杜·图马尼·杜尔": false
       },
-      "correctAnswer": "Soumana Sacko"
+      "correctAnswer": "苏玛娜·萨科",
+      "id": "history_0033"
     },
     {
       "question": "马里帝国的发源地马里地区叫什么名字？",
@@ -368,7 +412,8 @@
         "高地区": false,
         "塞古地区": false
       },
-      "correctAnswer": "Region de Kayes"
+      "correctAnswer": "凯斯地区",
+      "id": "history_0034"
     },
     {
       "question": "马里帝国的宗教首都城市叫什么名字？",
@@ -378,7 +423,8 @@
         "高": false,
         "尼亚尼": false
       },
-      "correctAnswer": "Djenne"
+      "correctAnswer": "杰内",
+      "id": "history_0035"
     },
     {
       "question": "西非最古老的清真寺叫什么名字？",
@@ -388,7 +434,8 @@
         "高清真寺": false,
         "巴马科清真寺": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "杰内大清真寺",
+      "id": "history_0036"
     },
     {
       "question": "杰内大清真寺建于哪一年？",
@@ -398,7 +445,8 @@
         "15世纪": false,
         "16世纪": false
       },
-      "correctAnswer": "XIIIe siecle"
+      "correctAnswer": "13世纪",
+      "id": "history_0037"
     },
     {
       "question": "马里帝国的官方语言的名称是什么？",
@@ -408,7 +456,8 @@
         "桑海": false,
         "富拉尼人": false
       },
-      "correctAnswer": "Le mandingue"
+      "correctAnswer": "曼丁哥人",
+      "id": "history_0038"
     },
     {
       "question": "马里帝国使用的货币名称是什么？",
@@ -418,7 +467,8 @@
         "法郎": false,
         "迪拉姆": false
       },
-      "correctAnswer": "Le cowrie"
+      "correctAnswer": "贝贝",
+      "id": "history_0039"
     },
     {
       "question": "穿越马里帝国的贸易路线的名称是什么？",
@@ -428,7 +478,8 @@
         "跨撒哈拉航线": true,
         "丝绸之路": false
       },
-      "correctAnswer": "Route transsaharienne"
+      "correctAnswer": "跨撒哈拉航线",
+      "id": "history_0040"
     },
     {
       "question": "马里帝国的学习中心城市叫什么名字？",
@@ -438,7 +489,8 @@
         "高": false,
         "尼亚尼": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "廷巴克图",
+      "id": "history_0041"
     },
     {
       "question": "廷巴克图最著名的图书馆叫什么名字？",
@@ -448,7 +500,8 @@
         "爱资哈尔图书馆": false,
         "科尔多瓦图书馆": false
       },
-      "correctAnswer": "Bibliotheque Ahmed Baba"
+      "correctAnswer": "艾哈迈德·巴巴图书馆",
+      "id": "history_0042"
     },
     {
       "question": "16 世纪最著名的马里历史学家叫什么名字？",
@@ -458,7 +511,8 @@
         "巴克里": false,
         "伊本·白图泰": false
       },
-      "correctAnswer": "Ahmed Baba"
+      "correctAnswer": "艾哈迈德·巴巴",
+      "id": "history_0043"
     },
     {
       "question": "马里帝国的军事中心城市叫什么名字？",
@@ -468,7 +522,8 @@
         "杰内": false,
         "尼亚尼": false
       },
-      "correctAnswer": "Gao"
+      "correctAnswer": "高",
+      "id": "history_0044"
     },
     {
       "question": "桑尼王朝的第一位皇帝叫什么名字？",
@@ -478,7 +533,8 @@
         "索尼·苏莱曼": false,
         "桑尼·穆罕默德": false
       },
-      "correctAnswer": "Sonni Ali"
+      "correctAnswer": "索尼·阿里",
+      "id": "history_0045"
     },
     {
       "question": "桑尼·阿里于哪一年征服廷巴克图？",
@@ -488,7 +544,8 @@
         "1470": false,
         "1475": false
       },
-      "correctAnswer": "1468"
+      "correctAnswer": "1468",
+      "id": "history_0046"
     },
     {
       "question": "马里帝国的行政中心城市叫什么名字？",
@@ -498,7 +555,8 @@
         "高": false,
         "杰内": false
       },
-      "correctAnswer": "Niani"
+      "correctAnswer": "尼亚尼",
+      "id": "history_0047"
     },
     {
       "question": "马里帝国的粮仓地区叫什么名字？",
@@ -508,7 +566,8 @@
         "锡卡索地区": false,
         "库利科罗地区": false
       },
-      "correctAnswer": "Region de Segou"
+      "correctAnswer": "塞古地区",
+      "id": "history_0048"
     },
     {
       "question": "马里帝国的文化中心城市叫什么名字？",
@@ -518,7 +577,8 @@
         "高": false,
         "尼亚尼": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "廷巴克图",
+      "id": "history_0049"
     },
     {
       "question": "20 世纪最著名的马里作家叫什么名字？",
@@ -528,7 +588,8 @@
         "阿尔法·奥马尔·科纳雷": false,
         "阿马杜·图马尼·杜尔": false
       },
-      "correctAnswer": "Amadou Hampate Ba"
+      "correctAnswer": "阿马杜·汉帕特·巴",
+      "id": "history_0050"
     },
     {
       "question": "阿马杜·汉帕特·巴 (Amadou Hampate Ba) 最著名的作品叫什么名字？",
@@ -538,129 +599,8 @@
         "富拉尼人的回忆": false,
         "故事与传说": false
       },
-      "correctAnswer": "L'Etrange Destin de Wangrin"
-    }
-  ],
-  "马里历史": [
-    {
-      "question": "从 13 世纪到 16 世纪统治西非的帝国叫什么名字？",
-      "answers": {
-        "桑海帝国": false,
-        "卡内姆帝国": false,
-        "马里帝国": true,
-        "加纳帝国": false
-      },
-      "explanation": "马里帝国由桑迪亚塔·凯塔建立，是非洲历史上最伟大的帝国之一。",
-      "difficulty": "medium",
-      "subcategory": "帝国"
-    },
-    {
-      "question": "谁是马里帝国最著名的统治者？",
-      "answers": {
-        "阿斯基亚·穆罕默德": false,
-        "松迪亚塔·凯塔": false,
-        "曼萨·穆萨": true,
-        "声音迪亚塔·凯塔": false
-      },
-      "explanation": "曼萨·穆萨（Mansa Moussa，1312-1337）被认为是历史上最富有的人。",
-      "difficulty": "easy",
-      "subcategory": "君主"
-    },
-    {
-      "question": "哪个城市是马里帝国的首都？",
-      "answers": {
-        "杰内": false,
-        "高": false,
-        "尼亚尼": true,
-        "廷巴克图": false
-      },
-      "explanation": "尼亚尼是马里帝国的政治首都。",
-      "difficulty": "hard",
-      "subcategory": "地理"
-    },
-    {
-      "question": "马里帝国的主要出口产品是什么？",
-      "answers": {
-        "奴隶们": false,
-        "盐": false,
-        "金子": true,
-        "象牙": false
-      },
-      "explanation": "马里的黄金非常丰富，影响了当时的世界经济。",
-      "difficulty": "medium",
-      "subcategory": "经济"
-    },
-    {
-      "question": "哪所大学是马里帝国最负盛名的大学？",
-      "answers": {
-        "科尔多瓦大学": false,
-        "扎图纳大学": false,
-        "桑科雷大学": true,
-        "爱资哈尔大学": false
-      },
-      "explanation": "廷巴克图的桑科雷大学是著名的学习中心。",
-      "difficulty": "hard",
-      "subcategory": "教育"
-    },
-    {
-      "question": "哪位阿拉伯探险家在 14 世纪访问过马里帝国？",
-      "answers": {
-        "阿尔-马苏迪": false,
-        "巴克里": false,
-        "伊本·白图泰": true,
-        "阿尔-伊德里西": false
-      },
-      "explanation": "伊本·白图泰留下了他马里之行的详细记录。",
-      "difficulty": "medium",
-      "subcategory": "探险家"
-    },
-    {
-      "question": "马里帝国的主要宗教是什么？",
-      "answers": {
-        "基督教": false,
-        "犹太教": false,
-        "伊斯兰教": true,
-        "万物有灵论": false
-      },
-      "explanation": "伊斯兰教从11世纪开始在马里帝国传播。",
-      "difficulty": "easy",
-      "subcategory": "宗教"
-    },
-    {
-      "question": "马里帝国的政府系统的名称是什么？",
-      "answers": {
-        "民主": false,
-        "寡头政治": false,
-        "君主制": true,
-        "共和国": false
-      },
-      "explanation": "马里帝国是一个由曼萨（国王）统治的君主制国家。",
-      "difficulty": "medium",
-      "subcategory": "政策"
-    },
-    {
-      "question": "廷巴克图的主要财富来源是什么？",
-      "answers": {
-        "家畜": false,
-        "工艺": false,
-        "跨撒哈拉贸易": true,
-        "农业": false
-      },
-      "explanation": "廷巴克图是北非和撒哈拉以南非洲之间的主要贸易十字路口。",
-      "difficulty": "medium",
-      "subcategory": "贸易"
-    },
-    {
-      "question": "建立马里帝国的王朝叫什么名字？",
-      "answers": {
-        "迪亚拉斯": false,
-        "库利巴利一家": false,
-        "凯塔": true,
-        "图埃族": false
-      },
-      "explanation": "凯塔王朝建立并统治了马里帝国几个世纪。",
-      "difficulty": "hard",
-      "subcategory": "朝代"
+      "correctAnswer": "旺林的奇异命运",
+      "id": "history_0051"
     }
   ]
 }

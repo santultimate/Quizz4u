@@ -7,7 +7,9 @@
         "狮子队": false,
         "大象": false,
         "猎鹰队": false
-      }
+      },
+      "id": "football_0000",
+      "correctAnswer": "老鹰队"
     },
     {
       "question": "谁赢得了 2022 年卡塔尔世界杯？",
@@ -16,7 +18,9 @@
         "法国": false,
         "巴西": false,
         "德国": false
-      }
+      },
+      "id": "football_0001",
+      "correctAnswer": "阿根廷"
     },
     {
       "question": "球场上的一支足球队有多少名球员？",
@@ -25,7 +29,9 @@
         "10": false,
         "9": false,
         "12": false
-      }
+      },
+      "id": "football_0002",
+      "correctAnswer": "11"
     },
     {
       "question": "哪个国家赢得世界杯次数最多？",
@@ -34,7 +40,9 @@
         "德国": false,
         "意大利": false,
         "阿根廷": false
-      }
+      },
+      "id": "football_0003",
+      "correctAnswer": "巴西"
     },
     {
       "question": "按容量计算，世界上最大的体育场是哪个？",
@@ -43,7 +51,9 @@
         "诺坎普球场（巴塞罗那）": false,
         "阿兹特克体育场（墨西哥城）": false,
         "法兰西体育场（巴黎）": false
-      }
+      },
+      "id": "football_0004",
+      "correctAnswer": "5年 1年 Rungrado（平壤）"
     },
     {
       "question": "世界杯历史上的最佳射手是谁？",
@@ -52,7 +62,9 @@
         "罗纳尔多（15 球）": false,
         "贝利（12 球）": false,
         "贾斯特·方丹 (13 粒进球)": false
-      }
+      },
+      "id": "football_0005",
+      "correctAnswer": "米罗斯拉夫·克洛泽（16 个进球）"
     },
     {
       "question": "哪位马里球员曾效力于巴塞罗那足球俱乐部？",
@@ -61,7 +73,9 @@
         "弗雷德里克·卡努特": false,
         "穆罕默德·迪亚拉": false,
         "莫迪博·马伊加": false
-      }
+      },
+      "id": "football_0006",
+      "correctAnswer": "赛杜·凯塔"
     },
     {
       "question": "马里第一次参加世界杯是在哪一年？",
@@ -70,7 +84,9 @@
         "1998": false,
         "2002": false,
         "2010": false
-      }
+      },
+      "id": "football_0007",
+      "correctAnswer": "马里从未参加过世界杯"
     },
     {
       "question": "谁是冠军联赛中最成功的足球俱乐部？",
@@ -79,7 +95,9 @@
         "巴塞罗那足球俱乐部": false,
         "拜仁慕尼黑": false,
         "利物浦": false
-      }
+      },
+      "id": "football_0008",
+      "correctAnswer": "皇家马德里"
     },
     {
       "question": "足球是谁发明的？",
@@ -88,7 +106,9 @@
         "巴西": false,
         "法国": false,
         "意大利": false
-      }
+      },
+      "id": "football_0009",
+      "correctAnswer": "英国 (1863)"
     },
     {
       "question": "一场足球比赛持续多长时间？",
@@ -97,7 +117,9 @@
         "80分钟": false,
         "100分钟": false,
         "120分钟": false
-      }
+      },
+      "id": "football_0010",
+      "correctAnswer": "90枚硬币（2 x 45枚硬币）"
     },
     {
       "question": "哪位球员的昵称是“La Pulga”（跳蚤）？",
@@ -106,7 +128,9 @@
         "克里斯蒂亚诺·罗纳尔多": false,
         "内马尔": false,
         "基利安·姆巴佩": false
-      }
+      },
+      "id": "football_0011",
+      "correctAnswer": "莱昂内尔·梅西"
     },
     {
       "question": "哪个非洲国家赢得非洲国家杯次数最多？",
@@ -115,7 +139,9 @@
         "喀麦隆（5 次冠军）": false,
         "加纳（4 次冠军）": false,
         "尼日利亚（3 次冠军）": false
-      }
+      },
+      "id": "football_0012",
+      "correctAnswer": "埃及（7 次冠军）"
     },
     {
       "question": "谁是CAN历史上的最佳射手？",
@@ -124,7 +150,9 @@
         "洛朗·波库（14 球）": false,
         "霍萨姆·哈桑（14 个进球）": false,
         "迪丽热巴 (11 粒进球)": false
-      }
+      },
+      "id": "football_0013",
+      "correctAnswer": "塞缪尔·埃托奥（18 球）"
     },
     {
       "question": "世界上最古老的足球俱乐部是哪个？",
@@ -133,7 +161,9 @@
         "诺茨县（英格兰，1862 年）": false,
         "斯托克城（英格兰，1863 年）": false,
         "雷克瑟姆（威尔士，1864 年）": false
-      }
+      },
+      "id": "football_0014",
+      "correctAnswer": "谢菲尔德足球俱乐部（英格兰，1857 年）"
     },
     {
       "question": "世界杯历史上最快进球是谁？",
@@ -142,7 +172,9 @@
         "布莱恩·罗布森（27 秒，英格兰，1982 年）": false,
         "伯纳德·拉科姆（Bernard Lacombe）（37岁，法国，1978年）": false,
         "美国2014年）": false
-      }
+      },
+      "id": "football_0015",
+      "correctAnswer": "Hakan Şükür（11秒，土耳其2002年）"
     },
     {
       "question": "哪位马里球员当选非洲金球奖？",
@@ -151,7 +183,9 @@
         "赛杜·凯塔": false,
         "穆罕默德·迪亚拉": false,
         "莫迪博·马伊加": false
-      }
+      },
+      "id": "football_0016",
+      "correctAnswer": "弗雷德里克·卡努特 (2007)"
     },
     {
       "question": "塞内加尔国家队的昵称是什么？",
@@ -160,7 +194,9 @@
         "老鹰队": false,
         "猎鹰队": false,
         "黑豹队": false
-      }
+      },
+      "id": "football_0017",
+      "correctAnswer": "特兰加雄狮"
     },
     {
       "question": "第一届世界杯是哪一年举办的？",
@@ -169,7 +205,9 @@
         "1928年在法国": false,
         "1934年在意大利": false,
         "1938年在法国": false
-      }
+      },
+      "id": "football_0018",
+      "correctAnswer": "1930年，乌拉圭"
     },
     {
       "question": "哪位球员保持着单赛季进球最多的纪录？",
@@ -178,7 +216,9 @@
         "克里斯蒂亚诺·罗纳尔多（61 球）": false,
         "贝利（66 球）": false,
         "盖德·穆勒 (67 粒进球)": false
-      }
+      },
+      "id": "football_0019",
+      "correctAnswer": "莱昂内尔·梅西（73 个进球，2011-2012 年）"
     },
     {
       "question": "非洲最大的体育场是哪个？",
@@ -187,7 +227,9 @@
         "火星 26 日体育场（马里巴马科）": false,
         "费利克斯·乌弗埃-博瓦尼体育场（科特迪瓦阿比让）": false,
         "7 月 5 日体育场（阿尔及利亚阿尔及尔）": false
-      }
+      },
+      "id": "football_0020",
+      "correctAnswer": "友谊体育场（塞内加尔达喀尔）"
     },
     {
       "question": "足球历史上出场次数最多的球员是谁？",
@@ -196,7 +238,9 @@
         "克里斯蒂亚诺·罗纳尔多（葡萄牙，出场 183 次）": false,
         "巴德尔·穆塔瓦（科威特，出场 196 次）": false,
         "Soh Chin Ann（马来西亚，出场195次）": false
-      }
+      },
+      "id": "football_0021",
+      "correctAnswer": "艾哈迈德·哈桑（埃及，出场 184 次）"
     },
     {
       "question": "2018年世界杯是哪个国家主办的？",
@@ -205,7 +249,9 @@
         "卡塔尔": false,
         "巴西": false,
         "南非": false
-      }
+      },
+      "id": "football_0022",
+      "correctAnswer": "俄罗斯"
     },
     {
       "question": "摩洛哥国家队的昵称是什么？",
@@ -214,7 +260,9 @@
         "耳廓狐": false,
         "老鹰队": false,
         "黑豹队": false
-      }
+      },
+      "id": "football_0023",
+      "correctAnswer": "阿特拉斯之狮"
     },
     {
       "question": "谁赢得了 2023 年金球奖？",
@@ -223,7 +271,9 @@
         "基利安·姆巴佩": false,
         "埃尔林·哈兰德": false,
         "凯文·德布劳内": false
-      }
+      },
+      "id": "football_0024",
+      "correctAnswer": "莱昂内尔·梅西"
     },
     {
       "question": "哪位马里球员曾效力于英超联赛？",
@@ -232,7 +282,9 @@
         "赛杜·凯塔": false,
         "弗雷德里克·卡努特": false,
         "莫迪博·马伊加": false
-      }
+      },
+      "id": "football_0025",
+      "correctAnswer": "穆罕默德杜·迪亚拉（富勒姆）"
     },
     {
       "question": "打字速度的世界纪录是多少？",
@@ -241,7 +293,9 @@
         "克里斯蒂亚诺·罗纳尔多（131 公里/小时）": false,
         "罗伯托·卡洛斯 (169 公里/小时)": false,
         "大卫·贝克汉姆（156 公里/小时）": false
-      }
+      },
+      "id": "football_0026",
+      "correctAnswer": "罗尼·赫伯森 (211 公里/小时)"
     },
     {
       "question": "谁发明了提基塔卡？",
@@ -250,7 +304,9 @@
         "瓜迪奥拉": false,
         "哈维·埃尔南德斯": false,
         "路易斯·恩里克": false
-      }
+      },
+      "id": "football_0027",
+      "correctAnswer": "约翰·克鲁伊夫和巴塞罗那足球俱乐部"
     },
     {
       "question": "马里 最大的体育场是哪个？",
@@ -259,7 +315,9 @@
         "莫迪博·凯塔综合体育场": false,
         "马马杜·科纳特体育场": false,
         "友谊体育场": false
-      }
+      },
+      "id": "football_0028",
+      "correctAnswer": "火星 26 日体育场（50,000 个座位）"
     },
     {
       "question": "谁赢得了 CAN 2023？",
@@ -268,7 +326,9 @@
         "塞内加尔": false,
         "摩洛哥": false,
         "埃及": false
-      }
+      },
+      "id": "football_0029",
+      "correctAnswer": "科特迪瓦"
     }
   ]
 }

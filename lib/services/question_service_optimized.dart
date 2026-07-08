@@ -302,6 +302,7 @@ class QuestionServiceOptimized {
 
           questions.add(
             QuestionModel(
+              id: questionData['id']?.toString(),
               question: questionData['question'] ?? '',
               answers: answers,
               correctAnswer: correctAnswer,
@@ -348,8 +349,7 @@ class QuestionServiceOptimized {
 
     // Filtrer les questions récemment utilisées
     List<QuestionModel> availableQuestions = allQuestionsInCategory.where((q) {
-      String questionId = q.question;
-      return !_recentlyUsedQuestions[category]!.contains(questionId);
+      return !_recentlyUsedQuestions[category]!.contains(q.id);
     }).toList();
 
     // Si pas assez de questions disponibles, réinitialiser l'historique
@@ -367,7 +367,7 @@ class QuestionServiceOptimized {
 
     // Mettre à jour l'historique
     for (var question in selectedQuestions) {
-      _recentlyUsedQuestions[category]!.add(question.question);
+      _recentlyUsedQuestions[category]!.add(question.id);
       if (_recentlyUsedQuestions[category]!.length > _maxRecentlyUsed) {
         _recentlyUsedQuestions[category]!.removeAt(0);
       }

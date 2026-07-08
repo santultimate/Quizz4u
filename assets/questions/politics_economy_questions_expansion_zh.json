@@ -2,106 +2,113 @@
   "Politique et Économie": {
     "Leaders Africains Contemporains": [
       {
-        "question": "Qui est l'actuel Secrétaire Général des Nations Unies (depuis 2017) ?",
+        "question": "现任联合国秘书长（自 2017 年起）是谁？",
         "options": [
-          "António Guterres",
-          "Ban Ki-moon",
-          "Kofi Annan",
-          "Boutros Boutros-Ghali"
+          "安东尼奥·古特雷斯",
+          "潘基文",
+          "科菲·安南",
+          "布特罗斯·布特罗斯-加利"
         ],
-        "correctAnswer": "António Guterres",
-        "explanation": "安东尼奥·古特雷斯，前葡萄牙总理，自2017年起担任联合国秘书长。",
+        "correctAnswer": "安东尼奥·古特雷斯",
+        "explanation": "葡萄牙前总理安东尼奥·古特雷斯自 2017 年起担任联合国秘书长。",
         "difficulty": "medium",
-        "category": "政治与经济",
-        "subcategory": "Leaders Contemporains"
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
         "question": "哪位南非总统结束了种族隔离制度？",
         "options": [
-          "Nelson Mandela",
-          "Frederik de Klerk",
-          "Thabo Mbeki",
-          "Desmond Tutu"
+          "纳尔逊·曼德拉",
+          "弗雷德里克·德克勒克",
+          "塔博·姆贝基",
+          "德斯蒙德·图图"
         ],
-        "correctAnswer": "Nelson Mandela",
-        "explanation": "纳尔逊·曼德拉在监禁27年后，于1994年成为南非第一位黑人总统。",
+        "correctAnswer": "纳尔逊·曼德拉",
+        "explanation": "纳尔逊·曼德拉 (Nelson Mandela) 在服刑 27 年后于 1994 年成为南非第一位黑人总统。",
         "difficulty": "easy",
-        "category": "政治与经济",
-        "subcategory": "Leaders Africains Contemporains"
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
       {
-        "question": "哪家尼日利亚初创公司在2020年成为了独角兽？",
+        "question": "哪家尼日利亚初创公司在 2020 年成为独角兽？",
         "options": [
-          "Flutterwave",
-          "Jumia",
-          "Paystack",
-          "Andela"
+          "颤振波",
+          "朱米亚",
+          "支付宝",
+          "安德拉"
         ],
-        "correctAnswer": "Flutterwave",
-        "explanation": "支付平台Flutterwave在2020年估值超过10亿美元。",
+        "correctAnswer": "颤振波",
+        "explanation": "支付平台 Flutterwave 2020 年估值达到+10 亿美元。",
         "difficulty": "hard",
-        "category": "政治与经济",
-        "subcategory": "Économie Numérique Africaine"
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
-        "question": "非洲最大的电子商务市场是什么？",
+        "question": "非洲最大的电商市场是哪个？",
         "options": [
-          "Jumia",
-          "Takealot",
-          "Konga",
-          "Kilimall"
+          "朱米亚",
+          "塔阿洛特",
+          "孔加",
+          "基利玛尔"
         ],
-        "correctAnswer": "Jumia",
-        "explanation": "Jumia, surnommée 'l'Amazon africain', opère dans plus de 11 pays africains.",
+        "correctAnswer": "朱米亚",
+        "explanation": "Jumia 绰号“非洲亚马逊”，业务遍及超过 11 个非洲国家。",
         "difficulty": "medium",
-        "category": "政治与经济",
-        "subcategory": "Économie Numérique Africaine"
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
       {
-        "question": "非洲联盟（AU）成立于何时？",
+        "question": "非洲联盟 (AU) 何时成立？",
         "options": [
-          "2002",
-          "1963",
-          "1990",
-          "2010"
+          "2002年",
+          "1963年",
+          "1990年",
+          "2010年"
         ],
-        "correctAnswer": "2002",
-        "explanation": "L'UA a été créée en 2002 pour remplacer l'Organisation de l'Unité Africaine (OUA, 1963).",
+        "correctAnswer": "2002年",
+        "explanation": "非洲联盟成立于 2002 年，旨在取代非洲统一组织（OAU，1963）。",
         "difficulty": "medium",
-        "category": "政治与经济",
-        "subcategory": "Organisations Africaines"
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
-        "question": "非洲联盟的总部在哪里？",
+        "question": "非洲联盟总部设在哪里？",
         "options": [
-          "Addis-Abeba (Éthiopie)",
-          "Abuja (Nigeria)",
-          "Le Caire (Égypte)",
-          "Nairobi (Kenya)"
+          "亚的斯亚贝巴（埃塞俄比亚）",
+          "阿布贾（尼日利亚）",
+          "开罗（埃及）",
+          "内罗毕（肯尼亚）"
         ],
-        "correctAnswer": "Addis-Abeba (Éthiopie)",
-        "explanation": "非洲联盟总部位于埃塞俄比亚的亚的斯亚贝巴。",
+        "correctAnswer": "亚的斯亚贝巴（埃塞俄比亚）",
+        "explanation": "非盟总部位于埃塞俄比亚亚的斯亚贝巴。",
         "difficulty": "easy",
-        "category": "政治与经济",
-        "subcategory": "Organisations Africaines"
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
-        "question": "Que signifie CEDEAO ?",
+        "question": "西非国家经济共同体是什么意思?",
         "options": [
-          "Communauté Économique Des États de l'Afrique de l'Ouest",
-          "Centre d'Études et de Développement de l'Afrique de l'Ouest",
-          "Conseil Économique de Développement Africain de l'Ouest",
-          "Commission Économique pour le Développement de l'Afrique de l'Ouest"
+          "西非国家经济共同体",
+          "西非研究与发展中心",
+          "西非发展经济委员会",
+          "西非发展经济委员会"
         ],
-        "correctAnswer": "Communauté Économique Des États de l'Afrique de l'Ouest",
-        "explanation": "La CEDEAO (ECOWAS en anglais) regroupe 15 pays d'Afrique de l'Ouest.",
+        "correctAnswer": "西非国家经济共同体",
+        "explanation": "西非国家经济共同体（英文为ECOWAS）汇集了15个西非国家。",
         "difficulty": "medium",
-        "category": "政治与经济",
-        "subcategory": "Organisations Africaines"
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

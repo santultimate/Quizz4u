@@ -1,68 +1,72 @@
 {
-  "Política y Economía": {
+  "Politique et Économie": {
     "Leaders Africains Contemporains": [
       {
-        "question": "Quién es l'actuel Secrétaire general des Nations Unies (depuis 2017) ?",
+        "question": "¿Quién es el actual Secretario General de las Naciones Unidas (desde 2017)?",
         "options": [
-          "António Guterres",
+          "Antonio Guterres",
           "Ban Ki-moon",
           "Kofi Annan",
           "Boutros Boutros-Ghali"
         ],
-        "correctAnswer": "António Guterres",
-        "explanation": "António Guterres, antiguo Premier ministre portugais, es SG delONU depuis 2017.",
-        "difficulty": "Medio",
-        "category": "Política y Economía",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "Antonio Guterres",
+        "explanation": "António Guterres, ex primer ministro portugués, es secretario general de la ONU desde 2017.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
-        "question": "Quel presidente sur-africain a mis fin à l'apartheid ?",
+        "question": "¿Qué presidente sudafricano acabó con el apartheid?",
         "options": [
           "Nelson Mandela",
           "Frederik de Klerk",
           "Thabo Mbeki",
-          "Desmond Tutu"
+          "Desmond Tutú"
         ],
         "correctAnswer": "Nelson Mandela",
-        "explanation": "Nelson Mandela es devenu el premier presidente noir d'Afrique del sur en 1994, après 27 ans de prison.",
-        "difficulty": "Fácil",
-        "category": "Política y Economía",
-        "subcategory": "Leaders Africains Contemporains"
+        "explanation": "Nelson Mandela se convirtió en el primer presidente negro de Sudáfrica en 1994, después de 27 años de prisión.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
       {
-        "question": "Quelle startup nigériane es devenue una licorne en 2020 ?",
+        "question": "¿Qué startup nigeriana se convirtió en unicornio en 2020?",
         "options": [
-          "Flutterwave",
-          "Jumia",
-          "Paystack",
-          "Andela"
+          "Onda de aleteo",
+          "jumia",
+          "pila de pago",
+          "andela"
         ],
-        "correctAnswer": "Flutterwave",
-        "explanation": "Flutterwave, plateforme de paiements, a atteint una valorisation de +1 milliard USD en 2020.",
-        "difficulty": "Difícil",
-        "category": "Política y Economía",
-        "subcategory": "Économie Numérique Africaine"
+        "correctAnswer": "Onda de aleteo",
+        "explanation": "Flutterwave, una plataforma de pagos, alcanzó una valoración de +1 mil millones de dólares en 2020.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
-        "question": "Cuál es el más grand marché e-commerce africain ?",
+        "question": "¿Cuál es el mercado de comercio electrónico más grande de África?",
         "options": [
-          "Jumia",
-          "Takealot",
+          "jumia",
+          "tomar mucho",
           "Konga",
           "Kilimall"
         ],
-        "correctAnswer": "Jumia",
-        "explanation": "Jumia, surnommée 'l'Amazon africain', opère en más de 11 país africains.",
-        "difficulty": "Medio",
-        "category": "Política y Economía",
-        "subcategory": "Économie Numérique Africaine"
+        "correctAnswer": "jumia",
+        "explanation": "Jumia, apodada \"la Amazonía africana\", opera en más de 11 países africanos.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
       {
-        "question": "Cuándo a été créée l'Union Africaine (UA) ?",
+        "question": "¿Cuándo se creó la Unión Africana (UA)?",
         "options": [
           "2002",
           "1963",
@@ -70,38 +74,41 @@
           "2010"
         ],
         "correctAnswer": "2002",
-        "explanation": "L'UA a été créée en 2002 para remplacer l'Organisation de la unidad Africaine (OUA, 1963).",
-        "difficulty": "Medio",
-        "category": "Política y Economía",
-        "subcategory": "Organisations Africaines"
+        "explanation": "La UA fue creada en 2002 para reemplazar a la Organización de la Unidad Africana (OUA, 1963).",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
-        "question": "Dónde se trouve el siège delUnion Africaine ?",
+        "question": "¿Dónde está ubicada la sede de la Unión Africana?",
         "options": [
-          "Addis-Abeba (Éthiopie)",
-          "Abuja (Nigeria)",
-          "el Caire (Égypte)",
-          "Nairobi (Kenya)"
+          "Addis Abeba (Etiopía)",
+          "Abuya (Nigeria)",
+          "El Cairo (Egipto)",
+          "Nairobi (Kenia)"
         ],
-        "correctAnswer": "Addis-Abeba (Éthiopie)",
-        "explanation": "el siège delUA es situé à Addis-Abeba, en Éthiopie.",
-        "difficulty": "Fácil",
-        "category": "Política y Economía",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "Addis Abeba (Etiopía)",
+        "explanation": "La sede de la UA se encuentra en Addis Abeba, Etiopía.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
-        "question": "Que signifie CEDEAO ?",
+        "question": "¿Qué significa CEDEAO?",
         "options": [
-          "Communauté Économique Des États delAfrique delOuest",
-          "centro d'Études y de Développement delAfrique delOuest",
-          "Conseil Économique de Développement Africain delOuest",
-          "Commission Économique para el Développement delAfrique delOuest"
+          "Comunidad Económica de los Estados de África Occidental",
+          "Centro de Estudios y Desarrollo de África Occidental",
+          "Consejo Económico de Desarrollo de África Occidental",
+          "Comisión Económica para el Desarrollo de África Occidental"
         ],
-        "correctAnswer": "Communauté Économique Des États delAfrique delOuest",
-        "explanation": "la CEDEAO (ECOWAS en anglais) regroupe 15 país d'Afrique delOuest.",
-        "difficulty": "Medio",
-        "category": "Política y Economía",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "Comunidad Económica de los Estados de África Occidental",
+        "explanation": "La CEDEAO (CEDEAO en inglés) reúne a 15 países de África Occidental.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

@@ -7,7 +7,9 @@
         "The Lions": false,
         "Elephants": false,
         "The Falcons": false
-      }
+      },
+      "id": "football_0000",
+      "correctAnswer": "The Eagles"
     },
     {
       "question": "Who won the 2022 World Cup in Qatar?",
@@ -16,7 +18,9 @@
         "France": false,
         "Brazil": false,
         "Germany": false
-      }
+      },
+      "id": "football_0001",
+      "correctAnswer": "Argentina"
     },
     {
       "question": "How many players make up a football team on the field?",
@@ -25,7 +29,9 @@
         "10": false,
         "9": false,
         "12": false
-      }
+      },
+      "id": "football_0002",
+      "correctAnswer": "11"
     },
     {
       "question": "Which country has won the most World Cups?",
@@ -34,7 +40,9 @@
         "Germany": false,
         "Italy": false,
         "Argentina": false
-      }
+      },
+      "id": "football_0003",
+      "correctAnswer": "Brazil"
     },
     {
       "question": "What is the largest stadium in the world by capacity?",
@@ -43,7 +51,9 @@
         "Camp Nou (Barcelona)": false,
         "Azteca Stadium (Mexico City)": false,
         "The Stade de France (Paris)": false
-      }
+      },
+      "id": "football_0004",
+      "correctAnswer": "The May 1st Rungrado (Pyongyang)"
     },
     {
       "question": "Who is the top scorer in World Cup history?",
@@ -52,7 +62,9 @@
         "Ronaldo (15 goals)": false,
         "Pele (12 goals)": false,
         "Just Fontaine (13 goals)": false
-      }
+      },
+      "id": "football_0005",
+      "correctAnswer": "Miroslav Klose (16 goals)"
     },
     {
       "question": "Which Malian player played for FC Barcelona?",
@@ -61,7 +73,9 @@
         "Frédéric Kanouté": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0006",
+      "correctAnswer": "Seydou Keita"
     },
     {
       "question": "In what year did Mali participate in its first World Cup?",
@@ -70,7 +84,9 @@
         "1998": false,
         "2002": false,
         "2010": false
-      }
+      },
+      "id": "football_0007",
+      "correctAnswer": "Mali has never participated in a World Cup"
     },
     {
       "question": "Who is the most successful football club in the Champions League?",
@@ -79,7 +95,9 @@
         "FC Barcelona": false,
         "Bayern Munich": false,
         "Liverpool": false
-      }
+      },
+      "id": "football_0008",
+      "correctAnswer": "Real Madrid"
     },
     {
       "question": "Who invented football?",
@@ -88,7 +106,9 @@
         "Brazil": false,
         "France": false,
         "Italy": false
-      }
+      },
+      "id": "football_0009",
+      "correctAnswer": "England (1863)"
     },
     {
       "question": "How long does a football match last?",
@@ -97,7 +117,9 @@
         "80 minutes": false,
         "100 minutes": false,
         "120 minutes": false
-      }
+      },
+      "id": "football_0010",
+      "correctAnswer": "90 minutes (2 x 45 mins)"
     },
     {
       "question": "Which player is nicknamed 'La Pulga' (The Flea)?",
@@ -106,7 +128,9 @@
         "Cristiano Ronaldo": false,
         "Neymar": false,
         "Kylian Mbappé": false
-      }
+      },
+      "id": "football_0011",
+      "correctAnswer": "Lionel Messi"
     },
     {
       "question": "Which African country has won the most African Cups of Nations?",
@@ -115,7 +139,9 @@
         "Cameroon (5 titles)": false,
         "Ghana (4 titles)": false,
         "Nigeria (3 titles)": false
-      }
+      },
+      "id": "football_0012",
+      "correctAnswer": "Egypt (7 titles)"
     },
     {
       "question": "Who is the top scorer in CAN history?",
@@ -124,7 +150,9 @@
         "Laurent Pokou (14 goals)": false,
         "Hossam Hassan (14 goals)": false,
         "Didier Drogba (11 goals)": false
-      }
+      },
+      "id": "football_0013",
+      "correctAnswer": "Samuel Eto'o (18 goals)"
     },
     {
       "question": "What is the oldest football club in the world?",
@@ -133,7 +161,9 @@
         "Notts County (England, 1862)": false,
         "Stoke City (England, 1863)": false,
         "Wrexham (Wales, 1864)": false
-      }
+      },
+      "id": "football_0014",
+      "correctAnswer": "Sheffield FC (England, 1857)"
     },
     {
       "question": "Who scored the fastest goal in World Cup history?",
@@ -142,7 +172,9 @@
         "Bryan Robson (27 seconds, England 1982)": false,
         "Bernard Lacombe (37 seconds, France 1978)": false,
         "Clint Dempsey (29 seconds, USA 2014)": false
-      }
+      },
+      "id": "football_0015",
+      "correctAnswer": "Hakan Şükür (11 seconds, Türkiye 2002)"
     },
     {
       "question": "Which Malian player was elected African Ballon d'Or?",
@@ -151,7 +183,9 @@
         "Seydou Keita": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0016",
+      "correctAnswer": "Frédéric Kanouté (2007)"
     },
     {
       "question": "What is the nickname of the Senegal national team?",
@@ -160,7 +194,9 @@
         "The Eagles": false,
         "The Falcons": false,
         "The Panthers": false
-      }
+      },
+      "id": "football_0017",
+      "correctAnswer": "The Lions of Teranga"
     },
     {
       "question": "In what year was the first World Cup held?",
@@ -169,7 +205,9 @@
         "1928 in France": false,
         "1934 in Italy": false,
         "1938 in France": false
-      }
+      },
+      "id": "football_0018",
+      "correctAnswer": "1930 in Uruguay"
     },
     {
       "question": "Which player holds the record for the most goals in a season?",
@@ -178,7 +216,9 @@
         "Cristiano Ronaldo (61 goals)": false,
         "Pele (66 goals)": false,
         "Gerd Müller (67 goals)": false
-      }
+      },
+      "id": "football_0019",
+      "correctAnswer": "Lionel Messi (73 goals, 2011-2012)"
     },
     {
       "question": "What is the largest stadium in Africa?",
@@ -187,7 +227,9 @@
         "The Stade du 26 Mars (Bamako, Mali)": false,
         "Stade Félix Houphouët-Boigny (Abidjan, Ivory Coast)": false,
         "The 5th of July Stadium (Algiers, Algeria)": false
-      }
+      },
+      "id": "football_0020",
+      "correctAnswer": "The Friendship Stadium (Dakar, Senegal)"
     },
     {
       "question": "Who is the most capped player in football history?",
@@ -196,7 +238,9 @@
         "Cristiano Ronaldo (Portugal, 183 caps)": false,
         "Bader Al-Mutawa (Kuwait, 196 caps)": false,
         "Soh Chin Ann (Malaysia, 195 caps)": false
-      }
+      },
+      "id": "football_0021",
+      "correctAnswer": "Ahmed Hassan (Egypt, 184 caps)"
     },
     {
       "question": "Which country hosted the 2018 World Cup?",
@@ -205,7 +249,9 @@
         "Qatar": false,
         "Brazil": false,
         "South Africa": false
-      }
+      },
+      "id": "football_0022",
+      "correctAnswer": "Russia"
     },
     {
       "question": "What is the nickname of the Moroccan national team?",
@@ -214,7 +260,9 @@
         "The Fennecs": false,
         "The Eagles": false,
         "The Panthers": false
-      }
+      },
+      "id": "football_0023",
+      "correctAnswer": "The Lions of the Atlas"
     },
     {
       "question": "Who won the 2023 Ballon d'Or?",
@@ -223,7 +271,9 @@
         "Kylian Mbappé": false,
         "Erling Haaland": false,
         "Kevin De Bruyne": false
-      }
+      },
+      "id": "football_0024",
+      "correctAnswer": "Lionel Messi"
     },
     {
       "question": "Which Malian player played in the Premier League?",
@@ -232,7 +282,9 @@
         "Seydou Keita": false,
         "Frédéric Kanouté": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0025",
+      "correctAnswer": "Mahamadou Diarra (Fulham)"
     },
     {
       "question": "What is the world record for typing speed?",
@@ -241,7 +293,9 @@
         "Cristiano Ronaldo (131 km/h)": false,
         "Roberto Carlos (169 km/h)": false,
         "David Beckham (156 km/h)": false
-      }
+      },
+      "id": "football_0026",
+      "correctAnswer": "Ronny Heberson (211 km/h)"
     },
     {
       "question": "Who invented tiki taka?",
@@ -250,7 +304,9 @@
         "Pep Guardiola": false,
         "Xavi Hernández": false,
         "Luis Enrique": false
-      }
+      },
+      "id": "football_0027",
+      "correctAnswer": "Johan Cruyff and FC Barcelona"
     },
     {
       "question": "What is the largest stadium in Mali?",
@@ -259,7 +315,9 @@
         "The Modibo Keïta Omnisports Stadium": false,
         "The Mamadou Konaté Stadium": false,
         "The Friendship Stadium": false
-      }
+      },
+      "id": "football_0028",
+      "correctAnswer": "The Stade du 26 Mars (50,000 seats)"
     },
     {
       "question": "Who won CAN 2023?",
@@ -268,7 +326,9 @@
         "Senegal": false,
         "Morocco": false,
         "Egypt": false
-      }
+      },
+      "id": "football_0029",
+      "correctAnswer": "Ivory Coast"
     }
   ]
 }

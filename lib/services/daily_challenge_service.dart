@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/daily_challenge.dart';
 import '../models/question_model.dart';
 import 'progress_service.dart';
-import 'question_service.dart';
+import 'question_service_optimized.dart';
 import 'translation_service.dart'; // Importer pour traduire les messages
 
 class DailyChallengeService {
@@ -96,7 +96,7 @@ class DailyChallengeService {
 
     _challengeStartTime = DateTime.now();
     await _saveChallengeStatus();
-    print('[DailyChallengeService] 🚀 Défi démarré à ${_challengeStartTime}');
+    print('[DailyChallengeService] 🚀 Défi démarré à $_challengeStartTime');
   }
 
   // Marquer le défi comme complété
@@ -203,7 +203,9 @@ class DailyChallengeService {
           '[DailyChallengeService] 🎯 Génération questions - Jour $dayOfCycle - Seed: $seed');
 
       // S'assurer que les questions sont chargées
-      await QuestionService.loadQuestions();
+      if (!QuestionServiceOptimized.isLoaded) {
+        await QuestionServiceOptimized.loadEssentialQuestions();
+      }
 
       List<QuestionModel> allQuestions = [];
 
@@ -212,20 +214,19 @@ class DailyChallengeService {
         print(
             '[DailyChallengeService] 📚 Chargement questions pour: $category');
 
-        // Récupérer plus de questions que nécessaire pour avoir du choix
         List<QuestionModel> categoryQuestions =
-            QuestionService.getIntelligentQuestionsForCategory(
+            QuestionServiceOptimized.getIntelligentQuestionsForCategory(
           category,
-          count: 20, // Récupérer plus de questions
+          count: 20,
         );
 
         if (categoryQuestions.isEmpty) {
           print(
               '[DailyChallengeService] ⚠️ Aucune question trouvée pour $category');
-          // Fallback vers des questions aléatoires
-          categoryQuestions = QuestionService.getRandomQuestionsForCategory(
+          categoryQuestions =
+              QuestionServiceOptimized.getRandomQuestionsForCategory(
             category,
-            count: 20,
+            20,
           );
         }
 

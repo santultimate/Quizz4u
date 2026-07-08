@@ -2,6 +2,7 @@
 /// Traductions manuelles professionnelles
 /// Focus: Géographie mondiale, découvertes, records naturels
 /// Date: 17 octobre 2025
+library;
 
 class CultureGeneralePhase6Translations {
   static const Map<String, Map<String, dynamic>> translations = {
@@ -751,6 +752,7 @@ class CultureGeneralePhase6Translations {
     },
   };
 }
+
 
 
 

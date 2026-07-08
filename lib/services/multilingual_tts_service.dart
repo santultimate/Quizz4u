@@ -17,7 +17,7 @@ class MultilingualTTSService {
       'language': 'fr-FR',
       'name': 'Français',
       'voice': 'fr-FR',
-      'speechRate': 0.5, // Vitesse optimale pour le français
+      'speechRate': 0.6, // ✅ Augmenté de 0.5 à 0.6 pour meilleure fluidité
       'pitch': 1.0,
       'volume': 1.0,
     },
@@ -25,7 +25,7 @@ class MultilingualTTSService {
       'language': 'en-US',
       'name': 'English',
       'voice': 'en-US',
-      'speechRate': 0.5, // Légèrement plus rapide pour l'anglais
+      'speechRate': 0.65, // ✅ Augmenté de 0.5 à 0.65 pour meilleure fluidité
       'pitch': 1.0,
       'volume': 1.0,
     },
@@ -33,7 +33,7 @@ class MultilingualTTSService {
       'language': 'ar-SA',
       'name': 'العربية',
       'voice': 'ar-SA',
-      'speechRate': 0.45, // Plus lent pour l'arabe (lecture RTL)
+      'speechRate': 0.55, // ✅ Augmenté de 0.45 à 0.55 pour meilleure fluidité
       'pitch': 1.0,
       'volume': 1.0,
     },
@@ -41,7 +41,7 @@ class MultilingualTTSService {
       'language': 'zh-CN',
       'name': '中文',
       'voice': 'zh-CN',
-      'speechRate': 0.48, // Chinois mandarin nécessite une lecture plus mesurée
+      'speechRate': 0.6, // ✅ Augmenté de 0.48 à 0.6 pour meilleure fluidité
       'pitch': 1.1, // Pitch légèrement plus élevé pour le chinois
       'volume': 1.0,
     },
@@ -49,7 +49,7 @@ class MultilingualTTSService {
       'language': 'hi-IN',
       'name': 'हिन्दी',
       'voice': 'hi-IN',
-      'speechRate': 0.48, // Hindi nécessite une lecture claire
+      'speechRate': 0.6, // ✅ Augmenté de 0.48 à 0.6 pour meilleure fluidité
       'pitch': 1.0,
       'volume': 1.0,
     },
@@ -57,7 +57,7 @@ class MultilingualTTSService {
       'language': 'es-ES',
       'name': 'Español',
       'voice': 'es-ES',
-      'speechRate': 0.52, // Espagnol peut être légèrement plus rapide
+      'speechRate': 0.65, // ✅ Augmenté de 0.52 à 0.65 pour meilleure fluidité
       'pitch': 1.0,
       'volume': 1.0,
     },
@@ -228,7 +228,7 @@ class MultilingualTTSService {
       } else {
         await _flutterTts!.speak(cleanedText);
         print(
-            '[MultilingualTTS] 🎤 Lecture: "${cleanedText.length > 50 ? cleanedText.substring(0, 50) + '...' : cleanedText}" en $_currentLanguage');
+            '[MultilingualTTS] 🎤 Lecture: "${cleanedText.length > 50 ? '${cleanedText.substring(0, 50)}...' : cleanedText}" en $_currentLanguage');
       }
     } catch (e) {
       print('[MultilingualTTS] ❌ Erreur lecture: $e');

@@ -1,93 +1,99 @@
 {
-  "الفنون والثقافة": {
+  "Arts et Culture": {
     "Littérature Africaine": [
       {
-        "question": "Quel écrivain nigérian a remporté ال Prix Nobel من Littérature en 1986 ?",
+        "question": "من هو الكاتب النيجيري الحائز على جائزة نوبل للآداب عام 1986؟",
         "options": [
-          "Wole Soyinka",
-          "Chinua Achebe",
-          "Ben Okri",
-          "Chimamanda Ngozi Adichie"
+          "وول سوينكا",
+          "تشينوا أتشيبي",
+          "بن أوكري",
+          "شيماماندا نجوزي أديتشي"
         ],
-        "correctAnswer": "Wole Soyinka",
-        "explanation": "Wole Soyinka هو ال الأول Africain à لديه متلقى ال Prix Nobel من Littérature.",
-        "difficulty": "متوسط",
-        "category": "الفنون والثقافة",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "وول سوينكا",
+        "explanation": "وول سوينكا هو أول أفريقي يحصل على جائزة نوبل للآداب.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0000"
       },
       {
-        "question": "Qui a écrit 'L'Aventure ambiguë' ?",
+        "question": "من كتب \"المغامرة الغامضة\"؟",
         "options": [
-          "Cheikh Hamidou Kane",
-          "Léopold Sédar Senghor",
-          "Birago Diop",
-          "Amadou Hampâté Bâ"
+          "الشيخ حميدو كين",
+          "ليوبولد سيدار سنغور",
+          "بيراجو ديوب",
+          "أمادو هامباتي با"
         ],
-        "correctAnswer": "Cheikh Hamidou Kane",
-        "explanation": "'L'Aventure ambiguë' (1961) هو  roman من Cheikh Hamidou Kane على l'identité africaine.",
-        "difficulty": "متوسط",
-        "category": "الفنون والثقافة",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "الشيخ حميدو كين",
+        "explanation": "\"المغامرة الغامضة\" (1961) هي رواية للشيخ حميدو كين عن الهوية الأفريقية.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0001"
       },
       {
-        "question": "Quelle écrivaine malienne هو معروفة ل 'Une إذا طويلة lettre' ?",
+        "question": "من هو الكاتب المالي المعروف بـ \"مثل هذه الرسالة الطويلة\"؟",
         "options": [
-          "Mariama Bâ",
-          "Aminata Sow Fall",
-          "Nafissatou Diallo",
-          "Ken Bugul"
+          "مارياما ب",
+          "أميناتا سو فال",
+          "نفيساتو ديالو",
+          "كين بوجول"
         ],
-        "correctAnswer": "Mariama Bâ",
-        "explanation": "Mariama Bâ (Sénégalaise) a écrit هذا roman épistolaire على ال condition féminine en Afrique.",
-        "difficulty": "متوسط",
-        "category": "الفنون والثقافة",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "مارياما ب",
+        "explanation": "كتبت مارياما با (السنغالية) هذه الرواية الرسائلية عن حالة المرأة في أفريقيا.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0002"
       }
     ],
-    "Cinéلي Africain": [
+    "Cinéma Africain": [
       {
-        "question": "ما هو ال اسم من ال أكثر كبير festival من cinéلي africain ?",
+        "question": "ما اسم أكبر مهرجان سينمائي أفريقي؟",
         "options": [
-          "FESPACO",
-          "Festival من Cannes",
-          "Festival من Carthage",
-          "Festival من Durban"
+          "فيسباكو",
+          "مهرجان كان السينمائي",
+          "مهرجان قرطاج",
+          "مهرجان ديربان"
         ],
-        "correctAnswer": "FESPACO",
-        "explanation": "Le FESPACO (Festival Panafricain من ال Cinéلي من Ouagadougou) se tient جميع ال اثنان ans إلى ال Burkina Faso.",
-        "difficulty": "سهل",
-        "category": "الفنون والثقافة",
-        "subcategory": "Cinéلي Africain"
+        "correctAnswer": "فيسباكو",
+        "explanation": "يقام مهرجان FESPACO (مهرجان واغادوغو للسينما الأفريقية) كل عامين في بوركينا فاسو.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0003"
       },
       {
-        "question": "Quel réalisateur sénégalais هو considéré مثل ال père من ال cinéلي africain ?",
+        "question": "من هو المخرج السنغالي الذي يعتبر أب السينما الأفريقية؟",
         "options": [
-          "Ousmane Sembène",
-          "Djibril Diop Mambéty",
-          "Idrissa Ouedraogo",
-          "Souleymane Cissé"
+          "عثمان سمبين",
+          "جبريل ديوب مامبيتي",
+          "إدريسا ويدراوغو",
+          "سليمان سيسي"
         ],
-        "correctAnswer": "Ousmane Sembène",
-        "explanation": "Ousmane Sembène (1923-2007) هو considéré مثل ال père من ال cinéلي africain.",
-        "difficulty": "متوسط",
-        "category": "الفنون والثقافة",
-        "subcategory": "Cinéلي Africain"
+        "correctAnswer": "عثمان سمبين",
+        "explanation": "يعتبر عثمان سمبين (1923-2007) أبو السينما الإفريقية.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0004"
       }
     ],
     "Art Contemporain": [
       {
-        "question": "Quel artiste malien هو مشهور ل لهم photographies ?",
+        "question": "من هو الفنان المالي المشهور بصوره الفوتوغرافية؟",
         "options": [
-          "Malick Sidibé",
-          "Seydou Keïلك",
-          "Omar Victor Diop",
-          "Hassan Hajjaj"
+          "مالك سيديبي",
+          "سيدو كيتا",
+          "عمر فيكتور ديوب",
+          "حسن حجاج"
         ],
-        "correctAnswer": "Malick Sidibé",
-        "explanation": "Malick Sidibé a immortalisé ال jeunesse malienne des années 60-70 à Bamako.",
-        "difficulty": "متوسط",
-        "category": "الفنون والثقافة",
-        "subcategory": "Art Contemporain"
+        "correctAnswer": "مالك سيديبي",
+        "explanation": "لقد خلّد مالك سيديبي الشباب المالي في الستينيات والسبعينيات في باماكو.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0005"
       }
     ]
   }

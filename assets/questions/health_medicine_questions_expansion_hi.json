@@ -1,107 +1,114 @@
 {
-  "स्वास्थ्य और चिकित्सा": {
+  "Santé et Médecine": {
     "Maladies Tropicales": [
       {
-        "question": "Quel moustique transmet  paludisme (malaria) ?",
+        "question": "कौन सा मच्छर मलेरिया फैलाता है?",
         "options": [
-          "Anophè",
-          "Aedes",
-          "Culex",
-          "Tigre"
+          "मलेरिया का मच्छड़",
+          "एडीज",
+          "क्यूलेक्स",
+          "चीता"
         ],
-        "correctAnswer": "Anophè",
-        "explanation": " moustique anophè femelle transmet  parasite Plasmodium responsable का paludisme.",
-        "difficulty": "मध्यम",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "मलेरिया का मच्छड़",
+        "explanation": "मादा एनोफिलीज मच्छर मलेरिया के लिए जिम्मेदार प्लास्मोडियम परजीवी को फैलाती है।",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
-        "question": "Quelle बीमारी है causée par  वायरस Ebola ?",
+        "question": "इबोला वायरस से कौन सा रोग होता है?",
         "options": [
-          "Fièvre hémorragique",
-          "Paludisme",
-          "Tuberculose",
-          "Choléra"
+          "रक्तस्रावी बुखार",
+          "मलेरिया",
+          "यक्ष्मा",
+          "हैजा"
         ],
-        "correctAnswer": "Fièvre hémorragique",
-        "explanation": " वायरस Ebola कारण एक fièvre hémorragique grave के साथ एक taux का mortalité élevé.",
-        "difficulty": "आसान",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "रक्तस्रावी बुखार",
+        "explanation": "इबोला वायरस उच्च मृत्यु दर के साथ गंभीर रक्तस्रावी बुखार का कारण बनता है।",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
-        "question": "Quel देश africain a été déclaré exempt का polio en 2020 ?",
+        "question": "2020 में किस अफ्रीकी देश को पोलियो मुक्त घोषित किया गया?",
         "options": [
-          "Nigeria",
-          "Kenya",
-          "Afrique का दक्षिण",
-          "Égypte"
+          "नाइजीरिया",
+          "केन्या",
+          "दक्षिण अफ़्रीका",
+          "मिस्र"
         ],
-        "correctAnswer": "Nigeria",
-        "explanation": " Nigeria a été déclaré exempt का polio sauvage en août 2020, marquant एक बड़ी victoire.",
-        "difficulty": "कठिन",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "नाइजीरिया",
+        "explanation": "अगस्त 2020 में नाइजीरिया को वाइल्ड पोलियो मुक्त घोषित किया गया, जो एक बड़ी जीत थी।",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
       {
-        "question": "Quel arbre africain है utilisé के लिए traiter  fièvre और  douleurs ?",
+        "question": "बुखार और दर्द के इलाज के लिए किस अफ़्रीकी पेड़ का उपयोग किया जाता है?",
         "options": [
-          "Quinquina",
-          "Baobab",
-          "Moringa",
-          "Karité"
+          "कुनैन",
+          "बाओबाब",
+          "मोरिंगा",
+          "एक प्रकार का वृक्ष"
         ],
-        "correctAnswer": "Quinquina",
-        "explanation": "L'écorce का quinquina contient का  quinine, utilisée contre  paludisme.",
-        "difficulty": "मध्यम",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "कुनैन",
+        "explanation": "सिनकोना पेड़ की छाल में कुनैन होता है, जिसका उपयोग मलेरिया के खिलाफ किया जाता है।",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
-        "question": "Quel fruit का baobab है riche en vitamine C ?",
+        "question": "कौन सा बाओबाब फल विटामिन सी से भरपूर है?",
         "options": [
-          " pain का singe",
-          " datte",
-          " mangue",
-          " papaye"
+          "बंदर की रोटी",
+          "तारीख",
+          "आम",
+          "पपीता"
         ],
-        "correctAnswer": " pain का singe",
-        "explanation": " fruit का baobab (pain का singe) contient 6 बार अधिक का vitamine C qu'एक orange.",
-        "difficulty": "मध्यम",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "बंदर की रोटी",
+        "explanation": "बाओबाब फल (मंकी ब्रेड) में संतरे से 6 गुना अधिक विटामिन सी होता है।",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
-    "Nutrition और Santé": [
+    "Nutrition et Santé": [
       {
-        "question": "Quelle céréale africaine है naturellement बिना gluten ?",
+        "question": "कौन सा अफ़्रीकी अनाज प्राकृतिक रूप से ग्लूटेन-मुक्त है?",
         "options": [
-          " fonio",
-          " blé",
-          "L'orge",
-          " seigle"
+          "फ़ोनियो",
+          "गेहूँ",
+          "जौ",
+          "राई"
         ],
-        "correctAnswer": " fonio",
-        "explanation": " fonio है एक céréale ancestrale africaine, nutritive और बिना gluten.",
-        "difficulty": "मध्यम",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Nutrition और Santé"
+        "correctAnswer": "फ़ोनियो",
+        "explanation": "फ़ोनियो एक पैतृक अफ़्रीकी अनाज है, जो पौष्टिक और ग्लूटेन-मुक्त है।",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
-        "question": "कितने का लीटर d'पानी doit-on boire par दिन en moyenne ?",
+        "question": "हमें प्रति दिन औसतन कितने लीटर पानी पीना चाहिए?",
         "options": [
-          "1,5 à 2 लीटर",
-          "3 à 4 लीटर",
-          "0,5 à 1 लीटर",
+          "1.5 से 2 लीटर",
+          "3 से 4 लीटर",
+          "0.5 से 1 लीटर",
           "5 लीटर"
         ],
-        "correctAnswer": "1,5 à 2 लीटर",
-        "explanation": "Il है recommandé का boire environ 1,5 à 2 लीटर d'पानी par दिन के लिए rester hydraté.",
-        "difficulty": "आसान",
-        "category": "स्वास्थ्य और चिकित्सा",
-        "subcategory": "Nutrition और Santé"
+        "correctAnswer": "1.5 से 2 लीटर",
+        "explanation": "हाइड्रेटेड रहने के लिए प्रतिदिन लगभग 1.5 से 2 लीटर पानी पीने की सलाह दी जाती है।",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

@@ -13,7 +13,8 @@
         "explanation": "Leonard de Vinci a peint 'La Joconde' entre 1503 et 1519. Ce tableau est l'une des œuvres les plus célèbres au monde.",
         "difficulty": "easy",
         "category": "Arts et Culture",
-        "subcategory": "Peinture et Sculpture"
+        "subcategory": "Peinture et Sculpture",
+        "id": "phase2_new_categories_0000"
       },
       {
         "question": "Quel sculpteur a créé 'David' ?",
@@ -27,7 +28,8 @@
         "explanation": "Michel-Ange a sculpté 'David' entre 1501 et 1504. Cette statue de marbre mesure 5,17 mètres de haut.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Peinture et Sculpture"
+        "subcategory": "Peinture et Sculpture",
+        "id": "phase2_new_categories_0001"
       }
     ],
     "Musique Classique": [
@@ -43,7 +45,8 @@
         "explanation": "Beethoven a composé sa 9ème Symphonie en 1824. Elle est célèbre pour son 'Ode à la Joie'.",
         "difficulty": "easy",
         "category": "Arts et Culture",
-        "subcategory": "Musique Classique"
+        "subcategory": "Musique Classique",
+        "id": "phase2_new_categories_0002"
       }
     ],
     "Cinéma": [
@@ -59,7 +62,8 @@
         "explanation": "Orson Welles a réalisé 'Citizen Kane' en 1941. Ce film est souvent considéré comme le plus grand film de tous les temps.",
         "difficulty": "medium",
         "category": "Arts et Culture",
-        "subcategory": "Cinéma"
+        "subcategory": "Cinéma",
+        "id": "phase2_new_categories_0003"
       }
     ]
   },
@@ -77,7 +81,8 @@
         "explanation": "Les États-Unis ont le plus grand PIB nominal au monde, suivi de la Chine.",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Institutions Internationales"
+        "subcategory": "Institutions Internationales",
+        "id": "phase2_new_categories_0004"
       },
       {
         "question": "Quel est le siège de l'ONU ?",
@@ -91,7 +96,8 @@
         "explanation": "Le siège principal de l'Organisation des Nations Unies se trouve à New York, aux États-Unis.",
         "difficulty": "easy",
         "category": "Politique et Économie",
-        "subcategory": "Institutions Internationales"
+        "subcategory": "Institutions Internationales",
+        "id": "phase2_new_categories_0005"
       }
     ],
     "Économie Africaine": [
@@ -107,7 +113,8 @@
         "explanation": "La Côte d'Ivoire est le premier producteur mondial de cacao, avec environ 40% de la production mondiale.",
         "difficulty": "medium",
         "category": "Politique et Économie",
-        "subcategory": "Économie Africaine"
+        "subcategory": "Économie Africaine",
+        "id": "phase2_new_categories_0006"
       }
     ]
   },
@@ -125,7 +132,8 @@
         "explanation": "Go (ou Golang) a été créé par Google en 2009. Il est conçu pour être simple et efficace.",
         "difficulty": "hard",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique"
+        "subcategory": "Informatique",
+        "id": "phase2_new_categories_0007"
       },
       {
         "question": "Quel est le nom du premier ordinateur personnel d'Apple ?",
@@ -139,7 +147,8 @@
         "explanation": "L'Apple I, créé en 1976, était le premier ordinateur personnel d'Apple, conçu par Steve Wozniak.",
         "difficulty": "hard",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique"
+        "subcategory": "Informatique",
+        "id": "phase2_new_categories_0008"
       }
     ],
     "Intelligence Artificielle": [
@@ -155,7 +164,8 @@
         "explanation": "Bard est l'assistant IA conversationnel développé par Google, lancé en 2023.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "subcategory": "Intelligence Artificielle",
+        "id": "phase2_new_categories_0009"
       }
     ]
   },
@@ -173,7 +183,8 @@
         "explanation": "Le corps humain adulte contient environ 5-6 litres de sang, soit 7-8% du poids corporel.",
         "difficulty": "medium",
         "category": "Santé et Médecine",
-        "subcategory": "Anatomie"
+        "subcategory": "Anatomie",
+        "id": "phase2_new_categories_0010"
       }
     ],
     "Maladies": [
@@ -189,7 +200,8 @@
         "explanation": "Le VIH (Virus de l'Immunodéficience Humaine) est le virus qui cause le SIDA.",
         "difficulty": "easy",
         "category": "Santé et Médecine",
-        "subcategory": "Maladies"
+        "subcategory": "Maladies",
+        "id": "phase2_new_categories_0011"
       }
     ]
   },
@@ -207,7 +219,8 @@
         "explanation": "Le dioxyde de carbone (CO2) est le principal gaz à effet de serre responsable du réchauffement climatique.",
         "difficulty": "medium",
         "category": "Environnement et Écologie",
-        "subcategory": "Changement Climatique"
+        "subcategory": "Changement Climatique",
+        "id": "phase2_new_categories_0012"
       }
     ],
     "Biodiversité": [
@@ -223,8 +236,9 @@
         "explanation": "Environ 80% des espèces animales vivent dans les océans, ce qui en fait le plus grand écosystème de la planète.",
         "difficulty": "hard",
         "category": "Environnement et Écologie",
-        "subcategory": "Biodiversité"
+        "subcategory": "Biodiversité",
+        "id": "phase2_new_categories_0013"
       }
     ]
   }
-} 
+}

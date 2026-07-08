@@ -16,6 +16,7 @@
 /// - 🇨🇳 中文 (Chinois)
 /// - 🇮🇳 हिन्दी (Hindi)
 /// - 🇪🇸 Español (Espagnol)
+library;
 
 class Phase2CategoriesTranslations {
   static final Map<String, Map<String, Map<String, dynamic>>> translations = {
@@ -638,6 +639,7 @@ class Phase2CategoriesTranslations {
     },
   };
 }
+
 
 
 

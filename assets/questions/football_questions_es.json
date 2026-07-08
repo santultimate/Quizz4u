@@ -7,7 +7,9 @@
         "los leones": false,
         "elefantes": false,
         "los halcones": false
-      }
+      },
+      "id": "football_0000",
+      "correctAnswer": "Las águilas"
     },
     {
       "question": "¿Quién ganó el Mundial de Qatar 2022?",
@@ -16,7 +18,9 @@
         "Francia": false,
         "Brasil": false,
         "Alemania": false
-      }
+      },
+      "id": "football_0001",
+      "correctAnswer": "Argentina"
     },
     {
       "question": "¿Cuántos jugadores componen un equipo de fútbol en el campo?",
@@ -25,7 +29,9 @@
         "10": false,
         "9": false,
         "12": false
-      }
+      },
+      "id": "football_0002",
+      "correctAnswer": "11"
     },
     {
       "question": "¿Qué país ha ganado más Mundiales?",
@@ -34,7 +40,9 @@
         "Alemania": false,
         "Italia": false,
         "Argentina": false
-      }
+      },
+      "id": "football_0003",
+      "correctAnswer": "Brasil"
     },
     {
       "question": "¿Cuál es el estadio más grande del mundo por capacidad?",
@@ -43,7 +51,9 @@
         "Camp Nou (Barcelona)": false,
         "Estadio Azteca (Ciudad de México)": false,
         "El Estadio de Francia (París)": false
-      }
+      },
+      "id": "football_0004",
+      "correctAnswer": "El Rungrado del 1 de Mayo (Pyongyang)"
     },
     {
       "question": "¿Quién es el máximo goleador de la historia de los mundiales?",
@@ -52,7 +62,9 @@
         "Ronaldo (15 goles)": false,
         "Pelé (12 goles)": false,
         "Sólo Fontaine (13 goles)": false
-      }
+      },
+      "id": "football_0005",
+      "correctAnswer": "Miroslav Kloše (16 goles)"
     },
     {
       "question": "¿Qué jugador maliense jugó en el FC Barcelona?",
@@ -61,7 +73,9 @@
         "Frédéric Kanouté": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0006",
+      "correctAnswer": "Seydou Keita"
     },
     {
       "question": "¿En qué año participó Malí en su primer mundial?",
@@ -70,7 +84,9 @@
         "1998": false,
         "2002": false,
         "2010": false
-      }
+      },
+      "id": "football_0007",
+      "correctAnswer": "Mali nunca ha participado en un Mundial"
     },
     {
       "question": "¿Quién es el club de fútbol más exitoso de la Liga de Campeones?",
@@ -79,7 +95,9 @@
         "FC Barcelona": false,
         "Bayern de Múnich": false,
         "Liverpool": false
-      }
+      },
+      "id": "football_0008",
+      "correctAnswer": "real madrid"
     },
     {
       "question": "¿Quién inventó el fútbol?",
@@ -88,7 +106,9 @@
         "Brasil": false,
         "Francia": false,
         "Italia": false
-      }
+      },
+      "id": "football_0009",
+      "correctAnswer": "Inglaterra (1863)"
     },
     {
       "question": "¿Cuánto dura un partido de fútbol?",
@@ -97,7 +117,9 @@
         "80 minutos": false,
         "100 minutos": false,
         "120 minutos": false
-      }
+      },
+      "id": "football_0010",
+      "correctAnswer": "90 minutos (2 x 45 minutos)"
     },
     {
       "question": "¿A qué jugador le apodan 'La Pulga'?",
@@ -106,7 +128,9 @@
         "cristian ronaldo": false,
         "Neymar": false,
         "Kylian Mbappé": false
-      }
+      },
+      "id": "football_0011",
+      "correctAnswer": "Lionel Messi"
     },
     {
       "question": "¿Qué país africano ha ganado más Copas Africanas de Naciones?",
@@ -115,7 +139,9 @@
         "Camerún (5 títulos)": false,
         "Ghana (4 títulos)": false,
         "Nigeria (3 títulos)": false
-      }
+      },
+      "id": "football_0012",
+      "correctAnswer": "Egipto (7 títulos)"
     },
     {
       "question": "¿Quién es el máximo goleador de la historia de la CAN?",
@@ -124,7 +150,9 @@
         "Laurent Pokou (14 goles)": false,
         "Hossam Hassan (14 goles)": false,
         "Didier Drogba (11 goles)": false
-      }
+      },
+      "id": "football_0013",
+      "correctAnswer": "Samuel Eto'o (18 goles)"
     },
     {
       "question": "¿Cuál es el club de fútbol más antiguo del mundo?",
@@ -133,7 +161,9 @@
         "Condado de Notts (Inglaterra, 1862)": false,
         "Stoke City (Inglaterra, 1863)": false,
         "Wrexham (Gales, 1864)": false
-      }
+      },
+      "id": "football_0014",
+      "correctAnswer": "Sheffield FC (Inglaterra, 1857)"
     },
     {
       "question": "¿Quién marcó el gol más rápido en la historia de los Mundiales?",
@@ -142,7 +172,9 @@
         "Bryan Robson (27 segundos, Inglaterra 1982)": false,
         "Bernard Lacombe (37 segundos, Francia 1978)": false,
         "Clint Dempsey (29 segundos, Estados Unidos 2014)": false
-      }
+      },
+      "id": "football_0015",
+      "correctAnswer": "Hakan Şükür (11 segundos, Türkiye 2002)"
     },
     {
       "question": "¿Qué jugador maliense fue elegido Balón de Oro africano?",
@@ -151,7 +183,9 @@
         "Seydou Keita": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0016",
+      "correctAnswer": "Frédéric Kanouté (2007)"
     },
     {
       "question": "¿Cuál es el apodo de la selección de Senegal?",
@@ -160,7 +194,9 @@
         "Las águilas": false,
         "los halcones": false,
         "Las panteras": false
-      }
+      },
+      "id": "football_0017",
+      "correctAnswer": "Los leones de Teranga"
     },
     {
       "question": "¿En qué año se celebró el primer mundial?",
@@ -169,7 +205,9 @@
         "1928 en Francia": false,
         "1934 en Italia": false,
         "1938 en Francia": false
-      }
+      },
+      "id": "football_0018",
+      "correctAnswer": "1930 en Uruguay"
     },
     {
       "question": "¿Qué jugador tiene el récord de más goles en una temporada?",
@@ -178,7 +216,9 @@
         "Cristiano Ronaldo (61 goles)": false,
         "Pelé (66 goles)": false,
         "Gerd Müller (67 goles)": false
-      }
+      },
+      "id": "football_0019",
+      "correctAnswer": "Lionel Messi (73 goles, 2011-2012)"
     },
     {
       "question": "¿Cuál es el estadio más grande de África?",
@@ -187,7 +227,9 @@
         "El Stade du 26 Mars (Bamako, Malí)": false,
         "Stade Félix Houphouët-Boigny (Abiyán, Costa de Marfil)": false,
         "Estadio 5 de Julio (Argel, Argelia)": false
-      }
+      },
+      "id": "football_0020",
+      "correctAnswer": "El Estadio de la Amistad (Dakar, Senegal)"
     },
     {
       "question": "¿Quién es el jugador con más partidos internacionales en la historia del fútbol?",
@@ -196,7 +238,9 @@
         "Cristiano Ronaldo (Portugal, 183 partidos internacionales)": false,
         "Bader Al-Mutawa (Kuwait, 196 partidos internacionales)": false,
         "Soh Chin Ann (Malasia, 195 partidos internacionales)": false
-      }
+      },
+      "id": "football_0021",
+      "correctAnswer": "Ahmed Hassan (Egipto, 184 partidos internacionales)"
     },
     {
       "question": "¿Qué país fue sede del Mundial 2018?",
@@ -205,7 +249,9 @@
         "Katar": false,
         "Brasil": false,
         "Sudáfrica": false
-      }
+      },
+      "id": "football_0022",
+      "correctAnswer": "Rusia"
     },
     {
       "question": "¿Cuál es el apodo de la selección marroquí?",
@@ -214,7 +260,9 @@
         "Los Fénec": false,
         "Las águilas": false,
         "Las panteras": false
-      }
+      },
+      "id": "football_0023",
+      "correctAnswer": "Los leones del Atlas"
     },
     {
       "question": "¿Quién ganó el Balón de Oro 2023?",
@@ -223,7 +271,9 @@
         "Kylian Mbappé": false,
         "Erling Haaland": false,
         "Kevin De Bruyne": false
-      }
+      },
+      "id": "football_0024",
+      "correctAnswer": "Lionel Messi"
     },
     {
       "question": "¿Qué jugador maliense jugó en la Premier League?",
@@ -232,7 +282,9 @@
         "Seydou Keita": false,
         "Frédéric Kanouté": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0025",
+      "correctAnswer": "Mahamadou Diarra (Fulham)"
     },
     {
       "question": "¿Cuál es el récord mundial de velocidad de escritura?",
@@ -241,7 +293,9 @@
         "Cristiano Ronaldo (131 kilómetros por hora)": false,
         "Roberto Carlos (169 km/h)": false,
         "David Beckham (156 kilómetros por hora)": false
-      }
+      },
+      "id": "football_0026",
+      "correctAnswer": "Ronny Heberson (211 km/h)"
     },
     {
       "question": "¿Quién inventó el tiki taka?",
@@ -250,7 +304,9 @@
         "pep guardiola": false,
         "Xavi Hernandez": false,
         "luis enrique": false
-      }
+      },
+      "id": "football_0027",
+      "correctAnswer": "Johan Cruyff y el FC Barcelona"
     },
     {
       "question": "¿Cuál es el estadio más grande de Malí?",
@@ -259,7 +315,9 @@
         "El estadio omnisports Modibo Keïta": false,
         "El estadio Mamadou Konaté": false,
         "El estadio de la amistad": false
-      }
+      },
+      "id": "football_0028",
+      "correctAnswer": "El Stade du 26 Mars (50.000 asientos)"
     },
     {
       "question": "¿Quién ganó la CAN 2023?",
@@ -268,7 +326,9 @@
         "Senegal": false,
         "Marruecos": false,
         "Egipto": false
-      }
+      },
+      "id": "football_0029",
+      "correctAnswer": "Costa de Marfil"
     }
   ]
 }

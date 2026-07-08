@@ -1,107 +1,114 @@
 {
-  "الصحة والطب": {
+  "Santé et Médecine": {
     "Maladies Tropicales": [
       {
-        "question": "Quel moustique transmet ال paludisme (malaria) ?",
+        "question": "ما هي البعوضة التي تنقل الملاريا؟",
         "options": [
-          "Anophèال",
-          "Aedes",
-          "Culex",
-          "Tigre"
+          "الأنوفيلة",
+          "الزاعجة",
+          "كيولكس",
+          "نمر"
         ],
-        "correctAnswer": "Anophèال",
-        "explanation": "Le moustique anophèال femelle transmet ال parasite Plasmodium responsable من ال paludisme.",
-        "difficulty": "متوسط",
-        "category": "الصحة والطب",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "الأنوفيلة",
+        "explanation": "تنقل أنثى بعوضة الأنوفيلة طفيل Plasmodium المسؤول عن مرض الملاريا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0000"
       },
       {
-        "question": "Quelle مرض هو causée بواسطة ال فيروس Ebola ?",
+        "question": "ما هو المرض الذي يسببه فيروس الإيبولا؟",
         "options": [
-          "Fièvre hémorragique",
-          "Paludisme",
-          "Tuberculose",
-          "Choléra"
+          "الحمى النزفية",
+          "ملاريا",
+          "مرض الدرن",
+          "كوليرا"
         ],
-        "correctAnswer": "Fièvre hémorragique",
-        "explanation": "Le فيروس Ebola سبب  fièvre hémorragique grave مع  taux من mortalité élevé.",
-        "difficulty": "سهل",
-        "category": "الصحة والطب",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "الحمى النزفية",
+        "explanation": "يسبب فيروس الإيبولا حمى نزفية حادة مع ارتفاع معدل الوفيات.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0001"
       },
       {
-        "question": "Quel بلد africain a été déclaré exempt من polio en 2020 ?",
+        "question": "ما هي الدولة الأفريقية التي أعلنت خلوها من مرض شلل الأطفال في عام 2020؟",
         "options": [
-          "Nigeria",
-          "Kenya",
-          "Afrique من ال Sud",
-          "Égypte"
+          "نيجيريا",
+          "كينيا",
+          "جنوب أفريقيا",
+          "مصر"
         ],
-        "correctAnswer": "Nigeria",
-        "explanation": "Le Nigeria a été déclaré exempt من polio sauvage en août 2020, marquant  كبيرة victoire.",
-        "difficulty": "صعب",
-        "category": "الصحة والطب",
-        "subcategory": "Maladies Tropicales"
+        "correctAnswer": "نيجيريا",
+        "explanation": "تم إعلان نيجيريا خالية من شلل الأطفال البري في أغسطس 2020، وهو ما يمثل انتصارًا كبيرًا.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0002"
       }
     ],
     "Médecine Traditionnelle Africaine": [
       {
-        "question": "Quel arbre africain هو utilisé ل traiter ال fièvre و ال douleurs ?",
+        "question": "ما هي الشجرة الأفريقية التي تستخدم لعلاج الحمى والألم؟",
         "options": [
-          "Quinquina",
-          "Baobab",
-          "Moringa",
-          "Karité"
+          "الكينا",
+          "باوباب",
+          "المورينغا",
+          "الشيا"
         ],
-        "correctAnswer": "Quinquina",
-        "explanation": "L'écorce من ال quinquina يحتوي من ال quinine, مستخدمe contre ال paludisme.",
-        "difficulty": "متوسط",
-        "category": "الصحة والطب",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "الكينا",
+        "explanation": "يحتوي لحاء شجرة الكينا على الكينين الذي يستخدم ضد الملاريا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0003"
       },
       {
-        "question": "Quel fruit من ال baobab هو riche en vitamine C ?",
+        "question": "ما هي فاكهة الباوباب الغنية بفيتامين سي؟",
         "options": [
-          "Le pain من singe",
-          "La datte",
-          "La mangue",
-          "La papaye"
+          "خبز القرد",
+          "التاريخ",
+          "مانجو",
+          "البابايا"
         ],
-        "correctAnswer": "Le pain من singe",
-        "explanation": "Le fruit من ال baobab (pain من singe) يحتوي 6 مرة أكثر من vitamine C أن orange.",
-        "difficulty": "متوسط",
-        "category": "الصحة والطب",
-        "subcategory": "Médecine Traditionnelle Africaine"
+        "correctAnswer": "خبز القرد",
+        "explanation": "تحتوي فاكهة الباوباب (خبز القرد) على فيتامين سي أكثر بستة أضعاف من البرتقال.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0004"
       }
     ],
-    "Nutrition و Santé": [
+    "Nutrition et Santé": [
       {
-        "question": "Quelle céréale africaine هو naturellement بدون gluten ?",
+        "question": "ما هي الحبوب الأفريقية الخالية من الغلوتين بشكل طبيعي؟",
         "options": [
-          "Le fonio",
-          "Le blé",
-          "الذهبge",
-          "Le seigle"
+          "فونيو",
+          "قمح",
+          "الشعير",
+          "الجاودار"
         ],
-        "correctAnswer": "Le fonio",
-        "explanation": "Le fonio هو  céréale ancestrale africaine, nutritive و بدون gluten.",
-        "difficulty": "متوسط",
-        "category": "الصحة والطب",
-        "subcategory": "Nutrition و Santé"
+        "correctAnswer": "فونيو",
+        "explanation": "الفونيو عبارة عن حبوب أفريقية موروثة، مغذية وخالية من الغلوتين.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0005"
       },
       {
-        "question": "كم عدد litres من الماء يجب-on boire بواسطة يوم en moyenne ?",
+        "question": "كم لتر من الماء يجب أن نشرب يوميا في المتوسط؟",
         "options": [
-          "1,5 à 2 litres",
-          "3 à 4 litres",
-          "0,5 à 1 litre",
-          "5 litres"
+          "1.5 إلى 2 لتر",
+          "3 إلى 4 لتر",
+          "0.5 إلى 1 لتر",
+          "5 لتر"
         ],
-        "correctAnswer": "1,5 à 2 litres",
-        "explanation": "Il هو recommandé من boire environ 1,5 à 2 litres من الماء بواسطة يوم ل rester hydraté.",
-        "difficulty": "سهل",
-        "category": "الصحة والطب",
-        "subcategory": "Nutrition و Santé"
+        "correctAnswer": "1.5 إلى 2 لتر",
+        "explanation": "يوصى بشرب حوالي 1.5 إلى 2 لتر من الماء يوميًا للبقاء رطبًا.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0006"
       }
     ]
   }

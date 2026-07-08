@@ -13,7 +13,8 @@
         "explanation": "Java est le langage principal pour le développement Android, bien que Kotlin soit de plus en plus utilisé.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique et Programmation"
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0000"
       },
       {
         "question": "Qui a créé le World Wide Web (WWW) ?",
@@ -27,7 +28,8 @@
         "explanation": "Tim Berners-Lee a inventé le World Wide Web au CERN en 1989.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique et Programmation"
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0001"
       },
       {
         "question": "Quel est le langage de programmation le plus populaire en 2025 ?",
@@ -41,7 +43,8 @@
         "explanation": "Python est le langage le plus populaire grâce à son utilisation en IA, data science et développement web.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique et Programmation"
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0002"
       },
       {
         "question": "Qu'est-ce que HTML ?",
@@ -55,7 +58,8 @@
         "explanation": "HTML est le langage de balisage standard pour créer des pages web.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique et Programmation"
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0003"
       },
       {
         "question": "Quel système d'exploitation mobile a été développé par Google ?",
@@ -69,7 +73,8 @@
         "explanation": "Android est le système d'exploitation mobile open-source développé par Google.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Informatique et Programmation"
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0004"
       }
     ],
     "Intelligence Artificielle": [
@@ -85,7 +90,8 @@
         "explanation": "ChatGPT est l'assistant IA conversationnel développé par OpenAI, lancé en novembre 2022.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0005"
       },
       {
         "question": "Qu'est-ce que le Machine Learning ?",
@@ -99,7 +105,8 @@
         "explanation": "Le Machine Learning permet aux ordinateurs d'apprendre à partir de données sans être explicitement programmés.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0006"
       },
       {
         "question": "Quel test mesure la capacité d'une machine à exhiber un comportement intelligent ?",
@@ -113,7 +120,8 @@
         "explanation": "Le Test de Turing, proposé par Alan Turing en 1950, évalue l'intelligence d'une machine.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0007"
       }
     ],
     "Innovations Tech Africaines": [
@@ -129,7 +137,8 @@
         "explanation": "M-Pesa a été lancé au Kenya en 2007 et a révolutionné les services financiers mobiles en Afrique.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0008"
       },
       {
         "question": "Quelle ville est surnommée 'Silicon Savannah' ?",
@@ -143,7 +152,8 @@
         "explanation": "Nairobi, au Kenya, est surnommée 'Silicon Savannah' en raison de son écosystème tech florissant.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0009"
       },
       {
         "question": "Quel pays africain a le plus grand nombre de licornes tech (startups valorisées à +1 milliard USD) ?",
@@ -157,7 +167,8 @@
         "explanation": "Le Nigeria possède plusieurs licornes tech comme Flutterwave, Interswitch, et OPay.",
         "difficulty": "hard",
         "category": "Technologie et Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0010"
       },
       {
         "question": "Qu'est-ce que Zipline, l'innovation tech utilisée au Rwanda ?",
@@ -171,7 +182,8 @@
         "explanation": "Zipline utilise des drones pour livrer du sang et des médicaments dans les zones reculées du Rwanda.",
         "difficulty": "hard",
         "category": "Technologie et Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0011"
       }
     ],
     "Cybersécurité": [
@@ -187,7 +199,8 @@
         "explanation": "Un pare-feu protège un réseau en contrôlant le trafic entrant et sortant selon des règles de sécurité.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Cybersécurité"
+        "subcategory": "Cybersécurité",
+        "id": "technology_0012"
       },
       {
         "question": "Qu'est-ce que le phishing ?",
@@ -201,7 +214,8 @@
         "explanation": "Le phishing est une technique frauduleuse qui vise à obtenir des informations confidentielles.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Cybersécurité"
+        "subcategory": "Cybersécurité",
+        "id": "technology_0013"
       }
     ],
     "Histoire de la Tech": [
@@ -217,7 +231,8 @@
         "explanation": "Apple a été fondée le 1er avril 1976 par Steve Jobs, Steve Wozniak et Ronald Wayne.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Histoire de la Tech"
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0014"
       },
       {
         "question": "Qui est considéré comme le père de l'informatique ?",
@@ -231,7 +246,8 @@
         "explanation": "Alan Turing est considéré comme le père de l'informatique théorique et de l'intelligence artificielle.",
         "difficulty": "medium",
         "category": "Technologie et Innovation",
-        "subcategory": "Histoire de la Tech"
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0015"
       },
       {
         "question": "Quel fut le premier réseau social à atteindre 1 milliard d'utilisateurs ?",
@@ -245,7 +261,8 @@
         "explanation": "Facebook a atteint 1 milliard d'utilisateurs actifs mensuels en octobre 2012.",
         "difficulty": "easy",
         "category": "Technologie et Innovation",
-        "subcategory": "Histoire de la Tech"
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0016"
       }
     ]
   }

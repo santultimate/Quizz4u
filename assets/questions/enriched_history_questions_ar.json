@@ -10,7 +10,9 @@
       },
       "explanation": "كانت إمبراطورية مالي، التي أسسها سوندياتا كيتا، واحدة من أعظم الإمبراطوريات في تاريخ أفريقيا.",
       "difficulty": "medium",
-      "subcategory": "Empires"
+      "subcategory": "Empires",
+      "id": "history_0000",
+      "correctAnswer": "إمبراطورية مالي"
     },
     {
       "question": "من هو أشهر حاكم لإمبراطورية مالي؟",
@@ -21,7 +23,9 @@
       },
       "explanation": "يعتبر مانسا موسى (1312-1337) أغنى رجل في التاريخ.",
       "difficulty": "easy",
-      "subcategory": "Souverains"
+      "subcategory": "Souverains",
+      "id": "history_0001",
+      "correctAnswer": "منسا موسى"
     },
     {
       "question": "ما هي المدينة التي كانت عاصمة إمبراطورية مالي؟",
@@ -33,7 +37,9 @@
       },
       "explanation": "كانت نياني العاصمة السياسية لإمبراطورية مالي.",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "history_0002",
+      "correctAnswer": "نياني"
     },
     {
       "question": "ما هو منتج التصدير الرئيسي لإمبراطورية مالي؟",
@@ -45,7 +51,9 @@
       },
       "explanation": "كان ذهب مالي وفيرًا جدًا لدرجة أنه أثر على الاقتصاد العالمي في ذلك الوقت.",
       "difficulty": "medium",
-      "subcategory": "Économie"
+      "subcategory": "Économie",
+      "id": "history_0003",
+      "correctAnswer": "ذهب"
     },
     {
       "question": "ما هي الجامعة الأكثر شهرة في إمبراطورية مالي؟",
@@ -57,7 +65,9 @@
       },
       "explanation": "كانت جامعة سانكوري في تمبكتو مركزًا تعليميًا مشهورًا.",
       "difficulty": "hard",
-      "subcategory": "Éducation"
+      "subcategory": "Éducation",
+      "id": "history_0004",
+      "correctAnswer": "جامعة سانكوري"
     },
     {
       "question": "من هو المستكشف العربي الذي زار إمبراطورية مالي في القرن الرابع عشر؟",
@@ -69,7 +79,9 @@
       },
       "explanation": "ترك ابن بطوطة روايات مفصلة عن رحلته إلى مالي.",
       "difficulty": "medium",
-      "subcategory": "Explorateurs"
+      "subcategory": "Explorateurs",
+      "id": "history_0005",
+      "correctAnswer": "ابن بطوطة"
     },
     {
       "question": "ما هو الدين الرئيسي لإمبراطورية مالي؟",
@@ -81,7 +93,9 @@
       },
       "explanation": "انتشر الإسلام في إمبراطورية مالي منذ القرن الحادي عشر.",
       "difficulty": "easy",
-      "subcategory": "Religion"
+      "subcategory": "Religion",
+      "id": "history_0006",
+      "correctAnswer": "الإسلام"
     },
     {
       "question": "ما هو اسم نظام الحكم في إمبراطورية مالي؟",
@@ -93,7 +107,9 @@
       },
       "explanation": "كانت إمبراطورية مالي نظامًا ملكيًا يحكمه مانسا (ملك).",
       "difficulty": "medium",
-      "subcategory": "Politique"
+      "subcategory": "Politique",
+      "id": "history_0007",
+      "correctAnswer": "الملكية"
     },
     {
       "question": "ما هو المصدر الرئيسي لثروة تمبكتو؟",
@@ -105,7 +121,9 @@
       },
       "explanation": "كانت تمبكتو بمثابة مفترق طرق تجاري رئيسي بين شمال أفريقيا وأفريقيا جنوب الصحراء الكبرى.",
       "difficulty": "medium",
-      "subcategory": "Commerce"
+      "subcategory": "Commerce",
+      "id": "history_0008",
+      "correctAnswer": "التجارة عبر الصحراء"
     },
     {
       "question": "ما اسم الأسرة التي أسست إمبراطورية مالي؟",
@@ -117,7 +135,9 @@
       },
       "explanation": "أسست سلالة كيتا وحكمت إمبراطورية مالي لعدة قرون.",
       "difficulty": "hard",
-      "subcategory": "Dynasties"
+      "subcategory": "Dynasties",
+      "id": "history_0009",
+      "correctAnswer": "كيتا"
     },
     {
       "question": "في أي عام حصلت مالي على استقلالها؟",
@@ -127,7 +147,8 @@
         "1962": false,
         "1965": false
       },
-      "correctAnswer": "1960"
+      "correctAnswer": "1960",
+      "id": "history_0010"
     },
     {
       "question": "ما اسم إمبراطورية العصور الوسطى التي سيطرت على غرب أفريقيا؟",
@@ -137,7 +158,8 @@
         "إمبراطورية سونغهاي": false,
         "إمبراطورية كانم": false
       },
-      "correctAnswer": "Empire du Mali"
+      "correctAnswer": "إمبراطورية مالي",
+      "id": "history_0011"
     },
     {
       "question": "من هو أشهر إمبراطور إمبراطورية مالي؟",
@@ -147,7 +169,8 @@
         "سني علي": false,
         "أسكيا محمد": false
       },
-      "correctAnswer": "Mansa Moussa"
+      "correctAnswer": "منسا موسى",
+      "id": "history_0012"
     },
     {
       "question": "في أي عام قام منسا موسى بحجه الشهير إلى مكة؟",
@@ -157,7 +180,8 @@
         "1350": false,
         "1400": false
       },
-      "correctAnswer": "1324"
+      "correctAnswer": "1324",
+      "id": "history_0013"
     },
     {
       "question": "ما هو النهر الذي يعبر مالي من الشمال إلى الجنوب؟",
@@ -167,7 +191,8 @@
         "الكونغو": false,
         "النيل": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "النيجر",
+      "id": "history_0014"
     },
     {
       "question": "ما هي المدينة المالية الملقبة ب\"لؤلؤة الصحراء\"؟",
@@ -177,7 +202,8 @@
         "جاو": false,
         "موبتي": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "تمبكتو",
+      "id": "history_0015"
     },
     {
       "question": "من هو أول رئيس لمالي المستقلة؟",
@@ -187,7 +213,8 @@
         "ألفا عمر كوناري": false,
         "أمادو توماني توريه": false
       },
-      "correctAnswer": "Modibo Keita"
+      "correctAnswer": "موديبو كيتا",
+      "id": "history_0016"
     },
     {
       "question": "في أي عام عادت الديمقراطية إلى مالي؟",
@@ -197,7 +224,8 @@
         "1992": true,
         "1993": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0017"
     },
     {
       "question": "ما اسم مسجد جينيه الكبير؟",
@@ -207,7 +235,8 @@
         "المسجد الملكي": false,
         "المسجد المركزي": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "مسجد جينيه الكبير",
+      "id": "history_0018"
     },
     {
       "question": "ما اسم الإمبراطورية التي سبقت إمبراطورية مالي؟",
@@ -217,7 +246,8 @@
         "إمبراطورية كانم": false,
         "إمبراطورية برنو": false
       },
-      "correctAnswer": "Empire du Ghana"
+      "correctAnswer": "إمبراطورية غانا",
+      "id": "history_0019"
     },
     {
       "question": "ما هو لقب مانسا موسى؟",
@@ -227,7 +257,8 @@
         "الفاتح": false,
         "الحكيم": false
       },
-      "correctAnswer": "Le Roi des Rois"
+      "correctAnswer": "ملك الملوك",
+      "id": "history_0020"
     },
     {
       "question": "ما هو المورد الاقتصادي الرئيسي لإمبراطورية مالي؟",
@@ -237,7 +268,8 @@
         "العبيد": false,
         "نحاس": false
       },
-      "correctAnswer": "L'or"
+      "correctAnswer": "ذهب",
+      "id": "history_0021"
     },
     {
       "question": "ما اسم أول عاصمة لمالي المستقلة؟",
@@ -247,7 +279,8 @@
         "سيجو": false,
         "موبتي": false
       },
-      "correctAnswer": "Bamako"
+      "correctAnswer": "باماكو",
+      "id": "history_0022"
     },
     {
       "question": "في أي عام وصلت إمبراطورية مالي إلى ذروتها؟",
@@ -257,7 +290,8 @@
         "القرن الخامس عشر": false,
         "القرن السادس عشر": false
       },
-      "correctAnswer": "XIVe siecle"
+      "correctAnswer": "القرن الرابع عشر",
+      "id": "history_0023"
     },
     {
       "question": "ما هي المدينة التي كانت أهم مركز تجاري لإمبراطورية مالي؟",
@@ -267,7 +301,8 @@
         "جيني": false,
         "نياني": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "تمبكتو",
+      "id": "history_0024"
     },
     {
       "question": "ما هو اسم أشهر جامعة في تمبكتو؟",
@@ -277,7 +312,8 @@
         "جامعة قرطبة": false,
         "جامعة فاس": false
       },
-      "correctAnswer": "Universite Sankore"
+      "correctAnswer": "جامعة سانكور",
+      "id": "history_0025"
     },
     {
       "question": "ما هو اسم أول إمبراطور لإمبراطورية مالي؟",
@@ -287,7 +323,8 @@
         "سني علي": false,
         "أسكيا محمد": false
       },
-      "correctAnswer": "Sundiata Keita"
+      "correctAnswer": "سوندياتا كيتا",
+      "id": "history_0026"
     },
     {
       "question": "في أي عام أسس سوندياتا كيتا إمبراطورية مالي؟",
@@ -297,7 +334,8 @@
         "1250": false,
         "1300": false
       },
-      "correctAnswer": "1235"
+      "correctAnswer": "1235",
+      "id": "history_0027"
     },
     {
       "question": "ما هو اسم المعركة التي سمحت لسوندياتا بالاستيلاء على السلطة؟",
@@ -307,7 +345,8 @@
         "معركة كوليكورو": false,
         "معركة سيجو": false
       },
-      "correctAnswer": "Bataille de Kirina"
+      "correctAnswer": "معركة كيرينا",
+      "id": "history_0028"
     },
     {
       "question": "ما اسم الإمبراطورية التي خلفت إمبراطورية مالي؟",
@@ -317,7 +356,8 @@
         "إمبراطورية كانم": false,
         "إمبراطورية برنو": false
       },
-      "correctAnswer": "Empire Songhai"
+      "correctAnswer": "إمبراطورية سونغهاي",
+      "id": "history_0029"
     },
     {
       "question": "ما هو اسم أول رئيس مالي منتخب ديمقراطيا؟",
@@ -327,7 +367,8 @@
         "موسى تراوري": false,
         "أمادو توماني توريه": false
       },
-      "correctAnswer": "Alpha Oumar Konare"
+      "correctAnswer": "ألفا عمر كوناري",
+      "id": "history_0030"
     },
     {
       "question": "في أي عام تم انتخاب ألفا عمر كوناري رئيسا؟",
@@ -337,7 +378,8 @@
         "1993": false,
         "1994": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0031"
     },
     {
       "question": "ما اسم الدستور المعتمد عام 1992 في مالي؟",
@@ -347,7 +389,8 @@
         "دستور الجمهورية الرابعة": false,
         "الدستور الديمقراطي": false
       },
-      "correctAnswer": "Constitution de la IIIe Republique"
+      "correctAnswer": "دستور الجمهورية الثالثة",
+      "id": "history_0032"
     },
     {
       "question": "ما اسم رئيس وزراء مالي الذي قاد التحول الديمقراطي؟",
@@ -357,7 +400,8 @@
         "ألفا عمر كوناري": false,
         "أمادو توماني توريه": false
       },
-      "correctAnswer": "Soumana Sacko"
+      "correctAnswer": "سومانا ساكو",
+      "id": "history_0033"
     },
     {
       "question": "ما اسم منطقة مالي التي كانت مهد إمبراطورية مالي؟",
@@ -367,7 +411,8 @@
         "منطقة جاو": false,
         "منطقة سيجو": false
       },
-      "correctAnswer": "Region de Kayes"
+      "correctAnswer": "منطقة كايس",
+      "id": "history_0034"
     },
     {
       "question": "ما اسم المدينة التي كانت العاصمة الدينية لإمبراطورية مالي؟",
@@ -377,7 +422,8 @@
         "جاو": false,
         "نياني": false
       },
-      "correctAnswer": "Djenne"
+      "correctAnswer": "جيني",
+      "id": "history_0035"
     },
     {
       "question": "ما هو اسم أقدم مسجد في غرب أفريقيا؟",
@@ -387,7 +433,8 @@
         "مسجد جاو": false,
         "مسجد باماكو": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "مسجد جينيه الكبير",
+      "id": "history_0036"
     },
     {
       "question": "في أي عام تم بناء مسجد جينيه الكبير؟",
@@ -397,7 +444,8 @@
         "القرن الخامس عشر": false,
         "القرن السادس عشر": false
       },
-      "correctAnswer": "XIIIe siecle"
+      "correctAnswer": "القرن الثالث عشر",
+      "id": "history_0037"
     },
     {
       "question": "ما اسم اللغة الرسمية لإمبراطورية مالي؟",
@@ -407,7 +455,8 @@
         "سونغهاي": false,
         "الفولاني": false
       },
-      "correctAnswer": "Le mandingue"
+      "correctAnswer": "الماندينغو",
+      "id": "history_0038"
     },
     {
       "question": "ما اسم العملة المستخدمة في إمبراطورية مالي؟",
@@ -417,7 +466,8 @@
         "الفرنك": false,
         "الدرهم": false
       },
-      "correctAnswer": "Le cowrie"
+      "correctAnswer": "البقرة",
+      "id": "history_0039"
     },
     {
       "question": "ما اسم الطريق التجاري الذي عبر إمبراطورية مالي؟",
@@ -427,7 +477,8 @@
         "الطريق العابر للصحراء": true,
         "طريق الحرير": false
       },
-      "correctAnswer": "Route transsaharienne"
+      "correctAnswer": "الطريق العابر للصحراء",
+      "id": "history_0040"
     },
     {
       "question": "ما اسم المدينة التي كانت مركز التعليم في إمبراطورية مالي؟",
@@ -437,7 +488,8 @@
         "جاو": false,
         "نياني": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "تمبكتو",
+      "id": "history_0041"
     },
     {
       "question": "ما اسم أشهر مكتبة في تمبكتو؟",
@@ -447,7 +499,8 @@
         "مكتبة الأزهر": false,
         "مكتبة قرطبة": false
       },
-      "correctAnswer": "Bibliotheque Ahmed Baba"
+      "correctAnswer": "مكتبة أحمد بابا",
+      "id": "history_0042"
     },
     {
       "question": "ما اسم أشهر مؤرخ مالي في القرن السادس عشر؟",
@@ -457,7 +510,8 @@
         "البكري": false,
         "ابن بطوطة": false
       },
-      "correctAnswer": "Ahmed Baba"
+      "correctAnswer": "احمد بابا",
+      "id": "history_0043"
     },
     {
       "question": "ما اسم المدينة التي كانت المركز العسكري لإمبراطورية مالي؟",
@@ -467,7 +521,8 @@
         "جيني": false,
         "نياني": false
       },
-      "correctAnswer": "Gao"
+      "correctAnswer": "جاو",
+      "id": "history_0044"
     },
     {
       "question": "ما هو اسم الإمبراطور الأول من سلالة سوني؟",
@@ -477,7 +532,8 @@
         "سني سليمان": false,
         "سني محمد": false
       },
-      "correctAnswer": "Sonni Ali"
+      "correctAnswer": "سني علي",
+      "id": "history_0045"
     },
     {
       "question": "في أي عام فتح سوني علي تمبكتو؟",
@@ -487,7 +543,8 @@
         "1470": false,
         "1475": false
       },
-      "correctAnswer": "1468"
+      "correctAnswer": "1468",
+      "id": "history_0046"
     },
     {
       "question": "ما اسم المدينة التي كانت المركز الإداري لإمبراطورية مالي؟",
@@ -497,7 +554,8 @@
         "جاو": false,
         "جيني": false
       },
-      "correctAnswer": "Niani"
+      "correctAnswer": "نياني",
+      "id": "history_0047"
     },
     {
       "question": "ما اسم المنطقة التي كانت سلة غذاء إمبراطورية مالي؟",
@@ -507,7 +565,8 @@
         "منطقة سيكاسو": false,
         "منطقة كوليكورو": false
       },
-      "correctAnswer": "Region de Segou"
+      "correctAnswer": "منطقة سيجو",
+      "id": "history_0048"
     },
     {
       "question": "ما اسم المدينة التي كانت المركز الثقافي لإمبراطورية مالي؟",
@@ -517,7 +576,8 @@
         "جاو": false,
         "نياني": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "تمبكتو",
+      "id": "history_0049"
     },
     {
       "question": "ما هو اسم أشهر كاتب مالي في القرن العشرين؟",
@@ -527,7 +587,8 @@
         "ألفا عمر كوناري": false,
         "أمادو توماني توريه": false
       },
-      "correctAnswer": "Amadou Hampate Ba"
+      "correctAnswer": "أمادو هامباتي با",
+      "id": "history_0050"
     },
     {
       "question": "ما هو اسم أشهر أعمال أمادو همباتي با؟",
@@ -537,7 +598,8 @@
         "ذكريات الفولاني": false,
         "حكايات وأساطير": false
       },
-      "correctAnswer": "L'Etrange Destin de Wangrin"
+      "correctAnswer": "المصير الغريب لوانجرين",
+      "id": "history_0051"
     }
   ]
 }

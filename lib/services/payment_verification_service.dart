@@ -172,7 +172,7 @@ class PaymentVerificationService {
     try {
       final prefs = await SharedPreferences.getInstance();
       final verificationData =
-          prefs.getString('$_verificationKey\_$transactionId');
+          prefs.getString('${_verificationKey}_$transactionId');
 
       if (verificationData != null) {
         return json.decode(verificationData) as Map<String, dynamic>;
@@ -197,7 +197,7 @@ class PaymentVerificationService {
       };
 
       await prefs.setString(
-        '$_verificationKey\_$transactionId',
+        '${_verificationKey}_$transactionId',
         json.encode(verificationData),
       );
 

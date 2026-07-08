@@ -10,7 +10,8 @@
       },
       "explanation": "L'océan Pacifique couvre plus de 30% de la surface terrestre.",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0000"
     },
     {
       "question": "Qui a peint la Joconde ?",
@@ -22,7 +23,8 @@
       },
       "explanation": "La Joconde, peinte par Léonard de Vinci, est exposée au Louvre.",
       "difficulty": "easy",
-      "subcategory": "Art"
+      "subcategory": "Art",
+      "id": "culture_0001"
     },
     {
       "question": "Quel est le symbole chimique de l'or ?",
@@ -34,7 +36,8 @@
       },
       "explanation": "Au vient du latin 'aurum' qui signifie or.",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "culture_0002"
     },
     {
       "question": "Dans quel pays se trouve la Tour Eiffel ?",
@@ -46,7 +49,8 @@
       },
       "explanation": "La Tour Eiffel est située à Paris, en France.",
       "difficulty": "easy",
-      "subcategory": "Monuments"
+      "subcategory": "Monuments",
+      "id": "culture_0003"
     },
     {
       "question": "Quel est le plus grand continent ?",
@@ -58,7 +62,8 @@
       },
       "explanation": "L'Asie représente environ 30% de la superficie terrestre.",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0004"
     },
     {
       "question": "Qui a écrit 'Les Misérables' ?",
@@ -70,7 +75,8 @@
       },
       "explanation": "Victor Hugo a publié 'Les Misérables' en 1862.",
       "difficulty": "medium",
-      "subcategory": "Littérature"
+      "subcategory": "Littérature",
+      "id": "culture_0005"
     },
     {
       "question": "Quel est le plus grand désert du monde ?",
@@ -82,7 +88,8 @@
       },
       "explanation": "L'Antarctique est techniquement le plus grand désert du monde.",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0006"
     },
     {
       "question": "Quel est le plus grand mammifère du monde ?",
@@ -94,7 +101,8 @@
       },
       "explanation": "La baleine bleue peut atteindre 30 mètres de long et peser 200 tonnes.",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "culture_0007"
     },
     {
       "question": "Quel est le plus grand pays du monde ?",
@@ -106,7 +114,8 @@
       },
       "explanation": "La Russie couvre plus de 17 millions de km².",
       "difficulty": "easy",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "culture_0008"
     },
     {
       "question": "Quel est le plus grand organe du corps humain ?",
@@ -118,7 +127,8 @@
       },
       "explanation": "La peau représente environ 16% du poids corporel total.",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "culture_0009"
     },
     {
       "question": "Quel est le continent sur lequel se trouve l'Etat de Palestine ?",
@@ -128,7 +138,8 @@
         "L'Europe": false,
         "L'Amerique": false
       },
-      "correctAnswer": "L'Asie"
+      "correctAnswer": "L'Asie",
+      "id": "culture_0010"
     },
     {
       "question": "Quelle est la plus grande ville du continent europeen ?",
@@ -138,7 +149,8 @@
         "Berlin": false,
         "Madrid": false
       },
-      "correctAnswer": "Londres"
+      "correctAnswer": "Londres",
+      "id": "culture_0011"
     },
     {
       "question": "Quelle est la ville de l'amour et de la beaute ?",
@@ -148,7 +160,8 @@
         "Rome": false,
         "Barcelone": false
       },
-      "correctAnswer": "Paris"
+      "correctAnswer": "Paris",
+      "id": "culture_0012"
     },
     {
       "question": "Combien de pays arabes y a-t-il sur le continent africain ?",
@@ -158,7 +171,8 @@
         "Onze pays": false,
         "Treize pays": false
       },
-      "correctAnswer": "Neuf pays"
+      "correctAnswer": "Neuf pays",
+      "id": "culture_0013"
     },
     {
       "question": "Quels sont les types de pierres precieuses les plus solides ?",
@@ -168,7 +182,8 @@
         "L'emeraude": false,
         "Le saphir": false
       },
-      "correctAnswer": "Le diamant"
+      "correctAnswer": "Le diamant",
+      "id": "culture_0014"
     },
     {
       "question": "Sur quel continent se trouve le fleuve Amazone ?",
@@ -178,7 +193,8 @@
         "L'Asie": false,
         "L'Amerique du Nord": false
       },
-      "correctAnswer": "L'Amerique du Sud"
+      "correctAnswer": "L'Amerique du Sud",
+      "id": "culture_0015"
     },
     {
       "question": "Quel pays s'appelle le pays des lapins ?",
@@ -188,7 +204,8 @@
         "L'Italie": false,
         "La France": false
       },
-      "correctAnswer": "L'Espagne"
+      "correctAnswer": "L'Espagne",
+      "id": "culture_0016"
     },
     {
       "question": "Quelle est la plus haute montagne du continent africain ?",
@@ -198,7 +215,8 @@
         "Le Mont Elgon": false,
         "Le Mont Meru": false
       },
-      "correctAnswer": "Le Mont Kilimandjaro"
+      "correctAnswer": "Le Mont Kilimandjaro",
+      "id": "culture_0017"
     },
     {
       "question": "Combien de muscles dans le corps humain ?",
@@ -208,7 +226,8 @@
         "700 muscles": false,
         "800 muscles": false
       },
-      "correctAnswer": "620 muscles"
+      "correctAnswer": "620 muscles",
+      "id": "culture_0018"
     },
     {
       "question": "Quelle est la capitale de la France ?",
@@ -218,7 +237,8 @@
         "Marseille": false,
         "Toulouse": false
       },
-      "correctAnswer": "Paris"
+      "correctAnswer": "Paris",
+      "id": "culture_0019"
     },
     {
       "question": "Quel pays a la forme d'une botte ?",
@@ -228,7 +248,8 @@
         "La Grece": false,
         "Le Portugal": false
       },
-      "correctAnswer": "L'Italie"
+      "correctAnswer": "L'Italie",
+      "id": "culture_0020"
     },
     {
       "question": "Quelle est la capitale de l'Allemagne ?",
@@ -238,7 +259,8 @@
         "Francfort": false,
         "Hambourg": false
       },
-      "correctAnswer": "Berlin"
+      "correctAnswer": "Berlin",
+      "id": "culture_0021"
     },
     {
       "question": "Quel pays a une feuille d'erable sur son drapeau ?",
@@ -248,7 +270,8 @@
         "Le Bresil": false,
         "L'Australie": false
       },
-      "correctAnswer": "Le Canada"
+      "correctAnswer": "Le Canada",
+      "id": "culture_0022"
     },
     {
       "question": "Qui a decouvert l'Amerique ?",
@@ -258,7 +281,8 @@
         "Vasco de Gama": false,
         "Amerigo Vespucci": false
       },
-      "correctAnswer": "Christophe Colomb"
+      "correctAnswer": "Christophe Colomb",
+      "id": "culture_0023"
     },
     {
       "question": "Quelle est la plus grande ville du monde ?",
@@ -268,7 +292,8 @@
         "Shanghai": false,
         "Mexico": false
       },
-      "correctAnswer": "Tokyo"
+      "correctAnswer": "Tokyo",
+      "id": "culture_0024"
     },
     {
       "question": "Quelle est la capitale du Japon ?",
@@ -278,7 +303,8 @@
         "Kyoto": false,
         "Yokohama": false
       },
-      "correctAnswer": "Tokyo"
+      "correctAnswer": "Tokyo",
+      "id": "culture_0025"
     },
     {
       "question": "Quelle est la capitale de l'Australie ?",
@@ -288,7 +314,8 @@
         "Melbourne": false,
         "Brisbane": false
       },
-      "correctAnswer": "Canberra"
+      "correctAnswer": "Canberra",
+      "id": "culture_0026"
     },
     {
       "question": "Quelle est la capitale de la Chine ?",
@@ -298,7 +325,8 @@
         "Hong Kong": false,
         "Canton": false
       },
-      "correctAnswer": "Pekin"
+      "correctAnswer": "Pekin",
+      "id": "culture_0027"
     },
     {
       "question": "Quelle est la capitale de l'Inde ?",
@@ -308,7 +336,8 @@
         "Calcutta": false,
         "Chennai": false
       },
-      "correctAnswer": "New Delhi"
+      "correctAnswer": "New Delhi",
+      "id": "culture_0028"
     },
     {
       "question": "Quelle est la capitale du Bresil ?",
@@ -318,7 +347,8 @@
         "Rio de Janeiro": false,
         "Salvador": false
       },
-      "correctAnswer": "Brasilia"
+      "correctAnswer": "Brasilia",
+      "id": "culture_0029"
     },
     {
       "question": "Quelle est la capitale de l'Afrique du Sud ?",
@@ -328,7 +358,8 @@
         "Johannesburg": false,
         "Durban": false
       },
-      "correctAnswer": "Pretoria"
+      "correctAnswer": "Pretoria",
+      "id": "culture_0030"
     },
     {
       "question": "Quel est le plus grand pays d'Europe ?",
@@ -338,7 +369,8 @@
         "L'Espagne": false,
         "L'Allemagne": false
       },
-      "correctAnswer": "L'Ukraine"
+      "correctAnswer": "L'Ukraine",
+      "id": "culture_0031"
     },
     {
       "question": "Quelle est la capitale de l'Ukraine ?",
@@ -348,7 +380,8 @@
         "Odessa": false,
         "Dnipro": false
       },
-      "correctAnswer": "Kiev"
+      "correctAnswer": "Kiev",
+      "id": "culture_0032"
     },
     {
       "question": "Quelle est la capitale de l'Egypte ?",
@@ -358,7 +391,8 @@
         "Gizeh": false,
         "Louxor": false
       },
-      "correctAnswer": "Le Caire"
+      "correctAnswer": "Le Caire",
+      "id": "culture_0033"
     },
     {
       "question": "Quelle est la capitale du Canada ?",
@@ -368,7 +402,8 @@
         "Montreal": false,
         "Vancouver": false
       },
-      "correctAnswer": "Ottawa"
+      "correctAnswer": "Ottawa",
+      "id": "culture_0034"
     },
     {
       "question": "Quel est le plus grand pays d'Oceanie ?",
@@ -378,7 +413,8 @@
         "La Nouvelle-Zelande": false,
         "Les Fidji": false
       },
-      "correctAnswer": "L'Australie"
+      "correctAnswer": "L'Australie",
+      "id": "culture_0035"
     },
     {
       "question": "Quelle est la capitale de la Nouvelle-Zelande ?",
@@ -388,7 +424,8 @@
         "Christchurch": false,
         "Hamilton": false
       },
-      "correctAnswer": "Wellington"
+      "correctAnswer": "Wellington",
+      "id": "culture_0036"
     },
     {
       "question": "Quelle est la capitale du Nicaragua ?",
@@ -398,7 +435,8 @@
         "Granada": false,
         "Masaya": false
       },
-      "correctAnswer": "Managua"
+      "correctAnswer": "Managua",
+      "id": "culture_0037"
     },
     {
       "question": "Quel est le plus grand pays des Caraibes ?",
@@ -408,7 +446,8 @@
         "Hispaniola": false,
         "Porto Rico": false
       },
-      "correctAnswer": "Cuba"
+      "correctAnswer": "Cuba",
+      "id": "culture_0038"
     },
     {
       "question": "Quelle est la capitale de Cuba ?",
@@ -418,7 +457,8 @@
         "Camaguey": false,
         "Holguin": false
       },
-      "correctAnswer": "La Havane"
+      "correctAnswer": "La Havane",
+      "id": "culture_0039"
     },
     {
       "question": "Quelle est la capitale de l'Argentine ?",
@@ -428,7 +468,8 @@
         "Rosario": false,
         "Mendoza": false
       },
-      "correctAnswer": "Buenos Aires"
+      "correctAnswer": "Buenos Aires",
+      "id": "culture_0040"
     },
     {
       "question": "Quelle est la capitale du Nigeria ?",
@@ -438,7 +479,8 @@
         "Kano": false,
         "Ibadan": false
       },
-      "correctAnswer": "Abuja"
+      "correctAnswer": "Abuja",
+      "id": "culture_0041"
     },
     {
       "question": "Quelle est la capitale de l'Indonesie ?",
@@ -448,7 +490,8 @@
         "Bandung": false,
         "Medan": false
       },
-      "correctAnswer": "Jakarta"
+      "correctAnswer": "Jakarta",
+      "id": "culture_0042"
     },
     {
       "question": "Quelle est la capitale de la Russie ?",
@@ -458,7 +501,8 @@
         "Novossibirsk": false,
         "Ekaterinbourg": false
       },
-      "correctAnswer": "Moscou"
+      "correctAnswer": "Moscou",
+      "id": "culture_0043"
     },
     {
       "question": "Quelle est la capitale des Etats-Unis ?",
@@ -468,8 +512,8 @@
         "Los Angeles": false,
         "Chicago": false
       },
-      "correctAnswer": "Washington D.C."
+      "correctAnswer": "Washington D.C.",
+      "id": "culture_0044"
     }
   ]
 }
-

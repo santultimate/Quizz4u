@@ -10,7 +10,9 @@
       },
       "explanation": "El Imperio de Malí, fundado por Sundiata Keïta, fue uno de los imperios más grandes de la historia africana.",
       "difficulty": "medium",
-      "subcategory": "Empires"
+      "subcategory": "Empires",
+      "id": "history_0000",
+      "correctAnswer": "El imperio de Malí"
     },
     {
       "question": "¿Quién fue el gobernante más famoso del Imperio de Malí?",
@@ -22,7 +24,9 @@
       },
       "explanation": "Mansa Moussa (1312-1337) es considerado el hombre más rico de la historia.",
       "difficulty": "easy",
-      "subcategory": "Souverains"
+      "subcategory": "Souverains",
+      "id": "history_0001",
+      "correctAnswer": "Mansa Moussa"
     },
     {
       "question": "¿Qué ciudad fue la capital del Imperio de Malí?",
@@ -34,7 +38,9 @@
       },
       "explanation": "Niani fue la capital política del Imperio de Malí.",
       "difficulty": "hard",
-      "subcategory": "Géographie"
+      "subcategory": "Géographie",
+      "id": "history_0002",
+      "correctAnswer": "niani"
     },
     {
       "question": "¿Cuál fue el principal producto de exportación del imperio de Mali?",
@@ -46,7 +52,9 @@
       },
       "explanation": "El oro de Malí era tan abundante que influyó en la economía mundial de la época.",
       "difficulty": "medium",
-      "subcategory": "Économie"
+      "subcategory": "Économie",
+      "id": "history_0003",
+      "correctAnswer": "Oro"
     },
     {
       "question": "¿Qué universidad era la más prestigiosa del Imperio de Malí?",
@@ -58,7 +66,9 @@
       },
       "explanation": "La Universidad de Sankoré en Tombuctú era un centro de aprendizaje de renombre.",
       "difficulty": "hard",
-      "subcategory": "Éducation"
+      "subcategory": "Éducation",
+      "id": "history_0004",
+      "correctAnswer": "La Universidad de Sankoré"
     },
     {
       "question": "¿Qué explorador árabe visitó el Imperio de Malí en el siglo XIV?",
@@ -70,7 +80,9 @@
       },
       "explanation": "Ibn Battuta dejó relatos detallados de su viaje a Mali.",
       "difficulty": "medium",
-      "subcategory": "Explorateurs"
+      "subcategory": "Explorateurs",
+      "id": "history_0005",
+      "correctAnswer": "Ibn Battuta"
     },
     {
       "question": "¿Cuál fue la religión principal del Imperio de Malí?",
@@ -82,7 +94,9 @@
       },
       "explanation": "El Islam se extendió en el Imperio de Malí a partir del siglo XI.",
       "difficulty": "easy",
-      "subcategory": "Religion"
+      "subcategory": "Religion",
+      "id": "history_0006",
+      "correctAnswer": "islam"
     },
     {
       "question": "¿Cómo se llamaba el sistema de gobierno del imperio de Mali?",
@@ -94,7 +108,9 @@
       },
       "explanation": "El Imperio de Malí era una monarquía gobernada por un Mansa (rey).",
       "difficulty": "medium",
-      "subcategory": "Politique"
+      "subcategory": "Politique",
+      "id": "history_0007",
+      "correctAnswer": "la monarquía"
     },
     {
       "question": "¿Cuál fue la principal fuente de riqueza de Tombuctú?",
@@ -106,7 +122,9 @@
       },
       "explanation": "Tombuctú era un importante cruce comercial entre el norte de África y el África subsahariana.",
       "difficulty": "medium",
-      "subcategory": "Commerce"
+      "subcategory": "Commerce",
+      "id": "history_0008",
+      "correctAnswer": "Comercio transahariano"
     },
     {
       "question": "¿Cómo se llamaba la dinastía que fundó el Imperio de Malí?",
@@ -118,7 +136,9 @@
       },
       "explanation": "La dinastía Keïta fundó y gobernó el Imperio de Malí durante varios siglos.",
       "difficulty": "hard",
-      "subcategory": "Dynasties"
+      "subcategory": "Dynasties",
+      "id": "history_0009",
+      "correctAnswer": "La Keïta"
     },
     {
       "question": "¿En qué año obtuvo Malí su independencia?",
@@ -128,7 +148,8 @@
         "1962": false,
         "1965": false
       },
-      "correctAnswer": "1960"
+      "correctAnswer": "1960",
+      "id": "history_0010"
     },
     {
       "question": "¿Cómo se llamaba el imperio medieval que dominó África occidental?",
@@ -138,7 +159,8 @@
         "Imperio Songhai": false,
         "Imperio de Kanem": false
       },
-      "correctAnswer": "Empire du Mali"
+      "correctAnswer": "Imperio de Malí",
+      "id": "history_0011"
     },
     {
       "question": "¿Quién fue el emperador más famoso del Imperio de Malí?",
@@ -148,7 +170,8 @@
         "sonni ali": false,
         "Askia Mohammed": false
       },
-      "correctAnswer": "Mansa Moussa"
+      "correctAnswer": "Mansa Moussa",
+      "id": "history_0012"
     },
     {
       "question": "¿En qué año realizó Mansa Moussa su famosa peregrinación a La Meca?",
@@ -158,7 +181,8 @@
         "1350": false,
         "1400": false
       },
-      "correctAnswer": "1324"
+      "correctAnswer": "1324",
+      "id": "history_0013"
     },
     {
       "question": "¿Qué río cruza Malí de norte a sur?",
@@ -168,7 +192,8 @@
         "Congo": false,
         "El Nilo": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "Níger",
+      "id": "history_0014"
     },
     {
       "question": "¿Qué ciudad de Malí recibe el sobrenombre de \"la perla del desierto\"?",
@@ -178,7 +203,8 @@
         "gao": false,
         "Moptí": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombuctú",
+      "id": "history_0015"
     },
     {
       "question": "¿Quién fue el primer presidente del Malí independiente?",
@@ -188,7 +214,8 @@
         "Alfa Oumar Konare": false,
         "Amadou Toumani Touré": false
       },
-      "correctAnswer": "Modibo Keita"
+      "correctAnswer": "Modibo Keita",
+      "id": "history_0016"
     },
     {
       "question": "¿En qué año se restableció la democracia en Malí?",
@@ -198,7 +225,8 @@
         "1992": true,
         "1993": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0017"
     },
     {
       "question": "¿Cómo se llama la gran mezquita de Djenne?",
@@ -208,7 +236,8 @@
         "Mezquita Real": false,
         "Mezquita Central": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "Gran Mezquita de Djenne",
+      "id": "history_0018"
     },
     {
       "question": "¿Cómo se llamaba el imperio que precedió al Imperio de Mali?",
@@ -218,7 +247,8 @@
         "Imperio de Kanem": false,
         "Imperio Bornu": false
       },
-      "correctAnswer": "Empire du Ghana"
+      "correctAnswer": "Imperio de Ghana",
+      "id": "history_0019"
     },
     {
       "question": "¿Cuál era el apodo de Mansa Moussa?",
@@ -228,7 +258,8 @@
         "El conquistador": false,
         "los sabios": false
       },
-      "correctAnswer": "Le Roi des Rois"
+      "correctAnswer": "El Rey de Reyes",
+      "id": "history_0020"
     },
     {
       "question": "¿Cuál fue el principal recurso económico del Imperio de Mali?",
@@ -238,7 +269,8 @@
         "los esclavos": false,
         "Cobre": false
       },
-      "correctAnswer": "L'or"
+      "correctAnswer": "Oro",
+      "id": "history_0021"
     },
     {
       "question": "¿Cómo se llamaba la primera capital del Malí independiente?",
@@ -248,7 +280,8 @@
         "Segú": false,
         "Moptí": false
       },
-      "correctAnswer": "Bamako"
+      "correctAnswer": "Bamako",
+      "id": "history_0022"
     },
     {
       "question": "¿En qué año alcanzó su apogeo el Imperio de Malí?",
@@ -258,7 +291,8 @@
         "siglo 15": false,
         "siglo 16": false
       },
-      "correctAnswer": "XIVe siecle"
+      "correctAnswer": "siglo 14",
+      "id": "history_0023"
     },
     {
       "question": "¿Qué ciudad fue el centro comercial más importante del Imperio de Malí?",
@@ -268,7 +302,8 @@
         "Djenne": false,
         "niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombuctú",
+      "id": "history_0024"
     },
     {
       "question": "¿Cómo se llamaba la universidad más famosa de Tombuctú?",
@@ -278,7 +313,8 @@
         "Universidad de Córdoba": false,
         "Universidad de Fez": false
       },
-      "correctAnswer": "Universite Sankore"
+      "correctAnswer": "Universidad de Sankore",
+      "id": "history_0025"
     },
     {
       "question": "¿Cómo se llamaba el primer emperador del Imperio de Malí?",
@@ -288,7 +324,8 @@
         "sonni ali": false,
         "Askia Mohammed": false
       },
-      "correctAnswer": "Sundiata Keita"
+      "correctAnswer": "Sundiata Keita",
+      "id": "history_0026"
     },
     {
       "question": "¿En qué año Sundiata Keita fundó el Imperio de Malí?",
@@ -298,7 +335,8 @@
         "1250": false,
         "1300": false
       },
-      "correctAnswer": "1235"
+      "correctAnswer": "1235",
+      "id": "history_0027"
     },
     {
       "question": "¿Cómo se llamó la batalla que permitió a Sundiata conquistar el poder?",
@@ -308,7 +346,8 @@
         "Batalla de Kulikoró": false,
         "Batalla de Ségou": false
       },
-      "correctAnswer": "Bataille de Kirina"
+      "correctAnswer": "Batalla de Kirina",
+      "id": "history_0028"
     },
     {
       "question": "¿Cómo se llamó el imperio que sucedió al imperio de Malí?",
@@ -318,7 +357,8 @@
         "Imperio de Kanem": false,
         "Imperio Bornu": false
       },
-      "correctAnswer": "Empire Songhai"
+      "correctAnswer": "Imperio Songhai",
+      "id": "history_0029"
     },
     {
       "question": "¿Cómo se llamaba el primer presidente maliense elegido democráticamente?",
@@ -328,7 +368,8 @@
         "Moussa Traoré": false,
         "Amadou Toumani Touré": false
       },
-      "correctAnswer": "Alpha Oumar Konare"
+      "correctAnswer": "Alfa Oumar Konare",
+      "id": "history_0030"
     },
     {
       "question": "¿En qué año fue elegido presidente Alpha Oumar Konare?",
@@ -338,7 +379,8 @@
         "1993": false,
         "1994": false
       },
-      "correctAnswer": "1992"
+      "correctAnswer": "1992",
+      "id": "history_0031"
     },
     {
       "question": "¿Cómo se llamaba la constitución adoptada en 1992 en Malí?",
@@ -348,7 +390,8 @@
         "Constitución de la Cuarta República": false,
         "Constitución democrática": false
       },
-      "correctAnswer": "Constitution de la IIIe Republique"
+      "correctAnswer": "Constitución de la Tercera República",
+      "id": "history_0032"
     },
     {
       "question": "¿Cómo se llamaba el primer ministro maliense que lideró la transición democrática?",
@@ -358,7 +401,8 @@
         "Alfa Oumar Konare": false,
         "Amadou Toumani Touré": false
       },
-      "correctAnswer": "Soumana Sacko"
+      "correctAnswer": "Soumana Sacko",
+      "id": "history_0033"
     },
     {
       "question": "¿Cómo se llamaba la región de Malí que fue la cuna del Imperio de Malí?",
@@ -368,7 +412,8 @@
         "Región de Gao": false,
         "región de Segú": false
       },
-      "correctAnswer": "Region de Kayes"
+      "correctAnswer": "Región de Kayes",
+      "id": "history_0034"
     },
     {
       "question": "¿Cómo se llamaba la ciudad que fue la capital religiosa del Imperio de Malí?",
@@ -378,7 +423,8 @@
         "gao": false,
         "niani": false
       },
-      "correctAnswer": "Djenne"
+      "correctAnswer": "Djenne",
+      "id": "history_0035"
     },
     {
       "question": "¿Cómo se llamaba la mezquita más antigua de África occidental?",
@@ -388,7 +434,8 @@
         "Mezquita Gao": false,
         "Mezquita de Bamako": false
       },
-      "correctAnswer": "Grande Mosquee de Djenne"
+      "correctAnswer": "Gran Mezquita de Djenne",
+      "id": "history_0036"
     },
     {
       "question": "¿En qué año se construyó la Gran Mezquita de Djenne?",
@@ -398,7 +445,8 @@
         "siglo 15": false,
         "siglo 16": false
       },
-      "correctAnswer": "XIIIe siecle"
+      "correctAnswer": "siglo 13",
+      "id": "history_0037"
     },
     {
       "question": "¿Cómo se llamaba el idioma oficial del Imperio de Malí?",
@@ -408,7 +456,8 @@
         "el songhai": false,
         "Los fulani": false
       },
-      "correctAnswer": "Le mandingue"
+      "correctAnswer": "el mandingo",
+      "id": "history_0038"
     },
     {
       "question": "¿Cómo se llamaba la moneda utilizada en el Imperio de Mali?",
@@ -418,7 +467,8 @@
         "el franco": false,
         "el dirham": false
       },
-      "correctAnswer": "Le cowrie"
+      "correctAnswer": "el cauri",
+      "id": "history_0039"
     },
     {
       "question": "¿Cómo se llamaba la ruta comercial que atravesaba el Imperio de Mali?",
@@ -428,7 +478,8 @@
         "Ruta Transahariana": true,
         "Ruta de la Seda": false
       },
-      "correctAnswer": "Route transsaharienne"
+      "correctAnswer": "Ruta Transahariana",
+      "id": "history_0040"
     },
     {
       "question": "¿Cómo se llamaba la ciudad que fue el centro de aprendizaje del Imperio de Malí?",
@@ -438,7 +489,8 @@
         "gao": false,
         "niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombuctú",
+      "id": "history_0041"
     },
     {
       "question": "¿Cómo se llamaba la biblioteca más famosa de Tombuctú?",
@@ -448,7 +500,8 @@
         "Biblioteca Al-Azhar": false,
         "Biblioteca de Córdoba": false
       },
-      "correctAnswer": "Bibliotheque Ahmed Baba"
+      "correctAnswer": "Biblioteca Ahmed Baba",
+      "id": "history_0042"
     },
     {
       "question": "¿Cómo se llamaba el historiador maliense más famoso del siglo XVI?",
@@ -458,7 +511,8 @@
         "Al-Bakri": false,
         "Ibn Battuta": false
       },
-      "correctAnswer": "Ahmed Baba"
+      "correctAnswer": "Ahmed Baba",
+      "id": "history_0043"
     },
     {
       "question": "¿Cómo se llamaba la ciudad que fue el centro militar del Imperio de Malí?",
@@ -468,7 +522,8 @@
         "Djenne": false,
         "niani": false
       },
-      "correctAnswer": "Gao"
+      "correctAnswer": "gao",
+      "id": "history_0044"
     },
     {
       "question": "¿Cómo se llamaba el primer emperador de la dinastía Sonni?",
@@ -478,7 +533,8 @@
         "Sonni Sulayman": false,
         "Sonni Mohammed": false
       },
-      "correctAnswer": "Sonni Ali"
+      "correctAnswer": "sonni ali",
+      "id": "history_0045"
     },
     {
       "question": "¿En qué año Sonni Ali conquistó Tombuctú?",
@@ -488,7 +544,8 @@
         "1470": false,
         "1475": false
       },
-      "correctAnswer": "1468"
+      "correctAnswer": "1468",
+      "id": "history_0046"
     },
     {
       "question": "¿Cómo se llamaba la ciudad que era el centro administrativo del Imperio de Malí?",
@@ -498,7 +555,8 @@
         "gao": false,
         "Djenne": false
       },
-      "correctAnswer": "Niani"
+      "correctAnswer": "niani",
+      "id": "history_0047"
     },
     {
       "question": "¿Cómo se llamaba la región que era el granero del Imperio de Malí?",
@@ -508,7 +566,8 @@
         "Región de Sikasso": false,
         "Región de Kulikoró": false
       },
-      "correctAnswer": "Region de Segou"
+      "correctAnswer": "región de Segú",
+      "id": "history_0048"
     },
     {
       "question": "¿Cómo se llamaba la ciudad que fue el centro cultural del Imperio de Malí?",
@@ -518,7 +577,8 @@
         "gao": false,
         "niani": false
       },
-      "correctAnswer": "Tombouctou"
+      "correctAnswer": "Tombuctú",
+      "id": "history_0049"
     },
     {
       "question": "¿Cómo se llamaba el escritor maliense más famoso del siglo XX?",
@@ -528,7 +588,8 @@
         "Alfa Oumar Konare": false,
         "Amadou Toumani Touré": false
       },
-      "correctAnswer": "Amadou Hampate Ba"
+      "correctAnswer": "Amadou Hampaté Ba",
+      "id": "history_0050"
     },
     {
       "question": "¿Cómo se llamaba la obra más famosa de Amadou Hampate Ba?",
@@ -538,7 +599,8 @@
         "Recuerdos de un Fulani": false,
         "Cuentos y leyendas": false
       },
-      "correctAnswer": "L'Etrange Destin de Wangrin"
+      "correctAnswer": "El extraño destino de Wangrin",
+      "id": "history_0051"
     }
   ]
 }

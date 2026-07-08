@@ -9,6 +9,7 @@
 /// - 🇨🇳 中文 (Chinois Mandarin)
 /// - 🇮🇳 हिन्दी (Hindi)
 /// - 🇪🇸 Español (Espagnol)
+library;
 
 class MathPhase10Translations {
   static const Map<String, Map<String, dynamic>> translations = {
@@ -633,6 +634,7 @@ class MathPhase10Translations {
     },
   };
 }
+
 
 
 

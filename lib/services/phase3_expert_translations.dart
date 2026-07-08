@@ -18,6 +18,7 @@
 /// - 🇨🇳 中文 (Chinois)
 /// - 🇮🇳 हिन्दी (Hindi)
 /// - 🇪🇸 Español (Espagnol)
+library;
 
 class Phase3ExpertTranslations {
   static final Map<String, Map<String, Map<String, dynamic>>> translations = {
@@ -355,6 +356,7 @@ class Phase3ExpertTranslations {
     },
   };
 }
+
 
 
 

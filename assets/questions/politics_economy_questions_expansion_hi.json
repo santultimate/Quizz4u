@@ -1,68 +1,72 @@
 {
-  "राजनीति और अर्थशास्त्र": {
+  "Politique et Économie": {
     "Leaders Africains Contemporains": [
       {
-        "question": "कौन है l'actuel Secrétaire सामान्य des Nations Unies (depuis 2017) ?",
+        "question": "संयुक्त राष्ट्र के वर्तमान महासचिव (2017 से) कौन हैं?",
         "options": [
-          "António Guterres",
-          "Ban Ki-moon",
-          "Kofi Annan",
-          "Boutros Boutros-Ghali"
+          "एंटोनियो गुटेरेस",
+          "बान की मून",
+          "कोफी अन्नान",
+          "बुट्रोस बुट्रोस-ग़ाली"
         ],
-        "correctAnswer": "António Guterres",
-        "explanation": "António Guterres, प्राचीन Premier ministre portugais, है SG का l'ONU depuis 2017.",
-        "difficulty": "मध्यम",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "एंटोनियो गुटेरेस",
+        "explanation": "पुर्तगाल के पूर्व प्रधान मंत्री एंटोनियो गुटेरेस 2017 से संयुक्त राष्ट्र महासचिव हैं।",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Contemporains",
+        "id": "politics_economy_0000"
       },
       {
-        "question": "Quel राष्ट्रपति दक्षिण-africain a mis अंत à l'apartheid ?",
+        "question": "किस दक्षिण अफ़्रीकी राष्ट्रपति ने रंगभेद समाप्त किया?",
         "options": [
-          "Nelson Mandela",
-          "Frederik का Klerk",
-          "Thabo Mbeki",
-          "Desmond Tutu"
+          "नेल्सन मंडेला",
+          "फ्रेडरिक डी क्लर्क",
+          "थाबो मबेकी",
+          "डेसमंड टूटू"
         ],
-        "correctAnswer": "Nelson Mandela",
-        "explanation": "Nelson Mandela है devenu  पहला राष्ट्रपति noir d'Afrique का दक्षिण en 1994, après 27 ans का prison.",
-        "difficulty": "आसान",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Leaders Africains Contemporains"
+        "correctAnswer": "नेल्सन मंडेला",
+        "explanation": "27 साल जेल में रहने के बाद, नेल्सन मंडेला 1994 में दक्षिण अफ्रीका के पहले अश्वेत राष्ट्रपति बने।",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0001"
       }
     ],
     "Économie Numérique Africaine": [
       {
-        "question": "Quelle startup nigériane है devenue एक licorne en 2020 ?",
+        "question": "2020 में कौन सा नाइजीरियाई स्टार्टअप यूनिकॉर्न बन गया?",
         "options": [
-          "Flutterwave",
+          "स्पंदन तरंग",
           "Jumia",
-          "Paystack",
-          "Andela"
+          "भुगतान का ढेर",
+          "एंडेला"
         ],
-        "correctAnswer": "Flutterwave",
-        "explanation": "Flutterwave, plateforme का paiements, a atteint एक valorisation का +1 milliard USD en 2020.",
-        "difficulty": "कठिन",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Économie Numérique Africaine"
+        "correctAnswer": "स्पंदन तरंग",
+        "explanation": "फ़्लटरवेव, एक भुगतान प्लेटफ़ॉर्म, 2020 में +1 बिलियन अमरीकी डालर के मूल्यांकन तक पहुंच गया।",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0002"
       },
       {
-        "question": "क्या है  अधिक grand marché e-commerce africain ?",
+        "question": "सबसे बड़ा अफ़्रीकी ई-कॉमर्स बाज़ार कौन सा है?",
         "options": [
           "Jumia",
-          "Takealot",
-          "Konga",
-          "Kilimall"
+          "टेकलॉट",
+          "कोंगा",
+          "किलिमल"
         ],
         "correctAnswer": "Jumia",
-        "explanation": "Jumia, surnommée 'l'Amazon africain', opère में अधिक का 11 देश africains.",
-        "difficulty": "मध्यम",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Économie Numérique Africaine"
+        "explanation": "जुमिया, जिसका उपनाम 'अफ्रीकी अमेज़ॅन' है, 11 से अधिक अफ्रीकी देशों में संचालित होता है।",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0003"
       }
     ],
     "Organisations Africaines": [
       {
-        "question": "कब a été créée l'Union Africaine (UA) ?",
+        "question": "अफ़्रीकी संघ (एयू) कब बनाया गया था?",
         "options": [
           "2002",
           "1963",
@@ -70,38 +74,41 @@
           "2010"
         ],
         "correctAnswer": "2002",
-        "explanation": "L'UA a été créée en 2002 के लिए remplacer l'Organisation का इकाई Africaine (OUA, 1963).",
-        "difficulty": "मध्यम",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Organisations Africaines"
+        "explanation": "AU को 2002 में अफ़्रीकी एकता संगठन (OAU, 1963) के स्थान पर बनाया गया था।",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0004"
       },
       {
-        "question": "कहाँ se trouve  अगरège का l'Union Africaine ?",
+        "question": "अफ़्रीकी संघ का मुख्यालय कहाँ स्थित है?",
         "options": [
-          "Addis-Abeba (Éthiopie)",
-          "Abuja (Nigeria)",
-          " Caire (Égypte)",
-          "Nairobi (Kenya)"
+          "अदीस अबाबा (इथियोपिया)",
+          "अबुजा (नाइजीरिया)",
+          "काहिरा, मिस्र)",
+          "नैरोबी (केन्या)"
         ],
-        "correctAnswer": "Addis-Abeba (Éthiopie)",
-        "explanation": " अगरège का l'UA है situé à Addis-Abeba, en Éthiopie.",
-        "difficulty": "आसान",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "अदीस अबाबा (इथियोपिया)",
+        "explanation": "एयू का मुख्यालय अदीस अबाबा, इथियोपिया में स्थित है।",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0005"
       },
       {
-        "question": "Que signifie CEDEAO ?",
+        "question": "ECOWAS का क्या मतलब है?",
         "options": [
-          "Communauté Économique Des États का l'Afrique का l'पश्चिम",
-          "केंद्र d'Études और का Développement का l'Afrique का l'पश्चिम",
-          "Conseil Économique का Développement Africain का l'पश्चिम",
-          "Commission Économique के लिए  Développement का l'Afrique का l'पश्चिम"
+          "पश्चिम अफ्रीकी राज्यों का आर्थिक समुदाय",
+          "पश्चिम अफ़्रीकी अध्ययन और विकास केंद्र",
+          "पश्चिम अफ्रीकी विकास आर्थिक परिषद",
+          "पश्चिम अफ्रीका के विकास के लिए आर्थिक आयोग"
         ],
-        "correctAnswer": "Communauté Économique Des États का l'Afrique का l'पश्चिम",
-        "explanation": " CEDEAO (ECOWAS en anglais) regroupe 15 देश d'Afrique का l'पश्चिम.",
-        "difficulty": "मध्यम",
-        "category": "राजनीति और अर्थशास्त्र",
-        "subcategory": "Organisations Africaines"
+        "correctAnswer": "पश्चिम अफ्रीकी राज्यों का आर्थिक समुदाय",
+        "explanation": "ECOWAS (अंग्रेजी में ECOWAS) 15 पश्चिमी अफ्रीकी देशों को एक साथ लाता है।",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0006"
       }
     ]
   }

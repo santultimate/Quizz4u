@@ -349,7 +349,7 @@ class _ProfileScreenState extends State<ProfileScreen>
           // Titre du niveau avec animation
           AnimatedCounter(
             value: level.toDouble(),
-            prefix: title + '\n',
+            prefix: '$title\n',
             style: AppTextStyles.h1.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.bold,

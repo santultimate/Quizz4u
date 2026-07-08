@@ -1,8 +1,8 @@
 {
-  "Technology and Innovation": {
-    "Informatique and Programmation": [
+  "Technologie et Innovation": {
+    "Informatique et Programmation": [
       {
-        "question": "What langage of programmation is principalement utilisé for développer des applications Android ?",
+        "question": "Which programming language is mainly used to develop Android applications?",
         "options": [
           "Java",
           "Python",
@@ -10,13 +10,14 @@
           "PHP"
         ],
         "correctAnswer": "Java",
-        "explanation": "Java is the langage main for the développement Android, bien que Kotlin soit of more en more utilisé.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Informatique and Programmation"
+        "explanation": "Java is the primary language for Android development, although Kotlin is increasingly used.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0000"
       },
       {
-        "question": "Qui a créé the World Wide Web (WWW) ?",
+        "question": "Who created the World Wide Web (WWW)?",
         "options": [
           "Tim Berners-Lee",
           "Bill Gates",
@@ -24,13 +25,14 @@
           "Larry Page"
         ],
         "correctAnswer": "Tim Berners-Lee",
-        "explanation": "Tim Berners-Lee a inventé the World Wide Web au CERN en 1989.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Informatique and Programmation"
+        "explanation": "Tim Berners-Lee invented the World Wide Web at CERN in 1989.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0001"
       },
       {
-        "question": "What is the langage of programmation the more popular en 2025 ?",
+        "question": "What is the most popular programming language in 2025?",
         "options": [
           "Python",
           "JavaScript",
@@ -38,13 +40,14 @@
           "C++"
         ],
         "correctAnswer": "Python",
-        "explanation": "Python is the langage the more popular grâce à son utilisation en IA, data science and développement web.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Informatique and Programmation"
+        "explanation": "Python is the most popular language thanks to its use in AI, data science and web development.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0002"
       },
       {
-        "question": "Qu'is-ce que HTML ?",
+        "question": "What is HTML?",
         "options": [
           "HyperText Markup Language",
           "High Tech Modern Language",
@@ -52,13 +55,14 @@
           "Hyperlinks and Text Markup Language"
         ],
         "correctAnswer": "HyperText Markup Language",
-        "explanation": "HTML is the langage of balisage standard for créer des pages web.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Informatique and Programmation"
+        "explanation": "HTML is the standard markup language for creating web pages.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0003"
       },
       {
-        "question": "What système d'exploitation mobile a été développé par Google ?",
+        "question": "What mobile operating system was developed by Google?",
         "options": [
           "Android",
           "iOS",
@@ -66,15 +70,16 @@
           "BlackBerry OS"
         ],
         "correctAnswer": "Android",
-        "explanation": "Android is the système d'exploitation mobile open-source développé par Google.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Informatique and Programmation"
+        "explanation": "Android is the open-source mobile operating system developed by Google.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0004"
       }
     ],
     "Intelligence Artificielle": [
       {
-        "question": "What is the name of l'IA conversationnelle développée par OpenAI ?",
+        "question": "What is the name of the conversational AI developed by OpenAI?",
         "options": [
           "ChatGPT",
           "Bard",
@@ -82,57 +87,61 @@
           "Siri"
         ],
         "correctAnswer": "ChatGPT",
-        "explanation": "ChatGPT is l'assistant IA conversationnel développé par OpenAI, lancé en novembre 2022.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "explanation": "ChatGPT is the conversational AI assistant developed by OpenAI, launched in November 2022.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0005"
       },
       {
-        "question": "Qu'is-ce que the Machine Learning ?",
+        "question": "What is Machine Learning?",
         "options": [
-          "Apprentissage automatique des machines",
-          "Réparation of machines",
-          "Construction of machines",
-          "Programmation of machines"
+          "Machine learning",
+          "Machine repair",
+          "Machine building",
+          "Machine programming"
         ],
-        "correctAnswer": "Apprentissage automatique des machines",
-        "explanation": "the Machine Learning permet aux ordinateurs d'apprendre à partir of givenes without être explicitement programmés.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "correctAnswer": "Machine learning",
+        "explanation": "Machine learning allows computers to learn from data without being explicitly programmed.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0006"
       },
       {
-        "question": "What test mesure the capacité d'a machine à exhiber a comportement intelligent ?",
+        "question": "What test measures a machine's ability to exhibit intelligent behavior?",
         "options": [
-          "Test of Turing",
-          "Test IQ",
-          "Test algorithmique",
-          "Test of givenes"
+          "Turing test",
+          "IQ test",
+          "Algorithmic testing",
+          "Data testing"
         ],
-        "correctAnswer": "Test of Turing",
-        "explanation": "the Test of Turing, proposé par Alan Turing en 1950, évalue l'intelligence d'a machine.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Intelligence Artificielle"
+        "correctAnswer": "Turing test",
+        "explanation": "The Turing Test, proposed by Alan Turing in 1950, evaluates the intelligence of a machine.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0007"
       }
     ],
     "Innovations Tech Africaines": [
       {
-        "question": "What country africain a créé M-Pesa, the système of paiement mobile ?",
+        "question": "Which African country created M-Pesa, the mobile payment system?",
         "options": [
           "Kenya",
           "Nigeria",
-          "Afrique of the south",
+          "South Africa",
           "Ghana"
         ],
         "correctAnswer": "Kenya",
-        "explanation": "M-Pesa a été lancé au Kenya en 2007 and a révolutionné the services financiers mobiles en Afrique.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "explanation": "M-Pesa was launched in Kenya in 2007 and revolutionized mobile financial services in Africa.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0008"
       },
       {
-        "question": "What city is surnommée 'Silicon Savannah' ?",
+        "question": "What city is nicknamed 'Silicon Savannah'?",
         "options": [
           "Nairobi",
           "Lagos",
@@ -140,73 +149,78 @@
           "Accra"
         ],
         "correctAnswer": "Nairobi",
-        "explanation": "Nairobi, au Kenya, is surnommée 'Silicon Savannah' en raison of son écosystème tech florissant.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "explanation": "Nairobi, Kenya is nicknamed 'Silicon Savannah' due to its thriving tech ecosystem.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0009"
       },
       {
-        "question": "What country africain a the more grand number of licornes tech (startups valorisées à +1 milliard USD) ?",
+        "question": "Which African country has the largest number of tech unicorns (startups valued at +1 billion USD)?",
         "options": [
           "Nigeria",
-          "Afrique of the south",
+          "South Africa",
           "Kenya",
-          "Égypte"
+          "Egypt"
         ],
         "correctAnswer": "Nigeria",
-        "explanation": "the Nigeria possèof several licornes tech like Flutterwave, Interswitch, and OPay.",
-        "difficulty": "Hard",
-        "category": "Technology and Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "explanation": "Nigeria has several tech unicorns like Flutterwave, Interswitch, and OPay.",
+        "difficulty": "hard",
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0010"
       },
       {
-        "question": "Qu'is-ce que Zipline, l'innovation tech utilisée au Rwanda ?",
+        "question": "What is Zipline, the tech innovation used in Rwanda?",
         "options": [
-          "Livraison of médicaments par drones",
-          "Application of transport",
-          "Plateforme e-commerce",
-          "Réseau social"
+          "Delivery of medicines by drones",
+          "Transportation app",
+          "E-commerce platform",
+          "Social network"
         ],
-        "correctAnswer": "Livraison of médicaments par drones",
-        "explanation": "Zipline utilise des drones for livrer of the sang and des médicaments in the zones reculées of the Rwanda.",
-        "difficulty": "Hard",
-        "category": "Technology and Innovation",
-        "subcategory": "Innovations Tech Africaines"
+        "correctAnswer": "Delivery of medicines by drones",
+        "explanation": "Zipline uses drones to deliver blood and medicine to remote areas of Rwanda.",
+        "difficulty": "hard",
+        "category": "Technologie et Innovation",
+        "subcategory": "Innovations Tech Africaines",
+        "id": "technology_0011"
       }
     ],
     "Cybersécurité": [
       {
-        "question": "Qu'is-ce qu'a pare-feu (firewall) ?",
+        "question": "What is a firewall?",
         "options": [
-          "a système of sécurité réseau",
-          "a anti-virus",
-          "a logiciel of sauvegarde",
-          "a système d'exploitation"
+          "A network security system",
+          "An anti-virus",
+          "Backup software",
+          "An operating system"
         ],
-        "correctAnswer": "a système of sécurité réseau",
-        "explanation": "a pare-feu protège a réseau en contrôlant the trafic entrant and sortant selon des règles of sécurité.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Cybersécurité"
+        "correctAnswer": "A network security system",
+        "explanation": "A firewall protects a network by controlling incoming and outgoing traffic according to security rules.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Cybersécurité",
+        "id": "technology_0012"
       },
       {
-        "question": "Qu'is-ce que the phishing ?",
+        "question": "What is phishing?",
         "options": [
-          "a technique d'hameçonnage for voler des informations",
-          "a jeu vidéo",
-          "a réseau social",
-          "a type of virus informatique"
+          "A phishing technique to steal information",
+          "A video game",
+          "A social network",
+          "A type of computer virus"
         ],
-        "correctAnswer": "a technique d'hameçonnage for voler des informations",
-        "explanation": "the phishing is a technique frauduleuse qui vise à obtenir des informations confidentielles.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Cybersécurité"
+        "correctAnswer": "A phishing technique to steal information",
+        "explanation": "Phishing is a fraudulent technique which aims to obtain confidential information.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Cybersécurité",
+        "id": "technology_0013"
       }
     ],
-    "Histoire of the Tech": [
+    "Histoire de la Tech": [
       {
-        "question": "In what year a été fondée Apple ?",
+        "question": "What year was Apple founded?",
         "options": [
           "1976",
           "1980",
@@ -214,13 +228,14 @@
           "1990"
         ],
         "correctAnswer": "1976",
-        "explanation": "Apple a été fondée the 1er avril 1976 par Steve Jobs, Steve Wozniak and Ronald Wayne.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Histoire of the Tech"
+        "explanation": "Apple was founded on April 1, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0014"
       },
       {
-        "question": "Who is considéré like the père of l'informatique ?",
+        "question": "Who is considered the father of computing?",
         "options": [
           "Alan Turing",
           "Bill Gates",
@@ -228,13 +243,14 @@
           "Mark Zuckerberg"
         ],
         "correctAnswer": "Alan Turing",
-        "explanation": "Alan Turing is considéré like the père of l'informatique théorique and of l'intelligence artificielle.",
-        "difficulty": "Medium",
-        "category": "Technology and Innovation",
-        "subcategory": "Histoire of the Tech"
+        "explanation": "Alan Turing is considered the father of theoretical computer science and artificial intelligence.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0015"
       },
       {
-        "question": "What fut the premier réseau social à atteindre 1 milliard d'utilisateurs ?",
+        "question": "What was the first social network to reach 1 billion users?",
         "options": [
           "Facebook",
           "Twitter",
@@ -242,10 +258,11 @@
           "LinkedIn"
         ],
         "correctAnswer": "Facebook",
-        "explanation": "Facebook a atteint 1 milliard d'utilisateurs actifs mensuels en octobre 2012.",
-        "difficulty": "Easy",
-        "category": "Technology and Innovation",
-        "subcategory": "Histoire of the Tech"
+        "explanation": "Facebook reached 1 billion monthly active users in October 2012.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Histoire de la Tech",
+        "id": "technology_0016"
       }
     ]
   }

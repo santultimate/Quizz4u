@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'unified_audio_service_optimized.dart'; // ⚡ OPTIMISÉ
 import '../config/admob_config.dart';
+import 'settings_service.dart';
 import 'smart_ad_strategy.dart';
 
 class AdService {
@@ -56,13 +57,17 @@ class AdService {
     }
   }
 
-  // Créer une bannière
+  // Créer une bannière (chargée une seule fois)
   static Future<BannerAd?> createBannerAd() async {
     try {
-      // Vérifier si on est sur une plateforme mobile
       if (!Platform.isAndroid && !Platform.isIOS) {
         print(
             '[AdService] ⚠️ Plateforme non supportée pour les bannières (Web/Desktop)');
+        return null;
+      }
+
+      if (!await SettingsService.isAdsEnabled()) {
+        print('[AdService] 🚫 Bannières désactivées dans les paramètres');
         return null;
       }
 
@@ -75,20 +80,12 @@ class AdService {
         listener: BannerAdListener(
           onAdLoaded: (ad) {
             print('[AdService] ✅ Bannière chargée avec succès');
-            print('[AdService] 📊 ID: ${ad.adUnitId}');
           },
           onAdFailedToLoad: (ad, error) {
-            print('[AdService] ❌ Bannière échouée: $error');
-            print('[AdService] 📊 Code d\'erreur: ${error.code}');
-            print('[AdService] 📊 Message: ${error.message}');
-            ad.dispose();
+            print('[AdService] ❌ Bannière échouée: ${error.message}');
           },
-          onAdOpened: (ad) {
-            print('[AdService] 📺 Bannière ouverte');
-          },
-          onAdClosed: (ad) {
-            print('[AdService] 📺 Bannière fermée');
-          },
+          onAdOpened: (ad) => print('[AdService] 📺 Bannière ouverte'),
+          onAdClosed: (ad) => print('[AdService] 📺 Bannière fermée'),
         ),
       );
 

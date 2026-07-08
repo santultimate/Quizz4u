@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../services/ad_service.dart';
 import '../services/premium_service.dart';
+import '../services/settings_service.dart';
 
 /// Widget réutilisable pour afficher des bannières publicitaires
 /// Usage: AdBannerWidget(placement: 'home')
@@ -29,58 +30,60 @@ class AdBannerWidget extends StatefulWidget {
 class _AdBannerWidgetState extends State<AdBannerWidget> {
   BannerAd? _bannerAd;
   bool _isLoading = true;
-  bool _isPremium = false;
+  bool _shouldShow = false;
 
   @override
   void initState() {
     super.initState();
-    _checkPremiumAndLoadAd();
+    _initAd();
   }
 
-  Future<void> _checkPremiumAndLoadAd() async {
-    // Vérifier si l'utilisateur est premium
-    _isPremium = await PremiumService.isPremiumUser();
+  Future<void> _initAd() async {
+    final isPremium = await PremiumService.isPremiumUser();
+    final adsEnabled = await SettingsService.isAdsEnabled();
 
-    if (_isPremium) {
+    if (!mounted) return;
+
+    if (isPremium || !adsEnabled) {
       print(
-          '[AdBannerWidget-${widget.placement}] 🚫 Utilisateur premium - aucune pub');
+          '[AdBannerWidget-${widget.placement}] 🚫 Masquée (premium=$isPremium, ads=$adsEnabled)');
       setState(() {
         _isLoading = false;
+        _shouldShow = false;
       });
       return;
     }
 
-    // Charger la bannière
-    _loadBannerAd();
-  }
-
-  Future<void> _loadBannerAd() async {
     try {
       print('[AdBannerWidget-${widget.placement}] 🔄 Chargement bannière...');
-
       final ad = await AdService.createBannerAd();
 
-      if (ad != null && mounted) {
+      if (!mounted) {
+        ad?.dispose();
+        return;
+      }
+
+      if (ad != null) {
         setState(() {
           _bannerAd = ad;
           _isLoading = false;
+          _shouldShow = true;
         });
-
-        // Charger l'annonce
-        await _bannerAd!.load();
-        print('[AdBannerWidget-${widget.placement}] ✅ Bannière chargée');
+        print('[AdBannerWidget-${widget.placement}] ✅ Bannière prête');
       } else {
         setState(() {
           _isLoading = false;
+          _shouldShow = false;
         });
         print(
-            '[AdBannerWidget-${widget.placement}] ⚠️ Impossible de créer la bannière');
+            '[AdBannerWidget-${widget.placement}] ⚠️ Bannière non disponible');
       }
     } catch (e) {
-      print('[AdBannerWidget-${widget.placement}] ❌ Erreur chargement: $e');
+      print('[AdBannerWidget-${widget.placement}] ❌ Erreur: $e');
       if (mounted) {
         setState(() {
           _isLoading = false;
+          _shouldShow = false;
         });
       }
     }
@@ -94,12 +97,10 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // Ne rien afficher si premium ou erreur de chargement
-    if (_isPremium || (_bannerAd == null && !_isLoading)) {
+    if (!_shouldShow && !_isLoading) {
       return const SizedBox.shrink();
     }
 
-    // Afficher un placeholder pendant le chargement
     if (_isLoading) {
       return Container(
         height: widget.height,
@@ -109,42 +110,36 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             color: Colors.grey.withValues(alpha: 0.2),
-            width: 1,
           ),
         ),
         child: const Center(
           child: SizedBox(
             width: 20,
             height: 20,
-            child: CircularProgressIndicator(
-              strokeWidth: 2,
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
-            ),
+            child: CircularProgressIndicator(strokeWidth: 2),
           ),
         ),
       );
     }
 
-    // Afficher la bannière
     return Container(
       height: widget.height,
       margin: widget.margin,
+      alignment: Alignment.center,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         border: Border.all(
           color: Colors.white.withValues(alpha: 0.2),
-          width: 1,
         ),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8),
-        child: AdWidget(ad: _bannerAd!),
+        child: SizedBox(
+          width: _bannerAd!.size.width.toDouble(),
+          height: _bannerAd!.size.height.toDouble(),
+          child: AdWidget(ad: _bannerAd!),
+        ),
       ),
     );
   }
 }
-
-
-
-
-

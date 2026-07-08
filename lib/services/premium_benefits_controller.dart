@@ -82,7 +82,7 @@ class PremiumBenefitsController {
 
     // Pour les utilisateurs gratuits : limite de 50 questions/jour
     // Pour les utilisateurs premium : illimité
-    const int FREE_DAILY_LIMIT = 50;
+    const int freeDailyLimit = 50;
 
     if (isPremium) {
       return {
@@ -99,13 +99,13 @@ class PremiumBenefitsController {
 
     return {
       'isPremium': false,
-      'limit': FREE_DAILY_LIMIT,
+      'limit': freeDailyLimit,
       'questionsToday': questionsToday,
-      'remaining': FREE_DAILY_LIMIT - questionsToday,
+      'remaining': freeDailyLimit - questionsToday,
       'unlimited': false,
-      'message': questionsToday >= FREE_DAILY_LIMIT
+      'message': questionsToday >= freeDailyLimit
           ? '🔒 Limite quotidienne atteinte ! Passez en Premium pour continuer'
-          : '${FREE_DAILY_LIMIT - questionsToday} questions restantes aujourd\'hui',
+          : '${freeDailyLimit - questionsToday} questions restantes aujourd\'hui',
     };
   }
 
@@ -302,6 +302,7 @@ class PremiumBenefitsController {
     return (limits['remaining'] as int) > 0;
   }
 }
+
 
 
 

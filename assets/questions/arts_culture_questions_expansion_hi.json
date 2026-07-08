@@ -1,93 +1,99 @@
 {
-  "कला और संस्कृति": {
+  "Arts et Culture": {
     "Littérature Africaine": [
       {
-        "question": "Quel écrivain nigérian a remporté  Prix Nobel का Littérature en 1986 ?",
+        "question": "1986 में किस नाइजीरियाई लेखक ने साहित्य का नोबेल पुरस्कार जीता?",
         "options": [
-          "Wole Soyinka",
-          "Chinua Achebe",
-          "Ben Okri",
-          "Chimamanda Ngozi Adichie"
+          "वोले सोयिंका",
+          "चिनुआ अचेबे",
+          "बेन ओकरी",
+          "चिमामांडा न्गोज़ी अदिची"
         ],
-        "correctAnswer": "Wole Soyinka",
-        "explanation": "Wole Soyinka है  premier Africain à avoir reçu  Prix Nobel का Littérature.",
-        "difficulty": "मध्यम",
-        "category": "कला और संस्कृति",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "वोले सोयिंका",
+        "explanation": "वोले सोयिंका साहित्य के लिए नोबेल पुरस्कार पाने वाले पहले अफ्रीकी हैं।",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0000"
       },
       {
-        "question": "Qui a écrit 'L'Aventure ambiguë' ?",
+        "question": "'द एम्बिग्युअस एडवेंचर' किसने लिखा है?",
         "options": [
-          "Cheikh Hamidou Kane",
-          "Léopold Sédar Senghor",
-          "Birago Diop",
-          "Amadou Hampâté Bâ"
+          "शेख हमीदौ केन",
+          "लियोपोल्ड सेडर सेनघोर",
+          "बिरागो डीओप",
+          "अमादौ हम्पाते बा"
         ],
-        "correctAnswer": "Cheikh Hamidou Kane",
-        "explanation": "'L'Aventure ambiguë' (1961) है एक roman का Cheikh Hamidou Kane पर l'identité africaine.",
-        "difficulty": "मध्यम",
-        "category": "कला और संस्कृति",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "शेख हमीदौ केन",
+        "explanation": "'द एम्बिगुअस एडवेंचर' (1961) अफ़्रीकी पहचान के बारे में शेख हमीदौ केन का एक उपन्यास है।",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0001"
       },
       {
-        "question": "Quelle écrivaine malienne है connue के लिए 'एक अगर longue lettre' ?",
+        "question": "कौन सा मालियन लेखक 'इतना लंबा पत्र' के लिए जाना जाता है?",
         "options": [
-          "Mariama Bâ",
-          "Aminata Sow Fall",
-          "Nafissatou Diallo",
-          "Ken Bugul"
+          "मरियमा बा",
+          "अमिनाता बोना पतझड़",
+          "नफ़िसातौ डायलो",
+          "केन बुगुल"
         ],
-        "correctAnswer": "Mariama Bâ",
-        "explanation": "Mariama Bâ (Sénégalaise) a écrit ce roman épistolaire पर  condition féminine en Afrique.",
-        "difficulty": "मध्यम",
-        "category": "कला और संस्कृति",
-        "subcategory": "Littérature Africaine"
+        "correctAnswer": "मरियमा बा",
+        "explanation": "मारियामा बा (सेनेगल) ने अफ्रीका में महिलाओं की स्थिति के बारे में यह ऐतिहासिक उपन्यास लिखा है।",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0002"
       }
     ],
     "Cinéma Africain": [
       {
-        "question": "क्या है  नाम का अधिक grand festival का cinéma africain ?",
+        "question": "सबसे बड़े अफ़्रीकी फ़िल्म महोत्सव का क्या नाम है?",
         "options": [
-          "FESPACO",
-          "Festival का Cannes",
-          "Festival का Carthage",
-          "Festival का Durban"
+          "फेस्पाको",
+          "कान्स फिल्म फेस्टिवल",
+          "कार्थेज महोत्सव",
+          "डरबन महोत्सव"
         ],
-        "correctAnswer": "FESPACO",
-        "explanation": " FESPACO (Festival Panafricain का Cinéma का Ouagadougou) se tient सभी  deux ans au Burkina Faso.",
-        "difficulty": "आसान",
-        "category": "कला और संस्कृति",
-        "subcategory": "Cinéma Africain"
+        "correctAnswer": "फेस्पाको",
+        "explanation": "FESPACO (उगाडौगौ पैन-अफ्रीकन सिनेमा फेस्टिवल) बुर्किना फासो में हर दो साल में आयोजित किया जाता है।",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0003"
       },
       {
-        "question": "Quel réalisateur sénégalais है considéré जैसे  père का cinéma africain ?",
+        "question": "सेनेगल के किस निर्देशक को अफ्रीकी सिनेमा का जनक माना जाता है?",
         "options": [
-          "Ousmane Sembène",
-          "Djibril Diop Mambéty",
-          "Idrissa Ouedraogo",
-          "Souleymane Cissé"
+          "ओस्मान सेम्बेन",
+          "जिब्रिल डीओप मैम्बेटी",
+          "इद्रिसा औएड्रागो",
+          "सौलेमेन सिसे"
         ],
-        "correctAnswer": "Ousmane Sembène",
-        "explanation": "Ousmane Sembène (1923-2007) है considéré जैसे  père का cinéma africain.",
-        "difficulty": "मध्यम",
-        "category": "कला और संस्कृति",
-        "subcategory": "Cinéma Africain"
+        "correctAnswer": "ओस्मान सेम्बेन",
+        "explanation": "ओस्मान सेम्बेन (1923-2007) को अफ़्रीकी सिनेमा का जनक माना जाता है।",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0004"
       }
     ],
     "Art Contemporain": [
       {
-        "question": "Quel artiste malien है प्रसिद्ध के लिए ses photographies ?",
+        "question": "कौन सा मालियन कलाकार अपनी तस्वीरों के लिए प्रसिद्ध है?",
         "options": [
-          "Malick Sidibé",
-          "Seydou Keïta",
-          "Omar Victor Diop",
-          "Hassan Hajjaj"
+          "मलिक सिदीबे",
+          "सेदौ कीटा",
+          "उमर विक्टर डीओप",
+          "हसन हज्जाज"
         ],
-        "correctAnswer": "Malick Sidibé",
-        "explanation": "Malick Sidibé a immortalisé  jeunesse malienne des वर्ष 60-70 à Bamako.",
-        "difficulty": "मध्यम",
-        "category": "कला और संस्कृति",
-        "subcategory": "Art Contemporain"
+        "correctAnswer": "मलिक सिदीबे",
+        "explanation": "मलिक सिदीबे ने बमाको में 60 और 70 के दशक के मालियन युवाओं को अमर बना दिया।",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0005"
       }
     ]
   }

@@ -7,7 +7,8 @@
         "Les Lions": false,
         "Les Éléphants": false,
         "Les Faucons": false
-      }
+      },
+      "id": "football_0000"
     },
     {
       "question": "Qui a remporté la Coupe du Monde 2022 au Qatar ?",
@@ -16,7 +17,8 @@
         "La France": false,
         "Le Brésil": false,
         "L'Allemagne": false
-      }
+      },
+      "id": "football_0001"
     },
     {
       "question": "Combien de joueurs composent une équipe de football sur le terrain ?",
@@ -25,7 +27,8 @@
         "10": false,
         "9": false,
         "12": false
-      }
+      },
+      "id": "football_0002"
     },
     {
       "question": "Quel pays a remporté le plus de Coupes du Monde ?",
@@ -34,7 +37,8 @@
         "L'Allemagne": false,
         "L'Italie": false,
         "L'Argentine": false
-      }
+      },
+      "id": "football_0003"
     },
     {
       "question": "Quel est le plus grand stade du monde en capacité ?",
@@ -43,7 +47,8 @@
         "Le Camp Nou (Barcelone)": false,
         "Le Stade Azteca (Mexico)": false,
         "Le Stade de France (Paris)": false
-      }
+      },
+      "id": "football_0004"
     },
     {
       "question": "Qui est le meilleur buteur de l'histoire de la Coupe du Monde ?",
@@ -52,7 +57,8 @@
         "Ronaldo (15 buts)": false,
         "Pelé (12 buts)": false,
         "Just Fontaine (13 buts)": false
-      }
+      },
+      "id": "football_0005"
     },
     {
       "question": "Quel joueur malien a joué au FC Barcelone ?",
@@ -61,7 +67,8 @@
         "Frédéric Kanouté": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0006"
     },
     {
       "question": "En quelle année le Mali a-t-il participé à sa première Coupe du Monde ?",
@@ -70,7 +77,8 @@
         "1998": false,
         "2002": false,
         "2010": false
-      }
+      },
+      "id": "football_0007"
     },
     {
       "question": "Quel est le club de football le plus titré en Ligue des Champions ?",
@@ -79,7 +87,8 @@
         "Le FC Barcelone": false,
         "Le Bayern Munich": false,
         "Liverpool": false
-      }
+      },
+      "id": "football_0008"
     },
     {
       "question": "Qui a inventé le football ?",
@@ -88,7 +97,8 @@
         "Le Brésil": false,
         "La France": false,
         "L'Italie": false
-      }
+      },
+      "id": "football_0009"
     },
     {
       "question": "Combien de temps dure un match de football ?",
@@ -97,7 +107,8 @@
         "80 minutes": false,
         "100 minutes": false,
         "120 minutes": false
-      }
+      },
+      "id": "football_0010"
     },
     {
       "question": "Quel joueur est surnommé 'La Pulga' (La Puce) ?",
@@ -106,7 +117,8 @@
         "Cristiano Ronaldo": false,
         "Neymar": false,
         "Kylian Mbappé": false
-      }
+      },
+      "id": "football_0011"
     },
     {
       "question": "Quel pays africain a remporté le plus de Coupes d'Afrique des Nations ?",
@@ -115,7 +127,8 @@
         "Le Cameroun (5 titres)": false,
         "Le Ghana (4 titres)": false,
         "Le Nigeria (3 titres)": false
-      }
+      },
+      "id": "football_0012"
     },
     {
       "question": "Qui est le meilleur buteur de l'histoire de la CAN ?",
@@ -124,7 +137,8 @@
         "Laurent Pokou (14 buts)": false,
         "Hossam Hassan (14 buts)": false,
         "Didier Drogba (11 buts)": false
-      }
+      },
+      "id": "football_0013"
     },
     {
       "question": "Quel est le plus vieux club de football du monde ?",
@@ -133,7 +147,8 @@
         "Notts County (Angleterre, 1862)": false,
         "Stoke City (Angleterre, 1863)": false,
         "Wrexham (Pays de Galles, 1864)": false
-      }
+      },
+      "id": "football_0014"
     },
     {
       "question": "Qui a marqué le but le plus rapide de l'histoire de la Coupe du Monde ?",
@@ -142,7 +157,8 @@
         "Bryan Robson (27 secondes, Angleterre 1982)": false,
         "Bernard Lacombe (37 secondes, France 1978)": false,
         "Clint Dempsey (29 secondes, USA 2014)": false
-      }
+      },
+      "id": "football_0015"
     },
     {
       "question": "Quel joueur malien a été élu Ballon d'Or africain ?",
@@ -151,7 +167,8 @@
         "Seydou Keita": false,
         "Mahamadou Diarra": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0016"
     },
     {
       "question": "Quel est le surnom de l'équipe nationale du Sénégal ?",
@@ -160,7 +177,8 @@
         "Les Aigles": false,
         "Les Faucons": false,
         "Les Panthères": false
-      }
+      },
+      "id": "football_0017"
     },
     {
       "question": "En quelle année la première Coupe du Monde a-t-elle eu lieu ?",
@@ -169,7 +187,8 @@
         "1928 en France": false,
         "1934 en Italie": false,
         "1938 en France": false
-      }
+      },
+      "id": "football_0018"
     },
     {
       "question": "Quel joueur détient le record du plus grand nombre de buts en une saison ?",
@@ -178,7 +197,8 @@
         "Cristiano Ronaldo (61 buts)": false,
         "Pelé (66 buts)": false,
         "Gerd Müller (67 buts)": false
-      }
+      },
+      "id": "football_0019"
     },
     {
       "question": "Quel est le plus grand stade d'Afrique ?",
@@ -187,7 +207,8 @@
         "Le Stade du 26 Mars (Bamako, Mali)": false,
         "Le Stade Félix Houphouët-Boigny (Abidjan, Côte d'Ivoire)": false,
         "Le Stade du 5 Juillet (Alger, Algérie)": false
-      }
+      },
+      "id": "football_0020"
     },
     {
       "question": "Qui est le joueur le plus capé de l'histoire du football ?",
@@ -196,7 +217,8 @@
         "Cristiano Ronaldo (Portugal, 183 sélections)": false,
         "Bader Al-Mutawa (Koweït, 196 sélections)": false,
         "Soh Chin Ann (Malaisie, 195 sélections)": false
-      }
+      },
+      "id": "football_0021"
     },
     {
       "question": "Quel pays a organisé la Coupe du Monde 2018 ?",
@@ -205,7 +227,8 @@
         "Le Qatar": false,
         "Le Brésil": false,
         "L'Afrique du Sud": false
-      }
+      },
+      "id": "football_0022"
     },
     {
       "question": "Quel est le surnom de l'équipe nationale du Maroc ?",
@@ -214,7 +237,8 @@
         "Les Fennecs": false,
         "Les Aigles": false,
         "Les Panthères": false
-      }
+      },
+      "id": "football_0023"
     },
     {
       "question": "Qui a remporté le Ballon d'Or 2023 ?",
@@ -223,7 +247,8 @@
         "Kylian Mbappé": false,
         "Erling Haaland": false,
         "Kevin De Bruyne": false
-      }
+      },
+      "id": "football_0024"
     },
     {
       "question": "Quel joueur malien a évolué en Premier League ?",
@@ -232,7 +257,8 @@
         "Seydou Keita": false,
         "Frédéric Kanouté": false,
         "Modibo Maïga": false
-      }
+      },
+      "id": "football_0025"
     },
     {
       "question": "Quel est le record du monde de vitesse de frappe ?",
@@ -241,7 +267,8 @@
         "Cristiano Ronaldo (131 km/h)": false,
         "Roberto Carlos (169 km/h)": false,
         "David Beckham (156 km/h)": false
-      }
+      },
+      "id": "football_0026"
     },
     {
       "question": "Qui a inventé le tiki-taka ?",
@@ -250,7 +277,8 @@
         "Pep Guardiola": false,
         "Xavi Hernandez": false,
         "Luis Enrique": false
-      }
+      },
+      "id": "football_0027"
     },
     {
       "question": "Quel est le plus grand stade du Mali ?",
@@ -259,7 +287,8 @@
         "Le Stade Omnisports Modibo Keïta": false,
         "Le Stade Mamadou Konaté": false,
         "Le Stade de l'Amitié": false
-      }
+      },
+      "id": "football_0028"
     },
     {
       "question": "Qui a remporté la CAN 2023 ?",
@@ -268,16 +297,8 @@
         "Le Sénégal": false,
         "Le Maroc": false,
         "L'Égypte": false
-      }
+      },
+      "id": "football_0029"
     }
   ]
 }
-
-
-
-
-
-
-
-
-

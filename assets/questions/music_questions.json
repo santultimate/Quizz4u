@@ -7,7 +7,8 @@
         "Le balafon": false,
         "Le djembé": false,
         "Le ngoni": false
-      }
+      },
+      "id": "music_0000"
     },
     {
       "question": "Qui est considéré comme le 'Roi du Blues' malien ?",
@@ -16,7 +17,8 @@
         "Salif Keita": false,
         "Oumou Sangaré": false,
         "Amadou & Mariam": false
-      }
+      },
+      "id": "music_0001"
     },
     {
       "question": "Quel genre musical est originaire de la République démocratique du Congo ?",
@@ -25,7 +27,8 @@
         "Le highlife": false,
         "L'afrobeat": false,
         "Le coupé-décalé": false
-      }
+      },
+      "id": "music_0002"
     },
     {
       "question": "Qui a popularisé l'afrobeat dans le monde ?",
@@ -34,7 +37,8 @@
         "Manu Dibango (Cameroun)": false,
         "Youssou N'Dour (Sénégal)": false,
         "Angélique Kidjo (Bénin)": false
-      }
+      },
+      "id": "music_0003"
     },
     {
       "question": "Quel instrument est traditionnellement utilisé dans la musique gnawa du Maroc ?",
@@ -43,7 +47,8 @@
         "Le oud": false,
         "Le qanun": false,
         "Le ney": false
-      }
+      },
+      "id": "music_0004"
     },
     {
       "question": "Qui est surnommée 'La Diva de l'Afrique' ?",
@@ -52,7 +57,8 @@
         "Angélique Kidjo (Bénin)": false,
         "Cesária Évora (Cap-Vert)": false,
         "Oumou Sangaré (Mali)": false
-      }
+      },
+      "id": "music_0005"
     },
     {
       "question": "Quel genre musical est né en Jamaïque dans les années 1960 ?",
@@ -61,7 +67,8 @@
         "Le ska": false,
         "Le rocksteady": false,
         "Le dub": false
-      }
+      },
+      "id": "music_0006"
     },
     {
       "question": "Qui est le chanteur malien surnommé 'La Voix d'Or' ?",
@@ -70,7 +77,8 @@
         "Ali Farka Touré": false,
         "Toumani Diabaté": false,
         "Rokia Traoré": false
-      }
+      },
+      "id": "music_0007"
     },
     {
       "question": "Quel instrument de percussion est originaire d'Afrique de l'Ouest ?",
@@ -79,7 +87,8 @@
         "Les bongos": false,
         "Les congas": false,
         "La batterie": false
-      }
+      },
+      "id": "music_0008"
     },
     {
       "question": "Qui a composé 'Lambada' ?",
@@ -88,7 +97,8 @@
         "Carlos Santana": false,
         "Gipsy Kings": false,
         "Ricky Martin": false
-      }
+      },
+      "id": "music_0009"
     },
     {
       "question": "Quel est le nom de l'orchestre national du Mali ?",
@@ -97,7 +107,8 @@
         "L'Orchestre Symphonique du Mali": false,
         "L'Orchestre de la République du Mali": false,
         "L'Orchestre National Malien": false
-      }
+      },
+      "id": "music_0010"
     },
     {
       "question": "Qui est considéré comme le père du jazz ?",
@@ -106,7 +117,8 @@
         "Duke Ellington": false,
         "Charlie Parker": false,
         "Miles Davis": false
-      }
+      },
+      "id": "music_0011"
     },
     {
       "question": "Quel genre musical est né à La Nouvelle-Orléans ?",
@@ -115,7 +127,8 @@
         "Le blues": false,
         "Le gospel": false,
         "Le rhythm and blues": false
-      }
+      },
+      "id": "music_0012"
     },
     {
       "question": "Qui a popularisé la musique mandingue dans le monde ?",
@@ -124,7 +137,8 @@
         "Ali Farka Touré": false,
         "Salif Keita": false,
         "Rokia Traoré": false
-      }
+      },
+      "id": "music_0013"
     },
     {
       "question": "Quel instrument traditionnel utilise des calebasses comme résonateurs ?",
@@ -133,7 +147,8 @@
         "La kora": false,
         "Le ngoni": false,
         "Le djembé": false
-      }
+      },
+      "id": "music_0014"
     },
     {
       "question": "Qui est surnommé 'Le Griot du Blues' ?",
@@ -142,7 +157,8 @@
         "Salif Keita": false,
         "Toumani Diabaté": false,
         "Boubacar Traoré": false
-      }
+      },
+      "id": "music_0015"
     },
     {
       "question": "Quel genre musical est originaire du Cap-Vert ?",
@@ -151,7 +167,8 @@
         "Le funaná": false,
         "Le batuque": false,
         "La coladeira": false
-      }
+      },
+      "id": "music_0016"
     },
     {
       "question": "Qui a composé 'Waka Waka (This Time for Africa)' pour la Coupe du Monde 2010 ?",
@@ -160,7 +177,8 @@
         "Jennifer Lopez": false,
         "Beyoncé": false,
         "Rihanna": false
-      }
+      },
+      "id": "music_0017"
     },
     {
       "question": "Quel est l'instrument traditionnel de la musique gnawa ?",
@@ -169,7 +187,8 @@
         "Le oud": false,
         "La kora": false,
         "Le ngoni": false
-      }
+      },
+      "id": "music_0018"
     },
     {
       "question": "Qui est considéré comme le roi du mbalax sénégalais ?",
@@ -178,7 +197,8 @@
         "Baaba Maal": false,
         "Ismaël Lô": false,
         "Orchestra Baobab": false
-      }
+      },
+      "id": "music_0019"
     },
     {
       "question": "Quel genre musical est né au Brésil ?",
@@ -187,7 +207,8 @@
         "La samba": false,
         "Le forró": false,
         "La lambada": false
-      }
+      },
+      "id": "music_0020"
     },
     {
       "question": "Qui a popularisé la musique wassoulou au Mali ?",
@@ -196,7 +217,8 @@
         "Salif Keita": false,
         "Ali Farka Touré": false,
         "Rokia Traoré": false
-      }
+      },
+      "id": "music_0021"
     },
     {
       "question": "Quel instrument traditionnel malien a 21 cordes ?",
@@ -205,7 +227,8 @@
         "Le ngoni": false,
         "Le balafon": false,
         "Le guembri": false
-      }
+      },
+      "id": "music_0022"
     },
     {
       "question": "Qui est surnommée 'La Reine de l'Afro-pop' ?",
@@ -214,7 +237,8 @@
         "Miriam Makeba": false,
         "Cesária Évora": false,
         "Oumou Sangaré": false
-      }
+      },
+      "id": "music_0023"
     },
     {
       "question": "Quel genre musical est originaire de Cuba ?",
@@ -223,7 +247,8 @@
         "Le cha-cha-cha": false,
         "Le mambo": false,
         "Le son": false
-      }
+      },
+      "id": "music_0024"
     },
     {
       "question": "Qui a composé 'Afrika' ?",
@@ -232,7 +257,8 @@
         "Ali Farka Touré": false,
         "Toumani Diabaté": false,
         "Oumou Sangaré": false
-      }
+      },
+      "id": "music_0025"
     },
     {
       "question": "Quel instrument traditionnel utilise des peaux d'animaux tendues ?",
@@ -241,7 +267,8 @@
         "Le balafon": false,
         "La kora": false,
         "Le ngoni": false
-      }
+      },
+      "id": "music_0026"
     },
     {
       "question": "Qui est considéré comme le père du highlife ghanéen ?",
@@ -250,7 +277,8 @@
         "Amakye Dede": false,
         "Kojo Antwi": false,
         "Sarkodie": false
-      }
+      },
+      "id": "music_0027"
     },
     {
       "question": "Quel genre musical est né en République dominicaine ?",
@@ -259,7 +287,8 @@
         "Le merengue": false,
         "La salsa": false,
         "Le reggaeton": false
-      }
+      },
+      "id": "music_0028"
     },
     {
       "question": "Qui a popularisé la musique touarègue (desert blues) ?",
@@ -268,16 +297,8 @@
         "Bombino": false,
         "Tamikrest": false,
         "Terakaft": false
-      }
+      },
+      "id": "music_0029"
     }
   ]
 }
-
-
-
-
-
-
-
-
-

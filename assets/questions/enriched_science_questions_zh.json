@@ -10,7 +10,9 @@
       },
       "explanation": "真空中的光速正好是 299,792,458 m/s。",
       "difficulty": "hard",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0000",
+      "correctAnswer": "299,792,458 米/秒"
     },
     {
       "question": "植物生产食物的过程是怎样的？",
@@ -22,7 +24,9 @@
       },
       "explanation": "光合作用利用阳光将二氧化碳和水转化为葡萄糖。",
       "difficulty": "easy",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0001",
+      "correctAnswer": "光合作用"
     },
     {
       "question": "最小的化学元素是什么？",
@@ -34,7 +38,9 @@
       },
       "explanation": "氢的原子序数为1，是最小的原子。",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0002",
+      "correctAnswer": "氢"
     },
     {
       "question": "水的化学式是什么？",
@@ -46,7 +52,9 @@
       },
       "explanation": "水由两个氢原子和一个氧原子组成。",
       "difficulty": "easy",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0003",
+      "correctAnswer": "水"
     },
     {
       "question": "人体最大的器官是什么？",
@@ -58,7 +66,9 @@
       },
       "explanation": "皮肤约占体重的16%。",
       "difficulty": "medium",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0004",
+      "correctAnswer": "皮肤"
     },
     {
       "question": "离太阳最近的行星是什么？",
@@ -70,7 +80,9 @@
       },
       "explanation": "水星是太阳系中距离太阳最近的行星。",
       "difficulty": "easy",
-      "subcategory": "Astronomie"
+      "subcategory": "Astronomie",
+      "id": "science_0005",
+      "correctAnswer": "汞"
     },
     {
       "question": "地球大气层中含量最多的气体是什么？",
@@ -82,7 +94,9 @@
       },
       "explanation": "氮约占地球大气的78%。",
       "difficulty": "medium",
-      "subcategory": "Chimie"
+      "subcategory": "Chimie",
+      "id": "science_0006",
+      "correctAnswer": "氮"
     },
     {
       "question": "正常大气压下水的沸点是多少？",
@@ -94,7 +108,9 @@
       },
       "explanation": "水在海平面的沸点为 100°C (212°F)。",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0007",
+      "correctAnswer": "100℃"
     },
     {
       "question": "成年人体内有多少块骨头？",
@@ -106,7 +122,9 @@
       },
       "explanation": "成年人的身体有206块骨头。",
       "difficulty": "hard",
-      "subcategory": "Biologie"
+      "subcategory": "Biologie",
+      "id": "science_0008",
+      "correctAnswer": "206"
     },
     {
       "question": "将物体拉向地心的力是什么？",
@@ -118,7 +136,9 @@
       },
       "explanation": "重力是将所有物体拉向地球中心的力。",
       "difficulty": "easy",
-      "subcategory": "Physique"
+      "subcategory": "Physique",
+      "id": "science_0009",
+      "correctAnswer": "重力"
     },
     {
       "question": "钾的化学符号是什么？",
@@ -128,7 +148,8 @@
         "Ca": false,
         "Mg": false
       },
-      "correctAnswer": "K"
+      "correctAnswer": "K",
+      "id": "science_0010"
     },
     {
       "question": "镁的化学符号是什么？",
@@ -138,7 +159,8 @@
         "K": false,
         "Ca": false
       },
-      "correctAnswer": "Mg"
+      "correctAnswer": "Mg",
+      "id": "science_0011"
     },
     {
       "question": "硅的化学符号是什么？",
@@ -148,7 +170,8 @@
         "P": false,
         "Se": false
       },
-      "correctAnswer": "Si"
+      "correctAnswer": "Si",
+      "id": "science_0012"
     },
     {
       "question": "硒的化学符号是什么？",
@@ -158,7 +181,8 @@
         "P": false,
         "Si": false
       },
-      "correctAnswer": "Se"
+      "correctAnswer": "Se",
+      "id": "science_0013"
     },
     {
       "question": "铊的化学符号是什么？",
@@ -168,7 +192,8 @@
         "Ga": false,
         "In": false
       },
-      "correctAnswer": "Tl"
+      "correctAnswer": "Tl",
+      "id": "science_0014"
     },
     {
       "question": "镉的化学符号是什么？",
@@ -178,7 +203,8 @@
         "Hg": false,
         "Pb": false
       },
-      "correctAnswer": "Cd"
+      "correctAnswer": "Cd",
+      "id": "science_0015"
     },
     {
       "question": "钯的化学符号是什么？",
@@ -188,7 +214,8 @@
         "Co": false,
         "Pt": false
       },
-      "correctAnswer": "Pd"
+      "correctAnswer": "Pd",
+      "id": "science_0016"
     },
     {
       "question": "钼的化学符号是什么？",
@@ -198,7 +225,8 @@
         "W": false,
         "V": false
       },
-      "correctAnswer": "Mo"
+      "correctAnswer": "Mo",
+      "id": "science_0017"
     },
     {
       "question": "钨的化学符号是什么？",
@@ -208,7 +236,8 @@
         "Mo": false,
         "V": false
       },
-      "correctAnswer": "W"
+      "correctAnswer": "W",
+      "id": "science_0018"
     },
     {
       "question": "钒的化学符号是什么？",
@@ -218,7 +247,8 @@
         "Mo": false,
         "W": false
       },
-      "correctAnswer": "V"
+      "correctAnswer": "V",
+      "id": "science_0019"
     },
     {
       "question": "锰的化学符号是什么？",
@@ -228,7 +258,8 @@
         "Re": false,
         "Fe": false
       },
-      "correctAnswer": "Mn"
+      "correctAnswer": "Mn",
+      "id": "science_0020"
     },
     {
       "question": "锝的化学符号是什么？",
@@ -238,7 +269,8 @@
         "Re": false,
         "Fe": false
       },
-      "correctAnswer": "Tc"
+      "correctAnswer": "Tc",
+      "id": "science_0021"
     },
     {
       "question": "钛的化学符号是什么？",
@@ -248,7 +280,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Ti"
+      "correctAnswer": "Ti",
+      "id": "science_0022"
     },
     {
       "question": "锆的化学符号是什么？",
@@ -258,7 +291,8 @@
         "Hf": false,
         "V": false
       },
-      "correctAnswer": "Zr"
+      "correctAnswer": "Zr",
+      "id": "science_0023"
     },
     {
       "question": "铪的化学符号是什么？",
@@ -268,7 +302,8 @@
         "Zr": false,
         "V": false
       },
-      "correctAnswer": "Hf"
+      "correctAnswer": "Hf",
+      "id": "science_0024"
     },
     {
       "question": "钪的化学符号是什么？",
@@ -278,7 +313,8 @@
         "La": false,
         "Ac": false
       },
-      "correctAnswer": "Sc"
+      "correctAnswer": "Sc",
+      "id": "science_0025"
     },
     {
       "question": "镧的化学符号是什么？",
@@ -288,7 +324,8 @@
         "Y": false,
         "Ac": false
       },
-      "correctAnswer": "La"
+      "correctAnswer": "La",
+      "id": "science_0026"
     },
     {
       "question": "铷的化学符号是什么？",
@@ -298,7 +335,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Rb"
+      "correctAnswer": "Rb",
+      "id": "science_0027"
     },
     {
       "question": "铯的化学符号是什么？",
@@ -308,7 +346,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Cs"
+      "correctAnswer": "Cs",
+      "id": "science_0028"
     },
     {
       "question": "钫的化学符号是什么？",
@@ -318,7 +357,8 @@
         "Na": false,
         "K": false
       },
-      "correctAnswer": "Fr"
+      "correctAnswer": "Fr",
+      "id": "science_0029"
     },
     {
       "question": "铍的化学符号是什么？",
@@ -328,7 +368,8 @@
         "Ca": false,
         "Sr": false
       },
-      "correctAnswer": "Be"
+      "correctAnswer": "Be",
+      "id": "science_0030"
     },
     {
       "question": "锶的化学符号是什么？",
@@ -338,7 +379,8 @@
         "Mg": false,
         "Ca": false
       },
-      "correctAnswer": "Sr"
+      "correctAnswer": "Sr",
+      "id": "science_0031"
     }
   ]
 }

@@ -8,7 +8,8 @@
         "Le Soudan": false,
         "La Libye": false
       },
-      "correctAnswer": "L'Algerie"
+      "correctAnswer": "L'Algerie",
+      "id": "africa_0000"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique par population ?",
@@ -18,7 +19,8 @@
         "L'Egypte": false,
         "La Republique democratique du Congo": false
       },
-      "correctAnswer": "Le Nigeria"
+      "correctAnswer": "Le Nigeria",
+      "id": "africa_0001"
     },
     {
       "question": "Quel est le plus long fleuve d'Afrique ?",
@@ -28,7 +30,8 @@
         "Le Niger": false,
         "Le Zambeze": false
       },
-      "correctAnswer": "Le Nil"
+      "correctAnswer": "Le Nil",
+      "id": "africa_0002"
     },
     {
       "question": "Quel est le plus grand lac d'Afrique ?",
@@ -38,7 +41,8 @@
         "Le lac Malawi": false,
         "Le lac Tchad": false
       },
-      "correctAnswer": "Le lac Victoria"
+      "correctAnswer": "Le lac Victoria",
+      "id": "africa_0003"
     },
     {
       "question": "Quel est le plus grand desert d'Afrique ?",
@@ -48,7 +52,8 @@
         "Le desert du Namib": false,
         "Le desert de Libye": false
       },
-      "correctAnswer": "Le Sahara"
+      "correctAnswer": "Le Sahara",
+      "id": "africa_0004"
     },
     {
       "question": "Quelle est la plus haute montagne d'Afrique ?",
@@ -58,7 +63,8 @@
         "Le Mont Elgon": false,
         "Le Mont Meru": false
       },
-      "correctAnswer": "Le Mont Kilimandjaro"
+      "correctAnswer": "Le Mont Kilimandjaro",
+      "id": "africa_0005"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique ?",
@@ -68,7 +74,8 @@
         "Les Comores": false,
         "Le Cap-Vert": false
       },
-      "correctAnswer": "Les Seychelles"
+      "correctAnswer": "Les Seychelles",
+      "id": "africa_0006"
     },
     {
       "question": "Quel est le plus grand pays insulaire d'Afrique ?",
@@ -78,7 +85,8 @@
         "Les Comores": false,
         "Le Cap-Vert": false
       },
-      "correctAnswer": "Madagascar"
+      "correctAnswer": "Madagascar",
+      "id": "africa_0007"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest ?",
@@ -88,7 +96,8 @@
         "Le Burkina Faso": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "Le Niger",
+      "id": "africa_0008"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale ?",
@@ -98,7 +107,8 @@
         "La Republique centrafricaine": false,
         "Le Cameroun": false
       },
-      "correctAnswer": "La Republique democratique du Congo"
+      "correctAnswer": "La Republique democratique du Congo",
+      "id": "africa_0009"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est ?",
@@ -108,7 +118,8 @@
         "La Tanzanie": false,
         "Le Kenya": false
       },
-      "correctAnswer": "Le Soudan"
+      "correctAnswer": "Le Soudan",
+      "id": "africa_0010"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe ?",
@@ -118,7 +129,8 @@
         "Le Botswana": false,
         "Le Zimbabwe": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0011"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord ?",
@@ -128,7 +140,8 @@
         "L'Egypte": false,
         "Le Maroc": false
       },
-      "correctAnswer": "L'Algerie"
+      "correctAnswer": "L'Algerie",
+      "id": "africa_0012"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest par population ?",
@@ -138,7 +151,8 @@
         "La Cote d'Ivoire": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Nigeria"
+      "correctAnswer": "Le Nigeria",
+      "id": "africa_0013"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale par population ?",
@@ -148,7 +162,8 @@
         "Le Tchad": false,
         "La Republique centrafricaine": false
       },
-      "correctAnswer": "La Republique democratique du Congo"
+      "correctAnswer": "La Republique democratique du Congo",
+      "id": "africa_0014"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est par population ?",
@@ -158,7 +173,8 @@
         "Le Kenya": false,
         "L'Ouganda": false
       },
-      "correctAnswer": "L'Ethiopie"
+      "correctAnswer": "L'Ethiopie",
+      "id": "africa_0015"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe par population ?",
@@ -168,7 +184,8 @@
         "Le Mozambique": false,
         "La Zambie": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0016"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord par population ?",
@@ -178,7 +195,8 @@
         "Le Maroc": false,
         "La Tunisie": false
       },
-      "correctAnswer": "L'Egypte"
+      "correctAnswer": "L'Egypte",
+      "id": "africa_0017"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest par superficie ?",
@@ -188,7 +206,8 @@
         "Le Burkina Faso": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Niger"
+      "correctAnswer": "Le Niger",
+      "id": "africa_0018"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale par superficie ?",
@@ -198,7 +217,8 @@
         "La Republique centrafricaine": false,
         "Le Cameroun": false
       },
-      "correctAnswer": "La Republique democratique du Congo"
+      "correctAnswer": "La Republique democratique du Congo",
+      "id": "africa_0019"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est par superficie ?",
@@ -208,7 +228,8 @@
         "La Tanzanie": false,
         "Le Kenya": false
       },
-      "correctAnswer": "Le Soudan"
+      "correctAnswer": "Le Soudan",
+      "id": "africa_0020"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe par superficie ?",
@@ -218,7 +239,8 @@
         "Le Botswana": false,
         "Le Zimbabwe": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0021"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord par superficie ?",
@@ -228,7 +250,8 @@
         "L'Egypte": false,
         "Le Maroc": false
       },
-      "correctAnswer": "L'Algerie"
+      "correctAnswer": "L'Algerie",
+      "id": "africa_0022"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique de l'Ouest ?",
@@ -238,7 +261,8 @@
         "Le Benin": false,
         "La Guinee-Bissau": false
       },
-      "correctAnswer": "La Gambie"
+      "correctAnswer": "La Gambie",
+      "id": "africa_0023"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique centrale ?",
@@ -248,7 +272,8 @@
         "Le Gabon": false,
         "La Republique centrafricaine": false
       },
-      "correctAnswer": "Sao Tome-et-Principe"
+      "correctAnswer": "Sao Tome-et-Principe",
+      "id": "africa_0024"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique de l'Est ?",
@@ -258,7 +283,8 @@
         "Le Burundi": false,
         "Le Rwanda": false
       },
-      "correctAnswer": "Les Comores"
+      "correctAnswer": "Les Comores",
+      "id": "africa_0025"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique australe ?",
@@ -268,7 +294,8 @@
         "Le Botswana": false,
         "La Namibie": false
       },
-      "correctAnswer": "L'Eswatini"
+      "correctAnswer": "L'Eswatini",
+      "id": "africa_0026"
     },
     {
       "question": "Quel est le plus petit pays d'Afrique du Nord ?",
@@ -278,7 +305,8 @@
         "L'Algerie": false,
         "La Libye": false
       },
-      "correctAnswer": "La Tunisie"
+      "correctAnswer": "La Tunisie",
+      "id": "africa_0027"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest par PIB ?",
@@ -288,7 +316,8 @@
         "La Cote d'Ivoire": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Nigeria"
+      "correctAnswer": "Le Nigeria",
+      "id": "africa_0028"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale par PIB ?",
@@ -298,7 +327,8 @@
         "Le Gabon": false,
         "La Republique centrafricaine": false
       },
-      "correctAnswer": "La Republique democratique du Congo"
+      "correctAnswer": "La Republique democratique du Congo",
+      "id": "africa_0029"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est par PIB ?",
@@ -308,7 +338,8 @@
         "La Tanzanie": false,
         "L'Ouganda": false
       },
-      "correctAnswer": "L'Ethiopie"
+      "correctAnswer": "L'Ethiopie",
+      "id": "africa_0030"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe par PIB ?",
@@ -318,7 +349,8 @@
         "Le Mozambique": false,
         "La Zambie": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0031"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord par PIB ?",
@@ -328,7 +360,8 @@
         "Le Maroc": false,
         "La Tunisie": false
       },
-      "correctAnswer": "L'Egypte"
+      "correctAnswer": "L'Egypte",
+      "id": "africa_0032"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest par densite de population ?",
@@ -338,7 +371,8 @@
         "La Cote d'Ivoire": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Nigeria"
+      "correctAnswer": "Le Nigeria",
+      "id": "africa_0033"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale par densite de population ?",
@@ -348,7 +382,8 @@
         "Le Gabon": false,
         "La Republique centrafricaine": false
       },
-      "correctAnswer": "La Republique democratique du Congo"
+      "correctAnswer": "La Republique democratique du Congo",
+      "id": "africa_0034"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est par densite de population ?",
@@ -358,7 +393,8 @@
         "La Tanzanie": false,
         "L'Ouganda": false
       },
-      "correctAnswer": "L'Ethiopie"
+      "correctAnswer": "L'Ethiopie",
+      "id": "africa_0035"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe par densite de population ?",
@@ -368,7 +404,8 @@
         "Le Mozambique": false,
         "La Zambie": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0036"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord par densite de population ?",
@@ -378,7 +415,8 @@
         "Le Maroc": false,
         "La Tunisie": false
       },
-      "correctAnswer": "L'Egypte"
+      "correctAnswer": "L'Egypte",
+      "id": "africa_0037"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Ouest par esperance de vie ?",
@@ -388,7 +426,8 @@
         "La Cote d'Ivoire": false,
         "Le Senegal": false
       },
-      "correctAnswer": "Le Cap-Vert"
+      "correctAnswer": "Le Cap-Vert",
+      "id": "africa_0038"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique centrale par esperance de vie ?",
@@ -398,7 +437,8 @@
         "La Republique democratique du Congo": false,
         "La Republique centrafricaine": false
       },
-      "correctAnswer": "Le Gabon"
+      "correctAnswer": "Le Gabon",
+      "id": "africa_0039"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique de l'Est par esperance de vie ?",
@@ -408,7 +448,8 @@
         "Le Kenya": false,
         "La Tanzanie": false
       },
-      "correctAnswer": "Les Seychelles"
+      "correctAnswer": "Les Seychelles",
+      "id": "africa_0040"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique australe par esperance de vie ?",
@@ -418,7 +459,8 @@
         "Le Mozambique": false,
         "La Zambie": false
       },
-      "correctAnswer": "L'Afrique du Sud"
+      "correctAnswer": "L'Afrique du Sud",
+      "id": "africa_0041"
     },
     {
       "question": "Quel est le plus grand pays d'Afrique du Nord par esperance de vie ?",
@@ -428,7 +470,8 @@
         "Le Maroc": false,
         "L'Egypte": false
       },
-      "correctAnswer": "La Tunisie"
+      "correctAnswer": "La Tunisie",
+      "id": "africa_0042"
     }
   ]
 }

@@ -1,80 +1,85 @@
 {
-  "पर्यावरण और पारिस्थितिकी": {
+  "Environnement et Écologie": {
     "Changement Climatique": [
       {
-        "question": "क्या है l'objectif मुख्य का l'Accord का Paris (2015) ?",
+        "question": "पेरिस समझौते (2015) का मुख्य उद्देश्य क्या है?",
         "options": [
-          "Limiter  réchauffement à 1,5°C",
-          "Éliminer सभी  combustibles fossiles",
-          "Planter 1 milliard d'arbres",
-          "Interdire  plastiques"
+          "तापमान को 1.5°C तक सीमित रखें",
+          "सभी जीवाश्म ईंधन हटा दें",
+          "1 अरब पेड़ लगाओ",
+          "प्लास्टिक पर प्रतिबंध लगाओ"
         ],
-        "correctAnswer": "Limiter  réchauffement à 1,5°C",
-        "explanation": "L'Accord का Paris vise à maintenir l'augmentation का  तापमान mondiale en dessous का 2°C, idéalement à 1,5°C.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "तापमान को 1.5°C तक सीमित रखें",
+        "explanation": "पेरिस समझौते का लक्ष्य वैश्विक तापमान वृद्धि को 2 डिग्री सेल्सियस से नीचे रखना है, आदर्श रूप से 1.5 डिग्री सेल्सियस।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0000"
       },
       {
-        "question": "Quel gaz à effet का serre है  अधिक abondant में l'atmosphère ?",
+        "question": "कौन सी ग्रीनहाउस गैस वायुमंडल में सर्वाधिक प्रचुर मात्रा में है?",
         "options": [
-          "Dioxyde का carbone (CO2)",
-          "Méthane (CH4)",
-          "Protoxyde d'azote (N2O)",
-          "Ozone (O3)"
+          "कार्बन डाइऑक्साइड (CO2)",
+          "मीथेन (CH4)",
+          "नाइट्रस ऑक्साइड (N2O)",
+          "ओजोन (O3)"
         ],
-        "correctAnswer": "Dioxyde का carbone (CO2)",
-        "explanation": " CO2 représente environ 76% des émissions का gaz à effet का serre d'origine humaine.",
-        "difficulty": "आसान",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "कार्बन डाइऑक्साइड (CO2)",
+        "explanation": "CO2 मानव-जनित ग्रीनहाउस गैस उत्सर्जन का लगभग 76% प्रतिनिधित्व करता है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0001"
       },
       {
-        "question": "Quelle activité humaine contribue  अधिक au changement climatique ?",
+        "question": "कौन सी मानवीय गतिविधि जलवायु परिवर्तन में सबसे अधिक योगदान देती है?",
         "options": [
-          "Combustion का combustibles fossiles",
-          "Agriculture",
-          "Déforestation",
-          "Transport aérien"
+          "जीवाश्म ईंधन का दहन",
+          "कृषि",
+          "वनों की कटाई",
+          "वायु परिवहन"
         ],
-        "correctAnswer": "Combustion का combustibles fossiles",
-        "explanation": " combustion का charbon, pétrole और gaz naturel है responsable का 73% des émissions mondiales का GES.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "जीवाश्म ईंधन का दहन",
+        "explanation": "कोयला, तेल और प्राकृतिक गैस का दहन वैश्विक GHG उत्सर्जन के 73% के लिए जिम्मेदार है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0002"
       },
       {
-        "question": "Quel महाद्वीप है  अधिक affecté par  désertification ?",
+        "question": "कौन सा महाद्वीप मरुस्थलीकरण से सर्वाधिक प्रभावित है?",
         "options": [
-          "Afrique",
-          "Asie",
-          "Amérique का दक्षिण",
-          "Australie"
+          "अफ़्रीका",
+          "एशिया",
+          "दक्षिण अमेरिका",
+          "ऑस्ट्रेलिया"
         ],
-        "correctAnswer": "Afrique",
-        "explanation": "L'Afrique है particulièrement vulnérable à  désertification, notamment में  क्षेत्र का Sahel.",
-        "difficulty": "आसान",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Changement Climatique"
+        "correctAnswer": "अफ़्रीका",
+        "explanation": "अफ़्रीका विशेष रूप से साहेल क्षेत्र में मरुस्थलीकरण की चपेट में है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0003"
       }
     ],
     "Biodiversité Africaine": [
       {
-        "question": "क्या है  अधिक grand parc national d'Afrique ?",
+        "question": "अफ़्रीका का सबसे बड़ा राष्ट्रीय उद्यान कौन सा है?",
         "options": [
-          "Parc National का Namib-Naukluft (Namibie)",
-          "Parc Kruger (Afrique का दक्षिण)",
-          "Parc Serengeti (Tanzanie)",
-          "Parc Etosha (Namibie)"
+          "नामीब-नौक्लुफ़्ट राष्ट्रीय उद्यान (नामीबिया)",
+          "क्रूगर पार्क (दक्षिण अफ्रीका)",
+          "सेरेन्गेटी पार्क (तंजानिया)",
+          "एटोशा पार्क (नामीबिया)"
         ],
-        "correctAnswer": "Parc National का Namib-Naukluft (Namibie)",
-        "explanation": " Parc का Namib-Naukluft couvre 49 768 किमी², ce qui en fait  अधिक grand parc d'Afrique.",
-        "difficulty": "कठिन",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "नामीब-नौक्लुफ़्ट राष्ट्रीय उद्यान (नामीबिया)",
+        "explanation": "नामीब-नौक्लुफ़्ट पार्क 49,768 वर्ग किमी में फैला है, जो इसे अफ़्रीका का सबसे बड़ा पार्क बनाता है।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0004"
       },
       {
-        "question": "कितने d'espèces d'éléphants existe-t-il en Afrique ?",
+        "question": "अफ़्रीका में हाथियों की कितनी प्रजातियाँ हैं?",
         "options": [
           "2",
           "1",
@@ -82,126 +87,135 @@
           "4"
         ],
         "correctAnswer": "2",
-        "explanation": "Il existe deux espèces d'éléphants africains : l'éléphant का savane और l'éléphant का forêt.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Biodiversité Africaine"
+        "explanation": "अफ़्रीकी हाथियों की दो प्रजातियाँ हैं: सवाना हाथी और वन हाथी।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0005"
       },
       {
-        "question": "Quel animal africain peut vivre अधिक longtemps बिना eau ?",
+        "question": "कौन सा अफ़्रीकी जानवर पानी के बिना अधिक समय तक जीवित रह सकता है?",
         "options": [
-          " girafe",
-          " chameau",
-          "L'oryx",
-          " dromadaire"
+          "जिराफ़",
+          "ऊँट",
+          "ओरिक्स",
+          "ऊँट"
         ],
-        "correctAnswer": "L'oryx",
-        "explanation": "L'oryx peut survivre कई महीना बिना boire, en tirant l'eau का sa nourriture.",
-        "difficulty": "कठिन",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "ओरिक्स",
+        "explanation": "ओरिक्स अपने भोजन से पानी प्राप्त किए बिना, कई महीनों तक जीवित रह सकता है।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0006"
       },
       {
-        "question": "क्या है l'oiseau national का Kenya ?",
+        "question": "केन्या का राष्ट्रीय पक्षी क्या है?",
         "options": [
-          " coq का roche",
-          "L'aigle martial",
-          " calao terrestre",
-          " flamant rose"
+          "चट्टान का मुर्गा",
+          "मार्शल ईगल",
+          "ग्राउंड हार्नबिल",
+          "गुलाबी राजहंस"
         ],
-        "correctAnswer": " coq का roche",
-        "explanation": " coq का roche (lilac-breasted roller) है l'oiseau national का Kenya, ज्ञात के लिए ses couleurs vives.",
-        "difficulty": "कठिन",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Biodiversité Africaine"
+        "correctAnswer": "चट्टान का मुर्गा",
+        "explanation": "बकाइन-ब्रेस्टेड रोलर केन्या का राष्ट्रीय पक्षी है, जो अपने चमकीले रंगों के लिए जाना जाता है।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0007"
       }
     ],
     "Énergies Renouvelables": [
       {
-        "question": "Quel देश africain produit  अधिक d'énergie solaire ?",
+        "question": "कौन सा अफ़्रीकी देश सर्वाधिक सौर ऊर्जा उत्पन्न करता है?",
         "options": [
-          "Maroc",
-          "Afrique का दक्षिण",
-          "Égypte",
-          "Algérie"
+          "मोरक्को",
+          "दक्षिण अफ़्रीका",
+          "मिस्र",
+          "एलजीरिया"
         ],
-        "correctAnswer": "Maroc",
-        "explanation": " Maroc abrite  जटिल solaire का Noor Ouarzazate, l'एक des अधिक grandes centrales solaires au दुनिया.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "मोरक्को",
+        "explanation": "मोरक्को नूर उआरज़ाज़ेट सौर परिसर का घर है, जो दुनिया के सबसे बड़े सौर ऊर्जा संयंत्रों में से एक है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0008"
       },
       {
-        "question": "Qu'है-ce que l'énergie géothermique ?",
+        "question": "भूतापीय ऊर्जा क्या है?",
         "options": [
-          "Énergie provenant का  गर्मी का  पृथ्वी",
-          "Énergie का vent",
-          "Énergie का सूर्य",
-          "Énergie des vagues"
+          "पृथ्वी की गर्मी से ऊर्जा",
+          "पवन ऊर्जा",
+          "सूर्य से ऊर्जा",
+          "तरंग ऊर्जा"
         ],
-        "correctAnswer": "Énergie provenant का  गर्मी का  पृथ्वी",
-        "explanation": "L'énergie géothermique utilise  गर्मी stockée sous  surface terrestre.",
-        "difficulty": "आसान",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "पृथ्वी की गर्मी से ऊर्जा",
+        "explanation": "भूतापीय ऊर्जा पृथ्वी की सतह के नीचे संग्रहीत ऊष्मा का उपयोग करती है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0009"
       },
       {
-        "question": "Quel देश africain a  अधिक grand potentiel hydroélectrique ?",
+        "question": "किस अफ़्रीकी देश में सर्वाधिक जलविद्युत क्षमता है?",
         "options": [
-          "République Démocratique का Congo",
-          "Éthiopie",
-          "Égypte",
-          "Nigeria"
+          "कांगो लोकतांत्रिक गणराज्य",
+          "इथियोपिया",
+          "मिस्र",
+          "नाइजीरिया"
         ],
-        "correctAnswer": "République Démocratique का Congo",
-        "explanation": " RDC possèका  अधिक grand potentiel hydroélectrique d'Afrique grâce au नदी Congo.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Énergies Renouvelables"
+        "correctAnswer": "कांगो लोकतांत्रिक गणराज्य",
+        "explanation": "कांगो नदी की बदौलत डीआरसी के पास अफ्रीका में सबसे बड़ी जलविद्युत क्षमता है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Renouvelables",
+        "id": "environment_0010"
       }
     ],
-    "Pollution और Déchets": [
+    "Pollution et Déchets": [
       {
-        "question": "कितने का समय met एक sac plastique à se décomposer में  nature ?",
+        "question": "प्लास्टिक बैग को प्रकृति में विघटित होने में कितना समय लगता है?",
         "options": [
-          "100-400 ans",
-          "10-50 ans",
-          "500-1000 ans",
-          "1-10 ans"
+          "100-400 वर्ष",
+          "10-50 वर्ष",
+          "500-1000 वर्ष",
+          "1-10 वर्ष"
         ],
-        "correctAnswer": "100-400 ans",
-        "explanation": "एक sac plastique met के बीच 100 और 400 ans à se décomposer complètement में  nature.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Pollution और Déchets"
+        "correctAnswer": "100-400 वर्ष",
+        "explanation": "एक प्लास्टिक बैग को प्रकृति में पूरी तरह से विघटित होने में 100 से 400 वर्ष का समय लगता है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0011"
       },
       {
-        "question": "Quel देश africain a été  premier à interdire  sacs plastiques ?",
+        "question": "प्लास्टिक बैग पर प्रतिबंध लगाने वाला पहला अफ्रीकी देश कौन सा था?",
         "options": [
-          "Rwanda",
-          "Kenya",
-          "Afrique का दक्षिण",
-          "Maroc"
+          "रवांडा",
+          "केन्या",
+          "दक्षिण अफ़्रीका",
+          "मोरक्को"
         ],
-        "correctAnswer": "Rwanda",
-        "explanation": " Rwanda a interdit  sacs plastiques en 2008, devenant एक leader africain में ce domaine.",
-        "difficulty": "मध्यम",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Pollution और Déchets"
+        "correctAnswer": "रवांडा",
+        "explanation": "रवांडा ने 2008 में प्लास्टिक बैग पर प्रतिबंध लगा दिया और इस क्षेत्र में अफ्रीकी नेता बन गया।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0012"
       },
       {
-        "question": "Qu'है-ce que  'महाद्वीप का plastique' में l'महासागर Pacifique ?",
+        "question": "प्रशांत महासागर में 'प्लास्टिक महाद्वीप' क्या है?",
         "options": [
-          "एक zone का concentration का déchets plastiques",
-          "एक î artificielle",
-          "एक nouveau महाद्वीप découvert",
-          "एक plateforme pétrolière"
+          "प्लास्टिक कचरे के सांद्रण का क्षेत्र",
+          "एक कृत्रिम द्वीप",
+          "एक नये महाद्वीप की खोज हुई",
+          "एक तेल मंच"
         ],
-        "correctAnswer": "एक zone का concentration का déchets plastiques",
-        "explanation": " 'Great Pacific Garbage Patch' है एक zone का कई मिलियन किमी² का déchets plastiques flottants.",
-        "difficulty": "आसान",
-        "category": "पर्यावरण और पारिस्थितिकी",
-        "subcategory": "Pollution और Déchets"
+        "correctAnswer": "प्लास्टिक कचरे के सांद्रण का क्षेत्र",
+        "explanation": "'ग्रेट पैसिफिक गारबेज पैच' कई मिलियन वर्ग किलोमीटर तैरते प्लास्टिक कचरे का एक क्षेत्र है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0013"
       }
     ]
   }
