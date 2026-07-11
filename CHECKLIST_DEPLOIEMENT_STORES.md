@@ -1,7 +1,7 @@
 # 📋 CHECKLIST Déploiement Stores — Quizz4U
 
 **Dernière mise à jour**: 10 juillet 2026  
-**Version**: 2.0.6+11  
+**Version**: 2.0.7+12  
 **Package**: `com.quizz4u.app`
 
 ---
@@ -30,7 +30,7 @@ Les traductions ne sont **plus** des stubs : 500 questions × 6 langues validée
 | IAP unique : `EnhancedPurchaseService` → `premium_lifetime` | ✅ |
 | `POST_NOTIFICATIONS` (Android 13+) | ✅ |
 | AAB signé release | ✅ `flutter build appbundle --release` |
-| Version UI / pubspec / gradle | ✅ 2.0.6+11 |
+| Version UI / pubspec / gradle | ✅ 2.0.7+12 |
 
 ---
 
@@ -39,7 +39,7 @@ Les traductions ne sont **plus** des stubs : 500 questions × 6 langues validée
 - [ ] Coller short/full description FR + EN depuis `PLAY_STORE_DESCRIPTION.md`
 - [ ] Confirmer le produit `premium_lifetime` (achat unique)
 - [ ] Captures d'écran à jour
-- [ ] Notes de version 2.0.6 (ex. : +questions, 12 catégories, correctifs pubs/IAP)
+- [ ] Notes de version 2.0.7 (ex. : 500 questions, 12 catégories, mode révision, correctifs pubs/IAP)
 
 ---
 

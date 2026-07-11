@@ -1,6 +1,6 @@
 # 🎯 Quizz4u - Application de Quiz Multilingue
 
-[![Version](https://img.shields.io/badge/version-2.0.6-blue.svg)](https://github.com/santultimate/Quizz4u)
+[![Version](https://img.shields.io/badge/version-2.0.7-blue.svg)](https://github.com/santultimate/Quizz4u)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B.svg?logo=flutter)](https://flutter.dev)
 [![License](https://img.shields.io/badge/license-Educational-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-Production-ready-brightgreen.svg)](https://github.com/santultimate/Quizz4u)
@@ -9,7 +9,7 @@
 
 **Quizz4u** est une application de quiz éducatif moderne, interactive et multilingue. Elle propose **500 questions** réparties dans **12 catégories**, disponibles en **6 langues**.
 
-> 🚀 **Version 2.0.6+11** — prête pour Google Play Store
+> 🚀 **Version 2.0.7+12** — prête pour Google Play Store
 
 ### 🌍 Langues Supportées
 - 🇫🇷 **Français** (langue principale)
