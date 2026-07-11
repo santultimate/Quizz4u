@@ -75,6 +75,36 @@
         "category": "Technologie et Innovation",
         "subcategory": "Informatique et Programmation",
         "id": "technology_0004"
+      },
+      {
+        "question": "ما هي اللغة المستخدمة لتطوير تطبيقات Flutter مثل Quizz4U؟",
+        "options": [
+          "دارت",
+          "كوبول",
+          "فورتران",
+          "حَشد"
+        ],
+        "correctAnswer": "دارت",
+        "explanation": "يستخدم Flutter، وهو إطار عمل Google، لغة Dart لإنشاء تطبيقات مشتركة بين الأنظمة الأساسية.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0020"
+      },
+      {
+        "question": "ماذا تعني كلمة \"API\" في مجال تكنولوجيا المعلومات؟",
+        "options": [
+          "واجهة برمجة التطبيقات",
+          "مسرع المعالج الداخلي",
+          "تحليل بروتوكول الإنترنت",
+          "تطبيق خاص متكامل"
+        ],
+        "correctAnswer": "واجهة برمجة التطبيقات",
+        "explanation": "تتيح واجهة برمجة التطبيقات (API) للتطبيقات التواصل مع بعضها البعض.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0021"
       }
     ],
     "Intelligence Artificielle": [
@@ -122,6 +152,51 @@
         "category": "Technologie et Innovation",
         "subcategory": "Intelligence Artificielle",
         "id": "technology_0007"
+      },
+      {
+        "question": "ما هي الشركة التي أطلقت نموذج GPT-4 AI في عام 2023؟",
+        "options": [
+          "OpenAI",
+          "تفاحة",
+          "نوكيا",
+          "بلاك بيري"
+        ],
+        "correctAnswer": "OpenAI",
+        "explanation": "يعد GPT-4 أحد نماذج اللغات الأكثر تقدمًا في OpenAI.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0017"
+      },
+      {
+        "question": "ما هو \"المطالبة\" في الذكاء الاصطناعي؟",
+        "options": [
+          "تعليمات نصية تعطى لمنظمة العفو الدولية",
+          "فيروس كمبيوتر",
+          "كابل الشبكة",
+          "شاشة"
+        ],
+        "correctAnswer": "تعليمات نصية تعطى لمنظمة العفو الدولية",
+        "explanation": "المطالبة هي الطلب الذي يرسله المستخدم إلى نموذج الذكاء الاصطناعي التوليدي.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0018"
+      },
+      {
+        "question": "ما الخطر الذي يشكله الذكاء الاصطناعي التوليدي في حالة إساءة استخدامه؟",
+        "options": [
+          "التضليل والتزييف العميق",
+          "تحسين المناخ التلقائي",
+          "إزالة الكهرباء",
+          "لا مزيد من الكتب الورقية"
+        ],
+        "correctAnswer": "التضليل والتزييف العميق",
+        "explanation": "تعد التزييف العميق والمعلومات المضللة من التحديات الأخلاقية الكبرى في مجال الذكاء الاصطناعي.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0019"
       }
     ],
     "Innovations Tech Africaines": [
@@ -263,6 +338,280 @@
         "category": "Technologie et Innovation",
         "subcategory": "Histoire de la Tech",
         "id": "technology_0016"
+      }
+    ],
+    "Afrique Digitale": [
+      {
+        "question": "ما هي خدمة الاتصال عبر الأقمار الصناعية Elon Musk المنتشرة في إفريقيا؟",
+        "options": [
+          "ستارلينك",
+          "نيتفليكس",
+          "اوبر",
+          "إير بي إن بي"
+        ],
+        "correctAnswer": "ستارلينك",
+        "explanation": "يهدف Starlink إلى ربط المناطق الريفية الأفريقية عبر الأقمار الصناعية.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0022"
+      },
+      {
+        "question": "ما هو جيل شبكات الهاتف المحمول الذي ينجح في الجيل الرابع؟",
+        "options": [
+          "5G",
+          "2G",
+          "الجيل الثالث 3G فقط",
+          "خدمة الواي فاي فقط"
+        ],
+        "correctAnswer": "5G",
+        "explanation": "توفر تقنية 5G سرعات أعلى وزمن وصول أقل لتطبيقات الهاتف المحمول.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0023"
+      },
+      {
+        "question": "ما هي الممارسة التي تحمي حساباتك على الإنترنت بالإضافة إلى كلمات المرور؟",
+        "options": [
+          "المصادقة الثنائية (2FA)",
+          "مشاركة كلمة المرور الخاصة بك",
+          "استخدم \"123456\"",
+          "تعطيل القفل"
+        ],
+        "correctAnswer": "المصادقة الثنائية (2FA)",
+        "explanation": "تضيف تقنية 2FA طبقة أساسية من الأمان إلى الحسابات الرقمية.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "technology_0025",
+        "question": "ماذا يعني WWW؟",
+        "options": [
+          "World Wide Web",
+          "World Wide Wifi",
+          "Web World Wide",
+          "Wireless Web World"
+        ],
+        "correctAnswer": "World Wide Web",
+        "explanation": "WWW تعني الشبكة العنكبوتية العالمية.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0026",
+        "question": "أي لغة تُستخدم أساسًا لتنسيق صفحات الويب؟",
+        "options": [
+          "CSS",
+          "HTML",
+          "Python",
+          "SQL"
+        ],
+        "correctAnswer": "CSS",
+        "explanation": "CSS يتحكم في المظهر البصري.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0027",
+        "question": "ما هو الذكاء الاصطناعي؟",
+        "options": [
+          "الذكاء الاصطناعي",
+          "واجهة متقدمة",
+          "فهرس تلقائي",
+          "شبكة داخلية مفتوحة"
+        ],
+        "correctAnswer": "الذكاء الاصطناعي",
+        "explanation": "AI تعني الذكاء الاصطناعي.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0028",
+        "question": "أي بروتوكول يؤمّن الويب (رمز القفل)؟",
+        "options": [
+          "HTTPS",
+          "FTP",
+          "SMTP",
+          "HTTP فقط"
+        ],
+        "correctAnswer": "HTTPS",
+        "explanation": "HTTPS يشفّر حركة مرور الويب.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0029",
+        "question": "أي مكوّن يُعدّ دماغ الحاسوب؟",
+        "options": [
+          "المعالج (CPU)",
+          "الشاشة",
+          "لوحة المفاتيح",
+          "مكبر الصوت"
+        ],
+        "correctAnswer": "المعالج (CPU)",
+        "explanation": "المعالج ينفّذ التعليمات.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0030",
+        "question": "ماذا تخزّن ذاكرة RAM أساسًا؟",
+        "options": [
+          "بيانات مؤقتة قيد الاستخدام",
+          "صور فقط",
+          "ملفات النظام الدائمة فقط",
+          "لا شيء"
+        ],
+        "correctAnswer": "بيانات مؤقتة قيد الاستخدام",
+        "explanation": "RAM ذاكرة متطايرة سريعة.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0031",
+        "question": "أي شركة طوّرت نظام أندرويد بشكل أساسي؟",
+        "options": [
+          "Google",
+          "Apple",
+          "Microsoft",
+          "سامسونج وحدها"
+        ],
+        "correctAnswer": "Google",
+        "explanation": "أندرويد تطوّره أساسًا غوغل.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0032",
+        "question": "ما هو الخوارزمية؟",
+        "options": [
+          "سلسلة تعليمات لحل مشكلة",
+          "فيروس",
+          "كابل شبكة",
+          "شاشة لمس"
+        ],
+        "correctAnswer": "سلسلة تعليمات لحل مشكلة",
+        "explanation": "الخوارزمية تصف خطوات الحساب.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0033",
+        "question": "أي وحدة تقيس التخزين الرقمي؟",
+        "options": [
+          "بايت / غيغابايت",
+          "واط",
+          "نيوتن",
+          "باسكال"
+        ],
+        "correctAnswer": "بايت / غيغابايت",
+        "explanation": "تُقاس السعة بالبايت والكيلوبايت والميغابايت والغيغابايت.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0034",
+        "question": "ماذا يعني USB؟",
+        "options": [
+          "Universal Serial Bus",
+          "Ultra Speed Battery",
+          "United System Board",
+          "User Secure Backup"
+        ],
+        "correctAnswer": "Universal Serial Bus",
+        "explanation": "USB تعني الناقل التسلسلي العام.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0035",
+        "question": "أي شبكة اجتماعية أسّسها مارك زوكربيرغ؟",
+        "options": [
+          "Facebook",
+          "TikTok",
+          "X فقط",
+          "LinkedIn"
+        ],
+        "correctAnswer": "Facebook",
+        "explanation": "زوكربيرغ شارك في تأسيس فيسبوك.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0036",
+        "question": "ما هي الحوسبة السحابية؟",
+        "options": [
+          "خدمات حوسبة عبر الإنترنت",
+          "نوع من المناخ",
+          "كابل HDMI",
+          "طابعة"
+        ],
+        "correctAnswer": "خدمات حوسبة عبر الإنترنت",
+        "explanation": "السحابة توفّر تخزينًا وقدرة حسابية عن بُعد.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0037",
+        "question": "أي لغة تُهيكِل محتوى صفحة الويب؟",
+        "options": [
+          "HTML",
+          "Photoshop",
+          "Excel",
+          "PowerPoint"
+        ],
+        "correctAnswer": "HTML",
+        "explanation": "HTML يُهيكِل محتوى الويب.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0038",
+        "question": "ما هو خطأ البرمجة (bug)؟",
+        "options": [
+          "خطأ في برنامج",
+          "مضاد فيروسات",
+          "شاشة LED",
+          "كلمة مرور"
+        ],
+        "correctAnswer": "خطأ في برنامج",
+        "explanation": "البَغّ عيب برمجي.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0039",
+        "question": "أي تقنية تتيح الدفع بدون تلامس؟",
+        "options": [
+          "NFC",
+          "VGA",
+          "SCSI",
+          "CRT"
+        ],
+        "correctAnswer": "NFC",
+        "explanation": "NFC يتيح الدفع بالتقريب.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
       }
     ]
   }

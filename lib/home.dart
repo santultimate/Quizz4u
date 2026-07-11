@@ -8,6 +8,8 @@ import 'theme/app_spacing.dart';
 import 'widgets/haptic_button.dart';
 import 'widgets/page_transitions.dart';
 import 'services/translation_service.dart';
+import 'services/review_service.dart';
+import 'services/question_service_optimized.dart';
 import 'widgets/ad_banner_widget.dart';
 
 /// Écran d'accueil refondé avec animations et design moderne
@@ -27,9 +29,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late Animation<Offset> _slideAnimation;
   late Animation<double> _pulseAnimation;
 
+  int _questionCount = 0;
+  int _categoryCount = 12;
+
   @override
   void initState() {
     super.initState();
+    _loadContentStats();
 
     // Animation de fade in
     _fadeController = AnimationController(
@@ -75,6 +81,28 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _slideController.forward();
   }
 
+  Future<void> _loadContentStats() async {
+    try {
+      if (!QuestionServiceOptimized.isLoaded) {
+        await QuestionServiceOptimized.loadEssentialQuestions();
+      }
+      await QuestionServiceOptimized.waitForAllCategories(
+        timeout: const Duration(seconds: 8),
+      );
+      if (!mounted) return;
+      setState(() {
+        _questionCount = QuestionServiceOptimized.getTotalQuestionCount();
+        _categoryCount = QuestionServiceOptimized.categoryFiles.length;
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _questionCount = 500;
+        _categoryCount = 12;
+      });
+    }
+  }
+
   @override
   void dispose() {
     _fadeController.dispose();
@@ -103,7 +131,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               Padding(
                 padding: EdgeInsets.all(AppSpacing.md),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // Icône trophée (Records)
                     IconButton(
@@ -115,16 +142,22 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     ),
 
                     // Titre central
-                    Text(
-                      TranslationService.translate('welcome_quiz'),
-                      style: AppTextStyles.h4.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
+                    Expanded(
+                      child: Text(
+                        TranslationService.translate('welcome_quiz'),
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTextStyles.h4.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ),
 
                     // Icônes à droite
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         // Premium/Étoile
                         IconButton(
@@ -224,6 +257,41 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             },
                           ),
 
+                          AppSpacing.spaceM,
+
+                          // Mode révision
+                          HapticButton(
+                            text: TranslationService.translate('review_mode'),
+                            fullWidth: true,
+                            height: AppSpacing.buttonHeightL,
+                            icon: Icons.replay_rounded,
+                            type: ButtonType.info,
+                            onPressed: () async {
+                              final count = await ReviewService.getWrongCount();
+                              if (!context.mounted) return;
+                              if (count == 0) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      TranslationService.translate(
+                                          'no_review_questions'),
+                                    ),
+                                  ),
+                                );
+                                return;
+                              }
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const QuizScreen(
+                                    category: 'Révision',
+                                    isReviewMode: true,
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+
                           AppSpacing.spaceXL,
 
                           // Stats rapides
@@ -251,7 +319,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       value: TranslationService
                                           .translateWithParams(
                                               'questions_count_display',
-                                              {'count': '1000'}),
+                                              {
+                                                'count':
+                                                    '$_questionCount'
+                                              }),
                                     ),
                                   ),
                                   _buildVerticalDivider(),
@@ -263,7 +334,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       value: TranslationService
                                           .translateWithParams(
                                               'categories_count',
-                                              {'count': '10'}),
+                                              {'count': '$_categoryCount'}),
                                     ),
                                   ),
                                   _buildVerticalDivider(),

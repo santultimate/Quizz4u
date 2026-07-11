@@ -52,7 +52,7 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                   const Text(
-                    'Version 2.0.5',
+                    'Version 2.0.7',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.grey,
@@ -68,7 +68,7 @@ class AboutScreen extends StatelessWidget {
             _buildInfoSection(
               'Informations',
               [
-                _buildInfoTile('Version', '2.0.5', Icons.info),
+                _buildInfoTile('Version', '2.0.7', Icons.info),
                 _buildInfoTile('Développeur', 'YACOUBA SANTARA', Icons.person),
                 _buildInfoTile('Contact', 'support@quizz4u.com', Icons.email),
                 _buildInfoTile('Site web', 'quizz4u.site', Icons.web),

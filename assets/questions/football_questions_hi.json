@@ -329,6 +329,136 @@
       },
       "id": "football_0029",
       "correctAnswer": "हाथीदांत का किनारा"
+    },
+    {
+      "id": "football_0030",
+      "question": "How many players does a football team field?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "correctAnswer": "11",
+      "explanation": "Each team fields 11 players.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0031",
+      "question": "Which European club competition is the most prestigious?",
+      "options": [
+        "Champions League",
+        "Europa League",
+        "Conference League",
+        "Super Cup"
+      ],
+      "correctAnswer": "Champions League",
+      "explanation": "The Champions League is the most prestigious.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0032",
+      "question": "Which country won the 2018 World Cup?",
+      "options": [
+        "France",
+        "Croatia",
+        "Brazil",
+        "Germany"
+      ],
+      "correctAnswer": "France",
+      "explanation": "France beat Croatia in the 2018 final.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0033",
+      "question": "How long is a regulation football match?",
+      "options": [
+        "90 minutes",
+        "80 minutes",
+        "100 minutes",
+        "60 minutes"
+      ],
+      "correctAnswer": "90 minutes",
+      "explanation": "Two halves of 45 minutes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0034",
+      "question": "Which player is nicknamed “La Pulga”?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Mbappé"
+      ],
+      "correctAnswer": "Lionel Messi",
+      "explanation": "Messi is nicknamed La Pulga (the flea).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0035",
+      "question": "In which country is Wembley Stadium?",
+      "options": [
+        "England",
+        "Spain",
+        "Italy",
+        "Germany"
+      ],
+      "correctAnswer": "England",
+      "explanation": "Wembley is in London.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0036",
+      "question": "Which award goes to Ligue 1’s top scorer?",
+      "options": [
+        "Golden Boot / top scorer trophy",
+        "Ballon d'Or",
+        "Golden Boy",
+        "Puskás"
+      ],
+      "correctAnswer": "Golden Boot / top scorer trophy",
+      "explanation": "Ligue 1’s top scorer receives this trophy.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "football_0037",
+      "question": "How many AFCON titles has Cameroon won (as of 2024)?",
+      "options": [
+        "5",
+        "3",
+        "7",
+        "1"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Cameroon has 5 AFCON titles.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "football_0038",
+      "question": "Which Madrid club wears white?",
+      "options": [
+        "Real Madrid",
+        "Atlético Madrid",
+        "Sevilla FC",
+        "Valencia"
+      ],
+      "correctAnswer": "Real Madrid",
+      "explanation": "Real Madrid plays in white.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0039",
+      "question": "Who invented modern football according to English tradition?",
+      "options": [
+        "The English (Cambridge/FA rules)",
+        "Brazilians",
+        "Italians",
+        "Germans"
+      ],
+      "correctAnswer": "The English (Cambridge/FA rules)",
+      "explanation": "Modern rules come from 19th-century England.",
+      "difficulty": "medium"
     }
   ]
 }

@@ -24,15 +24,16 @@ class Logger {
     _log('🐛 DEBUG', tag, message, error, stackTrace);
   }
 
-  /// Log d'information (comportement normal)
+  /// Log d'information (debug uniquement en release)
   static void info(String tag, String message) {
-    if (!_enableInfoLogs) return;
+    if (!_enableInfoLogs || kReleaseMode) return;
     _log('ℹ️ INFO', tag, message);
   }
 
   /// Log d'avertissement (problème mineur)
   static void warning(String tag, String message, [Object? error]) {
     if (!_enableWarningLogs) return;
+    // Warnings visibles aussi en release (utiles pour diagnostics légers)
     _log('⚠️ WARNING', tag, message, error);
   }
 
@@ -43,9 +44,9 @@ class Logger {
     _log('❌ ERROR', tag, message, error, stackTrace);
   }
 
-  /// Log de succès (action réussie)
+  /// Log de succès (debug uniquement en release)
   static void success(String tag, String message) {
-    if (!_enableInfoLogs) return;
+    if (!_enableInfoLogs || kReleaseMode) return;
     _log('✅ SUCCESS', tag, message);
   }
 

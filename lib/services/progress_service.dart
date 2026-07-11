@@ -3,6 +3,7 @@ import 'cached_preferences_service.dart'; // ⚡ OPTIMISÉ
 import '../models/user_progress.dart';
 import 'badge_service.dart';
 import 'translation_service.dart';
+import 'premium_service.dart';
 
 class ProgressService {
   static const String _progressKey = 'user_progress';
@@ -98,6 +99,14 @@ class ProgressService {
       // Bonus XP basé sur le score (réduit)
       int scoreBonus = (score / 20).round(); // Réduit de 10 à 20
       xp += scoreBonus;
+
+      // Bonus premium réel (pas de features fantômes)
+      try {
+        final isPremium = await PremiumService.isPremiumUser();
+        if (isPremium) {
+          xp += 3;
+        }
+      } catch (_) {}
 
       // Bonus XP basé sur la difficulté
       if (difficulty == 'hard' || difficulty == 'difficile') {

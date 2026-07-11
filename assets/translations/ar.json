@@ -431,5 +431,14 @@
   "wrong_answers": "خاطئ",
   "xp_for_level": "نقاط الخبرة للمستوى",
   "yes": "✅ نعم",
-  "your_score": "نتيجتك"
+  "your_score": "نتيجتك",
+  "correct_answer": "إجابة صحيحة",
+  "wrong_answer": "إجابة خاطئة",
+  "review_mode": "وضع المراجعة",
+  "review_mode_desc": "أعد لعب الأسئلة التي أخطأت فيها",
+  "no_review_questions": "لا توجد أسئلة للمراجعة بعد. العب أولاً!",
+  "review_cleared": "تم مسح قائمة المراجعة",
+  "explanation": "شرح",
+  "benefit_xp_bonus": "⭐ مكافأة نقاط الخبرة على الإجابات الصحيحة",
+  "benefit_honest_stats": "📊 إحصائيات تقدم مفصلة"
 }

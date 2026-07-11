@@ -28,7 +28,6 @@ class QuestionServiceOptimized {
   static const List<String> _essentialCategories = [
     'Culture générale',
     'Sciences',
-    'Sports et Loisirs',
   ];
 
   // Définir les catégories et leurs fichiers
@@ -192,6 +191,7 @@ class QuestionServiceOptimized {
       }
 
       print('[QuestionServiceOpt] ✅ Toutes les catégories chargées');
+      _allCategoriesLoaded = true;
     });
   }
 
@@ -330,11 +330,45 @@ class QuestionServiceOptimized {
     }
   }
 
+  static bool _allCategoriesLoaded = false;
+
+  /// Attendre que toutes les catégories soient chargées (max [timeout]).
+  static Future<void> waitForAllCategories({
+    Duration timeout = const Duration(seconds: 15),
+  }) async {
+    if (_allCategoriesLoaded) return;
+
+    final deadline = DateTime.now().add(timeout);
+    while (!_allCategoriesLoaded && DateTime.now().isBefore(deadline)) {
+      await Future.delayed(const Duration(milliseconds: 100));
+    }
+  }
+
+  /// Garantir qu'une catégorie est prête avant le quiz (évite race condition).
+  static Future<void> ensureCategoryReady(String category) async {
+    await waitForAllCategories();
+
+    if (_allQuestions.containsKey(category) &&
+        _allQuestions[category]!.isNotEmpty) {
+      return;
+    }
+
+    final filePath = categoryFiles[category];
+    if (filePath == null) {
+      print('[QuestionServiceOpt] ⚠️ Catégorie inconnue: $category');
+      return;
+    }
+
+    await _loadCategory(category, filePath);
+  }
+
   /// Obtenir questions aléatoires pour une catégorie
+  /// [preferredDifficulty]: 'facile'|'moyen'|'difficile' (settings) ou null
   static List<QuestionModel> getRandomQuestionsForCategory(
     String category,
-    int count,
-  ) {
+    int count, {
+    String? preferredDifficulty,
+  }) {
     if (!_isLoaded || !_allQuestions.containsKey(category)) {
       print('[QuestionServiceOpt] ⚠️ Catégorie $category non chargée');
       return [];
@@ -356,7 +390,24 @@ class QuestionServiceOptimized {
     if (availableQuestions.length < count) {
       print('[QuestionServiceOpt] 🔄 Réinitialisation historique $category');
       _recentlyUsedQuestions[category]!.clear();
-      availableQuestions = allQuestionsInCategory;
+      availableQuestions = List<QuestionModel>.from(allQuestionsInCategory);
+    }
+
+    // Filtre difficulté (souple) : prioriser le niveau choisi, compléter sinon
+    if (preferredDifficulty != null && preferredDifficulty.isNotEmpty) {
+      final target = _normalizeDifficulty(preferredDifficulty);
+      final preferred = availableQuestions
+          .where((q) => _normalizeDifficulty(q.difficulty) == target)
+          .toList();
+      if (preferred.length >= count) {
+        availableQuestions = preferred;
+      } else if (preferred.isNotEmpty) {
+        final others = availableQuestions
+            .where((q) => _normalizeDifficulty(q.difficulty) != target)
+            .toList()
+          ..shuffle(Random());
+        availableQuestions = [...preferred, ...others];
+      }
     }
 
     // Mélanger et sélectionner
@@ -373,8 +424,38 @@ class QuestionServiceOptimized {
       }
     }
 
-    print('[QuestionServiceOpt] ✅ $questionsToSelect questions pour $category');
+    print('[QuestionServiceOpt] ✅ $questionsToSelect questions pour $category'
+        '${preferredDifficulty != null ? " (diff=$preferredDifficulty)" : ""}');
     return selectedQuestions;
+  }
+
+  static String _normalizeDifficulty(String? raw) {
+    final d = (raw ?? 'medium').toLowerCase().trim();
+    switch (d) {
+      case 'facile':
+      case 'easy':
+      case 'e':
+        return 'easy';
+      case 'difficile':
+      case 'hard':
+      case 'h':
+        return 'hard';
+      case 'moyen':
+      case 'medium':
+      case 'm':
+      default:
+        return 'medium';
+    }
+  }
+
+  /// Trouver une question par id dans une catégorie.
+  static QuestionModel? findQuestionById(String category, String id) {
+    final list = _allQuestions[category];
+    if (list == null) return null;
+    for (final q in list) {
+      if (q.id == id) return q;
+    }
+    return null;
   }
 
   /// Obtenir toutes les catégories disponibles
@@ -419,6 +500,7 @@ class QuestionServiceOptimized {
     // Réinitialiser l'état
     _isLoaded = false;
     _isLoadingInProgress = false;
+    _allCategoriesLoaded = false;
     _currentLanguage = newLanguage;
     _allQuestions.clear();
     _recentlyUsedQuestions.clear();

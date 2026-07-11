@@ -45,6 +45,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Maladies Tropicales",
         "id": "health_medicine_0002"
+      },
+      {
+        "question": "ما هو لقاح الملاريا الذي أوصت به منظمة الصحة العالمية في عام 2021؟",
+        "options": [
+          "آر تي إس، إس (موسكيريكس)",
+          "بي سي جي",
+          "معدل وفيات الأمهات",
+          "فيروس الورم الحليمي البشري"
+        ],
+        "correctAnswer": "آر تي إس، إس (موسكيريكس)",
+        "explanation": "ولقاح RTS,S هو أول لقاح ضد الملاريا توصي به منظمة الصحة العالمية لأفريقيا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0007"
+      },
+      {
+        "question": "ما هو المرض الفيروسي الذي تم إعلانه حالة طوارئ صحية عامة في 2022-2023 (جدري القرود)؟",
+        "options": [
+          "مبوكس (جدري القرود)",
+          "انفلونزا الطيور",
+          "غضب",
+          "كُزاز"
+        ],
+        "correctAnswer": "مبوكس (جدري القرود)",
+        "explanation": "شهدت Mpox انتعاشًا عالميًا في 2022-2023.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0008"
+      },
+      {
+        "question": "ما هي المنظمة التي تنسق الاستجابة الصحية العالمية؟",
+        "options": [
+          "منظمة الصحة العالمية (منظمة الصحة العالمية)",
+          "الناتو",
+          "الفيفا",
+          "اليونسكو"
+        ],
+        "correctAnswer": "منظمة الصحة العالمية (منظمة الصحة العالمية)",
+        "explanation": "وتقود منظمة الصحة العالمية، ومقرها جنيف، التنسيق الصحي الدولي.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0009"
       }
     ],
     "Médecine Traditionnelle Africaine": [
@@ -77,6 +122,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Médecine Traditionnelle Africaine",
         "id": "health_medicine_0004"
+      },
+      {
+        "question": "ما هو النبات الأفريقي الذي تتم دراسته لخصائصه المضادة للملاريا؟",
+        "options": [
+          "شيح سنوي",
+          "صبار",
+          "الخيزران",
+          "لافندر"
+        ],
+        "correctAnswer": "شيح سنوي",
+        "explanation": "يستخدم الشيح في العديد من البلدان الأفريقية في مكافحة الملاريا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0010"
+      },
+      {
+        "question": "ما هي الشجرة التي تنتج زبدة الشيا المستخدمة في مستحضرات التجميل والتغذية؟",
+        "options": [
+          "فيتيلاريا بارادوكسا (الشيا)",
+          "باوباب",
+          "أكاسيا",
+          "الأوكالبتوس"
+        ],
+        "correctAnswer": "فيتيلاريا بارادوكسا (الشيا)",
+        "explanation": "الشيا هو منتج تصدير رئيسي من غرب أفريقيا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0011"
+      },
+      {
+        "question": "ما هو النبات الذي يطلق عليه \"الشجرة المعجزة\" لقيمته الغذائية العالية؟",
+        "options": [
+          "المورينغا أوليفيرا",
+          "صبار",
+          "الخيزران",
+          "اللبلاب"
+        ],
+        "correctAnswer": "المورينغا أوليفيرا",
+        "explanation": "المورينجا غنية بالفيتامينات والمعادن والبروتينات.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0012"
       }
     ],
     "Nutrition et Santé": [
@@ -109,6 +199,417 @@
         "category": "Santé et Médecine",
         "subcategory": "Nutrition et Santé",
         "id": "health_medicine_0006"
+      },
+      {
+        "question": "ما هو النقص الغذائي الأكثر انتشارا بين الأطفال الأفارقة؟",
+        "options": [
+          "نقص الحديد (فقر الدم)",
+          "فيتامين سي الزائد",
+          "البروتين الزائد",
+          "نقص الملح"
+        ],
+        "correctAnswer": "نقص الحديد (فقر الدم)",
+        "explanation": "ويؤثر فقر الدم الناجم عن نقص الحديد على ملايين الأطفال في أفريقيا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0013"
+      },
+      {
+        "question": "ما هو عدد حصص الفاكهة والخضروات التي توصي بها منظمة الصحة العالمية يومياً؟",
+        "options": [
+          "ما لا يقل عن 5 حصص",
+          "1 حصة",
+          "10 حصص",
+          "لا أحد"
+        ],
+        "correctAnswer": "ما لا يقل عن 5 حصص",
+        "explanation": "توصي منظمة الصحة العالمية بتناول ما لا يقل عن 400 جرام من الفاكهة والخضروات يوميًا.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0014"
+      },
+      {
+        "question": "ما هي العناصر الغذائية الضرورية لصحة العظام والتي تأتي من الشمس؟",
+        "options": [
+          "فيتامين د",
+          "فيتامين ج",
+          "حديد",
+          "اليود"
+        ],
+        "correctAnswer": "فيتامين د",
+        "explanation": "يتم تصنيع فيتامين د عن طريق الجلد تحت تأثير الشمس.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0015"
+      }
+    ],
+    "Santé Publique Moderne": [
+      {
+        "question": "ما هي الحملة العالمية التي وزعت لقاحات كوفيد-19 على البلدان النامية؟",
+        "options": [
+          "كوفاكس",
+          "الناتو",
+          "اليونسكو",
+          "الفيفا"
+        ],
+        "correctAnswer": "كوفاكس",
+        "explanation": "ويهدف كوفاكس إلى الوصول العادل إلى لقاحات كوفيد-19 لجميع البلدان.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0016"
+      },
+      {
+        "question": "ما هو المكتب الإقليمي لمنظمة الصحة العالمية الذي يغطي أفريقيا؟",
+        "options": [
+          "برازافيل (الكونغو)",
+          "باريس",
+          "نيويورك",
+          "طوكيو"
+        ],
+        "correctAnswer": "برازافيل (الكونغو)",
+        "explanation": "يقع مكتب منظمة الصحة العالمية الإقليمي لأفريقيا في برازافيل.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0017"
+      },
+      {
+        "question": "ما هي الممارسة البسيطة التي تقلل من خطر انتقال الأمراض المعدية بنسبة 50%؟",
+        "options": [
+          "اغسل يديك",
+          "ارتداء الأحذية",
+          "اشرب القهوة",
+          "مشاهدة التلفزيون"
+        ],
+        "correctAnswer": "اغسل يديك",
+        "explanation": "يعد غسل اليدين بالماء والصابون أحد أكثر الإجراءات الوقائية فعالية.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0018"
+      },
+      {
+        "question": "ما هي المشكلة العالمية التي تجعل المضادات الحيوية أقل فعالية؟",
+        "options": [
+          "مقاومة المضادات الحيوية",
+          "الفيتامينات الزائدة",
+          "نقص الملح",
+          "الكثير من النوم"
+        ],
+        "correctAnswer": "مقاومة المضادات الحيوية",
+        "explanation": "تعتبر مقاومة مضادات الميكروبات حالة طوارئ صحية عالمية وفقًا لمنظمة الصحة العالمية.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0019"
+      },
+      {
+        "question": "ما هي التكنولوجيا التي تتيح الاستشارات الطبية عن بعد؟",
+        "options": [
+          "التطبيب عن بعد",
+          "التخاطر",
+          "الهولوجرام فقط",
+          "فاكس طبي"
+        ],
+        "correctAnswer": "التطبيب عن بعد",
+        "explanation": "تطور التطبيب عن بعد بسرعة في أفريقيا منذ عام 2020.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0020"
+      }
+    ],
+    "Prévention et Bien-être": [
+      {
+        "question": "كم عدد ساعات النوم التي توصي بها منظمة الصحة العالمية للبالغين في الليلة الواحدة؟",
+        "options": [
+          "7 إلى 9 ساعات",
+          "3 إلى 4 ساعات",
+          "12 ساعة",
+          "5 ساعات كحد أقصى"
+        ],
+        "correctAnswer": "7 إلى 9 ساعات",
+        "explanation": "النوم الكافي ضروري للصحة الجسدية والعقلية.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0021"
+      },
+      {
+        "question": "ما مقدار النشاط البدني الذي توصي به منظمة الصحة العالمية للبالغين في الأسبوع؟",
+        "options": [
+          "150 دقيقة من النشاط المعتدل",
+          "10 دقائق",
+          "500 دقيقة مكثفة",
+          "لا أحد"
+        ],
+        "correctAnswer": "150 دقيقة من النشاط المعتدل",
+        "explanation": "150 دقيقة من النشاط المعتدل أسبوعياً يقلل من خطر الإصابة بالأمراض المزمنة.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0022"
+      },
+      {
+        "question": "ما هو العضو الذي يقوم بتصفية الدم وينتج البول؟",
+        "options": [
+          "الكلى",
+          "الكبد",
+          "الطحال",
+          "المعدة"
+        ],
+        "correctAnswer": "الكلى",
+        "explanation": "تقوم الكلى بتصفية الفضلات من الدم وتنظيم توازن السوائل.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0023"
+      },
+      {
+        "question": "ما هي الأمراض المزمنة المرتبطة بارتفاع نسبة السكر في الدم؟",
+        "options": [
+          "السكري",
+          "صداع نصفي",
+          "زُكام",
+          "الحساسية الموسمية"
+        ],
+        "correctAnswer": "السكري",
+        "explanation": "يؤثر مرض السكري على المزيد والمزيد من الناس في المناطق الحضرية في أفريقيا.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "health_medicine_0025",
+        "question": "أي عضو يضخ الدم في أنحاء الجسم؟",
+        "options": [
+          "القلب",
+          "الكبد",
+          "الطحال",
+          "المعدة"
+        ],
+        "correctAnswer": "القلب",
+        "explanation": "القلب عضلة تدفع الدورة الدموية.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0026",
+        "question": "بأي وحدة تُقاس ضغط الدم؟",
+        "options": [
+          "ملم زئبق",
+          "°م",
+          "نبضة/دقيقة فقط",
+          "كغ"
+        ],
+        "correctAnswer": "ملم زئبق",
+        "explanation": "يُعبَّر عن الضغط بالمليمتر الزئبقي.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0027",
+        "question": "أي فيتامين يساعد خاصة على الرؤية الليلية؟",
+        "options": [
+          "فيتامين A",
+          "فيتامين K",
+          "فيتامين B12",
+          "فيتامين D"
+        ],
+        "correctAnswer": "فيتامين A",
+        "explanation": "فيتامين A أساسي للشبكية والرؤية.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0028",
+        "question": "ماذا يعني مؤشر كتلة الجسم (IMC)؟",
+        "options": [
+          "مؤشر كتلة الجسم",
+          "عدوى ميكروبية مزمنة",
+          "تصوير قلبي طبي",
+          "مناعة خلوية قصوى"
+        ],
+        "correctAnswer": "مؤشر كتلة الجسم",
+        "explanation": "يربط المؤشر الوزن بالطول.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0029",
+        "question": "أي إجراء إسعافي يُنصح به عند اختناق البالغ؟",
+        "options": [
+          "مناورة هايمليش",
+          "إنعاش قلبي فقط",
+          "أسبرين",
+          "إبقاء الرأس للأسفل طويلًا"
+        ],
+        "correctAnswer": "مناورة هايمليش",
+        "explanation": "تساعد على فتح مجرى التنفس.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0030",
+        "question": "أي مرض تنقله أساسًا القراد المصاب؟",
+        "options": [
+          "داء لايم",
+          "الإنفلونزا",
+          "الحصبة",
+          "الجدري المائي"
+        ],
+        "correctAnswer": "داء لايم",
+        "explanation": "يمكن للقراد نقل بكتيريا داء لايم.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0031",
+        "question": "أي معدن ضروري لنقل الأكسجين في الدم؟",
+        "options": [
+          "الحديد",
+          "الصوديوم",
+          "الكلور",
+          "اليود"
+        ],
+        "correctAnswer": "الحديد",
+        "explanation": "الحديد جزء من الهيموغلوبين.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0032",
+        "question": "كم حجرة في القلب البشري الطبيعي؟",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "6"
+        ],
+        "correctAnswer": "4",
+        "explanation": "أذينان وبطينان.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0033",
+        "question": "أي غدة تنتج الإنسولين؟",
+        "options": [
+          "البنكرياس",
+          "الغدة الدرقية",
+          "الغدتان الكظريتان",
+          "الغدة النخامية"
+        ],
+        "correctAnswer": "البنكرياس",
+        "explanation": "الإنسولين ينظم سكر الدم.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0034",
+        "question": "أي نوع من الجراثيم توقفه معظم المضادات الحيوية؟",
+        "options": [
+          "البكتيريا",
+          "الفيروسات",
+          "البريونات فقط",
+          "الفطريات دائمًا"
+        ],
+        "correctAnswer": "البكتيريا",
+        "explanation": "المضادات الحيوية تستهدف البكتيريا لا الفيروسات.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0035",
+        "question": "أي عادة تقلل بقوة خطر تسوس الأسنان؟",
+        "options": [
+          "تنظيف الأسنان بانتظام",
+          "تجنب كل الماء",
+          "عدم المضغ أبدًا",
+          "شرب المشروبات الغازية فقط"
+        ],
+        "correctAnswer": "تنظيف الأسنان بانتظام",
+        "explanation": "نظافة الفم تقي من التسوس.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0036",
+        "question": "أي عضو يتأثر أساسًا بتليف الكبد؟",
+        "options": [
+          "الكبد",
+          "الرئة",
+          "الجلد",
+          "الأذن"
+        ],
+        "correctAnswer": "الكبد",
+        "explanation": "التليف مرض كبدي مزمن.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0037",
+        "question": "ما درجة حرارة الجسم الطبيعية التقريبية؟",
+        "options": [
+          "37 °م",
+          "32 °م",
+          "42 °م",
+          "28 °م"
+        ],
+        "correctAnswer": "37 °م",
+        "explanation": "تدور حول 37 درجة مئوية.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0038",
+        "question": "أي فحص يستخدم الأشعة السينية لرؤية العظام؟",
+        "options": [
+          "التصوير الشعاعي",
+          "الموجات فوق الصوتية فقط",
+          "تخطيط القلب",
+          "قياس التنفس"
+        ],
+        "correctAnswer": "التصوير الشعاعي",
+        "explanation": "يُظهر خاصة البنى العظمية.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0039",
+        "question": "أي حدث قلبي وعائي هو انقطاع مفاجئ لتدفق الدم إلى الدماغ؟",
+        "options": [
+          "سكتة دماغية",
+          "الربو",
+          "فقر دم بنقص الحديد",
+          "التهاب الأذن"
+        ],
+        "correctAnswer": "سكتة دماغية",
+        "explanation": "تحدث عند انقطاع تدفق الدم إلى الدماغ.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
       }
     ]
   }

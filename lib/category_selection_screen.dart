@@ -160,25 +160,6 @@ class _CategorySelectionScreenState extends State<CategorySelectionScreen>
               TranslationService.translate('environment_description'),
           "difficulty": TranslationService.translate('medium'),
         },
-        {
-          "title": "Questions Expert",
-          "translatedTitle":
-              QuestionTranslationService.translateCategory("Questions Expert"),
-          "icon": Icons.psychology_rounded,
-          "color": AppColors.warning,
-          "description":
-              "Défiez-vous avec des questions avancées et spécialisées.",
-          "difficulty": "Très Difficile",
-        },
-        {
-          "title": "Questions Spécialisées",
-          "translatedTitle": QuestionTranslationService.translateCategory(
-              "Questions Spécialisées"),
-          "icon": Icons.star_rounded,
-          "color": AppColors.accent,
-          "description": "Questions pointues sur des sujets spécifiques.",
-          "difficulty": "Expert",
-        },
       ];
     });
 

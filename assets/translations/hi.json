@@ -431,5 +431,14 @@
   "wrong_answers": "गलत",
   "xp_for_level": "स्तर के लिए XP",
   "yes": "✅ हां",
-  "your_score": "आपका स्कोर"
+  "your_score": "आपका स्कोर",
+  "correct_answer": "सही उत्तर",
+  "wrong_answer": "गलत उत्तर",
+  "review_mode": "रिवीजन मोड",
+  "review_mode_desc": "गलत प्रश्नों को दोबारा खेलें",
+  "no_review_questions": "अभी रिवीजन के लिए कोई प्रश्न नहीं। पहले क्विज़ खेलें!",
+  "review_cleared": "रिवीजन सूची साफ़ की गई",
+  "explanation": "व्याख्या",
+  "benefit_xp_bonus": "⭐ सही उत्तरों पर XP बोनस",
+  "benefit_honest_stats": "📊 विस्तृत प्रगति आँकड़े"
 }

@@ -431,5 +431,14 @@
   "wrong_answers": "错误",
   "xp_for_level": "级别经验值",
   "yes": "✅ 是",
-  "your_score": "你的分数"
+  "your_score": "你的分数",
+  "correct_answer": "正确答案",
+  "wrong_answer": "错误答案",
+  "review_mode": "复习模式",
+  "review_mode_desc": "重做答错的题目",
+  "no_review_questions": "暂无需要复习的题目。请先进行一次测验！",
+  "review_cleared": "复习列表已清空",
+  "explanation": "解释",
+  "benefit_xp_bonus": "⭐ 答对可获得额外经验值",
+  "benefit_honest_stats": "📊 详细进度统计"
 }

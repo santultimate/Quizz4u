@@ -299,6 +299,136 @@
         "L'Égypte": false
       },
       "id": "football_0029"
+    },
+    {
+      "id": "football_0030",
+      "question": "Combien de joueurs une équipe de football aligne-t-elle sur le terrain ?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "correctAnswer": "11",
+      "explanation": "Chaque équipe aligne 11 joueurs.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0031",
+      "question": "Quelle compétition européenne de clubs est la plus prestigieuse ?",
+      "options": [
+        "Ligue des champions",
+        "Ligue Europa",
+        "Conference League",
+        "Supercoupe"
+      ],
+      "correctAnswer": "Ligue des champions",
+      "explanation": "La Ligue des champions est la plus prestigieuse.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0032",
+      "question": "Quel pays a remporté la Coupe du monde 2018 ?",
+      "options": [
+        "France",
+        "Croatie",
+        "Brésil",
+        "Allemagne"
+      ],
+      "correctAnswer": "France",
+      "explanation": "La France a battu la Croatie en finale 2018.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0033",
+      "question": "Combien de temps dure un match de football réglementaire ?",
+      "options": [
+        "90 minutes",
+        "80 minutes",
+        "100 minutes",
+        "60 minutes"
+      ],
+      "correctAnswer": "90 minutes",
+      "explanation": "Deux mi-temps de 45 minutes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0034",
+      "question": "Quel joueur est surnommé « La Pulga » ?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Neymar",
+        "Mbappé"
+      ],
+      "correctAnswer": "Lionel Messi",
+      "explanation": "Messi est surnommé La Pulga (la puce).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0035",
+      "question": "Dans quel pays se trouve le stade de Wembley ?",
+      "options": [
+        "Angleterre",
+        "Espagne",
+        "Italie",
+        "Allemagne"
+      ],
+      "correctAnswer": "Angleterre",
+      "explanation": "Wembley est à Londres.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "football_0036",
+      "question": "Quel trophée récompense le meilleur buteur de Ligue 1 ?",
+      "options": [
+        "Soulier d'or / Trophée du meilleur buteur",
+        "Ballon d'Or",
+        "Golden Boy",
+        "Puskás"
+      ],
+      "correctAnswer": "Soulier d'or / Trophée du meilleur buteur",
+      "explanation": "Le meilleur buteur de Ligue 1 reçoit ce trophée.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "football_0037",
+      "question": "Combien de Coupes d'Afrique des Nations le Cameroun a-t-il remportées (jusqu'en 2024) ?",
+      "options": [
+        "5",
+        "3",
+        "7",
+        "1"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Le Cameroun compte 5 titres de CAN.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "football_0038",
+      "question": "Quel club madrilène porte le maillot blanc ?",
+      "options": [
+        "Real Madrid",
+        "Atlético Madrid",
+        "Séville FC",
+        "Valence"
+      ],
+      "correctAnswer": "Real Madrid",
+      "explanation": "Le Real Madrid joue en blanc.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "football_0039",
+      "question": "Qui a inventé le football moderne selon la tradition anglaise ?",
+      "options": [
+        "Les Anglais (règles de Cambridge/FA)",
+        "Les Brésiliens",
+        "Les Italiens",
+        "Les Allemands"
+      ],
+      "correctAnswer": "Les Anglais (règles de Cambridge/FA)",
+      "explanation": "Les règles modernes viennent d'Angleterre au XIXe siècle.",
+      "difficulty": "medium"
     }
   ]
 }

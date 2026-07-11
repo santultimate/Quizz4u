@@ -141,15 +141,16 @@
       "correctAnswer": "la piel"
     },
     {
-      "question": "¿En qué continente está el Estado de Palestina?",
+      "question": "¿Qué mar separa África de la Península Arábiga?",
       "answers": {
-        "Asia": true,
-        "África": false,
-        "Europa": false,
-        "América": false
+        "El Mar Rojo": true,
+        "El mar Mediterráneo": false,
+        "El mar Caspio": false,
+        "El Mar Báltico": false
       },
-      "correctAnswer": "Asia",
-      "id": "culture_0010"
+      "correctAnswer": "El Mar Rojo",
+      "id": "culture_0010",
+      "explanation": "El Mar Rojo conecta el Océano Índico con el Canal de Suez."
     },
     {
       "question": "¿Cuál es la ciudad más grande del continente europeo?",
@@ -207,7 +208,7 @@
       "id": "culture_0015"
     },
     {
-      "question": "¿Qué país se llama la tierra de los conejos?",
+      "question": "¿Qué país europeo es famoso por la paella y el flamenco?",
       "answers": {
         "España": true,
         "Portugal": false,
@@ -215,7 +216,8 @@
         "Francia": false
       },
       "correctAnswer": "España",
-      "id": "culture_0016"
+      "id": "culture_0016",
+      "explanation": "España es conocida por su rica cultura, incluida la paella y el flamenco."
     },
     {
       "question": "¿Cuál es la montaña más alta del continente africano?",

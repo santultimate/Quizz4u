@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import '../services/ad_policy.dart';
 import '../services/ad_service.dart';
-import '../services/premium_service.dart';
-import '../services/settings_service.dart';
 
 /// Widget réutilisable pour afficher des bannières publicitaires
 /// Usage: AdBannerWidget(placement: 'home')
@@ -39,14 +38,12 @@ class _AdBannerWidgetState extends State<AdBannerWidget> {
   }
 
   Future<void> _initAd() async {
-    final isPremium = await PremiumService.isPremiumUser();
-    final adsEnabled = await SettingsService.isAdsEnabled();
+    final allowed = await AdPolicy.canShow(AdFormat.banner);
 
     if (!mounted) return;
 
-    if (isPremium || !adsEnabled) {
-      print(
-          '[AdBannerWidget-${widget.placement}] 🚫 Masquée (premium=$isPremium, ads=$adsEnabled)');
+    if (!allowed) {
+      print('[AdBannerWidget-${widget.placement}] 🚫 Masquée (AdPolicy)');
       setState(() {
         _isLoading = false;
         _shouldShow = false;

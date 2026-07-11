@@ -45,6 +45,291 @@
         "category": "Arts et Culture",
         "subcategory": "Littérature Africaine",
         "id": "arts_culture_0002"
+      },
+      {
+        "question": "哪位尼日利亚作家在她的文章中普及了“非洲女权主义”一词？",
+        "options": [
+          "奇马曼达·恩戈齐·阿迪奇",
+          "布奇·埃梅切塔",
+          "齐齐·丹加伦布加",
+          "Ngũgĩ wa Thiong’o"
+        ],
+        "correctAnswer": "奇马曼达·恩戈齐·阿迪奇",
+        "explanation": "奇玛曼达·恩戈齐·阿迪奇 (Chimamanda Ngozi Adichie) 是当代非洲文学的主要代言人。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0006"
+      },
+      {
+        "question": "奇努阿·阿切贝的哪部小说被认为是非洲文学的经典？",
+        "options": [
+          "世界正在分崩离析",
+          "这么长的信",
+          "萨赫勒",
+          "暧昧的冒险"
+        ],
+        "correctAnswer": "世界正在分崩离析",
+        "explanation": "《Things Fall Apart》（1958）被翻译成法语，标题为“Le monde s’colfe”。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0007"
+      },
+      {
+        "question": "每年哪个国际文学奖奖励法语作家？",
+        "options": [
+          "龚古尔奖",
+          "布克奖",
+          "普利策奖",
+          "诺贝尔和平奖"
+        ],
+        "correctAnswer": "龚古尔奖",
+        "explanation": "龚古尔奖是最负盛名的法语文学奖项之一。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0008"
+      },
+      {
+        "question": "哪位塞内加尔诗人共同创立了黑人运动？",
+        "options": [
+          "利奥波德·塞达尔·桑戈尔",
+          "大卫·迪奥普",
+          "比拉戈·迪奥普",
+          "谢赫·哈米杜·凯恩"
+        ],
+        "correctAnswer": "利奥波德·塞达尔·桑戈尔",
+        "explanation": "桑戈尔、塞泽尔和达马斯是 Négritude 的创始人。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0009"
+      },
+      {
+        "id": "arts_culture_0025",
+        "question": "哪位西班牙画家与布拉克共同创立了立体主义？",
+        "options": [
+          "巴勃罗·毕加索",
+          "萨尔瓦多·达利",
+          "弗朗西斯科·戈雅",
+          "胡安·米罗"
+        ],
+        "correctAnswer": "巴勃罗·毕加索",
+        "explanation": "毕加索与布拉克在20世纪初发展了立体主义。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0026",
+        "question": "巴黎哪座博物馆收藏《蒙娜丽莎》？",
+        "options": [
+          "卢浮宫",
+          "奥赛博物馆",
+          "蓬皮杜中心",
+          "大皇宫"
+        ],
+        "correctAnswer": "卢浮宫",
+        "explanation": "达·芬奇的《蒙娜丽莎》展出于卢浮宫。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0027",
+        "question": "谁创作了《四季》？",
+        "options": [
+          "维瓦尔第",
+          "莫扎特",
+          "巴赫",
+          "贝多芬"
+        ],
+        "correctAnswer": "维瓦尔第",
+        "explanation": "安东尼奥·维瓦尔第创作了《四季》。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0028",
+        "question": "谁写了《悲惨世界》？",
+        "options": [
+          "维克多·雨果",
+          "埃米尔·左拉",
+          "巴尔扎克",
+          "福楼拜"
+        ],
+        "correctAnswer": "维克多·雨果",
+        "explanation": "《悲惨世界》（1862）是雨果的小说。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0029",
+        "question": "埃及金字塔属于哪种建筑风格？",
+        "options": [
+          "古代纪念性建筑",
+          "哥特式",
+          "巴洛克",
+          "新艺术"
+        ],
+        "correctAnswer": "古代纪念性建筑",
+        "explanation": "金字塔是古埃及的纪念性建筑。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0030",
+        "question": "哪个电影节每年在戛纳举行？",
+        "options": [
+          "戛纳电影节",
+          "柏林电影节",
+          "威尼斯电影节",
+          "圣丹斯"
+        ],
+        "correctAnswer": "戛纳电影节",
+        "explanation": "戛纳是世界上最负盛名的电影节之一。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0031",
+        "question": "哪种舞蹈起源于阿根廷？",
+        "options": [
+          "探戈",
+          "桑巴",
+          "弗拉门戈",
+          "华尔兹"
+        ],
+        "correctAnswer": "探戈",
+        "explanation": "探戈起源于布宜诺斯艾利斯/蒙得维的亚。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0032",
+        "question": "谁雕塑了《思想者》？",
+        "options": [
+          "奥古斯特·罗丹",
+          "米开朗基罗",
+          "多纳泰罗",
+          "贝尔尼尼"
+        ],
+        "correctAnswer": "奥古斯特·罗丹",
+        "explanation": "《思想者》是罗丹的雕塑作品。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0033",
+        "question": "马里哪种工艺以泥染布闻名？",
+        "options": [
+          "博戈兰工匠",
+          "毕加索",
+          "巴斯奎特",
+          "沃霍尔"
+        ],
+        "correctAnswer": "博戈兰工匠",
+        "explanation": "博戈兰是马里传统染色布艺。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0034",
+        "question": "达·芬奇哪幅作品描绘了圣经中的晚餐？",
+        "options": [
+          "最后的晚餐",
+          "蒙娜丽莎",
+          "施洗约翰",
+          "岩间圣母"
+        ],
+        "correctAnswer": "最后的晚餐",
+        "explanation": "《最后的晚餐》描绘了基督的最后一餐。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0035",
+        "question": "克劳德·莫奈与哪个艺术运动相关？",
+        "options": [
+          "印象派",
+          "超现实主义",
+          "立体主义",
+          "表现主义"
+        ],
+        "correctAnswer": "印象派",
+        "explanation": "莫奈是印象派的重要人物。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0036",
+        "question": "西非科拉音乐的核心乐器是？",
+        "options": [
+          "科拉琴",
+          "钢琴",
+          "小号",
+          "萨克斯"
+        ],
+        "correctAnswer": "科拉琴",
+        "explanation": "科拉是西非的竖琴鲁特琴。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0037",
+        "question": "谁写了《罗密欧与朱丽叶》？",
+        "options": [
+          "威廉·莎士比亚",
+          "莫里哀",
+          "但丁",
+          "塞万提斯"
+        ],
+        "correctAnswer": "威廉·莎士比亚",
+        "explanation": "《罗密欧与朱丽叶》是莎士比亚的悲剧。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0038",
+        "question": "纽约哪座博物馆以现代艺术闻名？",
+        "options": [
+          "MoMA",
+          "卢浮宫",
+          "普拉多",
+          "艾尔米塔什"
+        ],
+        "correctAnswer": "MoMA",
+        "explanation": "现代艺术博物馆（MoMA）位于纽约。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0039",
+        "question": "毕加索蓝色时期以哪种颜色为主？",
+        "options": [
+          "蓝色",
+          "红色",
+          "黄色",
+          "绿色"
+        ],
+        "correctAnswer": "蓝色",
+        "explanation": "蓝色时期主要使用蓝色调。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
       }
     ],
     "Cinéma Africain": [
@@ -77,6 +362,66 @@
         "category": "Arts et Culture",
         "subcategory": "Cinéma Africain",
         "id": "arts_culture_0004"
+      },
+      {
+        "question": "Abderrahmane Sissako 的哪部电影获得 2015 年奥斯卡提名？",
+        "options": [
+          "廷巴克图",
+          "黑豹",
+          "措齐",
+          "生活是美好的"
+        ],
+        "correctAnswer": "廷巴克图",
+        "explanation": "阿卜杜拉赫曼·西萨科的《廷巴克图》获得奥斯卡最佳外语片提名。",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0010"
+      },
+      {
+        "question": "哪个非洲电影业每年生产的电影最多？",
+        "options": [
+          "诺莱坞（尼日利亚）",
+          "南非电影",
+          "埃及电影",
+          "摩洛哥电影"
+        ],
+        "correctAnswer": "诺莱坞（尼日利亚）",
+        "explanation": "诺莱坞是世界上最多产的电影产业之一。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0011"
+      },
+      {
+        "question": "哪位马里导演荣获 1987 年戛纳电影节大奖？",
+        "options": [
+          "苏莱曼·西塞",
+          "奥斯曼·森贝内",
+          "吉布里尔·迪奥普·曼贝蒂",
+          "阿卜杜拉赫曼·西萨科"
+        ],
+        "correctAnswer": "苏莱曼·西塞",
+        "explanation": "苏莱曼·西塞 (Souleymane Cissé) 于 1987 年凭借《Yeelen》荣获大奖。",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0012"
+      },
+      {
+        "question": "2020年以来哪个流媒体平台大力发展非洲剧集？",
+        "options": [
+          "Netflix",
+          "我的空间",
+          "维梅奥",
+          "每日运动"
+        ],
+        "correctAnswer": "Netflix",
+        "explanation": "Netflix 投资了《血与水》和《Aníkúlápó》等非洲原创作品。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0013"
       }
     ],
     "Art Contemporain": [
@@ -94,6 +439,175 @@
         "category": "Arts et Culture",
         "subcategory": "Art Contemporain",
         "id": "arts_culture_0005"
+      },
+      {
+        "question": "哪位贝宁艺术家在布朗利码头博物馆展出了具有象征意义的雕塑？",
+        "options": [
+          "罗穆尔德·哈祖梅",
+          "埃尔阿纳苏伊",
+          "易卜拉欣·萨拉希",
+          "威廉·肯特里奇"
+        ],
+        "correctAnswer": "罗穆尔德·哈祖梅",
+        "explanation": "Romuald Hazoumè 使用回收材料来质疑当代社会。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0014"
+      },
+      {
+        "question": "哪个非洲艺术双年展在达喀尔举办？",
+        "options": [
+          "达克艺术",
+          "威尼斯",
+          "卡塞尔文献展",
+          "里昂双年展"
+        ],
+        "correctAnswer": "达克艺术",
+        "explanation": "Dak'Art 是当代非洲艺术双年展，创建于 1990 年。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0015"
+      },
+      {
+        "question": "哪位塞内加尔摄影师因其在达喀尔的工作室肖像而闻名？",
+        "options": [
+          "奥马尔·维克多·迪奥普",
+          "马利克·西迪贝",
+          "赛杜·凯塔",
+          "詹姆斯·巴诺"
+        ],
+        "correctAnswer": "赛杜·凯塔",
+        "explanation": "Seydou Keïta 因其在巴马科和达喀尔拍摄的黑白肖像而闻名于世。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0016"
+      }
+    ],
+    "Musique Africaine Moderne": [
+      {
+        "question": "哪种尼日利亚音乐流派在 2020 年代经历了全球爆发？",
+        "options": [
+          "非洲节奏",
+          "雷鬼音乐",
+          "韩国流行音乐",
+          "弗拉门戈"
+        ],
+        "correctAnswer": "非洲节奏",
+        "explanation": "Burna Boy、Wizkid 和 Rema 所佩戴的非洲节奏音乐已成为一种全球现象。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0017"
+      },
+      {
+        "question": "哪位马里艺术家被称为“非洲金声”？",
+        "options": [
+          "萨利夫·凯塔",
+          "阿里·法尔卡·杜尔",
+          "阿马杜和玛丽雅姆",
+          "奥穆·桑加雷"
+        ],
+        "correctAnswer": "萨利夫·凯塔",
+        "explanation": "萨利夫·凯塔是马里和世界音乐的传奇人物。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0018"
+      },
+      {
+        "question": "自 2005 年以来，马里每年举办哪个音乐节？",
+        "options": [
+          "尼日尔节",
+          "科切拉音乐节",
+          "格拉斯顿伯里",
+          "明日世界"
+        ],
+        "correctAnswer": "尼日尔节",
+        "explanation": "塞古的尼日尔节庆祝马里的文化和音乐。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0019"
+      },
+      {
+        "question": "2020-2025 年哪个应用程序改变了非洲音乐发现？",
+        "options": [
+          "Spotify",
+          "传真",
+          "电传",
+          "小型电信"
+        ],
+        "correctAnswer": "Spotify",
+        "explanation": "流媒体平台扩大了非洲艺术家在世界各地的知名度。",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0020"
+      }
+    ],
+    "Patrimoine et UNESCO": [
+      {
+        "question": "马里哪个城市被列为联合国教科文组织世界遗产？",
+        "options": [
+          "廷巴克图",
+          "卡耶斯",
+          "西卡索",
+          "莫普提"
+        ],
+        "correctAnswer": "廷巴克图",
+        "explanation": "廷巴克图、杰内和尼日尔环路已被列为联合国教科文组织遗产。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0021"
+      },
+      {
+        "question": "马里哪座地球清真寺以其独特的建筑而闻名？",
+        "options": [
+          "杰内大清真寺",
+          "阿克萨清真寺",
+          "蓝色清真寺",
+          "哈桑二世清真寺"
+        ],
+        "correctAnswer": "杰内大清真寺",
+        "explanation": "杰内清真寺是世界上最大的生土建筑。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0022"
+      },
+      {
+        "question": "达喀尔哪个博物馆庆祝黑人文明？",
+        "options": [
+          "黑人文明博物馆",
+          "卢浮宫博物馆",
+          "大英博物馆",
+          "现代艺术博物馆"
+        ],
+        "correctAnswer": "黑人文明博物馆",
+        "explanation": "该博物馆于 2018 年落成，重点展示黑人文明的艺术和历史。",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0023"
+      },
+      {
+        "question": "马里的哪些文化习俗被联合国教科文组织列为非物质遗产？",
+        "options": [
+          "Kôrè dji wara 的大师",
+          "足球",
+          "电影",
+          "摄影"
+        ],
+        "correctAnswer": "Kôrè dji wara 的大师",
+        "explanation": "许多非洲传统作为人类非物质遗产受到保护。",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0024"
       }
     ]
   }

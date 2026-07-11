@@ -25,11 +25,56 @@
           "Desmond Tutu"
         ],
         "correctAnswer": "Nelson Mandela",
-        "explanation": "Nelson Mandela became South Africa's first black president in 1994, after 27 years in prison.",
+        "explanation": "Nelson Mandela became South Africa's first democratically elected president in 1994, after 27 years in prison.",
         "difficulty": "easy",
         "category": "Politique et Économie",
         "subcategory": "Leaders Africains Contemporains",
         "id": "politics_economy_0001"
+      },
+      {
+        "question": "Which African country will join BRICS in 2024?",
+        "options": [
+          "Ethiopia",
+          "Morocco",
+          "Senegal",
+          "Ghana"
+        ],
+        "correctAnswer": "Ethiopia",
+        "explanation": "Ethiopia, Egypt and other African countries have joined or been invited to BRICS+ in 2024.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0007"
+      },
+      {
+        "question": "Who chairs the African Union in 2024?",
+        "options": [
+          "Mohamed Ould Ghazouani",
+          "Cyril Ramaphosa",
+          "Paul Kagame",
+          "Emmanuel Macron"
+        ],
+        "correctAnswer": "Mohamed Ould Ghazouani",
+        "explanation": "Mauritanian President Mohamed Ould Ghazouani chaired the AU in 2024.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0008"
+      },
+      {
+        "question": "Which Rwandan leader has been in office since 2000?",
+        "options": [
+          "Paul Kagame",
+          "Nelson Mandela",
+          "Uhuru Kenyatta",
+          "Yoweri Museveni"
+        ],
+        "correctAnswer": "Paul Kagame",
+        "explanation": "Paul Kagame has ruled Rwanda since 2000 and transformed its economy.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Leaders Africains Contemporains",
+        "id": "politics_economy_0009"
       }
     ],
     "Économie Numérique Africaine": [
@@ -62,6 +107,66 @@
         "category": "Politique et Économie",
         "subcategory": "Économie Numérique Africaine",
         "id": "politics_economy_0003"
+      },
+      {
+        "question": "Which mobile money service is most used in East Africa?",
+        "options": [
+          "M-Pesa",
+          "PayPal",
+          "Venmo",
+          "Western Union"
+        ],
+        "correctAnswer": "M-Pesa",
+        "explanation": "M-Pesa, launched in Kenya, has revolutionized mobile payments in Africa.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0010"
+      },
+      {
+        "question": "Which African Continental Free Trade Area entered into force in 2021?",
+        "options": [
+          "AfCFTA (AfCFTA)",
+          "ECOWAS",
+          "WAEMU",
+          "ECCAS"
+        ],
+        "correctAnswer": "AfCFTA (AfCFTA)",
+        "explanation": "The AfCFTA aims to create the largest single market in the world with 1.3 billion people.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0011"
+      },
+      {
+        "question": "Which African country is home to the headquarters of the African Development Bank?",
+        "options": [
+          "Ivory Coast",
+          "Nigeria",
+          "South Africa",
+          "Egypt"
+        ],
+        "correctAnswer": "Ivory Coast",
+        "explanation": "The AfDB is based in Abidjan, Ivory Coast.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0012"
+      },
+      {
+        "question": "Which central bank digital currency has been tested by several African countries?",
+        "options": [
+          "MNBC (digital currency)",
+          "Bitcoin only",
+          "Digital Euro",
+          "digital yen"
+        ],
+        "correctAnswer": "MNBC (digital currency)",
+        "explanation": "Several African central banks are exploring central bank digital currencies.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Économie Numérique Africaine",
+        "id": "politics_economy_0013"
       }
     ],
     "Organisations Africaines": [
@@ -109,6 +214,402 @@
         "category": "Politique et Économie",
         "subcategory": "Organisations Africaines",
         "id": "politics_economy_0006"
+      },
+      {
+        "question": "How many countries make up ECOWAS in 2025?",
+        "options": [
+          "15 countries",
+          "10 countries",
+          "27 countries",
+          "54 countries"
+        ],
+        "correctAnswer": "15 countries",
+        "explanation": "ECOWAS brings together 15 West African member states.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0014"
+      },
+      {
+        "question": "Which organization brings together the West African countries using the CFA franc?",
+        "options": [
+          "WAEMU",
+          "AU",
+          "NATO",
+          "ASEAN"
+        ],
+        "correctAnswer": "WAEMU",
+        "explanation": "The UEMOA (West African Economic and Monetary Union) includes 8 countries.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0015"
+      },
+      {
+        "question": "The African Union has been invited as a permanent member of which group in 2023?",
+        "options": [
+          "G20",
+          "G7",
+          "NATO",
+          "ASEAN"
+        ],
+        "correctAnswer": "G20",
+        "explanation": "The AU became a permanent member of the G20 at the New Delhi summit in 2023.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Organisations Africaines",
+        "id": "politics_economy_0016"
+      }
+    ],
+    "Géopolitique Africaine 2020s": [
+      {
+        "question": "How many Sustainable Development Goals (SDGs) has the UN set for 2030?",
+        "options": [
+          "17 objectives",
+          "10 objectives",
+          "5 objectives",
+          "50 goals"
+        ],
+        "correctAnswer": "17 objectives",
+        "explanation": "The 17 SDGs cover education, health, climate and reducing inequalities.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Géopolitique Africaine 2020s",
+        "id": "politics_economy_0017"
+      },
+      {
+        "question": "Which international agreement aims to limit global warming and concerns Africa?",
+        "options": [
+          "Paris Agreement",
+          "Treaty of Versailles",
+          "Kyoto agreement only",
+          "Warsaw Pact"
+        ],
+        "correctAnswer": "Paris Agreement",
+        "explanation": "The Paris Agreement (2015) commits all countries, including African ones, to reduce emissions.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Géopolitique Africaine 2020s",
+        "id": "politics_economy_0018"
+      },
+      {
+        "question": "What objective of the African Union's Agenda 2063 aims for food self-sufficiency?",
+        "options": [
+          "Food security",
+          "Space conquest",
+          "Immediate single currency",
+          "Removal of borders"
+        ],
+        "correctAnswer": "Food security",
+        "explanation": "Agenda 2063 sets out the development vision for Africa by 2063.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Géopolitique Africaine 2020s",
+        "id": "politics_economy_0019"
+      },
+      {
+        "question": "Which China-Africa partnership is regularly strengthened through a triennial summit?",
+        "options": [
+          "FOCAC",
+          "NATO",
+          "Mercosur",
+          "NAFTA"
+        ],
+        "correctAnswer": "FOCAC",
+        "explanation": "The Forum on China-Africa Cooperation (FOCAC) structures China-Africa economic relations.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Géopolitique Africaine 2020s",
+        "id": "politics_economy_0020"
+      }
+    ],
+    "Intégration Régionale": [
+      {
+        "question": "How many member countries are in the UEMOA (West African CFA franc zone)?",
+        "options": [
+          "8 countries",
+          "15 countries",
+          "27 countries",
+          "54 countries"
+        ],
+        "correctAnswer": "8 countries",
+        "explanation": "UEMOA brings together 8 West African countries sharing the CFA currency.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Intégration Régionale",
+        "id": "politics_economy_0021"
+      },
+      {
+        "question": "In what year was ECOWAS founded?",
+        "options": [
+          "1975",
+          "1960",
+          "2002",
+          "1990"
+        ],
+        "correctAnswer": "1975",
+        "explanation": "ECOWAS (Economic Community of West African States) was created in 1975.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Intégration Régionale",
+        "id": "politics_economy_0022"
+      },
+      {
+        "question": "Which UN body sits in New York and welcomes all member states?",
+        "options": [
+          "General Assembly",
+          "Safety advice only",
+          "International Court of The Hague",
+          "IMF"
+        ],
+        "correctAnswer": "General Assembly",
+        "explanation": "The UN General Assembly brings together the 193 member states.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Intégration Régionale",
+        "id": "politics_economy_0023"
+      },
+      {
+        "question": "Which indicator measures the human development of a country (UN)?",
+        "options": [
+          "HDI (Human Development Index)",
+          "GDP alone",
+          "Birth rate",
+          "Area of ​​the country"
+        ],
+        "correctAnswer": "HDI (Human Development Index)",
+        "explanation": "The HDI combines life expectancy, education and income to measure development.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Intégration Régionale",
+        "id": "politics_economy_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "politics_economy_0025",
+        "question": "Where is the African Union headquarters?",
+        "options": [
+          "Addis Ababa",
+          "Nairobi",
+          "Lagos",
+          "Cairo"
+        ],
+        "correctAnswer": "Addis Ababa",
+        "explanation": "The AU headquarters is in Addis Ababa, Ethiopia.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0026",
+        "question": "What does GDP stand for?",
+        "options": [
+          "Gross Domestic Product",
+          "Global Development Plan",
+          "Government Debt Pool",
+          "General Deposit Policy"
+        ],
+        "correctAnswer": "Gross Domestic Product",
+        "explanation": "GDP measures a country's production.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0027",
+        "question": "About how many UN member states are there?",
+        "options": [
+          "193",
+          "100",
+          "50",
+          "250"
+        ],
+        "correctAnswer": "193",
+        "explanation": "The UN has 193 member states.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0028",
+        "question": "Which currency is used in the eurozone?",
+        "options": [
+          "Euro",
+          "Dollar",
+          "CFA franc",
+          "Pound"
+        ],
+        "correctAnswer": "Euro",
+        "explanation": "Eurozone countries use the euro.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0029",
+        "question": "Who elects the US president via the Electoral College?",
+        "options": [
+          "Electors",
+          "Congress alone",
+          "The Supreme Court",
+          "The UN"
+        ],
+        "correctAnswer": "Electors",
+        "explanation": "The Electoral College chooses the US president.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0030",
+        "question": "Which organization governs world trade?",
+        "options": [
+          "WTO",
+          "WHO",
+          "UNESCO",
+          "NATO"
+        ],
+        "correctAnswer": "WTO",
+        "explanation": "The World Trade Organization governs trade rules.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0031",
+        "question": "Which African country has Abuja as its capital?",
+        "options": [
+          "Nigeria",
+          "Ghana",
+          "Kenya",
+          "Senegal"
+        ],
+        "correctAnswer": "Nigeria",
+        "explanation": "Abuja is Nigeria's capital.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0032",
+        "question": "What is inflation?",
+        "options": [
+          "A general rise in prices",
+          "Only wage cuts",
+          "Only unemployment rise",
+          "A budget surplus"
+        ],
+        "correctAnswer": "A general rise in prices",
+        "explanation": "Inflation is a sustained rise in the price level.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0033",
+        "question": "Which 1992 treaty created the modern EU?",
+        "options": [
+          "Maastricht Treaty",
+          "Versailles Treaty",
+          "Only Rome Treaty",
+          "Bretton Woods"
+        ],
+        "correctAnswer": "Maastricht Treaty",
+        "explanation": "The Maastricht Treaty (1992) founded the modern EU.",
+        "difficulty": "hard",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0034",
+        "question": "Which central bank issues the euro?",
+        "options": [
+          "ECB",
+          "FED",
+          "IMF",
+          "World Bank"
+        ],
+        "correctAnswer": "ECB",
+        "explanation": "The European Central Bank issues the euro.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0035",
+        "question": "Which system elects leaders by the people?",
+        "options": [
+          "Democracy",
+          "Absolute monarchy",
+          "Dictatorship",
+          "Closed oligarchy"
+        ],
+        "correctAnswer": "Democracy",
+        "explanation": "In a democracy, people elect their leaders.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0036",
+        "question": "What is the IMF's main role?",
+        "options": [
+          "Stabilize the international monetary system",
+          "Organize the Olympics",
+          "Manage space",
+          "Regulate football"
+        ],
+        "correctAnswer": "Stabilize the international monetary system",
+        "explanation": "The IMF supports monetary and financial stability.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0037",
+        "question": "Which resource is often called “black gold”?",
+        "options": [
+          "Oil",
+          "Coal",
+          "Natural gas",
+          "Gold"
+        ],
+        "correctAnswer": "Oil",
+        "explanation": "Oil is nicknamed black gold.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0038",
+        "question": "Which country hosts the European Parliament in Strasbourg?",
+        "options": [
+          "France",
+          "Belgium",
+          "Germany",
+          "Italy"
+        ],
+        "correctAnswer": "France",
+        "explanation": "The European Parliament sits in Strasbourg, among other places.",
+        "difficulty": "medium",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "politics_economy_0039",
+        "question": "What is a balanced budget?",
+        "options": [
+          "Revenue ≈ spending",
+          "Only debts",
+          "No taxes",
+          "Unlimited spending"
+        ],
+        "correctAnswer": "Revenue ≈ spending",
+        "explanation": "A balanced budget matches revenue and spending.",
+        "difficulty": "easy",
+        "category": "Politique et Économie",
+        "subcategory": "Général"
       }
     ]
   }

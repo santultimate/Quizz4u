@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'unified_audio_service_optimized.dart'; // ⚡ OPTIMISÉ
 import '../config/admob_config.dart';
-import 'settings_service.dart';
+import 'ad_policy.dart';
 import 'smart_ad_strategy.dart';
 
 class AdService {
@@ -60,14 +60,7 @@ class AdService {
   // Créer une bannière (chargée une seule fois)
   static Future<BannerAd?> createBannerAd() async {
     try {
-      if (!Platform.isAndroid && !Platform.isIOS) {
-        print(
-            '[AdService] ⚠️ Plateforme non supportée pour les bannières (Web/Desktop)');
-        return null;
-      }
-
-      if (!await SettingsService.isAdsEnabled()) {
-        print('[AdService] 🚫 Bannières désactivées dans les paramètres');
+      if (!await AdPolicy.canShow(AdFormat.banner)) {
         return null;
       }
 
@@ -102,10 +95,7 @@ class AdService {
 
   static Future<void> loadInterstitialAd() async {
     try {
-      // Vérifier si on est sur une plateforme mobile
-      if (!Platform.isAndroid && !Platform.isIOS) {
-        print(
-            '[AdService] ⚠️ Plateforme non supportée pour les interstitielles (Web/Desktop)');
+      if (!await AdPolicy.canShow(AdFormat.interstitial)) {
         return;
       }
 
@@ -161,6 +151,10 @@ class AdService {
   static Future<void> showInterstitialAd() async {
     print('[AdService] 📺 Tentative d\'affichage publicité interstitielle');
 
+    if (!await AdPolicy.canShow(AdFormat.interstitial)) {
+      return;
+    }
+
     // Indiquer qu'une publicité commence
     UnifiedAudioServiceOptimized.instance.setAdPlaying(true);
 
@@ -198,6 +192,10 @@ class AdService {
 
   static Future<void> loadRewardedAd() async {
     try {
+      if (!await AdPolicy.canShow(AdFormat.rewarded)) {
+        return;
+      }
+
       await RewardedAd.load(
         adUnitId: rewardedAdUnitId,
         request: const AdRequest(),
@@ -220,6 +218,10 @@ class AdService {
   static Future<void> showRewardedAd({
     required Function() onRewarded,
   }) async {
+    if (!await AdPolicy.canShow(AdFormat.rewarded)) {
+      return;
+    }
+
     if (_rewardedAd != null) {
       try {
         _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(

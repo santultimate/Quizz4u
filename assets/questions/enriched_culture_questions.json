@@ -131,15 +131,16 @@
       "id": "culture_0009"
     },
     {
-      "question": "Quel est le continent sur lequel se trouve l'Etat de Palestine ?",
+      "question": "Quelle mer sépare l'Afrique de la péninsule arabique ?",
       "answers": {
-        "L'Asie": true,
-        "L'Afrique": false,
-        "L'Europe": false,
-        "L'Amerique": false
+        "La mer Rouge": true,
+        "La mer Méditerranée": false,
+        "La mer Caspienne": false,
+        "La mer Baltique": false
       },
-      "correctAnswer": "L'Asie",
-      "id": "culture_0010"
+      "correctAnswer": "La mer Rouge",
+      "id": "culture_0010",
+      "explanation": "La mer Rouge relie l'océan Indien au canal de Suez."
     },
     {
       "question": "Quelle est la plus grande ville du continent europeen ?",
@@ -197,7 +198,7 @@
       "id": "culture_0015"
     },
     {
-      "question": "Quel pays s'appelle le pays des lapins ?",
+      "question": "Quel pays européen est célèbre pour la paella et le flamenco ?",
       "answers": {
         "L'Espagne": true,
         "Le Portugal": false,
@@ -205,7 +206,8 @@
         "La France": false
       },
       "correctAnswer": "L'Espagne",
-      "id": "culture_0016"
+      "id": "culture_0016",
+      "explanation": "L'Espagne est reconnue pour sa riche culture, dont la paella et le flamenco."
     },
     {
       "question": "Quelle est la plus haute montagne du continent africain ?",

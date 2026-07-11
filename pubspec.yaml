@@ -1,7 +1,7 @@
 name: quizz4u
 description: Quiz éducatif avec 5 catégories - Histoire du Mali, Culture générale, Sciences, Mathématiques et Afrique. Plus de 200 questions avec TTS, timer animé et classement local.
 
-version: 2.0.5+10
+version: 2.0.7+12
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -28,7 +28,6 @@ dependencies:
   animated_text_kit: ^4.2.2
   flutter_svg: ^2.0.9
   cached_network_image: ^3.3.0
-  flame: ^1.30.1
   http: ^1.1.0
 
 dev_dependencies:
@@ -68,15 +67,13 @@ flutter:
     - assets/questions/enriched_history_questions.json
     - assets/questions/enriched_culture_questions.json
     - assets/questions/enriched_science_questions.json
-    # Fichiers dev/test archivés dans _archive_dev_test/ (non inclus en production)
-    - assets/questions/phase2_new_categories.json
-    - assets/questions/premium_questions_phase6.json
+    # Expansions actives (12 catégories au total)
     - assets/questions/technology_questions_expansion.json
     - assets/questions/environment_questions_expansion.json
     - assets/questions/arts_culture_questions_expansion.json
     - assets/questions/politics_economy_questions_expansion.json
     - assets/questions/health_medicine_questions_expansion.json
-    # Versions traduites des questions expansion (backup/référence)
+    # Versions traduites des questions expansion
     - assets/questions/technology_questions_expansion_ar.json
     - assets/questions/technology_questions_expansion_en.json
     - assets/questions/technology_questions_expansion_zh.json

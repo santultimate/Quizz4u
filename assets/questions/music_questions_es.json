@@ -329,6 +329,136 @@
       },
       "id": "music_0029",
       "correctAnswer": "Tinariwen"
+    },
+    {
+      "id": "music_0030",
+      "question": "How many strings does a standard classical guitar have?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "correctAnswer": "6",
+      "explanation": "A classical guitar has six strings.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0031",
+      "question": "What is Salif Keïta mainly known for?",
+      "options": [
+        "Singing",
+        "Drums",
+        "Saxophone",
+        "Violin"
+      ],
+      "correctAnswer": "Singing",
+      "explanation": "Salif Keïta is mainly known as a singer.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0032",
+      "question": "Which note follows “C” (do) in a major scale?",
+      "options": [
+        "D (re)",
+        "E (mi)",
+        "F (fa)",
+        "G (sol)"
+      ],
+      "correctAnswer": "D (re)",
+      "explanation": "C, D, E, F, G, A, B.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0033",
+      "question": "Which music genre was born in New Orleans?",
+      "options": [
+        "Jazz",
+        "Reggae",
+        "Flamenco",
+        "Opera"
+      ],
+      "correctAnswer": "Jazz",
+      "explanation": "Jazz originated in New Orleans.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0034",
+      "question": "How many movements does a typical classical symphony have?",
+      "options": [
+        "4",
+        "2",
+        "6",
+        "1"
+      ],
+      "correctAnswer": "4",
+      "explanation": "A classical symphony often has four movements.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0035",
+      "question": "Which Malian artist is linked to the album “Moffou”?",
+      "options": [
+        "Salif Keïta",
+        "Ali Farka Touré",
+        "Oumou Sangaré",
+        "Amadou & Mariam"
+      ],
+      "correctAnswer": "Salif Keïta",
+      "explanation": "Moffou (2002) is by Salif Keïta.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "music_0036",
+      "question": "Which symbol indicates silence in music?",
+      "options": [
+        "A rest",
+        "A sharp",
+        "A flat",
+        "The treble clef"
+      ],
+      "correctAnswer": "A rest",
+      "explanation": "Rests indicate pauses/silence.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0037",
+      "question": "Which string instrument is played with a bow?",
+      "options": [
+        "Violin",
+        "Guitar",
+        "Harp",
+        "Ukulele"
+      ],
+      "correctAnswer": "Violin",
+      "explanation": "The violin is played with a bow.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0038",
+      "question": "Which Malian festival celebrates desert music?",
+      "options": [
+        "Festival in the Desert",
+        "Glastonbury",
+        "Coachella",
+        "Jazz in Marciac"
+      ],
+      "correctAnswer": "Festival in the Desert",
+      "explanation": "The Festival in the Desert was held near Timbuktu.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0039",
+      "question": "Which clef is most common for beginner piano?",
+      "options": [
+        "Treble clef",
+        "C clef",
+        "Bass clef only",
+        "Percussion clef"
+      ],
+      "correctAnswer": "Treble clef",
+      "explanation": "The treble clef is taught first most often.",
+      "difficulty": "easy"
     }
   ]
 }

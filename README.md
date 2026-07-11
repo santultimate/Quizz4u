@@ -1,43 +1,45 @@
 # 🎯 Quizz4u - Application de Quiz Multilingue
 
-[![Version](https://img.shields.io/badge/version-2.0.5-blue.svg)](https://github.com/santultimate/Quizz4u)
+[![Version](https://img.shields.io/badge/version-2.0.6-blue.svg)](https://github.com/santultimate/Quizz4u)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B.svg?logo=flutter)](https://flutter.dev)
 [![License](https://img.shields.io/badge/license-Educational-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-Production-ready-brightgreen.svg)](https://github.com/santultimate/Quizz4u)
 
 ## 📱 Description
 
-**Quizz4u** est une application de quiz éducatif moderne, interactive et multilingue, conçue pour apprendre tout en s'amusant. Avec plus de **1,000 questions** réparties dans **10 catégories** et disponibles en **6 langues**, cette application offre une expérience d'apprentissage unique et engageante.
+**Quizz4u** est une application de quiz éducatif moderne, interactive et multilingue. Elle propose **500 questions** réparties dans **12 catégories**, disponibles en **6 langues**.
 
-> 🚀 **Prêt pour soumission Google Play Store**
+> 🚀 **Version 2.0.6+11** — prête pour Google Play Store
 
 ### 🌍 Langues Supportées
-- 🇫🇷 **Français** (langue principale - 319 questions)
-- 🇬🇧 **Anglais** (143 questions)
-- 🇸🇦 **Arabe** (143 questions)
-- 🇨🇳 **Chinois Mandarin** (143 questions)
-- 🇪🇸 **Espagnol** (143 questions)
-- 🇮🇳 **Hindi** (237 questions)
+- 🇫🇷 **Français** (langue principale)
+- 🇬🇧 **Anglais**
+- 🇸🇦 **Arabe**
+- 🇨🇳 **Chinois Mandarin**
+- 🇪🇸 **Espagnol**
+- 🇮🇳 **Hindi**
 
-**Total**: 1,128 questions toutes langues confondues
+**Total actif** : 500 questions × 6 langues = 3 000 instances de questions
 
 ---
 
 ## 🌟 Fonctionnalités Principales
 
-### 📚 10 Catégories de Questions
+### 📚 12 Catégories de Questions
 
-#### ✅ Catégories Complètes (6 langues)
-* 🇲🇱 **Histoire du Mali** - Découvrez l'histoire riche du Mali (52 questions FR)
-* 🌍 **Culture Générale** - Testez vos connaissances générales (45 questions FR)
-* 🔬 **Sciences** - Explorez les mystères de la science (32 questions FR)
-* ➗ **Mathématiques** - Défiez votre logique mathématique (40 questions × 6 langues)
-* 🌍 **Afrique** - Plongez dans la culture africaine (43 questions × 6 langues)
-* ⚽ **Football** - Passionnés de foot, c'est votre catégorie ! (30 questions × 6 langues)
-* 🎵 **Musique** - Testez vos connaissances musicales (30 questions × 6 langues)
-* 🎨 **Arts et Culture** - Exploration artistique (6 questions × 6 langues)
-* 💼 **Politique et Économie** - Actualité et économie (7 questions × 6 langues)
-* 💻 **Technologie et Innovation** - L'avenir numérique (17 questions × 6 langues)
+#### ✅ Catégories actives (6 langues)
+* 🇲🇱 **Histoire du Mali** (52)
+* 🌍 **Culture générale** (45)
+* 🔬 **Sciences** (32)
+* ➗ **Mathématiques** (40)
+* 🌍 **Afrique** (43)
+* ⚽ **Football** (30)
+* 🎵 **Musique** (30)
+* 🎨 **Arts et Culture** (40)
+* 💼 **Politique et Économie** (40)
+* 💻 **Technologie et Innovation** (40)
+* 🏥 **Santé et Médecine** (40)
+* 🌱 **Environnement et Écologie** (40)
 
 ### 🎮 Expérience de Jeu Avancée
 

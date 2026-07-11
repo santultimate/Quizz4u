@@ -69,8 +69,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': 'Environnement et Écologie',
           'Arts et Culture': 'Arts et Culture',
           'Politique et Économie': 'Politique et Économie',
-          'Questions Expert': 'Questions Expert',
-          'Questions Spécialisées': 'Questions Spécialisées',
         },
         'difficulties': {
           'Facile': 'Facile',
@@ -81,7 +79,7 @@ class QuestionTranslationService {
       'en': {
         'categories': {
           'Histoire du Mali': 'Mali History',
-          'Culture générale': 'General Culture',
+          'Culture générale': 'General Knowledge',
           'Sciences': 'Sciences',
           'Mathématiques': 'Mathematics',
           'Afrique': 'Africa',
@@ -92,8 +90,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': 'Environment and Ecology',
           'Arts et Culture': 'Arts and Culture',
           'Politique et Économie': 'Politics and Economy',
-          'Questions Expert': 'Expert Questions',
-          'Questions Spécialisées': 'Specialized Questions',
         },
         'difficulties': {
           'Facile': 'Easy',
@@ -115,8 +111,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': 'البيئة والإيكولوجيا',
           'Arts et Culture': 'الفنون والثقافة',
           'Politique et Économie': 'السياسة والاقتصاد',
-          'Questions Expert': 'أسئلة الخبراء',
-          'Questions Spécialisées': 'أسئلة متخصصة',
         },
         'difficulties': {
           'Facile': 'سهل',
@@ -138,8 +132,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': '环境与生态',
           'Arts et Culture': '艺术与文化',
           'Politique et Économie': '政治与经济',
-          'Questions Expert': '专家问题',
-          'Questions Spécialisées': '专业问题',
         },
         'difficulties': {
           'Facile': '简单',
@@ -161,8 +153,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': 'पर्यावरण और पारिस्थितिकी',
           'Arts et Culture': 'कला और संस्कृति',
           'Politique et Économie': 'राजनीति और अर्थशास्त्र',
-          'Questions Expert': 'विशेषज्ञ प्रश्न',
-          'Questions Spécialisées': 'विशेष प्रश्न',
         },
         'difficulties': {
           'Facile': 'आसान',
@@ -184,8 +174,6 @@ class QuestionTranslationService {
           'Environnement et Écologie': 'Medio Ambiente y Ecología',
           'Arts et Culture': 'Artes y Cultura',
           'Politique et Économie': 'Política y Economía',
-          'Questions Expert': 'Preguntas Expertas',
-          'Questions Spécialisées': 'Preguntas Especializadas',
         },
         'difficulties': {
           'Facile': 'Fácil',

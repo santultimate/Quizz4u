@@ -431,5 +431,14 @@
   "wrong_answers": "respuestas incorrectas",
   "xp_for_level": "XP para el nivel",
   "yes": "✅ Sí",
-  "your_score": "Tu Puntuación"
+  "your_score": "Tu Puntuación",
+  "correct_answer": "Respuesta correcta",
+  "wrong_answer": "Respuesta incorrecta",
+  "review_mode": "Modo repaso",
+  "review_mode_desc": "Repite las preguntas falladas",
+  "no_review_questions": "Aún no hay preguntas para repasar. ¡Juega una partida primero!",
+  "review_cleared": "Lista de repaso vaciada",
+  "explanation": "Explicación",
+  "benefit_xp_bonus": "⭐ Bonus de XP en respuestas correctas",
+  "benefit_honest_stats": "📊 Estadísticas de progreso detalladas"
 }

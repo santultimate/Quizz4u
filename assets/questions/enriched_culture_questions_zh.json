@@ -141,15 +141,16 @@
       "correctAnswer": "皮肤"
     },
     {
-      "question": "巴勒斯坦国位于哪个洲？",
+      "question": "哪个海将非洲与阿拉伯半岛分开？",
       "answers": {
-        "亚洲": true,
-        "非洲": false,
-        "欧洲": false,
-        "美国": false
+        "红海": true,
+        "地中海": false,
+        "里海": false,
+        "波罗的海": false
       },
-      "correctAnswer": "亚洲",
-      "id": "culture_0010"
+      "correctAnswer": "红海",
+      "id": "culture_0010",
+      "explanation": "红海连接印度洋和苏伊士运河。"
     },
     {
       "question": "欧洲大陆最大的城市是哪座城市？",
@@ -207,7 +208,7 @@
       "id": "culture_0015"
     },
     {
-      "question": "哪个国家被称为兔子之国？",
+      "question": "哪个欧洲国家以西班牙海鲜饭和弗拉明戈舞而闻名？",
       "answers": {
         "西班牙": true,
         "葡萄牙": false,
@@ -215,7 +216,8 @@
         "法国": false
       },
       "correctAnswer": "西班牙",
-      "id": "culture_0016"
+      "id": "culture_0016",
+      "explanation": "西班牙以其丰富的文化而闻名，包括海鲜饭和弗拉门戈。"
     },
     {
       "question": "非洲大陆最高的山峰是哪座山？",

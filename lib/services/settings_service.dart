@@ -4,6 +4,18 @@ class SettingsService {
   /// Durée par défaut du timer (secondes) — 25s pour réduire les timeouts sans ralentir le jeu
   static const int defaultTimerDuration = 25;
 
+  /// Valeurs proposées dans Paramètres (doit inclure [defaultTimerDuration])
+  static const List<int> allowedTimerDurations = [
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    45,
+    60,
+  ];
+
   /// Bonus de temps sur la 1re question (lecture de l'énoncé)
   static const int firstQuestionTimerBonus = 5;
 
@@ -70,12 +82,17 @@ class SettingsService {
   // Timer
   static Future<int> getTimerDuration() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getInt(_timerDurationKey) ?? defaultTimerDuration;
+    final stored = prefs.getInt(_timerDurationKey) ?? defaultTimerDuration;
+    if (allowedTimerDurations.contains(stored)) return stored;
+    return defaultTimerDuration;
   }
 
   static Future<void> setTimerDuration(int duration) async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(_timerDurationKey, duration);
+    final safe = allowedTimerDurations.contains(duration)
+        ? duration
+        : defaultTimerDuration;
+    await prefs.setInt(_timerDurationKey, safe);
   }
 
   // Musique de fond

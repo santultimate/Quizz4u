@@ -75,6 +75,36 @@
         "category": "Technologie et Innovation",
         "subcategory": "Informatique et Programmation",
         "id": "technology_0004"
+      },
+      {
+        "question": "क्विज़4यू जैसे फ़्लटर एप्लिकेशन विकसित करने के लिए किस भाषा का उपयोग किया जाता है?",
+        "options": [
+          "तीव्र गति",
+          "कोबोल",
+          "फोरट्रान",
+          "विधानसभा"
+        ],
+        "correctAnswer": "तीव्र गति",
+        "explanation": "फ़्लटर, Google का ढाँचा, क्रॉस-प्लेटफ़ॉर्म ऐप्स बनाने के लिए डार्ट भाषा का उपयोग करता है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0020"
+      },
+      {
+        "question": "आईटी में \"एपीआई\" का क्या अर्थ है?",
+        "options": [
+          "अप्लिकेशन प्रोग्रामिंग अंतरफलक",
+          "आंतरिक प्रोसेसर त्वरक",
+          "इंटरनेट प्रोटोकॉल विश्लेषण",
+          "एकीकृत निजी अनुप्रयोग"
+        ],
+        "correctAnswer": "अप्लिकेशन प्रोग्रामिंग अंतरफलक",
+        "explanation": "एक एपीआई अनुप्रयोगों को एक दूसरे के साथ संवाद करने की अनुमति देता है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0021"
       }
     ],
     "Intelligence Artificielle": [
@@ -122,6 +152,51 @@
         "category": "Technologie et Innovation",
         "subcategory": "Intelligence Artificielle",
         "id": "technology_0007"
+      },
+      {
+        "question": "2023 में किस कंपनी ने GPT-4 AI मॉडल लॉन्च किया?",
+        "options": [
+          "ओपनएआई",
+          "सेब",
+          "नोकिया",
+          "ब्लैकबेरी"
+        ],
+        "correctAnswer": "ओपनएआई",
+        "explanation": "GPT-4 OpenAI के सबसे उन्नत भाषा मॉडल में से एक है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0017"
+      },
+      {
+        "question": "कृत्रिम बुद्धिमत्ता में \"प्रॉम्प्ट\" क्या है?",
+        "options": [
+          "एआई को दिया गया एक पाठ्य निर्देश",
+          "एक कंप्यूटर वायरस",
+          "एक नेटवर्क केबल",
+          "एक स्क्रीन"
+        ],
+        "correctAnswer": "एआई को दिया गया एक पाठ्य निर्देश",
+        "explanation": "प्रॉम्प्ट वह अनुरोध है जो उपयोगकर्ता एक जेनरेटिव एआई मॉडल के लिए सबमिट करता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0018"
+      },
+      {
+        "question": "यदि दुरुपयोग किया जाए तो जेनरेटर एआई क्या जोखिम पैदा करता है?",
+        "options": [
+          "दुष्प्रचार और डीपफेक",
+          "स्वचालित जलवायु सुधार",
+          "बिजली हटाना",
+          "अब कागज़ की किताबें नहीं"
+        ],
+        "correctAnswer": "दुष्प्रचार और डीपफेक",
+        "explanation": "डीपफेक और दुष्प्रचार एआई में प्रमुख नैतिक चुनौतियां हैं।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0019"
       }
     ],
     "Innovations Tech Africaines": [
@@ -263,6 +338,280 @@
         "category": "Technologie et Innovation",
         "subcategory": "Histoire de la Tech",
         "id": "technology_0016"
+      }
+    ],
+    "Afrique Digitale": [
+      {
+        "question": "कौन सी एलोन मस्क उपग्रह कनेक्शन सेवा अफ्रीका में तैनात है?",
+        "options": [
+          "स्टारलिंक",
+          "NetFlix",
+          "उबेर",
+          "Airbnb"
+        ],
+        "correctAnswer": "स्टारलिंक",
+        "explanation": "स्टारलिंक का लक्ष्य ग्रामीण अफ्रीकी क्षेत्रों को उपग्रह के माध्यम से जोड़ना है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0022"
+      },
+      {
+        "question": "कौन सी पीढ़ी का मोबाइल नेटवर्क 4G को सफल बनाता है?",
+        "options": [
+          "5जी",
+          "2जी",
+          "केवल 3जी",
+          "केवल वाईफाई"
+        ],
+        "correctAnswer": "5जी",
+        "explanation": "5G मोबाइल एप्लिकेशन के लिए उच्च गति और कम विलंबता प्रदान करता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0023"
+      },
+      {
+        "question": "पासवर्ड के अतिरिक्त कौन सी प्रथा आपके ऑनलाइन खातों की सुरक्षा करती है?",
+        "options": [
+          "दो-कारक प्रमाणीकरण (2FA)",
+          "अपना पासवर्ड साझा करें",
+          "\"123456\" का प्रयोग करें",
+          "लॉक अक्षम करें"
+        ],
+        "correctAnswer": "दो-कारक प्रमाणीकरण (2FA)",
+        "explanation": "2FA डिजिटल खातों में सुरक्षा की एक आवश्यक परत जोड़ता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "technology_0025",
+        "question": "WWW का क्या अर्थ है?",
+        "options": [
+          "World Wide Web",
+          "World Wide Wifi",
+          "Web World Wide",
+          "Wireless Web World"
+        ],
+        "correctAnswer": "World Wide Web",
+        "explanation": "WWW का अर्थ वर्ल्ड वाइड वेब है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0026",
+        "question": "वेब पेज की स्टाइलिंग के लिए मुख्यतः कौन-सी भाषा इस्तेमाल होती है?",
+        "options": [
+          "CSS",
+          "HTML",
+          "Python",
+          "SQL"
+        ],
+        "correctAnswer": "CSS",
+        "explanation": "CSS दृश्य प्रस्तुति नियंत्रित करती है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0027",
+        "question": "AI क्या है?",
+        "options": [
+          "कृत्रिम बुद्धिमत्ता",
+          "उन्नत इंटरफ़ेस",
+          "स्वचालित इंडेक्स",
+          "खुला इंट्रानेट"
+        ],
+        "correctAnswer": "कृत्रिम बुद्धिमत्ता",
+        "explanation": "AI का अर्थ कृत्रिम बुद्धिमत्ता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0028",
+        "question": "कौन-सा प्रोटोकॉल वेब को सुरक्षित बनाता है (ताला चिह्न)?",
+        "options": [
+          "HTTPS",
+          "FTP",
+          "SMTP",
+          "केवल HTTP"
+        ],
+        "correctAnswer": "HTTPS",
+        "explanation": "HTTPS वेब ट्रैफ़िक को एन्क्रिप्ट करता है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0029",
+        "question": "कंप्यूटर का 'दिमाग' कौन-सा घटक है?",
+        "options": [
+          "प्रोसेसर (CPU)",
+          "स्क्रीन",
+          "कीबोर्ड",
+          "स्पीकर"
+        ],
+        "correctAnswer": "प्रोसेसर (CPU)",
+        "explanation": "CPU निर्देशों को निष्पादित करता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0030",
+        "question": "RAM मुख्य रूप से क्या संग्रहीत करती है?",
+        "options": [
+          "उपयोग में अस्थायी डेटा",
+          "केवल फ़ोटो",
+          "केवल स्थायी सिस्टम फ़ाइलें",
+          "कुछ नहीं"
+        ],
+        "correctAnswer": "उपयोग में अस्थायी डेटा",
+        "explanation": "RAM तेज़ अस्थिर मेमोरी है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0031",
+        "question": "Android मुख्य रूप से किस कंपनी ने बनाया?",
+        "options": [
+          "Google",
+          "Apple",
+          "Microsoft",
+          "केवल Samsung"
+        ],
+        "correctAnswer": "Google",
+        "explanation": "Android मुख्यतः Google द्वारा विकसित है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0032",
+        "question": "एल्गोरिदम क्या है?",
+        "options": [
+          "समस्या हल करने के निर्देशों का क्रम",
+          "एक वायरस",
+          "नेटवर्क केबल",
+          "टचस्क्रीन"
+        ],
+        "correctAnswer": "समस्या हल करने के निर्देशों का क्रम",
+        "explanation": "एल्गोरिदम गणना के चरण बताता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0033",
+        "question": "डिजिटल स्टोरेज किस इकाई में मापा जाता है?",
+        "options": [
+          "बाइट / GB",
+          "वाट",
+          "न्यूटन",
+          "पास्कल"
+        ],
+        "correctAnswer": "बाइट / GB",
+        "explanation": "क्षमता बाइट, KB, MB, GB में मापी जाती है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0034",
+        "question": "USB का क्या अर्थ है?",
+        "options": [
+          "Universal Serial Bus",
+          "Ultra Speed Battery",
+          "United System Board",
+          "User Secure Backup"
+        ],
+        "correctAnswer": "Universal Serial Bus",
+        "explanation": "USB का अर्थ यूनिवर्सल सीरियल बस है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0035",
+        "question": "मार्क ज़करबर्ग ने कौन-सा सोशल नेटवर्क बनाया?",
+        "options": [
+          "Facebook",
+          "TikTok",
+          "केवल X",
+          "LinkedIn"
+        ],
+        "correctAnswer": "Facebook",
+        "explanation": "ज़करबर्ग ने Facebook सह-स्थापित किया।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0036",
+        "question": "क्लाउड कंप्यूटिंग क्या है?",
+        "options": [
+          "इंटरनेट पर कंप्यूटिंग सेवाएँ",
+          "जलवायु का प्रकार",
+          "HDMI केबल",
+          "प्रिंटर"
+        ],
+        "correctAnswer": "इंटरनेट पर कंप्यूटिंग सेवाएँ",
+        "explanation": "क्लाउड दूरस्थ स्टोरेज और गणना देता है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0037",
+        "question": "वेब पेज की सामग्री की संरचना कौन-सी भाषा करती है?",
+        "options": [
+          "HTML",
+          "Photoshop",
+          "Excel",
+          "PowerPoint"
+        ],
+        "correctAnswer": "HTML",
+        "explanation": "HTML वेब सामग्री की संरचना बनाता है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0038",
+        "question": "सॉफ़्टवेयर बग क्या है?",
+        "options": [
+          "प्रोग्राम में त्रुटि",
+          "एंटीवायरस",
+          "LED स्क्रीन",
+          "पासवर्ड"
+        ],
+        "correctAnswer": "प्रोग्राम में त्रुटि",
+        "explanation": "बग एक सॉफ़्टवेयर दोष है।",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0039",
+        "question": "संपर्क रहित भुगतान किस तकनीक से संभव है?",
+        "options": [
+          "NFC",
+          "VGA",
+          "SCSI",
+          "CRT"
+        ],
+        "correctAnswer": "NFC",
+        "explanation": "NFC टैप-टू-पे सक्षम करता है।",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
       }
     ]
   }

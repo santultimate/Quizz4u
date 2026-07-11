@@ -60,6 +60,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Changement Climatique",
         "id": "environment_0003"
+      },
+      {
+        "question": "أين انعقد مؤتمر COP28 بشأن المناخ في عام 2023؟",
+        "options": [
+          "دبي (الإمارات العربية المتحدة)",
+          "باريس",
+          "باماكو",
+          "نيويورك"
+        ],
+        "correctAnswer": "دبي (الإمارات العربية المتحدة)",
+        "explanation": "عُقد مؤتمر الأمم المتحدة المعني بتغير المناخ (COP28) في دبي وتناول تحول الطاقة.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0014"
+      },
+      {
+        "question": "في أي عام كان العام الأكثر سخونة على الإطلاق وفقًا للبيانات الحديثة؟",
+        "options": [
+          "2024",
+          "1900",
+          "1950",
+          "1800"
+        ],
+        "correctAnswer": "2024",
+        "explanation": "حطم عام 2024 الأرقام القياسية لدرجات الحرارة العالمية وفقًا للمنظمة العالمية للأرصاد الجوية وكوبرنيكوس.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0015"
+      },
+      {
+        "question": "ما هي الظاهرة المتطرفة التي تضخمها ظاهرة الاحتباس الحراري في أفريقيا؟",
+        "options": [
+          "الجفاف والفيضانات",
+          "الثلوج الدائمة في منطقة الساحل",
+          "الأنهار الجليدية الاستوائية",
+          "الأيام القطبية"
+        ],
+        "correctAnswer": "الجفاف والفيضانات",
+        "explanation": "أفريقيا جنوب الصحراء الكبرى معرضة بشدة للأحداث المناخية المتطرفة.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0016"
       }
     ],
     "Biodiversité Africaine": [
@@ -122,6 +167,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Biodiversité Africaine",
         "id": "environment_0007"
+      },
+      {
+        "question": "ما هي الثدييات الأفريقية الكبيرة المهددة بالصيد الجائر؟",
+        "options": [
+          "الفيل الأفريقي",
+          "القطة المنزلية",
+          "الأرنب",
+          "الحمامة"
+        ],
+        "correctAnswer": "الفيل الأفريقي",
+        "explanation": "الفيلة الأفريقية مهددة بالصيد الجائر من أجل العاج.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0017"
+      },
+      {
+        "question": "ما هي الغابات المطيرة الأفريقية التي تعد ثاني أكبر غابة في العالم؟",
+        "options": [
+          "غابة حوض الكونغو",
+          "غابات الأمازون المطيرة",
+          "الغابة الشمالية",
+          "الغابة الاسكندنافية"
+        ],
+        "correctAnswer": "غابة حوض الكونغو",
+        "explanation": "تغطي غابة الكونغو ستة بلدان وتعد موطنًا للتنوع البيولوجي الاستثنائي.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0018"
+      },
+      {
+        "question": "ما هو الحيوان الملقب بملك السافانا؟",
+        "options": [
+          "الأسد",
+          "الحمار الوحشي",
+          "الظبي",
+          "الفلامنغو الوردي"
+        ],
+        "correctAnswer": "الأسد",
+        "explanation": "الأسد هو رمز للحياة البرية الأفريقية ومفترس قمة.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0019"
       }
     ],
     "Énergies Renouvelables": [
@@ -216,6 +306,310 @@
         "category": "Environnement et Écologie",
         "subcategory": "Pollution et Déchets",
         "id": "environment_0013"
+      },
+      {
+        "question": "ما هي الدولة الإفريقية التي حظرت الأكياس البلاستيكية ذات الاستخدام الواحد في عام 2017؟",
+        "options": [
+          "كينيا",
+          "فرنسا",
+          "البرازيل",
+          "كندا"
+        ],
+        "correctAnswer": "كينيا",
+        "explanation": "كانت كينيا من أوائل الدول الأفريقية التي حظرت الأكياس البلاستيكية.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0023"
+      },
+      {
+        "question": "ما هو المحيط الذي يستقبل معظم النفايات البلاستيكية عبر الأنهار الأفريقية والآسيوية؟",
+        "options": [
+          "المحيط الهندي",
+          "المحيط المتجمد الشمالي",
+          "البحر الميت",
+          "بحر قزوين"
+        ],
+        "correctAnswer": "المحيط الهندي",
+        "explanation": "يمثل التلوث البلاستيكي البحري تحديًا كبيرًا للسواحل الأفريقية.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0024"
+      }
+    ],
+    "Énergies Vertes": [
+      {
+        "question": "ما هي الدولة الإفريقية التي تمتلك أكبر محطة للطاقة الشمسية الحرارية في إفريقيا (نور)؟",
+        "options": [
+          "المغرب",
+          "مالي",
+          "أيسلندا",
+          "اليابان"
+        ],
+        "correctAnswer": "المغرب",
+        "explanation": "يعد مجمع نور للطاقة الشمسية في المغرب أحد أكبر المجمعات في أفريقيا.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0020"
+      },
+      {
+        "question": "ما هي الطاقة المتجددة التي تستخدم حرارة الشمس لإنتاج الكهرباء؟",
+        "options": [
+          "الطاقة الشمسية الضوئية",
+          "الفحم",
+          "زيت",
+          "الغاز الطبيعي"
+        ],
+        "correctAnswer": "الطاقة الشمسية الضوئية",
+        "explanation": "تمتلك أفريقيا إمكانات هائلة للطاقة الشمسية، وهي الأعلى في العالم.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0021"
+      },
+      {
+        "question": "ما هو المشروع الذي يهدف إلى زراعة حزام أخضر ضد التصحر في منطقة الساحل؟",
+        "options": [
+          "الجدار الأخضر العظيم",
+          "مشروع أمازون",
+          "جدار برلين",
+          "طريق الحرير"
+        ],
+        "correctAnswer": "الجدار الأخضر العظيم",
+        "explanation": "ويهدف الجدار الأخضر العظيم إلى استعادة 100 مليون هكتار في منطقة الساحل بحلول عام 2030.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0022"
+      }
+    ],
+    "Général": [
+      {
+        "id": "environment_0025",
+        "question": "أي غاز ينبعث أساسًا من حرق الفحم؟",
+        "options": [
+          "ثاني أكسيد الكربون (CO₂)",
+          "الهيليوم",
+          "نيتروجين نقي فقط",
+          "أوزون الستراتوسفير"
+        ],
+        "correctAnswer": "ثاني أكسيد الكربون (CO₂)",
+        "explanation": "احتراق الوقود الأحفوري يطلق أساسًا CO₂.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0026",
+        "question": "ماذا يعني IPCC؟",
+        "options": [
+          "الهيئة الحكومية الدولية المعنية بتغير المناخ",
+          "مجموعة الطاقة الفحمية الدولية",
+          "إدارة المياه القارية المتكاملة",
+          "نقابة البيئيين المعتمدين"
+        ],
+        "correctAnswer": "الهيئة الحكومية الدولية المعنية بتغير المناخ",
+        "explanation": "تلخّص IPCC علم المناخ.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0027",
+        "question": "أي ممارسة زراعية تهدف لاستعادة التربة المتدهورة؟",
+        "options": [
+          "الزراعة الحراجية",
+          "الرعي الجائر المكثف",
+          "إزالة الغابات بالكامل",
+          "زراعة أحادية بلا تناوب"
+        ],
+        "correctAnswer": "الزراعة الحراجية",
+        "explanation": "تجمع بين الأشجار والمحاصيل.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0028",
+        "question": "أي ظاهرة محيطية تتميز باحترار دوري للمحيط الهادئ؟",
+        "options": [
+          "النينيو",
+          "المد الأحمر فقط",
+          "تيار الخليج المتجمد",
+          "تسونامي بركاني"
+        ],
+        "correctAnswer": "النينيو",
+        "explanation": "النينيو يخلّ بأنماط المناخ العالمية.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0029",
+        "question": "أي مورد يهدده الإفراط في ضخ المياه الجوفية؟",
+        "options": [
+          "المياه العذبة",
+          "النفط الخام فقط",
+          "هيليوم الفضاء",
+          "الجرانيت"
+        ],
+        "correctAnswer": "المياه العذبة",
+        "explanation": "تنضب الخزانات إذا زاد الضخ.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0030",
+        "question": "أي طاقة تستخدم الرياح لتوليد الكهرباء؟",
+        "options": [
+          "طاقة الرياح",
+          "نووية",
+          "فحم",
+          "ديزل"
+        ],
+        "correctAnswer": "طاقة الرياح",
+        "explanation": "توربينات الرياح تحول الرياح إلى كهرباء.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0031",
+        "question": "أي نظام بيئي يخزّن كميات هائلة من الكربون في الخث؟",
+        "options": [
+          "الأراضي الخثية",
+          "صحارى الملح",
+          "كثبان نشطة",
+          "مواقف سيارات حضرية"
+        ],
+        "correctAnswer": "الأراضي الخثية",
+        "explanation": "الخث من أكبر مصارف الكربون.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0032",
+        "question": "أي فعل فردي يقلل بقوة البصمة الكربونية الغذائية؟",
+        "options": [
+          "تقليل هدر الطعام",
+          "رمي المزيد من الطعام",
+          "مضاعفة اللحوم الحمراء",
+          "تجاهل تواريخ الصلاحية"
+        ],
+        "correctAnswer": "تقليل هدر الطعام",
+        "explanation": "الهدر يولد انبعاثات بلا داعٍ.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0033",
+        "question": "أي ملوث هوائي يرتبط بجزيئات PM2.5 الدقيقة؟",
+        "options": [
+          "تلوث الهواء",
+          "الضوضاء فقط",
+          "الضوء الأزرق",
+          "أشعة UV-C"
+        ],
+        "correctAnswer": "تلوث الهواء",
+        "explanation": "PM2.5 تتغلغل عميقًا في الرئتين.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0034",
+        "question": "أي اتفاقية تحمي الأراضي الرطبة ذات الأهمية الدولية؟",
+        "options": [
+          "اتفاقية رامسار",
+          "اتفاق شنغن",
+          "معاهدة ماستريخت",
+          "حلف وارسو"
+        ],
+        "correctAnswer": "اتفاقية رامسار",
+        "explanation": "رامسار تحمي الأراضي الرطبة.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0035",
+        "question": "أي وقود أحفوري يُستخرج أساسًا كغاز طبيعي؟",
+        "options": [
+          "الميثان",
+          "فحم الأنثراسيت",
+          "خث جاف",
+          "قار الطرق"
+        ],
+        "correctAnswer": "الميثان",
+        "explanation": "الغاز الطبيعي يتكون أساسًا من الميثان.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0036",
+        "question": "أي ممارسة صيد قد تدمر قاع البحر؟",
+        "options": [
+          "الصيد بشباك الجر القاعية",
+          "الصيد بالصنارة المستدام",
+          "استزراع مائي مسؤول",
+          "جمع المحار يدويًا"
+        ],
+        "correctAnswer": "الصيد بشباك الجر القاعية",
+        "explanation": "يجرف موائل القاع.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0037",
+        "question": "أي هدف عالمي يرمي لإبقاء الاحترار أقل بكثير من 2 °م؟",
+        "options": [
+          "اتفاق باريس",
+          "بروتوكول كيوتو المنسي فقط",
+          "معاهدة روما",
+          "ميثاق الأطلسي"
+        ],
+        "correctAnswer": "اتفاق باريس",
+        "explanation": "يحدد اتفاق باريس هذا الهدف المناخي.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0038",
+        "question": "أي مصدر طاقة يستخدم الألواح الكهروضوئية؟",
+        "options": [
+          "الطاقة الشمسية",
+          "الطاقة الحرارية الأرضية العميقة",
+          "الانشطار النووي",
+          "الهيدروجين الرمادي"
+        ],
+        "correctAnswer": "الطاقة الشمسية",
+        "explanation": "الألواح تحول الضوء إلى كهرباء.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0039",
+        "question": "أي ظاهرة تعني فقدان تنوع الأنواع الحية؟",
+        "options": [
+          "فقدان التنوع البيولوجي",
+          "التضخم النقدي",
+          "الهجرة الحضرية",
+          "دورة الماء"
+        ],
+        "correctAnswer": "فقدان التنوع البيولوجي",
+        "explanation": "يتراجع التنوع تحت الضغط البشري.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
       }
     ]
   }

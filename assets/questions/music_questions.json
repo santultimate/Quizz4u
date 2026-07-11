@@ -299,6 +299,136 @@
         "Terakaft": false
       },
       "id": "music_0029"
+    },
+    {
+      "id": "music_0030",
+      "question": "Combien de cordes a une guitare classique standard ?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "correctAnswer": "6",
+      "explanation": "La guitare classique a six cordes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0031",
+      "question": "Quel instrument Salif Keïta utilise-t-il surtout comme voix ?",
+      "options": [
+        "Le chant",
+        "La batterie",
+        "Le saxophone",
+        "Le violon"
+      ],
+      "correctAnswer": "Le chant",
+      "explanation": "Salif Keïta est surtout connu comme chanteur.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0032",
+      "question": "Quelle note suit le « do » dans la gamme majeure ?",
+      "options": [
+        "Ré",
+        "Mi",
+        "Fa",
+        "Sol"
+      ],
+      "correctAnswer": "Ré",
+      "explanation": "Do, ré, mi, fa, sol, la, si.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0033",
+      "question": "Quel genre musical est né à la Nouvelle-Orléans ?",
+      "options": [
+        "Jazz",
+        "Reggae",
+        "Flamenco",
+        "Opera"
+      ],
+      "correctAnswer": "Jazz",
+      "explanation": "Le jazz est né à La Nouvelle-Orléans.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0034",
+      "question": "Combien de mouvements a typiquement une symphonie classique ?",
+      "options": [
+        "4",
+        "2",
+        "6",
+        "1"
+      ],
+      "correctAnswer": "4",
+      "explanation": "Une symphonie classique a souvent quatre mouvements.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0035",
+      "question": "Quel artiste malien est associé à l'album « Moffou » ?",
+      "options": [
+        "Salif Keïta",
+        "Ali Farka Touré",
+        "Oumou Sangaré",
+        "Amadou & Mariam"
+      ],
+      "correctAnswer": "Salif Keïta",
+      "explanation": "Moffou (2002) est un album de Salif Keïta.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "music_0036",
+      "question": "Quel symbole indique le silence en musique ?",
+      "options": [
+        "Le silence / la pause",
+        "Le dièse",
+        "Le bémol",
+        "La clé de sol"
+      ],
+      "correctAnswer": "Le silence / la pause",
+      "explanation": "Les silences indiquent des pauses.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0037",
+      "question": "Quel instrument à cordes se joue avec un archet ?",
+      "options": [
+        "Le violon",
+        "La guitare",
+        "La harpe",
+        "Le ukulélé"
+      ],
+      "correctAnswer": "Le violon",
+      "explanation": "Le violon se joue à l'archet.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "music_0038",
+      "question": "Quel festival malien célèbre la musique du désert ?",
+      "options": [
+        "Festival au Désert",
+        "Glastonbury",
+        "Coachella",
+        "Jazz in Marciac"
+      ],
+      "correctAnswer": "Festival au Désert",
+      "explanation": "Le Festival au Désert s'est tenu près de Tombouctou.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "music_0039",
+      "question": "Quelle clé musicale est la plus courante pour le piano débutant ?",
+      "options": [
+        "Clé de sol",
+        "Clé d'ut",
+        "Clé de fa uniquement",
+        "Clé de percussion"
+      ],
+      "correctAnswer": "Clé de sol",
+      "explanation": "La clé de sol est la plus enseignée au début.",
+      "difficulty": "easy"
     }
   ]
 }

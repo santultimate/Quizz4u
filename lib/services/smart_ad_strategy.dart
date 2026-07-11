@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'ad_policy.dart';
 import 'ad_service.dart';
 import 'premium_service.dart';
 
@@ -27,12 +28,9 @@ class SmartAdStrategy {
   static const int MIN_TIME_BETWEEN_ADS =
       60; // 60 secondes minimum entre les pubs (↑ doublé)
 
-  // Vérifier si une publicité peut être affichée
+  /// Fréquence + politique globale (premium, toggle pubs, plateforme).
   static Future<bool> canShowAd({AdContext? context}) async {
-    // Vérifier d'abord si l'utilisateur est premium
-    final isPremium = await PremiumService.isPremiumUser();
-    if (isPremium) {
-      print('[SmartAdStrategy] 🚫 Utilisateur premium - aucune publicité');
+    if (!await AdPolicy.canShow(AdFormat.interstitial)) {
       return false;
     }
 
@@ -115,34 +113,29 @@ class SmartAdStrategy {
     }
   }
 
-  // Afficher une publicité contextuelle
+  // Afficher une publicité contextuelle (toujours via showInterstitialAd — pas de récursion)
   static Future<void> _showContextualAd(AdContext context) async {
     switch (context) {
       case AdContext.levelUp:
         print('[SmartAdStrategy] 🎉 Publicité de niveau supérieur');
-        await AdService.showInterstitialAd();
         break;
       case AdContext.badgeEarned:
         print('[SmartAdStrategy] 🏆 Publicité de badge obtenu');
-        await AdService.showInterstitialAd();
         break;
       case AdContext.quizComplete:
         print('[SmartAdStrategy] 🎯 Publicité de fin de quiz');
-        await AdService.showEndGameInterstitial();
         break;
       case AdContext.streakMilestone:
         print('[SmartAdStrategy] 🔥 Publicité de série');
-        await AdService.showStreakInterstitial();
         break;
       case AdContext.performanceBonus:
         print('[SmartAdStrategy] ⭐ Publicité de performance');
-        await AdService.showInterstitialAd();
         break;
       case AdContext.categoryComplete:
         print('[SmartAdStrategy] 📚 Publicité de catégorie complétée');
-        await AdService.showCategoryChangeInterstitial();
         break;
     }
+    await AdService.showInterstitialAd();
   }
 
   // Afficher une publicité régulière
@@ -187,7 +180,6 @@ class SmartAdStrategy {
       'questionsSinceLastAd': _questionsSinceLastAd,
       'sessionsToday': _sessionsToday,
       'lastAdTime': _lastAdTime?.toIso8601String(),
-      'canShowAd': canShowAd(),
       'dailyLimit': DAILY_AD_LIMIT,
       'minQuestionsBetweenAds': MIN_QUESTIONS_BETWEEN_ADS,
     };
@@ -195,8 +187,7 @@ class SmartAdStrategy {
 
   // Vérifier si l'utilisateur est un utilisateur premium
   static Future<bool> isPremiumUser() async {
-    // TODO: Implémenter la vérification du statut premium
-    return false;
+    return PremiumService.isPremiumUser();
   }
 
   // Ajuster la stratégie pour les utilisateurs premium

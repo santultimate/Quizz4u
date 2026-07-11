@@ -6,22 +6,23 @@
 
 **Short description** (80 caractères max):
 ```
-Quiz éducatif multilingue avec 200+ questions en 6 langues. Apprenez en vous amusant!
+500 questions, 12 catégories, 6 langues. Apprenez en vous amusant !
 ```
 
-**Full description** (4000 caractères max):
+**Full description** (à coller dans Play Console) :
 ```
-🎓 Quizz4U - Apprenez en Vous Amusant!
+🎓 Quizz4U - Apprenez en Vous Amusant !
 
-Quizz4U est une application de quiz éducatif conçue pour tester et enrichir vos connaissances dans dix grandes catégories : Histoire du Mali, Culture générale, Sciences, Mathématiques, Afrique, Football, Musique, Arts & Culture, Politique & Économie, et Technologie. Avec plus de 200 questions soigneusement sélectionnées, chaque partie vous propose un lot aléatoire de 10 questions pour une expérience toujours renouvelée.
+Quizz4U est une application de quiz éducatif conçue pour tester et enrichir vos connaissances dans 12 catégories : Histoire du Mali, Culture générale, Sciences, Mathématiques, Afrique, Football, Musique, Arts & Culture, Politique & Économie, Technologie, Santé & Médecine, et Environnement. Avec 500 questions soigneusement sélectionnées (disponibles en 6 langues), chaque partie vous propose un lot aléatoire de 10 questions pour une expérience toujours renouvelée.
 
 🌟 CARACTÉRISTIQUES PRINCIPALES
 
 📚 CONTENU RICHE
-• Plus de 200 questions uniques et variées
-• 10 catégories thématiques pour tous les goûts
-• Mélange intelligent pour éviter la répétition
+• 500 questions uniques et variées
+• 12 catégories thématiques pour tous les goûts
+• Mélange intelligent pour limiter les répétitions
 • Questions enrichies avec explications détaillées
+• Mode révision pour rejouer les questions ratées
 
 🌍 MULTILINGUE
 • Support de 6 langues : Français, Anglais, Arabe, Chinois, Espagnol, Hindi
@@ -30,45 +31,42 @@ Quizz4U est une application de quiz éducatif conçue pour tester et enrichir vo
 • Changement de langue en temps réel
 
 🎮 FONCTIONNALITÉS DE JEU
-• Timer dynamique configurable (10-45 secondes)
-• Système de scoring intelligent avec bonus temps
-• Animation et effets visuels modernes
+• Timer dynamique configurable
+• Système de scoring avec bonus temps
+• Animations et effets visuels modernes
 • Feedback immédiat pour chaque réponse
+• Défi quotidien pour progresser chaque jour
 
 🏆 PROGRESSION & RÉCOMPENSES
-• Système de niveaux et points d'expérience (XP)
-• Collection de badges exclusifs
+• Points d'expérience (XP) et niveaux
+• Collection de badges
 • Classements locaux avec historique
-• Statistiques détaillées par catégorie
+• Statistiques par catégorie
 
 🎵 AUDIO & IMMERSION
-• Lecture vocale automatique des questions (TTS)
-• Musique de fond et effets sonores immersifs
-• Contrôles de volume indépendants
-• Support multilingue pour la synthèse vocale
+• Lecture vocale des questions (TTS)
+• Musique de fond et effets sonores
+• Contrôles audio dans les paramètres
 
 🎨 PERSONNALISATION
 • Thèmes clair, sombre ou automatique
-• Animations activables/désactivables
-• Vibration pour feedback haptique
+• Vibrations pour le feedback haptique
 • Interface moderne et intuitive
 
 💎 FONCTIONNALITÉS PREMIUM (Optionnel)
-• Abonnement Premium pour éliminer les contenus promotionnels
-• Bonus XP exclusifs
-• Thèmes personnalisés
-• Statistiques avancées
-• Sauvegarde cloud
+• Suppression des contenus promotionnels
+• Bonus XP sur les bonnes réponses
+• Statistiques de progression détaillées
+• Badges exclusifs
 
-📊 STATISTIQUES COMPLÈTES
-• Suivi de vos performances par catégorie
-• Historique de vos parties
-• Meilleurs scores et moyennes
-• Graphiques d'évolution
+📊 STATISTIQUES
+• Suivi des performances par catégorie
+• Historique des parties
+• Meilleurs scores
 
-Que vous soyez passionné de culture, amateur de défis ou simplement curieux, Quizz4U est l'application idéale pour apprendre en s'amusant, seul ou entre amis!
+Que vous soyez passionné de culture, amateur de défis ou simplement curieux, Quizz4U est l'application idéale pour apprendre en s'amusant !
 
-Téléchargez maintenant et commencez votre voyage d'apprentissage!
+Téléchargez maintenant et commencez votre voyage d'apprentissage !
 ```
 
 **Tags** (à sélectionner dans Play Console):
@@ -84,22 +82,23 @@ Téléchargez maintenant et commencez votre voyage d'apprentissage!
 
 **Short description**:
 ```
-Multilingual educational quiz with 200+ questions in 6 languages. Learn while having fun!
+500 questions, 12 categories, 6 languages. Learn while having fun!
 ```
 
 **Full description**:
 ```
 🎓 Quizz4U - Learn While Having Fun!
 
-Quizz4U is an educational quiz app designed to test and enrich your knowledge in ten major categories: Mali History, General Culture, Science, Mathematics, Africa, Football, Music, Arts & Culture, Politics & Economy, and Technology. With over 200 carefully selected questions, each game offers you a random set of 10 questions for an always-renewed experience.
+Quizz4U is an educational quiz app designed to test and enrich your knowledge across 12 categories: Mali History, General Knowledge, Science, Mathematics, Africa, Football, Music, Arts & Culture, Politics & Economy, Technology, Health & Medicine, and Environment. With 500 carefully selected questions (available in 6 languages), each game offers a random set of 10 questions for a fresh experience every time.
 
 🌟 MAIN FEATURES
 
 📚 RICH CONTENT
-• Over 200 unique and varied questions
-• 10 thematic categories for all tastes
-• Smart shuffling to avoid repetition
+• 500 unique and varied questions
+• 12 thematic categories for all tastes
+• Smart shuffling to limit repetition
 • Enriched questions with detailed explanations
+• Review mode to replay missed questions
 
 🌍 MULTILINGUAL
 • Support for 6 languages: French, English, Arabic, Chinese, Spanish, Hindi
@@ -108,43 +107,40 @@ Quizz4U is an educational quiz app designed to test and enrich your knowledge in
 • Real-time language switching
 
 🎮 GAME FEATURES
-• Dynamic configurable timer (10-45 seconds)
-• Intelligent scoring system with time bonus
+• Configurable dynamic timer
+• Scoring system with time bonus
 • Modern animations and visual effects
 • Immediate feedback for each answer
+• Daily challenge to keep progressing
 
 🏆 PROGRESSION & REWARDS
-• Level system and experience points (XP)
-• Collection of exclusive badges
+• Experience points (XP) and levels
+• Badge collection
 • Local rankings with history
-• Detailed statistics by category
+• Per-category statistics
 
 🎵 AUDIO & IMMERSION
-• Automatic voice reading of questions (TTS)
-• Background music and immersive sound effects
-• Independent volume controls
-• Multilingual support for speech synthesis
+• Voice reading of questions (TTS)
+• Background music and sound effects
+• Audio controls in settings
 
 🎨 PERSONALIZATION
 • Light, dark or automatic themes
-• Enableable/disableable animations
-• Vibration for haptic feedback
+• Haptic vibration feedback
 • Modern and intuitive interface
 
 💎 PREMIUM FEATURES (Optional)
-• Premium subscription to remove promotional content
-• Exclusive XP bonuses
-• Custom themes
-• Advanced statistics
-• Cloud backup
+• Remove promotional content
+• XP bonus on correct answers
+• Detailed progress statistics
+• Exclusive badges
 
-📊 COMPLETE STATISTICS
-• Track your performance by category
-• History of your games
-• Best scores and averages
-• Evolution charts
+📊 STATISTICS
+• Track performance by category
+• Game history
+• Best scores
 
-Whether you're a culture enthusiast, challenge lover or simply curious, Quizz4U is the ideal app to learn while having fun, alone or with friends!
+Whether you're a culture enthusiast, challenge lover or simply curious, Quizz4U is the ideal app to learn while having fun!
 
 Download now and start your learning journey!
 ```
@@ -159,6 +155,12 @@ Download now and start your learning journey!
 
 **Target Audience**: All ages
 
+**Version**: 2.0.7 (versionCode 12)
+
+**Package**: com.quizz4u.app
+
+**IAP product (lifetime)**: `premium_lifetime`
+
 **Privacy Policy**: https://santultimate.github.io/Quizz4U-privacy/
 
 ---
@@ -167,16 +169,9 @@ Download now and start your learning journey!
 
 Évitez ces termes dans la description:
 - ❌ "Publicités" / "Ads"
-- ❌ "Pub" 
+- ❌ "Pub"
 - ❌ Mentions de monétisation agressive
 
 Utilisez plutôt:
 - ✅ "Contenus promotionnels"
-- ✅ "Sponsorisés" (si nécessaire)
 - ✅ Focus sur l'expérience éducative
-
----
-
-**Version**: 2.0.5+10  
-**Dernière mise à jour**: Novembre 2025
-

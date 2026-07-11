@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class AdMobConfig {
   // Application ID officiel Quizz4U
   static const String applicationId = 'ca-app-pub-7487587531173203~1375704927';
@@ -17,9 +19,8 @@ class AdMobConfig {
   static const String testRewardedAdUnitId =
       'ca-app-pub-3940256099942544/5224354917';
 
-  // Mode de développement (false = production, true = test)
-  // Mode production activé - les IDs sont validés dans AdMob Console
-  static const bool isTestMode = false;
+  // Debug/émulateur → IDs test Google ; release → production
+  static bool get isTestMode => kDebugMode;
 
   // Obtenir les IDs selon le mode
   static String getBannerAdUnitId() {

@@ -1,5 +1,5 @@
 {
-  "Culture générale": [
+  "General Knowledge": [
     {
       "question": "What is the largest ocean on the planet?",
       "answers": {
@@ -10,7 +10,7 @@
       },
       "explanation": "The Pacific Ocean covers more than 30% of the earth's surface.",
       "difficulty": "easy",
-      "subcategory": "Géographie",
+      "subcategory": "Geography",
       "id": "culture_0000",
       "correctAnswer": "The Pacific Ocean"
     },
@@ -38,7 +38,7 @@
       },
       "explanation": "Au comes from the Latin 'aurum' which means gold.",
       "difficulty": "medium",
-      "subcategory": "Chimie",
+      "subcategory": "Chemistry",
       "id": "culture_0002",
       "correctAnswer": "Au"
     },
@@ -52,7 +52,7 @@
       },
       "explanation": "The Eiffel Tower is located in Paris, France.",
       "difficulty": "easy",
-      "subcategory": "Monuments",
+      "subcategory": "Landmarks",
       "id": "culture_0003",
       "correctAnswer": "France"
     },
@@ -66,7 +66,7 @@
       },
       "explanation": "Asia represents approximately 30% of the earth's surface area.",
       "difficulty": "easy",
-      "subcategory": "Géographie",
+      "subcategory": "Geography",
       "id": "culture_0004",
       "correctAnswer": "Asia"
     },
@@ -80,7 +80,7 @@
       },
       "explanation": "Victor Hugo published 'Les Miserables' in 1862.",
       "difficulty": "medium",
-      "subcategory": "Littérature",
+      "subcategory": "Literature",
       "id": "culture_0005",
       "correctAnswer": "Victor Hugo"
     },
@@ -94,7 +94,7 @@
       },
       "explanation": "Antarctica is technically the largest desert in the world.",
       "difficulty": "hard",
-      "subcategory": "Géographie",
+      "subcategory": "Geography",
       "id": "culture_0006",
       "correctAnswer": "Antarctica"
     },
@@ -108,7 +108,7 @@
       },
       "explanation": "The blue whale can reach 30 meters in length and weigh 200 tonnes.",
       "difficulty": "medium",
-      "subcategory": "Biologie",
+      "subcategory": "Biology",
       "id": "culture_0007",
       "correctAnswer": "The blue whale"
     },
@@ -122,7 +122,7 @@
       },
       "explanation": "Russia covers more than 17 million km².",
       "difficulty": "easy",
-      "subcategory": "Géographie",
+      "subcategory": "Geography",
       "id": "culture_0008",
       "correctAnswer": "Russia"
     },
@@ -136,20 +136,21 @@
       },
       "explanation": "The skin makes up about 16% of the total body weight.",
       "difficulty": "medium",
-      "subcategory": "Biologie",
+      "subcategory": "Biology",
       "id": "culture_0009",
       "correctAnswer": "The skin"
     },
     {
-      "question": "What continent is the State of Palestine on?",
+      "question": "Which sea separates Africa from the Arabian Peninsula?",
       "answers": {
-        "Asia": true,
-        "Africa": false,
-        "Europe": false,
-        "America": false
+        "The Red Sea": true,
+        "The Mediterranean Sea": false,
+        "The Caspian Sea": false,
+        "The Baltic Sea": false
       },
-      "correctAnswer": "Asia",
-      "id": "culture_0010"
+      "correctAnswer": "The Red Sea",
+      "id": "culture_0010",
+      "explanation": "The Red Sea connects the Indian Ocean to the Suez Canal."
     },
     {
       "question": "What is the largest city on the European continent?",
@@ -207,7 +208,7 @@
       "id": "culture_0015"
     },
     {
-      "question": "Which country is called the land of rabbits?",
+      "question": "Which European country is famous for paella and flamenco?",
       "answers": {
         "Spain": true,
         "Portugal": false,
@@ -215,7 +216,8 @@
         "France": false
       },
       "correctAnswer": "Spain",
-      "id": "culture_0016"
+      "id": "culture_0016",
+      "explanation": "Spain is known for its rich culture, including paella and flamenco."
     },
     {
       "question": "What is the highest mountain on the African continent?",
@@ -298,7 +300,7 @@
       "question": "What is the largest city in the world?",
       "answers": {
         "Tokyo": true,
-        "new York": false,
+        "New York": false,
         "Shanghai": false,
         "Mexico": false
       },
@@ -441,9 +443,9 @@
       "question": "What is the capital of Nicaragua?",
       "answers": {
         "Managua": true,
-        "Leo": false,
         "Granada": false,
-        "Masaya": false
+        "Masaya": false,
+        "León": false
       },
       "correctAnswer": "Managua",
       "id": "culture_0037"
@@ -518,7 +520,7 @@
       "question": "What is the capital of the United States?",
       "answers": {
         "Washington D.C.": true,
-        "new York": false,
+        "New York": false,
         "Los Angeles": false,
         "Chicago": false
       },

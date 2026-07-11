@@ -371,6 +371,110 @@
       },
       "correctAnswer": "Sr",
       "id": "science_0031"
+    },
+    {
+      "id": "science_0032",
+      "question": "Quelle planète est la plus proche du Soleil ?",
+      "options": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "Terre"
+      ],
+      "correctAnswer": "Mercure",
+      "explanation": "Mercure est la planète la plus proche du Soleil.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0033",
+      "question": "Quel gaz les plantes absorbent-elles pour la photosynthèse ?",
+      "options": [
+        "Dioxyde de carbone",
+        "Oxygène",
+        "Azote",
+        "Hélium"
+      ],
+      "correctAnswer": "Dioxyde de carbone",
+      "explanation": "Les plantes absorbent le CO₂ et libèrent de l'oxygène.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0034",
+      "question": "Combien d'os compte approximativement le corps humain adulte ?",
+      "options": [
+        "206",
+        "100",
+        "300",
+        "50"
+      ],
+      "correctAnswer": "206",
+      "explanation": "Un adulte a environ 206 os.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0035",
+      "question": "Quelle est l'unité de mesure de la force ?",
+      "options": [
+        "Newton",
+        "Watt",
+        "Joule",
+        "Pascal"
+      ],
+      "correctAnswer": "Newton",
+      "explanation": "La force se mesure en newtons (N).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0036",
+      "question": "Quel organe pompe le sang dans le corps ?",
+      "options": [
+        "Le cœur",
+        "Le foie",
+        "Le poumon",
+        "Le rein"
+      ],
+      "correctAnswer": "Le cœur",
+      "explanation": "Le cœur pompe le sang dans tout l'organisme.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0037",
+      "question": "Quelle est la formule chimique de l'eau ?",
+      "options": [
+        "H2O",
+        "CO2",
+        "O2",
+        "NaCl"
+      ],
+      "correctAnswer": "H2O",
+      "explanation": "L'eau est composée de deux atomes d'hydrogène et d'un d'oxygène.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0038",
+      "question": "Quel scientifique a formulé la théorie de la relativité ?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galilée",
+        "Nikola Tesla"
+      ],
+      "correctAnswer": "Albert Einstein",
+      "explanation": "Einstein a publié la relativité restreinte en 1905.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0039",
+      "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+      "options": [
+        "300 000 km/s",
+        "300 km/s",
+        "3 000 km/s",
+        "30 000 km/s"
+      ],
+      "correctAnswer": "300 000 km/s",
+      "explanation": "La lumière voyage à environ 299 792 km/s dans le vide.",
+      "difficulty": "hard"
     }
   ]
 }

@@ -45,6 +45,291 @@
         "category": "Arts et Culture",
         "subcategory": "Littérature Africaine",
         "id": "arts_culture_0002"
+      },
+      {
+        "question": "من هي الكاتبة النيجيرية التي روجت لمصطلح \"النسوية الأفريقية\" في مقالاتها؟",
+        "options": [
+          "شيماماندا نجوزي أديتشي",
+          "بوتشي إميتشيتا",
+          "تسيتسي دانجاريمبا",
+          "نجيجي وا ثيونغو"
+        ],
+        "correctAnswer": "شيماماندا نجوزي أديتشي",
+        "explanation": "تشيماماندا نجوزي أديتشي هي صوت رئيسي في الأدب الأفريقي المعاصر.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0006"
+      },
+      {
+        "question": "ما هي رواية تشينوا أتشيبي التي تعتبر من كلاسيكيات الأدب الأفريقي؟",
+        "options": [
+          "العالم ينهار",
+          "هذه رسالة طويلة",
+          "الساحل",
+          "المغامرة الغامضة"
+        ],
+        "correctAnswer": "العالم ينهار",
+        "explanation": "تُرجمت رواية \"الأشياء تتداعى\" (1958) إلى الفرنسية تحت عنوان \"Le monde s'colfe\".",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0007"
+      },
+      {
+        "question": "ما هي الجائزة الأدبية الدولية التي تكافئ المؤلف الناطق بالفرنسية كل عام؟",
+        "options": [
+          "جائزة غونكور",
+          "جائزة بوكر",
+          "جائزة بوليتزر",
+          "جائزة نوبل للسلام"
+        ],
+        "correctAnswer": "جائزة غونكور",
+        "explanation": "جائزة غونكور هي واحدة من أرقى الجوائز الأدبية الناطقة بالفرنسية.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0008"
+      },
+      {
+        "question": "من هو الشاعر السنغالي الذي شارك في تأسيس حركة الزنوجية؟",
+        "options": [
+          "ليوبولد سيدار سنغور",
+          "ديفيد ديوب",
+          "بيراجو ديوب",
+          "الشيخ حميدو كين"
+        ],
+        "correctAnswer": "ليوبولد سيدار سنغور",
+        "explanation": "سنغور وسيزير وداماس هم الشخصيات المؤسسة للزنوج.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Littérature Africaine",
+        "id": "arts_culture_0009"
+      },
+      {
+        "id": "arts_culture_0025",
+        "question": "أي رسام إسباني شارك براك في تأسيس التكعيبية؟",
+        "options": [
+          "بابلو بيكاسو",
+          "سلفادور دالي",
+          "فرانسيسكو غويا",
+          "خوان ميرو"
+        ],
+        "correctAnswer": "بابلو بيكاسو",
+        "explanation": "طور بيكاسو وبراك التكعيبية في أوائل القرن العشرين.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0026",
+        "question": "أي متحف في باريس يضم الموناليزا؟",
+        "options": [
+          "اللوفر",
+          "متحف أورسي",
+          "مركز بومبيدو",
+          "القصر الكبير"
+        ],
+        "correctAnswer": "اللوفر",
+        "explanation": "تُعرض موناليزا ليوناردو دا فينشي في اللوفر.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0027",
+        "question": "من ألّف الفصول الأربعة؟",
+        "options": [
+          "فيفالدي",
+          "موتسارت",
+          "باخ",
+          "بيتهوفن"
+        ],
+        "correctAnswer": "فيفالدي",
+        "explanation": "ألّف أنطونيو فيفالدي الفصول الأربعة.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0028",
+        "question": "من كتب البؤساء؟",
+        "options": [
+          "فيكتور هوغو",
+          "إميل زولا",
+          "بالزاك",
+          "فلوبير"
+        ],
+        "correctAnswer": "فيكتور هوغو",
+        "explanation": "البؤساء (1862) رواية لفيكتور هوغو.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0029",
+        "question": "أي طراز معماري يميز أهرامات مصر؟",
+        "options": [
+          "نصبي قديم",
+          "قوطي",
+          "باروك",
+          "آرت نوفو"
+        ],
+        "correctAnswer": "نصبي قديم",
+        "explanation": "الأهرامات آثار من مصر القديمة.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0030",
+        "question": "أي مهرجان سينمائي يُقام سنوياً في كان؟",
+        "options": [
+          "مهرجان كان",
+          "برليناله",
+          "مهرجان البندقية",
+          "سندانس"
+        ],
+        "correctAnswer": "مهرجان كان",
+        "explanation": "مهرجان كان من أعرق المهرجانات العالمية.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0031",
+        "question": "أي رقصة نشأت في الأرجنتين؟",
+        "options": [
+          "التانغو",
+          "السامبا",
+          "الفلامنكو",
+          "الفالس"
+        ],
+        "correctAnswer": "التانغو",
+        "explanation": "نشأ التانغو في بوينس آيرس/مونتفيديو.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0032",
+        "question": "من نحت المفكر؟",
+        "options": [
+          "أوغست رودان",
+          "مايكل أنجلو",
+          "دوناتيلو",
+          "بيرنيني"
+        ],
+        "correctAnswer": "أوغست رودان",
+        "explanation": "المفكر منحوتة لأوغست رودان.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0033",
+        "question": "أي حرفة مالية تشتهر بأقمشة البوغولان؟",
+        "options": [
+          "حرفيو البوغولان",
+          "بيكاسو",
+          "باسكيات",
+          "وارهول"
+        ],
+        "correctAnswer": "حرفيو البوغولان",
+        "explanation": "البوغولان قماش مصبوغ تقليدي مالي.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0034",
+        "question": "أي عمل لدافنشي يصوّر وجبة كتابية؟",
+        "options": [
+          "العشاء الأخير",
+          "الموناليزا",
+          "يوحنا المعمدان",
+          "عذراء الصخور"
+        ],
+        "correctAnswer": "العشاء الأخير",
+        "explanation": "يصوّر العشاء الأخير الوجبة الأخيرة للمسيح.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0035",
+        "question": "أي حركة فنية ترتبط بكلود Monet؟",
+        "options": [
+          "الانطباعية",
+          "السريالية",
+          "التكعيبية",
+          "التعبيرية"
+        ],
+        "correctAnswer": "الانطباعية",
+        "explanation": "مونيه من أبرز رموز الانطباعية.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0036",
+        "question": "ما الآلة المركزية في موسيقى الكورا؟",
+        "options": [
+          "الكورا",
+          "البيانو",
+          "البوق",
+          "الساكسفون"
+        ],
+        "correctAnswer": "الكورا",
+        "explanation": "الكورا قيثارة-عود غرب أفريقية.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0037",
+        "question": "من كتب روميو وجولييت؟",
+        "options": [
+          "وليم شكسبير",
+          "موليير",
+          "دانتي",
+          "سرفانتس"
+        ],
+        "correctAnswer": "وليم شكسبير",
+        "explanation": "روميو وجولييت مأساة لشكسبير.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0038",
+        "question": "أي متحف في نيويورك مشهور بالفن الحديث؟",
+        "options": [
+          "MoMA",
+          "اللوفر",
+          "البرادو",
+          "الإرميتاج"
+        ],
+        "correctAnswer": "MoMA",
+        "explanation": "متحف الفن الحديث (MoMA) في نيويورك.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
+      },
+      {
+        "id": "arts_culture_0039",
+        "question": "ما اللون الغالب في الفترة الزرقاء لبيكاسو؟",
+        "options": [
+          "الأزرق",
+          "الأحمر",
+          "الأصفر",
+          "الأخضر"
+        ],
+        "correctAnswer": "الأزرق",
+        "explanation": "تستخدم الفترة الزرقاء درجات الأزرق غالباً.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Général"
       }
     ],
     "Cinéma Africain": [
@@ -77,6 +362,66 @@
         "category": "Arts et Culture",
         "subcategory": "Cinéma Africain",
         "id": "arts_culture_0004"
+      },
+      {
+        "question": "ما هو فيلم عبد الرحمن سيساكو الذي ترشح لجائزة الأوسكار عام 2015؟",
+        "options": [
+          "تمبكتو",
+          "النمر الأسود",
+          "تسوتسي",
+          "الحياة جميلة"
+        ],
+        "correctAnswer": "تمبكتو",
+        "explanation": "تم ترشيح فيلم \"تمبكتو\" للمخرج عبد الرحمن سيساكو لجائزة الأوسكار لأفضل فيلم أجنبي.",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0010"
+      },
+      {
+        "question": "ما هي صناعة السينما الأفريقية التي تنتج أكبر عدد من الأفلام سنويًا؟",
+        "options": [
+          "نوليوود (نيجيريا)",
+          "السينما الجنوب أفريقية",
+          "السينما المصرية",
+          "السينما المغربية"
+        ],
+        "correctAnswer": "نوليوود (نيجيريا)",
+        "explanation": "نوليوود هي واحدة من أكثر الصناعات السينمائية إنتاجًا في العالم.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0011"
+      },
+      {
+        "question": "من هو المخرج المالي الذي فاز بالجائزة الكبرى في مهرجان كان السينمائي عام 1987؟",
+        "options": [
+          "سليمان سيسي",
+          "عثمان سمبين",
+          "جبريل ديوب مامبيتي",
+          "عبد الرحمن سيساكو"
+        ],
+        "correctAnswer": "سليمان سيسي",
+        "explanation": "فاز سليمان سيسي بالجائزة الكبرى عن فيلم \"Yeelen\" عام 1987.",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0012"
+      },
+      {
+        "question": "ما هي منصة البث التي طورت المسلسلات الأفريقية بقوة منذ عام 2020؟",
+        "options": [
+          "نيتفليكس",
+          "ماي سبيس",
+          "فيميو",
+          "ديلي موشن"
+        ],
+        "correctAnswer": "نيتفليكس",
+        "explanation": "استثمرت Netflix في إنتاجات أفريقية أصلية مثل \"Blood & Water\" و\"Aníkúlápó\".",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Cinéma Africain",
+        "id": "arts_culture_0013"
       }
     ],
     "Art Contemporain": [
@@ -94,6 +439,175 @@
         "category": "Arts et Culture",
         "subcategory": "Art Contemporain",
         "id": "arts_culture_0005"
+      },
+      {
+        "question": "من هو الفنان البينيني الذي عرض في متحف Quai Branly منحوتات رمزية؟",
+        "options": [
+          "روموالد هازومي",
+          "الأناتسوي",
+          "ابراهيم الصلاحي",
+          "ويليام كنتريدج"
+        ],
+        "correctAnswer": "روموالد هازومي",
+        "explanation": "يستخدم روموالد هازومي مواد معاد تدويرها للتشكيك في المجتمع المعاصر.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0014"
+      },
+      {
+        "question": "ما هو بينالي الفن الأفريقي الذي يقام في داكار؟",
+        "options": [
+          "داك آرت",
+          "البندقية",
+          "دوكومنتا",
+          "بينالي ليون"
+        ],
+        "correctAnswer": "داك آرت",
+        "explanation": "داك آرت هو بينالي الفن الأفريقي المعاصر، الذي تم إنشاؤه في عام 1990.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0015"
+      },
+      {
+        "question": "من هو المصور السنغالي المشهور بصوره في الاستوديو في داكار؟",
+        "options": [
+          "عمر فيكتور ديوب",
+          "مالك سيديبي",
+          "سيدو كيتا",
+          "جيمس بارنور"
+        ],
+        "correctAnswer": "سيدو كيتا",
+        "explanation": "سيدو كيتا معروف في جميع أنحاء العالم بصوره بالأبيض والأسود في باماكو وداكار.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Art Contemporain",
+        "id": "arts_culture_0016"
+      }
+    ],
+    "Musique Africaine Moderne": [
+      {
+        "question": "ما هو النوع الموسيقي النيجيري الذي شهد انفجارًا عالميًا في عشرينيات القرن الحالي؟",
+        "options": [
+          "أفروبيتس",
+          "الريغي",
+          "الكيبوب",
+          "الفلامنكو"
+        ],
+        "correctAnswer": "أفروبيتس",
+        "explanation": "أصبحت موسيقى Afrobeats، التي يرتديها بورنا بوي وويزكيد وريما، ظاهرة عالمية.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0017"
+      },
+      {
+        "question": "من هو الفنان المالي الملقب بـ \"صوت أفريقيا الذهبي\"؟",
+        "options": [
+          "ساليف كيتا",
+          "علي فاركا توريه",
+          "أمادو ومريم",
+          "أومو سانجاري"
+        ],
+        "correctAnswer": "ساليف كيتا",
+        "explanation": "ساليف كيتا هو أسطورة الموسيقى المالية والعالمية.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0018"
+      },
+      {
+        "question": "ما هو المهرجان الموسيقي الذي يقام كل عام في مالي منذ عام 2005؟",
+        "options": [
+          "مهرجان في النيجر",
+          "كوتشيلا",
+          "جلاستونبري",
+          "أرض الغد"
+        ],
+        "correctAnswer": "مهرجان في النيجر",
+        "explanation": "يحتفل مهرجان النيجر في سيغو بثقافة وموسيقى مالي.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0019"
+      },
+      {
+        "question": "ما هو التطبيق الذي أحدث تحولًا في الاكتشافات الموسيقية الأفريقية في 2020-2025؟",
+        "options": [
+          "سبوتيفي",
+          "فاكس",
+          "التلكس",
+          "مينيتل"
+        ],
+        "correctAnswer": "سبوتيفي",
+        "explanation": "لقد ساهمت منصات البث المباشر في زيادة ظهور الفنانين الأفارقة حول العالم.",
+        "difficulty": "easy",
+        "category": "Arts et Culture",
+        "subcategory": "Musique Africaine Moderne",
+        "id": "arts_culture_0020"
+      }
+    ],
+    "Patrimoine et UNESCO": [
+      {
+        "question": "ما هي المدينة المالية المدرجة ضمن مواقع التراث العالمي لليونسكو؟",
+        "options": [
+          "تمبكتو",
+          "كايس",
+          "سيكاسو",
+          "موبتي"
+        ],
+        "correctAnswer": "تمبكتو",
+        "explanation": "تم إدراج تمبكتو وجيني وحلقة النيجر ضمن مواقع التراث العالمي لليونسكو.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0021"
+      },
+      {
+        "question": "أي مسجد أرضي في مالي يشتهر بعمارته الفريدة؟",
+        "options": [
+          "المسجد الكبير في جينيه",
+          "المسجد الأقصى",
+          "المسجد الأزرق",
+          "مسجد الحسن الثاني"
+        ],
+        "correctAnswer": "المسجد الكبير في جينيه",
+        "explanation": "يعد مسجد جينيه أكبر بناء من الأرض الخام في العالم.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0022"
+      },
+      {
+        "question": "أي متحف في داكار يحتفل بالحضارات السوداء؟",
+        "options": [
+          "متحف الحضارات السوداء",
+          "متحف اللوفر",
+          "المتحف البريطاني",
+          "متحف الفن الحديث"
+        ],
+        "correctAnswer": "متحف الحضارات السوداء",
+        "explanation": "تم افتتاح هذا المتحف في عام 2018، وهو يسلط الضوء على فن وتاريخ الحضارات السوداء.",
+        "difficulty": "medium",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0023"
+      },
+      {
+        "question": "ما هي الممارسات الثقافية المالية التي أدرجتها اليونسكو ضمن التراث غير المادي؟",
+        "options": [
+          "سيد Kôrè dji wara",
+          "كرة القدم",
+          "سينما",
+          "التصوير الفوتوغرافي"
+        ],
+        "correctAnswer": "سيد Kôrè dji wara",
+        "explanation": "العديد من التقاليد الأفريقية محمية باعتبارها تراثًا غير مادي للإنسانية.",
+        "difficulty": "hard",
+        "category": "Arts et Culture",
+        "subcategory": "Patrimoine et UNESCO",
+        "id": "arts_culture_0024"
       }
     ]
   }

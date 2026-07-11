@@ -75,6 +75,36 @@
         "category": "Technologie et Innovation",
         "subcategory": "Informatique et Programmation",
         "id": "technology_0004"
+      },
+      {
+        "question": "¿Qué lenguaje se utiliza para desarrollar aplicaciones Flutter como Quizz4U?",
+        "options": [
+          "Dardo",
+          "COBOL",
+          "fortran",
+          "Asamblea"
+        ],
+        "correctAnswer": "Dardo",
+        "explanation": "Flutter, el marco de Google, utiliza el lenguaje Dart para crear aplicaciones multiplataforma.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0020"
+      },
+      {
+        "question": "¿Qué significa \"API\" en TI?",
+        "options": [
+          "Interfaz de programación de aplicaciones",
+          "Acelerador de procesador interno",
+          "Análisis de protocolo de Internet",
+          "Aplicación Privada Integrada"
+        ],
+        "correctAnswer": "Interfaz de programación de aplicaciones",
+        "explanation": "Una API permite que las aplicaciones se comuniquen entre sí.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Informatique et Programmation",
+        "id": "technology_0021"
       }
     ],
     "Intelligence Artificielle": [
@@ -122,6 +152,51 @@
         "category": "Technologie et Innovation",
         "subcategory": "Intelligence Artificielle",
         "id": "technology_0007"
+      },
+      {
+        "question": "¿Qué empresa lanzó el modelo de IA GPT-4 en 2023?",
+        "options": [
+          "AbiertoAI",
+          "Manzana",
+          "nokia",
+          "Zarzamora"
+        ],
+        "correctAnswer": "AbiertoAI",
+        "explanation": "GPT-4 es uno de los modelos de lenguaje más avanzados de OpenAI.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0017"
+      },
+      {
+        "question": "¿Qué es un “indicador” en inteligencia artificial?",
+        "options": [
+          "Una instrucción textual dada a la IA.",
+          "un virus informático",
+          "un cable de red",
+          "una pantalla"
+        ],
+        "correctAnswer": "Una instrucción textual dada a la IA.",
+        "explanation": "El mensaje es la solicitud que el usuario envía a un modelo de IA generativa.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0018"
+      },
+      {
+        "question": "¿Qué riesgo plantea la IA generativa si se utiliza incorrectamente?",
+        "options": [
+          "Desinformación y deepfakes",
+          "Mejora automática del clima",
+          "Eliminación de electricidad",
+          "No más libros en papel"
+        ],
+        "correctAnswer": "Desinformación y deepfakes",
+        "explanation": "Los deepfakes y la desinformación son importantes desafíos éticos en la IA.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Intelligence Artificielle",
+        "id": "technology_0019"
       }
     ],
     "Innovations Tech Africaines": [
@@ -263,6 +338,280 @@
         "category": "Technologie et Innovation",
         "subcategory": "Histoire de la Tech",
         "id": "technology_0016"
+      }
+    ],
+    "Afrique Digitale": [
+      {
+        "question": "¿Qué servicio de conexión por satélite de Elon Musk está desplegado en África?",
+        "options": [
+          "Enlace estelar",
+          "netflix",
+          "Úber",
+          "Airbnb"
+        ],
+        "correctAnswer": "Enlace estelar",
+        "explanation": "Starlink tiene como objetivo conectar zonas rurales africanas vía satélite.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0022"
+      },
+      {
+        "question": "¿Qué generación de red móvil sucede al 4G?",
+        "options": [
+          "5G",
+          "2G",
+          "solo 3G",
+          "Sólo Wi-Fi"
+        ],
+        "correctAnswer": "5G",
+        "explanation": "5G ofrece velocidades más altas y menor latencia para aplicaciones móviles.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0023"
+      },
+      {
+        "question": "¿Qué práctica protege sus cuentas en línea además de las contraseñas?",
+        "options": [
+          "Autenticación de dos factores (2FA)",
+          "Comparte tu contraseña",
+          "Utilice “123456”",
+          "Desactivar bloqueo"
+        ],
+        "correctAnswer": "Autenticación de dos factores (2FA)",
+        "explanation": "2FA agrega una capa esencial de seguridad a las cuentas digitales.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Afrique Digitale",
+        "id": "technology_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "technology_0025",
+        "question": "¿Qué significa WWW?",
+        "options": [
+          "World Wide Web",
+          "World Wide Wifi",
+          "Web World Wide",
+          "Wireless Web World"
+        ],
+        "correctAnswer": "World Wide Web",
+        "explanation": "WWW significa World Wide Web.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0026",
+        "question": "¿Qué lenguaje estiliza las páginas web?",
+        "options": [
+          "CSS",
+          "HTML",
+          "Python",
+          "SQL"
+        ],
+        "correctAnswer": "CSS",
+        "explanation": "CSS controla la presentación visual.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0027",
+        "question": "¿Qué es la IA?",
+        "options": [
+          "Inteligencia artificial",
+          "Interfaz avanzada",
+          "Índice automático",
+          "Intranet abierta"
+        ],
+        "correctAnswer": "Inteligencia artificial",
+        "explanation": "IA significa inteligencia artificial.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0028",
+        "question": "¿Qué protocolo asegura la web (candado)?",
+        "options": [
+          "HTTPS",
+          "FTP",
+          "SMTP",
+          "Solo HTTP"
+        ],
+        "correctAnswer": "HTTPS",
+        "explanation": "HTTPS cifra el tráfico web.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0029",
+        "question": "¿Qué componente es el cerebro del ordenador?",
+        "options": [
+          "La CPU",
+          "La pantalla",
+          "El teclado",
+          "El altavoz"
+        ],
+        "correctAnswer": "La CPU",
+        "explanation": "La CPU ejecuta instrucciones.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0030",
+        "question": "¿Qué almacena principalmente la RAM?",
+        "options": [
+          "Datos temporales en uso",
+          "Solo fotos",
+          "Solo SO permanente",
+          "Nada"
+        ],
+        "correctAnswer": "Datos temporales en uso",
+        "explanation": "La RAM es memoria volátil rápida.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0031",
+        "question": "¿Qué empresa creó principalmente Android?",
+        "options": [
+          "Google",
+          "Apple",
+          "Microsoft",
+          "Solo Samsung"
+        ],
+        "correctAnswer": "Google",
+        "explanation": "Android lo desarrolla sobre todo Google.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0032",
+        "question": "¿Qué es un algoritmo?",
+        "options": [
+          "Secuencia de instrucciones para resolver un problema",
+          "Un virus",
+          "Un cable de red",
+          "Pantalla táctil"
+        ],
+        "correctAnswer": "Secuencia de instrucciones para resolver un problema",
+        "explanation": "Un algoritmo describe pasos de cálculo.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0033",
+        "question": "¿Qué unidad mide el almacenamiento digital?",
+        "options": [
+          "Byte / GB",
+          "Watt",
+          "Newton",
+          "Pascal"
+        ],
+        "correctAnswer": "Byte / GB",
+        "explanation": "La capacidad se mide en bytes, KB, MB, GB.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0034",
+        "question": "¿Qué significa USB?",
+        "options": [
+          "Universal Serial Bus",
+          "Ultra Speed Battery",
+          "United System Board",
+          "User Secure Backup"
+        ],
+        "correctAnswer": "Universal Serial Bus",
+        "explanation": "USB = Universal Serial Bus.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0035",
+        "question": "¿Qué red social fundó Mark Zuckerberg?",
+        "options": [
+          "Facebook",
+          "TikTok",
+          "Solo X",
+          "LinkedIn"
+        ],
+        "correctAnswer": "Facebook",
+        "explanation": "Zuckerberg cofundó Facebook.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0036",
+        "question": "¿Qué es la computación en la nube?",
+        "options": [
+          "Servicios informáticos por Internet",
+          "Un tipo de clima",
+          "Un cable HDMI",
+          "Una impresora"
+        ],
+        "correctAnswer": "Servicios informáticos por Internet",
+        "explanation": "La nube ofrece almacenamiento y cómputo remotos.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0037",
+        "question": "¿Qué lenguaje estructura el contenido web?",
+        "options": [
+          "HTML",
+          "Photoshop",
+          "Excel",
+          "PowerPoint"
+        ],
+        "correctAnswer": "HTML",
+        "explanation": "HTML estructura el contenido web.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0038",
+        "question": "¿Qué es un bug informático?",
+        "options": [
+          "Un error en un programa",
+          "Un antivirus",
+          "Pantalla LED",
+          "Una contraseña"
+        ],
+        "correctAnswer": "Un error en un programa",
+        "explanation": "Un bug es un defecto de software.",
+        "difficulty": "easy",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
+      },
+      {
+        "id": "technology_0039",
+        "question": "¿Qué tecnología permite pagos sin contacto?",
+        "options": [
+          "NFC",
+          "VGA",
+          "SCSI",
+          "CRT"
+        ],
+        "correctAnswer": "NFC",
+        "explanation": "NFC permite el pago sin contacto.",
+        "difficulty": "medium",
+        "category": "Technologie et Innovation",
+        "subcategory": "Général"
       }
     ]
   }

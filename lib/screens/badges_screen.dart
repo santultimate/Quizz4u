@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/badge_service.dart';
 import '../services/translation_service.dart';
-// import '../services/badge_notification_service.dart';
 import '../models/user_progress.dart';
 
 class BadgesScreen extends StatefulWidget {

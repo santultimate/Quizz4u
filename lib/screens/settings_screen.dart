@@ -24,7 +24,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   String _themeMode = 'système';
   bool _soundEnabled = true;
   bool _ttsEnabled = true;
-  int _timerDuration = 15;
+  int _timerDuration = SettingsService.defaultTimerDuration;
   bool _backgroundMusicEnabled = true;
   bool _animationsEnabled = true;
   double _masterVolume = 1.0;
@@ -69,6 +69,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final masterVolume = await SettingsService.getMasterVolume();
     final backgroundVolume = await SettingsService.getBackgroundVolume();
     final effectVolume = await SettingsService.getEffectVolume();
+    final difficultyLevel = await SettingsService.getDifficultyLevel();
     final selectedLanguage = await LocalizationService.getCurrentLanguage();
 
     final validThemeModes = ['clair', 'sombre', 'système'];
@@ -89,6 +90,7 @@ class _SettingsScreenState extends State<SettingsScreen>
       _masterVolume = masterVolume;
       _backgroundVolume = backgroundVolume;
       _effectVolume = effectVolume;
+      _difficultyLevel = difficultyLevel;
       _selectedLanguage = selectedLanguage;
       _isLoading = false;
     });
@@ -241,7 +243,9 @@ class _SettingsScreenState extends State<SettingsScreen>
                           subtitle: TranslationService.translate(
                               'timer_duration_desc'),
                           value: '$_timerDuration',
-                          items: ['10', '15', '20', '30', '45', '60'],
+                          items: SettingsService.allowedTimerDurations
+                              .map((d) => '$d')
+                              .toList(),
                           onChanged: (value) async {
                             HapticFeedback.selectionClick();
                             setState(() => _timerDuration = int.parse(value));
@@ -412,7 +416,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         ),
                         _buildActionTile(
                           title: TranslationService.translate('about'),
-                          subtitle: '${TranslationService.translate('version')} 1.0.0',
+                          subtitle: '${TranslationService.translate('version')} 2.0.7',
                           icon: Icons.info_rounded,
                           onTap: _showAboutDialog,
                           isDark: isDark,
@@ -1104,7 +1108,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       borderRadius: BorderRadius.circular(AppSpacing.radiusSm),
                     ),
                     child: Text(
-                      'Version 1.0.0',
+                      'Version 2.0.7',
                       style: AppTextStyles.caption.copyWith(
                         color: AppColors.primary,
                         fontWeight: FontWeight.bold,

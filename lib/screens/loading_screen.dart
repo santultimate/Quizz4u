@@ -7,7 +7,7 @@ import '../services/cached_preferences_service.dart'; // ⚡ NOUVEAU
 import '../services/progress_service.dart';
 import '../services/question_translation_service.dart';
 import '../services/ad_service.dart';
-import '../services/purchase_service.dart';
+import '../services/enhanced_purchase_service.dart';
 import '../services/dynamic_question_service.dart';
 import '../services/community_question_service.dart';
 import '../services/payment_verification_service.dart';
@@ -64,7 +64,7 @@ class _LoadingScreenState extends State<LoadingScreen>
 
   Future<void> _initializeApp() async {
     try {
-      print('[Loading] ⚡ DÉMARRAGE OPTIMISÉ - Fix ANR v2.0.5');
+      print('[Loading] ⚡ DÉMARRAGE OPTIMISÉ - Fix ANR v2.0.7');
 
       // Étape 1: TranslationService (CRITIQUE!)
       if (mounted) {
@@ -98,55 +98,15 @@ class _LoadingScreenState extends State<LoadingScreen>
       );
       print('[Loading] ✅ CachedPreferencesService OK');
 
-      // Étape 2: Firebase
-      if (mounted) {
-        setState(() {
-          _loadingText = TranslationService.translate('connecting_firebase');
-          _progress = 0.2;
-        });
-      }
-      try {
-        await Firebase.initializeApp(
-          options: DefaultFirebaseOptions.currentPlatform,
-        ).timeout(
-          const Duration(seconds: 3),
-          onTimeout: () {
-            print('[Loading] ⏰ Timeout Firebase');
-            throw TimeoutException('Firebase timeout');
-          },
-        );
-        print('[Loading] ✅ Firebase OK');
-      } catch (e) {
-        print('[Loading] ⚠️ Firebase désactivé: $e');
-      }
-
-      // Étape 3: MobileAds
-      if (mounted) {
-        setState(() {
-          _loadingText = TranslationService.translate('initializing_ads');
-          _progress = 0.3;
-        });
-      }
-      try {
-        await MobileAds.instance.initialize().timeout(
-          const Duration(seconds: 3),
-          onTimeout: () {
-            print('[Loading] ⏰ Timeout MobileAds');
-            throw TimeoutException('MobileAds timeout');
-          },
-        );
-        print('[Loading] ✅ MobileAds OK');
-      } catch (e) {
-        print('[Loading] ⚠️ MobileAds skip: $e');
-      }
-
-      // ⚡ OPTIMISÉ: Étape 4: Audio (NON-BLOQUANT)
+      // Étape 2+3: Firebase + MobileAds différés (non bloquants pour l'UI)
       if (mounted) {
         setState(() {
           _loadingText = TranslationService.translate('initializing_audio');
-          _progress = 0.4;
+          _progress = 0.25;
         });
       }
+
+      // ⚡ OPTIMISÉ: Audio (NON-BLOQUANT)
       try {
         await UnifiedAudioServiceOptimized.instance.initialize().timeout(
           const Duration(seconds: 2),
@@ -252,9 +212,25 @@ class _LoadingScreenState extends State<LoadingScreen>
 
   void _initializeSecondaryServices() async {
     try {
+      // Firebase + Ads après le 1er frame (cold start plus léger)
+      try {
+        await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform,
+        ).timeout(const Duration(seconds: 3));
+        print('[Loading] ✅ Firebase OK (différé)');
+      } catch (e) {
+        print('[Loading] ⚠️ Firebase différé skip: $e');
+      }
+      try {
+        await MobileAds.instance.initialize().timeout(const Duration(seconds: 3));
+        print('[Loading] ✅ MobileAds OK (différé)');
+      } catch (e) {
+        print('[Loading] ⚠️ MobileAds différé skip: $e');
+      }
+
       await QuestionTranslationService.initialize();
       await AdService.initialize();
-      await PurchaseService.initialize();
+      await EnhancedPurchaseService.initialize();
       await DynamicQuestionService.initialize();
       await CommunityQuestionService.initialize();
       await PaymentVerificationService.performPeriodicVerification();
@@ -326,7 +302,7 @@ class _LoadingScreenState extends State<LoadingScreen>
 
               // Version
               Text(
-                'Quiz4U v2.0',
+                'Quizz4U v2.0.7',
                 style: TextStyle(
                   color: Colors.white.withOpacity(0.7),
                   fontSize: 12,

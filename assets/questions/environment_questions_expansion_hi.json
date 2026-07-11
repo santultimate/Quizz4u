@@ -60,6 +60,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Changement Climatique",
         "id": "environment_0003"
+      },
+      {
+        "question": "2023 में जलवायु पर COP28 कहाँ आयोजित किया गया था?",
+        "options": [
+          "दुबई (संयुक्त अरब अमीरात)",
+          "पेरिस",
+          "बमाको",
+          "न्यूयॉर्क"
+        ],
+        "correctAnswer": "दुबई (संयुक्त अरब अमीरात)",
+        "explanation": "COP28 दुबई में आयोजित किया गया और ऊर्जा परिवर्तन को संबोधित किया गया।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0014"
+      },
+      {
+        "question": "हाल के आंकड़ों के अनुसार कौन सा वर्ष रिकॉर्ड पर सबसे गर्म था?",
+        "options": [
+          "2024",
+          "1900",
+          "1950",
+          "1800"
+        ],
+        "correctAnswer": "2024",
+        "explanation": "WMO और कॉपरनिकस के अनुसार 2024 ने वैश्विक तापमान रिकॉर्ड तोड़ दिया।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0015"
+      },
+      {
+        "question": "अफ़्रीका में ग्लोबल वार्मिंग से कौन सी चरम घटना बढ़ गई है?",
+        "options": [
+          "सूखा और बाढ़",
+          "सहेल में स्थायी हिमपात",
+          "उष्णकटिबंधीय ग्लेशियर",
+          "ध्रुवीय दिन"
+        ],
+        "correctAnswer": "सूखा और बाढ़",
+        "explanation": "उप-सहारा अफ़्रीका चरम जलवायु घटनाओं के प्रति बहुत संवेदनशील है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0016"
       }
     ],
     "Biodiversité Africaine": [
@@ -122,6 +167,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Biodiversité Africaine",
         "id": "environment_0007"
+      },
+      {
+        "question": "अवैध शिकार से किस बड़े अफ़्रीकी स्तनपायी को ख़तरा है?",
+        "options": [
+          "अफ़्रीकी हाथी",
+          "घरेलू बिल्ली",
+          "खरगोश",
+          "कबूतर"
+        ],
+        "correctAnswer": "अफ़्रीकी हाथी",
+        "explanation": "हाथी दांत के अवैध शिकार से अफ़्रीकी हाथियों को ख़तरा है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0017"
+      },
+      {
+        "question": "कौन सा अफ़्रीकी वर्षावन विश्व में दूसरा सबसे बड़ा है?",
+        "options": [
+          "कांगो बेसिन वन",
+          "अमेज़न वर्षावन",
+          "उत्तरी वन",
+          "स्कैंडिनेवियाई वन"
+        ],
+        "correctAnswer": "कांगो बेसिन वन",
+        "explanation": "कांगो जंगल छह देशों को कवर करता है और असाधारण जैव विविधता का घर है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0018"
+      },
+      {
+        "question": "किस जानवर को \"सवाना का राजा\" उपनाम दिया गया है?",
+        "options": [
+          "शेर",
+          "ज़ेबरा",
+          "मृग",
+          "गुलाबी राजहंस"
+        ],
+        "correctAnswer": "शेर",
+        "explanation": "शेर अफ़्रीकी वन्य जीवन का प्रतीक और एक शीर्ष शिकारी है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0019"
       }
     ],
     "Énergies Renouvelables": [
@@ -216,6 +306,310 @@
         "category": "Environnement et Écologie",
         "subcategory": "Pollution et Déchets",
         "id": "environment_0013"
+      },
+      {
+        "question": "किस अफ्रीकी देश ने 2017 में एकल-उपयोग प्लास्टिक बैग पर प्रतिबंध लगा दिया?",
+        "options": [
+          "केन्या",
+          "फ्रांस",
+          "ब्राज़िल",
+          "कनाडा"
+        ],
+        "correctAnswer": "केन्या",
+        "explanation": "केन्या प्लास्टिक बैग पर प्रतिबंध लगाने वाले पहले अफ्रीकी देशों में से एक था।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0023"
+      },
+      {
+        "question": "अफ़्रीकी और एशियाई नदियों के माध्यम से किस महासागर से सबसे अधिक प्लास्टिक कचरा प्राप्त होता है?",
+        "options": [
+          "हिंद महासागर",
+          "आर्कटिक महासागर",
+          "मृत सागर",
+          "कैस्पियन सागर"
+        ],
+        "correctAnswer": "हिंद महासागर",
+        "explanation": "अफ्रीकी तटों के लिए समुद्री प्लास्टिक प्रदूषण एक बड़ी चुनौती है।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0024"
+      }
+    ],
+    "Énergies Vertes": [
+      {
+        "question": "किस अफ़्रीकी देश में अफ़्रीका का सबसे बड़ा सौर तापीय विद्युत संयंत्र (नूर) है?",
+        "options": [
+          "मोरक्को",
+          "माली",
+          "आइसलैंड",
+          "जापान"
+        ],
+        "correctAnswer": "मोरक्को",
+        "explanation": "मोरक्को में नूर सौर परिसर अफ्रीका में सबसे बड़े में से एक है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0020"
+      },
+      {
+        "question": "कौन सी नवीकरणीय ऊर्जा बिजली उत्पादन के लिए सूर्य की गर्मी का उपयोग करती है?",
+        "options": [
+          "फोटोवोल्टिक सौर ऊर्जा",
+          "कोयला",
+          "तेल",
+          "प्राकृतिक गैस"
+        ],
+        "correctAnswer": "फोटोवोल्टिक सौर ऊर्जा",
+        "explanation": "अफ़्रीका में अपार सौर क्षमता है, जो दुनिया में सबसे ज़्यादा है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0021"
+      },
+      {
+        "question": "किस परियोजना का उद्देश्य साहेल में मरुस्थलीकरण के खिलाफ हरित पट्टी लगाना है?",
+        "options": [
+          "महान हरी दीवार",
+          "अमेज़न प्रोजेक्ट",
+          "बर्लिन की दीवार",
+          "सिल्क रोड"
+        ],
+        "correctAnswer": "महान हरी दीवार",
+        "explanation": "ग्रेट ग्रीन वॉल का लक्ष्य 2030 तक साहेल में 100 मिलियन हेक्टेयर भूमि को बहाल करना है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0022"
+      }
+    ],
+    "Général": [
+      {
+        "id": "environment_0025",
+        "question": "कोयला जलाने से मुख्यतः कौन-सी गैस निकलती है?",
+        "options": [
+          "कार्बन डाइऑक्साइड (CO₂)",
+          "हीलियम",
+          "केवल शुद्ध नाइट्रोजन",
+          "स्ट्रैटोस्फेरिक ओज़ोन"
+        ],
+        "correctAnswer": "कार्बन डाइऑक्साइड (CO₂)",
+        "explanation": "जीवाश्म ईंधन जलाने से मुख्यतः CO₂ निकलता है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0026",
+        "question": "IPCC का क्या अर्थ है?",
+        "options": [
+          "जलवायु परिवर्तन पर अंतर-सरकारी पैनल",
+          "अंतरराष्ट्रीय कोयला ऊर्जा समूह",
+          "एकीकृत महाद्वीपीय जल प्रबंधन",
+          "प्रमाणित पर्यावरणविदों का अंतरराष्ट्रीय संघ"
+        ],
+        "correctAnswer": "जलवायु परिवर्तन पर अंतर-सरकारी पैनल",
+        "explanation": "IPCC जलवायु विज्ञान का सार प्रस्तुत करता है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0027",
+        "question": "कौन-सी कृषि पद्धति क्षरित मिट्टी बहाल करने का लक्ष्य रखती है?",
+        "options": [
+          "कृषि-वानिकी",
+          "गहन अतिचराई",
+          "पूर्ण वनों की कटाई",
+          "बिना चक्रण की एकल फसल"
+        ],
+        "correctAnswer": "कृषि-वानिकी",
+        "explanation": "यह पेड़ों और फसलों को मिलाती है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0028",
+        "question": "कौन-सी महासागरीय घटना प्रशांत के आवधिक गर्म होने से जुड़ी है?",
+        "options": [
+          "अल नीनो",
+          "केवल रेड टाइड",
+          "जमा हुआ गल्फ स्ट्रीम",
+          "ज्वालामुखीय सुनामी"
+        ],
+        "correctAnswer": "अल नीनो",
+        "explanation": "अल नीनो वैश्विक जलवायु को प्रभावित करता है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0029",
+        "question": "भूजल अधिदोहन से कौन-सा संसाधन खतरे में है?",
+        "options": [
+          "मीठा पानी",
+          "केवल कच्चा तेल",
+          "अंतरिक्ष हीलियम",
+          "ग्रेनाइट"
+        ],
+        "correctAnswer": "मीठा पानी",
+        "explanation": "अत्यधिक पंपिंग से जलभृत सूख जाते हैं।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0030",
+        "question": "कौन-सी ऊर्जा हवा से बिजली बनाती है?",
+        "options": [
+          "पवन ऊर्जा",
+          "परमाणु",
+          "कोयला",
+          "डीज़ल"
+        ],
+        "correctAnswer": "पवन ऊर्जा",
+        "explanation": "पवन टर्बाइन हवा को बिजली में बदलते हैं।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0031",
+        "question": "कौन-सा पारिस्थितिकी तंत्र पीट में भारी कार्बन संग्रहीत करता है?",
+        "options": [
+          "पीटलैंड",
+          "नमक मरुस्थल",
+          "सक्रिय टीले",
+          "शहरी पार्किंग"
+        ],
+        "correctAnswer": "पीटलैंड",
+        "explanation": "पीटलैंड बड़े कार्बन सिंक हैं।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0032",
+        "question": "कौन-सा व्यक्तिगत कदम खाद्य कार्बन फुटप्रिंट बहुत घटाता है?",
+        "options": [
+          "खाद्य अपव्यय कम करना",
+          "ज़्यादा भोजन फेंकना",
+          "लाल मांस दोगुना करना",
+          "एक्सपायरी नज़रअंदाज़ करना"
+        ],
+        "correctAnswer": "खाद्य अपव्यय कम करना",
+        "explanation": "अपव्यय अनावश्यक उत्सर्जन पैदा करता है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0033",
+        "question": "कौन-सा वायु प्रदूषक सूक्ष्म PM2.5 कणों से जुड़ा है?",
+        "options": [
+          "वायु प्रदूषण",
+          "केवल शोर",
+          "नीली रोशनी",
+          "UV-C किरणें"
+        ],
+        "correctAnswer": "वायु प्रदूषण",
+        "explanation": "PM2.5 फेफड़ों में गहराई तक जाते हैं।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0034",
+        "question": "कौन-सा समझौता अंतरराष्ट्रीय महत्व की आर्द्रभूमियों की रक्षा करता है?",
+        "options": [
+          "रामसर कन्वेंशन",
+          "शेंगेन समझौता",
+          "मास्ट्रिख्ट संधि",
+          "वारसा पैक्ट"
+        ],
+        "correctAnswer": "रामसर कन्वेंशन",
+        "explanation": "रामसर आर्द्रभूमियों की रक्षा करता है।",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0035",
+        "question": "कौन-सा जीवाश्म ईंधन मुख्यतः प्राकृतिक गैस के रूप में निकाला जाता है?",
+        "options": [
+          "मीथेन",
+          "एंथ्रासाइट कोयला",
+          "सूखा पीट",
+          "सड़क बिटुमेन"
+        ],
+        "correctAnswer": "मीथेन",
+        "explanation": "प्राकृतिक गैस मुख्यतः मीथेन होती है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0036",
+        "question": "कौन-सी मछली पकड़ने की विधि समुद्री तल नष्ट कर सकती है?",
+        "options": [
+          "तल ट्रॉलिंग",
+          "टिकाऊ लाइन फिशिंग",
+          "जिम्मेदार जलीय कृषि",
+          "हाथ से शंख संग्रह"
+        ],
+        "correctAnswer": "तल ट्रॉलिंग",
+        "explanation": "ट्रॉलिंग नितल आवासों को खुरचती है।",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0037",
+        "question": "कौन-सा वैश्विक लक्ष्य गर्म होना 2 °C से काफी नीचे रखना चाहता है?",
+        "options": [
+          "पेरिस समझौता",
+          "केवल भुलाया गया क्योटो प्रोटोकॉल",
+          "रोम संधि",
+          "अटलांटिक चार्टर"
+        ],
+        "correctAnswer": "पेरिस समझौता",
+        "explanation": "पेरिस समझौता यह जलवायु लक्ष्य तय करता है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0038",
+        "question": "कौन-सा ऊर्जा स्रोत फोटोवोल्टिक पैनल उपयोग करता है?",
+        "options": [
+          "सौर ऊर्जा",
+          "गहन भूतापीय",
+          "नाभिकीय विखंडन",
+          "ग्रे हाइड्रोजन"
+        ],
+        "correctAnswer": "सौर ऊर्जा",
+        "explanation": "पैनल प्रकाश को बिजली में बदलते हैं।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0039",
+        "question": "कौन-सी घटना जीव प्रजातियों की विविधता की हानि दर्शाती है?",
+        "options": [
+          "जैव विविधता हानि",
+          "मौद्रिक मुद्रास्फीति",
+          "शहरी प्रवास",
+          "जल चक्र"
+        ],
+        "correctAnswer": "जैव विविधता हानि",
+        "explanation": "मानवीय दबाव से जैव विविधता घटती है।",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
       }
     ]
   }

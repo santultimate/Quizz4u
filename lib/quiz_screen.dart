@@ -23,34 +23,43 @@ import 'services/leaderboard_service.dart'; // Importer le service de classement
 // Importer le service de test publicitaire
 import 'package:shared_preferences/shared_preferences.dart';
 import 'widgets/ad_banner_widget.dart'; // Pour les bannières publicitaires
+import 'widgets/quiz_explanation_sheet.dart';
+import 'widgets/quiz_pause_dialog.dart';
+import 'services/review_service.dart';
+import 'utils/logger.dart';
 
 class QuizScreen extends StatelessWidget {
   final String category;
   final bool isDailyChallenge;
   final DailyChallenge? challenge;
+  final bool isReviewMode;
 
   const QuizScreen({
     super.key,
     required this.category,
     this.isDailyChallenge = false,
     this.challenge,
+    this.isReviewMode = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(TranslationService.translateWithParams(
-            'quiz_category_title', {
-          'category': QuestionTranslationService.translateCategory(category)
-        })),
+        title: Text(isReviewMode
+            ? TranslationService.translate('review_mode')
+            : TranslationService.translateWithParams('quiz_category_title', {
+                'category':
+                    QuestionTranslationService.translateCategory(category)
+              })),
         backgroundColor: Colors.purple[700],
         leading: IconButton(
           icon: const Icon(Icons.home),
           onPressed: () {
+            // /home = HomeScreen (ne pas re-bootstrap via LoadingScreen '/')
             Navigator.pushNamedAndRemoveUntil(
               context,
-              '/',
+              '/home',
               (route) => false,
             );
           },
@@ -69,6 +78,7 @@ class QuizScreen extends StatelessWidget {
                     category: category,
                     isDailyChallenge: isDailyChallenge,
                     challenge: challenge,
+                    isReviewMode: isReviewMode,
                   ),
                 ),
               );
@@ -100,6 +110,7 @@ class QuizScreen extends StatelessWidget {
         category: category,
         isDailyChallenge: isDailyChallenge,
         challenge: challenge,
+        isReviewMode: isReviewMode,
       ),
     );
   }
@@ -109,12 +120,14 @@ class QuizPage extends StatefulWidget {
   final String category;
   final bool isDailyChallenge;
   final DailyChallenge? challenge;
+  final bool isReviewMode;
 
   const QuizPage({
     super.key,
     required this.category,
     this.isDailyChallenge = false,
     this.challenge,
+    this.isReviewMode = false,
   });
 
   @override
@@ -152,6 +165,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   int? _selectedAnswerIndex; // Index de la réponse sélectionnée
   bool _showFeedback = false;
   bool _isAnswering = false; // Flag pour empêcher de répondre plusieurs fois
+  String _preferredDifficulty = 'moyen';
+  final Map<String, String> _reviewCategoryById = {};
 
   // allQuestions nécessaire pour _loadAllQuestions
   List<QuestionModel> allQuestions = [];
@@ -162,7 +177,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    print('[QuizScreen] initState - initialisation');
+    Logger.debug('QuizScreen', 'initState - initialisation');
     _initializeAnimations();
     _loadTimerDuration(); // ⏱️ Charger la durée du timer depuis les paramètres
     _initializeQuestions();
@@ -172,59 +187,84 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   Future<void> _initializeQuestions() async {
-    print('[QuizScreen] 🔄 Début _initializeQuestions pour ${widget.category}');
+    Logger.debug('QuizScreen', '🔄 Début _initializeQuestions pour ${widget.category}');
 
     try {
       // ⚡ OPTIMISÉ: Questions déjà chargées dans LoadingScreen
       if (!QuestionServiceOptimized.isLoaded) {
-        print('[QuizScreen] 🔄 Chargement QuestionServiceOpt...');
+        Logger.debug('QuizScreen', '🔄 Chargement QuestionServiceOpt...');
         await QuestionServiceOptimized.loadEssentialQuestions();
-        print('[QuizScreen] ✅ QuestionServiceOpt chargé');
+        Logger.debug('QuizScreen', '✅ QuestionServiceOpt chargé');
       } else {
-        print('[QuizScreen] ✅ QuestionService déjà chargé (skip)');
+        Logger.debug('QuizScreen', '✅ QuestionService déjà chargé (skip)');
       }
 
       // ProgressService est léger, on peut le recharger
-      print('[QuizScreen] 🔄 Chargement ProgressService...');
+      Logger.debug('QuizScreen', '🔄 Chargement ProgressService...');
       await ProgressService.loadProgress();
-      print('[QuizScreen] ✅ ProgressService chargé');
+      Logger.debug('QuizScreen', '✅ ProgressService chargé');
 
       // TTS déjà initialisé dans LoadingScreen - on skip pour performance
-      print('[QuizScreen] ℹ️ TTS déjà initialisé dans LoadingScreen (skip)');
+      Logger.debug('QuizScreen', 'ℹ️ TTS déjà initialisé dans LoadingScreen (skip)');
 
-      print('[QuizScreen] 🔄 Génération questions aléatoires...');
-      _generateRandomQuestions();
-      print('[QuizScreen] ✅ Questions générées: ${currentQuestions.length}');
+      Logger.debug('QuizScreen', '🔄 Génération questions aléatoires...');
+      _preferredDifficulty = await SettingsService.getDifficultyLevel();
+      // Appliquer aussi la durée timer liée à la difficulté si l'utilisateur
+      // n'a pas forcé une durée custom trop éloignée — on respecte getTimerDuration.
+      if (widget.isReviewMode) {
+        _reviewCategoryById.clear();
+        final entries = await ReviewService.getWrongEntries();
+        currentQuestions = await ReviewService.loadReviewQuestions(count: 10);
+        for (final e in entries) {
+          final id = e['id']?.toString();
+          final cat = e['category']?.toString();
+          if (id != null && cat != null) {
+            _reviewCategoryById[id] = cat;
+          }
+        }
+        totalQuestions = currentQuestions.isEmpty ? 0 : currentQuestions.length;
+        _shuffleAllAnswers();
+        if (currentQuestions.isEmpty && mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(TranslationService.translate('no_review_questions')),
+            ),
+          );
+        }
+      } else {
+        await QuestionServiceOptimized.ensureCategoryReady(widget.category);
+        _generateRandomQuestions();
+      }
+      Logger.debug('QuizScreen', '✅ Questions générées: ${currentQuestions.length}');
 
       // Charger les paramètres audio avant de lancer la musique
-      print('[QuizScreen] 🔄 Chargement paramètres audio...');
+      Logger.debug('QuizScreen', '🔄 Chargement paramètres audio...');
       await _loadAudioSettings();
-      print('[QuizScreen] ✅ Paramètres audio chargés');
+      Logger.debug('QuizScreen', '✅ Paramètres audio chargés');
 
-      print('[QuizScreen] 🔄 Mise à jour isLoading = false');
+      Logger.debug('QuizScreen', '🔄 Mise à jour isLoading = false');
       if (mounted) {
         setState(() {
           isLoading = false;
         });
       }
-      print('[QuizScreen] ✅ UI mise à jour, isLoading = false');
+      Logger.debug('QuizScreen', '✅ UI mise à jour, isLoading = false');
 
       // Debug: Afficher l'état des paramètres audio
-      print('[QuizScreen] DEBUG - État final des paramètres audio:');
-      print(
-          '[QuizScreen] DEBUG - _backgroundMusicEnabled = $_backgroundMusicEnabled');
-      print('[QuizScreen] DEBUG - _soundEnabled = $_soundEnabled');
-      print('[QuizScreen] DEBUG - _ttsEnabled = $_ttsEnabled');
+      Logger.debug('QuizScreen', 'DEBUG - État final des paramètres audio:');
+      Logger.debug('QuizScreen', '[QuizScreen] DEBUG - _backgroundMusicEnabled = $_backgroundMusicEnabled');
+      Logger.debug('QuizScreen', 'DEBUG - _soundEnabled = $_soundEnabled');
+      Logger.debug('QuizScreen', 'DEBUG - _ttsEnabled = $_ttsEnabled');
 
       // Lancer la musique de fond au début du quiz
-      print('[QuizScreen] 🔄 Démarrage musique de fond...');
+      Logger.debug('QuizScreen', '🔄 Démarrage musique de fond...');
       await _startBackgroundMusic();
       _startTimer();
       _startAudioSettingsCheck();
-      print('[QuizScreen] ✅ Initialisation complète terminée!');
+      Logger.debug('QuizScreen', '✅ Initialisation complète terminée!');
     } catch (e, stackTrace) {
-      print('[QuizScreen] ❌ ERREUR dans _initializeQuestions: $e');
-      print('[QuizScreen] ❌ StackTrace: $stackTrace');
+      Logger.debug('QuizScreen', '❌ ERREUR dans _initializeQuestions: $e');
+      Logger.debug('QuizScreen', '❌ StackTrace: $stackTrace');
 
       // Toujours essayer de terminer le chargement même en cas d'erreur
       if (mounted) {
@@ -289,18 +329,17 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       // depuis la banque globale de questions de la catégorie
       // Cela garantit un nouveau lot à chaque partie (pas de répétition du même lot)
       final randomSeed = DateTime.now().millisecondsSinceEpoch;
-      print(
-          '[QuizScreen] 🎲 Génération de questions aléatoires avec seed: $randomSeed');
+      Logger.debug('QuizScreen', '[QuizScreen] 🎲 Génération de questions aléatoires avec seed: $randomSeed');
 
       currentQuestions = QuestionServiceOptimized.getRandomQuestionsForCategory(
         widget.category,
         totalQuestions,
+        preferredDifficulty: _preferredDifficulty,
       );
 
       // Vérifier qu'il y a des questions disponibles
       if (currentQuestions.isEmpty) {
-        print(
-            '[QuizScreen] ❌ Aucune question disponible pour ${widget.category}');
+        Logger.debug('QuizScreen', '[QuizScreen] ❌ Aucune question disponible pour ${widget.category}');
         // Essayer de charger des questions intelligentes comme fallback
         currentQuestions =
             QuestionServiceOptimized.getIntelligentQuestionsForCategory(
@@ -308,8 +347,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
           count: totalQuestions,
         );
         if (currentQuestions.isNotEmpty) {
-          print(
-              '[QuizScreen] ✅ Questions de fallback chargées: ${currentQuestions.length}');
+          Logger.debug('QuizScreen', '[QuizScreen] ✅ Questions de fallback chargées: ${currentQuestions.length}');
         }
       }
 
@@ -319,27 +357,26 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       // ⚠️ LIMITER à exactement 10 questions (ne pas charger plus)
       if (currentQuestions.length > totalQuestions) {
         currentQuestions = currentQuestions.sublist(0, totalQuestions);
-        print('[QuizScreen] ✂️ Questions limitées à $totalQuestions');
+        Logger.debug('QuizScreen', '✂️ Questions limitées à $totalQuestions');
       }
 
       // 🌍 Les questions sont déjà traduites par QuestionServiceOptimized
       // qui charge les fichiers traduits selon la langue
-      print('[QuizScreen] ✅ Questions chargées (traduites automatiquement)');
+      Logger.debug('QuizScreen', '✅ Questions chargées (traduites automatiquement)');
 
       // ⚠️ DÉSACTIVÉ : Les questions d'engagement sont inappropriées dans les quiz par catégorie
       // _loadEngagementQuestions();
 
-      print(
-          '[QuizScreen] 🎯 ${currentQuestions.length} questions aléatoires générées pour ${widget.category}');
+      Logger.debug('QuizScreen', '[QuizScreen] 🎯 ${currentQuestions.length} questions aléatoires générées pour ${widget.category}');
 
       // Debug : Afficher les premières questions pour vérifier la variété
       if (currentQuestions.length >= 3) {
-        print('[QuizScreen] 🔍 Premières questions: ');
+        Logger.debug('QuizScreen', '🔍 Premières questions: ');
         for (int i = 0; i < 3; i++) {
           final preview = currentQuestions[i].question.length > 40
               ? '${currentQuestions[i].question.substring(0, 40)}...'
               : currentQuestions[i].question;
-          print('  $i. $preview');
+          Logger.debug('QuizScreen', '  $i. $preview');
         }
       }
     }
@@ -352,19 +389,18 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   void _shuffleAllAnswers() {
     _shuffledAnswers.clear();
     for (int i = 0; i < currentQuestions.length; i++) {
-      final question = currentQuestions[i];
-      final answersList = question.answers.entries.toList();
-      answersList.shuffle(Random());
-      _shuffledAnswers[i] = answersList;
+      final entries = currentQuestions[i].answers.entries.toList()..shuffle(random);
+      _shuffledAnswers[i] = entries;
     }
-    print(
-        '[QuizScreen] 🎲 Réponses mélangées pour ${currentQuestions.length} questions');
+  }
+
+  String _categoryOfReview(QuestionModel q) {
+    return _reviewCategoryById[q.id] ?? widget.category;
   }
 
   void _loadDailyChallengeQuestionsSync() {
     try {
-      print(
-          '[QuizScreen] 🎯 Chargement synchrone des questions du défi quotidien...');
+      Logger.debug('QuizScreen', '[QuizScreen] 🎯 Chargement synchrone des questions du défi quotidien...');
       // Utiliser les questions intelligentes comme fallback immédiat
       currentQuestions =
           QuestionServiceOptimized.getIntelligentQuestionsForCategory(
@@ -373,8 +409,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       );
 
       // 🌍 NE PAS TRADUIRE - Les questions restent en français
-      print(
-          '[QuizScreen] ℹ️ Questions du défi en français (traduction désactivée)');
+      Logger.debug('QuizScreen', '[QuizScreen] ℹ️ Questions du défi en français (traduction désactivée)');
 
       // 🎲 MÉLANGER les réponses
       _shuffleAllAnswers();
@@ -382,7 +417,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       // Charger les questions du défi en arrière-plan (mais pas les questions d'engagement génériques)
       // _loadDailyChallengeQuestions(); // ⚠️ DÉSACTIVÉ temporairement
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur chargement synchrone questions défi: $e');
+      Logger.debug('QuizScreen', '❌ Erreur chargement synchrone questions défi: $e');
       currentQuestions =
           QuestionServiceOptimized.getIntelligentQuestionsForCategory(
         widget.category,
@@ -390,8 +425,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       );
 
       // 🌍 NE PAS TRADUIRE en cas d'erreur non plus
-      print(
-          '[QuizScreen] ℹ️ Questions en français (erreur - traduction désactivée)');
+      Logger.debug('QuizScreen', '[QuizScreen] ℹ️ Questions en français (erreur - traduction désactivée)');
 
       // 🎲 MÉLANGER les réponses
       _shuffleAllAnswers();
@@ -400,28 +434,25 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
   Future<void> _loadDailyChallengeQuestions() async {
     try {
-      print('[QuizScreen] 🎯 Chargement des questions du défi quotidien...');
+      Logger.debug('QuizScreen', '🎯 Chargement des questions du défi quotidien...');
       currentQuestions =
           await DailyChallengeService.getCurrentChallengeQuestions();
 
       if (currentQuestions.isEmpty) {
-        print(
-            '[QuizScreen] ⚠️ Aucune question trouvée pour le défi, utilisation des questions normales');
+        Logger.debug('QuizScreen', '[QuizScreen] ⚠️ Aucune question trouvée pour le défi, utilisation des questions normales');
         currentQuestions =
             QuestionServiceOptimized.getSmartQuestionsForCategory(
           widget.category,
           count: totalQuestions,
         );
       } else {
-        print(
-            '[QuizScreen] ✅ ${currentQuestions.length} questions chargées pour le défi quotidien');
+        Logger.debug('QuizScreen', '[QuizScreen] ✅ ${currentQuestions.length} questions chargées pour le défi quotidien');
       }
 
       // 🌍 NE PAS TRADUIRE - Les questions restent en français
-      print(
-          '[QuizScreen] ℹ️ Questions du défi en français (async - traduction désactivée)');
+      Logger.debug('QuizScreen', '[QuizScreen] ℹ️ Questions du défi en français (async - traduction désactivée)');
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur chargement questions défi: $e');
+      Logger.debug('QuizScreen', '❌ Erreur chargement questions défi: $e');
       // Fallback vers les questions intelligentes
       currentQuestions =
           QuestionServiceOptimized.getIntelligentQuestionsForCategory(
@@ -430,8 +461,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       );
 
       // 🌍 NE PAS TRADUIRE en cas d'erreur non plus
-      print(
-          '[QuizScreen] ℹ️ Questions en français (erreur async - traduction désactivée)');
+      Logger.debug('QuizScreen', '[QuizScreen] ℹ️ Questions en français (erreur async - traduction désactivée)');
 
       // 🎲 MÉLANGER les réponses
       _shuffleAllAnswers();
@@ -487,36 +517,11 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     setState(() {
       ttsActive = false;
     });
-    showDialog(
+    QuizPauseDialog.show(
       context: context,
-      barrierDismissible: false,
-      builder: (context) => AlertDialog(
-        title: Text(TranslationService.translate('game_paused')),
-        content: Text(TranslationService.translate('continue_game_question')),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              _resumeGame();
-            },
-            child: Text(TranslationService.translate('continue')),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              _restartGame();
-            },
-            child: Text(TranslationService.translate('restart')),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              Navigator.pop(context);
-            },
-            child: Text(TranslationService.translate('quit')),
-          ),
-        ],
-      ),
+      onContinue: _resumeGame,
+      onRestart: _restartGame,
+      onQuit: () => Navigator.pop(context),
     );
   }
 
@@ -564,7 +569,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   void _nextQuestion() {
-    print('[QuizScreen] 🔄 Passage à la question suivante...');
+    Logger.debug('QuizScreen', '🔄 Passage à la question suivante...');
 
     // Réinitialiser le feedback visuel et débloquer les réponses
     setState(() {
@@ -574,7 +579,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       _isAnswering = false; // 🔓 Débloquer pour la prochaine question
     });
     _feedbackController.reset();
-    print('[QuizScreen] 🔓 Réponses déverrouillées');
+    Logger.debug('QuizScreen', '🔓 Réponses déverrouillées');
 
     // ⚠️ CORRECTION: S'arrêter à totalQuestions (10) au lieu de continuer jusqu'à la fin de currentQuestions
     if (currentQuestionIndex < totalQuestions - 1 &&
@@ -584,14 +589,13 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         timer = _timerDuration; // ⏱️ Utiliser la durée configurée
       });
 
-      print(
-          '[QuizScreen] ⏱️ Redémarrage du timer pour question ${currentQuestionIndex + 1}/$totalQuestions');
+      Logger.debug('QuizScreen', '[QuizScreen] ⏱️ Redémarrage du timer pour question ${currentQuestionIndex + 1}/$totalQuestions');
 
       // ⏱️ S'assurer que l'ancien timer est bien annulé avant d'en créer un nouveau
       try {
         _timer.cancel();
       } catch (e) {
-        print('[QuizScreen] ⚠️ Timer déjà annulé: $e');
+        Logger.debug('QuizScreen', '⚠️ Timer déjà annulé: $e');
       }
 
       // ✅ ORDRE CORRIGÉ : Reset AVANT de démarrer le nouveau timer
@@ -605,39 +609,36 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       _timerController.forward();
       _questionController.forward();
 
-      print(
-          '[QuizScreen] ✅ Question ${currentQuestionIndex + 1}/${currentQuestions.length} chargée');
+      Logger.debug('QuizScreen', '[QuizScreen] ✅ Question ${currentQuestionIndex + 1}/${currentQuestions.length} chargée');
 
       // Lancer la TTS pour la nouvelle question si activée
       if (_ttsEnabled && currentQuestions.isNotEmpty) {
         _speakQuestion();
       }
     } else {
-      print('[QuizScreen] 🏁 Dernière question - fin du jeu');
+      Logger.debug('QuizScreen', '🏁 Dernière question - fin du jeu');
       _endGame();
     }
   }
 
   void checkAnswer(int answerIndex, bool isCorrect) async {
-    print(
-        '[QuizScreen] DEBUG - checkAnswer appelée avec isCorrect: $isCorrect, answerIndex: $answerIndex');
-    print('[QuizScreen] DEBUG - _soundEnabled = $_soundEnabled');
+    Logger.debug('QuizScreen', '[QuizScreen] DEBUG - checkAnswer appelée avec isCorrect: $isCorrect, answerIndex: $answerIndex');
+    Logger.debug('QuizScreen', 'DEBUG - _soundEnabled = $_soundEnabled');
 
     // 🚫 Empêcher de répondre plusieurs fois à la même question
     if (isPaused || isGameOver || _isAnswering) {
-      print(
-          '[QuizScreen] ⚠️ Réponse ignorée (isPaused=$isPaused, isGameOver=$isGameOver, _isAnswering=$_isAnswering)');
+      Logger.debug('QuizScreen', '[QuizScreen] ⚠️ Réponse ignorée (isPaused=$isPaused, isGameOver=$isGameOver, _isAnswering=$_isAnswering)');
       return;
     }
 
     // Marquer qu'on est en train de traiter une réponse
     _isAnswering = true;
-    print('[QuizScreen] 🔒 Réponse verrouillée');
+    Logger.debug('QuizScreen', '🔒 Réponse verrouillée');
 
     // ⏸️ ARRÊTER LE TIMER IMMÉDIATEMENT quand on répond
     _timer.cancel();
     _timerController.stop();
-    print('[QuizScreen] ⏸️ Timer arrêté - réponse donnée');
+    Logger.debug('QuizScreen', '⏸️ Timer arrêté - réponse donnée');
 
     // Afficher le feedback visuel immédiatement
     setState(() {
@@ -648,7 +649,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     });
 
     // Démarrer l'animation de feedback
-    print('[QuizScreen] 🎨 Démarrage animation feedback: isCorrect=$isCorrect');
+    Logger.debug('QuizScreen', '🎨 Démarrage animation feedback: isCorrect=$isCorrect');
     _feedbackController.reset();
     _feedbackController.forward();
 
@@ -662,61 +663,68 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     });
 
     // Enregistrer la progression
-    print(
-        '[QuizScreen] 🎯 Tentative d\'enregistrement progression: isCorrect=$isCorrect, points=$pointsEarned, category=${widget.category}');
+    Logger.debug('QuizScreen', '[QuizScreen] 🎯 Tentative d\'enregistrement progression: isCorrect=$isCorrect, points=$pointsEarned, category=${widget.category}');
     try {
       await ProgressService.addAnswer(isCorrect, pointsEarned, widget.category);
-      print('[QuizScreen] ✅ Progression enregistrée avec succès');
+      Logger.debug('QuizScreen', '✅ Progression enregistrée avec succès');
+
+      final currentQ = currentQuestions[currentQuestionIndex];
+      if (!isCorrect) {
+        await ReviewService.recordWrong(
+          questionId: currentQ.id,
+          category: widget.isReviewMode ? _categoryOfReview(currentQ) : widget.category,
+          questionPreview: currentQ.question,
+        );
+      } else if (widget.isReviewMode) {
+        await ReviewService.removeResolved(
+          currentQ.id,
+          _categoryOfReview(currentQ),
+        );
+      }
 
       // Mettre à jour le défi quotidien si applicable
       if (widget.isDailyChallenge && isCorrect) {
         await DailyChallengeService.updateProgress(1);
-        print('[QuizScreen] 🎯 Progression défi quotidien mise à jour');
+        Logger.debug('QuizScreen', '🎯 Progression défi quotidien mise à jour');
       }
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur enregistrement progression: $e');
+      Logger.debug('QuizScreen', '❌ Erreur enregistrement progression: $e');
     }
 
     // Jouer les sons de réponse
     if (_soundEnabled) {
       try {
         if (isCorrect) {
-          print('[QuizScreen] 🎵 Bonne réponse - jouer son good.mp3');
+          Logger.debug('QuizScreen', '🎵 Bonne réponse - jouer son good.mp3');
           await UnifiedAudioServiceOptimized.instance.playGoodSound();
         } else {
-          print('[QuizScreen] 🎵 Mauvaise réponse - jouer son bad.mp3');
+          Logger.debug('QuizScreen', '🎵 Mauvaise réponse - jouer son bad.mp3');
           await UnifiedAudioServiceOptimized.instance.playBadSound();
         }
       } catch (e) {
-        print('[QuizScreen] ❌ Erreur lors de la lecture du son: $e');
+        Logger.debug('QuizScreen', '❌ Erreur lors de la lecture du son: $e');
       }
     } else {
-      print('[QuizScreen] 🔇 Sons désactivés dans les paramètres');
+      Logger.debug('QuizScreen', '🔇 Sons désactivés dans les paramètres');
     }
 
-    // Lire le feedback TTS multilingue (NON-BLOQUANT)
-    // ⚠️ TEMPORAIREMENT DÉSACTIVÉ pour éviter les crashs
-    // if (_ttsEnabled) {
-    //   // ⚡ Ne pas await pour ne pas bloquer le gameplay
-    //   MultilingualTTSService.speakFeedback(isCorrect).then((_) {
-    //     print('[QuizScreen] 🎤 Feedback TTS multilingue lu');
-    //   }).catchError((e) {
-    //     print('[QuizScreen] ❌ Erreur TTS feedback: $e');
-    //   });
-    // }
+    // Afficher l'explication (surtout utile après une erreur)
+    if (mounted) {
+      final q = currentQuestions[currentQuestionIndex];
+      await QuizExplanationSheet.show(
+        context: context,
+        isCorrect: isCorrect,
+        correctAnswer: q.correctAnswer,
+        explanation: q.explanation,
+      );
+    }
 
-    // ⏩ PASSAGE IMMÉDIAT À LA QUESTION SUIVANTE (ne pas attendre la pub)
-    print(
-        '[QuizScreen] ⏱️ Attente 500ms avant passage à la question suivante...');
-    await Future.delayed(const Duration(
-        milliseconds:
-            500)); // ✅ Réduit de 1000ms à 500ms pour feedback plus rapide
-
-    print('[QuizScreen] 🚀 Appel de _nextQuestion()...');
+    // ⏩ PASSAGE À LA QUESTION SUIVANTE
+    Logger.debug('QuizScreen', '🚀 Appel de _nextQuestion()...');
     if (mounted) {
       _nextQuestion();
     } else {
-      print('[QuizScreen] ⚠️ Widget démonté, skip _nextQuestion');
+      Logger.debug('QuizScreen', '⚠️ Widget démonté, skip _nextQuestion');
       return;
     }
 
@@ -725,16 +733,15 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     SmartAdStrategy.incrementQuestionCount();
 
     if (await SmartAdStrategy.canShowAd()) {
-      print('[QuizScreen] 📺 Tentative affichage publicité (non-bloquant)...');
+      Logger.debug('QuizScreen', '📺 Tentative affichage publicité (non-bloquant)...');
       AdService.showStrategicInterstitial().then((_) {
         // Relancer la musique de fond après la pub
         if (_backgroundMusicEnabled && mounted) {
-          print(
-              '[QuizScreen] 🎵 Relance de la musique de fond après publicité');
+          Logger.debug('QuizScreen', '[QuizScreen] 🎵 Relance de la musique de fond après publicité');
           _startBackgroundMusic();
         }
       }).catchError((e) {
-        print('[QuizScreen] ❌ Erreur publicité (ignorée): $e');
+        Logger.debug('QuizScreen', '❌ Erreur publicité (ignorée): $e');
       });
     }
   }
@@ -810,7 +817,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   void _endGame() async {
-    print('[QuizScreen] 🎯 _endGame() appelé - Fin du quiz');
+    Logger.debug('QuizScreen', '🎯 _endGame() appelé - Fin du quiz');
     setState(() {
       isGameOver = true;
     });
@@ -830,25 +837,24 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     //     print('[QuizScreen] ❌ Erreur TTS score final: $e');
     //   }
     // }
-    print('[QuizScreen] ⚠️ TTS désactivé temporairement');
+    Logger.debug('QuizScreen', '⚠️ TTS désactivé temporairement');
 
     // 🎯 AFFICHER LE DIALOGUE D'ABORD (priorité absolue à l'expérience utilisateur)
-    print('[QuizScreen] 🎯 Affichage immédiat du dialogue de résultat...');
+    Logger.debug('QuizScreen', '🎯 Affichage immédiat du dialogue de résultat...');
     if (mounted) {
-      print('[QuizScreen] ✅ Widget monté - dialogue affiché');
+      Logger.debug('QuizScreen', '✅ Widget monté - dialogue affiché');
       _showResult();
     } else {
-      print(
-          '[QuizScreen] ❌ Widget non monté - impossible d\'afficher le dialogue');
+      Logger.debug('QuizScreen', '[QuizScreen] ❌ Widget non monté - impossible d\'afficher le dialogue');
       return;
     }
 
     // Sauvegarder le score EN ARRIÈRE-PLAN (ne pas bloquer le dialogue)
-    print('[QuizScreen] 🎯 Sauvegarde du score en arrière-plan...');
+    Logger.debug('QuizScreen', '🎯 Sauvegarde du score en arrière-plan...');
     _saveScore().then((_) {
-      print('[QuizScreen] ✅ _saveScore() terminé');
+      Logger.debug('QuizScreen', '✅ _saveScore() terminé');
     }).catchError((e) {
-      print('[QuizScreen] ❌ Erreur sauvegarde en arrière-plan: $e');
+      Logger.debug('QuizScreen', '❌ Erreur sauvegarde en arrière-plan: $e');
     });
 
     // Afficher une publicité interstitielle APRÈS (non critique)
@@ -859,21 +865,20 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       try {
         final isPremium = await PremiumService.isPremiumUser();
         if (!isPremium) {
-          print('[QuizScreen] 📺 Affichage publicité (après dialogue)...');
+          Logger.debug('QuizScreen', '📺 Affichage publicité (après dialogue)...');
           await AdService.showEndGameInterstitial();
         } else {
-          print(
-              '[QuizScreen] 🚫 Utilisateur premium - aucune publicité fin de quiz');
+          Logger.debug('QuizScreen', '[QuizScreen] 🚫 Utilisateur premium - aucune publicité fin de quiz');
         }
       } catch (e) {
-        print('[QuizScreen] ❌ Erreur publicité fin de quiz: $e');
+        Logger.debug('QuizScreen', '❌ Erreur publicité fin de quiz: $e');
       }
     });
   }
 
   Future<void> _saveScore() async {
     try {
-      print('[QuizScreen] 🎯 Sauvegarde automatique du score final...');
+      Logger.debug('QuizScreen', '🎯 Sauvegarde automatique du score final...');
 
       // Calculer les statistiques finales
       int totalQuestionsAnswered = currentQuestionIndex + 1;
@@ -883,14 +888,14 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       int totalXP = score; // 1 point = 1 XP
       await ProgressService.addExperience(totalXP,
           reason: 'Score Quiz ${widget.category}');
-      print('[QuizScreen] 🎯 XP total ajouté: +$totalXP XP');
+      Logger.debug('QuizScreen', '🎯 XP total ajouté: +$totalXP XP');
 
       // Ajouter un bonus pour la précision
       if (accuracyRate >= 80) {
         int bonusXP =
             (accuracyRate - 80).round() * 2; // Bonus pour haute précision
         await ProgressService.addExperience(bonusXP, reason: 'Bonus Précision');
-        print('[QuizScreen] 🎁 Bonus précision: +$bonusXP XP');
+        Logger.debug('QuizScreen', '🎁 Bonus précision: +$bonusXP XP');
       }
 
       // Ajouter un bonus pour le score élevé
@@ -899,28 +904,26 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         int bonusXP = 10;
         await ProgressService.addExperience(bonusXP,
             reason: 'Bonus Score Élevé');
-        print('[QuizScreen] 🎁 Bonus score élevé: +$bonusXP XP');
+        Logger.debug('QuizScreen', '🎁 Bonus score élevé: +$bonusXP XP');
       }
 
       // Enregistrer les statistiques de la catégorie
       // Enregistrer les bonnes réponses
       if (correctAnswers > 0) {
         await ProgressService.addAnswer(true, correctAnswers, widget.category);
-        print('[QuizScreen] 📊 Bonnes réponses enregistrées: $correctAnswers');
+        Logger.debug('QuizScreen', '📊 Bonnes réponses enregistrées: $correctAnswers');
       }
 
       // Enregistrer les mauvaises réponses
       int wrongAnswers = totalQuestionsAnswered - correctAnswers;
       if (wrongAnswers > 0) {
         await ProgressService.addAnswer(false, wrongAnswers, widget.category);
-        print('[QuizScreen] 📊 Mauvaises réponses enregistrées: $wrongAnswers');
+        Logger.debug('QuizScreen', '📊 Mauvaises réponses enregistrées: $wrongAnswers');
       }
 
-      print(
-          '[QuizScreen] 📊 Statistiques complètes: $correctAnswers bonnes, $wrongAnswers mauvaises sur $totalQuestionsAnswered');
+      Logger.debug('QuizScreen', '[QuizScreen] 📊 Statistiques complètes: $correctAnswers bonnes, $wrongAnswers mauvaises sur $totalQuestionsAnswered');
 
-      print(
-          '[QuizScreen] ✅ Score final sauvegardé: $score points, Précision: ${accuracyRate.toStringAsFixed(1)}%');
+      Logger.debug('QuizScreen', '[QuizScreen] ✅ Score final sauvegardé: $score points, Précision: ${accuracyRate.toStringAsFixed(1)}%');
 
       // Forcer la mise à jour des statistiques
       await ProgressService.loadProgress();
@@ -940,7 +943,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         );
       }
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur sauvegarde score: $e');
+      Logger.debug('QuizScreen', '❌ Erreur sauvegarde score: $e');
     }
   }
 
@@ -956,10 +959,8 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     // Déterminer si le score est suffisamment bon pour proposer la sauvegarde
     bool isGoodScore = score >= scoreThreshold || accuracyPercentage >= 60;
 
-    print(
-        '[QuizScreen] 📊 Score: $score/$maxPossibleScore (${accuracyPercentage.toStringAsFixed(1)}%)');
-    print(
-        '[QuizScreen] 📊 isGoodScore: $isGoodScore (seuil: $scoreThreshold, accuracy: ${accuracyPercentage.toStringAsFixed(1)}%)');
+    Logger.debug('QuizScreen', '[QuizScreen] 📊 Score: $score/$maxPossibleScore (${accuracyPercentage.toStringAsFixed(1)}%)');
+    Logger.debug('QuizScreen', '[QuizScreen] 📊 isGoodScore: $isGoodScore (seuil: $scoreThreshold, accuracy: ${accuracyPercentage.toStringAsFixed(1)}%)');
 
     // Toujours afficher le dialogue avec option de partage et sauvegarde
     // même pour les scores faibles (encourager l'engagement)
@@ -968,11 +969,11 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
   void _showSaveScoreDialog() {
     if (!mounted) {
-      print('[QuizScreen] ⚠️ Widget non monté - dialogue de sauvegarde annulé');
+      Logger.debug('QuizScreen', '⚠️ Widget non monté - dialogue de sauvegarde annulé');
       return;
     }
 
-    print('[QuizScreen] 🎯 Affichage du dialogue de sauvegarde de score');
+    Logger.debug('QuizScreen', '🎯 Affichage du dialogue de sauvegarde de score');
     String playerName = '';
 
     showDialog(
@@ -1081,7 +1082,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                         }
                       }
                     } catch (e) {
-                      print('[QuizScreen] ❌ Erreur publicité récompensée: $e');
+                      Logger.debug('QuizScreen', '❌ Erreur publicité récompensée: $e');
                     }
                   },
                   icon: const Icon(Icons.play_circle),
@@ -1127,8 +1128,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                           category: widget.category,
                           accuracy: correctAnswers / totalQuestions,
                         );
-                        print(
-                            '[QuizScreen] 📤 Score partagé: $name - $score points');
+                        Logger.debug('QuizScreen', '[QuizScreen] 📤 Score partagé: $name - $score points');
                         // Ne pas fermer le dialogue, permettre de partager puis sauvegarder
                       },
                       icon: const Icon(Icons.share, size: 18),
@@ -1161,8 +1161,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
 
                         // Sauvegarder le score dans le leaderboard
                         await _saveScoreToLeaderboard(playerName);
-                        print(
-                            '[QuizScreen] ✅ Score sauvegardé dans le leaderboard: $playerName');
+                        Logger.debug('QuizScreen', '[QuizScreen] ✅ Score sauvegardé dans le leaderboard: $playerName');
 
                         // Afficher un message de confirmation
                         if (context.mounted) {
@@ -1180,7 +1179,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                         Navigator.pop(context);
                         // Retourner à la page d'accueil principale
                         Navigator.of(context)
-                            .pushNamedAndRemoveUntil('/', (route) => false);
+                            .pushNamedAndRemoveUntil('/home', (route) => false);
                       },
                       icon: const Icon(Icons.save, size: 18),
                       label:
@@ -1230,7 +1229,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
                         Navigator.pop(context);
                         // Retourner au menu sans sauvegarder
                         Navigator.of(context)
-                            .pushNamedAndRemoveUntil('/', (route) => false);
+                            .pushNamedAndRemoveUntil('/home', (route) => false);
                       },
                       icon: const Icon(Icons.home, size: 18),
                       label: Text(TranslationService.translate('dont_save')),
@@ -1254,7 +1253,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   /// 💾 Sauvegarder le score dans le leaderboard
   Future<void> _saveScoreToLeaderboard(String playerName) async {
     try {
-      print('[QuizScreen] 💾 Sauvegarde du score dans le leaderboard...');
+      Logger.debug('QuizScreen', '💾 Sauvegarde du score dans le leaderboard...');
 
       final success = await LeaderboardService.saveRecord(
         playerName: playerName,
@@ -1265,19 +1264,17 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       );
 
       if (success) {
-        print(
-            '[QuizScreen] ✅ Score sauvegardé avec succès dans le leaderboard');
-        print(
-            '[QuizScreen] 📊 Détails: $playerName - $score points - ${(correctAnswers / totalQuestions * 100).toStringAsFixed(1)}%');
+        Logger.debug('QuizScreen', '[QuizScreen] ✅ Score sauvegardé avec succès dans le leaderboard');
+        Logger.debug('QuizScreen', '[QuizScreen] 📊 Détails: $playerName - $score points - ${(correctAnswers / totalQuestions * 100).toStringAsFixed(1)}%');
 
         // Sauvegarder aussi le nom du joueur pour usage futur
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('player_name', playerName);
       } else {
-        print('[QuizScreen] ❌ Échec de la sauvegarde dans le leaderboard');
+        Logger.debug('QuizScreen', '❌ Échec de la sauvegarde dans le leaderboard');
       }
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur lors de la sauvegarde du score: $e');
+      Logger.debug('QuizScreen', '❌ Erreur lors de la sauvegarde du score: $e');
     }
   }
 
@@ -1285,16 +1282,15 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('player_name', name);
-      print(
-          '[QuizScreen] 💾 Nom du joueur sauvegardé dans SharedPreferences: $name');
+      Logger.debug('QuizScreen', '[QuizScreen] 💾 Nom du joueur sauvegardé dans SharedPreferences: $name');
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur lors de la sauvegarde du nom: $e');
+      Logger.debug('QuizScreen', '❌ Erreur lors de la sauvegarde du nom: $e');
     }
   }
 
   Future<void> _initializeAudio() async {
     try {
-      print('[QuizScreen] 🎵 Initialisation du système audio...');
+      Logger.debug('QuizScreen', '🎵 Initialisation du système audio...');
 
       // Initialiser le service audio unifié
       await UnifiedAudioServiceOptimized.instance.initialize();
@@ -1307,9 +1303,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         await _startBackgroundMusic();
       }
 
-      print('[QuizScreen] ✅ Système audio initialisé');
+      Logger.debug('QuizScreen', '✅ Système audio initialisé');
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur initialisation audio: $e');
+      Logger.debug('QuizScreen', '❌ Erreur initialisation audio: $e');
     }
   }
 
@@ -1319,9 +1315,9 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       _timerDuration = await SettingsService.getTimerDuration();
       timer = _timerDuration;
       _timerController.duration = Duration(seconds: _timerDuration);
-      print('[QuizScreen] ⏱️ Durée du timer chargée: $_timerDuration secondes');
+      Logger.debug('QuizScreen', '⏱️ Durée du timer chargée: $_timerDuration secondes');
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur chargement durée timer: $e');
+      Logger.debug('QuizScreen', '❌ Erreur chargement durée timer: $e');
       _timerDuration = SettingsService.defaultTimerDuration;
       timer = SettingsService.defaultTimerDuration;
       _timerController.duration =
@@ -1334,39 +1330,34 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     _soundEnabled = await SettingsService.isSoundEnabled();
     _ttsEnabled = await SettingsService.isTtsEnabled(); // Charger l'état de TTS
 
-    print(
-        '[QuizScreen] _loadAudioSettings - Musique: $_backgroundMusicEnabled, Sons: $_soundEnabled, TTS: $_ttsEnabled');
+    Logger.debug('QuizScreen', '[QuizScreen] _loadAudioSettings - Musique: $_backgroundMusicEnabled, Sons: $_soundEnabled, TTS: $_ttsEnabled');
 
     // Debug: Vérifier les valeurs
-    print('[QuizScreen] DEBUG - _soundEnabled = $_soundEnabled');
-    print(
-        '[QuizScreen] DEBUG - _backgroundMusicEnabled = $_backgroundMusicEnabled');
+    Logger.debug('QuizScreen', 'DEBUG - _soundEnabled = $_soundEnabled');
+    Logger.debug('QuizScreen', '[QuizScreen] DEBUG - _backgroundMusicEnabled = $_backgroundMusicEnabled');
 
     // Forcer la mise à jour des volumes
     if (_soundEnabled) {
       await UnifiedAudioServiceOptimized.instance.setEffectVolume(0.7);
-      print('[QuizScreen] 🔊 Volume des effets réglé à 0.7');
+      Logger.debug('QuizScreen', '🔊 Volume des effets réglé à 0.7');
     }
 
     if (_backgroundMusicEnabled) {
       await UnifiedAudioServiceOptimized.instance.setBackgroundVolume(
           SettingsService.defaultBackgroundVolume);
-      print(
-          '[QuizScreen] 🎵 Volume de la musique réglé à ${SettingsService.defaultBackgroundVolume}');
+      Logger.debug('QuizScreen', '[QuizScreen] 🎵 Volume de la musique réglé à ${SettingsService.defaultBackgroundVolume}');
     }
   }
 
   // Méthode pour démarrer la musique de fond
   Future<void> _startBackgroundMusic() async {
-    print(
-        '[QuizScreen] _startBackgroundMusic - Vérification: _backgroundMusicEnabled = $_backgroundMusicEnabled');
+    Logger.debug('QuizScreen', '[QuizScreen] _startBackgroundMusic - Vérification: _backgroundMusicEnabled = $_backgroundMusicEnabled');
 
     if (_backgroundMusicEnabled) {
-      print('[QuizScreen] _startBackgroundMusic - lancement musique de fond');
+      Logger.debug('QuizScreen', '_startBackgroundMusic - lancement musique de fond');
       await UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
     } else {
-      print(
-          '[QuizScreen] _startBackgroundMusic - musique de fond désactivée dans les paramètres');
+      Logger.debug('QuizScreen', '[QuizScreen] _startBackgroundMusic - musique de fond désactivée dans les paramètres');
     }
   }
 
@@ -1382,26 +1373,23 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
     // Gérer la musique de fond seulement si pas de publicité
     if (!UnifiedAudioServiceOptimized.instance.isAdPlaying) {
       if (!currentBackgroundMusicEnabled && _backgroundMusicEnabled) {
-        print(
-            '[QuizScreen] _checkAndApplyAudioSettings - Arrêt musique de fond (désactivée)');
+        Logger.debug('QuizScreen', '[QuizScreen] _checkAndApplyAudioSettings - Arrêt musique de fond (désactivée)');
         await UnifiedAudioServiceOptimized.instance
             .setBackgroundMusicEnabled(false);
         _backgroundMusicEnabled = false;
       } else if (currentBackgroundMusicEnabled && !_backgroundMusicEnabled) {
-        print(
-            '[QuizScreen] _checkAndApplyAudioSettings - Lancement musique de fond (activée)');
+        Logger.debug('QuizScreen', '[QuizScreen] _checkAndApplyAudioSettings - Lancement musique de fond (activée)');
         _backgroundMusicEnabled = true;
         await UnifiedAudioServiceOptimized.instance.playBackgroundMusic();
       }
     }
 
-    print(
-        '[QuizScreen] _checkAndApplyAudioSettings - État: Musique=$_backgroundMusicEnabled, Sons=$_soundEnabled, Pub=${UnifiedAudioServiceOptimized.instance.isAdPlaying}');
+    Logger.debug('QuizScreen', '[QuizScreen] _checkAndApplyAudioSettings - État: Musique=$_backgroundMusicEnabled, Sons=$_soundEnabled, Pub=${UnifiedAudioServiceOptimized.instance.isAdPlaying}');
   }
 
   // Méthode pour arrêter la musique de fond
   Future<void> _stopBackgroundMusic() async {
-    print('[QuizScreen] _stopBackgroundMusic - arrêt musique de fond');
+    Logger.debug('QuizScreen', '_stopBackgroundMusic - arrêt musique de fond');
     await UnifiedAudioServiceOptimized.instance
         .setBackgroundMusicEnabled(false);
   }
@@ -1413,8 +1401,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
         _checkAndApplyAudioSettings();
       }
     });
-    print(
-        '[QuizScreen] _startAudioSettingsCheck - Vérification audio démarrée (5s)');
+    Logger.debug('QuizScreen', '[QuizScreen] _startAudioSettingsCheck - Vérification audio démarrée (5s)');
   }
 
   // Vérifier si une question est dynamique
@@ -1476,34 +1463,32 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       // Sinon les réponses ne correspondent plus aux questions
       _shuffleAllAnswers();
 
-      print(
-          '[QuizScreen] 🎯 Questions d\'engagement chargées: ${engagementQuestions.length}');
+      Logger.debug('QuizScreen', '[QuizScreen] 🎯 Questions d\'engagement chargées: ${engagementQuestions.length}');
     } catch (e) {
-      print('[QuizScreen] ❌ Erreur chargement questions d\'engagement: $e');
+      Logger.debug('QuizScreen', '❌ Erreur chargement questions d\'engagement: $e');
     }
     */
 
-    print(
-        '[QuizScreen] ℹ️ Questions d\'engagement désactivées (pour éviter la confusion)');
+    Logger.debug('QuizScreen', '[QuizScreen] ℹ️ Questions d\'engagement désactivées (pour éviter la confusion)');
   }
 
   @override
   void dispose() {
-    print('[QuizScreen] 🧹 Début du nettoyage des ressources...');
+    Logger.debug('QuizScreen', '🧹 Début du nettoyage des ressources...');
 
     // ✅ Annuler les timers de manière sécurisée
     try {
       _timer.cancel();
-      print('[QuizScreen] ✅ Timer principal annulé');
+      Logger.debug('QuizScreen', '✅ Timer principal annulé');
     } catch (e) {
-      print('[QuizScreen] ⚠️ Erreur annulation timer: $e');
+      Logger.debug('QuizScreen', '⚠️ Erreur annulation timer: $e');
     }
 
     try {
       _audioSettingsTimer.cancel();
-      print('[QuizScreen] ✅ Timer audio settings annulé');
+      Logger.debug('QuizScreen', '✅ Timer audio settings annulé');
     } catch (e) {
-      print('[QuizScreen] ⚠️ Erreur annulation audio timer: $e');
+      Logger.debug('QuizScreen', '⚠️ Erreur annulation audio timer: $e');
     }
 
     // ✅ Disposer les contrôleurs d'animation de manière sécurisée
@@ -1511,28 +1496,28 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
       _timerController.dispose();
       _questionController.dispose();
       _feedbackController.dispose();
-      print('[QuizScreen] ✅ Animation controllers disposés');
+      Logger.debug('QuizScreen', '✅ Animation controllers disposés');
     } catch (e) {
-      print('[QuizScreen] ⚠️ Erreur dispose controllers: $e');
+      Logger.debug('QuizScreen', '⚠️ Erreur dispose controllers: $e');
     }
 
     // ✅ Arrêter la musique de fond
     try {
       _stopBackgroundMusic();
-      print('[QuizScreen] ✅ Musique de fond arrêtée');
+      Logger.debug('QuizScreen', '✅ Musique de fond arrêtée');
     } catch (e) {
-      print('[QuizScreen] ⚠️ Erreur arrêt musique: $e');
+      Logger.debug('QuizScreen', '⚠️ Erreur arrêt musique: $e');
     }
 
     // ✅ Arrêter le TTS
     try {
       MultilingualTTSService.stop();
-      print('[QuizScreen] ✅ TTS arrêté');
+      Logger.debug('QuizScreen', '✅ TTS arrêté');
     } catch (e) {
-      print('[QuizScreen] ⚠️ Erreur arrêt TTS: $e');
+      Logger.debug('QuizScreen', '⚠️ Erreur arrêt TTS: $e');
     }
 
-    print('[QuizScreen] 🧹 Nettoyage des ressources terminé');
+    Logger.debug('QuizScreen', '🧹 Nettoyage des ressources terminé');
     super.dispose();
   }
 
@@ -1563,20 +1548,18 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
   }
 
   void _speakQuestion() async {
-    print(
-        '[QuizScreen] _speakQuestion - Vérification: _ttsEnabled=$_ttsEnabled, questions=${currentQuestions.length}');
+    Logger.debug('QuizScreen', '[QuizScreen] _speakQuestion - Vérification: _ttsEnabled=$_ttsEnabled, questions=${currentQuestions.length}');
 
     if (_ttsEnabled && currentQuestions.isNotEmpty) {
       try {
         await MultilingualTTSService.speakQuestion(
             currentQuestions[currentQuestionIndex].question);
-        print(
-            '[QuizScreen] _speakQuestion - TTS multilingue activé pour la question: ${currentQuestions[currentQuestionIndex].question}');
+        Logger.debug('QuizScreen', '[QuizScreen] _speakQuestion - TTS multilingue activé pour la question: ${currentQuestions[currentQuestionIndex].question}');
       } catch (e) {
-        print('[QuizScreen] _speakQuestion - Erreur TTS: $e');
+        Logger.debug('QuizScreen', '_speakQuestion - Erreur TTS: $e');
       }
     } else {
-      print('[QuizScreen] _speakQuestion - TTS désactivée ou pas de questions');
+      Logger.debug('QuizScreen', '_speakQuestion - TTS désactivée ou pas de questions');
     }
   }
 
@@ -2255,7 +2238,7 @@ class _QuizPageState extends State<QuizPage> with TickerProviderStateMixin {
               Navigator.pop(context);
               // Retourner au menu principal
               Navigator.of(context)
-                  .pushNamedAndRemoveUntil('/', (route) => false);
+                  .pushNamedAndRemoveUntil('/home', (route) => false);
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blue,

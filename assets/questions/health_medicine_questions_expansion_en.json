@@ -45,6 +45,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Maladies Tropicales",
         "id": "health_medicine_0002"
+      },
+      {
+        "question": "Which malaria vaccine was recommended by the WHO in 2021?",
+        "options": [
+          "RTS,S (Mosquirix)",
+          "BCG",
+          "MMR",
+          "HPV"
+        ],
+        "correctAnswer": "RTS,S (Mosquirix)",
+        "explanation": "The RTS,S vaccine is the first malaria vaccine recommended by the WHO for Africa.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0007"
+      },
+      {
+        "question": "Which viral disease has been declared a public health emergency in 2022-2023 (monkey pox)?",
+        "options": [
+          "Mpox (monkey pox)",
+          "Avian flu",
+          "Rage",
+          "Tetanus"
+        ],
+        "correctAnswer": "Mpox (monkey pox)",
+        "explanation": "Mpox experienced a global resurgence in 2022-2023.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0008"
+      },
+      {
+        "question": "Which organization is coordinating the global health response?",
+        "options": [
+          "WHO (World Health Organization)",
+          "NATO",
+          "FIFA",
+          "UNESCO"
+        ],
+        "correctAnswer": "WHO (World Health Organization)",
+        "explanation": "The WHO, based in Geneva, leads international health coordination.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0009"
       }
     ],
     "Médecine Traditionnelle Africaine": [
@@ -77,6 +122,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Médecine Traditionnelle Africaine",
         "id": "health_medicine_0004"
+      },
+      {
+        "question": "Which African plant is studied for its antimalarial properties?",
+        "options": [
+          "Artemisia annua",
+          "Cactus",
+          "Bamboo",
+          "Lavender"
+        ],
+        "correctAnswer": "Artemisia annua",
+        "explanation": "Artemisia is used in several African countries in the fight against malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0010"
+      },
+      {
+        "question": "Which tree produces shea butter used in cosmetics and nutrition?",
+        "options": [
+          "Vitellaria paradoxa (Shea)",
+          "Baobab",
+          "Acacia",
+          "Eucalyptus"
+        ],
+        "correctAnswer": "Vitellaria paradoxa (Shea)",
+        "explanation": "Shea is a major export product from West Africa.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0011"
+      },
+      {
+        "question": "Which plant is nicknamed “miracle tree” for its high nutritional value?",
+        "options": [
+          "Moringa oleifera",
+          "Cactus",
+          "Bamboo",
+          "Ivy"
+        ],
+        "correctAnswer": "Moringa oleifera",
+        "explanation": "Moringa is rich in vitamins, minerals and proteins.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0012"
       }
     ],
     "Nutrition et Santé": [
@@ -109,6 +199,417 @@
         "category": "Santé et Médecine",
         "subcategory": "Nutrition et Santé",
         "id": "health_medicine_0006"
+      },
+      {
+        "question": "Which nutritional deficiency is most widespread among African children?",
+        "options": [
+          "Iron deficiency (anemia)",
+          "Excess vitamin C",
+          "Excess protein",
+          "Salt deficiency"
+        ],
+        "correctAnswer": "Iron deficiency (anemia)",
+        "explanation": "Iron deficiency anemia affects millions of children in Africa.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0013"
+      },
+      {
+        "question": "How many servings of fruit and vegetables does the WHO recommend per day?",
+        "options": [
+          "At least 5 servings",
+          "1 serving",
+          "10 servings",
+          "None"
+        ],
+        "correctAnswer": "At least 5 servings",
+        "explanation": "The WHO recommends at least 400 g of fruit and vegetables per day.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0014"
+      },
+      {
+        "question": "Which nutrient is essential for bone health and comes from the sun?",
+        "options": [
+          "Vitamin D",
+          "Vitamin C",
+          "Iron",
+          "Iodine"
+        ],
+        "correctAnswer": "Vitamin D",
+        "explanation": "Vitamin D is synthesized by the skin under the action of the sun.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0015"
+      }
+    ],
+    "Santé Publique Moderne": [
+      {
+        "question": "Which global campaign has distributed COVID-19 vaccines to developing countries?",
+        "options": [
+          "COVAX",
+          "NATO",
+          "UNESCO",
+          "FIFA"
+        ],
+        "correctAnswer": "COVAX",
+        "explanation": "COVAX aimed for equitable access to COVID-19 vaccines for all countries.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0016"
+      },
+      {
+        "question": "Which WHO regional office covers Africa?",
+        "options": [
+          "Brazzaville (Congo)",
+          "Paris",
+          "new York",
+          "Tokyo"
+        ],
+        "correctAnswer": "Brazzaville (Congo)",
+        "explanation": "The WHO regional office for Africa is in Brazzaville.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0017"
+      },
+      {
+        "question": "What simple practice reduces the risk of infectious disease transmission by 50%?",
+        "options": [
+          "Wash your hands",
+          "Wear shoes",
+          "Drink coffee",
+          "Watch TV"
+        ],
+        "correctAnswer": "Wash your hands",
+        "explanation": "Hand washing with soap and water is one of the most effective preventive measures.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0018"
+      },
+      {
+        "question": "What global problem is making antibiotics less effective?",
+        "options": [
+          "Antibiotic resistance",
+          "Excess vitamins",
+          "Lack of salt",
+          "Too much sleep"
+        ],
+        "correctAnswer": "Antibiotic resistance",
+        "explanation": "Antimicrobial resistance is a global health emergency according to the WHO.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0019"
+      },
+      {
+        "question": "What technology allows remote medical consultations?",
+        "options": [
+          "Telemedicine",
+          "Telepathy",
+          "Holograms only",
+          "Medical fax"
+        ],
+        "correctAnswer": "Telemedicine",
+        "explanation": "Telemedicine has developed rapidly in Africa since 2020.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0020"
+      }
+    ],
+    "Prévention et Bien-être": [
+      {
+        "question": "How many hours of sleep does the WHO recommend for adults per night?",
+        "options": [
+          "7 to 9 hours",
+          "3 to 4 hours",
+          "12 hours",
+          "5 hours maximum"
+        ],
+        "correctAnswer": "7 to 9 hours",
+        "explanation": "Adequate sleep is essential for physical and mental health.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0021"
+      },
+      {
+        "question": "How much physical activity does the WHO recommend per week for adults?",
+        "options": [
+          "150 minutes of moderate activity",
+          "10 minutes",
+          "500 intense minutes",
+          "None"
+        ],
+        "correctAnswer": "150 minutes of moderate activity",
+        "explanation": "150 minutes of moderate activity per week reduces the risk of chronic diseases.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0022"
+      },
+      {
+        "question": "Which organ filters blood and produces urine?",
+        "options": [
+          "The kidneys",
+          "The liver",
+          "The spleen",
+          "The stomach"
+        ],
+        "correctAnswer": "The kidneys",
+        "explanation": "The kidneys filter waste from the blood and regulate fluid balance.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0023"
+      },
+      {
+        "question": "What chronic disease is linked to high blood sugar?",
+        "options": [
+          "Diabetes",
+          "Migraine",
+          "Common cold",
+          "Seasonal allergy"
+        ],
+        "correctAnswer": "Diabetes",
+        "explanation": "Diabetes affects more and more people in urban Africa.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "health_medicine_0025",
+        "question": "Which organ pumps blood throughout the body?",
+        "options": [
+          "The heart",
+          "The liver",
+          "The spleen",
+          "The stomach"
+        ],
+        "correctAnswer": "The heart",
+        "explanation": "The heart is the muscle that circulates blood.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0026",
+        "question": "Which unit measures blood pressure?",
+        "options": [
+          "mmHg",
+          "°C",
+          "bpm only",
+          "kg"
+        ],
+        "correctAnswer": "mmHg",
+        "explanation": "Blood pressure is expressed in millimeters of mercury (mmHg).",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0027",
+        "question": "Which vitamin especially helps night vision?",
+        "options": [
+          "Vitamin A",
+          "Vitamin K",
+          "Vitamin B12",
+          "Vitamin D"
+        ],
+        "correctAnswer": "Vitamin A",
+        "explanation": "Vitamin A is essential for the retina and vision.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0028",
+        "question": "What does BMI stand for?",
+        "options": [
+          "Body Mass Index",
+          "Chronic Microbial Infection",
+          "Cardiac Medical Imaging",
+          "Maximum Cellular Immunity"
+        ],
+        "correctAnswer": "Body Mass Index",
+        "explanation": "BMI relates weight to height.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0029",
+        "question": "Which first-aid action is recommended for adult choking?",
+        "options": [
+          "Heimlich maneuver",
+          "Chest compressions only",
+          "Aspirin",
+          "Keep the head down for a long time"
+        ],
+        "correctAnswer": "Heimlich maneuver",
+        "explanation": "The Heimlich maneuver helps clear the airway.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0030",
+        "question": "Which disease is mainly transmitted by infected ticks?",
+        "options": [
+          "Lyme disease",
+          "Flu",
+          "Measles",
+          "Chickenpox"
+        ],
+        "correctAnswer": "Lyme disease",
+        "explanation": "Ticks can transmit the bacteria that cause Lyme disease.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0031",
+        "question": "Which mineral is crucial for carrying oxygen in the blood?",
+        "options": [
+          "Iron",
+          "Sodium",
+          "Chlorine",
+          "Iodine"
+        ],
+        "correctAnswer": "Iron",
+        "explanation": "Iron is part of hemoglobin.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0032",
+        "question": "How many chambers does a normal human heart have?",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "6"
+        ],
+        "correctAnswer": "4",
+        "explanation": "Two atria and two ventricles.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0033",
+        "question": "Which gland produces insulin?",
+        "options": [
+          "The pancreas",
+          "The thyroid",
+          "The adrenal glands",
+          "The pituitary"
+        ],
+        "correctAnswer": "The pancreas",
+        "explanation": "Insulin regulates blood sugar.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0034",
+        "question": "Which type of microbe do most antibiotics stop?",
+        "options": [
+          "Bacteria",
+          "Viruses",
+          "Prions only",
+          "Always fungi"
+        ],
+        "correctAnswer": "Bacteria",
+        "explanation": "Antibiotics target bacteria, not viruses.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0035",
+        "question": "Which habit strongly reduces cavity risk?",
+        "options": [
+          "Regular tooth brushing",
+          "Avoiding all water",
+          "Never chewing",
+          "Drinking only soda"
+        ],
+        "correctAnswer": "Regular tooth brushing",
+        "explanation": "Oral hygiene helps prevent cavities.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0036",
+        "question": "Which organ is mainly affected by cirrhosis?",
+        "options": [
+          "The liver",
+          "The lung",
+          "The skin",
+          "The ear"
+        ],
+        "correctAnswer": "The liver",
+        "explanation": "Cirrhosis is a chronic liver disease.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0037",
+        "question": "What is the approximate normal human body temperature?",
+        "options": [
+          "37 °C",
+          "32 °C",
+          "42 °C",
+          "28 °C"
+        ],
+        "correctAnswer": "37 °C",
+        "explanation": "Core body temperature is around 37 °C.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0038",
+        "question": "Which exam uses X-rays to view bones?",
+        "options": [
+          "X-ray radiography",
+          "Ultrasound only",
+          "ECG",
+          "Spirometry"
+        ],
+        "correctAnswer": "X-ray radiography",
+        "explanation": "Radiography mainly visualizes bone structures.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0039",
+        "question": "Which cardiovascular event is a sudden interruption of brain blood flow?",
+        "options": [
+          "Stroke (CVA)",
+          "Asthma",
+          "Iron-deficiency anemia",
+          "Ear infection"
+        ],
+        "correctAnswer": "Stroke (CVA)",
+        "explanation": "A stroke occurs when blood flow to the brain is interrupted.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
       }
     ]
   }

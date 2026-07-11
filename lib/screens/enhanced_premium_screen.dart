@@ -66,15 +66,9 @@ class _EnhancedPremiumScreenState extends State<EnhancedPremiumScreen>
     final isPremium = await PremiumService.isPremiumUser();
     // Récupérer les bénéfices traduits
     final benefits = [
-      TranslationService.translate('benefit_unlimited_questions'),
-      TranslationService.translate('benefit_advanced_stats'),
-      TranslationService.translate('benefit_custom_themes'),
       TranslationService.translate('benefit_ad_free'),
-      TranslationService.translate('benefit_exclusive_challenges'),
-      TranslationService.translate('benefit_multiplayer'),
-      TranslationService.translate('benefit_priority_support'),
-      TranslationService.translate('benefit_export_data'),
-      TranslationService.translate('benefit_early_access'),
+      TranslationService.translate('benefit_xp_bonus'),
+      TranslationService.translate('benefit_honest_stats'),
       TranslationService.translate('benefit_exclusive_badges'),
     ];
 
@@ -263,41 +257,21 @@ class _EnhancedPremiumScreenState extends State<EnhancedPremiumScreen>
           ),
           const Divider(color: Colors.white24, height: 24),
 
-          // Lignes de comparaison
+          // Lignes de comparaison (bénéfices réellement livrés)
           _buildComparisonRow(
               TranslationService.translate('ads_premium'),
               TranslationService.translate('ads_free'),
               TranslationService.translate('ads_premium_value')),
           _buildComparisonRow(
-              TranslationService.translate('unlimited_questions'),
-              TranslationService.translate('yes'),
+              TranslationService.translate('benefit_xp_bonus'),
+              TranslationService.translate('no'),
               TranslationService.translate('yes')),
           _buildComparisonRow(
-              TranslationService.translate('advanced_stats'),
+              TranslationService.translate('benefit_honest_stats'),
               TranslationService.translate('basic'),
               TranslationService.translate('complete')),
           _buildComparisonRow(
-              TranslationService.translate('custom_themes'),
-              TranslationService.translate('no'),
-              TranslationService.translate('yes')),
-          _buildComparisonRow(
               TranslationService.translate('exclusive_badges'),
-              TranslationService.translate('no'),
-              TranslationService.translate('yes')),
-          _buildComparisonRow(
-              TranslationService.translate('cloud_backup'),
-              TranslationService.translate('no'),
-              TranslationService.translate('yes')),
-          _buildComparisonRow(
-              TranslationService.translate('multi_device'),
-              TranslationService.translate('no'),
-              TranslationService.translate('yes')),
-          _buildComparisonRow(
-              TranslationService.translate('exclusive_content'),
-              TranslationService.translate('no'),
-              TranslationService.translate('yes')),
-          _buildComparisonRow(
-              TranslationService.translate('priority_support'),
               TranslationService.translate('no'),
               TranslationService.translate('yes')),
         ],

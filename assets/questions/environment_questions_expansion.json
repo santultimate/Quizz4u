@@ -60,6 +60,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Changement Climatique",
         "id": "environment_0003"
+      },
+      {
+        "question": "Où s'est tenu la COP28 sur le climat en 2023 ?",
+        "options": [
+          "Dubaï (Émirats arabes unis)",
+          "Paris",
+          "Bamako",
+          "New York"
+        ],
+        "correctAnswer": "Dubaï (Émirats arabes unis)",
+        "explanation": "La COP28 s'est tenue à Dubaï et a abordé la transition énergétique.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0014"
+      },
+      {
+        "question": "Quelle année a été la plus chaude jamais enregistrée selon les données récentes ?",
+        "options": [
+          "2024",
+          "1900",
+          "1950",
+          "1800"
+        ],
+        "correctAnswer": "2024",
+        "explanation": "2024 a battu des records de température mondiale selon l'OMM et le Copernicus.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0015"
+      },
+      {
+        "question": "Quel phénomène extrême est amplifié par le réchauffement climatique en Afrique ?",
+        "options": [
+          "Sécheresses et inondations",
+          "Neige permanente au Sahel",
+          "Glaciers tropicaux",
+          "Jours polaires"
+        ],
+        "correctAnswer": "Sécheresses et inondations",
+        "explanation": "L'Afrique sub-Saharienne est très vulnérable aux événements climatiques extrêmes.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0016"
       }
     ],
     "Biodiversité Africaine": [
@@ -122,6 +167,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Biodiversité Africaine",
         "id": "environment_0007"
+      },
+      {
+        "question": "Quel grand mammifère africain est menacé par le braconnage ?",
+        "options": [
+          "L'éléphant d'Afrique",
+          "Le chat domestique",
+          "Le lapin",
+          "Le pigeon"
+        ],
+        "correctAnswer": "L'éléphant d'Afrique",
+        "explanation": "Les éléphants d'Afrique sont menacés par le braconnage pour l'ivoire.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0017"
+      },
+      {
+        "question": "Quelle forêt tropicale africaine est la deuxième plus grande au monde ?",
+        "options": [
+          "Forêt du bassin du Congo",
+          "Forêt amazonienne",
+          "Forêt boréale",
+          "Forêt scandinave"
+        ],
+        "correctAnswer": "Forêt du bassin du Congo",
+        "explanation": "La forêt du Congo couvre six pays et abrite une biodiversité exceptionnelle.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0018"
+      },
+      {
+        "question": "Quel animal est surnommé « roi de la savane » ?",
+        "options": [
+          "Le lion",
+          "Le zèbre",
+          "L'antilope",
+          "Le flamant rose"
+        ],
+        "correctAnswer": "Le lion",
+        "explanation": "Le lion est un symbole de la faune africaine et un prédateur apex.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0019"
       }
     ],
     "Énergies Renouvelables": [
@@ -216,6 +306,310 @@
         "category": "Environnement et Écologie",
         "subcategory": "Pollution et Déchets",
         "id": "environment_0013"
+      },
+      {
+        "question": "Quel pays africain a interdit les sacs plastiques à usage unique en 2017 ?",
+        "options": [
+          "Kenya",
+          "France",
+          "Brésil",
+          "Canada"
+        ],
+        "correctAnswer": "Kenya",
+        "explanation": "Le Kenya a été l'un des premiers pays africains à bannir les sacs plastiques.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0023"
+      },
+      {
+        "question": "Quel océan reçoit le plus de déchets plastiques via les fleuves africains et asiatiques ?",
+        "options": [
+          "Océan Indien",
+          "Océan Arctique",
+          "Mer Morte",
+          "Mer Caspienne"
+        ],
+        "correctAnswer": "Océan Indien",
+        "explanation": "La pollution plastique marine est un défi majeur pour les côtes africaines.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0024"
+      }
+    ],
+    "Énergies Vertes": [
+      {
+        "question": "Quel pays africain possède la plus grande centrale solaire thermique d'Afrique (Noor) ?",
+        "options": [
+          "Maroc",
+          "Mali",
+          "Islande",
+          "Japon"
+        ],
+        "correctAnswer": "Maroc",
+        "explanation": "Le complexe solaire Noor au Maroc est l'un des plus grands d'Afrique.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0020"
+      },
+      {
+        "question": "Quelle énergie renouvelable utilise la chaleur du soleil pour produire de l'électricité ?",
+        "options": [
+          "Énergie solaire photovoltaïque",
+          "Charbon",
+          "Pétrole",
+          "Gaz naturel"
+        ],
+        "correctAnswer": "Énergie solaire photovoltaïque",
+        "explanation": "L'Afrique a un immense potentiel solaire, le plus élevé au monde.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0021"
+      },
+      {
+        "question": "Quel projet vise à planter une ceinture verte contre la désertification au Sahel ?",
+        "options": [
+          "Grande Muraille Verte",
+          "Projet Amazonie",
+          "Mur de Berlin",
+          "Route de la soie"
+        ],
+        "correctAnswer": "Grande Muraille Verte",
+        "explanation": "La Grande Muraille Verte vise à restaurer 100 millions d'hectares au Sahel d'ici 2030.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0022"
+      }
+    ],
+    "Général": [
+      {
+        "id": "environment_0025",
+        "question": "Quel gaz est principalement émis par la combustion du charbon ?",
+        "options": [
+          "Dioxyde de carbone (CO₂)",
+          "Hélium",
+          "Azote pur uniquement",
+          "Ozone stratosphérique"
+        ],
+        "correctAnswer": "Dioxyde de carbone (CO₂)",
+        "explanation": "La combustion fossile libère surtout du CO₂.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0026",
+        "question": "Que signifie le sigle GIEC ?",
+        "options": [
+          "Groupe d'experts intergouvernemental sur l'évolution du climat",
+          "Groupe international d'énergie charbon",
+          "Gestion intégrée des eaux continentales",
+          "Guilde internationale des écologistes certifiés"
+        ],
+        "correctAnswer": "Groupe d'experts intergouvernemental sur l'évolution du climat",
+        "explanation": "Le GIEC synthétise la science du climat.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0027",
+        "question": "Quelle pratique agricole vise à restaurer les sols dégradés ?",
+        "options": [
+          "Agroforesterie",
+          "Surpâturage intensif",
+          "Déforestation totale",
+          "Monoculture sans rotation"
+        ],
+        "correctAnswer": "Agroforesterie",
+        "explanation": "L'agroforesterie combine arbres et cultures.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0028",
+        "question": "Quel phénomène océanique se caractérise par un réchauffement périodique du Pacifique ?",
+        "options": [
+          "El Niño",
+          "Marée rouge uniquement",
+          "Gulf Stream gelé",
+          "Tsunami volcanique"
+        ],
+        "correctAnswer": "El Niño",
+        "explanation": "El Niño perturbe le climat mondial.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0029",
+        "question": "Quelle ressource est menacée par la surexploitation des nappes phréatiques ?",
+        "options": [
+          "L'eau douce",
+          "Le pétrole brut seulement",
+          "L'hélium spatial",
+          "Le granite"
+        ],
+        "correctAnswer": "L'eau douce",
+        "explanation": "Les aquifères s'épuisent si on pompe trop.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0030",
+        "question": "Quel type d'énergie utilise le vent pour produire de l'électricité ?",
+        "options": [
+          "Éolienne",
+          "Nucléaire",
+          "Charbon",
+          "Diesel"
+        ],
+        "correctAnswer": "Éolienne",
+        "explanation": "Les turbines éoliennes convertissent le vent en électricité.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0031",
+        "question": "Quel écosystème stocke d'énormes quantités de carbone dans la tourbe ?",
+        "options": [
+          "Les tourbières",
+          "Les déserts de sel",
+          "Les dunes vives",
+          "Les parkings urbains"
+        ],
+        "correctAnswer": "Les tourbières",
+        "explanation": "Les tourbières sont de grands puits de carbone.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0032",
+        "question": "Quelle action individuelle réduit fortement l'empreinte carbone alimentaire ?",
+        "options": [
+          "Réduire le gaspillage alimentaire",
+          "Jeter plus d'aliments",
+          "Doubler la viande rouge",
+          "Ignorer les dates"
+        ],
+        "correctAnswer": "Réduire le gaspillage alimentaire",
+        "explanation": "Le gaspillage génère des émissions inutiles.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0033",
+        "question": "Quel polluant atmosphérique est lié aux particules fines PM2.5 ?",
+        "options": [
+          "Pollution de l'air",
+          "Bruit uniquement",
+          "Lumière bleue",
+          "Rayons UV-C"
+        ],
+        "correctAnswer": "Pollution de l'air",
+        "explanation": "Les PM2.5 pénètrent profondément dans les poumons.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0034",
+        "question": "Quelle convention protège les zones humides d'importance internationale ?",
+        "options": [
+          "Convention de Ramsar",
+          "Accord Schengen",
+          "Traité de Maastricht",
+          "Pacte de Varsovie"
+        ],
+        "correctAnswer": "Convention de Ramsar",
+        "explanation": "Ramsar protège les zones humides.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0035",
+        "question": "Quel combustible fossile est surtout extrait sous forme de gaz naturel ?",
+        "options": [
+          "Méthane",
+          "Charbon anthracite",
+          "Tourbe sèche",
+          "Bitume routier"
+        ],
+        "correctAnswer": "Méthane",
+        "explanation": "Le gaz naturel est surtout composé de méthane.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0036",
+        "question": "Quelle pratique de pêche peut détruire les fonds marins ?",
+        "options": [
+          "Chalutage de fond",
+          "Pêche à la ligne durable",
+          "Aquaculture raisonnée",
+          "Collecte de coquillages à la main"
+        ],
+        "correctAnswer": "Chalutage de fond",
+        "explanation": "Le chalutage racle les habitats benthiques.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0037",
+        "question": "Quel objectif mondial vise à limiter le réchauffement bien en dessous de 2 °C ?",
+        "options": [
+          "Accord de Paris",
+          "Protocole de Kyoto uniquement oublié",
+          "Traité de Rome",
+          "Charte de l'Atlantique"
+        ],
+        "correctAnswer": "Accord de Paris",
+        "explanation": "L'Accord de Paris fixe cet objectif climatique.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0038",
+        "question": "Quelle source d'énergie utilise des panneaux photovoltaïques ?",
+        "options": [
+          "Énergie solaire",
+          "Géothermie profonde",
+          "Fission nucléaire",
+          "Hydrogène gris"
+        ],
+        "correctAnswer": "Énergie solaire",
+        "explanation": "Les panneaux convertissent la lumière en électricité.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0039",
+        "question": "Quel phénomène désigne la perte de diversité des espèces vivantes ?",
+        "options": [
+          "Érosion de la biodiversité",
+          "Inflation monétaire",
+          "Migration urbaine",
+          "Cycle de l'eau"
+        ],
+        "correctAnswer": "Érosion de la biodiversité",
+        "explanation": "La biodiversité diminue sous pression humaine.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
       }
     ]
   }

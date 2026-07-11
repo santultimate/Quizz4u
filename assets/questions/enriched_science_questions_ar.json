@@ -381,6 +381,110 @@
       },
       "correctAnswer": "الأب",
       "id": "science_0031"
+    },
+    {
+      "id": "science_0032",
+      "question": "Which planet is closest to the Sun?",
+      "options": [
+        "Mercury",
+        "Venus",
+        "Mars",
+        "Earth"
+      ],
+      "correctAnswer": "Mercury",
+      "explanation": "Mercury is the closest planet to the Sun.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0033",
+      "question": "Which gas do plants absorb for photosynthesis?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Nitrogen",
+        "Helium"
+      ],
+      "correctAnswer": "Carbon dioxide",
+      "explanation": "Plants absorb CO₂ and release oxygen.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0034",
+      "question": "About how many bones does an adult human body have?",
+      "options": [
+        "206",
+        "100",
+        "300",
+        "50"
+      ],
+      "correctAnswer": "206",
+      "explanation": "An adult has about 206 bones.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0035",
+      "question": "What is the unit of force?",
+      "options": [
+        "Newton",
+        "Watt",
+        "Joule",
+        "Pascal"
+      ],
+      "correctAnswer": "Newton",
+      "explanation": "Force is measured in newtons (N).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0036",
+      "question": "Which organ pumps blood through the body?",
+      "options": [
+        "The heart",
+        "The liver",
+        "The lung",
+        "The kidney"
+      ],
+      "correctAnswer": "The heart",
+      "explanation": "The heart pumps blood throughout the body.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0037",
+      "question": "What is the chemical formula of water?",
+      "options": [
+        "H2O",
+        "CO2",
+        "O2",
+        "NaCl"
+      ],
+      "correctAnswer": "H2O",
+      "explanation": "Water has two hydrogen atoms and one oxygen atom.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "science_0038",
+      "question": "Which scientist formulated the theory of relativity?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileo",
+        "Nikola Tesla"
+      ],
+      "correctAnswer": "Albert Einstein",
+      "explanation": "Einstein published special relativity in 1905.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "science_0039",
+      "question": "What is the approximate speed of light in a vacuum?",
+      "options": [
+        "300,000 km/s",
+        "300 km/s",
+        "3,000 km/s",
+        "30,000 km/s"
+      ],
+      "correctAnswer": "300,000 km/s",
+      "explanation": "Light travels at about 299,792 km/s in a vacuum.",
+      "difficulty": "hard"
     }
   ]
 }

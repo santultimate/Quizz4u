@@ -60,6 +60,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Changement Climatique",
         "id": "environment_0003"
+      },
+      {
+        "question": "Where was the COP28 on climate held in 2023?",
+        "options": [
+          "Dubai (United Arab Emirates)",
+          "Paris",
+          "Bamako",
+          "new York"
+        ],
+        "correctAnswer": "Dubai (United Arab Emirates)",
+        "explanation": "COP28 was held in Dubai and addressed the energy transition.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0014"
+      },
+      {
+        "question": "What year was the hottest on record according to recent data?",
+        "options": [
+          "2024",
+          "1900",
+          "1950",
+          "1800"
+        ],
+        "correctAnswer": "2024",
+        "explanation": "2024 broke global temperature records according to the WMO and Copernicus.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0015"
+      },
+      {
+        "question": "What extreme phenomenon is amplified by global warming in Africa?",
+        "options": [
+          "Droughts and floods",
+          "Permanent snow in the Sahel",
+          "Tropical glaciers",
+          "Polar days"
+        ],
+        "correctAnswer": "Droughts and floods",
+        "explanation": "Sub-Saharan Africa is very vulnerable to extreme climatic events.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Changement Climatique",
+        "id": "environment_0016"
       }
     ],
     "Biodiversité Africaine": [
@@ -122,6 +167,51 @@
         "category": "Environnement et Écologie",
         "subcategory": "Biodiversité Africaine",
         "id": "environment_0007"
+      },
+      {
+        "question": "Which large African mammal is threatened by poaching?",
+        "options": [
+          "The African elephant",
+          "The domestic cat",
+          "The rabbit",
+          "The pigeon"
+        ],
+        "correctAnswer": "The African elephant",
+        "explanation": "African elephants are threatened by poaching for ivory.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0017"
+      },
+      {
+        "question": "Which African rainforest is the second largest in the world?",
+        "options": [
+          "Congo Basin Forest",
+          "Amazon rainforest",
+          "Boreal forest",
+          "Scandinavian forest"
+        ],
+        "correctAnswer": "Congo Basin Forest",
+        "explanation": "The Congo forest covers six countries and is home to exceptional biodiversity.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0018"
+      },
+      {
+        "question": "Which animal is nicknamed “king of the savannah”?",
+        "options": [
+          "The lion",
+          "The zebra",
+          "The antelope",
+          "The pink flamingo"
+        ],
+        "correctAnswer": "The lion",
+        "explanation": "The lion is a symbol of African wildlife and an apex predator.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Biodiversité Africaine",
+        "id": "environment_0019"
       }
     ],
     "Énergies Renouvelables": [
@@ -216,6 +306,310 @@
         "category": "Environnement et Écologie",
         "subcategory": "Pollution et Déchets",
         "id": "environment_0013"
+      },
+      {
+        "question": "Which African country banned single-use plastic bags in 2017?",
+        "options": [
+          "Kenya",
+          "France",
+          "Brazil",
+          "Canada"
+        ],
+        "correctAnswer": "Kenya",
+        "explanation": "Kenya was one of the first African countries to ban plastic bags.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0023"
+      },
+      {
+        "question": "Which ocean receives the most plastic waste via African and Asian rivers?",
+        "options": [
+          "Indian Ocean",
+          "Arctic Ocean",
+          "Dead Sea",
+          "Caspian Sea"
+        ],
+        "correctAnswer": "Indian Ocean",
+        "explanation": "Marine plastic pollution is a major challenge for African coasts.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Pollution et Déchets",
+        "id": "environment_0024"
+      }
+    ],
+    "Énergies Vertes": [
+      {
+        "question": "Which African country has the largest solar thermal power plant in Africa (Noor)?",
+        "options": [
+          "Morocco",
+          "Mali",
+          "Iceland",
+          "Japan"
+        ],
+        "correctAnswer": "Morocco",
+        "explanation": "The Noor solar complex in Morocco is one of the largest in Africa.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0020"
+      },
+      {
+        "question": "What renewable energy uses the sun's heat to produce electricity?",
+        "options": [
+          "Photovoltaic solar energy",
+          "Coal",
+          "Oil",
+          "Natural gas"
+        ],
+        "correctAnswer": "Photovoltaic solar energy",
+        "explanation": "Africa has immense solar potential, the highest in the world.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0021"
+      },
+      {
+        "question": "Which project aims to plant a green belt against desertification in the Sahel?",
+        "options": [
+          "Great Green Wall",
+          "Amazon Project",
+          "Berlin Wall",
+          "Silk Road"
+        ],
+        "correctAnswer": "Great Green Wall",
+        "explanation": "The Great Green Wall aims to restore 100 million hectares in the Sahel by 2030.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Énergies Vertes",
+        "id": "environment_0022"
+      }
+    ],
+    "Général": [
+      {
+        "id": "environment_0025",
+        "question": "Which gas is mainly emitted by burning coal?",
+        "options": [
+          "Carbon dioxide (CO₂)",
+          "Helium",
+          "Pure nitrogen only",
+          "Stratospheric ozone"
+        ],
+        "correctAnswer": "Carbon dioxide (CO₂)",
+        "explanation": "Fossil fuel combustion mainly releases CO₂.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0026",
+        "question": "What does IPCC stand for?",
+        "options": [
+          "Intergovernmental Panel on Climate Change",
+          "International Coal Energy Group",
+          "Integrated Continental Water Management",
+          "International Guild of Certified Ecologists"
+        ],
+        "correctAnswer": "Intergovernmental Panel on Climate Change",
+        "explanation": "The IPCC synthesizes climate science.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0027",
+        "question": "Which farming practice aims to restore degraded soils?",
+        "options": [
+          "Agroforestry",
+          "Intensive overgrazing",
+          "Total deforestation",
+          "Monoculture without rotation"
+        ],
+        "correctAnswer": "Agroforestry",
+        "explanation": "Agroforestry combines trees and crops.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0028",
+        "question": "Which ocean phenomenon features periodic Pacific warming?",
+        "options": [
+          "El Niño",
+          "Red tide only",
+          "Frozen Gulf Stream",
+          "Volcanic tsunami"
+        ],
+        "correctAnswer": "El Niño",
+        "explanation": "El Niño disrupts global climate patterns.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0029",
+        "question": "Which resource is threatened by overusing groundwater aquifers?",
+        "options": [
+          "Fresh water",
+          "Crude oil only",
+          "Space helium",
+          "Granite"
+        ],
+        "correctAnswer": "Fresh water",
+        "explanation": "Aquifers deplete if pumping is excessive.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0030",
+        "question": "Which energy type uses wind to make electricity?",
+        "options": [
+          "Wind power",
+          "Nuclear",
+          "Coal",
+          "Diesel"
+        ],
+        "correctAnswer": "Wind power",
+        "explanation": "Wind turbines convert wind into electricity.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0031",
+        "question": "Which ecosystem stores huge amounts of carbon in peat?",
+        "options": [
+          "Peatlands",
+          "Salt deserts",
+          "Active dunes",
+          "Urban parking lots"
+        ],
+        "correctAnswer": "Peatlands",
+        "explanation": "Peatlands are major carbon sinks.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0032",
+        "question": "Which individual action strongly cuts food-related carbon footprint?",
+        "options": [
+          "Reducing food waste",
+          "Throwing away more food",
+          "Doubling red meat",
+          "Ignoring expiry dates"
+        ],
+        "correctAnswer": "Reducing food waste",
+        "explanation": "Waste creates unnecessary emissions.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0033",
+        "question": "Which air pollutant relates to fine PM2.5 particles?",
+        "options": [
+          "Air pollution",
+          "Noise only",
+          "Blue light",
+          "UV-C rays"
+        ],
+        "correctAnswer": "Air pollution",
+        "explanation": "PM2.5 penetrates deep into the lungs.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0034",
+        "question": "Which convention protects wetlands of international importance?",
+        "options": [
+          "Ramsar Convention",
+          "Schengen Agreement",
+          "Maastricht Treaty",
+          "Warsaw Pact"
+        ],
+        "correctAnswer": "Ramsar Convention",
+        "explanation": "Ramsar protects wetlands.",
+        "difficulty": "hard",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0035",
+        "question": "Which fossil fuel is mainly extracted as natural gas?",
+        "options": [
+          "Methane",
+          "Anthracite coal",
+          "Dry peat",
+          "Road bitumen"
+        ],
+        "correctAnswer": "Methane",
+        "explanation": "Natural gas is mostly methane.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0036",
+        "question": "Which fishing practice can destroy seabeds?",
+        "options": [
+          "Bottom trawling",
+          "Sustainable line fishing",
+          "Responsible aquaculture",
+          "Hand shellfish gathering"
+        ],
+        "correctAnswer": "Bottom trawling",
+        "explanation": "Trawling scrapes benthic habitats.",
+        "difficulty": "medium",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0037",
+        "question": "Which global goal aims to keep warming well below 2 °C?",
+        "options": [
+          "Paris Agreement",
+          "Forgotten Kyoto-only protocol",
+          "Treaty of Rome",
+          "Atlantic Charter"
+        ],
+        "correctAnswer": "Paris Agreement",
+        "explanation": "The Paris Agreement sets this climate goal.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0038",
+        "question": "Which energy source uses photovoltaic panels?",
+        "options": [
+          "Solar energy",
+          "Deep geothermal",
+          "Nuclear fission",
+          "Grey hydrogen"
+        ],
+        "correctAnswer": "Solar energy",
+        "explanation": "Panels convert light into electricity.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
+      },
+      {
+        "id": "environment_0039",
+        "question": "Which phenomenon means loss of living species diversity?",
+        "options": [
+          "Biodiversity loss",
+          "Monetary inflation",
+          "Urban migration",
+          "Water cycle"
+        ],
+        "correctAnswer": "Biodiversity loss",
+        "explanation": "Biodiversity declines under human pressure.",
+        "difficulty": "easy",
+        "category": "Environnement et Écologie",
+        "subcategory": "Général"
       }
     ]
   }

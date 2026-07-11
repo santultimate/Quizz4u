@@ -45,6 +45,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Maladies Tropicales",
         "id": "health_medicine_0002"
+      },
+      {
+        "question": "¿Qué vacuna contra la malaria recomendó la OMS en 2021?",
+        "options": [
+          "RTS,S (Mosquirix)",
+          "BCG",
+          "MMR",
+          "VPH"
+        ],
+        "correctAnswer": "RTS,S (Mosquirix)",
+        "explanation": "La vacuna RTS,S es la primera vacuna contra la malaria recomendada por la OMS para África.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0007"
+      },
+      {
+        "question": "¿Qué enfermedad viral ha sido declarada emergencia de salud pública en 2022-2023 (viruela mono)?",
+        "options": [
+          "Mpox (viruela del mono)",
+          "gripe aviar",
+          "Furia",
+          "Tétanos"
+        ],
+        "correctAnswer": "Mpox (viruela del mono)",
+        "explanation": "Mpox experimentó un resurgimiento global en 2022-2023.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0008"
+      },
+      {
+        "question": "¿Qué organización coordina la respuesta sanitaria mundial?",
+        "options": [
+          "OMS (Organización Mundial de la Salud)",
+          "OTAN",
+          "fifa",
+          "UNESCO"
+        ],
+        "correctAnswer": "OMS (Organización Mundial de la Salud)",
+        "explanation": "La OMS, con sede en Ginebra, lidera la coordinación sanitaria internacional.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Maladies Tropicales",
+        "id": "health_medicine_0009"
       }
     ],
     "Médecine Traditionnelle Africaine": [
@@ -77,6 +122,51 @@
         "category": "Santé et Médecine",
         "subcategory": "Médecine Traditionnelle Africaine",
         "id": "health_medicine_0004"
+      },
+      {
+        "question": "¿Qué planta africana se estudia por sus propiedades antipalúdicas?",
+        "options": [
+          "Artemisia annua",
+          "Cactus",
+          "Bambú",
+          "Lavanda"
+        ],
+        "correctAnswer": "Artemisia annua",
+        "explanation": "La artemisia se utiliza en varios países africanos en la lucha contra la malaria.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0010"
+      },
+      {
+        "question": "¿Qué árbol produce manteca de karité utilizada en cosmética y nutrición?",
+        "options": [
+          "Vitellaria paradoxa (karité)",
+          "Baobab",
+          "Acacia",
+          "Eucalipto"
+        ],
+        "correctAnswer": "Vitellaria paradoxa (karité)",
+        "explanation": "El karité es un importante producto de exportación de África occidental.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0011"
+      },
+      {
+        "question": "¿Qué planta recibe el sobrenombre de “árbol milagroso” por su alto valor nutricional?",
+        "options": [
+          "Moringa oleífera",
+          "Cactus",
+          "Bambú",
+          "Hiedra"
+        ],
+        "correctAnswer": "Moringa oleífera",
+        "explanation": "Moringa es rica en vitaminas, minerales y proteínas.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Médecine Traditionnelle Africaine",
+        "id": "health_medicine_0012"
       }
     ],
     "Nutrition et Santé": [
@@ -109,6 +199,417 @@
         "category": "Santé et Médecine",
         "subcategory": "Nutrition et Santé",
         "id": "health_medicine_0006"
+      },
+      {
+        "question": "¿Qué deficiencia nutricional está más extendida entre los niños africanos?",
+        "options": [
+          "Deficiencia de hierro (anemia)",
+          "Exceso de vitamina C",
+          "Exceso de proteína",
+          "Deficiencia de sal"
+        ],
+        "correctAnswer": "Deficiencia de hierro (anemia)",
+        "explanation": "La anemia por deficiencia de hierro afecta a millones de niños en África.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0013"
+      },
+      {
+        "question": "¿Cuántas porciones de frutas y verduras recomienda la OMS al día?",
+        "options": [
+          "Al menos 5 porciones",
+          "1 porción",
+          "10 porciones",
+          "Ninguno"
+        ],
+        "correctAnswer": "Al menos 5 porciones",
+        "explanation": "La OMS recomienda al menos 400 g de frutas y verduras al día.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0014"
+      },
+      {
+        "question": "¿Qué nutriente es esencial para la salud ósea y proviene del sol?",
+        "options": [
+          "vitamina d",
+          "vitamina c",
+          "Hierro",
+          "Yodo"
+        ],
+        "correctAnswer": "vitamina d",
+        "explanation": "La vitamina D es sintetizada por la piel bajo la acción del sol.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Nutrition et Santé",
+        "id": "health_medicine_0015"
+      }
+    ],
+    "Santé Publique Moderne": [
+      {
+        "question": "¿Qué campaña mundial ha distribuido vacunas contra el COVID-19 a los países en desarrollo?",
+        "options": [
+          "COVAX",
+          "OTAN",
+          "UNESCO",
+          "fifa"
+        ],
+        "correctAnswer": "COVAX",
+        "explanation": "COVAX tenía como objetivo el acceso equitativo a las vacunas COVID-19 para todos los países.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0016"
+      },
+      {
+        "question": "¿Qué oficina regional de la OMS cubre África?",
+        "options": [
+          "Brazzaville (Congo)",
+          "París",
+          "Nueva York",
+          "Tokio"
+        ],
+        "correctAnswer": "Brazzaville (Congo)",
+        "explanation": "La oficina regional de la OMS para África está en Brazzaville.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0017"
+      },
+      {
+        "question": "¿Qué práctica sencilla reduce el riesgo de transmisión de enfermedades infecciosas en un 50%?",
+        "options": [
+          "Lávese las manos",
+          "usar zapatos",
+          "tomar cafe",
+          "Ver la televisión"
+        ],
+        "correctAnswer": "Lávese las manos",
+        "explanation": "El lavado de manos con agua y jabón es una de las medidas preventivas más efectivas.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0018"
+      },
+      {
+        "question": "¿Qué problema global está haciendo que los antibióticos sean menos efectivos?",
+        "options": [
+          "Resistencia a los antibióticos",
+          "Exceso de vitaminas",
+          "falta de sal",
+          "dormir demasiado"
+        ],
+        "correctAnswer": "Resistencia a los antibióticos",
+        "explanation": "La resistencia a los antimicrobianos es una emergencia sanitaria mundial según la OMS.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0019"
+      },
+      {
+        "question": "¿Qué tecnología permite consultas médicas remotas?",
+        "options": [
+          "Telemedicina",
+          "Telepatía",
+          "Solo hologramas",
+          "Fax médico"
+        ],
+        "correctAnswer": "Telemedicina",
+        "explanation": "La telemedicina se ha desarrollado rápidamente en África desde 2020.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Santé Publique Moderne",
+        "id": "health_medicine_0020"
+      }
+    ],
+    "Prévention et Bien-être": [
+      {
+        "question": "¿Cuántas horas de sueño recomienda la OMS para los adultos por noche?",
+        "options": [
+          "7 a 9 horas",
+          "3 a 4 horas",
+          "12 horas",
+          "5 horas máximo"
+        ],
+        "correctAnswer": "7 a 9 horas",
+        "explanation": "Dormir lo suficiente es esencial para la salud física y mental.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0021"
+      },
+      {
+        "question": "¿Cuánta actividad física recomienda la OMS por semana para los adultos?",
+        "options": [
+          "150 minutos de actividad moderada",
+          "10 minutos",
+          "500 minutos intensos",
+          "Ninguno"
+        ],
+        "correctAnswer": "150 minutos de actividad moderada",
+        "explanation": "150 minutos de actividad moderada a la semana reducen el riesgo de enfermedades crónicas.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0022"
+      },
+      {
+        "question": "¿Qué órgano filtra la sangre y produce orina?",
+        "options": [
+          "los riñones",
+          "el hígado",
+          "el bazo",
+          "el estomago"
+        ],
+        "correctAnswer": "los riñones",
+        "explanation": "Los riñones filtran los desechos de la sangre y regulan el equilibrio de líquidos.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0023"
+      },
+      {
+        "question": "¿Qué enfermedad crónica está relacionada con el nivel alto de azúcar en sangre?",
+        "options": [
+          "Diabetes",
+          "Migraña",
+          "Resfriado común",
+          "Alergia estacional"
+        ],
+        "correctAnswer": "Diabetes",
+        "explanation": "La diabetes afecta cada vez a más personas en las zonas urbanas de África.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Prévention et Bien-être",
+        "id": "health_medicine_0024"
+      }
+    ],
+    "Général": [
+      {
+        "id": "health_medicine_0025",
+        "question": "¿Qué órgano bombea la sangre por todo el cuerpo?",
+        "options": [
+          "El corazón",
+          "El hígado",
+          "El bazo",
+          "El estómago"
+        ],
+        "correctAnswer": "El corazón",
+        "explanation": "El corazón es el músculo que hace circular la sangre.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0026",
+        "question": "¿Qué unidad mide la presión arterial?",
+        "options": [
+          "mmHg",
+          "°C",
+          "solo bpm",
+          "kg"
+        ],
+        "correctAnswer": "mmHg",
+        "explanation": "La presión se expresa en milímetros de mercurio (mmHg).",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0027",
+        "question": "¿Qué vitamina ayuda especialmente a la visión nocturna?",
+        "options": [
+          "Vitamina A",
+          "Vitamina K",
+          "Vitamina B12",
+          "Vitamina D"
+        ],
+        "correctAnswer": "Vitamina A",
+        "explanation": "La vitamina A es esencial para la retina y la visión.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0028",
+        "question": "¿Qué significa IMC?",
+        "options": [
+          "Índice de masa corporal",
+          "Infección microbiana crónica",
+          "Imagen médica cardíaca",
+          "Inmunidad máxima celular"
+        ],
+        "correctAnswer": "Índice de masa corporal",
+        "explanation": "El IMC relaciona peso y talla.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0029",
+        "question": "¿Qué gesto de primeros auxilios se recomienda ante atragantamiento en adultos?",
+        "options": [
+          "Maniobra de Heimlich",
+          "Solo masaje cardíaco",
+          "Aspirina",
+          "Mantener la cabeza abajo mucho tiempo"
+        ],
+        "correctAnswer": "Maniobra de Heimlich",
+        "explanation": "La maniobra de Heimlich ayuda a despejar las vías respiratorias.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0030",
+        "question": "¿Qué enfermedad transmiten principalmente las garrapatas infectadas?",
+        "options": [
+          "Enfermedad de Lyme",
+          "Gripe",
+          "Sarampión",
+          "Varicela"
+        ],
+        "correctAnswer": "Enfermedad de Lyme",
+        "explanation": "Las garrapatas pueden transmitir la bacteria de Lyme.",
+        "difficulty": "hard",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0031",
+        "question": "¿Qué mineral es crucial para transportar oxígeno en la sangre?",
+        "options": [
+          "Hierro",
+          "Sodio",
+          "Cloro",
+          "Yodo"
+        ],
+        "correctAnswer": "Hierro",
+        "explanation": "El hierro forma parte de la hemoglobina.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0032",
+        "question": "¿Cuántas cámaras tiene un corazón humano normal?",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "6"
+        ],
+        "correctAnswer": "4",
+        "explanation": "Dos aurículas y dos ventrículos.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0033",
+        "question": "¿Qué glándula produce insulina?",
+        "options": [
+          "El páncreas",
+          "La tiroides",
+          "Las glándulas suprarrenales",
+          "La hipófisis"
+        ],
+        "correctAnswer": "El páncreas",
+        "explanation": "La insulina regula la glucemia.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0034",
+        "question": "¿Qué tipo de microbio detienen la mayoría de los antibióticos?",
+        "options": [
+          "Bacterias",
+          "Virus",
+          "Solo priones",
+          "Siempre hongos"
+        ],
+        "correctAnswer": "Bacterias",
+        "explanation": "Los antibióticos actúan contra bacterias, no contra virus.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0035",
+        "question": "¿Qué hábito reduce mucho el riesgo de caries?",
+        "options": [
+          "Cepillado dental regular",
+          "Evitar toda el agua",
+          "Nunca masticar",
+          "Beber solo refrescos"
+        ],
+        "correctAnswer": "Cepillado dental regular",
+        "explanation": "La higiene bucal previene las caries.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0036",
+        "question": "¿Qué órgano afecta principalmente la cirrosis?",
+        "options": [
+          "El hígado",
+          "El pulmón",
+          "La piel",
+          "El oído"
+        ],
+        "correctAnswer": "El hígado",
+        "explanation": "La cirrosis es una enfermedad crónica del hígado.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0037",
+        "question": "¿Cuál es la temperatura corporal normal aproximada?",
+        "options": [
+          "37 °C",
+          "32 °C",
+          "42 °C",
+          "28 °C"
+        ],
+        "correctAnswer": "37 °C",
+        "explanation": "La temperatura corporal ronda los 37 °C.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0038",
+        "question": "¿Qué examen usa rayos X para ver los huesos?",
+        "options": [
+          "Radiografía",
+          "Solo ecografía",
+          "ECG",
+          "Espirometría"
+        ],
+        "correctAnswer": "Radiografía",
+        "explanation": "La radiografía visualiza sobre todo estructuras óseas.",
+        "difficulty": "easy",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
+      },
+      {
+        "id": "health_medicine_0039",
+        "question": "¿Qué evento cardiovascular es una interrupción súbita del flujo sanguíneo cerebral?",
+        "options": [
+          "ACV (accidente cerebrovascular)",
+          "Asma",
+          "Anemia ferropénica",
+          "Otitis"
+        ],
+        "correctAnswer": "ACV (accidente cerebrovascular)",
+        "explanation": "Un ACV ocurre cuando se interrumpe el flujo al cerebro.",
+        "difficulty": "medium",
+        "category": "Santé et Médecine",
+        "subcategory": "Général"
       }
     ]
   }
