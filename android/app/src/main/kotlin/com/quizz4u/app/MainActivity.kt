@@ -1,14 +1,16 @@
 package com.quizz4u.app
 
-import io.flutter.embedding.android.FlutterActivity
-import androidx.core.view.WindowCompat
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import io.flutter.embedding.android.FlutterFragmentActivity
 
-class MainActivity : FlutterActivity() {
+/**
+ * FlutterFragmentActivity + enableEdgeToEdge() for Android 15+ Play Console
+ * compatibility (avoids deprecated Window status/navigation bar color APIs).
+ */
+class MainActivity : FlutterFragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
-        
-        // Enable Edge-to-Edge display for Android 15+ compatibility
-        WindowCompat.setDecorFitsSystemWindows(window, false)
     }
-} 
+}

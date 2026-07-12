@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'services/question_service_optimized.dart';
 import 'services/settings_service.dart';
 import 'services/localization_service.dart';
@@ -15,6 +16,10 @@ import 'screens/loading_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Edge-to-edge (défaut Android 15+) — compatibilité rétro avec SystemUiMode
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+
   print('[main] 🚀 Démarrage de Quiz4U...');
 
   // Lancer l'application avec l'écran de chargement

@@ -1,7 +1,7 @@
 name: quizz4u
 description: Quiz éducatif avec 5 catégories - Histoire du Mali, Culture générale, Sciences, Mathématiques et Afrique. Plus de 200 questions avec TTS, timer animé et classement local.
 
-version: 2.0.7+12
+version: 2.0.8+13
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -21,14 +21,9 @@ dependencies:
   firebase_core: ^3.6.0
   firebase_messaging: ^15.1.3
   flutter_local_notifications: ^18.0.0
-  google_fonts: ^6.1.0
-  confetti: ^0.7.0
-  flutter_staggered_animations: ^1.1.1
-  shimmer: ^3.0.0
-  animated_text_kit: ^4.2.2
-  flutter_svg: ^2.0.9
-  cached_network_image: ^3.3.0
-  http: ^1.1.0
+  # UI optionnelle (modern_components.dart non branché) — retirée pour taille
+  # google_fonts / cached_network_image / confetti / flutter_svg / http : inutilisés
+  # shimmer / animated_text_kit / flutter_staggered_animations : uniquement modern_components
 
 dev_dependencies:
   flutter_test:
@@ -144,14 +139,3 @@ flutter:
     - family: Signatra
       fonts:
         - asset: fonts/Signatra.ttf
-    - family: Schuyler
-      fonts:
-        - asset: fonts/Schuyler.ttf
-    - family: Sinatra
-      fonts:
-        - asset: fonts/Sinatra.ttf
-    - family: robotomono
-      fonts:
-        - asset: fonts/robotomono-regular.ttf
-        - asset: fonts/robotomono-bold.ttf
-          weight: 700

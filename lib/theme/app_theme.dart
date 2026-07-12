@@ -47,10 +47,11 @@ class AppTheme {
           color: Colors.white,
         ),
         iconTheme: IconThemeData(color: Colors.white),
-        systemOverlayStyle: SystemUiOverlayStyle(
+        // Ne pas fixer statusBarColor / navigationBarColor (APIs obsolètes Android 15+)
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarBrightness: Brightness.dark,
           statusBarIconBrightness: Brightness.light,
-          statusBarColor: Colors.transparent,
+          systemNavigationBarIconBrightness: Brightness.light,
         ),
       ),
 
@@ -317,10 +318,11 @@ class AppTheme {
           color: AppColors.textDark,
         ),
         iconTheme: IconThemeData(color: AppColors.textDark),
-        systemOverlayStyle: SystemUiOverlayStyle(
+        // Ne pas fixer statusBarColor / navigationBarColor (APIs obsolètes Android 15+)
+        systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarBrightness: Brightness.light,
           statusBarIconBrightness: Brightness.dark,
-          statusBarColor: Colors.transparent,
+          systemNavigationBarIconBrightness: Brightness.dark,
         ),
       ),
 
